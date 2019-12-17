@@ -1,0 +1,1 @@
+scr_replenish_mana(20,obj_player,true)

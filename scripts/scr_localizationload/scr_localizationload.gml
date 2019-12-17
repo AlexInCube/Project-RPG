@@ -1,0 +1,15 @@
+global.play = scr_load_string_json(string("Play"))
+global.settings = scr_load_string_json(string("Settings"))
+global.exitfromgame = scr_load_string_json(string("Exit"))
+global.volumemusictranslate = scr_load_string_json(string("MusicVolume"))
+global.volumesoundtranslate = scr_load_string_json(string("SoundVolume"))
+global.fullscreentranslate = scr_load_string_json(string("Fullscreen"))
+global.developer = scr_load_string_json(string("Developer"))
+global.hint = scr_load_string_json(string("Hint"))
+global.panic = scr_load_string_json(string("Panic"))
+global.gamecompeted = scr_load_string_json(string("GameCompleted"))
+global.restart = scr_load_string_json(string("Restart"))
+
+
+global.completed = scr_load_string_json(string("Completed"))
+global.time = scr_load_string_json(string("Time"))
