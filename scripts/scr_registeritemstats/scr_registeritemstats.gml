@@ -14,5 +14,6 @@ enum item_stat
  physarmor,
  magicarmor,
  manacost,
+ cooldown,
  total
  }

@@ -5,11 +5,10 @@ var guiheight = display_get_gui_height()
 
 for(i=0;i<10;i++)
 {
-	draw_sprite(spr_slot,0,(guiwidth/2-165)+(33*i),guiheight-32)
-	if global.inventory[# 20+i,0]>0
-	{
-	draw_sprite(global.item_index[# global.inventory[# 20+i,0], item_stat.sprite_index],0,guiwidth/2-149+(33*i),guiheight-16)
-	}
+	//draw_sprite(spr_slot,0,(guiwidth/2-165)+(33*i),guiheight-32)
+	
+	scr_draw_slot(global.inventory,i+20,guiwidth/2-165+(33*i),guiheight-32)
+	
 }
 
 switch(guistate){
@@ -76,11 +75,11 @@ switch(guistate){
 		//Draw Player Inventory Slots
 		scr_draw_slot(global.inventory,i,(guiwidth/2-165)+xx,guiheight/2+yy)
 	}
-		
-		scr_draw_slot(global.crafting_inventory,0,guiwidth/2-165,guiheight/2-148)
-		scr_draw_slot(global.crafting_inventory,1,guiwidth/2-125,guiheight/2-148)
-		scr_draw_slot_output(global.crafting_inventory,2,guiwidth/2-30,guiheight/2-148)
-		scr_checkcraft(guiwidth/2-30,guiheight/2-148)
+		//Draw Craft
+		scr_draw_slot(global.crafting_inventory,0,guiwidth/2-165,guiheight/2-148)//First Slot
+		scr_draw_slot(global.crafting_inventory,1,guiwidth/2-125,guiheight/2-148)//Second Slot
+		scr_draw_slot_output(global.crafting_inventory,2,guiwidth/2-30,guiheight/2-148)//Output slot
+		scr_checkcraft(guiwidth/2-30,guiheight/2-148)//Draw output item
 		
 	//Draw Item which mouse pickup
 	var iid = global.mouse_slot[# 0, 0];

@@ -12,7 +12,7 @@ var healperc = argument2
 if healperc = true
 {
 	if heal>100{heal = 100}
-	target.hp+=target.maxhp/heal
+	target.hp+=(target.maxhp/100)*heal
 }
 else
 {

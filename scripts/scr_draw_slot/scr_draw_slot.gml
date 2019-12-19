@@ -11,12 +11,19 @@ var xx = argument2
 var yy = argument3
 
 	draw_sprite(spr_slot,0,xx,yy)
-	draw_set_color(c_black)
+	
 	if (inventory[# slot_id, 0] != item.none)//Check if slot not empty
 	{
 		
 		var itemsprite = inventory[# slot_id, 0]//get item sprite
 		draw_sprite(global.item_index[# itemsprite, item_stat.sprite_index],1,xx+16,yy+16)//draw item sprite
+		
+		if global.item_index[# itemsprite, item_stat.type]=item_type.spell
+		{
+			draw_text_colour(xx+16,yy+15,ceil(obj_player.alarm[global.item_index[# itemsprite, item_stat.cooldown]]/room_speed),c_white,c_white,c_white,c_white,1)
+			draw_text_colour(xx+1,yy+15,global.item_index[# itemsprite, item_stat.manacost],c_blue,c_blue,c_blue,c_blue,1)
+		}
+		draw_set_color(c_black)
 		if inventory[# slot_id, 1]>1
 		{
 		draw_text(xx+16,yy+15,inventory[# slot_id, 1])//draw item amount

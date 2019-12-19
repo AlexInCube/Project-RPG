@@ -12,7 +12,7 @@ var manaperc = argument2
 if manaperc = true
 {
 	if manaamount>100{manaamount = 100}
-	target.mana+=target.maxmana/manaamount
+	target.mana+=(target.maxmana/100)*manaamount
 }
 else
 {
