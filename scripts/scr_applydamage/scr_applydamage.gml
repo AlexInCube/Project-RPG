@@ -35,6 +35,5 @@ if damagetype=PUREDAMAGETYPE
 damage=damagecount
 }
 
-show_debug_message(string(damagecount)+string(damage))
 
 if damage>0 return damage else return 0

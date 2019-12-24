@@ -18,6 +18,8 @@ scr_registeritems()
 global.crafting_inventory = ds_grid_create(4, 2);
 scr_initrecipes()
 
+
+
 scr_gain_item(item.small_health_potion, 7)
 scr_gain_item(item.small_mana_potion, 8)
 scr_gain_item(item.iron_helmet, 1)
@@ -30,3 +32,4 @@ scr_gain_item(item.greenleaf, 10)
 scr_gain_item(item.blueleaf, 10)
 scr_gain_item(item.small_empty_bottle,10)
 scr_gain_item(item.scroll_dash,1)
+scr_gain_item(item.scroll_fireball,1)

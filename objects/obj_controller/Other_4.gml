@@ -4,8 +4,7 @@
 
 view_enabled=true;
 view_visible[0]=true;
-camera = camera_create();
-view_camera[0]=camera;
+
 
 camera_set_view_size(view_camera[0],960/2,540/2);
 //surface_resize(application_surface, 960, 540);

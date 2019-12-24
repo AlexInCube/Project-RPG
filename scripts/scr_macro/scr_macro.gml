@@ -2,7 +2,6 @@
 #macro UP 1
 #macro LEFT 2
 #macro DOWN 3
-#macro DASH_COST 5
 #macro HELMET item_type.helmet
 #macro CHESTPLATE item_type.chestplate
 #macro LEGGINGS item_type.leggings

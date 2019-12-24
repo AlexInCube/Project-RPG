@@ -16,5 +16,6 @@ enum item
 	lightningstaff,
 	slime,
 	scroll_dash,
+	scroll_fireball,
 	total
 	}

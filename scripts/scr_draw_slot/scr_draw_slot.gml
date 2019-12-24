@@ -20,7 +20,6 @@ var yy = argument3
 		
 		if global.item_index[# itemsprite, item_stat.type]=item_type.spell
 		{
-			draw_text_colour(xx+16,yy+15,ceil(obj_player.alarm[global.item_index[# itemsprite, item_stat.cooldown]]/room_speed),c_white,c_white,c_white,c_white,1)
 			draw_text_colour(xx+1,yy+15,global.item_index[# itemsprite, item_stat.manacost],c_blue,c_blue,c_blue,c_blue,1)
 		}
 		draw_set_color(c_black)

@@ -1,7 +1,9 @@
-var manacost=1//argument0
-if obj_player_stats.mana>=manacost and obj_player.state==scr_move_state and obj_player.alarm[0]==-1 and obj_player.alarm[1]==-1{
+var manacost=argument0
+
+if obj_player_stats.mana>=manacost and obj_player.state==scr_move_state
+{
 	obj_player.state = scr_dash_state;
 	obj_player.alarm[0] = room_speed/8
-	obj_player.alarm[1] = room_speed*5
 	obj_player_stats.mana -=manacost
 }
+
