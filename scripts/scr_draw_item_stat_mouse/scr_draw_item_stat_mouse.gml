@@ -6,15 +6,17 @@ var inventory = argument0
 var slot_id = argument1
 draw_set_alpha(1)
 draw_set_color(c_white)
+
 var statsamount = 0//Count item values
 //Draw name
 var name=global.item_index[# inventory[# slot_id, 0],item_stat.name]
 draw_text(device_mouse_x_to_gui(0),device_mouse_y_to_gui(0)-170+(20*statsamount),string(name))
 statsamount+=1
-//Draw item type
+/*
 var itemtype=global.item_index[# inventory[# slot_id, 0],item_stat.type]
 draw_text(device_mouse_x_to_gui(0),device_mouse_y_to_gui(0)-170+(20*statsamount),string(itemtype))
 statsamount+=1
+*/
 //Draw item description
 var description=global.item_index[# inventory[# slot_id, 0],item_stat.description]
 draw_text(device_mouse_x_to_gui(0),device_mouse_y_to_gui(0)-170+(20*statsamount),string(description))

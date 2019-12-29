@@ -2,7 +2,8 @@
 enum item_type
  {
  none,
- weapon,
+ meleeweapon,
+ rangedweapon,
  helmet,
  chestplate,
  leggings,

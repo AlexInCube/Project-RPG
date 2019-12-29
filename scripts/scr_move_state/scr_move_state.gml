@@ -2,9 +2,18 @@
 
 if obj_player_stats.attack>0 or obj_player_stats.magicattack>0
 {
-	if obj_controller.attack_key{
-		image_index=0
-		state = scr_attack_state;
+	if obj_controller.attack_key
+	{
+		if global.armor_equipped[# 6,0]!=item.none
+		{
+			var weapontype = global.item_index[# global.armor_equipped[# 6,0],item_stat.type]
+			if weapontype = item_type.meleeweapon
+			{
+				image_index=0
+				state = scr_attack_state;
+			}
+		}
+		
 	}
 }
 
@@ -41,7 +50,7 @@ if obj_controller.inventory_hotkey1
 }
 
 
-if obj_inventory.guistate="isClosed" and obj_player_stats.guistate="isClosed"{
+if obj_inventory.guistate="isClosed"{
 //get direction
 dir = point_direction(0,0,obj_controller.xaxis,obj_controller.yaxis)
 

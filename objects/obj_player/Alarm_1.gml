@@ -1,1 +1,1 @@
-///@description dash cooldown
+///@description ranged attack cooldown

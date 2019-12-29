@@ -26,7 +26,7 @@ if(hpregen < maxhp and alarm[1] == -1){
 }
 }
 
-if obj_inventory.guistate="isOpen"
+if obj_inventory.guistate!="isClosed"
 {
 var helm = global.item_index[# global.armor_equipped[# 0, 0], item_stat.physarmor]
 var chest = global.item_index[# global.armor_equipped[# 1, 0], item_stat.physarmor]
