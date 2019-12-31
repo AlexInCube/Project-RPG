@@ -55,7 +55,7 @@ var guiheight = display_get_gui_height()
 		scr_draw_slot(global.armor_equipped,3,guiwidth/2-165,guiheight/2-1,4,BOOTS)
 		scr_draw_slot(global.armor_equipped,4,guiwidth/2-132,guiheight/2-67,5,RING)
 		scr_draw_slot(global.armor_equipped,5,guiwidth/2-132,guiheight/2-34,5,RING)
-		scr_draw_slot(global.armor_equipped,6,guiwidth/2-132,guiheight/2-1,6,MELEEWEAPON,RANGEDWEAPON)
+		scr_draw_slot(global.armor_equipped,6,guiwidth/2-132,guiheight/2-1,6,WEAPON)
 		
 	
 		

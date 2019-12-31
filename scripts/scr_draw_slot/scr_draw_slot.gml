@@ -14,15 +14,12 @@ var xx = argument[2]
 var yy = argument[3]
 var imageindex = 0
 var typeneed = item.none
-var typeneed2 = item.none
+
 if argument_count>=6
 {
 typeneed = argument[5]
 }
-if argument_count>=7
-{
-var typeneed2 = argument[6]
-}
+
 
 
 if argument_count>=5
@@ -30,7 +27,14 @@ if argument_count>=5
 	var imageindex = argument[4]
 }
 
-	draw_sprite(spr_slot,imageindex,xx,yy)
+	if inventory[# slot_id, 0] != item.none
+	{
+	draw_sprite(spr_slot,0,xx,yy)
+	}
+	else
+	{
+	draw_sprite(spr_slot,imageindex,xx,yy)	
+	}
 	
 	
 	
@@ -97,7 +101,7 @@ if scr_mouseover(xx,yy,xx+32,yy+32){
 	}
 	else
 	{
-		if global.item_index[# global.mouse_slot[# 0, 0],item_stat.type]==typeneed or global.item_index[# global.mouse_slot[# 0, 0],item_stat.type]==typeneed2 or global.mouse_slot[# 0, 0]=item.none
+		if global.item_index[# global.mouse_slot[# 0, 0],item_stat.type]==typeneed or global.mouse_slot[# 0, 0]=item.none
 		if mouse_check_button_pressed(mb_left)
 		{
 		var iid = inventory[# slot_id, 0]

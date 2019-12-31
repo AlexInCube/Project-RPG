@@ -7,6 +7,4 @@
 #macro LEGGINGS item_type.leggings
 #macro BOOTS item_type.boots
 #macro RING item_type.ring
-#macro MELEEWEAPON item_type.meleeweapon
-#macro RANGEDWEAPON item_type.rangedweapon
-#macro WEAPONSLOT global.armor_equipped[6,0]
+#macro WEAPON item_type.weapon

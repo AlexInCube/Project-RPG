@@ -3,8 +3,6 @@ var slot_id = argument1
 
 if global.item_index[# inventory[# slot_id,0],item_stat.action_script]>0//If item have script
 	{
-		
-		
 		if global.item_index[# inventory[# slot_id,0],item_stat.type]==item_type.potion//If item potion
 		{
 		script_execute(global.item_index[# inventory[# slot_id,0],item_stat.action_script])

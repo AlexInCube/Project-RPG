@@ -663,6 +663,14 @@
             }
         },
         {
+            "Key": "4c5522cf-ad3c-40ca-b17d-cf0f7eda98a7",
+            "Value": {
+                "id": "c0fcfc09-d241-4f14-8b70-47824577d622",
+                "resourcePath": "tilesets\\tileset1\\tileset1.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "4fa10688-f153-4ed9-b734-ee3a2d4cd2a2",
             "Value": {
                 "id": "d6af4a24-653e-42a2-a996-60d225842eb1",
@@ -1015,6 +1023,14 @@
             }
         },
         {
+            "Key": "7468b4d8-a52c-4143-8699-8c423303f3e7",
+            "Value": {
+                "id": "1f512195-bd7a-4226-a8f8-72484dda08e0",
+                "resourcePath": "sprites\\spr_beachandmeadowstileset\\spr_beachandmeadowstileset.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "746b7635-86c1-4e21-ad6d-3adf66e37e7b",
             "Value": {
                 "id": "74bcb9e9-ba5d-49de-bf94-557e44c652b1",
@@ -1252,6 +1268,14 @@
                 "id": "3da05e23-a2ff-46c1-b830-31045c9666a2",
                 "resourcePath": "objects\\obj_selectresolution\\obj_selectresolution.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9cecbc19-7bbe-4a05-b739-06d0037b2cda",
+            "Value": {
+                "id": "ed39edc3-a2f8-40d0-9cb9-e7335636fed0",
+                "resourcePath": "scripts\\scr_range_attack\\scr_range_attack.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1871,6 +1895,14 @@
             }
         },
         {
+            "Key": "ec98aa31-d35e-4b31-8d40-c6d47ff19948",
+            "Value": {
+                "id": "f6d21aee-5b02-4830-94ce-f726fad3f7b0",
+                "resourcePath": "scripts\\scr_melee_attack\\scr_melee_attack.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ede33a20-eb43-4f5b-84f7-a456735bfa22",
             "Value": {
                 "id": "65c7394b-f2ba-403a-8b68-0c3c15a5ed26",
@@ -2072,6 +2104,8 @@
         "28ac0588-d729-404d-9181-e0ba30a43d43",
         "2c3f44d2-378b-40d3-9219-279cbe4dea1f",
         "5c22e25f-1a3a-43bd-b652-df601037fe4b",
+        "ec98aa31-d35e-4b31-8d40-c6d47ff19948",
+        "9cecbc19-7bbe-4a05-b739-06d0037b2cda",
         "f0627cac-17bb-4a79-922e-f07d93fc4f8c",
         "1f1cc9e9-8b5f-47c4-96ad-6e29b5b8bbbb",
         "68ca6345-ea7a-45df-a589-5b609e41664c",
