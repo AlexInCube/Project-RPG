@@ -15,8 +15,8 @@
         ]
     },
     "out_columns": 10,
-    "out_tilehborder": 2,
-    "out_tilevborder": 2,
+    "out_tilehborder": 1,
+    "out_tilevborder": 1,
     "spriteId": "7468b4d8-a52c-4143-8699-8c423303f3e7",
     "sprite_no_export": true,
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
@@ -136,10 +136,10 @@
     ],
     "tile_animation_speed": 15,
     "tile_count": 105,
-    "tileheight": 32,
-    "tilehsep": 2,
-    "tilevsep": 2,
-    "tilewidth": 32,
-    "tilexoff": 2,
-    "tileyoff": 2
+    "tileheight": 16,
+    "tilehsep": 1,
+    "tilevsep": 1,
+    "tilewidth": 16,
+    "tilexoff": 1,
+    "tileyoff": 1
 }
