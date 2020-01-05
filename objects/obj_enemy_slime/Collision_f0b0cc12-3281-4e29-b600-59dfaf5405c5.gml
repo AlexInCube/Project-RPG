@@ -10,7 +10,7 @@ if (state != scr_enemy_stall_state){
 	damage.damagetype = PHYSICALDAMAGETYPE
 	damage.image_xscale=0.5
 	damage.image_yscale=0.5
-	damage.knockback=15
+	damage.knockback=10
 	
 	state = scr_enemy_stall_state
 	alarm[1] = room_speed

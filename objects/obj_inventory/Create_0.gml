@@ -9,9 +9,10 @@ global.item_index = ds_grid_create(item.total, item_stat.total);
 ds_grid_clear(global.item_index, 0); //Set every position to 0
 global.mouse_slot = ds_grid_create(1, 2);
 
-
+global.chestinventory = ds_grid_create(30, 2); 
 
 guistate="isClosed"
+inventorylock=false
 
 scr_registeritems()
 

@@ -37,6 +37,5 @@ var item_id    = argument0;
       }
 	  if cur_amount>=max_amount{exit}
       cur_slot ++;
-	 
-  }
+	}
  

@@ -12,30 +12,31 @@ for(i=0;i<10;i++)
 	
 }
 
-switch(guistate){
-	case "isClosed":{
-		if obj_controller.inventory_key{
-		guistate="isInventory"
+if inventorylock=false{
+	switch(guistate){
+		case "isClosed":{
+			if obj_controller.inventory_key{
+			guistate="isInventory"
+			}
+			break
 		}
-		break
-	}
-	case "isInventory":{
+		case "isInventory":{
 		
-scr_draw_black_screen()//Draw black screen like minecraft gui
-		scr_drawinventorytabs()
-		scr_drawinventory()
+	scr_draw_black_screen()//Draw black screen like minecraft gui
+			scr_drawinventorytabs()
+			scr_drawinventory()
 		
 		
-		break
-	}
+			break
+		}
 	
-	case "IsStats":{
+		case "IsStats":{
 		
 		
-scr_draw_black_screen()//Draw black screen like minecraft gui
-		scr_drawinventorytabs()
-		scr_drawstatsmenu()
-		break
-	}
-}	
-
+	scr_draw_black_screen()//Draw black screen like minecraft gui
+			scr_drawinventorytabs()
+			scr_drawstatsmenu()
+			break
+		}
+	}	
+}

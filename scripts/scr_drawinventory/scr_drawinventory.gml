@@ -3,30 +3,17 @@
 var guiwidth = display_get_gui_width()
 var guiheight = display_get_gui_height()
 
+draw_set_font(fnt_large)
+
 	draw_sprite(spr_inventory_back,0,guiwidth/2,guiheight/2)//Draw Inventory Background
 	draw_set_color(c_black)//Set color for player stats
 
-	var	yy=33
-	var xx=33
-	var pos=0
-	//Draw Slots With Item and Amount of them
-	for (i=0;i<ds_grid_width(global.inventory);i++)
-	{
-		
-		if (i mod 10)==0{//If slot position equal 10, reset position and draw slot below
-		pos=0
-		yy+=33
-		xx=33*pos
-		}
-		else
-		{
-		xx=33*pos
-		}
-		pos+=1
-		//Draw Player Inventory Slots
-		scr_draw_slot(global.inventory,i,(guiwidth/2-165)+xx,guiheight/2+yy)
-	}
 	
+	//Draw Craft
+		scr_draw_slot(global.crafting_inventory,0,guiwidth/2-165,guiheight/2-148)//First Slot
+		scr_draw_slot(global.crafting_inventory,1,guiwidth/2-125,guiheight/2-148)//Second Slot
+		scr_draw_slot_output(global.crafting_inventory,2,guiwidth/2-30,guiheight/2-148)//Output slot
+		scr_checkcraft(guiwidth/2-30,guiheight/2-148)//Draw output item
 
 	//Draw player stats
 	draw_sprite(spr_staticonhp,0,guiwidth/2+35,guiheight/2-148)
@@ -60,24 +47,35 @@ var guiheight = display_get_gui_height()
 	
 		
 	
-		//Draw Craft
-		scr_draw_slot(global.crafting_inventory,0,guiwidth/2-165,guiheight/2-148)//First Slot
-		scr_draw_slot(global.crafting_inventory,1,guiwidth/2-125,guiheight/2-148)//Second Slot
-		scr_draw_slot_output(global.crafting_inventory,2,guiwidth/2-30,guiheight/2-148)//Output slot
-		scr_checkcraft(guiwidth/2-30,guiheight/2-148)//Draw output item
+		
+		
+		var	yy=33
+	var xx=33
+	var pos=0
+	//Draw Slots With Item and Amount of them
+	for (i=0;i<ds_grid_width(global.inventory);i++)
+	{
+		
+		if (i mod 10)==0{//If slot position equal 10, reset position and draw slot below
+		pos=0
+		yy+=33
+		xx=33*pos
+		}
+		else
+		{
+		xx=33*pos
+		}
+		pos+=1
+		//Draw Player Inventory Slots
+		scr_draw_slot(global.inventory,i,(guiwidth/2-165)+xx,guiheight/2+yy)
+	}
 		
 	//Draw Item which mouse pickup
+	scr_drawmousepickupeditem()
+	
 	var iid = global.mouse_slot[# 0, 0];
 	var amount = global.mouse_slot[# 0, 1];
 
-	if (iid != item.none)
-	 {
-		draw_sprite(global.item_index[# iid, item_stat.sprite_index], 0, device_mouse_x_to_gui(0)-16, device_mouse_y_to_gui(0)-16); //Draw item sprite
-		if amount>1
-		{
-		draw_text(device_mouse_x_to_gui(0)-8, device_mouse_y_to_gui(0)-8, string(amount)); //Draw item quantity
-		}
-	}
 	
 	
 	

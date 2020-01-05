@@ -41,7 +41,7 @@ if obj_controller.inventory_hotkey1
 }
 
 
-if obj_inventory.guistate="isClosed"{
+if obj_inventory.inventorylock=false{
 //get direction
 dir = point_direction(0,0,obj_controller.xaxis,obj_controller.yaxis)
 
