@@ -1,6 +1,6 @@
 //Potions
-scr_add_potion(item.small_health_potion,"small_health_potion", spr_ItemIcon_SmallHealPotion,5,scr_small_health_potion)
-scr_add_potion(item.small_mana_potion,"small_mana_potion", spr_ItemIcon_SmallManaPotion,5,scr_small_mana_potion)
+scr_add_potion(item.small_health_potion,"small_health_potion", spr_ItemIcon_SmallHealPotion,4,scr_small_health_potion)
+scr_add_potion(item.small_mana_potion,"small_mana_potion", spr_ItemIcon_SmallManaPotion,4,scr_small_mana_potion)
 //Armor
 scr_add_armor(item.iron_helmet,"iron_helmet", spr_ironhelmet,2,1,HELMET)
 scr_add_armor(item.iron_chestplate,"iron_chestplate", spr_ironchestplate,4,2,CHESTPLATE)
@@ -19,8 +19,8 @@ scr_add_spell(item.scroll_fireball,"spell_scroll_fireball",spr_ItemIcon_SpellFir
 //Other
 scr_add_components(item.greenleaf,"green_leaf",spr_ItemIcon_Leaf,16)
 scr_add_components(item.blueleaf,"blue_leaf",spr_ItemIcon_blueleaf,16)
-scr_add_components(item.small_empty_bottle,"empty_small_bottle",spr_ItemIcon_SmallBottle,4)
+scr_add_components(item.small_empty_bottle,"empty_small_bottle",spr_ItemIcon_SmallBottle,8)
 scr_add_components(item.slime,"slimeball",spr_ItemIcon_Slime,32)
 scr_add_components(item.leather,"leather",spr_ItemIcon_Leather,16)
 scr_add_components(item.iron_ore,"iron_ore",spr_ItemIcon_OreIron,8)
-scr_add_components(item.iron_ingot,"iron_ingot",spr_ItemIcon_Iron,4)
+scr_add_components(item.iron_ingot,"iron_ingot",spr_ItemIcon_Iron,8)

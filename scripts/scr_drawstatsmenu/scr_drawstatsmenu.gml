@@ -5,7 +5,7 @@ draw_sprite(spr_inventory_back,0,guiwidth/2,guiheight/2)//Draw Inventory Backgro
 
 for (i=0;i<5;i++)
 		{
-			draw_sprite(spr_skills,i,guiwidth/2-252,guiheight/2-185+(i*50))//Stat Icons
+			draw_sprite(spr_skills,i,guiwidth/2-175,guiheight/2-175+(i*50))//Stat Icons
 			if obj_player_stats.skillpoints>0
 			{
 				draw_sprite(spr_skillpointuse,i,guiwidth/2-70,guiheight/2-185+(i*50))//Stat level up button
@@ -51,22 +51,22 @@ for (i=0;i<5;i++)
 			}
 		}
 		
-		draw_text(guiwidth/2-200,guiheight/2-185+(0*50),"Health +"+string(obj_player_stats.maxhpbuff)+"%")//HP
-		draw_text(guiwidth/2-200,guiheight/2-165+(0*50),"Level:"+string(obj_player_stats.maxhpbufflevel))//HP lvl
+		draw_text(guiwidth/2-120,guiheight/2-185+(0*50),"Health +"+string(obj_player_stats.maxhpbuff)+"%")//HP
+		draw_text(guiwidth/2-120,guiheight/2-165+(0*50),"Level:"+string(obj_player_stats.maxhpbufflevel))//HP lvl
 		
-		draw_text(guiwidth/2-200,guiheight/2-185+(1*50),"Mana +"+string(obj_player_stats.maxmanabuff)+"%")//Mana
-		draw_text(guiwidth/2-200,guiheight/2-165+(1*50),"Level:"+string(obj_player_stats.maxmanabufflevel))//Mana lvl
+		draw_text(guiwidth/2-120,guiheight/2-185+(1*50),"Mana +"+string(obj_player_stats.maxmanabuff)+"%")//Mana
+		draw_text(guiwidth/2-120,guiheight/2-165+(1*50),"Level:"+string(obj_player_stats.maxmanabufflevel))//Mana lvl
 		
-		draw_text(guiwidth/2-200,guiheight/2-185+(2*50),"Strength +"+string(obj_player_stats.basestrength))//Mana
-		draw_text(guiwidth/2-200,guiheight/2-165+(2*50),"Level:"+string(obj_player_stats.strengthbufflevel))//Mana lvl
+		draw_text(guiwidth/2-120,guiheight/2-185+(2*50),"Strength +"+string(obj_player_stats.basestrength))//Mana
+		draw_text(guiwidth/2-120,guiheight/2-165+(2*50),"Level:"+string(obj_player_stats.strengthbufflevel))//Mana lvl
 		
-		draw_text(guiwidth/2-200,guiheight/2-185+(3*50),"Intelligence +"+string(obj_player_stats.baseintelligence))//Mana
-		draw_text(guiwidth/2-200,guiheight/2-165+(3*50),"Level:"+string(obj_player_stats.intelligencebufflevel))//Mana lvl
+		draw_text(guiwidth/2-120,guiheight/2-185+(3*50),"Intelligence +"+string(obj_player_stats.baseintelligence))//Mana
+		draw_text(guiwidth/2-120,guiheight/2-165+(3*50),"Level:"+string(obj_player_stats.intelligencebufflevel))//Mana lvl
 		
-		draw_text(guiwidth/2-200,guiheight/2-185+(4*50),"Luck +"+string(obj_player_stats.baseluck))//Mana
-		draw_text(guiwidth/2-200,guiheight/2-165+(4*50),"Level:"+string(obj_player_stats.luckbufflevel))//Mana lvl
+		draw_text(guiwidth/2-120,guiheight/2-185+(4*50),"Luck +"+string(obj_player_stats.baseluck))//Mana
+		draw_text(guiwidth/2-120,guiheight/2-165+(4*50),"Level:"+string(obj_player_stats.luckbufflevel))//Mana lvl
 		
-		draw_text(guiwidth/2-120,guiheight/2+150,"Available stat point: "+string(obj_player_stats.skillpoints))
+		draw_text(guiwidth/2-120,guiheight/2+120,"Available stat point: "+string(obj_player_stats.skillpoints))
 		
 		if obj_controller.skillbook_key{
 		guistate="isClosed"

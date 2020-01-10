@@ -51,7 +51,7 @@ if argument_count>=5
 		draw_set_color(c_black)
 		if inventory[# slot_id, 1]>1
 		{
-		draw_text(xx+16,yy+15,inventory[# slot_id, 1])//draw item amount
+		draw_text(xx+2,yy+15,inventory[# slot_id, 1])//draw item amount
 		
 		}
 	}
@@ -155,14 +155,30 @@ if scr_mouseover(xx,yy,xx+32,yy+32){
 			}
 		}
 	}
+	//Draw Item Tooltip
 	if inventory[# slot_id, 0] != item.none{scr_draw_item_stat_mouse(inventory,slot_id)}
 	
-	if obj_controller.drop_item_key
+	//Drop Item From Inventory
+	if obj_controller.drop_item_key and inventory[# slot_id, 0] != item.none
 	{
-		if inventory[# slot_id, 0] != item.none
+		var xx=obj_player.x
+		var yy=obj_player.y
+		
+		if obj_controller.combination_key
 		{
-			var xx=obj_player.x
-			var yy=obj_player.y
+			var itemdropped=instance_create_layer(xx,yy,"Instances",obj_item)
+			itemdropped.whatitem=inventory[# slot_id, 0]
+			itemdropped.amount=1
+			
+			inventory[# slot_id, 1]-=1
+			if inventory[# slot_id, 1]==0
+			{
+				inventory[# slot_id, 0]=item.none
+				inventory[# slot_id, 1]=0
+			}
+		}
+		else
+		{
 			var itemdropped=instance_create_layer(xx,yy,"Instances",obj_item)
 			itemdropped.whatitem=inventory[# slot_id, 0]
 			itemdropped.amount=inventory[# slot_id, 1]

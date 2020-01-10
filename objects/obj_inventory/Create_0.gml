@@ -21,8 +21,10 @@ scr_initrecipes()
 
 
 
-scr_gain_item(item.small_health_potion, 7)
+scr_gain_item(item.small_health_potion, 10)
+
 scr_gain_item(item.small_mana_potion, 8)
+
 scr_gain_item(item.iron_helmet, 1)
 scr_gain_item(item.iron_chestplate, 1)
 scr_gain_item(item.iron_leggings, 1)
@@ -35,3 +37,5 @@ scr_gain_item(item.small_empty_bottle,10)
 scr_gain_item(item.scroll_dash,1)
 scr_gain_item(item.scroll_fireball,1)
 scr_gain_item(item.leather,32)
+scr_gain_item(item.iron_ingot,32)
+scr_gain_item(item.iron_ore,10)

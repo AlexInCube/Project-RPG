@@ -3,7 +3,8 @@
 var guiwidth = display_get_gui_width()
 var guiheight = display_get_gui_height()
 
-draw_set_font(fnt_large)
+draw_set_font(fnt_small)
+
 
 	draw_sprite(spr_inventory_back,0,guiwidth/2,guiheight/2)//Draw Inventory Background
 	draw_set_color(c_black)//Set color for player stats
@@ -16,24 +17,24 @@ draw_set_font(fnt_large)
 		scr_checkcraft(guiwidth/2-30,guiheight/2-148)//Draw output item
 
 	//Draw player stats
-	draw_sprite(spr_staticonhp,0,guiwidth/2+35,guiheight/2-148)
-	draw_text(guiwidth/2+50,guiheight/2-150,"Max Health:"+string(obj_player_stats.maxhp))
-	draw_sprite(spr_staticonmana,0,guiwidth/2+35,guiheight/2-128)
-	draw_text(guiwidth/2+50,guiheight/2-130,"Max Mana:"+string(obj_player_stats.maxmana))
-	draw_sprite(spr_staticonphysarmor,0,guiwidth/2+35,guiheight/2-108)
-	draw_text(guiwidth/2+50,guiheight/2-110,"Phys Armor:"+string(obj_player_stats.physarmor))
-	draw_sprite(spr_staticonmagicarmor,0,guiwidth/2+35,guiheight/2-88)
-	draw_text(guiwidth/2+50,guiheight/2-90,"Magic Armor:"+string(obj_player_stats.magicarmor))
-	draw_sprite(spr_staticonstrength,0,guiwidth/2+35,guiheight/2-68)
-	draw_text(guiwidth/2+50,guiheight/2-70,"Strength:"+string(obj_player_stats.strength))
-	draw_sprite(spr_staticonintelligence,0,guiwidth/2+35,guiheight/2-48)
-	draw_text(guiwidth/2+50,guiheight/2-50,"Intelligence:"+string(obj_player_stats.intelligence))
-	draw_sprite(spr_staticonluck,0,guiwidth/2+35,guiheight/2-28)
-	draw_text(guiwidth/2+50,guiheight/2-30,"Luck:"+string(obj_player_stats.luck))
-	draw_sprite(spr_staticonattack,0,guiwidth/2+35,guiheight/2-8)
-	draw_text(guiwidth/2+50,guiheight/2-10,"Phys Damage:"+string(obj_player_stats.attack))
-	draw_sprite(spr_staticonmagicattack,0,guiwidth/2+35,guiheight/2+12)
-	draw_text(guiwidth/2+50,guiheight/2+10,"Magic Damage:"+string(obj_player_stats.magicattack))
+	draw_sprite(spr_staticonhp,0,guiwidth/2+20,guiheight/2-148)
+	draw_text(guiwidth/2+35,guiheight/2-155,"Max Health:"+string(obj_player_stats.maxhp))
+	draw_sprite(spr_staticonmana,0,guiwidth/2+20,guiheight/2-128)
+	draw_text(guiwidth/2+35,guiheight/2-135,"Max Mana:"+string(obj_player_stats.maxmana))
+	draw_sprite(spr_staticonphysarmor,0,guiwidth/2+20,guiheight/2-108)
+	draw_text(guiwidth/2+35,guiheight/2-115,"Phys Armor:"+string(obj_player_stats.physarmor))
+	draw_sprite(spr_staticonmagicarmor,0,guiwidth/2+20,guiheight/2-88)
+	draw_text(guiwidth/2+35,guiheight/2-95,"Magic Armor:"+string(obj_player_stats.magicarmor))
+	draw_sprite(spr_staticonstrength,0,guiwidth/2+20,guiheight/2-68)
+	draw_text(guiwidth/2+35,guiheight/2-75,"Strength:"+string(obj_player_stats.strength))
+	draw_sprite(spr_staticonintelligence,0,guiwidth/2+20,guiheight/2-48)
+	draw_text(guiwidth/2+35,guiheight/2-55,"Intelligence:"+string(obj_player_stats.intelligence))
+	draw_sprite(spr_staticonluck,0,guiwidth/2+20,guiheight/2-28)
+	draw_text(guiwidth/2+35,guiheight/2-35,"Luck:"+string(obj_player_stats.luck))
+	draw_sprite(spr_staticonattack,0,guiwidth/2+20,guiheight/2-8)
+	draw_text(guiwidth/2+35,guiheight/2-15,"Phys Damage:"+string(obj_player_stats.attack))
+	draw_sprite(spr_staticonmagicattack,0,guiwidth/2+20,guiheight/2+12)
+	draw_text(guiwidth/2+35,guiheight/2+5,"Magic Damage:"+string(obj_player_stats.magicattack))
 	
 	//Draw Armor Slots
 		scr_draw_slot(global.armor_equipped,0,guiwidth/2-165,guiheight/2-100,1,HELMET)

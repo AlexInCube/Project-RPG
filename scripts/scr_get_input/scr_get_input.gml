@@ -19,7 +19,7 @@ attack_key = keyboard_check_pressed(ord("V"))
 skillbook_key = keyboard_check_pressed(ord("O"))
 inventory_key = keyboard_check_pressed(ord("I"))
 drop_item_key = keyboard_check_pressed(ord("Q"))
-combination_key = keyboard_check_pressed(vk_control)
+combination_key = keyboard_check(vk_control)
 pause_key = keyboard_check_pressed(vk_escape)
 
 developer_key = keyboard_check_pressed(vk_f5)

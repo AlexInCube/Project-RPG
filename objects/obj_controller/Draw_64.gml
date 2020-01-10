@@ -11,6 +11,8 @@ alarm[0]=room_speed/5
 if fpsbuffer>1{
 draw_text(40,150,"Fps Real:"+string(fpsbuffer))
 }
+draw_text(40,170,"Comb Key"+string(combination_key))
+draw_text(40,190,"Drop Key"+string(drop_item_key))
 /*
 draw_text(40,100,"Resolution set in game:"+string(global.width)+"x"+string(global.height))
 draw_text(40,125,"GUI resolution:"+string(display_get_gui_width())+"x"+string(display_get_gui_height()))
