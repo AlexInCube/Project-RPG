@@ -35,6 +35,11 @@ if developer_key
 	{
 		camera_set_view_size(view_camera[0],global.width/2,global.height/2);
 	}
+	
+		if cheat == "guiinfo"
+	{
+		show_message(string(display_get_gui_width())+"x"+string(display_get_gui_height()))
+	}
 }
 
 if pause_key {

@@ -49,6 +49,6 @@ while (cur_slot < max_slot)
 		itemdropped.amount=max_amount-cur_amount
 		exit
 	}
-	show_debug_message(string(cur_amount)+"slot:"+string(cur_slot))
+	
 }
 

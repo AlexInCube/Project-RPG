@@ -2,7 +2,7 @@
 // You can write your code in this editor
 if point_distance(x,y,obj_player.x,obj_player.y)<20 and instance_exists(obj_player)
 {
-	if obj_controller.action_key
+	if obj_controller.pickup_key
 	{
 	scr_gain_item(whatitem,amount)
 	instance_destroy()

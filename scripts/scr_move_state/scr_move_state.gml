@@ -85,4 +85,30 @@ switch(face) {
 		break
 }
 
+
+	if obj_controller.interact_key
+	{
+		if active_textbox == noone
+		{
+		//TODO: Make an inventory/npc check based on checking the direction the player is looking
+		var inst = collision_rectangle(x-findradius,y-findradius,x+findradius,y+findradius,obj_PARENTnpc,false,false)
+	
+			if inst != noone
+			{
+				with(inst)
+				{
+					var tbox = scr_create_textbox(text, speakers)
+				}
+				active_textbox = tbox
+			}
+		}
+		else
+		{
+			if !instance_exists(active_textbox)
+			{
+				active_textbox = noone
+			}
+		}
+	}
+
 }

@@ -9,10 +9,16 @@ xaxis=0
 yaxis=0
 attacked=false
 
+findradius=16
+
 image_speed=0
 
 face=RIGHT
 
 state=scr_move_state;
 
+portrait = spr_portrait
+voice = snd_voice2
+name = "Игрок"
+active_textbox = noone
 

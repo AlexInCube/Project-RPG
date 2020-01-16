@@ -8,7 +8,7 @@ view_visible[0]=true;
 
 camera_set_view_size(view_camera[0],960/2,540/2);
 //surface_resize(application_surface, 960, 540);
-display_set_gui_size(960, 540)
+
 
 //camera_set_view_size(view_camera[0],global.width/2,global.height/2);
 //surface_resize(application_surface, global.width, global.height);
