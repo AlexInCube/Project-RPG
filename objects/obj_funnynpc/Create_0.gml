@@ -1,6 +1,6 @@
 portrait = spr_portrait
 voice = snd_voice
-name = "РаНдОм"
+name = "Долбоёб"
 text = [
 "Сука ты чё тут дышишь?",
 "Хочу и дышу",
@@ -8,3 +8,4 @@ text = [
 "Сам пиздуй"
 ]
 speakers = [id, obj_player, id, obj_player]
+scripts =-1

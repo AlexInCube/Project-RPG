@@ -97,7 +97,7 @@ switch(face) {
 			{
 				with(inst)
 				{
-					var tbox = scr_create_textbox(text, speakers)
+					var tbox = scr_create_textbox(text, speakers, next_line, scripts)
 				}
 				active_textbox = tbox
 			}

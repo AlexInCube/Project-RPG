@@ -16,7 +16,7 @@ guiwidth=display_get_gui_width()
 guiheight=display_get_gui_height()
 
 port_x = (guiwidth - box_width - port_width) * 0.5
-port_y = guiheight*0.98-port_height
+port_y = guiheight*0.90-port_height
 box_x = port_x + port_width
 box_y = port_y
 namebox_x = port_x
@@ -34,7 +34,7 @@ name_text_y = namebox_y + (namebox_height/2)
 text_max_width = box_width - (2*x_buffer)
 text_height = string_height("M")
 
-
+choice=0
 
 
 counter=0
