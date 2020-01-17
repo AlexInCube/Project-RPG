@@ -3,6 +3,9 @@ left = keyboard_check(ord("A"))
 right = keyboard_check(ord("D"))
 down = keyboard_check(ord("S"))
 
+dialogue_scroll_up=keyboard_check_pressed(ord("W"))
+dialogue_scroll_down=keyboard_check_pressed(ord("S"))
+
 inventory_hotkey1 = keyboard_check_pressed(ord("1"))
 inventory_hotkey2 = keyboard_check_pressed(ord("2"))
 inventory_hotkey3 = keyboard_check_pressed(ord("3"))

@@ -23,6 +23,6 @@ if obj_controller.interact_key
 
 if(choice_dialogue)
 {
-	choice += obj_controller.down - obj_controller.up
+	choice += obj_controller.dialogue_scroll_down - obj_controller.dialogue_scroll_up
 	choice = clamp(choice,0,text_array_len-1)
 }
