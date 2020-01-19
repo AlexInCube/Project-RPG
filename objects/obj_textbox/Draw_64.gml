@@ -41,7 +41,7 @@ else
 	repeat(text_array_len)
 	{
 		if choice == i {c = c_gray;draw_text_color(box_x+text_max_width,text_y+y_add,"<",c,c,c,c,1)} else {c = drawtxtcol}
-		draw_text_ext_color(text_x, text_y+y_add, text_array[i], text_height, text_max_width, c,c,c,c, 1)
+		draw_text_ext_color(text_x, text_y+y_add, scr_find_keyword(text_array[i]), text_height, text_max_width, c,c,c,c, 1)
 		y_add += string_height_ext(text_array[i], text_height, text_max_width)
 		i++
 	}

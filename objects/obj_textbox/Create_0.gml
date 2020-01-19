@@ -18,9 +18,9 @@ guiheight=display_get_gui_height()
 port_x = (guiwidth - box_width - port_width) * 0.5
 port_y = guiheight*0.90-port_height
 box_x = port_x + port_width
-box_y = port_y
+box_y = port_y - namebox_height
 namebox_x = port_x
-namebox_y = box_y - namebox_height
+namebox_y = port_y - namebox_height
 
 font=fnt_small
 draw_set_font(font)

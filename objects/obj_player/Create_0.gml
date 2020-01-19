@@ -19,6 +19,6 @@ state=scr_move_state;
 
 portrait = spr_portrait
 voice = snd_voice2
-name = "Игрок"
+name = "player_name"
 active_textbox = noone
 

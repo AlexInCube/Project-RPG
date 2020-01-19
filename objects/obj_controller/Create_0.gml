@@ -6,3 +6,6 @@ previous_room=room
 fpsbuffer=0
 cheat=""
 followcamera=obj_player
+
+
+global.surf=surface_create(1280,720)
