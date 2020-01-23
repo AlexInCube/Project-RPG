@@ -24,7 +24,7 @@ typeneed = argument[5]
 
 if argument_count>=5
 {
-	var imageindex = argument[4]
+imageindex = argument[4]
 }
 
 	if inventory[# slot_id, 0] != item.none
@@ -51,7 +51,7 @@ if argument_count>=5
 		draw_set_color(c_black)
 		if inventory[# slot_id, 1]>1
 		{
-		draw_text(xx+2,yy+15,inventory[# slot_id, 1])//draw item amount
+		draw_text(xx+2,yy+12,inventory[# slot_id, 1])//draw item amount
 		
 		}
 	}

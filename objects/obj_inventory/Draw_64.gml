@@ -12,11 +12,11 @@ for(i=0;i<10;i++)
 	draw_sprite(global.item_index[# global.inventory[# 20+i,0], item_stat.sprite_index],0,guiwidth/2-149+(33*i),guiheight-16)
 		if global.inventory[# 20+i,1]>0
 		{
-		draw_text(guiwidth/2-162+(33*i),guiheight-16,global.inventory[# 20+i,1])
+		draw_text(guiwidth/2-162+(33*i),guiheight-20,global.inventory[# 20+i,1])
 		}
 		if global.item_index[# global.inventory[# 20+i,0], item_stat.type]=item_type.spell
 		{
-			draw_text_colour(guiwidth/2-162+(33*i),guiheight-16,global.item_index[# global.inventory[# 20+i,0], item_stat.manacost],c_blue,c_blue,c_blue,c_blue,1)
+			draw_text_colour(guiwidth/2-162+(33*i),guiheight-20,global.item_index[# global.inventory[# 20+i,0], item_stat.manacost],c_blue,c_blue,c_blue,c_blue,1)
 		}
 	}
 	

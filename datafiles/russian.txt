@@ -59,6 +59,8 @@
 			"Restart":"Press R to restart",
 			"player_name":"Игрок",
 			"npc_anonymous_name":"Аноним",
+			"npc_penguin_name":"Никита",
+			"npc_penguin_dialog1":"Евген ты 0 iq",
 			"npc_anonymous_text_1":"Нечего сказать",
 			"npc_adekvat_name":"Адекват",
 			"npc_adekvat_dialog1":"Эй парень, не хочешь проучить долбоёба?",

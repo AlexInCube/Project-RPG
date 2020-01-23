@@ -49,7 +49,7 @@ if (obj_controller.xaxis == 0 and obj_controller.yaxis == 0){
 	len=0
 }else{
 	len=spd
-	scr_get_face()
+	scr_get_face(dir)
 }
 
 
