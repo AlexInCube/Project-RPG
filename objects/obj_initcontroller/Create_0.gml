@@ -1,12 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 ini_open("game_settings.ini")
+global.mastervolume=ini_read_real("settings", "mastervolume", 0.5)
 global.musicvolume=ini_read_real("settings", "musicvolume", 0.5)
 global.soundvolume=ini_read_real("settings", "soundvolume", 0.5)
 global.fullscreen=ini_read_real("settings", "fullscreen", 0)
 global.width=ini_read_real("settings", "width", 1280)
 global.height=ini_read_real("settings", "height", 720)
-global.language=ini_read_string("settings", "language", "english")
+global.guisize=ini_read_real("settings", "guisize", 1)
+global.language=ini_read_string("settings", "language", "russian")
 
 ini_close()
 
