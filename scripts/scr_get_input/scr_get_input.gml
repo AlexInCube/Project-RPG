@@ -3,8 +3,8 @@ left = keyboard_check(global.key_left)
 right = keyboard_check(global.key_right)
 down = keyboard_check(global.key_down)
 
-dialogue_scroll_up=keyboard_check_pressed(global.key_up)
-dialogue_scroll_down=keyboard_check_pressed(global.key_down)
+dialogue_scroll_up=keyboard_check_pressed(ord("W"))
+dialogue_scroll_down=keyboard_check_pressed(ord("S"))
 
 inventory_hotkey1 = keyboard_check_pressed(global.inventory_hotkey1)
 inventory_hotkey2 = keyboard_check_pressed(global.inventory_hotkey2)
