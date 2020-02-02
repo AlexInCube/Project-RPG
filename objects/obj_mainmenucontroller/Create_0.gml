@@ -1,9 +1,3 @@
-
-
-camera_set_view_size(view_camera[0],global.width,global.height);
-surface_resize(application_surface, global.width, global.height);
-display_set_gui_size(global.width, global.height)
-
 enum menu_page{
 	main,
 	settings,

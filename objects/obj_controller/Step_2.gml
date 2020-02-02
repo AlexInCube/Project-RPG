@@ -1,5 +1,3 @@
-/// @description Insert description here
-// You can write your code in this 
 #macro view view_camera[0]
 if instance_exists(followcamera)
 {

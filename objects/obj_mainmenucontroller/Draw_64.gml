@@ -1,3 +1,5 @@
+scr_draw_black_screen()
+
 var gwidth = display_get_gui_width(), gheight = display_get_gui_height()
 
 var ds_grid = menu_pages[page], ds_height = ds_grid_height(ds_grid)
