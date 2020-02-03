@@ -25,18 +25,18 @@ ds_menu_main = scr_create_menu_page(
 )
 
 ds_menu_settings = scr_create_menu_page(
-	[scr_find_keyword("audio_settings"),menu_element_type.page_transfer, menu_page.audio],
+	[scr_find_keyword("audio_settings"),		menu_element_type.page_transfer, menu_page.audio],
 	[scr_find_keyword("graphics_settings"),		menu_element_type.page_transfer, menu_page.graphics],
 	[scr_find_keyword("controls_settings"),		menu_element_type.page_transfer, menu_page.controls],
-	[scr_find_keyword("interface_settings"),		menu_element_type.page_transfer, menu_page.interface],
-	[scr_find_keyword("back"),			menu_element_type.page_transfer, menu_page.main]
+	[scr_find_keyword("interface_settings"),	menu_element_type.page_transfer, menu_page.interface],
+	[scr_find_keyword("back"),					menu_element_type.page_transfer, menu_page.main]
 )
 
 ds_menu_audio = scr_create_menu_page(
 	[scr_find_keyword("master_volume"),		menu_element_type.slider, scr_change_volume,global.mastervolume,[0,1]],
-	[scr_find_keyword("music_volume"),			menu_element_type.slider, scr_change_volume,global.musicvolume,[0,1]],
-	[scr_find_keyword("sounds_volume"),		menu_element_type.slider, scr_change_volume,global.soundvolume,[0,1]],
-	[scr_find_keyword("back"),			menu_element_type.page_transfer, menu_page.settings]
+	[scr_find_keyword("music_volume"),		menu_element_type.slider, scr_change_volume,global.musicvolume,[0,1]],
+	[scr_find_keyword("sound_volume"),		menu_element_type.slider, scr_change_volume,global.soundvolume,[0,1]],
+	[scr_find_keyword("back"),				menu_element_type.page_transfer, menu_page.settings]
 )
 
 ds_menu_graphics = scr_create_menu_page(
@@ -46,8 +46,8 @@ ds_menu_graphics = scr_create_menu_page(
 )
 
 ds_menu_controls = scr_create_menu_page(
-	["up",				menu_element_type.input, "key_up", global.key_up],
-	["down",			menu_element_type.input, "key_down", global.key_down],
+	["up",								menu_element_type.input, "key_up", global.key_up],
+	["down",							menu_element_type.input, "key_down", global.key_down],
 	[scr_find_keyword("back"),			menu_element_type.page_transfer, menu_page.settings]
 )
 

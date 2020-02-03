@@ -35,7 +35,7 @@ if(ideal_width & 1)
 if(ideal_height & 1)
   ideal_height++;
 
-show_debug_message(string(ideal_width)+"x"+string(ideal_height))
+
 display_set_gui_size(ideal_width,ideal_height);
 
 
