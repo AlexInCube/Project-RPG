@@ -24,3 +24,7 @@ scr_add_components(item.slime,"slimeball",spr_ItemIcon_Slime,32)
 scr_add_components(item.leather,"leather",spr_ItemIcon_Leather,16)
 scr_add_components(item.iron_ore,"iron_ore",spr_ItemIcon_OreIron,8)
 scr_add_components(item.iron_ingot,"iron_ingot",spr_ItemIcon_Iron,8)
+
+
+
+show_debug_message("Registered "+string(ds_grid_height(global.item_index))+" items")

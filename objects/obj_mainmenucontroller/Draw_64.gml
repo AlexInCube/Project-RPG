@@ -3,7 +3,6 @@ scr_draw_black_screen()
 var gwidth = display_get_gui_width(), gheight = display_get_gui_height()
 
 
-
 var ds_grid = menu_pages[page], ds_height = ds_grid_height(ds_grid)
 var y_buffer = 20, x_buffer = 10
 var start_y = (gheight/2) - ((((ds_height-1)/2) * y_buffer)), start_x = gwidth/2
@@ -11,7 +10,9 @@ var c = c_black
 
 var ltx = start_x - x_buffer, lty
 
-draw_sprite(spr_logo,0,start_x,100)
+if room!=room_pause{draw_sprite(spr_logo,0,start_x,100)}
+
+
 
 //Draw left side
 var yy = 0; repeat(ds_height){
@@ -32,14 +33,24 @@ var yy = 0; repeat(ds_height){
 	var string_option = ds_grid[# 0,yy]
 	var string_option_width = string_width(ds_grid[# 0,yy])
 	//draw_set_halign(fa_center)
-	draw_text_color(ltx-string_option_width,lty,string_option,c,c,c,c,1)
+	
+	if ds_grid == ds_menu_main or ds_grid == ds_menu_settings
+	{
+		draw_set_halign(fa_center)
+		draw_text_color(ltx,lty,string_option,c,c,c,c,1)
+	}else{
+		draw_set_halign(fa_left) 
+		draw_text_color(ltx-string_option_width,lty,string_option,c,c,c,c,1)
+		draw_line(start_x,start_y,start_x,lty+y_buffer)
+	}
+	
 	//draw_set_halign(fa_left)
 	
 	//draw_rectangle(ltx-190,lty-3,ltx+10,lty+23,true)
 	yy++	
 }
 //Draw divide line
-draw_line(start_x,start_y,start_x,lty+y_buffer)
+
 
 var rtx = start_x + x_buffer, rty
 //Draw right side

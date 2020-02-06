@@ -40,7 +40,16 @@ global.pause_key =			ini_read_real("keys","pause_key",vk_escape)
 global.developer_key =		ini_read_real("keys","developer_key",vk_f5)
 ini_close()
 
+
 scr_localizationload()
+
+//Create a ds grid item.total wide, and item_stat.total tall
+global.item_index = ds_grid_create(item.total, item_stat.total);
+ds_grid_clear(global.item_index, 0); //Set every position to 0
+scr_registeritems()
+
+scr_initrecipes()
+
 
 
 draw_set_font(fnt_main)

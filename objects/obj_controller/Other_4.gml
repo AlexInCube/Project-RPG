@@ -7,9 +7,9 @@ obj_player.persistent=true
 view_enabled=true;
 view_visible[0]=true;
 
-var display_height=540/2,display_width=960/2
+var display_height=270,display_width=480
 var aspect_ratio=display_width/display_height
-var ideal_height=540/2
+var ideal_height=270
 
 var ideal_width=round(ideal_height*aspect_ratio);
 //ideal_height=round(ideal_width / aspect_ratio);

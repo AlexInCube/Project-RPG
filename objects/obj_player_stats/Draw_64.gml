@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+if room=room_pause{exit}
+
 draw_set_font(fnt_main)
 draw_set_color(c_black)
 

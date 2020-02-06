@@ -6,7 +6,7 @@ var ideal_height=719;
 
 switch(argument0){
 	case 0: global.guisize=0;ideal_height=global.height break;
-	case 1: global.guisize=1;display_width=global.width*2;display_height=global.height*2 break;
+	case 1: global.guisize=1;display_height=720;display_width=1280 break;
 	case 2: global.guisize=2;display_width=global.width/2;display_height=global.height/2 break;
 }
 

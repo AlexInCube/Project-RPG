@@ -1,8 +1,6 @@
 /// @description Load locale data
 
-global.scr_find_keyworduages		= [];
-global.scr_find_keyword_idx		= 0;
-global.yd_locale_map	= ds_map_create();
+global.localization_map	= ds_map_create();
 
 	// open the locale file for reading
 	var locale_file	= file_text_open_read( global.language+".txt" );
@@ -23,14 +21,14 @@ global.yd_locale_map	= ds_map_create();
 	// convert the JSON to a usable ds_map
 	var locale_map = json_decode(json_str);
 	
-	ds_map_copy(global.yd_locale_map,locale_map);
+	ds_map_copy(global.localization_map,locale_map);
 	/*
-	var k = ds_map_find_first(global.yd_locale_map),
+	var k = ds_map_find_first(global.localization_map),
     maptext = ""
 	while (!is_undefined(k))
 	{
-	maptext += k + ": " + global.yd_locale_map[? k] + "\n";
-	 k = ds_map_find_next(global.yd_locale_map, k);
+	maptext += k + ": " + global.localization_map[? k] + "\n";
+	 k = ds_map_find_next(global.localization_map, k);
 	 show_debug_message(maptext)
 	}
 	*/

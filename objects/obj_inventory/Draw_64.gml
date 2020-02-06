@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor// comment here
+if room=room_pause{exit}
 var guiwidth = display_get_gui_width()
 var guiheight = display_get_gui_height()
 draw_set_font(fnt_small)

@@ -1,28 +1,9 @@
-enum menu_page{
-	main,
-	settings,
-	audio,
-	graphics,
-	controls,
-	controls_inventory,
-	interface,
-	height
-}
-
-enum menu_element_type{
-	script_runner,
-	page_transfer,
-	slider,
-	shift,
-	toggle,
-	input
-}
-
 ds_menu_main = scr_create_menu_page(
-	[scr_find_keyword("start_game"),	menu_element_type.script_runner, scr_game_start],
-	[scr_find_keyword("continue_game"),	menu_element_type.script_runner, scr_continue_game],
-	[scr_find_keyword("settings"),		menu_element_type.page_transfer, menu_page.settings],
-	[scr_find_keyword("exit"),			menu_element_type.script_runner, scr_game_exit]
+	[scr_find_keyword("continue_game"),			menu_element_type.script_runner, scr_resume_game],
+	[scr_find_keyword("save_game"),				menu_element_type.script_runner, scr_savegame],
+	[scr_find_keyword("load_game"),				menu_element_type.script_runner, scr_loadgame],
+	[scr_find_keyword("settings"),				menu_element_type.page_transfer, menu_page.settings],
+	[scr_find_keyword("back_to_mainmenu"),		menu_element_type.script_runner, scr_back_to_mainmenu]
 )
 
 ds_menu_settings = scr_create_menu_page(
@@ -77,7 +58,6 @@ ds_menu_controls_inventory = scr_create_menu_page(
 
 ds_menu_interface = scr_create_menu_page(
 	[scr_find_keyword("gui_size"),		menu_element_type.shift, scr_change_gui_size,global.guisize,[scr_find_keyword("gui_small"),scr_find_keyword("gui_standard"),scr_find_keyword("gui_large")]],
-	[scr_find_keyword("language"),		menu_element_type.shift, scr_change_language,0,["russian","english"]],
 	[scr_find_keyword("back"),			menu_element_type.page_transfer, menu_page.settings]
 )
 
