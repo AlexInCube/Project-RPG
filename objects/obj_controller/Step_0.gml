@@ -33,3 +33,13 @@ if pause_key {
 		room_persistent=false
 	}
 }
+
+if exittomenu=true
+{
+	room_persistent=false
+	persistent=false
+	obj_player_stats.persistent=false
+	obj_player.persistent=false
+	obj_inventory.persistent=false
+	room_goto(room_main)
+}
