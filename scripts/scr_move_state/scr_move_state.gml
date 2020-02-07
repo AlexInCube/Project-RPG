@@ -110,5 +110,15 @@ switch(face) {
 			}
 		}
 	}
-
+	
+	if obj_controller.pickup_key
+	{
+		var inst = collision_rectangle(x-findradius,y-findradius,x+findradius,y+findradius,obj_item,false,false)
+		with inst
+		{
+			scr_gain_item(whatitem,amount)
+			instance_destroy()
+		}
+		
+	}
 }

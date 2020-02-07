@@ -1,3 +1,4 @@
+room_persistent=false
 depth=1
 
 if instance_exists(obj_player){

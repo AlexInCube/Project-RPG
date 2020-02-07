@@ -1,0 +1,1 @@
+sprite=global.item_index[# whatitem, item_stat.sprite_index]

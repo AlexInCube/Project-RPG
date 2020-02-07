@@ -2,7 +2,7 @@
 // You can write your code in this editor
 if instance_exists(obj_player)
 	{
-	if point_distance(obj_player.x,obj_player.y,x,y)<20
+	if collision_rectangle(x-findradius,y-findradius,x+findradius,y+findradius,obj_player,false,false)
 	{
 		if obj_controller.interact_key
 		{

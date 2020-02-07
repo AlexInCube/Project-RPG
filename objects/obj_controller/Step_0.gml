@@ -30,7 +30,7 @@ if pause_key {
 		
 		psb=0
 		room_goto(previous_room)
-		room_persistent=false
+		
 	}
 }
 
@@ -39,7 +39,7 @@ if exittomenu=true
 	room_persistent=false
 	persistent=false
 	obj_player_stats.persistent=false
-	obj_player.persistent=false
+	if instance_exists(obj_player) obj_player.persistent=false
 	obj_inventory.persistent=false
 	room_goto(room_main)
 }
