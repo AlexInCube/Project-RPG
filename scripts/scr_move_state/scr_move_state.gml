@@ -117,6 +117,7 @@ switch(face) {
 		with inst
 		{
 			scr_gain_item(whatitem,amount)
+			scr_event_fire(event.itemPickuped)
 			instance_destroy()
 		}
 		

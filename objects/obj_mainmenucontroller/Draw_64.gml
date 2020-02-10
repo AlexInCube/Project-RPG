@@ -107,11 +107,7 @@ yy = 0; repeat(ds_height){
 		case menu_element_type.input:
 			var current_val = ds_grid[# 3,yy]
 			var string_val
-			
-			
 			string_val = chr(current_val);
-			
-			
 			c = c_white
 			if inputting and yy == menu_option[page]{c = c_yellow}
 			draw_text_color(rtx,rty,string_val,c,c,c,c,1)

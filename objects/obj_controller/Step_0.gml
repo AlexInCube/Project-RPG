@@ -17,7 +17,7 @@ if developer_key
 
 if pause_key {
 	psb = sprite_create_from_surface(application_surface,0,0,surface_get_width(application_surface),surface_get_height(application_surface),0,1,0,0);
-	show_debug_message(psb)
+
 	if room != room_pause{
 		if instance_exists(obj_player){
 			obj_player.persistent=false

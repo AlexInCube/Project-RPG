@@ -7,7 +7,8 @@
         "31866b3c-dfcc-43f3-a26a-2e4bc2223187",
         "8c5b411a-4bf7-46e4-b6ad-04b1b422d409",
         "19a73ef1-41f7-4832-a1ae-b9aadd0ac84e",
-        "06bdaae0-6be4-472e-b8f6-a06afcdc7804"
+        "06bdaae0-6be4-472e-b8f6-a06afcdc7804",
+        "aa1fc8a2-d7ce-40a6-8212-68907d5067ec"
     ],
     "filterType": "GMScript",
     "folderName": "Register Items",

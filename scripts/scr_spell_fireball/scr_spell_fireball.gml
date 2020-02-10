@@ -19,4 +19,3 @@ if obj_player_stats.mana>=manacost and obj_player.state!=scr_dash_state
 	obj_player_stats.mana -=manacost
 }
 
-show_debug_message(obj_player.dir)

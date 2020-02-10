@@ -2,7 +2,7 @@
 ///@arg guisize
 var display_height=global.height,display_width=global.width
 var ideal_width=0;
-var ideal_height=720;
+var ideal_height=719;
 
 switch(argument0){
 	case 0: global.guisize=0;ideal_height=global.height break;
