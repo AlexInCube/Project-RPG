@@ -26,9 +26,11 @@ while (cur_slot < max_slot)
 						inv[# cur_slot, 0] = item_id;
 						inv[# cur_slot, 1] += 1;
 						cur_amount += 1
+						
 					}
 					else
 					{
+						scr_event_fire([event.itemPickuped,item_id,cur_amount])
 						break
 					}
 	            }

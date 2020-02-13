@@ -4,16 +4,16 @@
 ///@arg script
 ///@arg arg1...*
 
-with(obj_eventmanager){
-	var	ev = argument[0]
+	var	ev = string(argument[0])
 	var objID = argument[1]
 	
-	if !ds_map_exists(eventMap,ev){
+	if !ds_map_exists(global.eventMap,ev){
 		var listenerList = ds_list_create()
 		
-		ds_map_add_list(eventMap,ev,listenerList)
+		ds_map_add_list(global.eventMap,ev,listenerList)
+		
 	}else{
-		var listenerList = eventMap[? ev]
+		var listenerList = global.eventMap[? ev]
 	}
 	
 	var listenerInfo
@@ -27,4 +27,4 @@ with(obj_eventmanager){
 	}
 	
 	ds_list_add(listenerList,listenerInfo)
-}
+	

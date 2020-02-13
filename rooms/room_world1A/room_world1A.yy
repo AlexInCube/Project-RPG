@@ -7,6 +7,7 @@
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
+        "98de3e16-97af-4eb8-801e-ee2ce8fb6bf2",
         "9fba6d31-c54e-492d-af7f-98e85d4eda87",
         "fbf6d07a-3f1c-4485-b270-7c1f6d945768",
         "b13fa208-973e-4582-9aef-c4f340d1af66",
@@ -66,7 +67,8 @@
         "1cb47f48-0ee3-4e25-94a5-91b8c994ad85",
         "e4390683-3b66-4bef-9196-ae9eeac5bb51",
         "4b78646d-7540-4762-9a38-c5ed4933e78f",
-        "e0ed9204-ae2c-486e-becb-8439ea5accfe"
+        "e0ed9204-ae2c-486e-becb-8439ea5accfe",
+        "186892b6-87a4-4dcd-bb61-537371cfc787"
     ],
     "IsDnD": false,
     "layers": [
@@ -168,7 +170,9 @@
             "instances": [
 {"name": "inst_59DE6006","id": "e4390683-3b66-4bef-9196-ae9eeac5bb51","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_59DE6006","objId": "79670878-0aa5-4957-a021-6a6a4722955a","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 0,"y": 0},
 {"name": "inst_4E68754C","id": "4b78646d-7540-4762-9a38-c5ed4933e78f","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_4E68754C","objId": "746b7635-86c1-4e21-ad6d-3adf66e37e7b","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 32,"y": 0},
-{"name": "inst_6F360839","id": "e0ed9204-ae2c-486e-becb-8439ea5accfe","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_6F360839","objId": "01b1737c-a624-4b06-a877-92bb28d5b955","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 64,"y": 0}
+{"name": "inst_6F360839","id": "e0ed9204-ae2c-486e-becb-8439ea5accfe","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_6F360839","objId": "01b1737c-a624-4b06-a877-92bb28d5b955","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 64,"y": 0},
+{"name": "inst_1484521F","id": "98de3e16-97af-4eb8-801e-ee2ce8fb6bf2","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_1484521F","objId": "c2f69e64-b3fe-492a-9c98-66ac6173d3d4","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 96,"y": 0},
+{"name": "inst_4695C1A8","id": "186892b6-87a4-4dcd-bb61-537371cfc787","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_4695C1A8","objId": "479df45c-66ee-4a72-86fd-25318dc51e76","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 128,"y": 0}
             ],
             "layers": [
 

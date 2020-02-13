@@ -1,15 +1,16 @@
 ///@description event_fire
 ///@arg event
 
-with(obj_eventmanager){
-	var ev = argument[0]
-	
-	if(ds_map_exists(eventMap,ev)){
-		var listenerList = eventMap[? ev]
+
+	var ev = string(argument[0])
+	show_debug_message("Event fired "+string(ev))
+	if(ds_map_exists(global.eventMap,ev)){
+		var listenerList = global.eventMap[? ev]
 		
 		var len = ds_list_size(listenerList)
 		
 		var listenerInfo, listener, script, args
+		
 		var i = 0; repeat(len){
 			listenerInfo = listenerList[| i]
 			listener = listenerInfo[0]
@@ -38,5 +39,8 @@ with(obj_eventmanager){
 			
 			i++
 		}
+		
 	}
-}
+
+
+
