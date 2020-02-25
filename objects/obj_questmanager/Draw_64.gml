@@ -1,14 +1,13 @@
-var str = ""
 
-var i=0; repeat(ds_quests_number){
-	var stage = ds_quests[# 1, i]
-	if (stage != -1){
-		var array = ds_quests[# 2,i]
-		str += "\n" + string_upper(ds_quests[# 0,i]) + ": " + array[stage]
+var ds_height = ds_grid_height(ds_quests)
+
+var i=0;repeat(ds_height){
+	var shortdarr=ds_quests[# 3,i]
+	if ds_quests[# 0,i]!=-1{
+		draw_text(5,5+(16*i),string(ds_quests[# 1,i])+":"
+		+string(ds_quests[# 0,i])+"/"
+		+string(array_length_1d(ds_quests[# 5,i]))+" "
+		+string(shortdarr[ds_quests[# 0,i]]))
 	}
-	
-
 	i++
 }
-
-draw_text(0,0,str)

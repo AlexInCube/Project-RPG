@@ -6,7 +6,7 @@ draw_set_font(fnt_main)
 draw_set_color(c_black)
 
 
-draw_text(32,96,"Level: "+string(level))
+//draw_text(32,96,"Level: "+string(level))
 
 var guiwidth = display_get_gui_width()
 var guiheight = display_get_gui_height()

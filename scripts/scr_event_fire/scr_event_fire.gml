@@ -3,7 +3,7 @@
 
 
 	var ev = string(argument[0])
-	show_debug_message("Event fired "+string(ev))
+	//show_debug_message("Event fired "+string(ev))
 	if(ds_map_exists(global.eventMap,ev)){
 		var listenerList = global.eventMap[? ev]
 		
