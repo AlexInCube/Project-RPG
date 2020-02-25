@@ -3,6 +3,7 @@ enum event{
 	enemyKilled,
 	itemPickuped,
 	itemDropped,
-	playerInTrigger,
+	trigger,
+	talk,
 	none,
 }

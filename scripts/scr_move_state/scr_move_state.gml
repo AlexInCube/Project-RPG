@@ -7,7 +7,7 @@ if global.armor_equipped[# 6,0]!=item.none
 		script_execute(global.item_index[# global.armor_equipped[# 6,0],item_stat.action_script])
 	}
 }
-
+#region Inventory Key Input
 if obj_controller.inventory_hotkey1
 {
 	scr_slot_script_execute(global.inventory,20)
@@ -40,7 +40,7 @@ if obj_controller.inventory_hotkey1
 	scr_slot_script_execute(global.inventory,29)
 }
 
-
+#endregion
 if obj_inventory.inventorylock=false{
 //get direction
 dir = point_direction(0,0,obj_controller.xaxis,obj_controller.yaxis)
@@ -100,6 +100,7 @@ switch(face) {
 					var tbox = scr_create_textbox(text, speakers, next_line, scripts)
 				}
 				active_textbox = tbox
+				scr_event_fire([event.talk,inst.object_index])
 			}
 		}
 		else

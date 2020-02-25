@@ -6,8 +6,9 @@ enum quest{
 enum questtype {
 	kill,
 	deliver,
-	gotopoint,
+	trigger,
 	escort,
+	craft,
 	talk
 }
 
@@ -32,7 +33,7 @@ scr_add_quest(
 	],
 	[//Stage requirements
 		[questtype.kill,obj_enemy_slime,3],
-		[questtype.gotopoint,room_world1A,127,212],
+		[questtype.trigger,"playernearpenguin"],
 		[questtype.talk,obj_penguin_npc],
 		[questtype.deliver,item.slime],
 	]
@@ -54,7 +55,7 @@ scr_add_quest(
 		"Ты не тормози, закончи это, убей КИРЮ.",
 	],
 	[//Stage requirements
-		[questtype.gotopoint,room_world1A,127,212],
+		[questtype.trigger,room_world1A,127,212],
 		[questtype.kill,obj_enemy_slime,3],
 	]
 ]
