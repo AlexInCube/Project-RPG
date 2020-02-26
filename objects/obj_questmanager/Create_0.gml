@@ -12,6 +12,12 @@ enum questtype {
 	talk
 }
 
+notificationquestname=""
+notificationqueststate=-1
+notificationtime=180
+txtalpha=0
+txtcolor=c_orange
+
 ds_quests = ds_grid_create(0,0)
 #region slimetrouble
 scr_add_quest(

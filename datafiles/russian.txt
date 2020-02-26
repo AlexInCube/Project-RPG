@@ -68,8 +68,9 @@
 			"save_game":"Сохранить игру",
 			"load_game":"Загрузить игру",
 			"back_to_mainmenu":"Вернуться в главное меню",
-			
-			
+			"notificationqueststate_0":"ЗАДАНИЕ НАЧАТО",
+			"notificationqueststate_1":"ЗАДАНИЕ ОБНОВЛЕНО",
+			"notificationqueststate_2":"ЗАДАНИЕ ЗАВЕРШЕНО",
 			"Time":"Time",
 			"Developer":"Разработано AlexInCube",
 			"Hint":"Hint",

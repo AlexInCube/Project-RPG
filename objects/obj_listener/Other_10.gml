@@ -30,5 +30,3 @@ switch(quest_type)
 	
 	case questtype.escort: break
 }
-
-show_debug_message(quest_type)

@@ -1,3 +1,4 @@
+draw_set_font(fnt_small)
 //Draw Box
 draw_sprite(box, 0, box_x,box_y)
 
@@ -18,6 +19,8 @@ var c = drawtxtcol
 draw_set_halign(fa_center);draw_set_valign(fa_middle)
 draw_text_color(name_text_x, name_text_y, name, c,c,c,c, 1)
 draw_set_halign(fa_left);draw_set_valign(fa_top)
+
+
 
 if(!choice_dialogue)
 {
