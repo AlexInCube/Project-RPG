@@ -40,7 +40,7 @@ scr_add_quest(
 	[//Stage requirements
 		[questtype.kill,obj_enemy_slime,3],
 		[questtype.trigger,"playernearpenguin"],
-		[questtype.talk,obj_penguin_npc],
+		[questtype.talk,obj_nikitanpc],
 		[questtype.deliver,item.slime],
 	]
 ]

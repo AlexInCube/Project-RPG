@@ -1,48 +1,85 @@
-box = spr_dialogue
-frame = spr_portraitbg
-portrait = spr_portrait
-namebox = spr_namebox
+/// @description
 
-obj_inventory.inventorylock=true
+if(instance_number(obj_textevent)>1 or instance_number(obj_textbox)>1){ instance_destroy(); exit; }
 
-box_width = sprite_get_width(box)
-box_height = sprite_get_height(box)
-port_width = sprite_get_width(portrait)
-port_height = sprite_get_height(portrait)
-namebox_width = sprite_get_width(namebox)
-namebox_height = sprite_get_height(namebox)
+//-----------Customise (FOR USER)
 
-guiwidth=display_get_gui_width()
-guiheight=display_get_gui_height()
+portrait_frame		= spr_portraitframe;
+dialogue_box		= spr_dialoguebox;
+name_box			= spr_namebox;
+finished_effect		= spr_dialoguefinished;
 
-port_x = (guiwidth - box_width - port_width) * 0.5
-port_y = guiheight*0.90-port_height
-box_x = port_x + port_width
-box_y = port_y - namebox_height
-namebox_x = port_x
-namebox_y = port_y - namebox_height
+choice_snd_effect	= snd_moveselect;
+select_snd_effect	= snd_select;
 
-font=fnt_small
-draw_set_font(font)
+default_col			= c_black;
+choice_col			= c_orange;
+select_col			= c_red;
+name_col			= c_black;
 
-x_buffer = 12
-y_buffer = 8
-text_x = box_x + x_buffer
-text_y = box_y + y_buffer
-name_text_x = namebox_x + (namebox_width/2)
-name_text_y = namebox_y + (namebox_height/2)
-text_max_width = box_width - (2*x_buffer)
-text_height = string_height("M")
+name_font			= fnt_small;
 
-choice=0
+priority_snd_effect = 5;
+open_mouth_frame	= 1;	//You only need to change this if you are using animated sprites
+							//Set this to equal the frame where the mouth is OPEN for talking sprites
 
+//-----------Setup (LEAVE THIS STUFF)
+#region
+emotes			= -1;
+speaker			= noone;
 
-counter=0
+boxHeight		= sprite_get_height(dialogue_box)
+boxWidth		= sprite_get_width(dialogue_box)
+gui_width		= display_get_gui_width();
+gui_height		= display_get_gui_height();
+gb_diff			= gui_width - boxWidth;
+portraitWidth	= sprite_get_width(portrait_frame)
+finishede_num	= sprite_get_number(finished_effect);
+finishede_spd	= (sprite_get_speed(spr_dialoguefinished)/room_speed);
 
-page=0
-text[0] = ""
-name = ""
-voice = snd_voice
+pos_x			= (gb_diff/2)+(portraitWidth/2);
+pos_y			= gui_height-boxHeight
 
-drawtxtcol=c_black
+name_box_x		= pos_x - portraitWidth
+name_box_y		= pos_y - sprite_get_height(name_box)
+name_box_text_x = name_box_x + ((sprite_get_width(name_box))/2);
+name_box_text_y = name_box_y
 
+finishede_x		= pos_x + boxWidth - 15
+finishede_y		= pos_y + boxHeight - 35
+
+letter			= 0;
+charCount		= 0;
+charCount_f		= 0;
+text_speed		= 0;
+text_speed_c	= 0;
+audio_c			= 0;
+page			= 0;
+str_len			= -1;
+pause			= false;
+chosen			= false;
+choice			= 0;
+
+creator			= noone;
+type			= 0;
+text			= -1;
+text_NE			= -1;
+breakpoints		= -1;
+nextline		= 0;
+text_col		= c_black;
+emotion			= 0;
+
+portrait		= 1;
+voice			= 1;
+font			= 1;
+
+charSize		= 10;
+stringHeight	= 1;
+
+//---------------------Effect variables
+
+t			= 0;
+amplitude	= 4;
+freq		= 2;
+
+#endregion

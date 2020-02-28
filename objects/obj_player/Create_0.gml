@@ -15,7 +15,14 @@ face=RIGHT
 
 state=scr_move_state;
 
-portrait = spr_portrait
-voice = snd_voice2
-name = "player_name"
-active_textbox = noone
+spd = 2;
+
+//--------Dialogue Stuff
+reset_dialogue_defaults();
+myPortrait			= spr_portrait;
+myVoice				= snd_voice2;
+myFont				= fnt_small;
+myName				= scr_find_keyword("player_name")
+
+
+create_dialogue("Просто маленький монолог Просто маленький монолог Просто маленький монолог Просто маленький монолог", id);

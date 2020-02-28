@@ -4,10 +4,12 @@
     "mvc": "1.1",
     "name": "d502523a-39b0-4a66-b2fd-df702240cccd",
     "children": [
-        "7d00829f-e702-41f8-9f6d-b813ccfcf62c",
-        "663f233a-5626-4bfe-b857-006c6ed319fa",
-        "574384b6-3aef-43d7-ab3e-d6955036e0af",
-        "7197ba5b-ef01-419b-a6ae-faf25a1d7b37"
+        "bacfa89f-a1ce-4276-93c3-7cba4cb8ddb1",
+        "818ff545-dc48-4b9e-b329-5566afc8b119",
+        "5c9f455f-c855-4074-87bb-bfdc1909557c",
+        "68ce6674-7ab7-4954-9b34-b7873f44c5f9",
+        "6db430e3-07e8-4f34-bf3b-6806296d85db",
+        "666260aa-3a50-472f-b259-c1dfc214668c"
     ],
     "filterType": "GMObject",
     "folderName": "NPCs",

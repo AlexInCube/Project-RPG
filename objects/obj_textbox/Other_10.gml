@@ -1,19 +1,7 @@
-name = scr_find_keyword(names[page])
-voice = voices[page]
-portrait = portraits[page]
-
-if (!is_array(text[page]))
-{
-	var stringtowrap = scr_find_keyword(text[page])
-	text_wrapped = scr_string_wrap(stringtowrap,text_max_width)
-	str_len = string_length(text_wrapped)
-	choice_dialogue = false
-} 
-else 
-{
-	text_array = text[page]
-	text_array_len = array_length_1d(text_array)
-	choice_dialogue = true
+var cv = executeScript[page];
+if(is_array(cv)){
+	var len = array_length_1d(cv)-1;
+	var cva = array_create(len, 0);
+	array_copy(cva, 0, cv, 1, len);
+	scr_script_execute_alt(cv[0], cva);
 }
-
-counter=0
