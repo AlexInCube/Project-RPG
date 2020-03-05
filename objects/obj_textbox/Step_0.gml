@@ -13,13 +13,13 @@ if(type[page] == 0){
 		else if(page+1 < array_length_1d(text)){
 			event_perform(ev_other, ev_user0);
 			switch(nextline[page]){
-				case -1: instance_destroy();	exit;
+				case -1: instance_destroy();obj_inventory.inventorylock=false;	exit;
 				case  0: page += 1;				break;
 				default: page = nextline[page];
 			}
 			event_perform(ev_alarm, 0);
 			
-		} else { event_perform(ev_other, ev_user0); instance_destroy(); }
+		} else { event_perform(ev_other, ev_user0); instance_destroy();obj_inventory.inventorylock=false; }
 	}
 } 
 #endregion

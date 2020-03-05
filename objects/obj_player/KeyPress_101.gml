@@ -1,0 +1,1 @@
+scr_deliver_items(item.slime,1)

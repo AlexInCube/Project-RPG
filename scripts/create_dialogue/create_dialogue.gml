@@ -37,13 +37,13 @@ var _type		= array_create(text_len, 0);
 var _nextline	= array_create(text_len, 0);
 var _script		= array_create(text_len, 0);
 var _emotion	= array_create(text_len, 0);
-var _emotes		= array_create(text_len, -1);
 var _creator	= array_create(text_len, id);
+
+
 
 var a;
 //Fill variables depending on argument count
 switch(arg_count-1){
-	case 9:	a = arg[9]; if(array_length_1d(a) != text_len){ a[text_len] = 0; } for(i = 0; i < text_len; i++){ if(a[i] != 0) _emotes[i] = a[i]; }
 	case 8: a = arg[8]; if(array_length_1d(a) != text_len){ a[text_len] = 0; } for(i = 0; i < text_len; i++){ if(a[i] != 0) _emotion[i] = a[i]; }
 	case 7: a = arg[7];	if(array_length_1d(a) != text_len){ a[text_len] = 0; } for(i = 0; i < text_len; i++){ if(a[i] != 0) _textcol[i] = a[i]; }
 	case 6: a = arg[6];	if(array_length_1d(a) != text_len){ a[text_len] =-1; } for(i = 0; i < text_len; i++){ if(a[i] !=-1) _script[i] = a[i]; }
@@ -64,7 +64,6 @@ with(_textbox){
 	executeScript = _script;
 	text_col	= _textcol;
 	emotion		= _emotion;	
-	emotes		= _emotes;
 	
 	//Speaker's Variables
 	i = 0; repeat(text_len){
@@ -73,29 +72,6 @@ with(_textbox){
 		font[i]				= _speaker[i].myFont;
 		name[i]				= _speaker[i].myName;
 		speaker[i]			= _speaker[i];
-		
-		if(variable_instance_exists(_speaker[i], "myPortraitTalk"))		{ portrait_talk[i] = _speaker[i].myPortraitTalk; }
-		else { portrait_talk[i] = -1; }
-		if(variable_instance_exists(_speaker[i], "myPortraitTalk_x"))	{ portrait_talk_x[i] = _speaker[i].myPortraitTalk_x; }
-		else { portrait_talk_x[i] = -1; }
-		if(variable_instance_exists(_speaker[i], "myPortraitTalk_y"))	{ portrait_talk_y[i] = _speaker[i].myPortraitTalk_y; }
-		else { portrait_talk_y[i] = -1; }
-		if(variable_instance_exists(_speaker[i], "myPortraitIdle"))		{ portrait_idle[i] = _speaker[i].myPortraitIdle; }
-		else { portrait_idle[i] = -1; }
-		if(variable_instance_exists(_speaker[i], "myPortraitIdle_x"))	{ portrait_idle_x[i] = _speaker[i].myPortraitIdle_x; }
-		else { portrait_idle_x[i] = -1; }
-		if(variable_instance_exists(_speaker[i], "myPortraitIdle_y"))	{ portrait_idle_y[i] = _speaker[i].myPortraitIdle_y; }
-		else { portrait_idle_y[i] = -1; }
-		
-		
-		if(portrait_talk[i] != -1){ 
-			portrait_talk_n[i] = sprite_get_number(portrait_talk[i]);
-			portrait_talk_s[i] = sprite_get_speed(portrait_talk[i])/room_speed;
-		}
-		if(portrait_idle[i] != -1){ 
-			portrait_idle_n[i] = sprite_get_number(portrait_idle[i]);
-			portrait_idle_s[i] = sprite_get_speed(portrait_idle[i])/room_speed;
-		}
 		i++;
 	}
 	

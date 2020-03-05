@@ -11,7 +11,8 @@
         "79c759cc-7cc9-44e2-98dc-d605fbfe9dee",
         "62acbb14-39ec-40e3-894e-fe28f2bdc6b7",
         "435720af-f241-4790-b977-61284d623c2a",
-        "ebbcbfe1-8b2b-4d97-92fa-bb6d924afbf7"
+        "ebbcbfe1-8b2b-4d97-92fa-bb6d924afbf7",
+        "c21bc861-f9b2-4d42-b876-72fa1ace799a"
     ],
     "filterType": "GMSprite",
     "folderName": "Components",

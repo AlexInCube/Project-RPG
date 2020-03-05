@@ -24,5 +24,7 @@ enum item
 	slime,
 	scroll_dash,
 	scroll_fireball,
+	coin,
+	star_salve,
 	total
 	}

@@ -1,4 +1,4 @@
-
+if obj_inventory.guistate="isClosed" and !instance_exists(obj_textbox){
 
 if global.armor_equipped[# 6,0]!=item.none
 {
@@ -41,7 +41,7 @@ if obj_controller.inventory_hotkey1
 }
 
 #endregion
-if obj_inventory.inventorylock=false and !instance_exists(obj_textbox){
+
 //get direction
 dir = point_direction(0,0,obj_controller.xaxis,obj_controller.yaxis)
 

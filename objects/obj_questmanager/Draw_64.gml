@@ -1,14 +1,15 @@
-var ds_height = ds_grid_height(ds_quests)
+if !instance_exists(obj_textbox)
+{
+	var ds_height = ds_grid_height(ds_quests)
 
-var i=0;repeat(ds_height){
-	var shortdarr=ds_quests[# 3,i]
-	if ds_quests[# 0,i]!=-1{
-		draw_text(5,5+(16*i),string(ds_quests[# 1,i])+":"
-		+string(ds_quests[# 0,i])+"/"
-		+string(array_length_1d(ds_quests[# 5,i]))+" "
-		+string(shortdarr[ds_quests[# 0,i]]))
+	var i=0;repeat(ds_height){
+		if scr_quest_get_current_stage(i)> -1{
+			draw_text(5,5+(16*i),string(scr_quest_get_name(i))+":"
+			+string(scr_quest_get_current_stage(i))+"/"+string(scr_quest_get_task_amount(i)+1)+" "
+			+string(scr_quest_get_short_description_for_task(i)))
+		}
+		i++
 	}
-	i++
 }
 
 //Draw quest notifications about starting quest, updating and completing
@@ -16,6 +17,6 @@ if txtalpha!=0{
 	var guiwidth=display_get_gui_width(),guiheight=display_get_gui_height()
 	draw_set_font(fnt_verylarge)
 	draw_set_halign(fa_center)
-	draw_text_color(guiwidth/2,guiheight/2-200,notificationquestname,txtcolor,txtcolor,txtcolor,txtcolor,txtalpha)
-	draw_text_color(guiwidth/2,guiheight/2-180,scr_find_keyword("notificationqueststate_"+string(notificationqueststate)),txtcolor,txtcolor,txtcolor,txtcolor,txtalpha)
+	scr_draw_text_shadow(guiwidth/2,guiheight/2-200,notificationquestname,fnt_verylarge,2,c_black,txtcolor,txtalpha)
+	scr_draw_text_shadow(guiwidth/2,guiheight/2-180,scr_find_keyword("notificationqueststate_"+string(notificationqueststate)),fnt_verylarge,2,c_black,txtcolor,txtalpha)
 }

@@ -24,6 +24,8 @@ scr_add_components(item.slime,"slimeball",spr_ItemIcon_Slime,32)
 scr_add_components(item.leather,"leather",spr_ItemIcon_Leather,16)
 scr_add_components(item.iron_ore,"iron_ore",spr_ItemIcon_OreIron,8)
 scr_add_components(item.iron_ingot,"iron_ingot",spr_ItemIcon_Iron,8)
+scr_add_components(item.star_salve,"star_salve",spr_item_star_salve,1)
+scr_add_components(item.coin,"coin",spr_item_coin,50)
 
 
 

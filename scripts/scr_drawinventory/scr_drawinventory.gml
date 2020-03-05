@@ -17,6 +17,7 @@ draw_set_font(fnt_small)
 		scr_checkcraft(guiwidth/2-30,guiheight/2-148)//Draw output item
 
 	//Draw player stats
+	draw_set_halign(fa_left)
 	draw_sprite(spr_staticonhp,0,guiwidth/2+20,guiheight/2-148)
 	draw_text(guiwidth/2+35,guiheight/2-155,"Max Health:"+string(obj_player_stats.maxhp))
 	draw_sprite(spr_staticonmana,0,guiwidth/2+20,guiheight/2-128)

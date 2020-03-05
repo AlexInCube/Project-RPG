@@ -23,6 +23,3 @@ myPortrait			= spr_portrait;
 myVoice				= snd_voice2;
 myFont				= fnt_small;
 myName				= scr_find_keyword("player_name")
-
-
-create_dialogue("Просто маленький монолог Просто маленький монолог Просто маленький монолог Просто маленький монолог", id);

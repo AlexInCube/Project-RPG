@@ -71,6 +71,7 @@
 			"notificationqueststate_0":"ЗАДАНИЕ НАЧАТО",
 			"notificationqueststate_1":"ЗАДАНИЕ ОБНОВЛЕНО",
 			"notificationqueststate_2":"ЗАДАНИЕ ЗАВЕРШЕНО",
+			"notificationqueststate_3":"ЗАДАНИЕ ПРОВАЛЕНО",
 			"Time":"Time",
 			"Developer":"Разработано AlexInCube",
 			"Hint":"Hint",

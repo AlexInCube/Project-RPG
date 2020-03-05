@@ -3,7 +3,7 @@ if room = room_pause
 {
 	draw_sprite_stretched(psb,0,0,0,display_get_gui_width(),display_get_gui_height())
 }
-
+/*
 draw_set_halign(fa_left)
 draw_set_valign(fa_left)
 draw_set_color(c_white)

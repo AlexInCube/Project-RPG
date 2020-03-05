@@ -1,1 +1,1 @@
-trigger_event = [event.trigger,"playernearpenguin"]
+trigger_event = [event.trigger,"playernearnikita"]

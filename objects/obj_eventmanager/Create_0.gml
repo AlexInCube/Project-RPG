@@ -5,5 +5,6 @@ enum event{
 	itemDropped,
 	trigger,
 	talk,
+	deliver,
 	none,
 }

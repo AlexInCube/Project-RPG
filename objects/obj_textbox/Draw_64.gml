@@ -99,37 +99,7 @@ else {
 				//Play the voice sound every 2 frames (you can change this number if this is too often)
 				var audio_increment = 2;
 				
-				#region Animated Sprite
-				if(portrait_talk[page] != -1) {
-					if(!pause) {
-						var posx = pos_x-portraitWidth; var posy = pos_y;
-						if(portrait_talk_x[page] != -1){ posx += portrait_talk_x[page] }
-						if(portrait_talk_y[page] != -1){ posy += portrait_talk_y[page]}
-		
-						portrait_talk_c += portrait_talk_s[page];
-		
-						//To include the consideration of vowels
-						//*/
-						var l = string_lower(ch);
-						if(l == "a" or l == "e" or l == "i" or l == "o" or l == "u"){ 
-							portrait_talk_c = open_mouth_frame; 
-							if (charCount > audio_c) { 
-								audio_play_sound(voice[page], 1, false); 
-								audio_c = charCount + audio_increment; 
-							} 
-						}
-						/*/
-						if (charCount > audio_c) { 
-							audio_play_sound(voice[page], 1, false); 
-							audio_c = charCount + audio_increment; 
-						} 
-						//*/
-						if(portrait_talk_c > portrait_talk_n[page]){ portrait_talk_c = 0; }
-						draw_sprite(portrait_talk[page], portrait_talk_c, posx, posy);	
-					}
-				} 
-				#endregion
-				else if (charCount >= audio_c) { audio_play_sound(voice[page], 1, false); audio_c = charCount + audio_increment; }
+				if (charCount >= audio_c) { audio_play_sound(voice[page], 1, false); audio_c = charCount + audio_increment; }
 		}
 		#endregion
 		

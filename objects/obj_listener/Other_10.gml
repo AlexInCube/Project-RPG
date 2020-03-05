@@ -26,7 +26,6 @@ switch(quest_type)
 	break
 	
 	case questtype.deliver:
+	scr_event_register([event.deliver,stage[1],stage[2]],id,scr_task_deliver,quest_id)
 	break
-	
-	case questtype.escort: break
 }

@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor// comment here
 if room=room_pause{exit}
+if instance_exists(obj_textbox){exit}
 var guiwidth = display_get_gui_width()
 var guiheight = display_get_gui_height()
 draw_set_font(fnt_small)
@@ -32,19 +33,14 @@ if inventorylock=false{
 			break
 		}
 		case "isInventory":{
-		
-	scr_draw_black_screen()//Draw black screen like minecraft gui
+			scr_draw_black_screen()//Draw black screen like minecraft gui
 			scr_drawinventorytabs()
 			scr_drawinventory()
-		
-		
 			break
 		}
 	
 		case "IsStats":{
-		
-		
-	scr_draw_black_screen()//Draw black screen like minecraft gui
+			scr_draw_black_screen()//Draw black screen like minecraft gui
 			scr_drawinventorytabs()
 			scr_drawstatsmenu()
 			break
