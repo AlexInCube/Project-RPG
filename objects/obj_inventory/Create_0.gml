@@ -14,8 +14,8 @@ ds_grid_clear(global.crafting_inventory,0)
 guistate="isClosed"
 inventorylock=false
 
-
-
+scr_gain_item(item.wooden_stick,1)
+/*
 scr_gain_item(item.small_health_potion, 10)
 scr_gain_item(item.small_mana_potion, 8)
 scr_gain_item(item.iron_helmet, 1)

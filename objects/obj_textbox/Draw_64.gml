@@ -46,16 +46,35 @@ if(type[page] == 1){
 			else	   { col = choice_col; selected=true; }
 		} else { col = c_black; selected=false}
 		
+		
+		
 		//Draw our choices
 		var ctext = tp[ii];
+		var rectangleoffset = 1
+		if string_width(ctext)+2 > txtwidth {rectangleoffset++}
 		if selected{
-		draw_text_ext_color(xx, yy+((ii+iy)*stringHeight), "> "+ctext, stringHeight, txtwidth, col, col, col, col, 1); 
+		draw_text_ext_color(xx, yy+((ii+iy)*stringHeight), ctext, stringHeight, txtwidth, col, col, col, col, 1); 
+		draw_rectangle(xx-3,yy+((ii+iy)*stringHeight)+3,xx+txtwidth-8,yy+((ii+iy)*stringHeight)+(24*rectangleoffset),true)
 		}else{
 		draw_text_ext_color(xx, yy+((ii+iy)*stringHeight), ctext, stringHeight, txtwidth, col, col, col, col, 1); 
 		}
 		
+		//Apply choice with mouse
+		if scr_mouseover(xx-3,yy+((ii+iy)*stringHeight)+3,xx+txtwidth-8,yy+((ii+iy)*stringHeight)+(24*rectangleoffset))
+		{
+			choice = ii
+		}
+		if mouse_check_button_pressed(mb_left)
+		{
+			chosen = true; 
+			alarm[2] = 30; 
+			audio_play_sound(select_snd_effect, priority_snd_effect, false);
+		}
+		//If string width more than txtbox, increased iy
 		if(string_width(ctext) > txtwidth) { iy++; }
+		//increase string numbers
 		ii++; 
+		rectangleoffset = 1
 	}
 } 
 #endregion

@@ -4,7 +4,7 @@ var gwidth = display_get_gui_width(), gheight = display_get_gui_height()
 
 
 var ds_grid = menu_pages[page], ds_height = ds_grid_height(ds_grid)
-var y_buffer = 20, x_buffer = 10
+var y_buffer = string_height("M")+2, x_buffer = 10
 var start_y = (gheight/2) - ((((ds_height-1)/2) * y_buffer)), start_x = gwidth/2
 var c = c_black
 
@@ -19,34 +19,39 @@ var yy = 0; repeat(ds_height){
 	lty = start_y + (yy*y_buffer)
 	c = c_white
 	
-	/*
-	if scr_mouseover(ltx-190,lty-3,ltx+10,lty+23){
-		c = c_orange
-		menu_option[page] = yy
-		if mouse_check_button_pressed(mb_left){event_perform(ev_other,ev_user0)}
-	}else 
-	*/
-	if (yy == menu_option[page]){
-		c = c_orange
-	}
-	
 	var string_option = ds_grid[# 0,yy]
 	var string_option_width = string_width(ds_grid[# 0,yy])
 	//draw_set_halign(fa_center)
+	if (yy == menu_option[page]){
+		c = c_orange
+	}
 	
 	if ds_grid == ds_menu_main or ds_grid == ds_menu_settings
 	{
 		draw_set_halign(fa_center)
 		draw_text_color(ltx,lty,string_option,c,c,c,c,1)
+		draw_rectangle(ltx-(string_option_width/2)-4,lty,ltx+(string_option_width/2)+2,lty+y_buffer,true)
+		
+		if scr_mouseover(ltx-(string_option_width/2)-4,lty,ltx+(string_option_width/2)+2,lty+y_buffer)
+		{
+		c = c_orange
+		menu_option[page] = yy
+		if mouse_check_button_pressed(mb_left){event_perform(ev_other,ev_user0)}
+		}
 	}else{
 		draw_set_halign(fa_left) 
 		draw_text_color(ltx-string_option_width,lty,string_option,c,c,c,c,1)
 		draw_line(start_x,start_y,start_x,lty+y_buffer)
+		//draw_rectangle(ltx-(string_width(string_option))-4,lty,ltx+2,lty+y_buffer,true)
+		if scr_mouseover(ltx-(string_width(string_option))-4,lty,ltx+2,lty+y_buffer)
+		{
+		c = c_orange
+		menu_option[page] = yy
+		if mouse_check_button_pressed(mb_left){event_perform(ev_other,ev_user0)}
+		}
 	}
 	
-	//draw_set_halign(fa_left)
 	
-	//draw_rectangle(ltx-190,lty-3,ltx+10,lty+23,true)
 	yy++	
 }
 //Draw divide line

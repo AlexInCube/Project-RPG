@@ -58,6 +58,7 @@ ds_menu_controls_inventory = scr_create_menu_page(
 
 ds_menu_interface = scr_create_menu_page(
 	[scr_find_keyword("gui_size"),		menu_element_type.shift, scr_change_gui_size,global.guisize,[scr_find_keyword("gui_small"),scr_find_keyword("gui_standard"),scr_find_keyword("gui_large")]],
+	[scr_find_keyword("show_damage"),	menu_element_type.toggle, scr_change_window_mode,global.showdamage,["ON","OFF"]],
 	[scr_find_keyword("back"),			menu_element_type.page_transfer, menu_page.settings]
 )
 

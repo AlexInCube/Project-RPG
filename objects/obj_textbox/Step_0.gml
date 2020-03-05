@@ -2,7 +2,7 @@
 
 #region TYPE 0: NORMAL
 if(type[page] == 0){
-	if obj_controller.interact_key{
+	if obj_controller.interact_key or mouse_check_button_pressed(mb_left){
 
 		//If we haven't "typed out" all the letters, immediately "type out" all letters (works as a "skip")
 		if(charCount < str_len){
@@ -14,7 +14,7 @@ if(type[page] == 0){
 			event_perform(ev_other, ev_user0);
 			switch(nextline[page]){
 				case -1: instance_destroy();obj_inventory.inventorylock=false;	exit;
-				case  0: page += 1;				break;
+				case  0: page += 1;io_clear()			break;
 				default: page = nextline[page];
 			}
 			event_perform(ev_alarm, 0);
@@ -27,6 +27,7 @@ if(type[page] == 0){
 #region TYPE 1: DIALOGUE CHOICE
 else {
 	if(chosen) exit;
+
 	if obj_controller.interact_key{ 
 		chosen = true; 
 		alarm[2] = 30; 

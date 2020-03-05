@@ -2,6 +2,7 @@
 ///@param damagecount
 ///@param damagetype
 ///@param target
+///@param show_damage
 #macro MAGICDAMAGETYPE 1
 #macro PHYSICALDAMAGETYPE 2
 #macro PUREDAMAGETYPE 3
@@ -9,6 +10,7 @@
 var damagecount = argument0
 var damagetype = argument1
 var target = argument2
+var showdmg = argument3
 if object_get_name(target.object_index) == object_get_name(obj_player.object_index){
 var magarmor=obj_player_stats.magicarmor
 var armor=obj_player_stats.physarmor
@@ -33,6 +35,16 @@ damage=damagecount*(damagecount/(damagecount+armor))
 if damagetype=PUREDAMAGETYPE
 {
 damage=damagecount
+}
+
+if showdmg = true and target.object_index != obj_bush{
+	if global.showdamage = true
+	{
+		var showdmg = instance_create_layer(target.x,target.y,"Text",obj_show_damage)
+		showdmg.damage = damage
+		showdmg.xx=target.x
+		showdmg.yy=target.y
+	}
 }
 
 

@@ -21,7 +21,7 @@ with (obj_questmanager)
 	alarm[0]=notificationtime
 	
 	if ds_quests[# 0,questid]!=-2 and scr_quest_get_task_amount(questid)>=ds_quests[# 0,questid]{
-	show_debug_message("Task Amount: "+string(scr_quest_get_task_amount(questid)))
+	
 	var listener = instance_create_depth(0,0,0,obj_listener)
 	with listener
 		{

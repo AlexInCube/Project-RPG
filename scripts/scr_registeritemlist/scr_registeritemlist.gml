@@ -26,5 +26,6 @@ enum item
 	scroll_fireball,
 	coin,
 	star_salve,
+	wooden_stick,
 	total
 	}

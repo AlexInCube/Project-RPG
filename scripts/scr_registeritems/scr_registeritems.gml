@@ -12,6 +12,7 @@ scr_add_armor(item.leather_leggings,"leather_leggings", spr_leatherleggings,2,1,
 scr_add_armor(item.leather_boots,"leather_boots", spr_leatherboots,1,1,BOOTS)
 //Weapon
 scr_add_weapon(item.iron_sword,"iron_sword", spr_ItemIcon_ironsword,10,0,scr_melee_attack)
+scr_add_weapon(item.wooden_stick,"wooden_stick", spr_item_weapon_wooden_stick,2,0,scr_melee_attack)
 scr_add_weapon(item.lightningstaff,"light_staff", spr_MagicWeaponLightningStaff,0,10,scr_range_attack)
 //Spell
 scr_add_spell(item.scroll_dash,"spell_scroll_dash",spr_ItemIcon_SpellDash,1,scr_spell_dash)

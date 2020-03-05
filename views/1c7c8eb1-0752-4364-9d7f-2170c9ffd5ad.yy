@@ -51,7 +51,7 @@
         "dfb346c1-5d53-46f6-930c-bb2eebe492cd"
     ],
     "filterType": "GMSprite",
-    "folderName": "HuleInventoryItem",
+    "folderName": "itempack",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
