@@ -36,8 +36,6 @@ imageindex = argument[4]
 	draw_sprite(spr_slot,imageindex,xx,yy)	
 	}
 	
-	
-	
 	if (inventory[# slot_id, 0] != item.none)//Check if slot not empty
 	{
 		

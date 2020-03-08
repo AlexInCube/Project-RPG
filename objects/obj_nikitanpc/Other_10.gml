@@ -306,7 +306,7 @@ switch(choice_variable){
 		//Line 6
 		i++
 		myText[i]		= ["Я тебе её не дам.","Зачем она тебе?","Забирай"];
-		myNextLine[i]	= [7,9,18]
+		myNextLine[i]	= [7,9,19]
 		myTypes[i]		= 1
 		mySpeaker[i]	= obj_player;
 		//Line 7

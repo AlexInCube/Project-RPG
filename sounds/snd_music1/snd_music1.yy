@@ -6,9 +6,9 @@
     "audioGroupGuid": "fb2313d7-7897-4340-9549-a431d8d06f76",
     "bitDepth": 1,
     "bitRate": 112,
-    "kind": 0,
+    "kind": 1,
     "preload": false,
     "sampleRate": 44100,
     "type": 1,
-    "volume": 1
+    "volume": 0.09
 }

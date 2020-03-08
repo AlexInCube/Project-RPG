@@ -1,8 +1,8 @@
 {
-    "id": "19c7655e-20b5-4c76-aeb5-c50eb9049927",
+    "id": "88046bb0-9297-44d1-9c28-75415fbd18b0",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_drawinventorytabs",
+    "name": "scr_draw_nine_slice_box",
     "IsCompatibility": false,
     "IsDnD": false
 }

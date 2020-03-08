@@ -4,7 +4,7 @@ event_inherited(); //so it will inherit from par_speaker
 //-------DIALOGUE STUFF
 
 myPortrait			= spr_nikitaportrait;
-myVoice				= snd_voice1;
+myVoice				= snd_voice5;
 myName				= "Никита";
 
 //-------OTHER

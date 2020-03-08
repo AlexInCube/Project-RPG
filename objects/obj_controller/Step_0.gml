@@ -1,3 +1,5 @@
+GUIWIDTH=display_get_gui_width()
+GUIHEIGHT=display_get_gui_height()
 scr_get_input()
 
 if developer_key

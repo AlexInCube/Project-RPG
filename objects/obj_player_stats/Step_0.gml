@@ -25,7 +25,7 @@ if(hpregen < maxhp and alarm[1] == -1){
 	alarm[1]=room_speed
 }
 }
-
+/*
 if obj_inventory.guistate!="isClosed"
 {
 var helm = global.item_index[# global.armor_equipped[# 0, 0], item_stat.physarmor]

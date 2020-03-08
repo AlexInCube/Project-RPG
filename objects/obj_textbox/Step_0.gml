@@ -28,7 +28,7 @@ if(type[page] == 0){
 else {
 	if(chosen) exit;
 
-	if obj_controller.interact_key{ 
+	if obj_controller.interact_key or mouse_check_button_pressed(mb_left){ 
 		chosen = true; 
 		alarm[2] = 30; 
 		audio_play_sound(select_snd_effect, priority_snd_effect, false);

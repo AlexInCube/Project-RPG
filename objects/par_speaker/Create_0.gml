@@ -3,7 +3,7 @@
 playerobject = obj_player;
 detection_radius = 32;
 
-myVoice			= snd_voice1;
+myVoice			= snd_voice;
 myPortrait		= -1;
 myFont			= fnt_small;
 myName			= "None";

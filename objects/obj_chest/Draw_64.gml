@@ -1,15 +1,17 @@
 /// @description Insert description here
 // You can write your code in this editor
+
 if guistate="isOpen"
 {
-	var guiwidth = display_get_gui_width()
-	var guiheight = display_get_gui_height()
+	draw_set_font(fnt_small)
+	var global.guiwidth = display_get_gui_width()
+	var global.guiheight = display_get_gui_height()
 	var	yy=33
 	var xx=33
 	var pos=0
 
 	scr_draw_black_screen()
-	draw_sprite(spr_inventory_back,0,guiwidth/2,guiheight/2)//Draw Inventory Background
+	draw_sprite(spr_inventory_back,0,global.guiwidth/2,global.guiheight/2)//Draw Inventory Background
 	for (i=0;i<ds_grid_width(global.chestinventory);i++)
 	{
 		
@@ -24,7 +26,7 @@ if guistate="isOpen"
 		}
 		pos+=1
 		//Draw Player Inventory Slots
-		scr_draw_slot(global.chestinventory,i,(guiwidth/2-165)+xx,guiheight/2+yy-160)
+		scr_draw_slot(global.chestinventory,i,(global.guiwidth/2-165)+xx,global.guiheight/2+yy-160)
 	}
 	
 	var	yy=33
@@ -45,7 +47,7 @@ if guistate="isOpen"
 		}
 		pos+=1
 		//Draw Player Inventory Slots
-		scr_draw_slot(global.inventory,i,(guiwidth/2-165)+xx,guiheight/2+yy)
+		scr_draw_slot(global.inventory,i,(global.guiwidth/2-165)+xx,global.guiheight/2+yy)
 	}
 	scr_drawmousepickupeditem()
 }

@@ -64,12 +64,7 @@ if(type[page] == 1){
 		{
 			choice = ii
 		}
-		if mouse_check_button_pressed(mb_left)
-		{
-			chosen = true; 
-			alarm[2] = 30; 
-			audio_play_sound(select_snd_effect, priority_snd_effect, false);
-		}
+		
 		//If string width more than txtbox, increased iy
 		if(string_width(ctext) > txtwidth) { iy++; }
 		//increase string numbers

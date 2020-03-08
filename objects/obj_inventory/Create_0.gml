@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-global.inventory = ds_grid_create(30, 2); //Width - slot amount, height - unique parameters for itemstack (0 - item contained, 1 - itemstack amount)
+global.inventory = ds_grid_create(15, 2); //Width - slot amount, height - unique parameters for itemstack (0 - item contained, 1 - itemstack amount)
 ds_grid_clear(global.inventory, 0);
 global.armor_equipped = ds_grid_create(7, 2); 
 ds_grid_clear(global.armor_equipped, 0);
@@ -11,11 +11,36 @@ ds_grid_clear(global.chestinventory,0)
 global.crafting_inventory = ds_grid_create(4, 2);
 ds_grid_clear(global.crafting_inventory,0)
 
-guistate="isClosed"
+show_inventory=false
 inventorylock=false
 
+window_x=0
+window_y=0
+//window_width = sprite_get_width(spr_inventorymenu)
+//window_height = sprite_get_height(spr_inventorymenu)
+inventoryname=scr_find_keyword("player_inventory_name")
+slotsxy[0,0]=0
+cell_size=32
+slots_x=8
+slots_y=32
+x_buffer=1
+y_buffer=1
+
+window_dragging=false
+
+mousexoffset=0
+mouseyoffset=0
+xx=0
+yy=0
+
+inventory_size = ds_grid_width(global.inventory)
+
+
+
+event_user(0)
+
 scr_gain_item(item.wooden_stick,1)
-/*
+
 scr_gain_item(item.small_health_potion, 10)
 scr_gain_item(item.small_mana_potion, 8)
 scr_gain_item(item.iron_helmet, 1)

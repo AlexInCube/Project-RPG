@@ -1,4 +1,4 @@
-if obj_inventory.guistate="isClosed" and !instance_exists(obj_textbox){
+if !instance_exists(obj_textbox){
 
 if global.armor_equipped[# 6,0]!=item.none
 {

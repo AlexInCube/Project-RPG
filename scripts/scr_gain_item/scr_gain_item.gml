@@ -4,7 +4,7 @@
 /// @param amount
 
 var item_id    = argument0;
- var max_amount = argument1;
+var max_amount = argument1;
 var inv        = global.inventory; 
 var item_ind   = global.item_index;
 var total      = item_stat.stackable;
@@ -42,7 +42,7 @@ while (cur_slot < max_slot)
 		exit
 	}
 	
-	if cur_slot==30
+	if cur_slot==obj_inventory.inventory_size
 	{
 		var xx=obj_player.x
 		var yy=obj_player.y

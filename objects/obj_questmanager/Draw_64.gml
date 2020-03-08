@@ -14,9 +14,9 @@ if !instance_exists(obj_textbox)
 
 //Draw quest notifications about starting quest, updating and completing
 if txtalpha!=0{
-	var guiwidth=display_get_gui_width(),guiheight=display_get_gui_height()
+
 	draw_set_font(fnt_verylarge)
 	draw_set_halign(fa_center)
-	scr_draw_text_shadow(guiwidth/2,guiheight/2-200,notificationquestname,fnt_verylarge,2,c_black,txtcolor,txtalpha)
-	scr_draw_text_shadow(guiwidth/2,guiheight/2-180,scr_find_keyword("notificationqueststate_"+string(notificationqueststate)),fnt_verylarge,2,c_black,txtcolor,txtalpha)
+	scr_draw_text_shadow(global.guiwidth/2,global.guiheight/2-200,notificationquestname,fnt_verylarge,2,c_black,txtcolor,txtalpha)
+	scr_draw_text_shadow(global.guiwidth/2,global.guiheight/2-180,scr_find_keyword("notificationqueststate_"+string(notificationqueststate)),fnt_verylarge,2,c_black,txtcolor,txtalpha)
 }
