@@ -11,33 +11,14 @@ ds_grid_clear(global.chestinventory,0)
 global.crafting_inventory = ds_grid_create(4, 2);
 ds_grid_clear(global.crafting_inventory,0)
 
-show_inventory=false
+
 inventorylock=false
-
-window_x=0
-window_y=0
-//window_width = sprite_get_width(spr_inventorymenu)
-//window_height = sprite_get_height(spr_inventorymenu)
-inventoryname=scr_find_keyword("player_inventory_name")
-slotsxy[0,0]=0
-cell_size=32
-slots_x=8
-slots_y=32
-x_buffer=1
-y_buffer=1
-
-window_dragging=false
-
-mousexoffset=0
-mouseyoffset=0
-xx=0
-yy=0
 
 inventory_size = ds_grid_width(global.inventory)
 
 
 
-event_user(0)
+
 
 scr_gain_item(item.wooden_stick,1)
 

@@ -1,4 +1,5 @@
 scr_get_input()
+window_list=ds_list_create()
 previous_room=room
 fpsbuffer=0
 cheat=""

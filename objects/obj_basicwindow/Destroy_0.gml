@@ -1,0 +1,1 @@
+ds_list_delete(obj_controller.window_list,ds_list_find_index(obj_controller.window_list,id))

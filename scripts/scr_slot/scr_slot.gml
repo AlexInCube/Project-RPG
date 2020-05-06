@@ -9,11 +9,12 @@ var inventory = argument[0]
 var slot_id = argument[1]
 var xx = argument[2]
 var yy = argument[3]
-		
+
+
 if scr_mouseover(xx,yy,xx+32,yy+32){
 	//If mouse left click over slot and them have any item, take all amount of items or we have item in mouse then we put or switch items in slots
 	draw_sprite(spr_slot_backlight,0,xx,yy)
-	
+
 	if mouse_check_button_pressed(mb_left)
 		{
 		var iid = inventory[# slot_id, 0]

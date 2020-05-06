@@ -1,0 +1,1 @@
+scr_create_window(spr_inventorymenu,"Inventory",0,0,scr_inventoryscreen,[global.inventory])

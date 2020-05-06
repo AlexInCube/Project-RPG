@@ -13,10 +13,6 @@ var y2 = argument4;
 var slice_width = sprite_get_width(sprite)/3;
 var slice_height = sprite_get_height(sprite)/3;
 
-if (sprite_get_width(sprite)%3 != 0 || sprite_get_height(sprite)%3 != 0) {
-	show_debug_message("WARNING: Sprite is not a multiple of 3.");
-}
-
 var width = abs(x2-x1);
 var height = abs(y2-y1);
 

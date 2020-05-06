@@ -4,7 +4,31 @@
     "mvc": "1.11",
     "name": "tileset1",
     "auto_tile_sets": [
-        
+        {
+            "id": "ad5a52ee-ef29-43d9-811a-697cc7be99ce",
+            "modelName": "GMAutoTileSet",
+            "mvc": "1.0",
+            "closed_edge": false,
+            "name": "autotile_1",
+            "tiles": [
+                40,
+                67,
+                41,
+                68,
+                49,
+                76,
+                50,
+                77,
+                43,
+                70,
+                44,
+                71,
+                52,
+                79,
+                53,
+                80
+            ]
+        }
     ],
     "macroPageTiles": {
         "SerialiseData": null,

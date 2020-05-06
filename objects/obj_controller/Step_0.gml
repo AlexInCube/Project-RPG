@@ -2,6 +2,7 @@ GUIWIDTH=display_get_gui_width()
 GUIHEIGHT=display_get_gui_height()
 scr_get_input()
 
+//Call cheat "console"
 if developer_key
 {
 	cheat = get_string("Enter cheat","")
@@ -17,6 +18,7 @@ if developer_key
 	}
 }
 
+//Call pause
 if pause_key {
 	psb = sprite_create_from_surface(application_surface,0,0,surface_get_width(application_surface),surface_get_height(application_surface),0,1,0,0);
 
@@ -36,6 +38,7 @@ if pause_key {
 	}
 }
 
+//This need to reset obj data (inventory, stats and etc...)
 if exittomenu=true
 {
 	room_persistent=false

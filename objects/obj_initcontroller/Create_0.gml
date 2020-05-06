@@ -43,8 +43,5 @@ ini_close()
 
 
 
-
-
-
 draw_set_font(fnt_small)
 alarm[0]=1
