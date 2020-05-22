@@ -11,3 +11,5 @@
 #macro BOOTS item_type.boots
 #macro RING item_type.ring
 #macro WEAPON item_type.weapon
+#macro GUIWIDTH global.guiwidth
+#macro GUIHEIGHT global.guiheight

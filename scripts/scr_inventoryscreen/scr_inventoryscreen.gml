@@ -1,3 +1,4 @@
+//Inventory Screen for Player/Chests inventories
 var windowid = id
 var inventory = argument0
 var inventory_size = ds_grid_width(inventory)
@@ -31,12 +32,12 @@ for(i=0;i<inventory_size;i++)
 			draw_text(slotsxy[i,0]+2,slotsxy[i,1]+12,inventory[# i, 1])
 		}
 	
-	if windowid.activewindow{
+	if windowid.placefree{
 		scr_slot(inventory,i,slotsxy[i,0],slotsxy[i,1])
 	}
 }
 
-if windowid.activewindow{
+if windowid.placefree{
 	for(i=0;i<inventory_size;i++)
 	{
 	if inventory[# i, 0]!=item.none

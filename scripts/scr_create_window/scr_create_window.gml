@@ -30,5 +30,5 @@ window.window_sprite=window_sprite
 window.window_name=scr_find_keyword(window_name)
 window.guiscreen = window_script_screen_id
 window.guiscreenarg = window_screen_arguments
-ds_list_add(obj_controller.window_list,window)
+
 return window

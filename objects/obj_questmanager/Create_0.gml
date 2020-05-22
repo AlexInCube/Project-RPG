@@ -1,8 +1,10 @@
+//Quest List
 enum quest{
 	slimetrouble,
 	testdeliver
 }
 
+//Quest Types
 enum questtype {
 	kill,
 	trigger,
@@ -11,6 +13,7 @@ enum questtype {
 	deliver
 }
 
+//For notification about start/fail/complete quest
 notificationquestname=""
 notificationqueststate=-1
 notificationtime=180
@@ -18,6 +21,7 @@ txtalpha=0
 txtcolor=c_orange
 
 ds_quests = ds_grid_create(0,0)
+//Quest data
 #region slimetrouble
 scr_add_quest(
 [
