@@ -7,6 +7,7 @@ scr_get_input()//Update keyboard/mouse input
 scr_getwindowcross()
 
 
+
 //Call cheat "console"
 if developer_key
 {

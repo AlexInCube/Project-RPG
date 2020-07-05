@@ -1,5 +1,5 @@
 scr_get_input()//Set/get input from player 
-window_list=ds_list_create()//For window system
+
 
 previous_room=room//For pause menu
 cheat=""//For "console" f5

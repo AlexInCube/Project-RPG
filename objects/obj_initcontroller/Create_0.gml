@@ -41,6 +41,8 @@ global.pause_key =			ini_read_real("Keys","pause_key",vk_escape)
 global.developer_key =		ini_read_real("Keys","developer_key",vk_f5)
 ini_close()
 
+global.window_list=ds_list_create()//For window system
+
 
 
 draw_set_font(fnt_small)

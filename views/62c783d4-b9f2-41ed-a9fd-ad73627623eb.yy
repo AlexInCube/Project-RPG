@@ -13,7 +13,8 @@
         "8d872793-d14d-43a4-8ac4-e758e4932c9a",
         "40f3d4d4-2757-4c17-8040-2e1d316b600c",
         "a9aaf59c-9d51-42d4-924e-5767298dcb0b",
-        "781283cf-d0d5-4ddc-a6e2-cd27dab8c056"
+        "781283cf-d0d5-4ddc-a6e2-cd27dab8c056",
+        "e17eac59-95bf-40e2-a38e-7dbd6d8bc9dd"
     ],
     "filterType": "GMScript",
     "folderName": "Main Menu",

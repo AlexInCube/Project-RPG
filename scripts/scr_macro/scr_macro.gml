@@ -13,3 +13,4 @@
 #macro WEAPON item_type.weapon
 #macro GUIWIDTH global.guiwidth
 #macro GUIHEIGHT global.guiheight
+#macro WINDOW_LIST global.window_list
