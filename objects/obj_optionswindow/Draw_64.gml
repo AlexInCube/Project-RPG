@@ -22,7 +22,7 @@ var yy = 0; for(i=drawelementstart;i<drawelementstart+10;i++){
 	var rsy = start_y + (yy*y_buffer)
 		switch(ds_grid[# 1,i]){
 			#region Title
-			case menu_element_type.title: 
+			case settings_element_type.title: 
 				var text = ds_grid[# 0,i]
 				var c = c_black
 				draw_set_halign(fa_left)
@@ -31,7 +31,7 @@ var yy = 0; for(i=drawelementstart;i<drawelementstart+10;i++){
 			break;
 			#endregion
 			#region Shift
-			case menu_element_type.shift: 
+			case settings_element_type.shift: 
 				var text = ds_grid[# 0,i]
 				var c = c_white
 				draw_set_halign(fa_left)
@@ -73,7 +73,7 @@ var yy = 0; for(i=drawelementstart;i<drawelementstart+10;i++){
 			break;
 			#endregion
 			#region Slider
-			case menu_element_type.slider:
+			case settings_element_type.slider:
 				var text = ds_grid[# 0,i]
 				c = c_white
 				draw_set_halign(fa_left)
@@ -115,7 +115,7 @@ var yy = 0; for(i=drawelementstart;i<drawelementstart+10;i++){
 			break;
 			#endregion
 			#region Toggle
-			case menu_element_type.toggle:
+			case settings_element_type.toggle:
 				var text = ds_grid[# 0,i]
 				c = c_white
 				draw_set_halign(fa_left)
@@ -139,7 +139,7 @@ var yy = 0; for(i=drawelementstart;i<drawelementstart+10;i++){
 			break;
 			#endregion
 			#region Input
-			case menu_element_type.input:
+			case settings_element_type.input:
 				var text = ds_grid[# 0,i]
 				c = c_white
 				draw_set_halign(fa_left)

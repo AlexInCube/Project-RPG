@@ -38,4 +38,6 @@ if(ideal_height & 1)
 
 display_set_gui_size(ideal_width,ideal_height);
 
+GUIWIDTH=display_get_gui_width()
+GUIHEIGHT=display_get_gui_height()
 

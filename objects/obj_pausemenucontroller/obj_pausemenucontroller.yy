@@ -5,16 +5,6 @@
     "name": "obj_pausemenucontroller",
     "eventList": [
         {
-            "id": "659dc7e6-132a-40cc-9a17-741ebca768b4",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "5439aaaf-6c1a-4ab3-97cf-7eafa9696b54"
-        },
-        {
             "id": "ff9906f7-8d13-4c2a-a7a0-dc2eeaf723d4",
             "modelName": "GMEvent",
             "mvc": "1.0",
