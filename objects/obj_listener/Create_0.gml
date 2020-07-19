@@ -1,3 +1,4 @@
+//This listener need for quest system
 count=0
 quest_id=0
 

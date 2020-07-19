@@ -6,15 +6,13 @@ global.armor_equipped = ds_grid_create(7, 2);
 ds_grid_clear(global.armor_equipped, 0);
 global.mouse_slot = ds_grid_create(1, 2);
 ds_grid_clear(global.mouse_slot, 0);
-global.chestinventory = ds_grid_create(30, 2); 
-ds_grid_clear(global.chestinventory,0)
 global.crafting_inventory = ds_grid_create(4, 2);
 ds_grid_clear(global.crafting_inventory,0)
 
 
 inventorylock=false
-
 inventory_size = ds_grid_width(global.inventory)
+drawitemtooltip = surface_create(GUIWIDTH,GUIHEIGHT)
 
 
 

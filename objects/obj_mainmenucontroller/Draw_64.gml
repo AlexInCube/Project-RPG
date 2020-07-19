@@ -1,4 +1,4 @@
-scr_draw_black_screen()
+//scr_draw_black_screen()
 
 var gwidth = display_get_gui_width(), gheight = display_get_gui_height()
 

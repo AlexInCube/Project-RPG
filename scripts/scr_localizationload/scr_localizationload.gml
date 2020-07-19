@@ -22,16 +22,6 @@ global.localization_map	= ds_map_create();
 	var locale_map = json_decode(json_str);
 	
 	ds_map_copy(global.localization_map,locale_map);
-	/*
-	var k = ds_map_find_first(global.localization_map),
-    maptext = ""
-	while (!is_undefined(k))
-	{
-	maptext += k + ": " + global.localization_map[? k] + "\n";
-	 k = ds_map_find_next(global.localization_map, k);
-	 show_debug_message(maptext)
-	}
-	*/
 	
 
 file_text_close(locale_file)

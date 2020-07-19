@@ -33,10 +33,14 @@ for (ii=6;ii<item_stat.total;ii++)
 	}
 }
 maxtextwidth = string_width(statstring)+15
+if surface_exists(obj_inventory.drawitemtooltip){
+surface_set_target(obj_inventory.drawitemtooltip)
 //Draw textbox
 scr_draw_nine_slice_box(spr_nineslicebox,device_mouse_x_to_gui(0)+boxx,device_mouse_y_to_gui(0),device_mouse_x_to_gui(0)+boxx+maxtextwidth,device_mouse_y_to_gui(0)+20+string_height_ext(statstring,-1,maxtextwidth))
 //Draw string
 draw_text(device_mouse_x_to_gui(0)+boxx+10,device_mouse_y_to_gui(0),statstring)
+surface_reset_target()
+}
 
 
 

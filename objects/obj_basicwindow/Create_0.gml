@@ -10,7 +10,9 @@ guiscreen=undefined
 guiscreenarg=undefined
 mousexoffset=0
 mouseyoffset=0
+mouseover=false
 placefree = true
+ds_list_add(WINDOW_LIST,id)
 xx=0
 yy=0
 scr_windowsetdepth()

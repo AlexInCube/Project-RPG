@@ -1,20 +1,35 @@
-//if there is another window above the window, then disable moving the header.
-var iid = argument0//Put window/object id
+/*if there is another window above the window, then disable moving the header.
+True - Mouse position free
+False - Mouse position taken
+*/
+if instance_exists(obj_basicwindow){
+	var list  = WINDOW_LIST,
+	    count = ds_list_size(list);
 
+	if (count == 0) return;
 
-with(obj_basicwindow){
-	for (i=0;i<ds_list_size(obj_controller.window_list);i++){
-		if instance_exists(obj_controller.window_list[|i]){
-			if id==iid{return true}
-			if scr_mouseover(obj_controller.window_list[|i].window_x,
-							obj_controller.window_list[|i].window_y,
-							obj_controller.window_list[|i].window_x+obj_controller.window_list[|i].window_width,
-							obj_controller.window_list[|i].window_y+obj_controller.window_list[|i].window_height)
-			{
-				return false
-			}else{
-				return true
-			}
-		}
+	var freeID, freeDepth;
+	freeID    = noone;
+	freeDepth = 100000000;
+
+	for (var i = 0; i < count; i++)
+	{
+	    var tryID = list[|i];
+	    tryID.placefree = false;
+
+	    if (tryID.mouseover == true && tryID.depth <  freeDepth)
+	    {
+	        freeID           = tryID;
+	        freeDepth        = freeID.depth;
+	    }
+	}
+
+	if (freeID != noone)
+	{
+	    freeID.placefree = true;
 	}
 }
+
+
+					
+						

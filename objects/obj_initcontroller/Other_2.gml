@@ -14,9 +14,8 @@ if !audio_group_is_loaded(ag_sounds)
 
 
 
-if global.fullscreen=true{
-window_set_fullscreen(true)
-}
+
+window_set_fullscreen(global.fullscreen)
 
 scr_localizationload()
 

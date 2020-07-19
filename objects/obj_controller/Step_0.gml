@@ -1,6 +1,12 @@
+//Updating GW and GH
 GUIWIDTH=display_get_gui_width()
 GUIHEIGHT=display_get_gui_height()
-scr_get_input()
+scr_get_input()//Update keyboard/mouse input
+
+//Update window crossing
+scr_getwindowcross()
+
+
 
 //Call cheat "console"
 if developer_key

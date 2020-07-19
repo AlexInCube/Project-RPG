@@ -54,3 +54,6 @@ if (inputting){
 if input_enter_p{
 	event_perform(ev_other,ev_user0)
 }
+
+GUIWIDTH=display_get_gui_width()
+GUIHEIGHT=display_get_gui_height()
