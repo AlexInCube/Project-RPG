@@ -88,4 +88,16 @@
 			"npc_adekvat_dialog1":"Эй парень, не хочешь проучить долбоёба?",
 			"npc_adekvat_answer1":"Хочу",
 			"npc_adekvat_answer2":"Мне насрать на него",
+			"apply_settings":"Принять",
+			"decline_settings":"Отменить",
+			"set_to_default":"По умолчанию",
+			"up_key":"Передвижение вверх",
+			"down_key":"Передвижение вниз",
+			"left_key":"Передвижение влево",
+			"right_key":"Передвижение направо",
+			"drop_item_key":"Выбросить предмет",
+			"attack_key":"Атака",
+			"interact_key":"Взаимодействие",
+			"pickup_key":"Подбор предмета"
+			
 }

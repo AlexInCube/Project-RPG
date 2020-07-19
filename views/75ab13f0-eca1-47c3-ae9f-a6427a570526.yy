@@ -10,7 +10,8 @@
         "88046bb0-9297-44d1-9c28-75415fbd18b0",
         "d9844d53-f7bb-4f22-820a-bd7e4f3aa8a8",
         "995629d4-f57b-4b2d-b1e9-d122cc499da0",
-        "9dafd4e1-1875-4234-ba14-a04aa40ce344"
+        "9dafd4e1-1875-4234-ba14-a04aa40ce344",
+        "0dc891a7-d7fa-4314-b991-dfc56b4f98a1"
     ],
     "filterType": "GMScript",
     "folderName": "GUI`s",

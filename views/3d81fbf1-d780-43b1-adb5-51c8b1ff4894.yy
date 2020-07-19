@@ -10,7 +10,8 @@
         "bd822af7-63fc-4610-8ea7-bb3cd97cd574",
         "855a8351-80ef-4932-a619-4003fefffe2e",
         "10600d52-03e7-40b4-b2bc-9901d0d49fbd",
-        "0913dbe1-5729-49cc-8c8b-d908d1face60"
+        "0913dbe1-5729-49cc-8c8b-d908d1face60",
+        "9768d435-cf25-4f90-ac2e-01c12332cda2"
     ],
     "filterType": "GMSprite",
     "folderName": "GUI",
