@@ -3,17 +3,9 @@
 
 hp=10
 maxhp=10
-basemaxhp=10
-maxhpbuff=0
-maxhpbufflevel=0
-hpregen=0
 
 mana=10
 maxmana=10
-basemaxmana=10
-maxmanabuff=0
-maxmanabufflevel=0
-manaregen=0
 
 attack=0
 magicattack=0
@@ -22,16 +14,9 @@ physarmor=0
 magicarmor=0
 
 strength=0
-basestrength=0
-strengthbufflevel=0
-
 intelligence=0
-baseintelligence=0
-intelligencebufflevel=0
-
 luck=0
-baseluck=0
-luckbufflevel=0
+
 
 
 

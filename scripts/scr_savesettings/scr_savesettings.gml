@@ -3,28 +3,19 @@ var ds_height = ds_grid_height(ds_grid)
 for(i=0;i<ds_height-1;i++){
 	switch(ds_grid[# 1,i]){
 		case settings_element_type.toggle:
-			if ds_grid[# 4,i] == 0{
 				script_execute(ds_grid[# 2,i],ds_grid[# 3,i])
-			}
 		break;
 		case settings_element_type.shift:
-			if ds_grid[# 5,i] == 0{
 				script_execute(ds_grid[# 2,i],ds_grid[# 3,i])
-			}
 		break;
 		case settings_element_type.slider:
-			if ds_grid[# 5,i] == 0{
 				script_execute(ds_grid[# 2,i],i,ds_grid[# 3,i])
-			}
 		break;
 		case settings_element_type.input:
-			if ds_grid[# 4,i] == 0{
 				variable_global_set(ds_grid[# 2,i], ds_grid[# 3, i])
-			}
 		break;
 	}
 }
-
 
 ini_open("game_settings.ini")
 ini_write_real("Sounds", "soundvolume", global.soundvolume)
@@ -32,8 +23,8 @@ ini_write_real("Sounds", "musicvolume", global.musicvolume)
 ini_write_real("Sounds", "mastervolume", global.mastervolume)
 ini_write_real("Graphics", "width", global.width)
 ini_write_real("Graphics", "height", global.height)
+ini_write_real("Graphics", "fullscreen", global.fullscreen)
 ini_write_real("Interface", "guisize", global.guisize)
-ini_write_real("Interface", "fullscreen", global.fullscreen)
 ini_write_real("Interface", "show_damage", global.showdamage)
 ini_write_string("Interface","language",global.language)
 ini_write_real("Keys","key_up",global.key_up)

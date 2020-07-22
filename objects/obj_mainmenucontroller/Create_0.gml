@@ -1,11 +1,3 @@
-enum settings_element_type{
-	slider,
-	shift,
-	toggle,
-	input,
-	title
-}
-
 enum menu_element_type{
 	button
 }

@@ -79,6 +79,8 @@
 			"GameCompleted":"Game completed!",
 			"Restart":"Press R to restart",
 			"show_damage":"Показывать цифры урона",
+			"russian_language":"Русский",
+			"english_language":"Английский",
 			"player_name":"Игрок",
 			"npc_anonymous_name":"Аноним",
 			"npc_penguin_name":"Никита",
@@ -98,6 +100,8 @@
 			"drop_item_key":"Выбросить предмет",
 			"attack_key":"Атака",
 			"interact_key":"Взаимодействие",
-			"pickup_key":"Подбор предмета"
+			"pickup_key":"Подбор предмета",
+			"inventory_window":"Инвентарь",
+			"equipment_window":"Экипировка"
 			
 }

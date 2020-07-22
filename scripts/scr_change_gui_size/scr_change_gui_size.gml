@@ -2,13 +2,22 @@
 ///@arg guisize
 var display_height=global.height,display_width=global.width
 var ideal_width=0;
-var ideal_height=719;
+var ideal_height=720;
 
-switch(argument0){
-	case 0: global.guisize=0;ideal_height=global.height break;
-	case 1: global.guisize=1;display_height=720;display_width=1280 break;
-	case 2: global.guisize=2;display_width=global.width/2;display_height=global.height/2 break;
+
+if argument_count == 1{
+	global.guisize=argument[0]; ideal_height=ideal_height*global.guisize
+}else{
+	if argument_count == 2{
+	global.guisize=argument[1]; 
+	ideal_height=ideal_height*global.guisize
+	}
 }
+
+show_debug_message(ideal_height)
+
+
+
 
 
 

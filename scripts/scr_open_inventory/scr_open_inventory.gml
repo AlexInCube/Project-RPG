@@ -1,1 +1,3 @@
-scr_create_window(spr_inventorymenu,"Inventory",0,0,scr_inventoryscreen,[global.inventory])
+if !instance_exists(inventorywindow){
+inventorywindow=scr_create_window(spr_inventorymenu,scr_find_keyword("inventory_window"),0,0,scr_inventoryscreen,[global.inventory])
+}

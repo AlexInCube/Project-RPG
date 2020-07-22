@@ -22,7 +22,7 @@ with (obj_questmanager)
 	
 	if ds_quests[# 0,questid]!=-2 and scr_quest_get_task_amount(questid)>=ds_quests[# 0,questid]{
 	
-	var listener = instance_create_depth(0,0,0,obj_listener)
+	var listener = instance_create_depth(0,0,0,obj_questlistener)
 	with listener
 		{
 		quest_id=questid
