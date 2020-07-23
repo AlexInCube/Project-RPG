@@ -39,7 +39,7 @@
 			
 			i++
 		}
-		
+		show_debug_message("Event Fired: "+ev)
 	}
 
 

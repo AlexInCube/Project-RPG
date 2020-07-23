@@ -51,10 +51,12 @@ if windowid.placefree{
 	}
 }
 
-draw_text(window_xx+92,window_yy+28,obj_player_stats.maxhp)
-draw_text(window_xx+92,window_yy+44,obj_player_stats.maxmana)
-draw_text(window_xx+92,window_yy+60,obj_player_stats.physarmor)
-draw_text(window_xx+92,window_yy+76,obj_player_stats.magicarmor)
-draw_text(window_xx+92,window_yy+92,obj_player_stats.attack)
-draw_text(window_xx+92,window_yy+108,obj_player_stats.magicattack)
-draw_text(window_xx+140,window_yy+28,obj_player_stats.maxhp)
+draw_text(window_xx+92,window_yy+28,obj_player_stats.max_hp)
+draw_text(window_xx+92,window_yy+44,obj_player_stats.max_mana)
+draw_text(window_xx+92,window_yy+60,obj_player_stats.phys_armor)
+draw_text(window_xx+92,window_yy+76,obj_player_stats.magic_armor)
+draw_text(window_xx+92,window_yy+92,obj_player_stats.phys_damage)
+draw_text(window_xx+92,window_yy+108,obj_player_stats.magic_damage)
+draw_text(window_xx+140,window_yy+28,obj_player_stats.strength)
+draw_text(window_xx+140,window_yy+44,obj_player_stats.intelligence)
+draw_text(window_xx+140,window_yy+60,obj_player_stats.luck)

@@ -14,7 +14,7 @@ inventorylock=false
 inventory_size = ds_grid_width(global.inventory)
 drawitemtooltip = surface_create(GUIWIDTH,GUIHEIGHT)
 
-
+scr_event_register([event.inventory_slot_clicked,global.armor_equipped],id,scr_recalculate_stats,global.armor_equipped)
 
 
 

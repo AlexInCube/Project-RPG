@@ -46,13 +46,13 @@ if image_index>=3 and attacked=false
 	var damage = instance_create_layer(xx,yy,"Instances",obj_damage)
 	damage.creator = id
 	damage.knockback = 20
-	if obj_player_stats.attack>0
+	if obj_player_stats.phys_damage>0
 	{
-		damage.damage = obj_player_stats.attack
+		damage.damage = obj_player_stats.phys_damage
 		damage.damagetype = PHYSICALDAMAGETYPE
-	}else if obj_player_stats.magicattack>0
+	}else if obj_player_stats.magic_damage>0
 	{
-		damage.damage = obj_player_stats.magicattack
+		damage.damage = obj_player_stats.magic_damage
 		damage.damagetype = MAGICDAMAGETYPE
 	}
 	

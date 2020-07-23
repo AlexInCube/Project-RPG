@@ -12,13 +12,13 @@ var damagetype = argument1
 var target = argument2
 var showdmg = argument3
 if object_get_name(target.object_index) == object_get_name(obj_player.object_index){
-var magarmor=obj_player_stats.magicarmor
-var armor=obj_player_stats.physarmor
+var magarmor=obj_player_stats.magic_armor
+var armor=obj_player_stats.phys_armor
 }
 else
 {
-var magarmor=target.magicarmor
-var armor=target.physarmor	
+var magarmor=target.magic_armor
+var armor=target.phys_armor	
 }
 var damage
 

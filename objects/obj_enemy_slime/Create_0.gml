@@ -9,5 +9,5 @@ sight = 64
 targetx = 0
 targety = 0
 
-physarmor=1
-magicarmor=0
+phys_armor=1
+magic_armor=0

@@ -21,5 +21,5 @@ sprite[UP,IDLE] = spr_chinlin_stand_up
 sprite[LEFT,IDLE] = spr_chinlin_stand_right
 sprite[DOWN,IDLE] = spr_chinlin_stand_down
 
-physarmor=2
-magicarmor=0
+phys_armor=2
+magic_armor=0

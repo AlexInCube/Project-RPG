@@ -1,3 +1,5 @@
+draw_set_halign(fa_left)
+draw_set_valign(fa_top)
 //Draw textbox
 draw_sprite(dialogue_box, 0, pos_x,pos_y-sprite_get_height(name_box));
 

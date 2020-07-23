@@ -2,16 +2,16 @@
 // You can write your code in this editor
 
 hp=10
-maxhp=10
+max_hp=10
 
 mana=10
-maxmana=10
+max_mana=10
 
-attack=0
-magicattack=0
+phys_damage=0
+magic_damage=0
 
-physarmor=0
-magicarmor=0
+phys_armor=0
+magic_armor=0
 
 strength=0
 intelligence=0

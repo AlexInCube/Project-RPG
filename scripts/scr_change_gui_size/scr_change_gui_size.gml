@@ -14,11 +14,6 @@ if argument_count == 1{
 	}
 }
 
-show_debug_message(ideal_height)
-
-
-
-
 
 
 var aspect_ratio=display_width/display_height;

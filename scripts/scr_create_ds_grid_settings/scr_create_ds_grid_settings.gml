@@ -7,7 +7,7 @@ ds_options = scr_create_menu_page(
 	[scr_find_keyword("resolution"),			settings_element_type.shift, scr_change_resolution,0,["1280x720","1536x874","1920x1080"]],
 	[scr_find_keyword("fullscreen_mode"),		settings_element_type.toggle, scr_change_window_mode,global.fullscreen],
 	[scr_find_keyword("interface_settings"),	settings_element_type.title],
-	[scr_find_keyword("gui_size"),				settings_element_type.slider, scr_change_gui_size,global.guisize,0.05],
+	//[scr_find_keyword("gui_size"),				settings_element_type.slider, scr_change_gui_size,global.guisize,0.05],
 	[scr_find_keyword("language"),				settings_element_type.shift, scr_change_language,0,[scr_find_keyword("russian_language"),scr_find_keyword("english_language")]],
 	[scr_find_keyword("show_damage"),			settings_element_type.toggle, scr_change_show_damage,global.showdamage],
 	[scr_find_keyword("controls_settings"),		settings_element_type.title],
