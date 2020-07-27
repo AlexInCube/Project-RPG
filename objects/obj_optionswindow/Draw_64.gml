@@ -71,7 +71,8 @@ var yy = 0; for(i=drawelementstart;i<drawelementstart+10;i++){
 				draw_text_color(window_x+10,rsy,text,c,c,c,c,1)
 				
 				draw_sprite(spr_slidershiftbackground,0,rsx-entriesoffset-56,rsy+1)
-				draw_sprite_ext(spr_slidershiftforeground,0,rsx-entriesoffset-54,rsy+1,ds_grid[# 3,i]/1,1,0,c_white,1)
+				draw_sprite_ext(spr_slidershiftforeground,0,rsx-entriesoffset-54,rsy+1,(scr_calculate_bars_modifier(ds_grid[# 3,i],ds_grid[# 5,i],ds_grid[# 6,i],0,1)),1,0,c_white,1)
+	
 				draw_set_halign(fa_center)
 				draw_text_color(rsx-entriesoffset,rsy,string(round(ds_grid[# 3,i]*100))+"%",c,c,c,c,1)
 				
@@ -81,7 +82,7 @@ var yy = 0; for(i=drawelementstart;i<drawelementstart+10;i++){
 					frameleft=1
 					if mouse_check_button_pressed(mb_left){
 						ds_grid[# 3,i] -=ds_grid[# 4,i]
-						ds_grid[# 3,i] = clamp(ds_grid[# 3,i],0,1)
+						ds_grid[# 3,i] = clamp(ds_grid[# 3,i],ds_grid[# 5,i],ds_grid[# 6,i])
 					}
 				}else frameleft=0
 				
@@ -89,7 +90,7 @@ var yy = 0; for(i=drawelementstart;i<drawelementstart+10;i++){
 					frameright=1
 					if mouse_check_button_pressed(mb_left){
 						ds_grid[# 3,i] +=ds_grid[# 4,i]
-						ds_grid[# 3,i] = clamp(ds_grid[# 3,i],0,1)
+						ds_grid[# 3,i] = clamp(ds_grid[# 3,i],ds_grid[# 5,i],ds_grid[# 6,i])
 					}
 				}else frameright=0
 				

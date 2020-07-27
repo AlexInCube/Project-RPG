@@ -1655,6 +1655,14 @@
             }
         },
         {
+            "Key": "749a11bd-22c4-4da9-8ce1-9c3e0379972c",
+            "Value": {
+                "id": "3c46aea2-ea8e-423d-ac73-0d1ba1162e96",
+                "resourcePath": "scripts\\scr_calculate_bars_modifier\\scr_calculate_bars_modifier.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "75ab13f0-eca1-47c3-ae9f-a6427a570526",
             "Value": {
                 "id": "c0d310b2-8cdd-4780-a545-06cce2489d9d",
@@ -3367,6 +3375,7 @@
         "aa8cdcf2-e94e-4e62-bde2-320d26c48cb5",
         "dadd050d-b6dd-4a28-a10f-24fee20786cb",
         "2561bcac-6ddd-4833-bda4-057769a589c1",
+        "749a11bd-22c4-4da9-8ce1-9c3e0379972c",
         "41694519-1796-45ce-a65b-128bf3f3dcd0",
         "6f80ff8b-20c9-4957-9337-dfb0f5583ed4",
         "c984023b-b49e-4552-8075-a3049ae3752a",
@@ -3390,10 +3399,10 @@
         "5ea256a6-1d8c-4bc0-bf7c-4b5edca03127",
         "996e80d3-ebd3-4695-bccb-2014323c2ea4",
         "29e736c0-1dd1-4add-87b4-746d1bdbd653",
-        "31866b3c-dfcc-43f3-a26a-2e4bc2223187",
         "06bdaae0-6be4-472e-b8f6-a06afcdc7804",
-        "8c5b411a-4bf7-46e4-b6ad-04b1b422d409",
+        "31866b3c-dfcc-43f3-a26a-2e4bc2223187",
         "19a73ef1-41f7-4832-a1ae-b9aadd0ac84e",
+        "8c5b411a-4bf7-46e4-b6ad-04b1b422d409",
         "66841cb5-f83e-42f1-a43e-a71459b74e13",
         "6d14e74f-0748-433d-b8d9-69385b2f30aa",
         "06099ed8-324f-43bb-b293-b2d786f5c004",

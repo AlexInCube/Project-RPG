@@ -50,3 +50,5 @@ ini_write_real("Keys","combination_key",global.combination_key)
 ini_write_real("Keys","pause_key",global.pause_key)
 ini_write_real("Keys","developer_key",global.developer_key)
 ini_close()
+
+instance_destroy()

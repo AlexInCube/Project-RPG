@@ -6,7 +6,7 @@ global.fullscreen=			ini_read_real("Graphics", "fullscreen", false)
 global.width=				ini_read_real("Graphics", "width", 1280)
 global.height=				ini_read_real("Graphics", "height", 720)
 show_debug_message("Fullscreen: "+string(global.fullscreen)+" Width: "+string(global.width)+" Height: "+string(global.height))
-global.guisize=				ini_read_real("Interface", "guisize", 0.5)
+global.guisize=				ini_read_real("Interface", "guisize", 1)
 global.language=			ini_read_string("Interface", "language", "russian")
 global.showdamage =			ini_read_real("Interface","show_damage",true)
 
