@@ -1,18 +1,3 @@
-//TODO: Rework quest list showing (make window for this)
-if !instance_exists(obj_textbox)
-{
-	var ds_height = ds_grid_height(ds_quests)
-
-	var i=0;repeat(ds_height){
-		if scr_quest_get_current_stage(i)> -1{
-			draw_text(5,5+(16*i),string(scr_quest_get_name(i))+":"
-			+string(scr_quest_get_current_stage(i))+"/"+string(scr_quest_get_task_amount(i)+1)+" "
-			+string(scr_quest_get_short_description_for_task(i)))
-		}
-		i++
-	}
-}
-
 //Draw quest notifications about starting quest, updating and completing
 if txtalpha!=0{
 

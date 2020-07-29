@@ -1,5 +1,5 @@
 var ds_grid = ds_menu_main
-
+draw_set_font(fnt_small)
 for(i=0;i<ds_menu_height;i++){
 	switch(ds_grid[# 1,i]){
 		case menu_element_type.button:

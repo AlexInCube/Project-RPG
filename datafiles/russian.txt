@@ -102,6 +102,8 @@
 			"interact_key":"Взаимодействие",
 			"pickup_key":"Подбор предмета",
 			"inventory_window":"Инвентарь",
-			"equipment_window":"Экипировка"
+			"equipment_window":"Экипировка",
+			"creators":"Создатели",
+			"quest_list":"Список заданий"
 			
 }

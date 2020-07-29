@@ -5,3 +5,4 @@ followcamera=obj_player//Camera target
 
 inventorywindow=noone
 equipmentwindow=noone
+questlistwindow=noone

@@ -8,3 +8,6 @@ scr_change_gui_size(global.guisize)
 surface_resize(application_surface,global.width,global.height)
 
 alarm[0]=1
+
+cursor_sprite=spr_cursor
+window_set_cursor(cr_none)

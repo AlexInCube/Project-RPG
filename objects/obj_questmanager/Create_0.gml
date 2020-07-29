@@ -49,7 +49,7 @@ scr_add_quest(
 ]
 )
 #endregion
-#region kirilloxuel
+#region testdeliver
 scr_add_quest(
 [
 	-1,//Current Stage, -1 not started, 0 started.
@@ -76,5 +76,5 @@ scr_add_quest(
 ]
 )
 #endregion
-//scr_quest_start(quest.slimetrouble)
-//scr_quest_start(quest.testdeliver)
+scr_quest_start(quest.slimetrouble)
+scr_quest_start(quest.testdeliver)
