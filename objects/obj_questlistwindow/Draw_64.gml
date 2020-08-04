@@ -23,8 +23,11 @@ if selectedquest==noone{
 					selectedquest=i
 				}
 			}
+			draw_text_color(startx,starty,string(scr_quest_get_name(i)),c,c,c,c,1)
+			/*
 			draw_text_color(startx,starty,string(scr_quest_get_name(i))+":"
 			+string(scr_quest_get_current_stage(i))+"/"+string(scr_quest_get_task_amount(i)+1),c,c,c,c,1)
+			*/
 		}
 		i++
 	}

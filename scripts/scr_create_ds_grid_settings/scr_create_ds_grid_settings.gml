@@ -28,5 +28,8 @@ ds_options = scr_create_menu_page(
 	[scr_find_keyword("pickup_key"),			settings_element_type.input, "pickup_key",			 global.pickup_key],
 	[scr_find_keyword("attack_key"),			settings_element_type.input, "attack_key",			 global.attack_key],
 	[scr_find_keyword("interact_key"),			settings_element_type.input, "interact_key",	   global.interact_key],
+	[scr_find_keyword("inventory_key"),			settings_element_type.input, "inventory_key",	  global.inventory_key],
 	[scr_find_keyword("combination_key"),		settings_element_type.input, "combination_key", global.combination_key],
+	[scr_find_keyword("questlist_key"),			settings_element_type.input, "questlist_key",	  global.questlist_key],
+	[scr_find_keyword("equipment_key"),			settings_element_type.input, "equipment_key",	  global.equipment_key],
 )

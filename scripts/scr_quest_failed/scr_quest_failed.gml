@@ -1,4 +1,4 @@
-///@description scr_quest_start(questid)
+///@description scr_quest_update(questid)
 ///@arg questid
 var questid = argument0
 

@@ -102,7 +102,7 @@ scr_add_quest(
 ]
 )
 #endregion
-scr_quest_start(quest.slimetrouble)
-scr_quest_start(quest.testdeliver)
-scr_quest_start(quest.test)
-scr_quest_start(quest.testing)
+scr_quest_update(quest.slimetrouble)
+scr_quest_update(quest.testdeliver)
+scr_quest_update(quest.test)
+scr_quest_update(quest.testing)
