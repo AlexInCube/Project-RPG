@@ -104,6 +104,7 @@
 			"inventory_window":"Инвентарь",
 			"equipment_window":"Экипировка",
 			"creators":"Создатели",
-			"quest_list":"Список заданий"
+			"quest_list":"Список заданий",
+			"back_to_quest_list":"Вернуться к списку заданий"
 			
 }

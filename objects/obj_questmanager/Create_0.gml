@@ -1,7 +1,9 @@
 //Quest List
 enum quest{
 	slimetrouble,
-	testdeliver
+	testdeliver,
+	test,
+	testing,
 }
 
 //Quest Types
@@ -57,20 +59,44 @@ scr_add_quest(
 	"Это такое информативное описание всего задания, тут может описан сам квест, лор и бла бла бла.",//Total quest decription
 	[//Short decription of each stage
 		"Сдайте слизь",
-		"Сдайте слизь",
-		"Сдайте слизь",
-		"Сдайте слизь"
 	],
 	[//Decription of each stage
 		"Сдайте слизь",
-		"Сдайте слизь",
-		"Сдайте слизь",
-		"Сдайте слизь"
 	],
 	[//Stage requirements
-		[questtype.deliver,item.slime,1],
-		[questtype.deliver,item.slime,1],
-		[questtype.deliver,item.slime,1],
+		[questtype.deliver,item.slime,1]
+	]
+]
+)
+
+scr_add_quest(
+[
+	-1,//Current Stage, -1 not started, 0 started.
+	"delivertest",//Quest name
+	"Это такое информативное описание всего задания, тут может описан сам квест, лор и бла бла бла.",//Total quest decription
+	[//Short decription of each stage
+		"Сдайте слизь",
+	],
+	[//Decription of each stage
+		"Сдайте слизь",
+	],
+	[//Stage requirements
+		[questtype.deliver,item.slime,1]
+	]
+]
+)
+scr_add_quest(
+[
+	-1,//Current Stage, -1 not started, 0 started.
+	"delivertest",//Quest name
+	"Это такое информативное описание всего задания, тут может описан сам квест, лор и бла бла бла.",//Total quest decription
+	[//Short decription of each stage
+		"Сдайте слизь",
+	],
+	[//Decription of each stage
+		"Сдайте слизь",
+	],
+	[//Stage requirements
 		[questtype.deliver,item.slime,1]
 	]
 ]
@@ -78,3 +104,5 @@ scr_add_quest(
 #endregion
 scr_quest_start(quest.slimetrouble)
 scr_quest_start(quest.testdeliver)
+scr_quest_start(quest.test)
+scr_quest_start(quest.testing)
