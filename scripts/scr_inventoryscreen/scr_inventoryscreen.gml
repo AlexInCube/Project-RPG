@@ -48,5 +48,5 @@ if windowid.placefree{
 			}
 		}
 	}
-	scr_drawmousepickupeditem()
+	
 }

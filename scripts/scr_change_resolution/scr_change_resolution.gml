@@ -7,3 +7,6 @@ window_set_size(global.width,global.height)
 scr_change_gui_size(global.guisize)
 surface_resize(application_surface,global.width,global.height);
 alarm[0]=1
+
+GUIWIDTH=display_get_gui_width()
+GUIHEIGHT=display_get_gui_height()

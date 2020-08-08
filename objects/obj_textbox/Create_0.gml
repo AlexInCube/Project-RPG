@@ -83,3 +83,4 @@ amplitude	= 4;
 freq		= 2;
 
 #endregion
+instance_destroy(obj_basicwindow,true)

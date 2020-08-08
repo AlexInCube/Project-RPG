@@ -1,1 +1,1 @@
-ds_list_destroy(window_list)
+ds_list_destroy(global.window_list)

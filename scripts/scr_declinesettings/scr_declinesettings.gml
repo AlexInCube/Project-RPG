@@ -1,1 +1,1 @@
-instance_destroy(obj_optionswindow,true)
+instance_destroy()

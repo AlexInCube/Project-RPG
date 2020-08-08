@@ -33,7 +33,7 @@ switch(choice_variable){
 		myTypes[i]		= 1
 		mySpeaker[i]	= obj_player
 		myNextLine[i]	= [5,10]
-		myScripts[i]	= [[nothing],[scr_quest_start,quest.slimetrouble]]
+		myScripts[i]	= [[nothing],[scr_quest_update,quest.slimetrouble]]
 		
 
 		//Line 5
@@ -67,7 +67,7 @@ switch(choice_variable){
 		myText[i]		= ["Помогу","Нет"];
 		myTypes[i]		= 1;
 		myNextLine[i]   = [10,7]
-		myScripts[i]	= [[scr_quest_start,quest.slimetrouble],[nothing]]
+		myScripts[i]	= [[scr_quest_update,quest.slimetrouble],[nothing]]
 		mySpeaker[i]	= id;
 		
 		//Line 10

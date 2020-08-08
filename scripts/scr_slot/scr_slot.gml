@@ -29,7 +29,8 @@ if scr_mouseover(xx,yy,xx+32,yy+32){
 			inventory[# slot_id, 1] = mouse_amount;
 			global.mouse_slot[# 0, 0] = iid;
 			global.mouse_slot[# 0, 1] = amount;
-			}
+			
+		 }
 		else if (iid == mouse_iid) //If both slots are the same
 		 {
 			//Take all mouse items and put them in inventory
@@ -46,6 +47,7 @@ if scr_mouseover(xx,yy,xx+32,yy+32){
 					}
 				}
 			}
+			scr_event_fire([event.inventory_slot_clicked,inventory])
 			
 		}
 	

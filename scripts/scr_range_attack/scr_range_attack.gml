@@ -11,13 +11,9 @@ if obj_player.state == scr_move_state
 	{
 		physics_apply_local_impulse(obj_player.x,obj_player.y,xforce,yforce)
 	}
-	if obj_player_stats.attack>0
+	if obj_player_stats.magic_damage>0
 	{
-		damage.damage = obj_player_stats.attack
-		damage.damagetype = PHYSICALDAMAGETYPE
-	}else if obj_player_stats.magicattack>0
-	{
-		damage.damage = obj_player_stats.magicattack
+		damage.damage = obj_player_stats.magic_damage
 		damage.damagetype = MAGICDAMAGETYPE
 	}
 	

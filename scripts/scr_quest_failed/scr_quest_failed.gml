@@ -1,4 +1,4 @@
-///@description scr_quest_start(questid)
+///@description scr_quest_update(questid)
 ///@arg questid
 var questid = argument0
 
@@ -13,7 +13,7 @@ with (obj_questmanager)
 		alarm[0]=notificationtime
 		txtcolor=c_red
 	
-		with(obj_listener)
+		with(obj_questlistener)
 		{
 			if quest_id=questid{instance_destroy()}
 		}

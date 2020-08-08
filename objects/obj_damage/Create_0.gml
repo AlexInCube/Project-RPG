@@ -2,6 +2,6 @@
 // You can write your code in this editor
 damage=0
 damagetype=noone
-knockback=10
+knockback=0
 creator=noone
 alarm[0]=2

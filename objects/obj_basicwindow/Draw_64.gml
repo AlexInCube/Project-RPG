@@ -7,6 +7,7 @@ draw_sprite(window_sprite,0,window_x,window_y)
 }
 //Draw window name
 draw_set_halign(fa_left)
+draw_set_valign(fa_top)
 draw_set_color(c_white)
 draw_set_font(fnt_small)
 //draw_text(window_x+7,window_y,window_name+string(depth)+"  "+string(placefree)+"  "+string(mouseover))
