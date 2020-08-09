@@ -1,3 +1,1 @@
-
-
-room_goto(room_world1A)
+room_goto_next()
