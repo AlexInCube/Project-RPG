@@ -1,1 +1,5 @@
 ds_list_destroy(global.window_list)
+ds_grid_destroy(global.inventory)
+ds_grid_destroy(global.armor_equipped)
+ds_grid_destroy(global.crafting_inventory)
+ds_grid_destroy(global.mouse_slot)

@@ -1,0 +1,1 @@
+camera_speed=0.1
