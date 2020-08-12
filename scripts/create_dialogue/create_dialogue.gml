@@ -8,7 +8,7 @@
 ///@arg *Scripts
 ///@arg *Text_Col
 ///@arg *Emotion
-///@arg *Emote
+
 
 if(instance_exists(obj_textbox)){ exit; }
 
