@@ -21,6 +21,7 @@ enum item
 	small_mana_potion,
 	staff,
 	lightningstaff,
+	shotgun,
 	slime,
 	scroll_dash,
 	scroll_fireball,

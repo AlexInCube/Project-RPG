@@ -7,4 +7,6 @@ if !instance_exists(questlistwindow){
 	questlistwindow.xx=xx
 	questlistwindow.yy=yy
 	questlistwindow.persistent=true
-}//scr_find_keyword("quest_list")
+}else{
+	instance_destroy(questlistwindow)
+}

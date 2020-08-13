@@ -14,6 +14,7 @@ scr_add_armor(item.leather_boots,"leather_boots", spr_leatherboots,1,1,BOOTS)
 scr_add_weapon(item.iron_sword,"iron_sword", spr_ItemIcon_ironsword,10,0,scr_melee_attack)
 scr_add_weapon(item.wooden_stick,"wooden_stick", spr_item_weapon_wooden_stick,2,0,scr_melee_attack)
 scr_add_weapon(item.lightningstaff,"light_staff", spr_MagicWeaponLightningStaff,0,10,scr_range_attack)
+scr_add_weapon(item.shotgun,"shotgun", spr_item_weapon_shotgun,2,0,scr_shotgun_shot)
 //Spell
 scr_add_spell(item.scroll_dash,"spell_scroll_dash",spr_ItemIcon_SpellDash,1,scr_spell_dash)
 scr_add_spell(item.scroll_fireball,"spell_scroll_fireball",spr_ItemIcon_SpellFireball,1,scr_spell_fireball)

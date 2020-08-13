@@ -14,7 +14,7 @@ if !instance_exists(obj_cutscene_speaker){
 	with (inst){
 		create_dialogue(myText, obj_player);
 	}
-}else if instance_exists(obj_cutscene_speaker){
+}else if !instance_exists(obj_textbox){
 	instance_destroy(obj_cutscene_speaker)
 	scr_cutscene_end_action()
 }

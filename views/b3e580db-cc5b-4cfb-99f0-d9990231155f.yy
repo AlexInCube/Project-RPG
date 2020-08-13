@@ -10,8 +10,7 @@
         "dd052908-0d5f-4214-9898-3177478227f6",
         "0cde0f5e-6d11-4237-bf14-997694885740",
         "c930eb4b-a4c4-4a99-9496-0c65510b353a",
-        "fc558605-6a69-458a-bcf1-600388878f08",
-        "a9695ee7-ab52-45e2-a0ff-aeccf3ee3ff9"
+        "fc558605-6a69-458a-bcf1-600388878f08"
     ],
     "filterType": "GMScript",
     "folderName": "Quest Management",
