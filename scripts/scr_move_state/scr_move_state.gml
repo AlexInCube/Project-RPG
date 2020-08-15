@@ -1,12 +1,5 @@
 if !instance_exists(obj_textbox){
 
-if obj_controller.attack_key
-{
-	if global.armor_equipped[# 4,0]!=item.none
-	{
-		script_execute(global.item_index[# global.armor_equipped[# 4,0],item_stat.action_script])
-	}
-}
 #region Inventory Key Input
 if obj_controller.inventory_hotkey1
 {

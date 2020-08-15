@@ -1,8 +1,8 @@
 {
-    "id": "1af4a712-10e2-4b96-be5c-e57978aa4183",
+    "id": "64e60703-15d8-4bbd-9b53-e3989cb65505",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_shotgun_shot",
+    "name": "scr_shotgun_tick",
     "IsCompatibility": false,
     "IsDnD": false
 }

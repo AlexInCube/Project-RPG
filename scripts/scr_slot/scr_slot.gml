@@ -5,10 +5,10 @@
 /// @param x
 /// @param y
 
-var inventory = argument[0]
-var slot_id = argument[1]
-var xx = argument[2]
-var yy = argument[3]
+var inventory = argument0
+var slot_id = argument1
+var xx = argument2
+var yy = argument3
 
 
 if scr_mouseover(xx,yy,xx+32,yy+32){
@@ -47,8 +47,8 @@ if scr_mouseover(xx,yy,xx+32,yy+32){
 					}
 				}
 			}
-			scr_event_fire([event.inventory_slot_clicked,inventory])
 			
+			scr_event_fire([event.inventory_slot_clicked,inventory])
 		}
 	
 	

@@ -19,3 +19,6 @@ obj_player_stats.magic_damage = magicdamage
 obj_player_stats.strength = strength
 obj_player_stats.intelligence = intelligence
 obj_player_stats.luck = luck
+
+
+scr_weapon_equip()

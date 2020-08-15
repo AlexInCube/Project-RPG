@@ -1,0 +1,26 @@
+
+var mouse_dir = point_direction(x,y,mouse_x,mouse_y)
+if obj_player.state == scr_move_state
+{
+	if obj_controller.attack_key{
+		for(i=0;i<8;i++){
+			var damage = instance_create_layer(obj_player.x,obj_player.y,"Instances",obj_damageprojectile)
+			damage.sprite_index=spr_shotgun_shell
+			damage.creator = obj_player.id
+			damage.knockback = 0
+		
+			var xforce = lengthdir_x(24,mouse_dir)+irandom_range(-4,4)
+			var yforce = lengthdir_y(24,mouse_dir)+irandom_range(-4,4)
+			with damage
+			{
+				physics_apply_local_impulse(obj_player.x,obj_player.y,xforce,yforce)
+			}
+			if obj_player_stats.phys_damage>0
+			{
+				damage.damage = obj_player_stats.phys_damage
+				damage.damagetype = PHYSICALDAMAGETYPE
+			}
+		}
+		audio_play_sound(snd_shotgun_shot,1,0)
+	}
+}

@@ -23,3 +23,5 @@ myPortrait			= spr_portrait;
 myVoice				= snd_voice2;
 myFont				= fnt_small;
 myName				= scr_find_keyword("player_name")
+
+scr_event_register([event.trigger,"test"],id,show_custom_debug_message,"event trigge")

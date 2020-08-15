@@ -12,8 +12,8 @@
         "5c22e25f-1a3a-43bd-b652-df601037fe4b",
         "ec98aa31-d35e-4b31-8d40-c6d47ff19948",
         "9cecbc19-7bbe-4a05-b739-06d0037b2cda",
-        "1af4a712-10e2-4b96-be5c-e57978aa4183",
-        "38e21e59-ad15-4f5a-bb51-bf7ee6003523"
+        "38e21e59-ad15-4f5a-bb51-bf7ee6003523",
+        "b6f0a45d-521a-47ed-96e1-6b86cf837325"
     ],
     "filterType": "GMScript",
     "folderName": "Items Action Scripts",

@@ -15,5 +15,7 @@ enum item_stat
  magicarmor,
  manacost,
  cooldown,
+ item_tick,
+ item_draw,
  total
  }
