@@ -62,19 +62,19 @@ if(len==0) image_index=0
 
 switch(face) {
 	case RIGHT:
-		sprite_index=spr_player_right
+		sprite_index=sprite[RIGHT,MOVE]
 		break
 		
 	case UP:
-		sprite_index=spr_player_up
+		sprite_index=sprite[UP,MOVE]
 		break
 	
 	case LEFT:
-		sprite_index=spr_player_left
+		sprite_index=sprite[LEFT,MOVE]
 		break
 	
 	case DOWN:
-		sprite_index=spr_player_down
+		sprite_index=sprite[DOWN,MOVE]
 		break
 }
 

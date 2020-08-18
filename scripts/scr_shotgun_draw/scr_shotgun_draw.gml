@@ -1,10 +1,10 @@
 x = obj_player.x
 y = obj_player.y
 switch(obj_player.face){
-	case UP: depth = obj_player.y+2 break;
-	case DOWN: depth = obj_player.y-2 break;
-	case LEFT: depth = obj_player.y+2 break;
-	case RIGHT: depth = obj_player.y+2 break;
+	case UP: depth = -(obj_player.y-obj_player.spd) break;
+	case DOWN: depth = -(obj_player.y+obj_player.spd )break;
+	default: depth = -(obj_player.y+obj_player.spd)
+
 }
 
 var mouse_dir = point_direction(x,y,mouse_x,mouse_y)

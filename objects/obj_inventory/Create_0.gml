@@ -17,7 +17,7 @@ drawitemtooltip = surface_create(GUIWIDTH,GUIHEIGHT)
 scr_event_register([event.inventory_slot_clicked,global.armor_equipped],id,scr_recalculate_stats,global.armor_equipped)
 
 
-//scr_gain_item(item.wooden_stick,1)
+scr_gain_item(item.wooden_stick,1)
 scr_gain_item(item.shotgun, 1)
 /*
 scr_gain_item(item.small_health_potion, 10)

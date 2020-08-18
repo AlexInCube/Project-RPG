@@ -5,13 +5,17 @@ len=0
 dir=0
 xaxis=0
 yaxis=0
-attacked=false
+
 
 findradius=16
 
 image_speed=0
 
 face=RIGHT
+sprite[RIGHT,MOVE] = spr_player_right
+sprite[UP,MOVE] = spr_player_up
+sprite[LEFT,MOVE] = spr_player_left
+sprite[DOWN,MOVE] = spr_player_down
 
 state=scr_move_state;
 
@@ -24,4 +28,3 @@ myVoice				= snd_voice2;
 myFont				= fnt_small;
 myName				= scr_find_keyword("player_name")
 
-scr_event_register([event.trigger,"test"],id,show_custom_debug_message,"event trigge")

@@ -4,7 +4,6 @@
 ///@arg y
 ///@arg relative?
 ///@arg spd
-show_debug_message("moving "+" x:"+string(x_dest)+" y:"+string(y_dest))
 var obj = argument0, relative = argument3, spd = argument4
 
 if (x_dest == -1){
@@ -27,14 +26,36 @@ with(obj){
 		
 		phy_position_x += ldirx
 		phy_position_y += ldiry
+		
+		scr_get_face(dir)
+		image_speed = sign(spd)*.4
+			switch(face) {
+			case RIGHT:
+				sprite_index=sprite[RIGHT,MOVE]
+				break
+		
+			case UP:
+				sprite_index=sprite[UP,MOVE]
+				break
+	
+			case LEFT:
+				sprite_index=sprite[LEFT,MOVE]
+				break
+	
+			case DOWN:
+				sprite_index=sprite[DOWN,MOVE]
+				break
+		}
 	}else{
 		phy_position_x = xx
 		phy_position_y = yy
-		
+		image_speed = 0
 		with(other){
 			x_dest = -1
 			y_dest = -1
 			scr_cutscene_end_action()
 		}
 	}
+	
+
 }

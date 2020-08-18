@@ -1,1 +1,1 @@
-script_execute(draw_weapon_script)
+script_execute(weapon_draw_script)

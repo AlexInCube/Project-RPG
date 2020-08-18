@@ -17,7 +17,9 @@
         "b1c17224-28b2-49ae-9281-5fb0c11e20ea",
         "7341aa7f-3d87-4998-b610-01bf18397107",
         "35937700-ec86-4bae-b9ca-d792b02699cf",
-        "e2b2ce5b-c43b-4d85-a4e7-9b2380ede11c"
+        "e2b2ce5b-c43b-4d85-a4e7-9b2380ede11c",
+        "de28d4f8-ebbb-453a-bce4-4aa0d811ed8f",
+        "0110ef02-690d-41fd-b4d6-0d82167247a2"
     ],
     "filterType": "GMScript",
     "folderName": "Cutscene System",
