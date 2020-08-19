@@ -1,8 +1,12 @@
 {
-    "id": "bb996846-3207-4b6e-80f1-b55c396f17da",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_declinesettings",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Options",
+    "path": "folders/Objects/Controllers/Main Menu/Options.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_declinesettings",
+  "tags": [],
+  "resourceType": "GMScript",
 }

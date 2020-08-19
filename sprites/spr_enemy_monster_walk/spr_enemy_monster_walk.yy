@@ -1,158 +1,94 @@
 {
-    "id": "0d2a7ab3-314f-45f2-a76e-71f03e8a3b78",
-    "modelName": "GMSprite",
-    "mvc": "1.12",
-    "name": "spr_enemy_monster_walk",
-    "For3D": false,
-    "HTile": false,
-    "VTile": false,
-    "bbox_bottom": 39,
-    "bbox_left": 2,
-    "bbox_right": 28,
-    "bbox_top": 4,
-    "bboxmode": 0,
-    "colkind": 1,
-    "coltolerance": 0,
-    "edgeFiltering": false,
-    "frames": [
-        {
-            "id": "eb3687ec-a81b-4ebc-b45e-cfb26e472da5",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "0d2a7ab3-314f-45f2-a76e-71f03e8a3b78",
-            "compositeImage": {
-                "id": "f0706fc3-bd1f-42ad-9416-85a42b06f952",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "eb3687ec-a81b-4ebc-b45e-cfb26e472da5",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "24a01927-7011-453e-832a-bc4b3c0481e3",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "eb3687ec-a81b-4ebc-b45e-cfb26e472da5",
-                    "LayerId": "d58bc6a8-1a7f-47e9-be01-a957d8c5ae10"
-                }
-            ]
-        },
-        {
-            "id": "02d1f43a-e674-4d25-874f-cc71d5631dbb",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "0d2a7ab3-314f-45f2-a76e-71f03e8a3b78",
-            "compositeImage": {
-                "id": "6cdcecdd-2362-469c-917f-27e95447e68d",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "02d1f43a-e674-4d25-874f-cc71d5631dbb",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "8511e2b2-232a-4b9a-b816-425cfdf7df44",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "02d1f43a-e674-4d25-874f-cc71d5631dbb",
-                    "LayerId": "d58bc6a8-1a7f-47e9-be01-a957d8c5ae10"
-                }
-            ]
-        },
-        {
-            "id": "a71951be-de61-4e83-8eeb-bb04246c5df7",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "0d2a7ab3-314f-45f2-a76e-71f03e8a3b78",
-            "compositeImage": {
-                "id": "ab656086-a7c7-42c8-bd67-bae18698ff90",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "a71951be-de61-4e83-8eeb-bb04246c5df7",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "6aff4b57-8da0-4929-8585-b01c61c1ac45",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "a71951be-de61-4e83-8eeb-bb04246c5df7",
-                    "LayerId": "d58bc6a8-1a7f-47e9-be01-a957d8c5ae10"
-                }
-            ]
-        },
-        {
-            "id": "2f1323e5-b6b5-46ac-a2f1-da613165b73f",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "0d2a7ab3-314f-45f2-a76e-71f03e8a3b78",
-            "compositeImage": {
-                "id": "58c4f4ab-03f0-4270-85d0-84ba48acec5a",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "2f1323e5-b6b5-46ac-a2f1-da613165b73f",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "3d44079b-207c-4196-9e00-eb3b5cbc654b",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "2f1323e5-b6b5-46ac-a2f1-da613165b73f",
-                    "LayerId": "d58bc6a8-1a7f-47e9-be01-a957d8c5ae10"
-                }
-            ]
-        },
-        {
-            "id": "4ce8fdec-a92f-48f2-8197-602b4bfa5028",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "0d2a7ab3-314f-45f2-a76e-71f03e8a3b78",
-            "compositeImage": {
-                "id": "7455dd4b-61af-4f07-b1aa-804a93b07196",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "4ce8fdec-a92f-48f2-8197-602b4bfa5028",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "07a7526a-1fe4-4a49-8183-5f989662c79e",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "4ce8fdec-a92f-48f2-8197-602b4bfa5028",
-                    "LayerId": "d58bc6a8-1a7f-47e9-be01-a957d8c5ae10"
-                }
-            ]
-        }
-    ],
-    "gridX": 0,
-    "gridY": 0,
-    "height": 40,
-    "layers": [
-        {
-            "id": "d58bc6a8-1a7f-47e9-be01-a957d8c5ae10",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "0d2a7ab3-314f-45f2-a76e-71f03e8a3b78",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": true
-        }
-    ],
-    "origin": 4,
-    "originLocked": false,
-    "playbackSpeed": 12,
+  "bboxMode": 0,
+  "collisionKind": 1,
+  "type": 0,
+  "origin": 4,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 2,
+  "bbox_right": 28,
+  "bbox_top": 4,
+  "bbox_bottom": 39,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 30,
+  "height": 40,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"eb3687ec-a81b-4ebc-b45e-cfb26e472da5","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"eb3687ec-a81b-4ebc-b45e-cfb26e472da5","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},"LayerId":{"name":"d58bc6a8-1a7f-47e9-be01-a957d8c5ae10","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_enemy_monster_walk","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},"resourceVersion":"1.0","name":"eb3687ec-a81b-4ebc-b45e-cfb26e472da5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"02d1f43a-e674-4d25-874f-cc71d5631dbb","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"02d1f43a-e674-4d25-874f-cc71d5631dbb","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},"LayerId":{"name":"d58bc6a8-1a7f-47e9-be01-a957d8c5ae10","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_enemy_monster_walk","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},"resourceVersion":"1.0","name":"02d1f43a-e674-4d25-874f-cc71d5631dbb","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a71951be-de61-4e83-8eeb-bb04246c5df7","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a71951be-de61-4e83-8eeb-bb04246c5df7","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},"LayerId":{"name":"d58bc6a8-1a7f-47e9-be01-a957d8c5ae10","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_enemy_monster_walk","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},"resourceVersion":"1.0","name":"a71951be-de61-4e83-8eeb-bb04246c5df7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2f1323e5-b6b5-46ac-a2f1-da613165b73f","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2f1323e5-b6b5-46ac-a2f1-da613165b73f","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},"LayerId":{"name":"d58bc6a8-1a7f-47e9-be01-a957d8c5ae10","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_enemy_monster_walk","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},"resourceVersion":"1.0","name":"2f1323e5-b6b5-46ac-a2f1-da613165b73f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4ce8fdec-a92f-48f2-8197-602b4bfa5028","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4ce8fdec-a92f-48f2-8197-602b4bfa5028","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},"LayerId":{"name":"d58bc6a8-1a7f-47e9-be01-a957d8c5ae10","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_enemy_monster_walk","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},"resourceVersion":"1.0","name":"4ce8fdec-a92f-48f2-8197-602b4bfa5028","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"spr_enemy_monster_walk","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 12.0,
     "playbackSpeedType": 0,
-    "premultiplyAlpha": false,
-    "sepmasks": false,
-    "swatchColours": null,
-    "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
-    "type": 0,
-    "width": 30,
-    "xorig": 15,
-    "yorig": 20
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 5.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"cac2e8fa-7ddc-41ca-a115-ebb1ba9c546e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"eb3687ec-a81b-4ebc-b45e-cfb26e472da5","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1d4c0717-848d-42c3-a96a-54cba30933f3","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"02d1f43a-e674-4d25-874f-cc71d5631dbb","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b3eb9c76-3627-42c3-b1f6-d22c9353f161","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a71951be-de61-4e83-8eeb-bb04246c5df7","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1a5c9333-c9d1-4b8d-928a-21592de025ef","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2f1323e5-b6b5-46ac-a2f1-da613165b73f","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6708f32a-22c6-4b90-af69-20bc9eb3cf57","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4ce8fdec-a92f-48f2-8197-602b4bfa5028","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+    ],
+    "visibleRange": {"x":0.0,"y":0.0,},
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1920,
+    "backdropHeight": 1080,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 15,
+    "yorigin": 20,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"spr_enemy_monster_walk","path":"sprites/spr_enemy_monster_walk/spr_enemy_monster_walk.yy",},
+    "resourceVersion": "1.3",
+    "name": "",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d58bc6a8-1a7f-47e9-be01-a957d8c5ae10","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "parent": {
+    "name": "Enemies",
+    "path": "folders/Timelines/Sprites/Enemies.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "spr_enemy_monster_walk",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

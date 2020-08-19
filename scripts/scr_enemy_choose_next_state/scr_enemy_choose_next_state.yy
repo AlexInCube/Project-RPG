@@ -1,8 +1,12 @@
 {
-    "id": "f2139c62-6742-4638-8243-15a6077532fb",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_enemy_choose_next_state",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Helpers",
+    "path": "folders/Scripts/ Enemies Scripts/Slime/Helpers.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_enemy_choose_next_state",
+  "tags": [],
+  "resourceType": "GMScript",
 }

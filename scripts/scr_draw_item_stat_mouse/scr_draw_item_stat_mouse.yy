@@ -1,8 +1,12 @@
 {
-    "id": "64fdf324-2ed3-4815-a8f9-c9495663cefd",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_draw_item_stat_mouse",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Player Inventory",
+    "path": "folders/Scripts/GUI`s/Player Inventory.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_draw_item_stat_mouse",
+  "tags": [],
+  "resourceType": "GMScript",
 }

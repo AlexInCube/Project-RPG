@@ -1,8 +1,12 @@
 {
-    "id": "d1755736-e15c-4d71-ae8e-410435999b89",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_shotgun_create",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Shotgun",
+    "path": "folders/Scripts/Inventory/Items Action Scripts/Shotgun.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_shotgun_create",
+  "tags": [],
+  "resourceType": "GMScript",
 }

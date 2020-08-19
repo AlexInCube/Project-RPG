@@ -1,7 +1,12 @@
 ///@description scr_cutscene_instance_destroy
 ///@arg id
-show_debug_message("end action")
+function scr_cutscene_instance_destroy(argument0) {
+	show_debug_message("end action")
 
-with(argument0){
-	instance_destroy()
+	with(argument0){
+		instance_destroy()
+	}
+
+
+
 }

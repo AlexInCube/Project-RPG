@@ -1,1 +1,5 @@
-can_shoot=true
+function scr_shotgun_alarm() {
+	can_shoot=true
+
+
+}

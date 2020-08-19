@@ -1,8 +1,12 @@
 {
-    "id": "3244ed41-1543-43c4-a4d2-e0e9f80501c8",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_checkcraft",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Crafting",
+    "path": "folders/Scripts/Inventory/Crafting.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_checkcraft",
+  "tags": [],
+  "resourceType": "GMScript",
 }

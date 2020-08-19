@@ -1,1 +1,5 @@
-game_end()
+function scr_game_exit() {
+	game_end()
+
+
+}

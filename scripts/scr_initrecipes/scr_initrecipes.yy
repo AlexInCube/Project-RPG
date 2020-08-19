@@ -1,8 +1,12 @@
 {
-    "id": "1f1cc9e9-8b5f-47c4-96ad-6e29b5b8bbbb",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_initrecipes",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Crafting",
+    "path": "folders/Scripts/Inventory/Crafting.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_initrecipes",
+  "tags": [],
+  "resourceType": "GMScript",
 }

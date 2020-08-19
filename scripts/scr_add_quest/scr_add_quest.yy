@@ -1,8 +1,12 @@
 {
-    "id": "6c839660-0556-407f-8620-5b7dc0f87929",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_add_quest",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Quest System Scripts",
+    "path": "folders/Objects/Controllers/Events/Quest System Scripts.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_add_quest",
+  "tags": [],
+  "resourceType": "GMScript",
 }

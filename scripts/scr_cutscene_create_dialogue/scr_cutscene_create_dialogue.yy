@@ -1,8 +1,12 @@
 {
-    "id": "35937700-ec86-4bae-b9ca-d792b02699cf",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_cutscene_create_dialogue",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Cutscene System Scripts",
+    "path": "folders/Objects/Controllers/Cutscene System/Cutscene System Scripts.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_cutscene_create_dialogue",
+  "tags": [],
+  "resourceType": "GMScript",
 }

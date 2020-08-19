@@ -1,8 +1,12 @@
 {
-    "id": "c0370915-ce38-4a9a-b44b-3f3d8f5b59a3",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_cutscene_change_variable",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Cutscene System Scripts",
+    "path": "folders/Objects/Controllers/Cutscene System/Cutscene System Scripts.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_cutscene_change_variable",
+  "tags": [],
+  "resourceType": "GMScript",
 }

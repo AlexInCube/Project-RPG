@@ -1,3 +1,4 @@
+function scr_macro() {
 #macro RIGHT 0
 #macro UP 1
 #macro LEFT 2
@@ -14,3 +15,6 @@
 #macro GUIWIDTH global.guiwidth
 #macro GUIHEIGHT global.guiheight
 #macro WINDOW_LIST global.window_list
+
+
+}

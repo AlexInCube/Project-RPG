@@ -1,8 +1,12 @@
 {
-    "id": "61ecb4af-0f78-4195-b5a1-380b3c041233",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_cutscene_play_sound",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Cutscene System Scripts",
+    "path": "folders/Objects/Controllers/Cutscene System/Cutscene System Scripts.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_cutscene_play_sound",
+  "tags": [],
+  "resourceType": "GMScript",
 }

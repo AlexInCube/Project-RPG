@@ -1,16 +1,20 @@
+function scr_enum_item_type() {
 
-enum item_type
- {
- none,
- weapon,
- helmet,
- chestplate,
- leggings,
- boots,
- ring,
- food,
- components,
- potion,
- spell,
- other
- }
+	enum item_type
+	 {
+	 none,
+	 weapon,
+	 helmet,
+	 chestplate,
+	 leggings,
+	 boots,
+	 ring,
+	 food,
+	 components,
+	 potion,
+	 spell,
+	 other
+	 }
+
+
+}

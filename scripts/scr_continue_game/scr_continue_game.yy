@@ -1,8 +1,12 @@
 {
-    "id": "8d872793-d14d-43a4-8ac4-e758e4932c9a",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_continue_game",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Main Menu Scripts",
+    "path": "folders/Objects/Controllers/Main Menu/Main Menu Scripts.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_continue_game",
+  "tags": [],
+  "resourceType": "GMScript",
 }

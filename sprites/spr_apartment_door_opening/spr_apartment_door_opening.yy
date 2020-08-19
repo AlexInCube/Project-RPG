@@ -1,349 +1,125 @@
 {
-    "id": "1c135a5a-11a1-4dba-8984-6ca6e759a92c",
-    "modelName": "GMSprite",
-    "mvc": "1.12",
-    "name": "spr_apartment_door_opening",
-    "For3D": false,
-    "HTile": false,
-    "VTile": false,
-    "bbox_bottom": 34,
-    "bbox_left": 0,
-    "bbox_right": 26,
-    "bbox_top": 0,
-    "bboxmode": 0,
-    "colkind": 1,
-    "coltolerance": 0,
-    "edgeFiltering": false,
-    "frames": [
-        {
-            "id": "83bb3816-7d10-445d-b9cc-e7aa6b8641f5",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "1c135a5a-11a1-4dba-8984-6ca6e759a92c",
-            "compositeImage": {
-                "id": "585a0b22-fd20-4154-9eb4-499dc9aa2e1f",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "83bb3816-7d10-445d-b9cc-e7aa6b8641f5",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "ffdab944-97cd-4359-9e80-a1a12672f36f",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "83bb3816-7d10-445d-b9cc-e7aa6b8641f5",
-                    "LayerId": "12d1261d-9ceb-4dcc-b508-4a3edd7f8c38"
-                },
-                {
-                    "id": "1c2e8818-aa3b-402e-aa54-83942c38581c",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "83bb3816-7d10-445d-b9cc-e7aa6b8641f5",
-                    "LayerId": "4b1a9702-7e43-435c-bb20-ea2ea82bebfc"
-                }
-            ]
-        },
-        {
-            "id": "b965b013-77da-469b-95d8-4fb9eb3fdcb8",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "1c135a5a-11a1-4dba-8984-6ca6e759a92c",
-            "compositeImage": {
-                "id": "591dfd47-fad9-4a3c-8e09-f8c7418c55a1",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "b965b013-77da-469b-95d8-4fb9eb3fdcb8",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "21506645-91c2-4190-84b1-f3cc6b0b7b86",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "b965b013-77da-469b-95d8-4fb9eb3fdcb8",
-                    "LayerId": "12d1261d-9ceb-4dcc-b508-4a3edd7f8c38"
-                },
-                {
-                    "id": "71c576e5-928b-4259-a1de-074b401208f6",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "b965b013-77da-469b-95d8-4fb9eb3fdcb8",
-                    "LayerId": "4b1a9702-7e43-435c-bb20-ea2ea82bebfc"
-                }
-            ]
-        },
-        {
-            "id": "e9099942-8be5-4fd7-841b-11e6e7c1216c",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "1c135a5a-11a1-4dba-8984-6ca6e759a92c",
-            "compositeImage": {
-                "id": "8b3b8514-e312-425b-a218-73494da3cd40",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "e9099942-8be5-4fd7-841b-11e6e7c1216c",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "524735bb-6454-449a-b778-196a0a2aaac0",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "e9099942-8be5-4fd7-841b-11e6e7c1216c",
-                    "LayerId": "12d1261d-9ceb-4dcc-b508-4a3edd7f8c38"
-                },
-                {
-                    "id": "a2aadfdc-f241-4fca-88b6-e962ca1ba093",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "e9099942-8be5-4fd7-841b-11e6e7c1216c",
-                    "LayerId": "4b1a9702-7e43-435c-bb20-ea2ea82bebfc"
-                }
-            ]
-        },
-        {
-            "id": "1d05b87d-829d-4373-ab78-1fb77f6efe5f",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "1c135a5a-11a1-4dba-8984-6ca6e759a92c",
-            "compositeImage": {
-                "id": "a85b15ed-b1a6-446d-8b7c-fda62aa2f870",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "1d05b87d-829d-4373-ab78-1fb77f6efe5f",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "7cc79775-23e7-48a8-ba61-f34b3df0b094",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "1d05b87d-829d-4373-ab78-1fb77f6efe5f",
-                    "LayerId": "12d1261d-9ceb-4dcc-b508-4a3edd7f8c38"
-                },
-                {
-                    "id": "b5aa6d87-586c-440f-9909-9878016ad722",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "1d05b87d-829d-4373-ab78-1fb77f6efe5f",
-                    "LayerId": "4b1a9702-7e43-435c-bb20-ea2ea82bebfc"
-                }
-            ]
-        },
-        {
-            "id": "db6ac8f1-f9e4-4c36-ad87-52eb739902d7",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "1c135a5a-11a1-4dba-8984-6ca6e759a92c",
-            "compositeImage": {
-                "id": "9c8d478c-8754-4543-9c75-78ec1a9ca76c",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "db6ac8f1-f9e4-4c36-ad87-52eb739902d7",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "e1806a86-e414-43b3-b0f8-7fdd4eb0ca8e",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "db6ac8f1-f9e4-4c36-ad87-52eb739902d7",
-                    "LayerId": "12d1261d-9ceb-4dcc-b508-4a3edd7f8c38"
-                },
-                {
-                    "id": "b7dc2ed4-3a00-4515-813a-92ffb7f6baa7",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "db6ac8f1-f9e4-4c36-ad87-52eb739902d7",
-                    "LayerId": "4b1a9702-7e43-435c-bb20-ea2ea82bebfc"
-                }
-            ]
-        },
-        {
-            "id": "d6d02da7-057e-4704-a118-64c73602cba5",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "1c135a5a-11a1-4dba-8984-6ca6e759a92c",
-            "compositeImage": {
-                "id": "b1ea1c6a-b130-4e70-abe3-c76f5b26e0fc",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "d6d02da7-057e-4704-a118-64c73602cba5",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "ebbcfe15-a9db-459f-8b5b-735f896da22e",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "d6d02da7-057e-4704-a118-64c73602cba5",
-                    "LayerId": "12d1261d-9ceb-4dcc-b508-4a3edd7f8c38"
-                },
-                {
-                    "id": "affac867-346f-42ad-94e9-5c4ad479b69d",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "d6d02da7-057e-4704-a118-64c73602cba5",
-                    "LayerId": "4b1a9702-7e43-435c-bb20-ea2ea82bebfc"
-                }
-            ]
-        },
-        {
-            "id": "0a7369b7-2d3f-44b3-8684-e202d6390892",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "1c135a5a-11a1-4dba-8984-6ca6e759a92c",
-            "compositeImage": {
-                "id": "d02a2eb8-bf1a-47ee-a1b6-81a6f77cc8bf",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "0a7369b7-2d3f-44b3-8684-e202d6390892",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "6ebee7f4-df84-4286-9f4e-26e316f17402",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "0a7369b7-2d3f-44b3-8684-e202d6390892",
-                    "LayerId": "12d1261d-9ceb-4dcc-b508-4a3edd7f8c38"
-                },
-                {
-                    "id": "1dcf8901-1ee3-4d3c-b484-d3d9266215d4",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "0a7369b7-2d3f-44b3-8684-e202d6390892",
-                    "LayerId": "4b1a9702-7e43-435c-bb20-ea2ea82bebfc"
-                }
-            ]
-        },
-        {
-            "id": "8b28c1a8-8e41-40f9-b8b9-1830fae5742b",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "1c135a5a-11a1-4dba-8984-6ca6e759a92c",
-            "compositeImage": {
-                "id": "510dd8a0-4c09-45f1-8eae-cb2c1cd925af",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "8b28c1a8-8e41-40f9-b8b9-1830fae5742b",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "2dccdb93-d948-490d-a47e-c7984800733b",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "8b28c1a8-8e41-40f9-b8b9-1830fae5742b",
-                    "LayerId": "12d1261d-9ceb-4dcc-b508-4a3edd7f8c38"
-                },
-                {
-                    "id": "6d9df3fe-6994-4854-999d-61be35ca131e",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "8b28c1a8-8e41-40f9-b8b9-1830fae5742b",
-                    "LayerId": "4b1a9702-7e43-435c-bb20-ea2ea82bebfc"
-                }
-            ]
-        },
-        {
-            "id": "98a192d3-b3af-47e1-9fdd-4db95c66c520",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "1c135a5a-11a1-4dba-8984-6ca6e759a92c",
-            "compositeImage": {
-                "id": "40e1947b-cde8-459c-a6b2-84fc60c10b35",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "98a192d3-b3af-47e1-9fdd-4db95c66c520",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "e1899273-17ab-40fe-878d-79d4444bf1f7",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "98a192d3-b3af-47e1-9fdd-4db95c66c520",
-                    "LayerId": "12d1261d-9ceb-4dcc-b508-4a3edd7f8c38"
-                },
-                {
-                    "id": "8d789aa4-abe5-4f46-949d-ae63e49744c5",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "98a192d3-b3af-47e1-9fdd-4db95c66c520",
-                    "LayerId": "4b1a9702-7e43-435c-bb20-ea2ea82bebfc"
-                }
-            ]
-        },
-        {
-            "id": "139b9f0c-c32d-44ee-831c-f6b9b4e19e0d",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "1c135a5a-11a1-4dba-8984-6ca6e759a92c",
-            "compositeImage": {
-                "id": "961758e7-f859-4f8d-978f-60ebb4952bd2",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "139b9f0c-c32d-44ee-831c-f6b9b4e19e0d",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "0c073385-cfcc-4fa3-8efe-0c32e84aeb4b",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "139b9f0c-c32d-44ee-831c-f6b9b4e19e0d",
-                    "LayerId": "12d1261d-9ceb-4dcc-b508-4a3edd7f8c38"
-                },
-                {
-                    "id": "cebc3710-a90b-4518-b19e-d9ae5e4d09b9",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "139b9f0c-c32d-44ee-831c-f6b9b4e19e0d",
-                    "LayerId": "4b1a9702-7e43-435c-bb20-ea2ea82bebfc"
-                }
-            ]
-        }
-    ],
-    "gridX": 0,
-    "gridY": 0,
-    "height": 48,
-    "layers": [
-        {
-            "id": "12d1261d-9ceb-4dcc-b508-4a3edd7f8c38",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "1c135a5a-11a1-4dba-8984-6ca6e759a92c",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": true
-        },
-        {
-            "id": "4b1a9702-7e43-435c-bb20-ea2ea82bebfc",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "1c135a5a-11a1-4dba-8984-6ca6e759a92c",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "Layer 1",
-            "opacity": 100,
-            "visible": true
-        }
-    ],
-    "origin": 0,
-    "originLocked": false,
-    "playbackSpeed": 4,
+  "bboxMode": 0,
+  "collisionKind": 1,
+  "type": 0,
+  "origin": 0,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 0,
+  "bbox_right": 26,
+  "bbox_top": 0,
+  "bbox_bottom": 34,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 32,
+  "height": 48,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"83bb3816-7d10-445d-b9cc-e7aa6b8641f5","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"83bb3816-7d10-445d-b9cc-e7aa6b8641f5","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":{"name":"12d1261d-9ceb-4dcc-b508-4a3edd7f8c38","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"83bb3816-7d10-445d-b9cc-e7aa6b8641f5","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":{"name":"4b1a9702-7e43-435c-bb20-ea2ea82bebfc","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_apartment_door_opening","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"83bb3816-7d10-445d-b9cc-e7aa6b8641f5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"b965b013-77da-469b-95d8-4fb9eb3fdcb8","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b965b013-77da-469b-95d8-4fb9eb3fdcb8","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":{"name":"12d1261d-9ceb-4dcc-b508-4a3edd7f8c38","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"b965b013-77da-469b-95d8-4fb9eb3fdcb8","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":{"name":"4b1a9702-7e43-435c-bb20-ea2ea82bebfc","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_apartment_door_opening","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"b965b013-77da-469b-95d8-4fb9eb3fdcb8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e9099942-8be5-4fd7-841b-11e6e7c1216c","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e9099942-8be5-4fd7-841b-11e6e7c1216c","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":{"name":"12d1261d-9ceb-4dcc-b508-4a3edd7f8c38","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"e9099942-8be5-4fd7-841b-11e6e7c1216c","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":{"name":"4b1a9702-7e43-435c-bb20-ea2ea82bebfc","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_apartment_door_opening","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"e9099942-8be5-4fd7-841b-11e6e7c1216c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"1d05b87d-829d-4373-ab78-1fb77f6efe5f","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"1d05b87d-829d-4373-ab78-1fb77f6efe5f","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":{"name":"12d1261d-9ceb-4dcc-b508-4a3edd7f8c38","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"1d05b87d-829d-4373-ab78-1fb77f6efe5f","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":{"name":"4b1a9702-7e43-435c-bb20-ea2ea82bebfc","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_apartment_door_opening","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"1d05b87d-829d-4373-ab78-1fb77f6efe5f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"db6ac8f1-f9e4-4c36-ad87-52eb739902d7","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"db6ac8f1-f9e4-4c36-ad87-52eb739902d7","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":{"name":"12d1261d-9ceb-4dcc-b508-4a3edd7f8c38","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"db6ac8f1-f9e4-4c36-ad87-52eb739902d7","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":{"name":"4b1a9702-7e43-435c-bb20-ea2ea82bebfc","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_apartment_door_opening","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"db6ac8f1-f9e4-4c36-ad87-52eb739902d7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d6d02da7-057e-4704-a118-64c73602cba5","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d6d02da7-057e-4704-a118-64c73602cba5","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":{"name":"12d1261d-9ceb-4dcc-b508-4a3edd7f8c38","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"d6d02da7-057e-4704-a118-64c73602cba5","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":{"name":"4b1a9702-7e43-435c-bb20-ea2ea82bebfc","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_apartment_door_opening","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"d6d02da7-057e-4704-a118-64c73602cba5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0a7369b7-2d3f-44b3-8684-e202d6390892","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0a7369b7-2d3f-44b3-8684-e202d6390892","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":{"name":"12d1261d-9ceb-4dcc-b508-4a3edd7f8c38","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"0a7369b7-2d3f-44b3-8684-e202d6390892","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":{"name":"4b1a9702-7e43-435c-bb20-ea2ea82bebfc","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_apartment_door_opening","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"0a7369b7-2d3f-44b3-8684-e202d6390892","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"8b28c1a8-8e41-40f9-b8b9-1830fae5742b","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8b28c1a8-8e41-40f9-b8b9-1830fae5742b","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":{"name":"12d1261d-9ceb-4dcc-b508-4a3edd7f8c38","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"8b28c1a8-8e41-40f9-b8b9-1830fae5742b","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":{"name":"4b1a9702-7e43-435c-bb20-ea2ea82bebfc","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_apartment_door_opening","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"8b28c1a8-8e41-40f9-b8b9-1830fae5742b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"98a192d3-b3af-47e1-9fdd-4db95c66c520","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"98a192d3-b3af-47e1-9fdd-4db95c66c520","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":{"name":"12d1261d-9ceb-4dcc-b508-4a3edd7f8c38","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"98a192d3-b3af-47e1-9fdd-4db95c66c520","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":{"name":"4b1a9702-7e43-435c-bb20-ea2ea82bebfc","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_apartment_door_opening","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"98a192d3-b3af-47e1-9fdd-4db95c66c520","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"139b9f0c-c32d-44ee-831c-f6b9b4e19e0d","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"139b9f0c-c32d-44ee-831c-f6b9b4e19e0d","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":{"name":"12d1261d-9ceb-4dcc-b508-4a3edd7f8c38","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"139b9f0c-c32d-44ee-831c-f6b9b4e19e0d","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"LayerId":{"name":"4b1a9702-7e43-435c-bb20-ea2ea82bebfc","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_apartment_door_opening","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","name":"139b9f0c-c32d-44ee-831c-f6b9b4e19e0d","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"spr_apartment_door_opening","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 4.0,
     "playbackSpeedType": 0,
-    "premultiplyAlpha": false,
-    "sepmasks": false,
-    "swatchColours": null,
-    "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
-    "type": 0,
-    "width": 32,
-    "xorig": 0,
-    "yorig": 0
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 10.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"5aa6cf2e-f1ed-4fb8-9628-0e7ee06061b4","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"83bb3816-7d10-445d-b9cc-e7aa6b8641f5","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"958ca291-2d4c-4668-9d0d-f9cd3fcfee58","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b965b013-77da-469b-95d8-4fb9eb3fdcb8","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"95a336e3-47f6-4e93-b221-b320a8040530","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e9099942-8be5-4fd7-841b-11e6e7c1216c","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d927ffd6-48ac-4d65-a645-598bafb4349b","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1d05b87d-829d-4373-ab78-1fb77f6efe5f","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b70cdf01-50e0-489d-9fa3-101eff419771","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"db6ac8f1-f9e4-4c36-ad87-52eb739902d7","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"973da89f-cd0b-4ce8-b1ac-5a21a0e08bad","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d6d02da7-057e-4704-a118-64c73602cba5","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"bd263f75-e3ba-4dd0-be6a-00920b2a4816","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0a7369b7-2d3f-44b3-8684-e202d6390892","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2458bfc0-ae4a-4bf3-b3bc-06b696cab445","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8b28c1a8-8e41-40f9-b8b9-1830fae5742b","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2c885fff-596d-4850-865c-a39d15c8874a","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"98a192d3-b3af-47e1-9fdd-4db95c66c520","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0320ffbd-12da-4d74-9a6c-17355b112470","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"139b9f0c-c32d-44ee-831c-f6b9b4e19e0d","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+    ],
+    "visibleRange": {"x":0.0,"y":0.0,},
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1920,
+    "backdropHeight": 1080,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 0,
+    "yorigin": 0,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"spr_apartment_door_opening","path":"sprites/spr_apartment_door_opening/spr_apartment_door_opening.yy",},
+    "resourceVersion": "1.3",
+    "name": "",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"12d1261d-9ceb-4dcc-b508-4a3edd7f8c38","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"4b1a9702-7e43-435c-bb20-ea2ea82bebfc","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "parent": {
+    "name": "Apatment",
+    "path": "folders/Timelines/Sprites/Tiles/Apatment.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "spr_apartment_door_opening",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

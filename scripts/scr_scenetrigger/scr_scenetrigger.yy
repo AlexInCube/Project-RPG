@@ -1,8 +1,12 @@
 {
-    "id": "65b2addc-78e1-4e37-9ab4-399a62dad561",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_scenetrigger",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Cutscene System Scripts",
+    "path": "folders/Objects/Controllers/Cutscene System/Cutscene System Scripts.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_scenetrigger",
+  "tags": [],
+  "resourceType": "GMScript",
 }

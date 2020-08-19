@@ -8,16 +8,21 @@
 ///@arg *Scripts
 ///@arg *Text_Col
 ///@arg *Emotion
-if !instance_exists(obj_cutscene_speaker){
-	var inst = instance_create_layer(0,0,"Text",obj_cutscene_speaker)
-	inst.myText = argument0
-	with (inst){
-		create_dialogue(myText, obj_player);
+function scr_cutscene_create_dialogue(argument0) {
+	if !instance_exists(obj_cutscene_speaker){
+		var inst = instance_create_layer(0,0,"Text",obj_cutscene_speaker)
+		inst.myText = argument0
+		with (inst){
+			create_dialogue(myText, obj_player);
+		}
+	}else if !instance_exists(obj_textbox){
+		instance_destroy(obj_cutscene_speaker)
+		scr_cutscene_end_action()
 	}
-}else if !instance_exists(obj_textbox){
-	instance_destroy(obj_cutscene_speaker)
-	scr_cutscene_end_action()
+
+
+
+
+
+
 }
-
-
-

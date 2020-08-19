@@ -1,8 +1,12 @@
 {
-    "id": "e150ad68-8808-4059-bcf5-5aee6409d4b8",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_cutscene_wait",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Cutscene System Scripts",
+    "path": "folders/Objects/Controllers/Cutscene System/Cutscene System Scripts.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_cutscene_wait",
+  "tags": [],
+  "resourceType": "GMScript",
 }

@@ -1,8 +1,12 @@
 {
-    "id": "1f53f70c-67cd-4c87-977b-d1fb8e70bfb5",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_cutscene_instance_destroy",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Cutscene System Scripts",
+    "path": "folders/Objects/Controllers/Cutscene System/Cutscene System Scripts.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_cutscene_instance_destroy",
+  "tags": [],
+  "resourceType": "GMScript",
 }

@@ -1,114 +1,86 @@
 {
-    "id": "1699f140-a470-4142-b970-310d84b6ba63",
-    "modelName": "GMSprite",
-    "mvc": "1.12",
-    "name": "spr_keyboardbutton",
-    "For3D": false,
-    "HTile": false,
-    "VTile": false,
-    "bbox_bottom": 23,
-    "bbox_left": 0,
-    "bbox_right": 23,
-    "bbox_top": 0,
-    "bboxmode": 0,
-    "colkind": 1,
-    "coltolerance": 0,
-    "edgeFiltering": false,
-    "frames": [
-        {
-            "id": "dd2dbdc6-00d3-4572-b9d8-c6ede07cbaa0",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "1699f140-a470-4142-b970-310d84b6ba63",
-            "compositeImage": {
-                "id": "d2928220-36b7-43e9-959d-a4787b79d2b8",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "dd2dbdc6-00d3-4572-b9d8-c6ede07cbaa0",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "824c3146-a5db-405e-ad32-8e560c4cac42",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "dd2dbdc6-00d3-4572-b9d8-c6ede07cbaa0",
-                    "LayerId": "f8986941-e34b-4d91-9307-ec38e8ce7460"
-                }
-            ]
-        },
-        {
-            "id": "db73d76f-86dc-40da-91c1-9bb3a118a0d0",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "1699f140-a470-4142-b970-310d84b6ba63",
-            "compositeImage": {
-                "id": "e52c2705-588a-41ea-812d-6b766ff57468",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "db73d76f-86dc-40da-91c1-9bb3a118a0d0",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "19f40fc7-0c1a-4746-8cad-1c8399e36e29",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "db73d76f-86dc-40da-91c1-9bb3a118a0d0",
-                    "LayerId": "f8986941-e34b-4d91-9307-ec38e8ce7460"
-                }
-            ]
-        },
-        {
-            "id": "75c3f7d7-dea4-4f10-9673-9577e643e8ea",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "1699f140-a470-4142-b970-310d84b6ba63",
-            "compositeImage": {
-                "id": "a62af013-2d8e-4ed8-89b6-70b313a60a09",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "75c3f7d7-dea4-4f10-9673-9577e643e8ea",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "2a04ee98-5c7f-40d0-82b7-b4ce89a0fc6f",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "75c3f7d7-dea4-4f10-9673-9577e643e8ea",
-                    "LayerId": "f8986941-e34b-4d91-9307-ec38e8ce7460"
-                }
-            ]
-        }
-    ],
-    "gridX": 12,
-    "gridY": 12,
-    "height": 24,
-    "layers": [
-        {
-            "id": "f8986941-e34b-4d91-9307-ec38e8ce7460",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "1699f140-a470-4142-b970-310d84b6ba63",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": true
-        }
-    ],
-    "origin": 0,
-    "originLocked": false,
-    "playbackSpeed": 15,
+  "bboxMode": 0,
+  "collisionKind": 1,
+  "type": 0,
+  "origin": 0,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 0,
+  "bbox_right": 23,
+  "bbox_top": 0,
+  "bbox_bottom": 23,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 24,
+  "height": 24,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 12,
+  "gridY": 12,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"dd2dbdc6-00d3-4572-b9d8-c6ede07cbaa0","path":"sprites/spr_keyboardbutton/spr_keyboardbutton.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"dd2dbdc6-00d3-4572-b9d8-c6ede07cbaa0","path":"sprites/spr_keyboardbutton/spr_keyboardbutton.yy",},"LayerId":{"name":"f8986941-e34b-4d91-9307-ec38e8ce7460","path":"sprites/spr_keyboardbutton/spr_keyboardbutton.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_keyboardbutton","path":"sprites/spr_keyboardbutton/spr_keyboardbutton.yy",},"resourceVersion":"1.0","name":"dd2dbdc6-00d3-4572-b9d8-c6ede07cbaa0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"db73d76f-86dc-40da-91c1-9bb3a118a0d0","path":"sprites/spr_keyboardbutton/spr_keyboardbutton.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"db73d76f-86dc-40da-91c1-9bb3a118a0d0","path":"sprites/spr_keyboardbutton/spr_keyboardbutton.yy",},"LayerId":{"name":"f8986941-e34b-4d91-9307-ec38e8ce7460","path":"sprites/spr_keyboardbutton/spr_keyboardbutton.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_keyboardbutton","path":"sprites/spr_keyboardbutton/spr_keyboardbutton.yy",},"resourceVersion":"1.0","name":"db73d76f-86dc-40da-91c1-9bb3a118a0d0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"75c3f7d7-dea4-4f10-9673-9577e643e8ea","path":"sprites/spr_keyboardbutton/spr_keyboardbutton.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"75c3f7d7-dea4-4f10-9673-9577e643e8ea","path":"sprites/spr_keyboardbutton/spr_keyboardbutton.yy",},"LayerId":{"name":"f8986941-e34b-4d91-9307-ec38e8ce7460","path":"sprites/spr_keyboardbutton/spr_keyboardbutton.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_keyboardbutton","path":"sprites/spr_keyboardbutton/spr_keyboardbutton.yy",},"resourceVersion":"1.0","name":"75c3f7d7-dea4-4f10-9673-9577e643e8ea","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"spr_keyboardbutton","path":"sprites/spr_keyboardbutton/spr_keyboardbutton.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 15.0,
     "playbackSpeedType": 0,
-    "premultiplyAlpha": false,
-    "sepmasks": false,
-    "swatchColours": null,
-    "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
-    "type": 0,
-    "width": 24,
-    "xorig": 0,
-    "yorig": 0
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 3.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"4c681230-fe9c-472d-8f5d-2c36276bed8f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dd2dbdc6-00d3-4572-b9d8-c6ede07cbaa0","path":"sprites/spr_keyboardbutton/spr_keyboardbutton.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"63710f24-8388-4183-9358-442e305554ab","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"db73d76f-86dc-40da-91c1-9bb3a118a0d0","path":"sprites/spr_keyboardbutton/spr_keyboardbutton.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6dc581f1-ed2b-4b92-8c76-06e4b73b86fb","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"75c3f7d7-dea4-4f10-9673-9577e643e8ea","path":"sprites/spr_keyboardbutton/spr_keyboardbutton.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+    ],
+    "visibleRange": {"x":0.0,"y":0.0,},
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1920,
+    "backdropHeight": 1080,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 0,
+    "yorigin": 0,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"spr_keyboardbutton","path":"sprites/spr_keyboardbutton/spr_keyboardbutton.yy",},
+    "resourceVersion": "1.3",
+    "name": "",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f8986941-e34b-4d91-9307-ec38e8ce7460","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "parent": {
+    "name": "Options",
+    "path": "folders/Timelines/Sprites/GUI/Options.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "spr_keyboardbutton",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

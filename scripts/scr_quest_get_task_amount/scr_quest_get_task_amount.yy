@@ -1,8 +1,12 @@
 {
-    "id": "4e590915-0219-4bf9-9c9b-9fb84876507a",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_quest_get_task_amount",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Helpers",
+    "path": "folders/Scripts/Quest System Scripts/Helpers.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_quest_get_task_amount",
+  "tags": [],
+  "resourceType": "GMScript",
 }

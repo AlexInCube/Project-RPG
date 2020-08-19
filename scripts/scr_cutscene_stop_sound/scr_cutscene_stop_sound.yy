@@ -1,8 +1,12 @@
 {
-    "id": "7341aa7f-3d87-4998-b610-01bf18397107",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_cutscene_stop_sound",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Cutscene System Scripts",
+    "path": "folders/Objects/Controllers/Cutscene System/Cutscene System Scripts.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_cutscene_stop_sound",
+  "tags": [],
+  "resourceType": "GMScript",
 }

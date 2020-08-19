@@ -1,8 +1,12 @@
 {
-    "id": "12cf7016-1dd8-4d3b-80df-fea18f108032",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_quest_get_short_description_for_task",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Helpers",
+    "path": "folders/Scripts/Quest System Scripts/Helpers.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_quest_get_short_description_for_task",
+  "tags": [],
+  "resourceType": "GMScript",
 }
