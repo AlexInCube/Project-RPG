@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Windows",
-    "path": "folders/Objects/Utility/Windows.yy",
+    "name": "Options",
+    "path": "folders/Objects/Controllers/Main Menu/Options.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_optionswindow",

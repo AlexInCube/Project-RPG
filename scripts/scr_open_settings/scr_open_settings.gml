@@ -7,6 +7,8 @@ function scr_open_settings() {
 		window.window_y=yy
 		window.xx=xx
 		window.yy=yy
+	}else{
+		instance_destroy(obj_optionswindow)
 	}
 
 

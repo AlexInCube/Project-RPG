@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_penguin_npc",
-    "path": "sprites/spr_penguin_npc/spr_penguin_npc.yy",
+    "name": "spr_penguin_down",
+    "path": "sprites/spr_penguin_down/spr_penguin_down.yy",
   },
   "solid": false,
   "visible": true,
@@ -23,10 +23,10 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [
-    {"x":1.0,"y":6.0,},
-    {"x":24.0,"y":6.0,},
-    {"x":24.0,"y":13.0,},
-    {"x":1.0,"y":13.0,},
+    {"x":4.0,"y":12.0,},
+    {"x":20.0,"y":12.0,},
+    {"x":20.0,"y":23.0,},
+    {"x":4.0,"y":23.0,},
   ],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_enemy_penguin","path":"objects/obj_enemy_penguin/obj_enemy_penguin.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
@@ -34,12 +34,13 @@
     {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"parent":{"name":"obj_enemy_penguin","path":"objects/obj_enemy_penguin/obj_enemy_penguin.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,"parent":{"name":"obj_enemy_penguin","path":"objects/obj_enemy_penguin/obj_enemy_penguin.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"parent":{"name":"obj_enemy_penguin","path":"objects/obj_enemy_penguin/obj_enemy_penguin.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"parent":{"name":"obj_enemy_penguin","path":"objects/obj_enemy_penguin/obj_enemy_penguin.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Objects/Game Objects/Enemies.yy",
+    "name": "Penguin",
+    "path": "folders/Objects/Game Objects/Enemies/Penguin.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_enemy_penguin",

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_penguin_npc",
-    "path": "sprites/spr_penguin_npc/spr_penguin_npc.yy",
+    "name": "spr_penguin_down",
+    "path": "sprites/spr_penguin_down/spr_penguin_down.yy",
   },
   "solid": false,
   "visible": true,

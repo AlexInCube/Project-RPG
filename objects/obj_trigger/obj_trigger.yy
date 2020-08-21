@@ -37,6 +37,8 @@
   },
   "resourceVersion": "1.0",
   "name": "obj_trigger",
-  "tags": [],
+  "tags": [
+    "triggers",
+  ],
   "resourceType": "GMObject",
 }

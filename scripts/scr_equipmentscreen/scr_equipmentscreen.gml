@@ -61,6 +61,4 @@ function scr_equipmentscreen(argument0) {
 	draw_text(window_xx+140,window_yy+28,obj_player_stats.strength)
 	draw_text(window_xx+140,window_yy+44,obj_player_stats.intelligence)
 	draw_text(window_xx+140,window_yy+60,obj_player_stats.luck)
-
-
 }

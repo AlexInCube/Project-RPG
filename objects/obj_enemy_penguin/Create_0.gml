@@ -1,14 +1,27 @@
 /// @description Insert description here
 // You can write your code in this editor
 event_inherited()
-spd = 1
-image_speed=0
-state = scr_enemy_idle_state
+spd = 1.5
+image_speed = 0.2
+state = scr_enemy_idle_state_chinlin
 alarm[0] = room_speed*irandom_range(2,3)
 sight = 300
-targetx = 0
-targety = 0
-max_hp = 10
+xaxis = 0
+yaxis = 0
+movement = IDLE
+face = RIGHT
+max_hp = 25
+hp = max_hp
 
-phys_armor=1
+sprite[RIGHT,MOVE] = spr_penguin_right
+sprite[UP,MOVE] = spr_penguin_up
+sprite[LEFT,MOVE] = spr_penguin_left
+sprite[DOWN,MOVE] = spr_penguin_down
+
+sprite[RIGHT,IDLE] = spr_penguin_right
+sprite[UP,IDLE] = spr_penguin_up
+sprite[LEFT,IDLE] = spr_penguin_left
+sprite[DOWN,IDLE] = spr_penguin_down
+
+phys_armor=2
 magic_armor=0

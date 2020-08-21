@@ -12,7 +12,7 @@ myName				= "Васян";
 choice_variable		= 0;	//the variable we change depending on the player's choice in dialogue
 phy_fixed_rotation=true
 
-sprite[RIGHT,MOVE] = spr_penguin_npc
-sprite[UP,MOVE] = spr_penguin_npc
-sprite[LEFT,MOVE] = spr_penguin_npc
-sprite[DOWN,MOVE] = spr_penguin_npc
+sprite[RIGHT,MOVE] = spr_penguin_right
+sprite[UP,MOVE] = spr_penguin_up
+sprite[LEFT,MOVE] = spr_penguin_left
+sprite[DOWN,MOVE] = spr_penguin_down

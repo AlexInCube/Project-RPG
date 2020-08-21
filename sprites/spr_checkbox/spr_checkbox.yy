@@ -72,8 +72,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c4663a42-b793-4a4e-bd6c-ca68c60d93dc","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Options",
-    "path": "folders/Sprites/GUI/Options.yy",
+    "name": "Options Sprites",
+    "path": "folders/Objects/Controllers/Main Menu/Options/Options Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_checkbox",

@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e697c7ed-62b2-4a0b-8e4b-03f2f72ce225","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Options",
-    "path": "folders/Sprites/GUI/Options.yy",
+    "name": "Options Sprites",
+    "path": "folders/Objects/Controllers/Main Menu/Options/Options Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_slidershiftforeground",

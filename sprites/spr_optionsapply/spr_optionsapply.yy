@@ -72,8 +72,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d470f565-877a-441b-8d43-47ef41ca0c6c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Options",
-    "path": "folders/Sprites/GUI/Options.yy",
+    "name": "Options Sprites",
+    "path": "folders/Objects/Controllers/Main Menu/Options/Options Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_optionsapply",

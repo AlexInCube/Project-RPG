@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"986ed359-acb4-4e50-aa39-0a6d0f78a031","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Options",
-    "path": "folders/Sprites/GUI/Options.yy",
+    "name": "Options Sprites",
+    "path": "folders/Objects/Controllers/Main Menu/Options/Options Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_sliderbackground1",

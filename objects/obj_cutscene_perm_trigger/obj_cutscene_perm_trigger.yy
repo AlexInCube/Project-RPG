@@ -37,6 +37,8 @@
   },
   "resourceVersion": "1.0",
   "name": "obj_cutscene_perm_trigger",
-  "tags": [],
+  "tags": [
+    "triggers",
+  ],
   "resourceType": "GMObject",
 }

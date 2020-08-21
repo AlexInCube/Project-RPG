@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Events",
-    "path": "folders/Objects/Controllers/Events.yy",
+    "name": "Quest System",
+    "path": "folders/Objects/Controllers/Quest System.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_questlistener",

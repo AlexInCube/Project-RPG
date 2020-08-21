@@ -4,7 +4,7 @@
     "path": "sprites/spr_transfer_trigger/spr_transfer_trigger.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -33,11 +33,13 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Game Objects",
-    "path": "folders/Objects/Game Objects.yy",
+    "name": "Utility",
+    "path": "folders/Objects/Utility.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_door",
-  "tags": [],
+  "tags": [
+    "triggers",
+  ],
   "resourceType": "GMObject",
 }

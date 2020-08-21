@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"657b8b6f-cda6-426a-895f-f089e3edb9e1","path":"sprites/spr_penguin_npc/spr_penguin_npc.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"657b8b6f-cda6-426a-895f-f089e3edb9e1","path":"sprites/spr_penguin_npc/spr_penguin_npc.yy",},"LayerId":{"name":"809514f3-849f-493d-bc43-03348c102c78","path":"sprites/spr_penguin_npc/spr_penguin_npc.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_penguin_npc","path":"sprites/spr_penguin_npc/spr_penguin_npc.yy",},"resourceVersion":"1.0","name":"657b8b6f-cda6-426a-895f-f089e3edb9e1","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"657b8b6f-cda6-426a-895f-f089e3edb9e1","path":"sprites/spr_penguin_down/spr_penguin_down.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"657b8b6f-cda6-426a-895f-f089e3edb9e1","path":"sprites/spr_penguin_down/spr_penguin_down.yy",},"LayerId":{"name":"809514f3-849f-493d-bc43-03348c102c78","path":"sprites/spr_penguin_down/spr_penguin_down.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_penguin_down","path":"sprites/spr_penguin_down/spr_penguin_down.yy",},"resourceVersion":"1.0","name":"657b8b6f-cda6-426a-895f-f089e3edb9e1","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_penguin_npc","path":"sprites/spr_penguin_npc/spr_penguin_npc.yy",},
+    "spriteId": {"name":"spr_penguin_down","path":"sprites/spr_penguin_down/spr_penguin_down.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"a487f68f-b88e-4c43-9b93-b2759578b984","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"657b8b6f-cda6-426a-895f-f089e3edb9e1","path":"sprites/spr_penguin_npc/spr_penguin_npc.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a487f68f-b88e-4c43-9b93-b2759578b984","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"657b8b6f-cda6-426a-895f-f089e3edb9e1","path":"sprites/spr_penguin_down/spr_penguin_down.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 8,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_penguin_npc","path":"sprites/spr_penguin_npc/spr_penguin_npc.yy",},
+    "parent": {"name":"spr_penguin_down","path":"sprites/spr_penguin_down/spr_penguin_down.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "spr_penguin_down",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -68,11 +68,11 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"809514f3-849f-493d-bc43-03348c102c78","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "NPC",
-    "path": "folders/Sprites/NPC.yy",
+    "name": "Penguin",
+    "path": "folders/Objects/Game Objects/Enemies/Penguin.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_penguin_npc",
+  "name": "spr_penguin_down",
   "tags": [],
   "resourceType": "GMSprite",
 }

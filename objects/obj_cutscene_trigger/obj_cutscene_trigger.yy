@@ -4,7 +4,7 @@
     "path": "sprites/spr_cutscene_trigger/spr_cutscene_trigger.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -37,6 +37,8 @@
   },
   "resourceVersion": "1.0",
   "name": "obj_cutscene_trigger",
-  "tags": [],
+  "tags": [
+    "triggers",
+  ],
   "resourceType": "GMObject",
 }
