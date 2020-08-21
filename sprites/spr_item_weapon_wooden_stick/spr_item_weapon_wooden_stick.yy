@@ -44,7 +44,7 @@
             {"id":"81fdad26-fa04-4c7e-9a1d-a3803d9894ca","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7a8e3404-1161-4781-a99f-3ad2f9fc6174","path":"sprites/spr_item_weapon_wooden_stick/spr_item_weapon_wooden_stick.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "PhysWeapon",
-    "path": "folders/Timelines/Sprites/GUI/Inventory/Items/Weapon/PhysWeapon.yy",
+    "path": "folders/Sprites/GUI/Inventory/Items/Weapon/PhysWeapon.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_item_weapon_wooden_stick",

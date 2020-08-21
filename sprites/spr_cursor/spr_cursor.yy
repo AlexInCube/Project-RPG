@@ -44,7 +44,7 @@
             {"id":"28ba8b8b-f0d6-4f73-bc90-92c9ba814cb4","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1447f122-87d7-4344-b455-e34054ab1eb2","path":"sprites/spr_cursor/spr_cursor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "GUI",
-    "path": "folders/Timelines/Sprites/GUI.yy",
+    "path": "folders/Sprites/GUI.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_cursor",

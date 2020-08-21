@@ -44,7 +44,7 @@
             {"id":"bd1bdbd3-1e67-4e75-9da3-21c7ff8364a0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0b6748cf-5193-429c-aabf-e753c70ac829","path":"sprites/spr_hudbuttonsbackground/spr_hudbuttonsbackground.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "HUD",
-    "path": "folders/Timelines/Sprites/GUI/HUD.yy",
+    "path": "folders/Sprites/GUI/HUD.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_hudbuttonsbackground",

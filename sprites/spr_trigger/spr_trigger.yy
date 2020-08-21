@@ -44,7 +44,7 @@
             {"id":"09c49a39-5926-4978-8e78-6136b48379d6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4970b873-1987-43a7-ab81-e5780f9c9e13","path":"sprites/spr_trigger/spr_trigger.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Developer Tiles",
-    "path": "folders/Timelines/Sprites/Tiles/Developer Tiles.yy",
+    "path": "folders/Sprites/Tiles/Developer Tiles.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_trigger",

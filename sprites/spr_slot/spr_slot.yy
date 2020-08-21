@@ -68,7 +68,7 @@
             {"id":"a1f42baa-a8f2-4d81-8c75-07f1a1eeaef0","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0eea048c-749d-474d-9b40-034949e69cfe","path":"sprites/spr_slot/spr_slot.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -93,7 +93,7 @@
   ],
   "parent": {
     "name": "Inventory",
-    "path": "folders/Timelines/Sprites/GUI/Inventory.yy",
+    "path": "folders/Sprites/GUI/Inventory.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_slot",

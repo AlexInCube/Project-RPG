@@ -44,7 +44,7 @@
             {"id":"4e12048b-1a56-438f-a5ae-8f752940c2d8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ef9aae05-ee5c-427e-904a-7acb959cbd64","path":"sprites/spr_ironboots/spr_ironboots.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Armor",
-    "path": "folders/Timelines/Sprites/GUI/Inventory/Items/Armor.yy",
+    "path": "folders/Sprites/GUI/Inventory/Items/Armor.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ironboots",

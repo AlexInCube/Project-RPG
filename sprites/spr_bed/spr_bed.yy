@@ -44,7 +44,7 @@
             {"id":"287b46d9-f4d8-4762-9ea5-8f825d71fe70","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3322c209-ef33-4c20-b18b-7c9544c13076","path":"sprites/spr_bed/spr_bed.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Apatment",
-    "path": "folders/Timelines/Sprites/Tiles/Apatment.yy",
+    "path": "folders/Sprites/Tiles/Apatment.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_bed",

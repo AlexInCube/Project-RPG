@@ -44,7 +44,7 @@
             {"id":"f07bca80-c27a-4bf4-8676-61b815f8fc38","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2889c8d3-a8d2-45c6-be70-72400d7d0758","path":"sprites/spr_lehanpc/spr_lehanpc.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "NPC",
-    "path": "folders/Timelines/Sprites/NPC.yy",
+    "path": "folders/Sprites/NPC.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_lehanpc",

@@ -44,7 +44,7 @@
             {"id":"a4747e48-10b8-4cdb-83aa-0861ab3df9b5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d3507191-22a5-41e0-a2af-341aa72f02c9","path":"sprites/spr_MagicWeaponLightningStaff/spr_MagicWeaponLightningStaff.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "MagicWeapon",
-    "path": "folders/Timelines/Sprites/GUI/Inventory/Items/Weapon/MagicWeapon.yy",
+    "path": "folders/Sprites/GUI/Inventory/Items/Weapon/MagicWeapon.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_MagicWeaponLightningStaff",

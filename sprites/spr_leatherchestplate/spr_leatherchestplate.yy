@@ -44,7 +44,7 @@
             {"id":"742ddf10-f7dc-4e7c-ad06-69f3e6a7b3a7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d859891b-6219-43fa-a29d-879be06ac76b","path":"sprites/spr_leatherchestplate/spr_leatherchestplate.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Armor",
-    "path": "folders/Timelines/Sprites/GUI/Inventory/Items/Armor.yy",
+    "path": "folders/Sprites/GUI/Inventory/Items/Armor.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_leatherchestplate",

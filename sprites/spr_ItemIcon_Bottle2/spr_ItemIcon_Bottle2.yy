@@ -44,7 +44,7 @@
             {"id":"df7caad7-3950-487c-a1e0-e345fb97603c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"11cb191f-8a95-4356-aa2e-3f3333b4a0ee","path":"sprites/spr_ItemIcon_Bottle2/spr_ItemIcon_Bottle2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "itempack",
-    "path": "folders/Timelines/Sprites/GUI/Inventory/Items/itempack.yy",
+    "path": "folders/Sprites/GUI/Inventory/Items/itempack.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ItemIcon_Bottle2",

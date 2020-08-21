@@ -44,7 +44,7 @@
             {"id":"e587c841-1932-4c9b-97d9-189b3b36375e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fde32595-1abc-4fa0-8bec-5e43957ffca3","path":"sprites/spr_hpbar/spr_hpbar.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "HP and MP bars",
-    "path": "folders/Timelines/Sprites/GUI/HUD/HP and MP bars.yy",
+    "path": "folders/Sprites/GUI/HUD/HP and MP bars.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_hpbar",

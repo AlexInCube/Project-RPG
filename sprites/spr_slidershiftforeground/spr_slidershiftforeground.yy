@@ -44,7 +44,7 @@
             {"id":"82a8569f-f529-480b-b54f-1040765ef689","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ce7e5168-79ff-4766-b40c-6dfc35ad4d9d","path":"sprites/spr_slidershiftforeground/spr_slidershiftforeground.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Options",
-    "path": "folders/Timelines/Sprites/GUI/Options.yy",
+    "path": "folders/Sprites/GUI/Options.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_slidershiftforeground",

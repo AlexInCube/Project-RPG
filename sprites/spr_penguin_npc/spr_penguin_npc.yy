@@ -44,7 +44,7 @@
             {"id":"a487f68f-b88e-4c43-9b93-b2759578b984","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"657b8b6f-cda6-426a-895f-f089e3edb9e1","path":"sprites/spr_penguin_npc/spr_penguin_npc.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "NPC",
-    "path": "folders/Timelines/Sprites/NPC.yy",
+    "path": "folders/Sprites/NPC.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_penguin_npc",

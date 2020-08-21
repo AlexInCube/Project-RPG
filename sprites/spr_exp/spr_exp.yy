@@ -44,7 +44,7 @@
             {"id":"c40a9895-b1ca-4cb4-a66d-e9f5b5c422a9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e01b2e1a-e2c3-4962-aeb0-5e204d6e72d9","path":"sprites/spr_exp/spr_exp.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Game Objects",
-    "path": "folders/Timelines/Sprites/Game Objects.yy",
+    "path": "folders/Sprites/Game Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_exp",

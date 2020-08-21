@@ -44,7 +44,7 @@
             {"id":"81ec7c3e-d8bd-44ec-b056-350d4663b2b2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"eeb5ef84-e3ff-4df4-9101-9109412a617f","path":"sprites/spr_maksimnpc/spr_maksimnpc.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "NPC",
-    "path": "folders/Timelines/Sprites/NPC.yy",
+    "path": "folders/Sprites/NPC.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_maksimnpc",

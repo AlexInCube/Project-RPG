@@ -39,8 +39,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Objects/Game Objects/Enemies.yy",
+    "name": "Slimes",
+    "path": "folders/Objects/Game Objects/Enemies/Slimes.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_enemy_slime",

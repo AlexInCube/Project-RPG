@@ -44,7 +44,7 @@
             {"id":"bf0e3b72-0579-4bb0-948f-fa0c1258be1a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"245659c5-9994-40d3-8224-d0579dfb354d","path":"sprites/spr_ItemIcon_EmptyBucket/spr_ItemIcon_EmptyBucket.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "itempack",
-    "path": "folders/Timelines/Sprites/GUI/Inventory/Items/itempack.yy",
+    "path": "folders/Sprites/GUI/Inventory/Items/itempack.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ItemIcon_EmptyBucket",

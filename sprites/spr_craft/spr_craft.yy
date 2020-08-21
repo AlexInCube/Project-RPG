@@ -52,7 +52,7 @@
             {"id":"c9bdc709-0930-4611-840d-e81b20b48714","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9ac46c36-4ce5-4e06-9ab9-77dbc1ba3dfc","path":"sprites/spr_craft/spr_craft.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -79,7 +79,7 @@
   ],
   "parent": {
     "name": "HUD",
-    "path": "folders/Timelines/Sprites/GUI/HUD.yy",
+    "path": "folders/Sprites/GUI/HUD.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_craft",

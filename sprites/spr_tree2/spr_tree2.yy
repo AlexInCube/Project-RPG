@@ -44,7 +44,7 @@
             {"id":"723b55a5-e4ac-4fd2-b4d9-1cb2c1d224f8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f8c862aa-dddb-4d39-92e0-88bb50a4b6b2","path":"sprites/spr_tree2/spr_tree2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Trees",
-    "path": "folders/Timelines/Sprites/Tiles/Trees.yy",
+    "path": "folders/Sprites/Tiles/Trees.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_tree2",

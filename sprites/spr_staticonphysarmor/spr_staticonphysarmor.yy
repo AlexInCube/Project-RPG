@@ -44,7 +44,7 @@
             {"id":"2fb1b744-4628-4412-8c4a-c49f9f16fbac","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b239200c-ea6d-49e1-971c-e3b60b20a670","path":"sprites/spr_staticonphysarmor/spr_staticonphysarmor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Stat Icons",
-    "path": "folders/Timelines/Sprites/GUI/Inventory/Stat Icons.yy",
+    "path": "folders/Sprites/GUI/Inventory/Stat Icons.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_staticonphysarmor",

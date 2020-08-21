@@ -3,6 +3,9 @@ if instance_exists(obj_player){
 	obj_player.persistent=false
 	
 }
+if instance_exists(obj_weapon_controller){
+	obj_weapon_controller.persistent=false
+}
 obj_player_stats.persistent=false
 obj_inventory.persistent=false
 ds_grid_destroy(global.inventory)

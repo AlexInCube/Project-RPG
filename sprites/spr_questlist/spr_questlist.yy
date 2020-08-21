@@ -46,7 +46,7 @@
             {"id":"a0b2a896-55aa-4e53-8429-6b3bda96d1f0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3855de10-d186-481d-b9a7-e95a81e69f50","path":"sprites/spr_questlist/spr_questlist.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -73,7 +73,7 @@
   ],
   "parent": {
     "name": "GUI",
-    "path": "folders/Timelines/Sprites/GUI.yy",
+    "path": "folders/Sprites/GUI.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_questlist",

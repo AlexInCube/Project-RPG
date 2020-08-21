@@ -44,7 +44,7 @@
             {"id":"34cc1b4e-86d2-4d3d-8273-82ead21b33f1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"29b1a6df-a577-46b6-8223-3eced28e3ad0","path":"sprites/spr_sliderbackground1/spr_sliderbackground1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Options",
-    "path": "folders/Timelines/Sprites/GUI/Options.yy",
+    "path": "folders/Sprites/GUI/Options.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_sliderbackground1",

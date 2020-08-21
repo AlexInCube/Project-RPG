@@ -44,7 +44,7 @@
             {"id":"d80159ef-2338-47d8-b8e9-a2fa2beb7dda","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7f056c6f-b820-43ec-9643-6afde4ef2500","path":"sprites/spr_rock4/spr_rock4.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Rocks",
-    "path": "folders/Timelines/Sprites/Tiles/Rocks.yy",
+    "path": "folders/Sprites/Tiles/Rocks.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_rock4",

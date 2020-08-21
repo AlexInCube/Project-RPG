@@ -44,7 +44,7 @@
             {"id":"f0a57b9e-ce31-40b4-9a3d-714259914ab0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1554e25e-13fa-403f-b172-9acffd01ef43","path":"sprites/spr_ItemIcon_Slime/spr_ItemIcon_Slime.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Components",
-    "path": "folders/Timelines/Sprites/GUI/Inventory/Items/Components.yy",
+    "path": "folders/Sprites/GUI/Inventory/Items/Components.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ItemIcon_Slime",

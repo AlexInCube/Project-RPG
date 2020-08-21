@@ -44,7 +44,7 @@
             {"id":"19005e58-c4c3-435a-8b2f-226155ac3520","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c6b3b7f5-9b43-4c15-8b43-527feb89707e","path":"sprites/spr_clock/spr_clock.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Apatment",
-    "path": "folders/Timelines/Sprites/Tiles/Apatment.yy",
+    "path": "folders/Sprites/Tiles/Apatment.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_clock",

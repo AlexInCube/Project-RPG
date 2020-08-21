@@ -44,7 +44,7 @@
             {"id":"8e6d945a-513d-4212-8d35-831eb69931a5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e35f01f8-3aad-4032-a0b1-6d7a9c01b0be","path":"sprites/spr_staticonstrength/spr_staticonstrength.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Stat Icons",
-    "path": "folders/Timelines/Sprites/GUI/Inventory/Stat Icons.yy",
+    "path": "folders/Sprites/GUI/Inventory/Stat Icons.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_staticonstrength",

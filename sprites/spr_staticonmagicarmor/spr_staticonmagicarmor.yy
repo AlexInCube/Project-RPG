@@ -44,7 +44,7 @@
             {"id":"b024e1ee-0b71-41d8-81ec-8b89c6a6ebe6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"52aeff92-c462-4ff8-bad4-f497e8269b48","path":"sprites/spr_staticonmagicarmor/spr_staticonmagicarmor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Stat Icons",
-    "path": "folders/Timelines/Sprites/GUI/Inventory/Stat Icons.yy",
+    "path": "folders/Sprites/GUI/Inventory/Stat Icons.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_staticonmagicarmor",

@@ -9,7 +9,7 @@ myName				= "Васян";
 
 //-------OTHER
 
-choice_variable		= -1;	//the variable we change depending on the player's choice in dialogue
+choice_variable		= 0;	//the variable we change depending on the player's choice in dialogue
 phy_fixed_rotation=true
 
 sprite[RIGHT,MOVE] = spr_penguin_npc

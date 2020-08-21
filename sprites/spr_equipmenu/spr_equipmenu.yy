@@ -47,7 +47,7 @@
             {"id":"4a6a41c1-c103-47e5-ba45-038d80274792","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c75c2ba3-9ebf-47d6-8f4b-dc78de8593b4","path":"sprites/spr_equipmenu/spr_equipmenu.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -75,7 +75,7 @@
   ],
   "parent": {
     "name": "Inventory",
-    "path": "folders/Timelines/Sprites/GUI/Inventory.yy",
+    "path": "folders/Sprites/GUI/Inventory.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_equipmenu",

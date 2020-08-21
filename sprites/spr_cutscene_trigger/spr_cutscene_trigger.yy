@@ -123,7 +123,7 @@
             {"id":"5727937e-f416-4cda-82a1-dfc517ea6358","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"30ba8c3c-a458-41c4-b5f6-d47d686c00c5","path":"sprites/spr_cutscene_trigger/spr_cutscene_trigger.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -148,7 +148,7 @@
   ],
   "parent": {
     "name": "Developer Tiles",
-    "path": "folders/Timelines/Sprites/Tiles/Developer Tiles.yy",
+    "path": "folders/Sprites/Tiles/Developer Tiles.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_cutscene_trigger",

@@ -44,7 +44,7 @@
             {"id":"d754f027-e4ad-4ca3-8a1e-03deb3b7cba2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1dc54134-1bae-4a83-b2e1-2687f40db037","path":"sprites/spr_settings/spr_settings.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "HUD",
-    "path": "folders/Timelines/Sprites/GUI/HUD.yy",
+    "path": "folders/Sprites/GUI/HUD.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_settings",

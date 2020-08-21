@@ -44,7 +44,7 @@
             {"id":"db620cce-339e-4ff9-ae77-0f4fa4d77d97","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"775a5918-93c2-43f0-86fd-3854876598b0","path":"sprites/spr_ItemIcon_ironsword/spr_ItemIcon_ironsword.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "PhysWeapon",
-    "path": "folders/Timelines/Sprites/GUI/Inventory/Items/Weapon/PhysWeapon.yy",
+    "path": "folders/Sprites/GUI/Inventory/Items/Weapon/PhysWeapon.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ItemIcon_ironsword",

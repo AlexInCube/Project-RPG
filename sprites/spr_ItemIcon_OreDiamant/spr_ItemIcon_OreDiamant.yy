@@ -44,7 +44,7 @@
             {"id":"e426178b-e4af-4f9b-90b2-8ccb239e5ad5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d8d96abe-b4bd-4c29-962c-d02d9dec536b","path":"sprites/spr_ItemIcon_OreDiamant/spr_ItemIcon_OreDiamant.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "itempack",
-    "path": "folders/Timelines/Sprites/GUI/Inventory/Items/itempack.yy",
+    "path": "folders/Sprites/GUI/Inventory/Items/itempack.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ItemIcon_OreDiamant",

@@ -44,7 +44,7 @@
             {"id":"9505573b-6900-43c1-8793-ce62cbc69bfc","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d1d079ba-9d34-4488-a094-f0c0787efb80","path":"sprites/spr_ItemIcon_BigAttPotion/spr_ItemIcon_BigAttPotion.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "itempack",
-    "path": "folders/Timelines/Sprites/GUI/Inventory/Items/itempack.yy",
+    "path": "folders/Sprites/GUI/Inventory/Items/itempack.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ItemIcon_BigAttPotion",

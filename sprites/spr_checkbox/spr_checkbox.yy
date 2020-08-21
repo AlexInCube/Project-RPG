@@ -48,7 +48,7 @@
             {"id":"7da8a2e9-2cbb-4a7d-8078-03a35ab40061","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9abac2f3-7b09-49f6-b4fe-531f9893c1bc","path":"sprites/spr_checkbox/spr_checkbox.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -73,7 +73,7 @@
   ],
   "parent": {
     "name": "Options",
-    "path": "folders/Timelines/Sprites/GUI/Options.yy",
+    "path": "folders/Sprites/GUI/Options.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_checkbox",

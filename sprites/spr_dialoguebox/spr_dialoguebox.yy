@@ -44,7 +44,7 @@
             {"id":"d20c7463-c58d-4c11-bd6c-7f6cf4e225de","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"366faac5-3608-4c0a-a76a-2f25dcc46dbe","path":"sprites/spr_dialoguebox/spr_dialoguebox.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Dialogue",
-    "path": "folders/Timelines/Sprites/GUI/Dialogue.yy",
+    "path": "folders/Sprites/GUI/Dialogue.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_dialoguebox",

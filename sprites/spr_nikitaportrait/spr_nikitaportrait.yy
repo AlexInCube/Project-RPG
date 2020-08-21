@@ -44,7 +44,7 @@
             {"id":"87528f1d-5cba-44fe-aada-354d4a8d2547","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c80a0542-d3a8-4cab-a565-713964cc0a44","path":"sprites/spr_nikitaportrait/spr_nikitaportrait.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Dialogue",
-    "path": "folders/Timelines/Sprites/GUI/Dialogue.yy",
+    "path": "folders/Sprites/GUI/Dialogue.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_nikitaportrait",

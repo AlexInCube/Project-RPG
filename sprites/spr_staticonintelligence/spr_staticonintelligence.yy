@@ -44,7 +44,7 @@
             {"id":"6058e745-c745-462c-8b0e-09343bb2a670","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"da6b5a6e-eaf6-4aeb-92d7-9761980d5020","path":"sprites/spr_staticonintelligence/spr_staticonintelligence.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Stat Icons",
-    "path": "folders/Timelines/Sprites/GUI/Inventory/Stat Icons.yy",
+    "path": "folders/Sprites/GUI/Inventory/Stat Icons.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_staticonintelligence",

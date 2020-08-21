@@ -48,7 +48,7 @@
             {"id":"c4d8caf9-827d-4a45-92eb-5987709d8cc5","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d32eff07-1d59-4c78-8a49-c1c6a16776e7","path":"sprites/spr_shift/spr_shift.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -73,7 +73,7 @@
   ],
   "parent": {
     "name": "Options",
-    "path": "folders/Timelines/Sprites/GUI/Options.yy",
+    "path": "folders/Sprites/GUI/Options.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_shift",

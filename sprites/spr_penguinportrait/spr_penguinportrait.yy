@@ -44,7 +44,7 @@
             {"id":"2c441695-4967-4c8b-84a5-e32d84c70627","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"de2716b5-c0c3-42e4-8961-78c1c578c0bb","path":"sprites/spr_penguinportrait/spr_penguinportrait.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Dialogue",
-    "path": "folders/Timelines/Sprites/GUI/Dialogue.yy",
+    "path": "folders/Sprites/GUI/Dialogue.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_penguinportrait",

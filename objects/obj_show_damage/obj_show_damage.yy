@@ -26,7 +26,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Effects _ VFX",
-    "path": "folders/Objects/NPCs/Utility/Effects _ VFX.yy",
+    "path": "folders/Objects/Utility/Effects _ VFX.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_show_damage",

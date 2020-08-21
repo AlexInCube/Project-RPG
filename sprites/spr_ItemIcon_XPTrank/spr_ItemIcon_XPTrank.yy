@@ -48,7 +48,7 @@
             {"id":"462b3a5a-b824-4c66-bbc9-ab7b2b9e7b7d","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f2a6c182-7b44-4b5b-9d2d-92a3f5d326d5","path":"sprites/spr_ItemIcon_XPTrank/spr_ItemIcon_XPTrank.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -73,7 +73,7 @@
   ],
   "parent": {
     "name": "itempack",
-    "path": "folders/Timelines/Sprites/GUI/Inventory/Items/itempack.yy",
+    "path": "folders/Sprites/GUI/Inventory/Items/itempack.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ItemIcon_XPTrank",
