@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Windows",
-    "path": "folders/Objects/Utility/Windows.yy",
+    "name": "Quest System",
+    "path": "folders/Objects/Controllers/Quest System.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_questlistwindow",

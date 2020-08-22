@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a32388c8-4e94-429b-8e89-f903b3479b70","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "GUI",
-    "path": "folders/Sprites/GUI.yy",
+    "name": "Quest System",
+    "path": "folders/Objects/Controllers/Quest System.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_task_done",

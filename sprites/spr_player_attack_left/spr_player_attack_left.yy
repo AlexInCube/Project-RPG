@@ -92,8 +92,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"472f7a5e-4c49-4acb-bd12-9ccde9dd9ff2","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Player",
-    "path": "folders/Sprites/Player.yy",
+    "name": "Player Sprites",
+    "path": "folders/Objects/Game Objects/Player/Player Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_player_attack_left",

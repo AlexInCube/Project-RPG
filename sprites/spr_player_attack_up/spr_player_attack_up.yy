@@ -92,8 +92,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f901b48a-6927-4e9a-9a4e-913ddc70808c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Player",
-    "path": "folders/Sprites/Player.yy",
+    "name": "Player Sprites",
+    "path": "folders/Objects/Game Objects/Player/Player Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_player_attack_up",

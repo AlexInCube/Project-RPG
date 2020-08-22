@@ -72,8 +72,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0b410382-4d32-42cf-9dda-8c920ca88ba3","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "GUI",
-    "path": "folders/Sprites/GUI.yy",
+    "name": "Quest System",
+    "path": "folders/Objects/Controllers/Quest System.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_questlist",

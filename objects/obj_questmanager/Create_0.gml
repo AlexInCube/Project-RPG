@@ -21,6 +21,7 @@ notificationqueststate=-1
 notificationtime=180
 txtalpha=0
 txtcolor=c_orange
+tracking_quest=noone
 
 ds_quests = ds_grid_create(0,0)
 //Quest data

@@ -88,8 +88,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5e67af01-a98a-4a7e-b3b2-a0bff7ac97b7","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Player",
-    "path": "folders/Sprites/Player.yy",
+    "name": "Player Sprites",
+    "path": "folders/Objects/Game Objects/Player/Player Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_player_down",

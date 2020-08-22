@@ -35,62 +35,45 @@ function scr_move_state() {
 	}
 
 #endregion
-
+if obj_controller.xaxis != 0 or obj_controller.yaxis != 0 {
+	image_speed=0.4
 	//get direction
 	dir = point_direction(0,0,obj_controller.xaxis,obj_controller.yaxis)
 
-	if (obj_controller.xaxis == 0 and obj_controller.yaxis == 0){
-		len=0
-	}else{
-		len=spd
-		scr_get_face(dir)
-	}
-
-
 	//get hspd and vspd
-	hspd = lengthdir_x(len,dir)
-	vspd = lengthdir_y(len,dir)
+	hspd = lengthdir_x(spd,dir)
+	vspd = lengthdir_y(spd,dir)
 
 	//move
 	phy_position_x+=hspd
 	phy_position_y+=vspd
-
-	//control the sprite
-	image_speed = sign(len)*.4
-	if(len==0) image_index=0
-
-	//vertical sprites
-
-	switch(face) {
-		case RIGHT:
-			sprite_index=sprite[RIGHT,MOVE]
-			break
-		
-		case UP:
-			sprite_index=sprite[UP,MOVE]
-			break
 	
-		case LEFT:
-			sprite_index=sprite[LEFT,MOVE]
-			break
-	
-		case DOWN:
-			sprite_index=sprite[DOWN,MOVE]
-			break
+	image_xscale = 1
+
+	switch(dir) {
+		case 0:  sprite_index=sprite[RIGHT,MOVE];break
+		case 45: sprite_index=sprite[UPRIGHT,MOVE];break
+		case 90: sprite_index=sprite[UP,MOVE];break
+		case 135:sprite_index=sprite[UPRIGHT,MOVE]; image_xscale =-1; break
+		case 180:sprite_index=sprite[RIGHT,MOVE]; image_xscale =-1; break
+		case 225:sprite_index=sprite[DOWNRIGHT,MOVE]; image_xscale =-1; break
+		case 270:sprite_index=sprite[DOWN,MOVE]; break
+		case 315:sprite_index=sprite[DOWNRIGHT,MOVE]; break
 	}
+}else{
+	//control the sprite
+	image_speed = 0
+	image_index = 0
+}
 
-
-	
-	
-		if obj_controller.pickup_key
-		{
-			var inst = collision_rectangle(x-findradius,y-findradius,x+findradius,y+findradius,obj_item,false,false)
-			with inst
+	if obj_controller.pickup_key
+	{
+		var inst = collision_rectangle(x-findradius,y-findradius,x+findradius,y+findradius,obj_item,false,false)
+		with inst
 			{
 				scr_gain_item(whatitem,amount)
 				instance_destroy()
 			}
-		
 		}
 	}
 

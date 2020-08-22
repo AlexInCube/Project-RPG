@@ -28,9 +28,9 @@ function scr_cutscene_move_character(argument0, argument1, argument2, argument3,
 			phy_position_x += ldirx
 			phy_position_y += ldiry
 		
-			scr_get_face(dir)
+			
 			image_speed = sign(spd)*.4
-				switch(face) {
+				switch(dir) {
 				case RIGHT:
 					sprite_index=sprite[RIGHT,MOVE]
 					break
