@@ -2,7 +2,7 @@
 ///@arg object_id
 ///@arg instant_end?
 function scr_cutscene_start_speak(argument0,argument1) {
-if !instance_exists(obj_textbox){
+if !instance_exists(obj_textbox) and !instance_exists(obj_textevent){
 		with(argument0){
 			event_user(0)
 			create_dialogue(myText, mySpeaker, myEffects, myTextSpeed, myTypes, myNextLine, myScripts, myTextCol, myEmotion);

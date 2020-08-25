@@ -4,11 +4,12 @@ function scr_loadsettings() {
 	global.musicvolume=			ini_read_real("Sounds", "musicvolume", 0.5)
 	global.soundvolume=			ini_read_real("Sounds", "soundvolume", 0.5)
 	global.fullscreen=			ini_read_real("Graphics", "fullscreen", false)
-	global.width=				ini_read_real("Graphics", "width", 1280)
-	global.height=				ini_read_real("Graphics", "height", 720)
+	global.width=				ini_read_real("Graphics", "width", display_get_width())
+	global.height=				ini_read_real("Graphics", "height", display_get_height())
 	show_debug_message("Fullscreen: "+string(global.fullscreen)+" Width: "+string(global.width)+" Height: "+string(global.height))
+	
 	global.guisize=				ini_read_real("Interface", "guisize", 1)
-	global.language=			ini_read_string("Interface", "language", "russian")
+	global.language=			ini_read_real("Interface", "language", 0)//0 - Russian, 1 - English
 	global.showdamage =			ini_read_real("Interface","show_damage",true)
 
 	global.key_up =				ini_read_real("Keys","key_up",ord("W"))				

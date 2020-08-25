@@ -47,25 +47,26 @@ if obj_controller.xaxis != 0 or obj_controller.yaxis != 0 {
 	//move
 	phy_position_x+=hspd
 	phy_position_y+=vspd
-	
-	image_xscale = 1
-
-	switch(dir) {
-		case 0:  sprite_index=sprite[RIGHT,MOVE];break
-		case 45: sprite_index=sprite[UPRIGHT,MOVE];break
-		case 90: sprite_index=sprite[UP,MOVE];break
-		case 135:sprite_index=sprite[UPRIGHT,MOVE]; image_xscale =-1; break
-		case 180:sprite_index=sprite[RIGHT,MOVE]; image_xscale =-1; break
-		case 225:sprite_index=sprite[DOWNRIGHT,MOVE]; image_xscale =-1; break
-		case 270:sprite_index=sprite[DOWN,MOVE]; break
-		case 315:sprite_index=sprite[DOWNRIGHT,MOVE]; break
-	}
 }else{
-	//control the sprite
 	image_speed = 0
 	image_index = 0
 }
+	//control the sprite	
+	image_xscale = 1
+	var mouse_dir = point_direction(phy_position_x,phy_position_y,mouse_x,mouse_y) div 45
+	show_debug_message(mouse_dir)
+	switch(mouse_dir) {
+		case 0:sprite_index=sprite[RIGHT,MOVE];break
+		case 1:sprite_index=sprite[UPRIGHT,MOVE];break
+		case 2:sprite_index=sprite[UP,MOVE];break
+		case 3:sprite_index=sprite[UPRIGHT,MOVE]; image_xscale =-1; break
+		case 4:sprite_index=sprite[RIGHT,MOVE]; image_xscale =-1; break
+		case 5:sprite_index=sprite[DOWNRIGHT,MOVE]; image_xscale =-1; break
+		case 6:sprite_index=sprite[DOWN,MOVE]; break
+		case 7:sprite_index=sprite[DOWNRIGHT,MOVE]; break
+	}
 
+	//Pickup Items from ground
 	if obj_controller.pickup_key
 	{
 		var inst = collision_rectangle(x-findradius,y-findradius,x+findradius,y+findradius,obj_item,false,false)

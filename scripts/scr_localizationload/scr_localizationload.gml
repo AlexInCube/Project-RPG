@@ -4,7 +4,12 @@ function scr_localizationload() {
 	global.localization_map	= ds_map_create();
 
 		// open the locale file for reading
-		var locale_file	= file_text_open_read( global.language+".txt" );
+		var lang_name = "custom_lang"
+		switch(global.language){
+			case 0: lang_name = "russian" break
+			case 1: lang_name = "english" break
+		}
+		var locale_file	= file_text_open_read(lang_name+".txt" );
 	
 
 		// build the JSON text

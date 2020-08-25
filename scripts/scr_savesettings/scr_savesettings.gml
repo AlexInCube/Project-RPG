@@ -27,7 +27,7 @@ function scr_savesettings() {
 	ini_write_real("Graphics", "fullscreen", global.fullscreen)
 	ini_write_real("Interface", "guisize", global.guisize)
 	ini_write_real("Interface", "show_damage", global.showdamage)
-	ini_write_string("Interface","language",global.language)
+	ini_write_real("Interface","language",global.language)
 	ini_write_real("Keys","key_up",global.key_up)
 	ini_write_real("Keys","key_down",global.key_down)
 	ini_write_real("Keys","key_left",global.key_left)
