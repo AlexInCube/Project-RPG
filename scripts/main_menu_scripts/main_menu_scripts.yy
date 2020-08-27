@@ -6,7 +6,7 @@
     "path": "folders/Objects/Controllers/Main Menu/Main Menu Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_game_exit",
+  "name": "main_menu_scripts",
   "tags": [],
   "resourceType": "GMScript",
 }

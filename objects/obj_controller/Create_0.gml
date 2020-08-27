@@ -6,3 +6,4 @@ depth=-99999999
 inventorywindow=noone
 equipmentwindow=noone
 questlistwindow=noone
+

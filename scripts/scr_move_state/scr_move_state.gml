@@ -54,7 +54,6 @@ if obj_controller.xaxis != 0 or obj_controller.yaxis != 0 {
 	//control the sprite	
 	image_xscale = 1
 	var mouse_dir = point_direction(phy_position_x,phy_position_y,mouse_x,mouse_y) div 45
-	show_debug_message(mouse_dir)
 	switch(mouse_dir) {
 		case 0:sprite_index=sprite[RIGHT,MOVE];break
 		case 1:sprite_index=sprite[UPRIGHT,MOVE];break

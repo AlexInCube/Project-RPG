@@ -65,9 +65,6 @@
 			"language":"Язык",
 			"back":"Назад",
 			"next":"Далее",
-			"save_game":"Сохранить игру",
-			"load_game":"Загрузить игру",
-			"back_to_mainmenu":"Вернуться в главное меню",
 			"notificationqueststate_0":"ЗАДАНИЕ НАЧАТО",
 			"notificationqueststate_1":"ЗАДАНИЕ ОБНОВЛЕНО",
 			"notificationqueststate_2":"ЗАДАНИЕ ЗАВЕРШЕНО",
@@ -109,6 +106,10 @@
 			"equipment_window":"Экипировка",
 			"creators":"Создатели",
 			"quest_list":"Список заданий",
-			"back_to_quest_list":"Вернуться к списку заданий"
-			
+			"back_to_quest_list":"Вернуться к списку заданий",
+			"resume_game":"Возобновить игру",
+			"save_game":"Сохранить игру",
+			"load_game":"Загрузить игру",
+			"back_to_main_menu":"Вернуться в главное меню",
+			"exit_to_desktop":"Выйти на рабочий стол"
 }
