@@ -1,1 +1,5 @@
-show_message("AND LOADING TOO!")
+function scr_loadgame() {
+	show_message("AND LOADING TOO!")
+
+
+}

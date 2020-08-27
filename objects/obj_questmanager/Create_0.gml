@@ -21,6 +21,7 @@ notificationqueststate=-1
 notificationtime=180
 txtalpha=0
 txtcolor=c_orange
+tracking_quest=quest.testdeliver
 
 ds_quests = ds_grid_create(0,0)
 //Quest data
@@ -103,6 +104,3 @@ scr_add_quest(
 )
 #endregion
 scr_quest_update(quest.slimetrouble)
-scr_quest_update(quest.testdeliver)
-scr_quest_update(quest.test)
-scr_quest_update(quest.testing)

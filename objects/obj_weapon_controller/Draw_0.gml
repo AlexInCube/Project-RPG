@@ -1,0 +1,1 @@
+script_execute(weapon_draw_script)

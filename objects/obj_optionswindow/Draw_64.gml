@@ -136,7 +136,7 @@ var yy = 0; for(i=drawelementstart;i<drawelementstart+10;i++){
 				draw_set_halign(fa_center)
 				
 				
-				if scr_mouseover(rsx-entriesoffset-12,rsy,rsx-entriesoffset+12,rsy+24){
+				if scr_mouseover(rsx-entriesoffset-12,rsy,rsx-entriesoffset+12,rsy+22){
 					keymode=1
 					if mouse_check_button_pressed(mb_left){
 						if !inputting{

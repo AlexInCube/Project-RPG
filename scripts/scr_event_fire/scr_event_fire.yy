@@ -1,8 +1,12 @@
 {
-    "id": "80130e22-48bb-44ea-bca4-7ee28cb850b7",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_event_fire",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Event Scripts",
+    "path": "folders/Objects/Controllers/Events/Event Scripts.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_event_fire",
+  "tags": [],
+  "resourceType": "GMScript",
 }

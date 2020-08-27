@@ -1,8 +1,12 @@
 {
-    "id": "d5acf7af-c24f-489d-8c78-c03005752499",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_itemexample_on_removed_from_slot",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "ItemScriptsExample",
+    "path": "folders/Scripts/Inventory/Items Action Scripts/ItemScriptsExample.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_itemexample_on_removed_from_slot",
+  "tags": [],
+  "resourceType": "GMScript",
 }

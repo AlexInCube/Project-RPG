@@ -1,8 +1,12 @@
 {
-    "id": "e17eac59-95bf-40e2-a38e-7dbd6d8bc9dd",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_open_settings",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Main Menu Scripts",
+    "path": "folders/Objects/Controllers/Main Menu/Main Menu Scripts.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_open_settings",
+  "tags": [],
+  "resourceType": "GMScript",
 }

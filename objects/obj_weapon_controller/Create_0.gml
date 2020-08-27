@@ -1,0 +1,4 @@
+weapon_tick_script=nothing
+weapon_draw_script=nothing
+weapon_create_script=nothing
+weapon_alarm_script=nothing

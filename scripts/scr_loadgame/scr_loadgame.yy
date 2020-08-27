@@ -1,8 +1,12 @@
 {
-    "id": "6bf3734a-b746-4fdd-b387-b417e2a3c453",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_loadgame",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Pause Menu",
+    "path": "folders/Scripts/Pause Menu.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_loadgame",
+  "tags": [],
+  "resourceType": "GMScript",
 }

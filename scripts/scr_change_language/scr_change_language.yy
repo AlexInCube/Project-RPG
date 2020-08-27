@@ -1,8 +1,12 @@
 {
-    "id": "781283cf-d0d5-4ddc-a6e2-cd27dab8c056",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_change_language",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Options Scripts",
+    "path": "folders/Objects/Controllers/Main Menu/Options/Options Scripts.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_change_language",
+  "tags": [],
+  "resourceType": "GMScript",
 }

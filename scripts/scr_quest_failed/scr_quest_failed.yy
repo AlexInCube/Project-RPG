@@ -1,8 +1,12 @@
 {
-    "id": "f9909bee-6c4d-40bf-ae10-5cc49855d6d4",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_quest_failed",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Quest System Scripts",
+    "path": "folders/Objects/Controllers/Quest System/Quest System Scripts.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_quest_failed",
+  "tags": [],
+  "resourceType": "GMScript",
 }
