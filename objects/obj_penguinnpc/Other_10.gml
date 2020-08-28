@@ -24,7 +24,7 @@ switch(choice_variable){
 		myTypes[i]		= 1;
 		mySpeaker[i]	= obj_player;
 		myNextLine[i]	= [2,3];
-		if scr_check_requirement_item(global.armor_equipped,item.shotgun,1){
+		if scr_check_requirement_item(global.equimpent,item.shotgun,1){
 			array_set(myText[i],2,"Пригрозить оружием")
 			array_set(myNextLine[i],2,4)
 		}

@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Pause Menu",
-    "path": "folders/Scripts/Pause Menu.yy",
+    "name": "Controllers",
+    "path": "folders/Objects/Controllers.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_resume_game",
+  "name": "pause_menu_scripts",
   "tags": [],
   "resourceType": "GMScript",
 }

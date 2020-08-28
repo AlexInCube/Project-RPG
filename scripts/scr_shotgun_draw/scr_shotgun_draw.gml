@@ -1,11 +1,11 @@
 function scr_shotgun_draw() {
 	x = obj_player.x
 	y = obj_player.y
-	switch(obj_player.face){
-		case UP: depth = -(obj_player.y-obj_player.spd) break;
-		case DOWN: depth = -(obj_player.y+obj_player.spd )break;
-		default: depth = -(obj_player.y+obj_player.spd)
 
+	if obj_player.mouse_dr >= 0 and obj_player.mouse_dr <= 3 {
+		depth = -(obj_player.y-obj_player.spd)
+	}else{
+		depth = -(obj_player.y+obj_player.spd)
 	}
 
 	var mouse_dir = point_direction(x,y,mouse_x,mouse_y)
