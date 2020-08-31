@@ -1,1 +1,0 @@
-draw_sprite(spr_logo,0,40,0)

@@ -13,15 +13,15 @@ function scr_heal(argument0, argument1, argument2) {
 	if healperc = true
 	{
 		if heal>100{heal = 100}
-		target.hp+=(target.maxhp/100)*heal
+		target.hp+=(target.max_hp/100)*heal
 	}
 	else
 	{
 		target.hp+=heal
 	}
-	if target.hp>target.maxhp
+	if target.hp>target.max_hp
 	{
-		target.hp=target.maxhp
+		target.hp=target.max_hp
 	}
 
 

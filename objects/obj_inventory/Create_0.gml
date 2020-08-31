@@ -2,8 +2,8 @@
 // You can write your code in this editor
 global.inventory = ds_grid_create(15, 2); //Player inventory//Width - slot amount, height - unique parameters for itemstack (0 - item contained, 1 - itemstack amount)
 ds_grid_clear(global.inventory, 0);
-global.equimpent = ds_grid_create(5, 2); //Player equimpent
-ds_grid_clear(global.equimpent, 0);
+global.equipment = ds_grid_create(5, 2); //Player equipment
+ds_grid_clear(global.equipment, 0);
 global.mouse_slot = ds_grid_create(1, 2);//Temp mouse item slot
 ds_grid_clear(global.mouse_slot, 0);
 global.crafting_inventory = ds_grid_create(4, 2);//for crafting
@@ -14,11 +14,11 @@ inventorylock=false
 inventory_size = ds_grid_width(global.inventory)
 drawitemtooltip = surface_create(GUIWIDTH,GUIHEIGHT)
 
-scr_event_register([event.inventory_slot_clicked,global.equimpent],id,scr_recalculate_stats,global.equimpent)
-scr_recalculate_stats(global.equimpent)
+scr_event_register([event.inventory_slot_clicked,global.equipment],id,scr_recalculate_stats,global.equipment)
+scr_recalculate_stats(global.equipment)
 
-scr_gain_item(item.wooden_stick,1)
-scr_gain_item(item.shotgun, 1)
+//scr_gain_item(item.wooden_stick,1)
+//scr_gain_item(item.shotgun, 1)
 /*
 scr_gain_item(item.small_health_potion, 10)
 scr_gain_item(item.small_mana_potion, 8)

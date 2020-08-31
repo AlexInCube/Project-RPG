@@ -4,8 +4,6 @@ vspd=0//Vertical Speed
 dir=0//Move direction
 mouse_dr=0//Mouse dir for weapon draw
 
-
-
 findradius=16//For item collecting
 
 image_speed=0.4

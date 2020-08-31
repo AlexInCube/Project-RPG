@@ -1,9 +1,6 @@
 function game_start() {
-	room_goto_next()
-}
-
-function continue_game() {
-	show_message("This lie! The game cannot be continued, as cannot be saved.")
+	room_goto(room_game_init)
+	global.load_state = load_state.new_game
 }
 
 function game_exit() {

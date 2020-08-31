@@ -9,3 +9,13 @@ alarm[0]=1
 
 GUIWIDTH=display_get_gui_width()
 GUIHEIGHT=display_get_gui_height()
+
+//For save/load system
+enum load_state{
+	none,
+	new_game,
+	init_game,
+	manual_load
+}
+
+global.load_state = load_state.none

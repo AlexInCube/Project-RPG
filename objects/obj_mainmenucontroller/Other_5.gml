@@ -1,1 +1,1 @@
-ds_grid_destroy(ds_menu_main)
+instance_destroy()

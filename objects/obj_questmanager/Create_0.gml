@@ -23,7 +23,7 @@ txtalpha=0
 txtcolor=c_orange
 tracking_quest=quest.testdeliver
 
-ds_quests = ds_grid_create(0,0)
+ds_quests = ds_grid_create(0,0)//Width - quest details, Height - quest id
 //Quest data
 #region slimetrouble
 scr_add_quest(
