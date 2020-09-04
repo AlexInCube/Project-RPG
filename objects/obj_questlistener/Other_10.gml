@@ -1,5 +1,5 @@
-var stagenumber = obj_questmanager.ds_quests[# 0,quest_id]//Quest Progress
-var stagearray = obj_questmanager.ds_quests[# 5,quest_id]//Link to array with tasks
+var stagenumber = global.ds_current_quests[? string(quest_id)]//Quest Progress
+var stagearray = obj_questmanager.ds_quests[# 4,quest_id]//Link to array with tasks
 var stage = stagearray[stagenumber]//Access to task
 
 quest_type=stage[0]//Task type

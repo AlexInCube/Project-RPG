@@ -6,9 +6,8 @@ if txtalpha!=0{
 }
 
 if tracking_quest!=noone{
-	draw_set_halign(fa_left)
+	draw_set_halign(fa_right)
 	draw_set_valign(fa_top)
-	var qn = string(scr_quest_get_name(tracking_quest))
-	var qn_sw = string_width(qn)
-	scr_draw_text_shadow(GUIWIDTH-10-qn_sw,GUIHEIGHT,qn,fnt_large,1,c_green,c_lime,1)
+	scr_draw_text_shadow(GUIWIDTH-10,40,tq_name,fnt_large,1,c_gray,c_white,1)
+	scr_draw_text_shadow(GUIWIDTH-10,65,tq_desc,fnt_small,1,c_gray,c_white,1)
 }

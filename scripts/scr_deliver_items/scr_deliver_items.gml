@@ -1,6 +1,7 @@
 ///@description scr_deliver_items(item,amount)
 ///@arg item
 ///@arg amount
+//Grab item from player inventory and send event for quest_listener
 function scr_deliver_items(argument0, argument1) {
 	var inventory = global.inventory
 	var itemneed = argument0
@@ -24,6 +25,4 @@ function scr_deliver_items(argument0, argument1) {
 			}
 		}
 	}
-
-
 }

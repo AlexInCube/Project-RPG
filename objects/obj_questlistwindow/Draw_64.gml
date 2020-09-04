@@ -22,6 +22,13 @@ if selectedquest==noone{
 				if mouse_check_button_pressed(mb_left){
 					selectedquest=i
 				}
+				if mouse_check_button_pressed(mb_right){
+					with(obj_questmanager){
+					tracking_quest=i
+					tq_name=string(scr_quest_get_name(tracking_quest))
+					tq_desc=scr_quest_get_short_description_for_task(tracking_quest,global.ds_current_quests[? string(tracking_quest)])
+					}
+				}
 			}
 			draw_text_color(startx,starty,string(scr_quest_get_name(i)),c,c,c,c,1)
 			/*

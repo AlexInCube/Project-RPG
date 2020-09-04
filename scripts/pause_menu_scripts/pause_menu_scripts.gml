@@ -7,7 +7,7 @@ function save_game() {
 	save_data[? "room"] = room
 	save_data[? "player_inventory"] = ds_grid_write(global.inventory)
 	save_data[? "player_equipment"] = ds_grid_write(global.equipment)
-	save_data[? "quest_list"] = ds_grid_write(obj_questmanager.ds_quests)
+	save_data[? "quest_list"] = ds_map_write(global.ds_current_quests)
 	
 	var save_string = json_encode(save_data)
 	ds_map_destroy(save_data)
@@ -18,30 +18,6 @@ function save_game() {
 	show_debug_message("Game Saved!")
 }
 
-function clear_app(){
-	instance_activate_all()
-	room_persistent = false
-	instance_destroy()
-	if instance_exists(obj_controller){
-	with(obj_controller.inventorywindow)instance_destroy()
-	with(obj_controller.equipmentwindow)instance_destroy()
-	with(obj_controller.questlistwindow)instance_destroy()
-	with(obj_controller)instance_destroy()
-	}
-	with(obj_camera)instance_destroy()
-	if instance_exists(obj_player){
-		obj_player.persistent=false
-	}
-	if instance_exists(obj_weapon_controller){
-		obj_weapon_controller.persistent=false
-	}
-	with(obj_player_stats)instance_destroy()
-	with(obj_inventory)instance_destroy()
-	with(obj_questmanager)instance_destroy()
-	with(obj_questlistener)instance_destroy()
-	
-	audio_stop_all()
-}
 
 function start_load(){
 	clear_app()
@@ -74,13 +50,24 @@ function load_game() {
 	
 	with(obj_inventory) ds_grid_read(global.inventory,save_data[? "player_inventory"])
 	with(obj_inventory) ds_grid_read(global.equipment,save_data[? "player_equipment"])
-	with(obj_questmanager) ds_grid_read(ds_quests,save_data[? "quest_list"])//TODO: Rewrite quest tracking and saving
-	
-	
+	with(obj_questmanager) {
+		ds_map_read(global.ds_current_quests,save_data[? "quest_list"])//TODO: Rewrite quest tracking and saving
+		var key = ds_map_find_first(global.ds_current_quests);
+		for(var i=0; i<ds_map_size(global.ds_current_quests); i++){
+		var listener = instance_create_depth(0,0,0,obj_questlistener)
+			with listener
+				{
+				quest_id=real(key)
+				key = ds_map_find_next(global.ds_current_quests,key)
+				event_user(0)
+				}
+		}
+	}
 	show_debug_message("[Game load]"+"PlayerX:"+string(obj_player.phy_position_x)+"PlayerY:"+string(obj_player.phy_position_y))
 	
 	ds_map_destroy(save_data)
 }
+	
 
 function unpause_game(){
 	instance_destroy()
@@ -93,4 +80,30 @@ function exit_to_main_menu(){
 	audio_stop_all()
 	room_goto(room_main)
 	
+}
+
+
+function clear_app(){
+	instance_activate_all()
+	room_persistent = false
+	instance_destroy()
+	if instance_exists(obj_controller){
+	with(obj_controller.inventorywindow)instance_destroy()
+	with(obj_controller.equipmentwindow)instance_destroy()
+	with(obj_controller.questlistwindow)instance_destroy()
+	with(obj_controller)instance_destroy()
+	}
+	with(obj_camera)instance_destroy()
+	if instance_exists(obj_player){
+		obj_player.persistent=false
+	}
+	if instance_exists(obj_weapon_controller){
+		obj_weapon_controller.persistent=false
+	}
+	with(obj_player_stats)instance_destroy()
+	with(obj_inventory)instance_destroy()
+	with(obj_questmanager)instance_destroy()
+	with(obj_questlistener)instance_destroy()
+	
+	audio_stop_all()
 }
