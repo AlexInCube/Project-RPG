@@ -74,8 +74,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d41729ea-5834-4474-9312-993524dde0f7","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Inventory",
-    "path": "folders/Sprites/GUI/Inventory.yy",
+    "name": " Inventory Sprites",
+    "path": "folders/Objects/Controllers/ Inventory Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_equipmenu",

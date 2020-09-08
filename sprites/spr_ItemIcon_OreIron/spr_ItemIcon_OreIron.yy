@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Components",
-    "path": "folders/Sprites/GUI/Inventory/Items/Components.yy",
+    "path": "folders/Objects/Controllers/ Inventory Sprites/Items/Components.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ItemIcon_OreIron",

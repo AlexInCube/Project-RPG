@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"beefb7ec-4a7f-4ff9-8be7-a75e3a70c08a","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Main Menu",
-    "path": "folders/Sprites/GUI/Main Menu.yy",
+    "name": "Main Menu Sprites",
+    "path": "folders/Objects/Controllers/Main Menu/Main Menu Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_mainmenubg",

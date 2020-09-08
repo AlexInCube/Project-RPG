@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Dialogue",
-    "path": "folders/Sprites/GUI/Dialogue.yy",
+    "path": "folders/Objects/Controllers/Dialogue System/Dialogue.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_penguinportrait",

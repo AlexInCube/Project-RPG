@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "MagicWeapon",
-    "path": "folders/Sprites/GUI/Inventory/Items/Weapon/MagicWeapon.yy",
+    "path": "folders/Objects/Controllers/ Inventory Sprites/Items/Weapon/MagicWeapon.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_MagicWeaponLightningStaff",

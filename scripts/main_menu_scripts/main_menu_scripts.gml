@@ -1,3 +1,9 @@
+function select_slot(){
+	if !instance_exists(obj_save_or_load_window){
+		instance_create_depth(0,0,0,obj_save_or_load_window)
+	}
+}
+
 function game_start() {
 	room_goto(room_game_init)
 	global.load_state = load_state.new_game

@@ -12,10 +12,11 @@ function save_game() {
 	var save_string = json_encode(save_data)
 	ds_map_destroy(save_data)
 	
-	var file = file_text_open_write("rpgsave.txt")
+	var file_path = "Saves\\"+global.directory_save+"\\"+"playerdata.txt"
+	var file = file_text_open_write(file_path)
 	file_text_write_string(file,save_string)
 	file_text_close(file)
-	show_debug_message("Game Saved!")
+	show_debug_message("Game Saved: "+file_path)
 }
 
 
@@ -27,7 +28,8 @@ function start_load(){
 
 function load_game() {
 	instance_activate_all()
-	var file = file_text_open_read("rpgsave.txt")
+	var file_path = "Saves\\"+global.directory_save+"\\"+"playerdata.txt"
+	var file = file_text_open_read(file_path)
 	var save_string = file_text_read_string(file)
 	file_text_close(file)
 	var save_data = json_decode(save_string)
@@ -51,16 +53,16 @@ function load_game() {
 	with(obj_inventory) ds_grid_read(global.inventory,save_data[? "player_inventory"])
 	with(obj_inventory) ds_grid_read(global.equipment,save_data[? "player_equipment"])
 	with(obj_questmanager) {
-		ds_map_read(global.ds_current_quests,save_data[? "quest_list"])//TODO: Rewrite quest tracking and saving
+		ds_map_read(global.ds_current_quests,save_data[? "quest_list"])
 		var key = ds_map_find_first(global.ds_current_quests);
 		for(var i=0; i<ds_map_size(global.ds_current_quests); i++){
 		var listener = instance_create_depth(0,0,0,obj_questlistener)
-			with listener
-				{
-				quest_id=real(key)
-				key = ds_map_find_next(global.ds_current_quests,key)
-				event_user(0)
-				}
+		with listener
+			{
+			quest_id=real(key)
+			key = ds_map_find_next(global.ds_current_quests,key)
+			event_user(0)
+			}
 		}
 	}
 	show_debug_message("[Game load]"+"PlayerX:"+string(obj_player.phy_position_x)+"PlayerY:"+string(obj_player.phy_position_y))
@@ -79,7 +81,6 @@ function exit_to_main_menu(){
 	clear_app()
 	audio_stop_all()
 	room_goto(room_main)
-	
 }
 
 
