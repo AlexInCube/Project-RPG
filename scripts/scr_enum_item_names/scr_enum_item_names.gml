@@ -1,4 +1,4 @@
-function scr_enum_item_names() {
+function enum_item_names() {
 	enum item
 	 {
 		none,

@@ -1,10 +1,10 @@
-///@description scr_draw_nine_slice_box(sprite,x1,y1,x2,y2)
+///@description draw_nine_slice_box(sprite,x1,y1,x2,y2)
 ///@param sprite
 ///@param x1
 ///@param y1
 ///@param x2
 ///@param y2
-function scr_draw_nine_slice_box(argument0, argument1, argument2, argument3, argument4) {
+function draw_nine_slice_box(argument0, argument1, argument2, argument3, argument4) {
 	var sprite = argument0;
 	var x1 = argument1;
 	var y1 = argument2;

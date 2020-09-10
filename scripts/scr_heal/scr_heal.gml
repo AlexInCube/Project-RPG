@@ -1,9 +1,9 @@
-/// @description scr_heal(heal,target,healinpercentage?);
-/// @function scr_heal
+/// @description heal(heal,target,healinpercentage?);
+/// @function heal
 /// @param heal
 /// @param target
 /// @param healinpercentage?
-function scr_heal(argument0, argument1, argument2) {
+function heal(argument0, argument1, argument2) {
 
 	var heal = argument0
 	var target = argument1

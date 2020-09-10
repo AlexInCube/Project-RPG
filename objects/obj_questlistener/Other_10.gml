@@ -12,20 +12,20 @@ switch(quest_type)
 	case questtype.kill: 
 	need_kill = stage[1]
 	number_of_kills = stage[2]
-	scr_event_register([event.enemyKilled,need_kill],id,scr_task_kill,quest_id) 
+	event_register([event.enemyKilled,need_kill],id,task_kill,quest_id) 
 	break
 	
 	case questtype.trigger:
-	scr_event_register([event.trigger,stage[1]],id,scr_task_trigger,quest_id)
+	event_register([event.trigger,stage[1]],id,task_trigger,quest_id)
 	break
 	
 	case questtype.craft: break
 	
 	case questtype.talk:
-	scr_event_register([event.talk,stage[1]],id,scr_task_trigger,quest_id)
+	event_register([event.talk,stage[1]],id,task_trigger,quest_id)
 	break
 	
 	case questtype.deliver:
-	scr_event_register([event.deliver,stage[1],stage[2]],id,scr_task_deliver,quest_id)
+	event_register([event.deliver,stage[1],stage[2]],id,task_deliver,quest_id)
 	break
 }

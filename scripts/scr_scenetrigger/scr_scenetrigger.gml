@@ -1,6 +1,6 @@
-function scr_scenetrigger() {
+function scenetrigger() {
 	show_message("triggered")
-	scr_cutscene_end_action()
+	cutscene_end_action()
 
 
 }

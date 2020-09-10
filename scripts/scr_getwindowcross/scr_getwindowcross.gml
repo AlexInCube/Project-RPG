@@ -1,4 +1,4 @@
-function scr_getwindowcross() {
+function getwindowcross() {
 	/*if there is another window above the window, then disable moving the header.
 	True - Mouse position free
 	False - Mouse position taken

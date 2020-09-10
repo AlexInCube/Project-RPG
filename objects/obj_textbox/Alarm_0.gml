@@ -29,7 +29,7 @@ charSize = 10
 #region GET THE BREAKPOINTS AND TEXT EFFECTS
 //Again only need to do this if our CURRENT page is "normal". Separated from above for readability.
 if(type[page] == 0){
-	text_NE = scr_find_keyword(text[page]); 
+	text_NE = find_keyword(text[page]); 
 	str_len = string_length(text_NE);
 	
 	//Get variables ready

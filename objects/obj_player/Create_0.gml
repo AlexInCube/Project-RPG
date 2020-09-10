@@ -16,11 +16,11 @@ sprite[UPRIGHT,MOVE] = spr_player_upright
 sprite[DOWNRIGHT,MOVE] = spr_player_downright
 
 //Player state for execution
-state=scr_move_state;
+state=move_state;
 
 //--------Dialogue Stuff
 reset_dialogue_defaults();
 myPortrait			= spr_portrait;
 myVoice				= snd_voice2;
 myFont				= fnt_small;
-myName				= scr_find_keyword("player_name")
+myName				= find_keyword("player_name")

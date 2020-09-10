@@ -4,7 +4,7 @@
 ///@arg y
 ///@arg relative?
 ///@arg spd
-function scr_cutscene_move_character(argument0, argument1, argument2, argument3, argument4) {
+function cutscene_move_character(argument0, argument1, argument2, argument3, argument4) {
 	var obj = argument0, relative = argument3, spd = argument4
 
 	if (x_dest == -1){
@@ -54,7 +54,7 @@ function scr_cutscene_move_character(argument0, argument1, argument2, argument3,
 			with(other){
 				x_dest = -1
 				y_dest = -1
-				scr_cutscene_end_action()
+				cutscene_end_action()
 			}
 		}
 	

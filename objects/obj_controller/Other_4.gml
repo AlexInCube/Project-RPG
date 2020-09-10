@@ -8,14 +8,14 @@ obj_player.persistent=true
 
 
 instance_create_layer(0,0,"Instances",obj_camera)
-
+//global.load_state commented in obj_initcontroller
 switch(global.load_state){
 	case load_state.manual_load:
 		load_game()
 	break
 	
 	case load_state.init_game:
-		var file = file_text_open_read("rpgsave.txt")
+		var file = file_text_open_read("Saves\\"+global.directory_save+"/playerdata.txt")
 		var save_string = file_text_read_string(file)
 		file_text_close(file)
 		var save_data = json_decode(save_string)

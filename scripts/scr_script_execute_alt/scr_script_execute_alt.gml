@@ -1,7 +1,7 @@
 ///@description script_execute_alt
 ///@arg ind
 ///@arg [arg1,arg2,...]
-function scr_script_execute_alt(argument0, argument1) {
+function script_execute_alt(argument0, argument1) {
 
 	var s = argument0;
 	var a = argument1;

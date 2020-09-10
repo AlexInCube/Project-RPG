@@ -1,4 +1,4 @@
-function scr_savesettings() {
+function savesettings() {
 	var ds_grid = obj_optionswindow.ds_options
 	var ds_height = ds_grid_height(ds_grid)
 	for(i=0;i<ds_height-1;i++){

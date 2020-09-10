@@ -1,6 +1,6 @@
-///@description scr_quest_update(questid)
+///@description quest_update(questid)
 ///@arg questid
-function scr_quest_failed(argument0) {
+function quest_failed(argument0) {
 	var questid = argument0
 
 

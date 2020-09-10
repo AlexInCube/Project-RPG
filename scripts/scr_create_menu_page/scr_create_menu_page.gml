@@ -1,7 +1,7 @@
-///@decription scr_create_menu_page
+///@decription create_menu_page
 ///@arg ["Name1",type1,entries1...]
 ///@arg ["Name2",type2,entries2...]
-function scr_create_menu_page() {
+function create_menu_page() {
 
 	var arg, i = 0
 	repeat(argument_count){

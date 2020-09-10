@@ -1,7 +1,7 @@
-function scr_wooden_stick_tick() {
-	if obj_controller.attack_key and attacked=false and obj_player.state!=scr_attack_state{
+function wooden_stick_tick() {
+	if obj_controller.attack_key and attacked=false and obj_player.state!=attack_state{
 		obj_player.image_index=0
-		obj_player.state = scr_attack_state;
+		obj_player.state = attack_state;
 
 		obj_player.image_speed = attack_speed
 		switch(obj_player.sprite_index){

@@ -2,7 +2,7 @@
 // You can write your code in this editor
 randomize()
 
-scr_loadsettings()
+load_settings()
 global.window_list=ds_list_create()//For window system
 global.directory_save="rpgsave"
 
@@ -19,9 +19,9 @@ GUIHEIGHT=display_get_gui_height()
 //For save/load system
 enum load_state{
 	none,
-	new_game,
-	init_game,
-	manual_load
+	new_game,//Init controllers (obj_controller, obj_inventory and etc...)
+	init_game,//Same as new_game, but prepare save to load.
+	manual_load//Load save after they prepared by init_game
 }
 
 global.load_state = load_state.none

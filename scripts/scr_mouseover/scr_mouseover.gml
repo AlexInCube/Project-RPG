@@ -1,10 +1,10 @@
-///@description scr_mouseover(xx,yy,xx2,yy2)
-///@function scr_mouseover
+///@description mouseover(xx,yy,xx2,yy2)
+///@function mouseover
 ///@param xx
 ///@param yy
 ///@param xx2
 ///@param yy2
-function scr_mouseover(argument0, argument1, argument2, argument3) {
+function mouseover(argument0, argument1, argument2, argument3) {
 	var xx=argument0
 	var yy=argument1
 	var xx2=argument2

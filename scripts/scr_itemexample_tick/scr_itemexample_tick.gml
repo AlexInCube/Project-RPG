@@ -1,4 +1,4 @@
-function scr_itemexample_tick() {
+function itemexample_tick() {
 
 
 

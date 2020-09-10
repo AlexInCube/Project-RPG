@@ -1,4 +1,4 @@
-scr_get_input()//Set/get input from player 
+get_input()//Set/get input from player 
 
 depth=-99999999
 

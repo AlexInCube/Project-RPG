@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Controllers",
-    "path": "folders/Objects/Controllers.yy",
+    "name": "Pause Menu",
+    "path": "folders/Objects/Controllers/Pause Menu.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_pause",

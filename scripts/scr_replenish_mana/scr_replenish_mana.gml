@@ -1,9 +1,9 @@
-/// @description scr_heal(manaamount,target,inpercentage?);
-/// @function scr_replenish_mana
+/// @description heal(manaamount,target,inpercentage?);
+/// @function replenish_mana
 /// @param mana
 /// @param target
 /// @param healinpercentage?
-function scr_replenish_mana(argument0, argument1, argument2) {
+function replenish_mana(argument0, argument1, argument2) {
 
 	var manaamount = argument0
 	var target = argument1

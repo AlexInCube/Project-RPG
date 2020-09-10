@@ -1,7 +1,7 @@
-function scr_shotgun_tick() {
+function shotgun_tick() {
 
 	var mouse_dir = point_direction(x,y,mouse_x,mouse_y)
-	if obj_player.state == scr_move_state
+	if obj_player.state == move_state
 	{
 		if obj_controller.attack_key
 		{

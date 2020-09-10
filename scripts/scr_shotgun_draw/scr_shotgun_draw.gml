@@ -1,4 +1,4 @@
-function scr_shotgun_draw() {
+function shotgun_draw() {
 	x = obj_player.x
 	y = obj_player.y
 

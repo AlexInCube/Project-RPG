@@ -1,4 +1,4 @@
-function scr_weapon_equip() {
+function weapon_equip() {
 	instance_destroy(obj_weapon_controller)
 
 	if !instance_exists(obj_weapon_controller) and global.equipment[# 4, 0] != item.none{

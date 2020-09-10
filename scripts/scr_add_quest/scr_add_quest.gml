@@ -1,6 +1,6 @@
-///@description scr_add_quest(array) Adding quest to ds_quests, but dont start quest.
+///@description add_quest(array) Adding quest to ds_quests, but dont start quest.
 ///@arg array
-function scr_add_quest(argument0) {
+function add_quest(argument0) {
 	var quest = argument0
 	var name = quest[0]
 	var description = quest[1]

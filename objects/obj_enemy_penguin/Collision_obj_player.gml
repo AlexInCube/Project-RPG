@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (state != scr_enemy_stall_state_chinlin){
+if (state != enemy_stall_state_chinlin){
 	var dir = point_direction(other.x,other.y,x,y)
 	var xdir = lengthdir_x(1,dir)
 	var ydir = lengthdir_y(1,dir)
@@ -12,6 +12,6 @@ if (state != scr_enemy_stall_state_chinlin){
 	damage.image_yscale=0.5
 	damage.knockback=3
 	
-	state = scr_enemy_stall_state_chinlin
+	state = enemy_stall_state_chinlin
 	alarm[1] = room_speed
 }

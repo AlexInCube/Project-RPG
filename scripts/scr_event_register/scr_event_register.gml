@@ -1,9 +1,9 @@
-///@description scr_event_register
+///@description event_register
 ///@arg event
 ///@arg id
 ///@arg script
 ///@arg arg1...*
-function scr_event_register() {
+function event_register() {
 
 		var	ev = string(argument[0])
 		var objID = argument[1]

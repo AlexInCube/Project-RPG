@@ -1,9 +1,9 @@
-///@function scr_applydamage
+///@function applydamage
 ///@param damagecount
 ///@param damagetype
 ///@param target
 ///@param show_damage
-function scr_applydamage(argument0, argument1, argument2, argument3) {
+function applydamage(argument0, argument1, argument2, argument3) {
 #macro MAGICDAMAGETYPE 1
 #macro PHYSICALDAMAGETYPE 2
 #macro PUREDAMAGETYPE 3

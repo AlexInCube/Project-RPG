@@ -1,4 +1,4 @@
-function scr_enum_item_stats() {
+function enum_item_stats() {
 	enum item_stat
 	 {
 	 name,

@@ -1,4 +1,4 @@
-function scr_drawmousepickupeditem() {
+function drawmousepickupeditem() {
 	var iid = global.mouse_slot[# 0, 0];
 	var amount = global.mouse_slot[# 0, 1];
 

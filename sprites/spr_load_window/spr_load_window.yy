@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "SaveOrLoad",
-    "path": "folders/Objects/Controllers/Main Menu/SaveOrLoad.yy",
+    "path": "folders/Objects/Controllers/SaveOrLoad.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_load_window",

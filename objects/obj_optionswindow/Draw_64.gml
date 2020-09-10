@@ -42,7 +42,7 @@ var yy = 0; for(i=drawelementstart;i<drawelementstart+10;i++){
 				
 				var frameleft=0
 				var frameright=0
-				if scr_mouseover(rsx-entriesoffset-84,rsy,rsx-entriesoffset-60,rsy+24){
+				if mouseover(rsx-entriesoffset-84,rsy,rsx-entriesoffset-60,rsy+24){
 					frameleft=1
 					if mouse_check_button_pressed(mb_left){
 						ds_grid[# 3,i] -=1
@@ -50,7 +50,7 @@ var yy = 0; for(i=drawelementstart;i<drawelementstart+10;i++){
 					}
 				}else frameleft=0
 				
-				if scr_mouseover(rsx-entriesoffset+64,rsy,rsx-entriesoffset+84,rsy+24){
+				if mouseover(rsx-entriesoffset+64,rsy,rsx-entriesoffset+84,rsy+24){
 					frameright=1
 					if mouse_check_button_pressed(mb_left){
 						ds_grid[# 3,i] +=1
@@ -71,14 +71,14 @@ var yy = 0; for(i=drawelementstart;i<drawelementstart+10;i++){
 				draw_text_color(window_x+10,rsy,text,c,c,c,c,1)
 				
 				draw_sprite(spr_slidershiftbackground,0,rsx-entriesoffset-56,rsy+1)
-				draw_sprite_ext(spr_slidershiftforeground,0,rsx-entriesoffset-54,rsy+1,(scr_calculate_bars_modifier(ds_grid[# 3,i],ds_grid[# 5,i],ds_grid[# 6,i],0,1)),1,0,c_white,1)
+				draw_sprite_ext(spr_slidershiftforeground,0,rsx-entriesoffset-54,rsy+1,(calculate_bars_modifier(ds_grid[# 3,i],ds_grid[# 5,i],ds_grid[# 6,i],0,1)),1,0,c_white,1)
 	
 				draw_set_halign(fa_center)
 				draw_text_color(rsx-entriesoffset,rsy,string(round(ds_grid[# 3,i]*100))+"%",c,c,c,c,1)
 				
 				var frameleft=0
 				var frameright=0
-				if scr_mouseover(rsx-entriesoffset-84,rsy,rsx-entriesoffset-60,rsy+24){
+				if mouseover(rsx-entriesoffset-84,rsy,rsx-entriesoffset-60,rsy+24){
 					frameleft=1
 					if mouse_check_button_pressed(mb_left){
 						ds_grid[# 3,i] -=ds_grid[# 4,i]
@@ -86,7 +86,7 @@ var yy = 0; for(i=drawelementstart;i<drawelementstart+10;i++){
 					}
 				}else frameleft=0
 				
-				if scr_mouseover(rsx-entriesoffset+64,rsy,rsx-entriesoffset+84,rsy+24){
+				if mouseover(rsx-entriesoffset+64,rsy,rsx-entriesoffset+84,rsy+24){
 					frameright=1
 					if mouse_check_button_pressed(mb_left){
 						ds_grid[# 3,i] +=ds_grid[# 4,i]
@@ -112,7 +112,7 @@ var yy = 0; for(i=drawelementstart;i<drawelementstart+10;i++){
 				
 				draw_sprite(spr_checkbox,current_val,rsx-entriesoffset-12,rsy)
 				
-				if scr_mouseover(rsx-entriesoffset-12,rsy,rsx-entriesoffset+12,rsy+24){
+				if mouseover(rsx-entriesoffset-12,rsy,rsx-entriesoffset+12,rsy+24){
 					if mouse_check_button_pressed(mb_left){
 						ds_grid[# 3,i] = !ds_grid[# 3,i]
 					}
@@ -136,7 +136,7 @@ var yy = 0; for(i=drawelementstart;i<drawelementstart+10;i++){
 				draw_set_halign(fa_center)
 				
 				
-				if scr_mouseover(rsx-entriesoffset-12,rsy,rsx-entriesoffset+12,rsy+22){
+				if mouseover(rsx-entriesoffset-12,rsy,rsx-entriesoffset+12,rsy+22){
 					keymode=1
 					if mouse_check_button_pressed(mb_left){
 						if !inputting{
@@ -168,7 +168,7 @@ var yy = 0; for(i=drawelementstart;i<drawelementstart+10;i++){
 	yy++
 }
 
-scr_applydeclinebutton(window_x+20,window_y+274,applyword,scr_savesettings)//Apply Settings
-scr_applydeclinebutton(window_x+150,window_y+274,declineword,scr_declinesettings)//Decline Settings
-scr_applydeclinebutton(window_x+280,window_y+274,set_to_defaultword,scr_settodefault)//Reset settings
+applydeclinebutton(window_x+20,window_y+274,applyword,savesettings)//Apply Settings
+applydeclinebutton(window_x+150,window_y+274,declineword,declinesettings)//Decline Settings
+applydeclinebutton(window_x+280,window_y+274,set_to_defaultword,settodefault)//Reset settings
 

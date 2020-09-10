@@ -1,4 +1,4 @@
-function scr_loadsettings() {
+function load_settings() {
 	ini_open("game_settings.ini")
 	global.mastervolume=		ini_read_real("Sounds", "mastervolume", 0.5)
 	global.musicvolume=			ini_read_real("Sounds", "musicvolume", 0.5)

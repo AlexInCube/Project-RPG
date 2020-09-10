@@ -1,4 +1,4 @@
-///@description scr_draw_text_shadow(x, y, string, font, shadow_size, shadow_colour, text_colour, alpha);
+///@description draw_text_shadow(x, y, string, font, shadow_size, shadow_colour, text_colour, alpha);
 ///@arg x
 ///@arg y
 ///@arg string
@@ -7,7 +7,7 @@
 ///@arg shadow_color
 ///@arg text_color
 ///@arg alpha
-function scr_draw_text_shadow(argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7) {
+function draw_text_shadow(argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7) {
 	var _x, _y, _string, _font, _shadow_size, _shadow_colour, _text_colour, _alpha;
 	_x = argument0;
 	_y = argument1;

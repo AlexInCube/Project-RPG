@@ -1,9 +1,9 @@
 /// @description Modifies a slot in the inventory. Can add and remove items, and set the item.
-/// @function scr_slot_modify_amount(slot, amount, override);
+/// @function slot_modify_amount(slot, amount, override);
 /// @param slot
 /// @param amount
 /// @param override
-function scr_slot_modify_amount(argument0, argument1, argument2) {
+function slot_modify_amount(argument0, argument1, argument2) {
 
 	//Assign local variables
 	var slot = argument0;

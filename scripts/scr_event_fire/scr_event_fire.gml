@@ -1,6 +1,6 @@
 ///@description event_fire
 ///@arg event
-function scr_event_fire() {
+function event_fire() {
 
 
 		var ev = string(argument[0])
@@ -27,12 +27,12 @@ function scr_event_fire() {
 					if instance_exists(listener){
 						args = array_create(lenArgs,0)
 						array_copy(args,0,listenerInfo,2,lenArgs)
-						with(listener) unregister = scr_script_execute_alt(script, args)
+						with(listener) unregister = script_execute_alt(script, args)
 					} else unregister = true
 				}
 			
 				if unregister{
-					scr_event_unregister(ev,listener)
+					event_unregister(ev,listener)
 				
 					i--
 				}

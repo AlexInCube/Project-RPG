@@ -10,7 +10,7 @@ switch(image_index){
 		myTypes[i]		= 1;
 		mySpeaker[i]	= obj_player;
 		myNextLine[i]	= -1
-		myScripts[i]	= [[scr_trophy_gun_furniture],[nothing]]
+		myScripts[i]	= [[trophy_gun_furniture],[nothing]]
 		#endregion
 	break;
 }

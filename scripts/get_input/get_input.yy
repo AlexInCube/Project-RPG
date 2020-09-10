@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Utility.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_change_variable",
+  "name": "get_input",
   "tags": [],
   "resourceType": "GMScript",
 }

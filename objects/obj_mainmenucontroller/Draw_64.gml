@@ -1,4 +1,4 @@
-if !ds_exists(ds_menu_main,ds_type_grid) exit
+if !ds_exists(ds_menu_main,ds_type_grid) or menustate != menu_state.main_buttons exit
 var ds_grid = ds_menu_main
 draw_set_font(fnt_small)
 for(i=0;i<ds_menu_height;i++){
@@ -8,7 +8,7 @@ for(i=0;i<ds_menu_height;i++){
 			var c = make_color_rgb(255-colordiff,255-colordiff,255-colordiff)
 			var button_y = 100+(43*i)
 			
-				if scr_mouseover(button_x,button_y,button_x+button_width,button_y+button_height){
+				if mouseover(button_x,button_y,button_x+button_width,button_y+button_height){
 					ds_grid[# 2,i]+=0.5
 					if !instance_exists(obj_optionswindow){
 					if mouse_check_button_pressed(mb_left){

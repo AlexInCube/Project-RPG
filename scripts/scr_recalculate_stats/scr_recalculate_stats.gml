@@ -1,4 +1,4 @@
-function scr_recalculate_stats(argument0) {
+function recalculate_stats(argument0) {
 	var inventory = argument0
 	var ds_width = ds_grid_width(inventory)
 	var hp,mp,armor=0,magicarmor=0,physdamage=0,magicdamage=0,strength=0,intelligence=0,luck=0;
@@ -22,7 +22,7 @@ function scr_recalculate_stats(argument0) {
 	obj_player_stats.luck = luck
 
 
-	scr_weapon_equip()
+	weapon_equip()
 
 
 

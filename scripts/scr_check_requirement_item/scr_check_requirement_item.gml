@@ -1,4 +1,4 @@
-///@description scr_check_requirement_item(questid)
+///@description check_requirement_item(questid)
 ///@arg inventory
 ///@arg item
 ///@arg itemamount
@@ -6,7 +6,7 @@
 	Check inventory for needed item, this can use not only for quests. For example: this can use
 	in dialogue system, to add an option in the dialog box if there is an item.
 */
-function scr_check_requirement_item(argument0, argument1, argument2) {
+function check_requirement_item(argument0, argument1, argument2) {
 	var inventory = argument0
 	var item = argument1
 	var itemamount = argument2

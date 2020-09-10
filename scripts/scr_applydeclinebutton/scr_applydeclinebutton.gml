@@ -1,9 +1,9 @@
-///@description scr_applydeclinebutton(x,y,txt,script)
+///@description applydeclinebutton(x,y,txt,script)
 ///@arg xx
 ///@arg yy
 ///@arg txt
 ///@arg script
-function scr_applydeclinebutton(argument0, argument1, argument2, argument3) {
+function applydeclinebutton(argument0, argument1, argument2, argument3) {
 	var xx = argument0
 	var yy = argument1
 	var txt = argument2
@@ -12,7 +12,7 @@ function scr_applydeclinebutton(argument0, argument1, argument2, argument3) {
 	var sprite = spr_optionsapply
 	var sprwidth = sprite_get_width(sprite)
 	var sprheight = sprite_get_height(sprite)
-	if scr_mouseover(xx,yy,xx+sprwidth,yy+sprheight){
+	if mouseover(xx,yy,xx+sprwidth,yy+sprheight){
 		mouseover = true
 		if mouse_check_button_pressed(mb_left){
 			script_execute(script)

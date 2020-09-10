@@ -2,7 +2,7 @@
 // You can write your code in this editor
 if other.id != creator
 {
-	other.hp -= scr_applydamage(damage,damagetype,other,true)
+	other.hp -= applydamage(damage,damagetype,other,true)
 	
 	if instance_exists(creator){
 	var dir=point_direction(creator.x,creator.y,other.x,other.y)

@@ -1,1 +1,1 @@
-scr_quest_update(quest.slimetrouble)
+quest_update(quest.slimetrouble)

@@ -1,7 +1,7 @@
 function penguin_not_wait(){
 	change_variable(obj_penguinnpc,"choice_variable",-1)
 	with(obj_cutscene){
-		scr_cutscene_end_action()
+		cutscene_end_action()
 	}
 }
 

@@ -112,5 +112,6 @@
 			"load_game":"Загрузить игру",
 			"back_to_main_menu":"Вернуться в главное меню",
 			"exit_to_desktop":"Выйти на рабочий стол",
-			"create_new_save_slot":"Новое сохранение"
+			"create_new_save_slot":"Новое сохранение",
+			"fast_save_game":"Быстрое сохранение"
 }

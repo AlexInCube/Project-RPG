@@ -62,7 +62,7 @@ if(type[page] == 1){
 		}
 		
 		//Apply choice with mouse
-		if scr_mouseover(xx-3,yy+((ii+iy)*stringHeight)+3,xx+txtwidth-8,yy+((ii+iy)*stringHeight)+(24*rectangleoffset))
+		if mouseover(xx-3,yy+((ii+iy)*stringHeight)+3,xx+txtwidth-8,yy+((ii+iy)*stringHeight)+(24*rectangleoffset))
 		{
 			choice = ii
 		}

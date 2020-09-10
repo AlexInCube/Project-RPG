@@ -1,8 +1,8 @@
 /// @description Modifies a slot in the inventory. Can add and remove items, and set the item.
-/// @function scr_gain_item(slot, amount);
+/// @function gain_item(slot, amount);
 /// @param item_id
 /// @param amount
-function scr_gain_item(argument0, argument1) {
+function gain_item(argument0, argument1) {
 
 	var item_id    = argument0;
 	var max_amount = argument1;
@@ -31,7 +31,7 @@ function scr_gain_item(argument0, argument1) {
 						}
 						else
 						{
-							scr_event_fire([event.itemPickuped,item_id,cur_amount])
+							event_fire([event.itemPickuped,item_id,cur_amount])
 							break
 						}
 		            }

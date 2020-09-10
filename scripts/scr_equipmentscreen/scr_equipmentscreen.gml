@@ -1,4 +1,4 @@
-function scr_equipmentscreen(argument0) {
+function equipmentscreen(argument0) {
 	//Inventory Screen for Player/Chests inventories
 	var windowid = id
 	var inventory = argument0
@@ -35,7 +35,7 @@ function scr_equipmentscreen(argument0) {
 			}
 	
 		if windowid.placefree{
-			scr_slot(inventory,i,slotsxy[i,0],slotsxy[i,1])
+			slot(inventory,i,slotsxy[i,0],slotsxy[i,1])
 		}
 	}
 
@@ -44,9 +44,9 @@ function scr_equipmentscreen(argument0) {
 		{
 		if inventory[# i, 0]!=item.none
 			{
-				if scr_mouseover(slotsxy[i,0],slotsxy[i,1],slotsxy[i,0]+32,slotsxy[i,1]+32)
+				if mouseover(slotsxy[i,0],slotsxy[i,1],slotsxy[i,0]+32,slotsxy[i,1]+32)
 				{
-					scr_draw_item_stat_mouse(inventory,i)
+					draw_item_stat_mouse(inventory,i)
 				}
 			}
 		}

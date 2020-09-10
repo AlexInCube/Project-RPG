@@ -33,7 +33,7 @@ switch(choice_variable){
 		myTypes[i]		= 1
 		mySpeaker[i]	= obj_player
 		myNextLine[i]	= [5,10]
-		myScripts[i]	= [[nothing],[scr_quest_update,quest.slimetrouble]]
+		myScripts[i]	= [[nothing],[quest_update,quest.slimetrouble]]
 		
 
 		//Line 5
@@ -55,7 +55,7 @@ switch(choice_variable){
 		myText[i]		= "ВСЁ, Я С ТОБОЙ НЕ РАЗГОВАРИВАЮ, ПРОВАЛИВАЙ.";
 		myNextLine[i]	= -1;
 		mySpeaker[i]	= id;
-		myScripts[i]	= [scr_slimetrouble_nikita_take_displasure]
+		myScripts[i]	= [slimetrouble_nikita_take_displasure]
 
 		//Line 8
 		i++;
@@ -67,7 +67,7 @@ switch(choice_variable){
 		myText[i]		= ["Помогу","Нет"];
 		myTypes[i]		= 1;
 		myNextLine[i]   = [10,7]
-		myScripts[i]	= [[scr_quest_update,quest.slimetrouble],[nothing]]
+		myScripts[i]	= [[quest_update,quest.slimetrouble],[nothing]]
 		mySpeaker[i]	= id;
 		
 		//Line 10
@@ -92,7 +92,7 @@ switch(choice_variable){
 	#region Nikita wait realization of third stage of quest
 		var i = 0;
 		
-		if scr_quest_get_current_stage(quest.slimetrouble) >= 2{
+		if quest_get_current_stage(quest.slimetrouble) >= 2{
 		//Line 0 //If task complete
 		myText[i]		= "Я видел как ты с ними справился, мог и быстрее их убить";
 		myEmotion[i]	= 1;
@@ -151,7 +151,7 @@ switch(choice_variable){
 		myNextLine[i]	= [7,-1]
 		myTypes[i]		= 1
 		mySpeaker[i]	= id;
-		myScripts[i]	= [[nothing],[scr_slimetrouble_nikita_take_displasure]]
+		myScripts[i]	= [[nothing],[slimetrouble_nikita_take_displasure]]
 		//Line 10
 		i++
 		myText[i]		= "Пойди потом к кузнецу Евгену, он тебе что-нибудь сделает.";
@@ -242,13 +242,13 @@ switch(choice_variable){
 		myText[i]		= "Отлично, забирай мазь."
 		myNextLine[i]	= -1
 		mySpeaker[i]	= id;
-		myScripts[i]	= [scr_slimetrouble_to_give_slime,1]
+		myScripts[i]	= [slimetrouble_to_give_slime,1]
 		//Line 28
 		i++
 		myText[i]		= "Отлично, забирай монетку."
 		myNextLine[i]	= -1
 		mySpeaker[i]	= id;
-		myScripts[i]	= [scr_slimetrouble_to_give_slime,0]
+		myScripts[i]	= [slimetrouble_to_give_slime,0]
 		//Line 29
 		i++
 		myText[i]		= "Звёздочка"
@@ -259,7 +259,7 @@ switch(choice_variable){
 		myText[i]		= "Спасибо"
 		myNextLine[i]	= -1
 		mySpeaker[i]	= id;
-		myScripts[i]	= [scr_slimetrouble_to_give_slime,2]
+		myScripts[i]	= [slimetrouble_to_give_slime,2]
 		
 		//uncommenting this will make the first conversation begin again
 		//choice_variable	= -1;
@@ -290,7 +290,7 @@ switch(choice_variable){
 		mySpeaker[i]	= id;
 		//Line 4
 		i++
-		if scr_check_requirement_item(global.inventory,item.slime,1){
+		if check_requirement_item(global.inventory,item.slime,1){
 		myText[i]		= ["Показать","Ладно, я её не добыл."];
 		myNextLine[i]	= [5,2]
 		}else{
@@ -359,13 +359,13 @@ switch(choice_variable){
 		myText[i]		= "Отлично, забирай мазь."
 		myNextLine[i]	= -1
 		mySpeaker[i]	= id;
-		myScripts[i]	= [scr_slimetrouble_to_give_slime,1]
+		myScripts[i]	= [slimetrouble_to_give_slime,1]
 		//Line 17
 		i++
 		myText[i]		= "Отлично, забирай монетку."
 		myNextLine[i]	= -1
 		mySpeaker[i]	= id;
-		myScripts[i]	= [scr_slimetrouble_to_give_slime,0]
+		myScripts[i]	= [slimetrouble_to_give_slime,0]
 		//Line 18
 		i++
 		myText[i]		= "Звёздочка"
@@ -376,7 +376,7 @@ switch(choice_variable){
 		myText[i]		= "Спасибо"
 		myNextLine[i]	= -1
 		mySpeaker[i]	= id;
-		myScripts[i]	= [scr_slimetrouble_to_give_slime,2]
+		myScripts[i]	= [slimetrouble_to_give_slime,2]
 	#endregion
 	break
 	
@@ -402,7 +402,7 @@ switch(choice_variable){
 		myNextLine[i]	= [3,4]
 		myTypes[i]		= 1
 		mySpeaker[i]	= obj_player;
-		myScripts[i]	= [[scr_slimetrouble_to_give_slime,2],[scr_slimetrouble_nikita_take_displasure]]
+		myScripts[i]	= [[slimetrouble_to_give_slime,2],[slimetrouble_nikita_take_displasure]]
 		//Line 3
 		i++
 		myText[i]		= "НУ НАКОНЕЦ-ТО ТЫ СДЕЛАЛ ЭТО, ТЫ ОТДАЛ МНЕ СРАНУЮ СЛИЗЬ, Я ВООБЩЕ НЕ ПОНИМАЮ ПОЧЕМУ ТЫ ЕЁ ЗАЖОПИЛ.";

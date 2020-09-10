@@ -1,7 +1,7 @@
-function scr_spell_fireball(argument0) {
+function spell_fireball(argument0) {
 	var manacost=argument0
 
-	if obj_player_stats.mana>=manacost and obj_player.state!=scr_dash_state
+	if obj_player_stats.mana>=manacost and obj_player.state!=dash_state
 	{
 		var damage = instance_create_layer(obj_player.x,obj_player.y,"Instances",obj_damageprojectile)
 		damage.sprite_index=spr_fireball

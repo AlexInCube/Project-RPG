@@ -1,6 +1,6 @@
-///@description scr_change_gui_size
+///@description change_gui_size
 ///@arg guisize
-function scr_change_gui_size() {
+function change_gui_size() {
 	var display_height=global.height,display_width=global.width
 	var ideal_width=1280;
 	var ideal_height=720;

@@ -1,1 +1,1 @@
-scr_event_fire([event.enemyKilled,object_index])
+event_fire([event.enemyKilled,object_index])
