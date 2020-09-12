@@ -8,7 +8,7 @@ sprite = spr_load_window
 //Window Width and Height (sl - SpriteLoad, ss - SpriteSlot)
 sl_w = sprite_get_width(sprite) 
 sl_h = sprite_get_height(sprite)
-ss_w = sprite_get_width(spr_save_slot)
-ss_h = sprite_get_height(spr_save_slot)
+ss_w = GUIHEIGHT-20
+ss_h = sprite_get_height(spr_save_slot)+16
 
 createslot_word = find_keyword("create_new_save_slot")

@@ -10,7 +10,15 @@ function save_game() {
 	save_data[? "player_inventory"] = ds_grid_write(global.inventory)
 	save_data[? "player_equipment"] = ds_grid_write(global.equipment)
 	save_data[? "quest_list"] = ds_map_write(global.ds_current_quests)
-	
+	save_data[? "saving_time"] = 
+	[
+	date_get_day(date_current_datetime()),
+	date_get_month(date_current_datetime()),
+	date_get_year(date_current_datetime()),
+	date_get_hour(date_current_datetime()),
+	date_get_minute(date_current_datetime())
+	]
+	save_data[? "game_version"] = GM_version
 	var save_string = json_encode(save_data)
 	ds_map_destroy(save_data)
 	
@@ -65,6 +73,7 @@ function load_game() {
 	ds_map_destroy(save_data)
 }
 
+#region Save/Load Window
 //Create save selecting window
 function select_slot(){
 	menustate = menu_state.window_load_save
@@ -73,6 +82,7 @@ function select_slot(){
 	}
 }
 
+//Update saves list
 function create_saves_list(){
 	//Reload Save List
 	if ds_exists(ds_saves,ds_type_list){
@@ -94,3 +104,7 @@ function create_saves_list(){
 	
 	ds_size = ds_list_size(ds_saves)
 }
+
+
+
+#endregion

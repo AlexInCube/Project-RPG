@@ -1,7 +1,7 @@
 //Draw window background
 
 if window_sprite == spr_basicwindow{
-draw_nine_slice_box(window_sprite,window_x,window_y,window_x+window_width,window_y+window_height)
+draw_nine_slice_box(window_sprite,window_x,window_y,window_x+window_width,window_y+window_height,0)
 }else{
 draw_sprite(window_sprite,0,window_x,window_y)
 }

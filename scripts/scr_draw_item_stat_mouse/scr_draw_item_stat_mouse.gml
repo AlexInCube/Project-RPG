@@ -37,7 +37,7 @@ function draw_item_stat_mouse(argument0, argument1) {
 	if surface_exists(obj_inventory.drawitemtooltip){
 	surface_set_target(obj_inventory.drawitemtooltip)
 	//Draw textbox
-	draw_nine_slice_box(spr_nineslicebox,device_mouse_x_to_gui(0)+boxx,device_mouse_y_to_gui(0),device_mouse_x_to_gui(0)+boxx+maxtextwidth,device_mouse_y_to_gui(0)+20+string_height_ext(statstring,-1,maxtextwidth))
+	draw_nine_slice_box(spr_nineslicebox,device_mouse_x_to_gui(0)+boxx,device_mouse_y_to_gui(0),device_mouse_x_to_gui(0)+boxx+maxtextwidth,device_mouse_y_to_gui(0)+20+string_height_ext(statstring,-1,maxtextwidth),0)
 	//Draw string
 	draw_text(device_mouse_x_to_gui(0)+boxx+10,device_mouse_y_to_gui(0),statstring)
 	surface_reset_target()

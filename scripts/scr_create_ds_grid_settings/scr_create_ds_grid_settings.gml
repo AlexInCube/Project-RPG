@@ -13,7 +13,8 @@ function create_ds_grid_settings() {
 	var sr = 0
 	for (var i=0;i<array_length_1d(resolution_array)-1;i++){
 		//show_debug_message(resolution_array[i])
-		if resolution_array[i] == cr{
+		
+		if resolution_array[i] = cr{
 			sr = i
 			break
 		}else{

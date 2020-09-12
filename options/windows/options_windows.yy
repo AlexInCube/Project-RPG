@@ -1,9 +1,9 @@
 {
-  "option_windows_display_name": "What the quest",
-  "option_windows_executable_name": "What the quest",
-  "option_windows_version": "0.1.0.0",
+  "option_windows_display_name": "ProjectRPG",
+  "option_windows_executable_name": "ProjectRPG",
+  "option_windows_version": "0.31.5.0",
   "option_windows_company_info": "Alexander Techologies",
-  "option_windows_product_info": "Made in GameMaker Studio 2",
+  "option_windows_product_info": "ProjectRPG",
   "option_windows_copyright_info": "(c) 2019 Alexander Techologies",
   "option_windows_description_info": "",
   "option_windows_display_cursor": true,
