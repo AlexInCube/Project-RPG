@@ -1,3 +1,5 @@
+depth =-100
+
 event_inherited();
 
 enum settings_element_type{

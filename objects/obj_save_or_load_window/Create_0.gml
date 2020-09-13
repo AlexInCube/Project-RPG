@@ -3,11 +3,8 @@ ds_saves = ds_list_create()
 create_saves_list()
 
 drawelementstart = 0//Start drawing ds_list from position
+drawelementheight = round((GUIHEIGHT-20)/(sprite_get_height(spr_save_slot)+21))-1
 
-sprite = spr_load_window
-//Window Width and Height (sl - SpriteLoad, ss - SpriteSlot)
-sl_w = sprite_get_width(sprite) 
-sl_h = sprite_get_height(sprite)
 ss_w = GUIHEIGHT-20
 ss_h = sprite_get_height(spr_save_slot)+16
 
