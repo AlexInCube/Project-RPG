@@ -27,9 +27,12 @@ if !ds_exists(ds_saves,ds_type_list) exit
 				if mouse_check_button_pressed(mb_left){
 					//TODO: Make in game textbox and checking equal names
 					global.directory_save = get_string("Write your save name:","Your_save"+string(ds_size))
+					resume_game()//resume game for saving (activate all instances)
 					save_game()
+					exit
 				}
 			}
+			i--
 		} else if i!=ds_size{
 			draw_set_halign(fa_left)
 			draw_set_valign(fa_top)
@@ -45,7 +48,8 @@ if !ds_exists(ds_saves,ds_type_list) exit
 				if mouseover(slot_x+ss_w-106,slot_y,slot_x+ss_w-74,slot_y+32){
 					if mouse_check_button_pressed(mb_left){
 						global.directory_save=ds_saves[| i]
-						with(obj_pause)save_game()
+						resume_game()//resume game for saving (activate all instances)
+						save_game()
 						exit
 					}
 				}

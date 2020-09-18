@@ -6,9 +6,16 @@ function start_load(){
 }
 
 //Destroy obj_pause and resume game
-function unpause_game(){
+function resume_game(){
+	show_debug_message("Game resumed!")
 	with(obj_pause)instance_destroy()
+	instance_activate_all()
 	audio_resume_all()
+}
+
+function fast_save_game(){
+	instance_activate_all()
+	with(obj_pause)alarm[1]=1
 }
 
 //Exit to main menu from pause

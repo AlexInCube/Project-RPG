@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8f609619-69cd-4f63-88e4-8aef807f489a","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "SaveOrLoad",
-    "path": "folders/Objects/Controllers/SaveOrLoad.yy",
+    "name": "SaveOrLoad_Sprites",
+    "path": "folders/Objects/Controllers/SaveOrLoad/SaveOrLoad_Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_resave_button",

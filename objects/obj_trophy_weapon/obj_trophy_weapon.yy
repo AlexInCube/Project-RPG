@@ -26,15 +26,19 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_trophy_weapon","path":"objects/obj_trophy_weapon/obj_trophy_weapon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"parent":{"name":"obj_trophy_weapon","path":"objects/obj_trophy_weapon/obj_trophy_weapon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":24,"eventType":7,"collisionObjectId":null,"parent":{"name":"obj_trophy_weapon","path":"objects/obj_trophy_weapon/obj_trophy_weapon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":25,"eventType":7,"collisionObjectId":null,"parent":{"name":"obj_trophy_weapon","path":"objects/obj_trophy_weapon/obj_trophy_weapon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "Player apartment",
-    "path": "folders/Objects/Controllers/Cutscene System/Cutscenes Unique Objects/Player apartment.yy",
+    "path": "folders/Objects/Cutscenes Unique Objects/Player apartment.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_trophy_weapon",
-  "tags": [],
+  "tags": [
+    "saveable",
+  ],
   "resourceType": "GMObject",
 }

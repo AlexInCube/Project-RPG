@@ -39,6 +39,7 @@
   "name": "obj_cutscene_perm_trigger",
   "tags": [
     "triggers",
+    "saveable",
   ],
   "resourceType": "GMObject",
 }

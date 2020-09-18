@@ -4,7 +4,7 @@ if keyboard_check_pressed(global.pause_key)
 {
 	if menustate == menu_state.main_buttons
 	{
-		unpause_game()
+		resume_game()
 	}
 }
 

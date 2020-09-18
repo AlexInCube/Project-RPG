@@ -7,6 +7,4 @@ function cutscene_change_state(argument0, argument1) {
 	}
 
 	cutscene_end_action()
-
-
 }

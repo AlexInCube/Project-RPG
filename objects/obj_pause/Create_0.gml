@@ -6,8 +6,8 @@ audio_pause_all()
 menustate = menu_state.main_buttons
 
 ds_menu_main = create_menu_page(
-	[find_keyword("resume_game"),		menu_element_type.button, 0, unpause_game],
-	[find_keyword("fast_save_game"),	menu_element_type.button, 0, save_game],
+	[find_keyword("resume_game"),		menu_element_type.button, 0, resume_game],
+	[find_keyword("fast_save_game"),	menu_element_type.button, 0, fast_save_game],
 	[find_keyword("save_or_load_game"),	menu_element_type.button, 0, select_slot],
 	[find_keyword("settings"),			menu_element_type.button, 0, open_settings],
 	[find_keyword("back_to_main_menu"),	menu_element_type.button, 0, exit_to_main_menu],
