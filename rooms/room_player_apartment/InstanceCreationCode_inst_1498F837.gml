@@ -13,3 +13,4 @@ t_scene_info = [
 	[cutscene_wait,0.1],
 	[cutscene_set_to_default]
 ]
+cutscene_id=0

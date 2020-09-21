@@ -1,6 +1,6 @@
 depth =-100
-ds_saves = ds_list_create()
-create_saves_list()
+ds_saves = ds_map_create()//Contain saves name folder
+create_saves_map()
 
 drawelementstart = 0//Start drawing ds_list from position
 drawelementheight = round((GUIHEIGHT-20)/(sprite_get_height(spr_save_slot)+21))-1

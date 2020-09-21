@@ -41,6 +41,7 @@
   "name": "obj_cutscene_trigger",
   "tags": [
     "triggers",
+    "cutscene_trigger",
     "saveable",
   ],
   "resourceType": "GMObject",

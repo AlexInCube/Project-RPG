@@ -43,11 +43,9 @@ function save_game() {
 				var _map = ds_map_create()
 				ds_list_add(object_list,_map)
 				ds_list_mark_as_map(object_list,ds_list_size(object_list)-1)
-				ds_map_add(_map,"obj", object_get_name(object_index));
+				
 				//User 14 using only for saving, User 15 only for loading
 				CallUserEvent(14,_map)
-				
-				break
 			}
 		}
 	}
@@ -58,6 +56,11 @@ function save_game() {
 	save_string = json_encode(wrapper);
 	
 	var file_path = "Saves\\"+global.directory_save+"\\"+string(room_get_name(room))+".txt"
+	
+	if file_exists(file_path){
+		file_delete(file_path)
+	}
+	
 	var file = file_text_open_write(file_path)
 	file_text_write_string(file,save_string)
 	file_text_close(file)
@@ -127,12 +130,17 @@ function load_game() {
 	for(var i=0; i<ds_list_size(list);i++){
 		var map = list[| i]
 		var obj = map[? "obj"]
+		if instance_exists(obj){
+			
+		}
 		with(asset_get_index(obj)){
 			CallUserEvent(15,map)
 		}
+		
 	}
 	
 	ds_map_destroy(wrapper)
+	//End of read room_name.txt
 	show_debug_message("Room loaded"+file_path)
 }
 
@@ -146,26 +154,35 @@ function select_slot(){
 }
 
 //Update saves list
-function create_saves_list(){
+function create_saves_map(){
 	//Reload Save List
-	if ds_exists(ds_saves,ds_type_list){
-		ds_list_destroy(ds_saves)
-		ds_saves = ds_list_create()
+	if ds_exists(ds_saves,ds_type_map){
+		ds_map_destroy(ds_saves)
+		ds_saves = ds_map_create()
 	}else{
-		ds_saves = ds_list_create()
+		ds_saves = ds_map_create()
 	}
 
-	var file = file_find_first("Saves\\*",fa_directory)
+    var file = file_find_first("Saves\\*",fa_directory)
 	while(file != ""){
 		if file_exists("Saves\\"+file+"/playerdata.txt"){
-			ds_list_add(ds_saves,file)	
+			var file_path = "Saves\\"+file+"\\"+"playerdata.txt"
+			var file_ = file_text_open_read(file_path)
+			var save_string = file_text_read_string(file_)
+			file_text_close(file_)
+			var save_data = json_decode(save_string)
+			var saving_time_ds_list = save_data[? "saving_time"]
+			var c_array = [saving_time_ds_list[| 0],saving_time_ds_list[| 1],saving_time_ds_list[| 2],saving_time_ds_list[| 3],saving_time_ds_list[| 4]]
+			
+			ds_map_add(ds_saves,file,[c_array,save_data[? "game_version"]])	
+			ds_map_destroy(save_data)
 		}
 
 		file = file_find_next();
 	}
 	file_find_close()
 	
-	ds_size = ds_list_size(ds_saves)
+	ds_size = ds_map_size(ds_saves)
 }
 
 

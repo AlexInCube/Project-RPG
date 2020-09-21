@@ -12,3 +12,4 @@ t_scene_info = [
 	[cutscene_change_variable,obj_apartment_door,"image_speed",0],
 	[cutscene_set_to_default]
 ]
+cutscene_id=1

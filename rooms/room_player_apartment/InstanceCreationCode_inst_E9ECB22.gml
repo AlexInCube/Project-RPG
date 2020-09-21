@@ -16,3 +16,4 @@ t_scene_info = [
 	[cutscene_start_speak,obj_penguinnpc,true],
 	[cutscene_set_to_default]
 ]
+cutscene_id=2
