@@ -96,7 +96,10 @@ function load_game() {
 	//Player Inventory
 	with(obj_inventory) ds_grid_read(global.inventory,save_data[? "player_inventory"])
 	//Player Equipment
-	with(obj_inventory) ds_grid_read(global.equipment,save_data[? "player_equipment"])
+	with(obj_inventory){
+		ds_grid_read(global.equipment,save_data[? "player_equipment"])
+		recalculate_stats(global.equipment)
+	}
 	//Load quest list and cycle through all list to create quest listeners
 	with(obj_questmanager) {
 		//Read ds_map
@@ -130,10 +133,8 @@ function load_game() {
 	for(var i=0; i<ds_list_size(list);i++){
 		var map = list[| i]
 		var obj = map[? "obj"]
-		if instance_exists(obj){
-			
-		}
-		with(asset_get_index(obj)){
+
+		with(obj){
 			CallUserEvent(15,map)
 		}
 		

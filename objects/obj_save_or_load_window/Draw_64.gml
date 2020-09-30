@@ -74,6 +74,7 @@ if !ds_exists(ds_saves,ds_type_map) exit
 					show_debug_message("[Save Manager] Save deleted: "+save_name)
 					create_saves_map()
 					drawelementstart = clamp(drawelementstart,0,max(0,ds_size-drawelementheight))
+					exit
 				}
 			}
 			//Save name

@@ -24,6 +24,8 @@ function get_input() {
 	interact_key = keyboard_check_pressed(global.interact_key)
 	//Attack
 	attack_key = keyboard_check_pressed(global.attack_key)
+	//Reloading
+	reloading_key = keyboard_check_pressed(global.reloading_key)
 	//Open window with armor and stats
 	equipment_key = keyboard_check_pressed(global.equipment_key)
 	//Open window with player stuff

@@ -1,7 +1,7 @@
 reset_dialogue_defaults();
 
 
-switch(image_index){
+switch(weapon_taked){
 	case 0:
 	#region First Dialogue
 		var i = 0;

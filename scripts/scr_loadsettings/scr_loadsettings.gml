@@ -37,6 +37,7 @@ function load_settings() {
 	global.drop_item_key =		ini_read_real("Keys","drop_item_key",ord("Q"))
 	global.combination_key =	ini_read_real("Keys","combination_key",vk_control)
 	global.pause_key =			ini_read_real("Keys","pause_key",vk_escape)
+	global.reloading_key =		ini_read_real("Keys","reloading_key",ord("R"))
 
 	global.developer_key =		ini_read_real("Keys","developer_key",vk_f5)
 	ini_close()

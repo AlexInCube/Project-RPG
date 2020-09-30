@@ -1,10 +1,9 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description One-time object, calling only if game start.
 randomize()
 
-load_settings()
+load_settings()//Load volume, controlls and other settings
 global.window_list=ds_list_create()//For window system
-global.directory_save="rpgsave"
+global.directory_save="rpgsave"//Current saving for loading
 
 if !directory_exists("Saves"){
 	directory_create("Saves")
@@ -25,3 +24,4 @@ enum load_state{
 }
 
 global.load_state = load_state.none
+
