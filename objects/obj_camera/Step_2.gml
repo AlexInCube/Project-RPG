@@ -3,11 +3,12 @@ if manual_control == true and !instance_exists(obj_textbox){
 	if instance_exists(target){
 		target = id
 		//camera_speed = default_camera_speed
+		if instance_exists(obj_player){
 		var camera_x = mean(obj_player.x,obj_player.x, mouse_x);
 		var camera_y = mean(obj_player.y,obj_player.y, mouse_y);
 		x = lerp(x,camera_x,camera_speed);
 		y = lerp(y,camera_y,camera_speed);
-		
+		}
 		x += random_range(-shake,shake)
 		y += random_range(-shake,shake)
 		shake*=0.9

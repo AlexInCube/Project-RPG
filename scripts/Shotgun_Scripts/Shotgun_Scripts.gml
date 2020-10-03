@@ -1,18 +1,27 @@
 function shotgun_create() {
-	shotgun_sprite[0] = spr_weapon_shotgun//Default sprite with shoting delay animation
-	shotgun_sprite[1] = spr_weapon_shotgun_reloading//Animation for ammo load
+	//Setup scripts
+	weapon_step_script=shotgun_step
+	weapon_draw_script=shotgun_draw
+	weapon_alarm_script=shotgun_alarm
+	weapon_alarm_1_script=shotgun_load_ammo
+	
 	ammo_sprite = spr_shotgun_ammo//Sprite for projectile
-	shotgun_shell = obj_shotgun_shell
-	shellX = -4 
+	shotgun_shell = obj_shotgun_shell//Shell drop effect
+	shellX = -4 //Offset for shells
 	shellY = -2
 	shoot_delay = room_speed//Shooting speed
 	can_shoot = true//Allow shooting?
 	ammo_max = 6//Ammo capacity
 	ammo = ammo_max//Current ammo amount in weapon
 
-	reloading = false
+	reloading = false //Reload mode
+	reload_time = 15 //If reload mode, when load 1 ammo with delay, until we dont reached ammo_max
 	
-
+	shoot_sound = snd_shotgun_shot
+	prepare_sound = snd_shotgun_prepare
+	load_ammo_sound = snd_shotgun_load
+	
+	//Fireball
 	sys_particle = part_system_create()
 	part_system_layer(sys_particle, layer)
 	part_particle = part_type_create()
@@ -30,22 +39,25 @@ function shotgun_create() {
 	emit_particle = part_emitter_create(sys_particle)
 }
 
-function shotgun_tick() {
-
+function shotgun_step() {
 	var mouse_dir = point_direction(x,y,mouse_x,mouse_y)
 	if obj_player.state == move_state
 	{
-		if obj_controller.reloading_key{
+		if obj_controller.reloading_key and ammo_max > ammo{
 			reloading = true
 		}
 		
 		if reloading{
+			if alarm[1] < 0{ 
+				alarm[1] = reload_time
+			}
 			exit
 		}
 		
-		if ammo > 0
+		
+		if obj_controller.attack_key
 		{
-			if obj_controller.attack_key
+			if ammo > 0
 			{
 				if can_shoot == true
 				{	
@@ -68,11 +80,11 @@ function shotgun_tick() {
 						}
 					}
 					
-					var shell = instance_create_layer(x+shellY,y+shellY,"Instances",shotgun_shell)
+					instance_create_layer(x+shellX,y+shellY,"Instances",shotgun_shell)
 					
-					audio_play_sound(snd_shotgun_shot,1,0)
+					audio_play_sound(shoot_sound,1,0)
 					screenshake(5)
-					audio_play_sound(snd_shotgun_prepare,1,0)
+					audio_play_sound(prepare_sound,1,0)
 					
 					//Knockback player (working if player not moving)
 					var xforce = lengthdir_x(2,mouse_dir)
@@ -90,6 +102,7 @@ function shotgun_tick() {
 				
 					alarm[0]=shoot_delay
 					can_shoot=false
+					ammo -= 1
 				}
 			}
 		}
@@ -130,9 +143,24 @@ function shotgun_draw() {
 	
 	//Draw weapon
 	draw_sprite_ext(spr_weapon_shotgun,i_i,obj_player.x,obj_player.y,1,y_s,mouse_dir,c_white,1)
-	//draw_text(obj_player.x,obj_player.y,alarm[0])
+	draw_text(obj_player.x,obj_player.y,string(ammo)+"/"+string(ammo_max))
+	
 }
 
 function shotgun_alarm() {
 	can_shoot=true
+}
+
+function shotgun_load_ammo() {
+	ammo+=1
+	audio_play_sound(load_ammo_sound,1,0)
+	if 	audio_is_playing(load_ammo_sound){
+	show_debug_message("LOAD GUN")
+	}
+
+	if ammo >= ammo_max{
+		ammo = ammo_max
+		audio_play_sound(prepare_sound,1,0)
+		reloading = false
+	}
 }

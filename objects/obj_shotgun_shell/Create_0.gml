@@ -6,3 +6,4 @@ fadeRate = 0.002
 td = 0 //Travel Distance
 td_max = speed * 10//Travel Distance Max
 state = "up"
+audio_play_sound(snd_shotgun_shell_drop,1,false)

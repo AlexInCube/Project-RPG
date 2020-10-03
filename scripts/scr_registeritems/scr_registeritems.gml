@@ -12,13 +12,13 @@ function registeritems() {
 	add_armor(item.leather_leggings,"leather_leggings", spr_leatherleggings,2,1,LEGGINGS)
 	add_armor(item.leather_boots,"leather_boots", spr_leatherboots,1,1,BOOTS)
 	//Weapon
-	add_weapon(item.wooden_stick,"wooden_stick",spr_item_weapon_wooden_stick,2,0,wooden_stick_tick,nothing,wooden_stick_create,nothing)
+	add_weapon(item.wooden_stick,"wooden_stick",spr_item_weapon_wooden_stick,2,0,wooden_stick_create)
 	/*
 	add_weapon(item.iron_sword,"iron_sword", spr_ItemIcon_ironsword,10,0,melee_attack)
 
 	add_weapon(item.lightningstaff,"light_staff", spr_MagicWeaponLightningStaff,0,10,range_attack)
 	*/
-	add_weapon(item.shotgun,"shotgun", spr_item_weapon_shotgun,2,0,shotgun_tick,shotgun_draw,shotgun_create,shotgun_alarm)
+	add_weapon(item.shotgun,"shotgun", spr_item_weapon_shotgun,2,0,shotgun_create)
 	//Spell
 	add_spell(item.scroll_dash,"spell_scroll_dash",spr_ItemIcon_SpellDash,1,spell_dash)
 	add_spell(item.scroll_fireball,"spell_scroll_fireball",spr_ItemIcon_SpellFireball,1,spell_fireball)

@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Shotgun Sprites",
-    "path": "folders/Objects/Weapons/Shotgun/Shotgun Sprites.yy",
+    "path": "folders/Weapons/Shotgun/Shotgun Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_shotgun_ammo",

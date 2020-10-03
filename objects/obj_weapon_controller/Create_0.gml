@@ -1,4 +1,6 @@
-weapon_tick_script=nothing
+weapon_step_script=nothing
 weapon_draw_script=nothing
 weapon_create_script=nothing
 weapon_alarm_script=nothing
+weapon_alarm_1_script=nothing
+script_execute(weapon_create_script)
