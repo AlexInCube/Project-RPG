@@ -45,6 +45,7 @@ function shotgun_step() {
 	{
 		if obj_controller.reloading_key and ammo_max > ammo{
 			reloading = true
+			can_shoot = false
 		}
 		
 		if reloading{
@@ -66,7 +67,7 @@ function shotgun_step() {
 						damage.sprite_index=ammo_sprite
 						damage.creator = obj_player.id
 						damage.knockback = 0
-		
+						damage.light_radius = 20
 						var xforce = lengthdir_x(18,mouse_dir)
 						var yforce = lengthdir_y(18,mouse_dir)
 						with damage
@@ -81,7 +82,7 @@ function shotgun_step() {
 					}
 					
 					instance_create_layer(x+shellX,y+shellY,"Instances",shotgun_shell)
-					
+					audio_stop_sound(prepare_sound)
 					audio_play_sound(shoot_sound,1,0)
 					screenshake(5)
 					audio_play_sound(prepare_sound,1,0)
@@ -143,6 +144,7 @@ function shotgun_draw() {
 	
 	//Draw weapon
 	draw_sprite_ext(spr_weapon_shotgun,i_i,obj_player.x,obj_player.y,1,y_s,mouse_dir,c_white,1)
+	
 	draw_text(obj_player.x,obj_player.y,string(ammo)+"/"+string(ammo_max))
 	
 }
@@ -153,14 +155,13 @@ function shotgun_alarm() {
 
 function shotgun_load_ammo() {
 	ammo+=1
+	audio_stop_sound(load_ammo_sound)
 	audio_play_sound(load_ammo_sound,1,0)
-	if 	audio_is_playing(load_ammo_sound){
-	show_debug_message("LOAD GUN")
-	}
-
+	
 	if ammo >= ammo_max{
 		ammo = ammo_max
 		audio_play_sound(prepare_sound,1,0)
 		reloading = false
+		can_shoot = true
 	}
 }

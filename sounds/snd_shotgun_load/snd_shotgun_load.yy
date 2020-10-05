@@ -10,8 +10,8 @@
     "name": "ag_sounds",
     "path": "audiogroups/ag_sounds",
   },
-  "soundFile": "snd_shotgun_load",
-  "duration": 0.0,
+  "soundFile": "snd_shotgun_load.wav",
+  "duration": 1.273005,
   "parent": {
     "name": "Shotgun Sounds",
     "path": "folders/Weapons/Shotgun/Shotgun Sounds.yy",

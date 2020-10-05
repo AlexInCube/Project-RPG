@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ccb49d90-db60-4361-8815-4953e2c4ed53","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Tiles",
-    "path": "folders/Sprites/Tiles.yy",
+    "name": "Tiles Sprites",
+    "path": "folders/Tile Sets/Tiles Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_beachandmeadowstileset",

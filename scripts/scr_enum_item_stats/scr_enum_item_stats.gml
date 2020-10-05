@@ -1,6 +1,5 @@
-function enum_item_stats() {
-	enum item_stat
-	 {
+enum item_stat
+{
 	 name,
 	 sprite_index,
 	 description,
@@ -16,12 +15,7 @@ function enum_item_stats() {
 	 magicarmor,
 	 manacost,
 	 cooldown,
-	 weapon_tick,
-	 weapon_draw,
-	 weapon_alarm,
 	 weapon_create,
 	 total
-	 }
-
-
 }
+

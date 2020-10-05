@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Utility",
-    "path": "folders/Objects/Utility.yy",
+    "path": "folders/Scripts/Utility.yy",
   },
   "resourceVersion": "1.0",
   "name": "Utility_Scripts",
