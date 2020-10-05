@@ -20,12 +20,9 @@ name_col			= c_black;
 name_font			= fnt_small;
 
 priority_snd_effect = 5;
-open_mouth_frame	= 1;	//You only need to change this if you are using animated sprites
-							//Set this to equal the frame where the mouth is OPEN for talking sprites
 
 //-----------Setup (LEAVE THIS STUFF)
 #region
-emotes			= -1;
 speaker			= noone;
 
 boxHeight		= sprite_get_height(dialogue_box)

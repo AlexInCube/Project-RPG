@@ -1,11 +1,11 @@
-///@description scr_create_window
+///@description create_window
 ///@arg window_sprite
 ///@arg window_name
 ///@arg window_width
 ///@arg window_height
 ///@arg window_script_screen_id
 ///@arg window_screen_arguments(array)
-function scr_create_window(argument0, argument1, argument2, argument3, argument4, argument5) {
+function create_window(argument0, argument1, argument2, argument3, argument4, argument5) {
 
 	var window_sprite = argument0
 	var window_name = argument1
@@ -26,9 +26,9 @@ function scr_create_window(argument0, argument1, argument2, argument3, argument4
 		activewindow=false
 	}
 	window.activewindow=true
-	scr_windowsetdepth()
+	windowsetdepth()
 	window.window_sprite=window_sprite
-	window.window_name=scr_find_keyword(window_name)
+	window.window_name=find_keyword(window_name)
 	window.guiscreen = window_script_screen_id
 	window.guiscreenarg = window_screen_arguments
 

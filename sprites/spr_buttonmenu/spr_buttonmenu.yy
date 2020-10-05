@@ -84,8 +84,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"747bbaa7-e476-4152-9466-31baf8902db6","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Main Menu",
-    "path": "folders/Sprites/GUI/Main Menu.yy",
+    "name": "Main Menu Sprites",
+    "path": "folders/Objects/Controllers/Main Menu/Main Menu Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_buttonmenu",

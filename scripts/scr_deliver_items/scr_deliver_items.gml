@@ -1,7 +1,8 @@
-///@description scr_deliver_items(item,amount)
+///@description deliver_items(item,amount)
 ///@arg item
 ///@arg amount
-function scr_deliver_items(argument0, argument1) {
+//Grab item from player inventory and send event for quest_listener
+function deliver_items(argument0, argument1) {
 	var inventory = global.inventory
 	var itemneed = argument0
 	var itemamount = argument1
@@ -18,12 +19,10 @@ function scr_deliver_items(argument0, argument1) {
 				if inventory[# n,1] == 0 {inventory[# n,0]=item.none}
 				if findedamount==itemamount
 				{
-					scr_event_fire([event.deliver,itemneed,itemamount])
+					event_fire([event.deliver,itemneed,itemamount])
 					exit
 				}
 			}
 		}
 	}
-
-
 }

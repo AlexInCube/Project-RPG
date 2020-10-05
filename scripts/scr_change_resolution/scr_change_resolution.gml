@@ -1,4 +1,4 @@
-function scr_change_resolution(argument0) {
+function change_resolution(argument0) {
 	var resolution_array = ds_options[# 4,5]
 	var need_res = resolution_array[argument0]
 	var str_w = ""
@@ -19,7 +19,7 @@ function scr_change_resolution(argument0) {
 	global.width=real(str_w)
 	global.height=real(str_h)
 	window_set_size(global.width,global.height)
-	scr_change_gui_size(global.guisize)
+	change_gui_size(global.guisize)
 	surface_resize(application_surface,global.width,global.height);
 	alarm[0]=1
 

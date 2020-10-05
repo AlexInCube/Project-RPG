@@ -1,4 +1,4 @@
-function scr_itemexample_on_use() {
+function itemexample_on_use() {
 
 
 

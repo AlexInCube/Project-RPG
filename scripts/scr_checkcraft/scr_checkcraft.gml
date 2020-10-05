@@ -1,4 +1,4 @@
-function scr_checkcraft(argument0, argument1) {
+function checkcraft(argument0, argument1) {
 	var xx=argument0
 	var yy=argument1
 
@@ -9,7 +9,7 @@ function scr_checkcraft(argument0, argument1) {
 			{
 				if global.crafting_inventory[# 0,1] == global.craft_map[# i, 2] and global.crafting_inventory[# 1,1] == global.craft_map[# i, 4]
 				{
-					if scr_mouseover(xx,yy,xx+32,yy+32) and mouse_check_button_pressed(mb_left)
+					if mouseover(xx,yy,xx+32,yy+32) and mouse_check_button_pressed(mb_left)
 					{
 						global.crafting_inventory[# 0,1]-=global.craft_map[# i, 2]
 						global.crafting_inventory[# 1,1]-=global.craft_map[# i, 4]

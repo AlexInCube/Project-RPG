@@ -1,4 +1,5 @@
-function scr_slot_script_execute(argument0, argument1) {
+//Hotbar item using
+function slot_script_execute(argument0, argument1) {
 	var inventory = argument0
 	var slot_id = argument1
 
@@ -22,7 +23,4 @@ function scr_slot_script_execute(argument0, argument1) {
 			
 			}
 		}
-	
-
-
-}
+	}

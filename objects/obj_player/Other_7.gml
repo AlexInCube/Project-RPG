@@ -1,5 +1,5 @@
 
-if (state == scr_attack_state){
-	state = scr_move_state;
+if (state == attack_state){
+	state = move_state;
 	attacked = false
 }

@@ -1,4 +1,4 @@
-function scr_change_volume(argument0, argument1) {
+function change_volume(argument0, argument1) {
 	var type = argument0
 	var volume = argument1
 	switch(type){

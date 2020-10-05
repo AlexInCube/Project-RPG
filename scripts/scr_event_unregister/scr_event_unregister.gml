@@ -1,7 +1,7 @@
 ///@description event_unregister
 ///@arg event
 ///@arg id
-function scr_event_unregister() {
+function event_unregister() {
 
 
 		var ev = argument[0]

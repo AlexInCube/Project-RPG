@@ -1,10 +1,10 @@
-/// @description scr_draw_slot(inventory_id,slot_id,x,y);
-/// @function scr_draw_slot
+/// @description draw_slot(inventory_id,slot_id,x,y);
+/// @function draw_slot
 /// @param inventory_ID
 /// @param slot_ID
 /// @param x
 /// @param y
-function scr_draw_slot_output(argument0, argument1, argument2, argument3) {
+function draw_slot_output(argument0, argument1, argument2, argument3) {
 
 	var inventory = argument0
 	var slot_id = argument1
@@ -27,7 +27,7 @@ function scr_draw_slot_output(argument0, argument1, argument2, argument3) {
 	
 
 	
-	if scr_mouseover(xx,yy,xx+32,yy+32){
+	if mouseover(xx,yy,xx+32,yy+32){
 		//If mouse left click over slot and them have any item, take all amount of items or we have item in mouse then we put or switch items in slots
 		draw_sprite(spr_slot_backlight,0,xx,yy)
 	
@@ -51,7 +51,7 @@ function scr_draw_slot_output(argument0, argument1, argument2, argument3) {
 				}
 			}
 		}
-		if inventory[# slot_id, 0] != item.none{scr_draw_item_stat_mouse(inventory,slot_id)}
+		if inventory[# slot_id, 0] != item.none{draw_item_stat_mouse(inventory,slot_id)}
 	}
 	
 

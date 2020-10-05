@@ -1,4 +1,4 @@
-function scr_declinesettings() {
+function declinesettings() {
 	instance_destroy()
 
 

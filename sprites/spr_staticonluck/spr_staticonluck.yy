@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Stat Icons",
-    "path": "folders/Sprites/GUI/Inventory/Stat Icons.yy",
+    "path": "folders/Objects/Controllers/ Inventory Sprites/Stat Icons.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_staticonluck",

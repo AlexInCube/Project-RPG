@@ -13,8 +13,8 @@
   "soundFile": "snd_shotgun_shot",
   "duration": 1.398083,
   "parent": {
-    "name": "Shotgun",
-    "path": "folders/Sounds/Weapon Sounds/Shotgun.yy",
+    "name": "Shotgun Sounds",
+    "path": "folders/Weapons/Shotgun/Shotgun Sounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_shotgun_shot",

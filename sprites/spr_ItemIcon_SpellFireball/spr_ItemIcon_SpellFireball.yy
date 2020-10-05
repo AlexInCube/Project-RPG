@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Spells",
-    "path": "folders/Sprites/GUI/Inventory/Items/Spells.yy",
+    "path": "folders/Objects/Controllers/ Inventory Sprites/Items/Spells.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ItemIcon_SpellFireball",

@@ -1,4 +1,4 @@
-function scr_enum_item_type() {
+function enum_item_type() {
 
 	enum item_type
 	 {

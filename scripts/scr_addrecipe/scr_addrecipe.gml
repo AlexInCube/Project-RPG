@@ -1,11 +1,11 @@
-/// @function scr_addrecipe
+/// @function addrecipe
 /// @param itemtocraft
 /// @param component1
 /// @param component1amount
 /// @param component2
 /// @param component2amount
 /// @param itemsoutput
-function scr_addrecipe(argument0, argument1, argument2, argument3, argument4, argument5) {
+function addrecipe(argument0, argument1, argument2, argument3, argument4, argument5) {
 
 
 	var itemcraft=argument0

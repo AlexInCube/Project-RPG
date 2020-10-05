@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Developer Tiles",
-    "path": "folders/Sprites/Tiles/Developer Tiles.yy",
+    "path": "folders/Tile Sets/Tiles Sprites/Developer Tiles.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_trigger",

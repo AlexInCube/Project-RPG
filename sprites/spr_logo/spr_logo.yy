@@ -70,8 +70,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0e80fdd1-61a4-4c82-a167-a176fcec1862","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Main Menu",
-    "path": "folders/Sprites/GUI/Main Menu.yy",
+    "name": "Main Menu Sprites",
+    "path": "folders/Objects/Controllers/Main Menu/Main Menu Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_logo",

@@ -1,7 +1,7 @@
-function scr_trophy_gun_furniture() {
-	scr_gain_item(item.shotgun,1)
+function trophy_gun_furniture() {
+	gain_item(item.shotgun,1)
 	audio_play_sound(snd_shotgun_prepare,1,0)
-	scr_change_variable(obj_trophy_weapon,"image_index",1)
+	change_variable(obj_trophy_weapon,"weapon_taked",1)
 
 
 }

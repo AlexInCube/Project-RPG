@@ -1,8 +1,8 @@
-/// @description scr_draw_item_stat_mouse(inventory_id,slot_id);
-/// @function scr_draw_item_stat_mouse
+/// @description draw_item_stat_mouse(inventory_id,slot_id);
+/// @function draw_item_stat_mouse
 /// @param inventory_ID
 /// @param slot_ID
-function scr_draw_item_stat_mouse(argument0, argument1) {
+function draw_item_stat_mouse(argument0, argument1) {
 
 	var inventory = argument0
 	var slot_id = argument1
@@ -17,7 +17,7 @@ function scr_draw_item_stat_mouse(argument0, argument1) {
 	//Get item name
 	statstring+=string(global.item_index[# inventory[# slot_id, 0],item_stat.name])+"\n"
 	//Get item type
-	statstring+=scr_find_keyword("item_type_"+string(global.item_index[# inventory[# slot_id, 0],item_stat.type]))+"\n"
+	statstring+=find_keyword("item_type_"+string(global.item_index[# inventory[# slot_id, 0],item_stat.type]))+"\n"
 	//Get item description
 	statstring+=string(global.item_index[# inventory[# slot_id, 0],item_stat.description])+"\n"
 	//Get item stats
@@ -25,7 +25,7 @@ function scr_draw_item_stat_mouse(argument0, argument1) {
 	{
 		if is_real(ii)
 		{
-			var string1 = scr_find_keyword("item_stat_"+string(ii))
+			var string1 = find_keyword("item_stat_"+string(ii))
 		
 			if global.item_index[# inventory[# slot_id, 0], ii]>=1
 			{
@@ -37,7 +37,7 @@ function scr_draw_item_stat_mouse(argument0, argument1) {
 	if surface_exists(obj_inventory.drawitemtooltip){
 	surface_set_target(obj_inventory.drawitemtooltip)
 	//Draw textbox
-	scr_draw_nine_slice_box(spr_nineslicebox,device_mouse_x_to_gui(0)+boxx,device_mouse_y_to_gui(0),device_mouse_x_to_gui(0)+boxx+maxtextwidth,device_mouse_y_to_gui(0)+20+string_height_ext(statstring,-1,maxtextwidth))
+	draw_nine_slice_box(spr_nineslicebox,device_mouse_x_to_gui(0)+boxx,device_mouse_y_to_gui(0),device_mouse_x_to_gui(0)+boxx+maxtextwidth,device_mouse_y_to_gui(0)+20+string_height_ext(statstring,-1,maxtextwidth),0)
 	//Draw string
 	draw_text(device_mouse_x_to_gui(0)+boxx+10,device_mouse_y_to_gui(0),statstring)
 	surface_reset_target()

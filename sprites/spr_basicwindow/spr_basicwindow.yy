@@ -61,7 +61,7 @@
     "eventStubScript": null,
     "parent": {"name":"spr_basicwindow","path":"sprites/spr_basicwindow/spr_basicwindow.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "spr_basicwindow",
     "tags": [],
     "resourceType": "GMSequence",
   },

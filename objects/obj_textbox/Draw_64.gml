@@ -62,7 +62,7 @@ if(type[page] == 1){
 		}
 		
 		//Apply choice with mouse
-		if scr_mouseover(xx-3,yy+((ii+iy)*stringHeight)+3,xx+txtwidth-8,yy+((ii+iy)*stringHeight)+(24*rectangleoffset))
+		if mouseover(xx-3,yy+((ii+iy)*stringHeight)+3,xx+txtwidth-8,yy+((ii+iy)*stringHeight)+(24*rectangleoffset))
 		{
 			choice = ii
 		}
@@ -123,8 +123,8 @@ else {
 
 	//---------------------------------Setup for Effects----------------------------//
 	#region
-	var col = default_col, cc = 1, yy = pos_y-23, xx = pos_x+5, cx = 0, cy = 0, lineswidth;
-	var ty = 0, by = 0, bp_len = -1, effect = 0, next_space, breakpoint = 0, effects_c = 0, text_col_c = 0;
+	var col = default_col, cc = 1, yy = pos_y-23, xx = pos_x+5, cx = 0, cy = 0;
+	var by = 0, bp_len = -1, effect = 0, next_space, effects_c = 0, text_col_c = 0;
 	var bp_array = breakpoints, txtwidth = boxWidth, char_max = txtwidth div charSize; 
 	
 	//Check if there are breakpoints in this string, if there are save their lengths

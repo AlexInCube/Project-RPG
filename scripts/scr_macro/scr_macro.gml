@@ -1,4 +1,4 @@
-function scr_macro() {
+function macro() {
 #macro RIGHT 0
 #macro UP 1
 #macro LEFT 2

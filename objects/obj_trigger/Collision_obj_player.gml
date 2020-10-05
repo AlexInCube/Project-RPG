@@ -1,1 +1,1 @@
-scr_event_fire(trigger_event)
+event_fire(trigger_event)

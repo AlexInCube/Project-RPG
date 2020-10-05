@@ -1,4 +1,4 @@
-function scr_itemexample_on_removed_from_slot() {
+function itemexample_on_removed_from_slot() {
 
 
 

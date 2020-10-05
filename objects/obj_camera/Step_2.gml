@@ -1,11 +1,18 @@
 #macro view view_camera[0]
-if manual_control == true and !instance_exists(obj_cutscene) and !instance_exists(obj_textbox){
-	target = id
-	camera_speed = default_camera_speed
-	var camera_x = mean(obj_player.x,obj_player.x, mouse_x);
-	var camera_y = mean(obj_player.y,obj_player.y, mouse_y);
-	x = lerp(x,camera_x,camera_speed);
-	y = lerp(y,camera_y,camera_speed);
+if manual_control == true and !instance_exists(obj_textbox){
+	if instance_exists(target){
+		target = id
+		//camera_speed = default_camera_speed
+		if instance_exists(obj_player){
+		var camera_x = mean(obj_player.x,obj_player.x, mouse_x);
+		var camera_y = mean(obj_player.y,obj_player.y, mouse_y);
+		x = lerp(x,camera_x,camera_speed);
+		y = lerp(y,camera_y,camera_speed);
+		}
+		x += random_range(-shake,shake)
+		y += random_range(-shake,shake)
+		shake*=0.9
+	}
 }
 if instance_exists(target)
 {
@@ -17,5 +24,10 @@ if instance_exists(target)
 	
 	var _spd = camera_speed
 	
+	_x += random_range(-shake,shake)
+	_y += random_range(-shake,shake)
+	shake*=0.9
+	
 	camera_set_view_pos(view,lerp(_cur_x,_x,_spd),lerp(_cur_y,_y,_spd))
 }
+

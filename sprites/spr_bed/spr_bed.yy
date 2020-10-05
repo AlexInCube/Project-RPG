@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Apatment",
-    "path": "folders/Sprites/Tiles/Apatment.yy",
+    "path": "folders/Tile Sets/Tiles Sprites/Apatment.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_bed",

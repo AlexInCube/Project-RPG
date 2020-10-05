@@ -1,4 +1,4 @@
-function scr_open_quest_list() {
+function open_quest_list() {
 	if !instance_exists(questlistwindow){
 		var xx=(GUIWIDTH/2)-450/2
 		var yy=(GUIHEIGHT/2)-300/2

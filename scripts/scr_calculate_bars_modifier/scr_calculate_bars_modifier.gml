@@ -3,7 +3,7 @@
 /// @arg old_max
 /// @arg new_min
 /// @arg new_max
-function scr_calculate_bars_modifier(argument0, argument1, argument2, argument3, argument4) {
+function calculate_bars_modifier(argument0, argument1, argument2, argument3, argument4) {
 
 	var old_value   = argument0;
 	var old_min		= argument1;

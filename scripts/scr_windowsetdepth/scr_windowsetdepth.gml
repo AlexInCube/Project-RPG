@@ -1,4 +1,4 @@
-function scr_windowsetdepth() {
+function windowsetdepth() {
 	//Set window depth for all window if new window created or user clicked on window title
 	var newDepth = -1
 

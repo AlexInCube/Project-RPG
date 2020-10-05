@@ -1,13 +1,13 @@
-function scr_settodefault() {
+function settodefault() {
 	if file_exists("game_settings.ini"){
 	file_delete("game_settings.ini")
 	}
-	scr_loadsettings()
+	load_settings()
 
 	with obj_optionswindow{
 		var ds_grid = ds_options
 		ds_grid_destroy(ds_options)
-		scr_create_ds_grid_settings()
+		create_ds_grid_settings()
 		var ds_height = ds_grid_height(ds_grid)
 		for(i=0;i<ds_height-1;i++){
 		switch(ds_grid[# 1,i]){
