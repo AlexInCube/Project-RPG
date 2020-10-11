@@ -9,21 +9,16 @@ function create_ds_grid_settings() {
 	*/
 	var resolution_array = ["1280x720","1280x768","1280x1024","1360x768","1366x768","1440x900","1400x1050","1536x1024","1600x900","1600x1024","1600x1200","1680x1050","1920x1080","1920x1200","2048x1080","2560x1440","3840x2160"]
 	
-	var cr = string(global.width)+"x"+string(global.height)
-	var sr = 0
+	var cr = string(global.width)+"x"+string(global.height)//Full string, for example "1280x720"
+	var sr = 0//Position in resolution array
 	for (var i=0;i<array_length_1d(resolution_array)-1;i++){
-		//show_debug_message(resolution_array[i])
-		
-		if resolution_array[i] = cr{
+		if resolution_array[i] == cr{
 			sr = i
 			break
 		}else{
-			sr = 0
+			array_set(resolution_array,array_length_1d(resolution_array),string(global.width)+"x"+string(global.height))
+			sr = array_length_1d(resolution_array)-1
 		}
-	}
-	if sr == 0{
-		array_set(resolution_array,array_length_1d(resolution_array),string(global.width)+"x"+string(global.height))
-		sr = array_length_1d(resolution_array)-1
 	}
 	ds_options = create_menu_page(
 		//0                                         //1                           //2               //3				   //4 //5 //6

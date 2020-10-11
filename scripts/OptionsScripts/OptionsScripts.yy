@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Utility",
-    "path": "folders/Scripts/Utility.yy",
+    "name": "Options Scripts",
+    "path": "folders/Objects/Controllers/Main Menu/Options/Options Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "get_input",
+  "name": "OptionsScripts",
   "tags": [],
   "resourceType": "GMScript",
 }

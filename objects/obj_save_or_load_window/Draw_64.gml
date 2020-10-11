@@ -10,7 +10,6 @@ if !ds_exists(ds_saves,ds_type_map) exit
 
 	var save_name = ds_map_find_first(ds_saves)
 	var save_time_and_version = ds_saves[? save_name]
-	//show_debug_message(save_time_and_version)
 	
 	var yy=0; for(var i = drawelementstart;i<=drawelementstart+drawelementheight;i++){
 		slot_x = window_x+10
@@ -29,7 +28,7 @@ if !ds_exists(ds_saves,ds_type_map) exit
 			if mouse_over_slot{
 				if mouse_check_button_pressed(mb_left){
 					//TODO: Make in game textbox and checking equal names
-					global.directory_save = get_string("Write your save name:","Your_save"+string(ds_size))
+					global.directory_save = get_string(write_your_save_name_word,"Your_save"+string(ds_size))
 					resume_game()//resume game for saving (activate all instances)
 					save_game()
 					exit

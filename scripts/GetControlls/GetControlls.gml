@@ -1,3 +1,10 @@
+///@description
+///@function get_input_key(input_device,key_map,press_type)
+#macro KEYBOARD 0
+function get_input_key(){
+
+}
+
 function get_input() {
 	up = keyboard_check(global.key_up)
 	left = keyboard_check(global.key_left)
@@ -45,6 +52,4 @@ function get_input() {
 
 	xaxis = (right - left)
 	yaxis = (down - up)
-
-
 }

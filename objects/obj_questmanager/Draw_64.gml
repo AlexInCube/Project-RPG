@@ -1,5 +1,5 @@
 //Draw quest notifications about starting quest, updating and completing
-if txtalpha!=0{
+if txtalpha>0{
 	draw_set_halign(fa_center)
 	draw_text_shadow(GUIWIDTH/2,GUIHEIGHT/2-200,notificationquestname,fnt_verylarge,1,c_black,txtcolor,txtalpha)
 	draw_text_shadow(GUIWIDTH/2,GUIHEIGHT/2-165,find_keyword("notificationqueststate_"+string(notificationqueststate)),fnt_small,1,c_black,txtcolor,txtalpha)

@@ -5,5 +5,3 @@ if instance_exists(obj_mainmenucontroller){
 		menustate=menu_state.main_buttons
 	}
 }
-event_inherited();
-
