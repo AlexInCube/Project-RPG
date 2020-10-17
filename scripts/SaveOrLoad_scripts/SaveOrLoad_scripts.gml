@@ -189,3 +189,19 @@ function create_saves_map(){
 
 
 #endregion
+
+function write_last_played_save(){
+	ini_open("game_settings.ini")
+	ini_write_string("Other","lastplayedsave",global.directory_save)
+	ini_close()
+	global.lastsave = global.directory_save
+}
+
+function load_last_player_save(){
+	if file_exists("Saves\\"+global.lastsave+"/playerdata.txt"){
+		global.directory_save = global.lastsave
+		start_load()
+	}else{
+		show_message("Save not exists: "+"Saves\\"+global.lastsave+"/playerdata.txt")
+	}
+}

@@ -5,6 +5,7 @@ function game_start() {
 }
 
 function game_exit() {
+	write_last_played_save()
 	game_end()
 }
 

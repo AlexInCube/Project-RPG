@@ -53,6 +53,8 @@ if obj_controller.xaxis != 0 or obj_controller.yaxis != 0 {
 	image_speed = 0
 	image_index = 0
 }
+
+
 	//control the sprite	
 	image_xscale = 1
 	var mouse_dir = point_direction(phy_position_x,phy_position_y,mouse_x,mouse_y) div 45
@@ -67,7 +69,7 @@ if obj_controller.xaxis != 0 or obj_controller.yaxis != 0 {
 		case 6:sprite_index=sprite[DOWN,MOVE]; break
 		case 7:sprite_index=sprite[DOWNRIGHT,MOVE]; break
 	}
-
+	
 	//Pickup Items from ground
 	if obj_controller.pickup_key
 	{

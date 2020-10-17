@@ -113,5 +113,6 @@
 			"exit_to_desktop":"Выйти на рабочий стол",
 			"create_new_save_slot":"Новое сохранение",
 			"fast_save_game":"Быстрое сохранение",
-			"write_your_save_name":"Напишите имя вашего сохранения:"
+			"write_your_save_name":"Напишите имя вашего сохранения:",
+			"select_save":"Выбрать сохранение",
 }

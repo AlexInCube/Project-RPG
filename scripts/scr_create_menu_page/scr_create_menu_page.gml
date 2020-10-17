@@ -2,7 +2,6 @@
 ///@arg ["Name1",type1,entries1...]
 ///@arg ["Name2",type2,entries2...]
 function create_menu_page() {
-
 	var arg, i = 0
 	repeat(argument_count){
 		arg[i] = argument[i]

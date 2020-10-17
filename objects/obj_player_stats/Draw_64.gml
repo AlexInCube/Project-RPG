@@ -7,7 +7,7 @@ draw_set_color(c_black)
 
 
 draw_sprite(spr_player_hud_portrait,0,6,GUIHEIGHT-54)
-draw_sprite_stretched(spr_player_down,0,16,GUIHEIGHT-50,28,42)
+draw_sprite_stretched(spr_player_down,0,16,GUIHEIGHT-50,34,34)
 draw_set_font(fnt_small)
 draw_set_valign(fa_top)
 draw_set_halign(fa_center)

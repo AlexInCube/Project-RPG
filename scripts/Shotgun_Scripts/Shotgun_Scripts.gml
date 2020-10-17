@@ -147,6 +147,12 @@ function shotgun_draw() {
 	
 	draw_text(obj_player.x,obj_player.y,string(ammo)+"/"+string(ammo_max))
 	
+	/*
+	draw_text(obj_player.x,obj_player.y+10,obj_player.mouse_dr)
+	draw_text(obj_player.x,obj_player.y+20,obj_player.image_speed)
+	draw_text(obj_player.x,obj_player.y+30,"x:"+string(obj_controller.xaxis)+"y:"+string(obj_controller.yaxis))
+	*/
+	
 }
 
 function shotgun_alarm() {
