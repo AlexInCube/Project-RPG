@@ -35,9 +35,7 @@ function cutscene_end_action() {
 ///@function cutscene_set_to_default
 ///@description Put this in the end of actions array for return control to the player
 function cutscene_set_to_default() {
-	obj_camera.target=obj_player
-	obj_camera.camera_speed=obj_camera.default_camera_speed
-	obj_camera.manual_control=true
+	change_camera_mode(camera_mode.follow_mouse_peek)
 	obj_player.state=move_state
 		
 	cutscene_end_action()
@@ -173,12 +171,26 @@ function cutscene_move_character(argument0, argument1, argument2, argument3, arg
 
 }
 
-///@description cutscene_camera_change_target
-///@arg target
-///@arg camera_speed (0 to 1)
-function cutscene_camera_change_target(argument0, argument1) {
-	obj_camera.target = argument0
-	obj_camera.camera_speed = argument1
+///@description cutscene_change_camera_mode
+///@arg	mode
+///@arg following/target_x
+///@arg target_y
+function cutscene_camera_change_mode() {
+	with(obj_camera){
+		mode = argument[0]
+		
+		switch(mode){
+			case camera_mode.move_to_target:
+				target_x = argument[1]
+				target_y = argument[2]
+			break
+			
+			case camera_mode.follow_object:
+			case camera_mode.move_to_follow_object:
+				following = argument[1]
+			break
+		}
+	}
 
 	cutscene_end_action()
 }
