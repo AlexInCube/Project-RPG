@@ -37,6 +37,13 @@ function shotgun_create() {
 	part_type_blend(part_particle, 1)
 	part_type_life(part_particle, 30, 30)
 	emit_particle = part_emitter_create(sys_particle)
+	
+	/*
+	// Preventing Memory Leaks by deleting them once done:
+	part_type_destroy(part_particle)
+	part_emitter_destroy(sys_particle, emit_particle)
+	part_system_destroy(sys_particle)
+	*/
 }
 
 function shotgun_step() {
@@ -110,12 +117,7 @@ function shotgun_step() {
 	}
 }
 
-/*
-// Preventing Memory Leaks by deleting them once done:
-part_type_destroy(part_particle)
-part_emitter_destroy(sys_particle, emit_particle)
-part_system_destroy(sys_particle)
-*/
+
 function shotgun_draw() {
 	//Weapon controller always where the player
 	x = obj_player.x
@@ -144,7 +146,9 @@ function shotgun_draw() {
 	
 	//Draw weapon
 	draw_sprite_ext(spr_weapon_shotgun,i_i,obj_player.x,obj_player.y,1,y_s,mouse_dir,c_white,1)
-	
+	draw_set_valign(fa_bottom)
+	draw_set_halign(fa_center)
+	draw_set_font(fnt_large)
 	draw_text(obj_player.x,obj_player.y,string(ammo)+"/"+string(ammo_max))
 	
 	/*

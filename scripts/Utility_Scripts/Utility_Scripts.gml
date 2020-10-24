@@ -87,3 +87,29 @@ function draw_light(size){
 function draw_rectangle_color_fast(x1,y1,x2,y2,color,outline){
 	draw_rectangle_color(x1,y1,x2,y2,color,color,color,color,outline)
 }
+
+///@description draw_text_color_fast(xx,yy,string,color,alpha)
+///@function draw_text_color_fast
+///@param xx
+///@param yy
+///@param string
+///@param color
+///@param alpha
+function draw_text_color_fast(xx,yy,string,color,alpha){
+	draw_text_color(xx,yy,string,color,color,color,color,alpha)
+}
+
+///@description get_exp(integer)
+///@function get_exp
+///@param amount_xp
+function get_exp(experience){
+	with (obj_player_stats){
+		expr+=experience
+		if expr>max_expr{
+			level +=1
+			expr = expr-max_expr
+			max_expr *=2
+			skillpoints +=1
+		}
+	}
+}

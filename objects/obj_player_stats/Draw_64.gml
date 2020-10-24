@@ -37,4 +37,7 @@ draw_sprite_ext(spr_hpbar,0,56,GUIHEIGHT-18,mana/max_mana,1,0,c,1)
 draw_text_color(90,GUIHEIGHT-26,string(mana)+"/"+string(max_mana),txtcolor,txtcolor,txtcolor,txtcolor,1)
 //EXP BAR
 draw_rectangle_color_fast(0,GUIHEIGHT-2,GUIWIDTH,GUIHEIGHT,c_yellow,false)
-
+draw_rectangle_color_fast(0,GUIHEIGHT-2,GUIWIDTH*(expr/max_expr),GUIHEIGHT,c_orange,false)
+draw_set_valign(fa_top)
+draw_set_halign(fa_center)
+draw_text_shadow(GUIWIDTH/2,GUIHEIGHT-24,lvlword+": "+string(level)+"  "+expword+": "+string(expr)+"/"+string(max_expr)+"  "+string((expr/max_expr)*100)+"%",fnt_small,1,c_gray,c_white,1)

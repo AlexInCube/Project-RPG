@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Stat Icons",
-    "path": "folders/Objects/Controllers/ Inventory Sprites/Stat Icons.yy",
+    "path": "folders/Objects/Controllers/Inventory/ Inventory Sprites/Stat Icons.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_staticonphysarmor",
