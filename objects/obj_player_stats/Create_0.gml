@@ -35,7 +35,7 @@ ds_map_add(global.stats,"intelligence",0)//inscrease magical damage resistance a
 
 
 expr=0//Player current xp
-maxexpr=3//Player need xp to level up
+max_expr=3//Player need xp to level up
 level=1//Player Level
 skillpoints=0//Skillpoint for level up player stats
 

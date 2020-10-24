@@ -5,7 +5,7 @@ draw_set_font(fnt_small)
 draw_set_color(c_black)
 
 
-
+//PLAYER PORTRAIT
 draw_sprite(spr_player_hud_portrait,0,6,GUIHEIGHT-54)
 draw_sprite_stretched(spr_player_down,0,16,GUIHEIGHT-50,34,34)
 draw_set_font(fnt_small)
@@ -35,4 +35,6 @@ if mana/max_mana >= 0.66{
 draw_sprite(spr_borderbar,0,54,GUIHEIGHT-20)
 draw_sprite_ext(spr_hpbar,0,56,GUIHEIGHT-18,mana/max_mana,1,0,c,1)
 draw_text_color(90,GUIHEIGHT-26,string(mana)+"/"+string(max_mana),txtcolor,txtcolor,txtcolor,txtcolor,1)
+//EXP BAR
+draw_rectangle_color_fast(0,GUIHEIGHT-2,GUIWIDTH,GUIHEIGHT,c_yellow,false)
 

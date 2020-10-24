@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2d6dd073-7f53-4dc6-9eab-02d132a64e53","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Dialogue",
-    "path": "folders/Objects/Controllers/Dialogue System/Dialogue.yy",
+    "name": "Dialogue Sprites",
+    "path": "folders/Objects/Controllers/Dialogue System/Dialogue Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_dialoguebox",

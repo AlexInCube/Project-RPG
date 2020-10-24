@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"25fa9bf2-ac75-43ba-8ac9-1a5b8678e11f","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Dialogue",
-    "path": "folders/Objects/Controllers/Dialogue System/Dialogue.yy",
+    "name": "Dialogue Sprites",
+    "path": "folders/Objects/Controllers/Dialogue System/Dialogue Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_penguinportrait",

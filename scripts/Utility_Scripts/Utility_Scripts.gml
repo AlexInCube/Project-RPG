@@ -75,3 +75,15 @@ function draw_light(size){
 		}
 	}
 }
+
+///@description draw_rectangle_color_fast(x1,y1,x2,y2,color,outline)
+///@function draw_rectangle_color_fast
+///@param x1
+///@param y1
+///@param x2
+///@param y2
+///@param color
+///@param outline
+function draw_rectangle_color_fast(x1,y1,x2,y2,color,outline){
+	draw_rectangle_color(x1,y1,x2,y2,color,color,color,color,outline)
+}

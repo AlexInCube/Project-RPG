@@ -6,7 +6,7 @@
     "path": "folders/Scripts/GUI`s/Window System.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_getwindowcross",
+  "name": "Window_System_Scripts",
   "tags": [],
   "resourceType": "GMScript",
 }

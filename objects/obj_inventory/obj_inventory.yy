@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Controllers",
-    "path": "folders/Objects/Controllers.yy",
+    "name": "Inventory",
+    "path": "folders/Objects/Controllers/Inventory.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_inventory",

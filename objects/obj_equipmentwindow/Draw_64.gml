@@ -1,27 +1,7 @@
-function inventoryscreen(argument0) {
-	//Inventory Screen for Player/Chests inventories
-	var windowid = id
-	var inventory = argument0
-	var inventory_size = ds_grid_width(inventory)
-	var slotsxy
-	var cell_size=32
-	var slots_x=8
-	var slots_y=32
-	var x_buffer=1
-	var y_buffer=1
-
-	var iy = 0
-	var ix = 0
-	var ii = 0
+event_inherited()
 
 	for(i=0;i<inventory_size;i++)
 	{
-		//Calculate coordinates for each slot
-		slotsxy[i,0] = windowid.window_x+slots_x+((cell_size+x_buffer)*ix)
-		slotsxy[i,1] = windowid.window_y+slots_y+((cell_size+y_buffer)*iy)
-		ii++
-		ix = ii mod 5
-		iy = ii div 5
 		//Draw sprite from item in slot
 			if inventory[# i, 0]!=item.none
 			{
@@ -33,12 +13,12 @@ function inventoryscreen(argument0) {
 				draw_text(slotsxy[i,0]+2,slotsxy[i,1]+12,inventory[# i, 1])
 			}
 	
-		if windowid.placefree{
+		if placefree{
 			slot(inventory,i,slotsxy[i,0],slotsxy[i,1])
 		}
 	}
 
-	if windowid.placefree{
+	if placefree{
 		for(i=0;i<inventory_size;i++)
 		{
 		if inventory[# i, 0]!=item.none
@@ -49,8 +29,14 @@ function inventoryscreen(argument0) {
 				}
 			}
 		}
-	
 	}
 
-
-}
+	draw_text(window_x+92,window_y+28,obj_player_stats.max_hp)
+	draw_text(window_x+92,window_y+44,obj_player_stats.max_mana)
+	draw_text(window_x+92,window_y+60,obj_player_stats.phys_armor)
+	draw_text(window_x+92,window_y+76,obj_player_stats.magic_armor)
+	draw_text(window_x+92,window_y+92,obj_player_stats.phys_damage)
+	draw_text(window_x+92,window_y+108,obj_player_stats.magic_damage)
+	draw_text(window_x+140,window_y+28,obj_player_stats.strength)
+	draw_text(window_x+140,window_y+44,obj_player_stats.intelligence)
+	draw_text(window_x+140,window_y+60,obj_player_stats.luck)

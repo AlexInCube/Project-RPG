@@ -6,7 +6,7 @@
     "path": "folders/Scripts/GUI`s/Window System.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_create_window",
+  "name": "Open_Different_Window",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9a42da21-730b-4d9e-a1c1-c402b9dd678c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Dialogue",
-    "path": "folders/Objects/Controllers/Dialogue System/Dialogue.yy",
+    "name": "Dialogue Sprites",
+    "path": "folders/Objects/Controllers/Dialogue System/Dialogue Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_nikitaportrait",
