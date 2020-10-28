@@ -1,5 +1,6 @@
 enum menu_element_type{
 	button,
+	empty_space,
 }
 
 //Switching main menu/pause menu UI state

@@ -115,6 +115,9 @@
 			"fast_save_game":"Быстрое сохранение",
 			"write_your_save_name":"Напишите имя вашего сохранения:",
 			"select_save":"Выбрать сохранение",
+			"load_last_save":"Загрузить последнее сохранение",
 			"level":"Уровень",
 			"experience":"Опыт",
+			"you_has_been_killed_by":"Вы были убиты: ",
+			"obj_enemy_slime":"Слизень",
 }

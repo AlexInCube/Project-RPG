@@ -11,6 +11,7 @@ switch(mode){
 	break
 	
 	case camera_mode.follow_mouse_peek: 
+	if(!instance_exists(following)) break
 		cx = lerp(following.x, mouse_x, 0.3)-(view_w/2)
 		cy = lerp(following.y, mouse_y, 0.3)-(view_h/2)
 	break

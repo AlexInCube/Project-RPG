@@ -23,7 +23,7 @@ function screenshake(shake_offset){
 ///@description change_camera_mode
 ///@arg	mode
 ///@arg following/target_x
-///@arg target_y
+///@arg target_y/camera_speed
 function change_camera_mode(){
 	with(obj_camera){
 		mode = argument[0]
@@ -35,8 +35,11 @@ function change_camera_mode(){
 			break
 			
 			case camera_mode.follow_object:
+				following = argument[1]
+			break
 			case camera_mode.move_to_follow_object:
 				following = argument[1]
+				camera_speed = argument[2]
 			break
 		}
 	}

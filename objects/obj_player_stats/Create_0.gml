@@ -17,7 +17,7 @@ strength=0
 intelligence=0
 luck=0
 
-
+last_hit=""
 
 
 

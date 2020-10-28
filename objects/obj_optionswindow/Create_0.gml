@@ -14,16 +14,11 @@ window_width=max(GUIHEIGHT,400)
 window_height=max(GUIHEIGHT,300)
 window_sprite=spr_basicwindow_without_close
 
-
-
+create_ds_grid_settings()
+ds_size = ds_grid_height(ds_options)
 
 drawelementstart = 0//Start drawing ds_grid from position (height)
-drawelementheight = round((GUIHEIGHT-20)/24)-2
-
-
-create_ds_grid_settings()
-
-ds_size = ds_grid_height(ds_options)
+drawelementheight = min(round((GUIHEIGHT-20)/24)-2,ds_size)
 
 inputting=false
 toinput=0
