@@ -1,5 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
 event_inherited()
 spd = 0.75
 image_speed=0.1
@@ -9,7 +7,7 @@ sight = 128
 targetx = 0
 targety = 0
 
-phys_armor=1
-magic_armor=0
+phys_armor = 1
+magic_armor = 0
 damage = 1
-knockback=10
+knockback = 5

@@ -38,6 +38,7 @@ expr=0//Player current xp
 max_expr=3//Player need xp to level up
 level=1//Player Level
 skillpoints=0//Skillpoint for level up player stats
+
 lvlword=find_keyword("level")
 expword=find_keyword("experience")
 

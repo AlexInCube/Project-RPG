@@ -4,6 +4,8 @@ function save_game() {
 	save_data[? "player_x"] = obj_player.phy_position_x
 	save_data[? "player_y"] = obj_player.phy_position_y
 	save_data[? "player_hp"] = obj_player_stats.hp
+	save_data[? "exp"] = obj_player_stats.expr
+	save_data[? "lvl"] = obj_player_stats.level
 	save_data[? "room"] = room
 	save_data[? "player_inventory"] = ds_grid_write(global.inventory)
 	save_data[? "player_equipment"] = ds_grid_write(global.equipment)
@@ -82,6 +84,9 @@ function load_game() {
 	with (obj_player_stats){
 		hp = save_data[? "player_hp"]
 		hp = clamp(hp,0,max_hp)
+		expr = save_data[? "exp"]
+		level = save_data[? "lvl"]
+		max_expr = max_exp_calc(level)
 	}
 	//Applying player coordinates
 	if !instance_exists(obj_player){
