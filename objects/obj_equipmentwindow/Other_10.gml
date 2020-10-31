@@ -1,4 +1,4 @@
-//Calculate the slot coordinates, based on the parameters above
+///@description Calculate the slot coordinates, based on the parameters above
 var iy = 0
 var ix = 0
 var ii = 0

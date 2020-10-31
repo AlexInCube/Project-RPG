@@ -4,18 +4,22 @@
 hp=10
 max_hp=10
 
+energy=0//Increase max_mana
 mana=10
 max_mana=10
 
-phys_damage=0
-magic_damage=0
-
+defense=0//Gain phys and magic armor, also increase max_hp
 phys_armor=0
 magic_armor=0
 
-strength=0
-intelligence=0
-luck=0
+strength=0//Gain phys and mag damage
+phys_damage=0
+magic_damage=0
+
+agility=0//Gain evasion and hp/mp regen amount (for example potion heal 1*agility hp)
+evasion=0
+regen_amount=0
+
 
 last_hit=""
 
@@ -37,7 +41,7 @@ ds_map_add(global.stats,"intelligence",0)//inscrease magical damage resistance a
 expr=0//Player current xp
 max_expr=3//Player need xp to level up
 level=1//Player Level
-skillpoints=0//Skillpoint for level up player stats
+attribute_points=0//Skillpoint for level up player stats
 
 lvlword=find_keyword("level")
 expword=find_keyword("experience")

@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "itempack",
-    "path": "folders/Objects/Controllers/ Inventory Sprites/Items/itempack.yy",
+    "path": "folders/Objects/Controllers/Inventory/Items/itempack.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ItemIcon_BigBottle2",

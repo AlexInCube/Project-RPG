@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "PhysWeapon",
-    "path": "folders/Objects/Controllers/ Inventory Sprites/Items/Weapon/PhysWeapon.yy",
+    "path": "folders/Objects/Controllers/Inventory/Items/Weapon/PhysWeapon.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ItemIcon_ironsword",

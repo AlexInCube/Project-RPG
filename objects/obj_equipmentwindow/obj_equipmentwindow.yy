@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Inventory",
-    "path": "folders/Objects/Controllers/Inventory.yy",
+    "name": "Equipment",
+    "path": "folders/Objects/Controllers/Equipment.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_equipmentwindow",

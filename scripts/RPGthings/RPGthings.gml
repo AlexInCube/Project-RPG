@@ -69,7 +69,7 @@ function lvl_up(){
 			expr -= max_expr
 			level +=1
 			max_expr = max_exp_calc(level)
-			skillpoints +=1
+			attribute_points +=1
 		}
 	}
 }

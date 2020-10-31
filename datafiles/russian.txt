@@ -120,4 +120,15 @@
 			"experience":"Опыт",
 			"you_has_been_killed_by":"Вы были убиты: ",
 			"obj_enemy_slime":"Слизень",
+			"basic":"Основное",
+			"advanced":"Дополнительно",
+			"strength":"Сила",
+			"agility":"Ловкость",
+			"defense":"Защита",
+			"energy":"Энергия",
+			"strengthdescription":"+физ/маг урон",
+			"agilitydescription":"+уклонение +оз/ом кол-во восстановления",
+			"defensedescription":"+физ/маг броня +максимум здоровья",
+			"energydescription":"+мана",
+			"attribute_points":"Очки аттрибутов: "
 }

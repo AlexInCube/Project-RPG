@@ -12,6 +12,8 @@ function draw_item_stat_mouse(argument0, argument1) {
 	draw_set_alpha(1)
 	draw_set_color(c_white)
 	draw_set_font(fnt_small)
+	draw_set_halign(fa_left)
+	draw_set_valign(fa_top)
 	var maxtextwidth = 200
 	var statstring = ""
 	//Get item name

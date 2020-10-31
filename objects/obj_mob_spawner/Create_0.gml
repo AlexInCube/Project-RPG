@@ -17,5 +17,6 @@ for(var i=0;i<mob_count;i++){
 				continue
 			}
 	    }
+		
 	instance_create_layer(xx,yy,"Instances",mob_obj)
 }
