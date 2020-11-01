@@ -260,7 +260,6 @@
     {"id":{"name":"scr_slot","path":"scripts/scr_slot/scr_slot.yy",},"order":1,},
     {"id":{"name":"scr_gain_item","path":"scripts/scr_gain_item/scr_gain_item.yy",},"order":2,},
     {"id":{"name":"scr_slot_modify_amount","path":"scripts/scr_slot_modify_amount/scr_slot_modify_amount.yy",},"order":3,},
-    {"id":{"name":"scr_recalculate_stats","path":"scripts/scr_recalculate_stats/scr_recalculate_stats.yy",},"order":4,},
     {"id":{"name":"scr_weapon_equip","path":"scripts/scr_weapon_equip/scr_weapon_equip.yy",},"order":5,},
     {"id":{"name":"scr_heal","path":"scripts/scr_heal/scr_heal.yy",},"order":0,},
     {"id":{"name":"scr_replenish_mana","path":"scripts/scr_replenish_mana/scr_replenish_mana.yy",},"order":1,},

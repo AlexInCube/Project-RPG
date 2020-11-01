@@ -1,14 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
+max_hp=5
+hp=max_hp
 
-hp=10
-max_hp=10
+energy=5//Increase max_mana
+max_mana=5
+mana=max_mana
 
-energy=0//Increase max_mana
-mana=10
-max_mana=10
-
-defense=0//Gain phys and magic armor, also increase max_hp
+defense=5//Gain phys and magic armor, also increase max_hp
 phys_armor=0
 magic_armor=0
 
@@ -23,7 +22,7 @@ regen_amount=0
 
 last_hit=""
 
-
+recalculate_stats(global.equipment)
 
 /*
 ds_map_add(global.stats,"physdamagebuff",0)

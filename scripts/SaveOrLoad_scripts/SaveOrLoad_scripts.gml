@@ -6,6 +6,8 @@ function save_game() {
 	save_data[? "player_hp"] = obj_player_stats.hp
 	save_data[? "exp"] = obj_player_stats.expr
 	save_data[? "lvl"] = obj_player_stats.level
+	save_data[? "attribute_points"] = obj_player_stats.attribute_points
+	save_data[? "attributes"] = [obj_player_stats.strength,obj_player_stats.energy,obj_player_stats.defense,obj_player_stats.agility]
 	save_data[? "room"] = room
 	save_data[? "player_inventory"] = ds_grid_write(global.inventory)
 	save_data[? "player_equipment"] = ds_grid_write(global.equipment)
@@ -82,11 +84,20 @@ function load_game() {
 	var save_data = json_decode(save_string)
 	//Applying player stats
 	with (obj_player_stats){
-		hp = save_data[? "player_hp"]
-		hp = clamp(hp,0,max_hp)
 		expr = save_data[? "exp"]
 		level = save_data[? "lvl"]
 		max_expr = max_exp_calc(level)
+		attribute_points = save_data[? "attribute_points"]
+		var _list = save_data[? "attributes"]
+		show_debug_message(_list)
+		strength = _list[| 0]
+		energy = _list[| 1]
+		defense = _list[| 2]
+		agility = _list[| 3]
+		ds_list_destroy(_list)
+
+		hp = save_data[? "player_hp"]
+		//hp = clamp(hp,0,max_hp)
 	}
 	//Applying player coordinates
 	if !instance_exists(obj_player){

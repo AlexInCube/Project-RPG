@@ -15,7 +15,6 @@ inventory_size = ds_grid_width(global.inventory)
 drawitemtooltip = surface_create(GUIWIDTH,GUIHEIGHT)
 
 event_register([event.inventory_slot_clicked,global.equipment],id,recalculate_stats,global.equipment)
-recalculate_stats(global.equipment)
 
 //gain_item(item.wooden_stick,1)
 //gain_item(item.shotgun, 1)

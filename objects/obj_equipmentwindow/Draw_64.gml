@@ -78,5 +78,10 @@ switch(equipmode){
 		draw_button_hud(window_x+7,window_y+27,window_x+118,window_y+49,spr_equip_buttons,equip_basic_button_scr)
 		draw_set_halign(fa_center)
 		draw_text(window_x+63,window_y+27,basicword)
+		draw_set_halign(fa_left)
+		draw_set_valign(fa_top)
+		for(var i=0;i<array_height_2d(additioninfo);i++){
+			draw_text(window_x+7,window_y+55+(20*i),additioninfo[i,0]+": "+string(variable_instance_get(obj_player_stats.id,additioninfo[i,1])))
+		}
 	break
 }

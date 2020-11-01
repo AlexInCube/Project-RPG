@@ -19,6 +19,19 @@ defensedescription = find_keyword("defensedescription")
 energyword = find_keyword("energy")
 energydescription = find_keyword("energydescription")
 attribute_pointsword = find_keyword("attribute_points")
+
+additioninfo[0,0] = find_keyword("phys_damage")
+additioninfo[0,1] = "phys_damage"
+additioninfo[1,0] = find_keyword("magic_damage")
+additioninfo[1,1] = "magic_damage"
+additioninfo[2,0] = find_keyword("phys_armor")
+additioninfo[2,1] = "phys_armor"
+additioninfo[3,0] = find_keyword("magic_armor")
+additioninfo[3,1] = "magic_armor"
+additioninfo[4,0] = find_keyword("evasion")
+additioninfo[4,1] = "evasion"
+additioninfo[5,0] = find_keyword("regen_amount")
+additioninfo[5,1] = "regen_amount"
 //Setup inventory
 inventory = global.equipment
 inventory_size = ds_grid_width(inventory)
@@ -60,6 +73,7 @@ function assign_attribute_point_button(xx,yy,value){
 			if variable_instance_exists(obj_player_stats.id,value){
 				obj_player_stats.attribute_points-=1
 				variable_instance_set(obj_player_stats.id,value,variable_instance_get(obj_player_stats.id,value)+1)
+				recalculate_stats(global.equipment)
 			}
 		}
 	}
