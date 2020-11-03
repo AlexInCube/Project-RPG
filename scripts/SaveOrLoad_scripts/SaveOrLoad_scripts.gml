@@ -89,7 +89,6 @@ function load_game() {
 		max_expr = max_exp_calc(level)
 		attribute_points = save_data[? "attribute_points"]
 		var _list = save_data[? "attributes"]
-		show_debug_message(_list)
 		strength = _list[| 0]
 		energy = _list[| 1]
 		defense = _list[| 2]

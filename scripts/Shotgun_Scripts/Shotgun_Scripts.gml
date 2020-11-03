@@ -70,21 +70,17 @@ function shotgun_step() {
 				if can_shoot == true
 				{	
 					for(var i=0;i<8;i++){
-						var damage = instance_create_layer(x,y,"Instances",obj_damageprojectile)
-						damage.sprite_index=ammo_sprite
-						damage.creator = obj_player.id
-						damage.knockback = 0
-						damage.light_radius = 20
+						var dmg = create_damage(ammo_sprite,obj_player.id,0,20,true)
 						var xforce = lengthdir_x(18,mouse_dir)
 						var yforce = lengthdir_y(18,mouse_dir)
-						with damage
+						with dmg
 						{
 							physics_apply_local_impulse(x,y,xforce+(-4+i),yforce+(-4+i))
-						}
-						if obj_player_stats.phys_damage>0
-						{
-							damage.damage = obj_player_stats.phys_damage
-							damage.damagetype = PHYSICALDAMAGETYPE
+							if obj_player_stats.phys_damage>0
+							{
+								damage = obj_player_stats.phys_damage
+								damagetype = PHYSICALDAMAGETYPE
+							}
 						}
 					}
 					
@@ -94,13 +90,7 @@ function shotgun_step() {
 					screenshake(5)
 					audio_play_sound(prepare_sound,1,0)
 					
-					//Knockback player (working if player not moving)
-					var xforce = lengthdir_x(2,mouse_dir)
-					var yforce = lengthdir_y(2,mouse_dir)
-					with (obj_player){
-						physics_apply_local_impulse(x,y,-xforce,-yforce)
-					}
-
+					knockback_player(2,mouse_dir)
 					//Emit fireball? particle
 					part_type_direction(part_particle,mouse_dir-5, mouse_dir+5, 0, 0)
 					part_emitter_region(sys_particle, emit_particle, x - 0, x + 0, y - 0, y + 0, ps_shape_line, ps_distr_linear)
