@@ -12,16 +12,18 @@ function create_dialogue() {
 
 
 	if(instance_exists(obj_textbox)){ exit; }
-
-	//Create the Textbox
-	var _textbox = instance_create_layer(x,y, "Text", obj_textbox);
-
 	//Get Arguments
 	var arg = 0, i = 0, arg_count = argument_count;
 	repeat(arg_count){ arg[i] = argument[i]; i++; } 
 
 	//Get arguments
 	var _text = arg[0];
+	if _text == -1{exit}
+	
+	
+	//Create the Textbox
+	var _textbox = instance_create_layer(x,y, "Text", obj_textbox);
+	
 	var _speaker, text_len;
 
 	//If Text or Speaker aren't arrays (single line input), make them arrays 

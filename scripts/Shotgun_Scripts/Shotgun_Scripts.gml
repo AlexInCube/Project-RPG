@@ -37,6 +37,13 @@ function shotgun_create() {
 	part_type_blend(part_particle, 1)
 	part_type_life(part_particle, 30, 30)
 	emit_particle = part_emitter_create(sys_particle)
+	
+	/*
+	// Preventing Memory Leaks by deleting them once done:
+	part_type_destroy(part_particle)
+	part_emitter_destroy(sys_particle, emit_particle)
+	part_system_destroy(sys_particle)
+	*/
 }
 
 function shotgun_step() {
@@ -63,21 +70,17 @@ function shotgun_step() {
 				if can_shoot == true
 				{	
 					for(var i=0;i<8;i++){
-						var damage = instance_create_layer(x,y,"Instances",obj_damageprojectile)
-						damage.sprite_index=ammo_sprite
-						damage.creator = obj_player.id
-						damage.knockback = 0
-						damage.light_radius = 20
+						var dmg = create_damage(ammo_sprite,obj_player.id,0,20,true)
 						var xforce = lengthdir_x(18,mouse_dir)
 						var yforce = lengthdir_y(18,mouse_dir)
-						with damage
+						with dmg
 						{
 							physics_apply_local_impulse(x,y,xforce+(-4+i),yforce+(-4+i))
-						}
-						if obj_player_stats.phys_damage>0
-						{
-							damage.damage = obj_player_stats.phys_damage
-							damage.damagetype = PHYSICALDAMAGETYPE
+							if obj_player_stats.phys_damage>0
+							{
+								damage = obj_player_stats.phys_damage
+								damagetype = PHYSICALDAMAGETYPE
+							}
 						}
 					}
 					
@@ -87,13 +90,7 @@ function shotgun_step() {
 					screenshake(5)
 					audio_play_sound(prepare_sound,1,0)
 					
-					//Knockback player (working if player not moving)
-					var xforce = lengthdir_x(2,mouse_dir)
-					var yforce = lengthdir_y(2,mouse_dir)
-					with (obj_player){
-						physics_apply_local_impulse(x,y,-xforce,-yforce)
-					}
-
+					knockback_player(2,mouse_dir)
 					//Emit fireball? particle
 					part_type_direction(part_particle,mouse_dir-5, mouse_dir+5, 0, 0)
 					part_emitter_region(sys_particle, emit_particle, x - 0, x + 0, y - 0, y + 0, ps_shape_line, ps_distr_linear)
@@ -110,12 +107,7 @@ function shotgun_step() {
 	}
 }
 
-/*
-// Preventing Memory Leaks by deleting them once done:
-part_type_destroy(part_particle)
-part_emitter_destroy(sys_particle, emit_particle)
-part_system_destroy(sys_particle)
-*/
+
 function shotgun_draw() {
 	//Weapon controller always where the player
 	x = obj_player.x
@@ -144,8 +136,16 @@ function shotgun_draw() {
 	
 	//Draw weapon
 	draw_sprite_ext(spr_weapon_shotgun,i_i,obj_player.x,obj_player.y,1,y_s,mouse_dir,c_white,1)
-	
+	draw_set_valign(fa_bottom)
+	draw_set_halign(fa_center)
+	draw_set_font(fnt_large)
 	draw_text(obj_player.x,obj_player.y,string(ammo)+"/"+string(ammo_max))
+	
+	/*
+	draw_text(obj_player.x,obj_player.y+10,obj_player.mouse_dr)
+	draw_text(obj_player.x,obj_player.y+20,obj_player.image_speed)
+	draw_text(obj_player.x,obj_player.y+30,"x:"+string(obj_controller.xaxis)+"y:"+string(obj_controller.yaxis))
+	*/
 	
 }
 

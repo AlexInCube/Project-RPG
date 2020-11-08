@@ -6,6 +6,7 @@ mouse_dr=0//Mouse dir for weapon draw
 
 findradius=16//For item collecting
 
+
 image_speed=0.4
 
 //Control sprite

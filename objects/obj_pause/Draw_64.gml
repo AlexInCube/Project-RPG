@@ -1,7 +1,6 @@
 // Inherit the parent event
 draw_set_alpha(1)
-var c = c_olive
-draw_rectangle_color(0,0,global.width,global.height,c,c,c,c,false)
+draw_nine_slice_box(spr_pause_menu_bg,0,0,GUIWIDTH,GUIHEIGHT,0)
 
 event_inherited();
 

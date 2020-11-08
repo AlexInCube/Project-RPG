@@ -1,6 +1,6 @@
 //Init game (create inventory, controllers and etc.) 
 function start_load(){
-	clear_app()
+	clear_app()//Reset game state
 	global.load_state = load_state.init_game
 	room_goto(room_game_init)
 }
@@ -23,6 +23,7 @@ function exit_to_main_menu(){
 	//Exit to main menu
 	clear_app()
 	audio_stop_all()
+	write_last_played_save()
 	room_goto(room_main)
 }
 

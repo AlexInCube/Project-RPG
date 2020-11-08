@@ -9,3 +9,4 @@ ss_w = GUIHEIGHT-20
 ss_h = sprite_get_height(spr_save_slot)+16
 
 createslot_word = find_keyword("create_new_save_slot")
+write_your_save_name_word = find_keyword("write_your_save_name")

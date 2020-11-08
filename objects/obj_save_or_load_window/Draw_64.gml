@@ -7,16 +7,16 @@ if !ds_exists(ds_saves,ds_type_map) exit
 	
 	draw_set_font(fnt_verylarge)
 	draw_set_color(c_white)
-
+	
+	
 	var save_name = ds_map_find_first(ds_saves)
 	var save_time_and_version = ds_saves[? save_name]
-	//show_debug_message(save_time_and_version)
-	
+	//Draw button list
 	var yy=0; for(var i = drawelementstart;i<=drawelementstart+drawelementheight;i++){
 		slot_x = window_x+10
 		slot_y = window_y+10+((5+ss_h)*yy)
 
-
+		//If game paused, we can save it, so create NEW SAVE button
 		if instance_exists(obj_pause) and yy == 0
 		{
 			var mouse_over_slot = mouseover(slot_x,slot_y,slot_x+ss_w,slot_y+ss_h)
@@ -29,14 +29,14 @@ if !ds_exists(ds_saves,ds_type_map) exit
 			if mouse_over_slot{
 				if mouse_check_button_pressed(mb_left){
 					//TODO: Make in game textbox and checking equal names
-					global.directory_save = get_string("Write your save name:","Your_save"+string(ds_size))
+					global.directory_save = get_string(write_your_save_name_word,"Your_save"+string(ds_size))
 					resume_game()//resume game for saving (activate all instances)
 					save_game()
 					exit
 				}
 			}
 			i-- //Fix for begin draw saves from save 0, not 1
-		} else if i!=ds_size{
+		} else if i!=ds_size{//Draw saves list
 			draw_set_halign(fa_left)
 			draw_set_valign(fa_top)
 

@@ -1,3 +1,3 @@
-new_room = room_world1A
-xx = 70
-yy = 70
+new_room = room_world1B
+new_x = 130
+new_y = 1300

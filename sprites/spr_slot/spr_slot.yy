@@ -93,7 +93,7 @@
   ],
   "parent": {
     "name": " Inventory Sprites",
-    "path": "folders/Objects/Controllers/ Inventory Sprites.yy",
+    "path": "folders/Objects/Controllers/Inventory/ Inventory Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_slot",

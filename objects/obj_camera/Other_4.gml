@@ -26,4 +26,7 @@ if(ideal_width & 1)
 if(ideal_height & 1)
   ideal_height++;
 
-camera_set_view_size(view_camera[0],ideal_width,ideal_height)
+camera_set_view_size(camera,ideal_width,ideal_height)
+
+view_w = camera_get_view_width(camera)
+view_h = camera_get_view_height(camera)

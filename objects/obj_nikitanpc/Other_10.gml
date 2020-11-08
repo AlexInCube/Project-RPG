@@ -1,6 +1,6 @@
 reset_dialogue_defaults();
 
-
+change_camera_mode(camera_mode.move_to_follow_object,id)
 switch(choice_variable){
 	case -1:
 	#region First Dialogue

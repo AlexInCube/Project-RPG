@@ -1,21 +1,28 @@
-// Inherit the parent event
-event_inherited();
-draw_set_font(fnt_small)
 draw_set_halign(fa_left)
 draw_set_valign(fa_top)
+draw_set_color(c_white)
+draw_set_font(fnt_small)
+
+var window_x = GUIWIDTH/2-GUIHEIGHT/2, window_y = 0 
 var start_y = window_y+26, start_x = window_x+10, y_buffer = 24, ds_grid = ds_options
-//X coord -- window right side
-var rsx = window_x + window_width
+
+//Draw background
+draw_nine_slice_box(window_sprite,window_x,window_y,window_x+window_width,window_y+window_height,0)
+//Draw window_name
+draw_text(window_x+7,window_y,window_name)
+
+var rsx = window_x + window_width//window right side x
 //Center for info
 var entriesoffset = 120
 
+/*
 draw_sprite(spr_sliderbackground1,0,rsx-30,start_y)
 draw_sprite(spr_slider,0,rsx-30,start_y+((236/(ds_grid_height(ds_grid)-10))*drawelementstart))
-
+*/
 
 draw_set_valign(fa_top)
 //Draw entries
-var yy = 0; for(i=drawelementstart;i<drawelementstart+10;i++){
+var yy = 0; for(i=drawelementstart;i<drawelementstart+drawelementheight;i++){
 	var rsy = start_y + (yy*y_buffer)
 		switch(ds_grid[# 1,i]){
 			#region Title
@@ -129,14 +136,11 @@ var yy = 0; for(i=drawelementstart;i<drawelementstart+10;i++){
 				draw_text_color(window_x+10,rsy,text,c,c,c,c,1)
 				var keymode = 0//0 - Default, 1 - Mouse adove key, 2 - INPUT MODE.
 				var current_val = ds_grid[# 3,i]
-				var string_val
-				string_val = chr(current_val);
 				c = c_white
 				
 				draw_set_halign(fa_center)
 				
-				
-				if mouseover(rsx-entriesoffset-12,rsy,rsx-entriesoffset+12,rsy+22){
+				if mouseover(rsx-entriesoffset-input_button_half_width,rsy,rsx-entriesoffset+input_button_half_width,rsy+22){
 					keymode=1
 					if mouse_check_button_pressed(mb_left){
 						if !inputting{
@@ -158,17 +162,18 @@ var yy = 0; for(i=drawelementstart;i<drawelementstart+10;i++){
 					}
 				}
 				
-			
 				
-				draw_sprite(spr_keyboardbutton,keymode,rsx-entriesoffset-12,rsy)
-				draw_text_color(rsx-entriesoffset,rsy,string_val,c,c,c,c,1)
+				
+				draw_sprite(spr_control_button,keymode,rsx-entriesoffset-input_button_half_width,rsy)
+				draw_set_valign(fa_top)
+				draw_text_color(rsx-entriesoffset,rsy-2,return_normal_control_word(current_val),c,c,c,c,1)
 			break;
 			#endregion
 	}
 	yy++
 }
 
-applydeclinebutton(window_x+20,window_y+274,applyword,savesettings)//Apply Settings
-applydeclinebutton(window_x+150,window_y+274,declineword,declinesettings)//Decline Settings
-applydeclinebutton(window_x+280,window_y+274,set_to_defaultword,settodefault)//Reset settings
+applydeclinebutton(window_x+20,window_y+window_height-24,applyword,savesettings)//Apply Settings
+applydeclinebutton(window_x+150,window_y+window_height-24,declineword,declinesettings)//Decline Settings
+applydeclinebutton(window_x+280,window_y+window_height-24,set_to_defaultword,settodefault)//Reset settings
 

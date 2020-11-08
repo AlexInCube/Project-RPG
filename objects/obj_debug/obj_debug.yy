@@ -25,8 +25,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Project RPG",
+    "path": "Project RPG.yyp",
   },
   "resourceVersion": "1.0",
   "name": "obj_debug",

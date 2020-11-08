@@ -9,4 +9,4 @@ selectedquest=noone
 
 backtoquestlistword=find_keyword("back_to_quest_list")
 
-
+persistent=true

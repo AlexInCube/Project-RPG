@@ -7,10 +7,10 @@ with (other) {
 
 with (obj_player_stats){
 	expr+=xp
-	if expr>maxexpr{
+	if expr>max_expr{
 		level +=1
-		expr = expr-maxexpr
-		maxexpr *=2
+		expr = expr-max_expr
+		max_expr *=2
 		skillpoints +=1
 	}
 }

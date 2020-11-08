@@ -31,6 +31,10 @@ for(i=0;i<ds_menu_height;i++){
 			draw_text_ext_color(button_x+button_width/2,button_y+button_height/2-5,ds_grid[# 0,i],16,button_width-5,c,c,c,c,1)
 			}
 		break;
+		
+		case menu_element_type.empty_space:
+			continue
+		break
 	}
 
 }
@@ -38,3 +42,4 @@ for(i=0;i<ds_menu_height;i++){
 if room == room_main{
 draw_sprite(spr_logo,0,40,0)
 }
+

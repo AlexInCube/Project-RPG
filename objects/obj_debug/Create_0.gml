@@ -1,1 +1,2 @@
-debugmode=false
+#macro DEBUGMODE global.debugmode
+global.debugmode=false

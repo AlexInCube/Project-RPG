@@ -9,8 +9,6 @@ enum item_stat
 	 physdamage,
 	 magicdamage,
 	 strength,
-	 intelligence,
-	 luck,
 	 physarmor,
 	 magicarmor,
 	 manacost,

@@ -1,7 +1,7 @@
 var mousex = device_mouse_x_to_gui(0)
 var mousey = device_mouse_y_to_gui(0)
 
-mouseover = mouseover(window_x,window_y,window_x+window_width,window_y+window_height)
+mouse_over = mouseover(window_x,window_y,window_x+window_width,window_y+window_height)
 
 //If mouse over close button	
 if placefree = true and mouseover(window_x+(window_width-23),window_y+5,window_x+(window_width-4),window_y+22)

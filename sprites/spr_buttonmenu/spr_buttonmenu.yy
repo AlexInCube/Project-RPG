@@ -76,7 +76,7 @@
     "eventStubScript": null,
     "parent": {"name":"spr_buttonmenu","path":"sprites/spr_buttonmenu/spr_buttonmenu.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "spr_buttonmenu",
     "tags": [],
     "resourceType": "GMSequence",
   },

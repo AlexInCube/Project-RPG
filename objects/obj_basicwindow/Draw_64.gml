@@ -12,10 +12,6 @@ draw_set_color(c_white)
 draw_set_font(fnt_small)
 //draw_text(window_x+7,window_y,window_name+string(depth)+"  "+string(placefree)+"  "+string(mouseover))
 draw_text(window_x+7,window_y,window_name)
-//Draw screen
-if guiscreen!=undefined{
-	script_execute_alt(guiscreen,guiscreenarg)
-}
 
 //For visual debugging
 /*

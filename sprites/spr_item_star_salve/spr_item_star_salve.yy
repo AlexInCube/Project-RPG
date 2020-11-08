@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Other",
-    "path": "folders/Objects/Controllers/ Inventory Sprites/Items/Other.yy",
+    "path": "folders/Objects/Controllers/Inventory/Items/Other.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_item_star_salve",
