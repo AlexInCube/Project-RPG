@@ -1,0 +1,1 @@
+create_window(0,0,obj_tradewindow)

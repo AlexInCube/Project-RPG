@@ -62,7 +62,7 @@
     "eventStubScript": null,
     "parent": {"name":"spr_inventorymenu","path":"sprites/spr_inventorymenu/spr_inventorymenu.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_inventorymenu",
+    "name": "",
     "tags": [],
     "resourceType": "GMSequence",
   },
