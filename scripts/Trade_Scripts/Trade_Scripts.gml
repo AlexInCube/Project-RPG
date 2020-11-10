@@ -3,14 +3,14 @@
 ///@arg [[item_id,item_count]...,[item_id,item_count]]...,
 function create_trade_list(){
 	var arg, i = 0
-	repeat(argument_count){
-		arg[i] = argument[i]
+	repeat(array_length(argument0)){
+		arg[i] = argument0[i]
 		i++
 	}
 	
 	var _list = ds_list_create()
 	
-	i = 0; repeat(argument_count){
+	i = 0; repeat(array_length(argument0)){
 		var array = arg[i]
 		_list[| i] = array
 		

@@ -35,7 +35,7 @@ function cutscene_end_action() {
 ///@function cutscene_set_to_default
 ///@description Put this in the end of actions array for return control to the player
 function cutscene_set_to_default() {
-	change_camera_mode(camera_mode.follow_mouse_peek)
+	change_camera_mode(camera_mode.move_to_follow_object,obj_player,0.1)
 	obj_player.state=move_state
 		
 	cutscene_end_action()

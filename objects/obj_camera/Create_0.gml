@@ -8,7 +8,7 @@ enum camera_mode{
 #macro camera view_camera[0]
 
 //Camera mode
-mode = camera_mode.follow_mouse_peek
+mode = camera_mode.follow_object
 //Move to follow object
 default_camera_speed = 1
 camera_speed = default_camera_speed//Camera speed (speed range must be 0.00 to 1.00)
