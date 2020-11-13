@@ -53,7 +53,4 @@ txtalpha=0
 txtcolor=c_orange
 //Display quest which player want to track
 tracking_quest=noone
-if tracking_quest!=noone{
-tq_name=string(quest_get_name(tracking_quest))
-tq_desc=quest_get_short_description_for_task(tracking_quest,global.ds_current_quests[? string(tracking_quest)])
-}
+tracking_update(tracking_quest)

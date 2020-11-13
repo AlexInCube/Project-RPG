@@ -3,10 +3,10 @@
   "isCompatibility": false,
   "parent": {
     "name": "Inventory",
-    "path": "folders/Scripts/Inventory.yy",
+    "path": "folders/Objects/Controllers/Inventory.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_weapon_equip",
+  "name": "Inventory_Scripts",
   "tags": [],
   "resourceType": "GMScript",
 }

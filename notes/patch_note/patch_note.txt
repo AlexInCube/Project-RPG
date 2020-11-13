@@ -1,0 +1,8 @@
+fixed dialogue camera errors
+fixed first cutscene player sprite
+fixed bug with not counting quests
+fixed quest tracking
+load save now mark last_save
+close combat almost repaired
+added kill progress to quest tracking
+todo: make quest event working after save loading

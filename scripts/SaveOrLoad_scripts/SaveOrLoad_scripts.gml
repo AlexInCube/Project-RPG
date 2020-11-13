@@ -123,9 +123,7 @@ function load_game() {
 		var key = ds_map_find_first(global.ds_current_quests);
 		//Create quest listeners
 		for(var i=0; i<ds_map_size(global.ds_current_quests); i++){
-		var listener = instance_create_depth(0,0,0,obj_questlistener)
-		with listener
-			{
+		with instance_create_depth(0,0,0,obj_questlistener){
 			quest_id=real(key)
 			key = ds_map_find_next(global.ds_current_quests,key)
 			//Register quest requirement
@@ -140,24 +138,28 @@ function load_game() {
 	
 	//Read unique objects data
 	file_path = "Saves\\"+global.directory_save+"\\"+string(room_get_name(room))+".txt"
-	file = file_text_open_read(file_path)
-	var wrapper = json_decode(file_text_read_string(file))
-	file_text_close(file)
-	var list = wrapper[? "object_list"]
+	if file_exists(file_path){
+		file = file_text_open_read(file_path)
+		var wrapper = json_decode(file_text_read_string(file))
+		file_text_close(file)
+		var list = wrapper[? "object_list"]
 	
-	for(var i=0; i<ds_list_size(list);i++){
-		var map = list[| i]
-		var obj = map[? "obj"]
+		for(var i=0; i<ds_list_size(list);i++){
+			var map = list[| i]
+			var obj = map[? "obj"]
 
-		with(obj){
-			CallUserEvent(15,map)
-		}
+			with(obj){
+				CallUserEvent(15,map)
+			}
 		
+		}
+		show_debug_message("Room loaded: "+file_path)
+		ds_map_destroy(wrapper)
+	}else{
+		show_debug_message("Error while room loading: "+file_path)
 	}
-	
-	ds_map_destroy(wrapper)
 	//End of read room_name.txt
-	show_debug_message("Room loaded"+file_path)
+
 }
 
 #region Save/Load Window

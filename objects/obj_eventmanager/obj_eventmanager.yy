@@ -23,8 +23,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Events",
-    "path": "folders/Objects/Controllers/Events.yy",
+    "name": "Events Management",
+    "path": "folders/Objects/Controllers/Events Management.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_eventmanager",

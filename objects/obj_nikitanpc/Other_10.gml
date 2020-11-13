@@ -1,6 +1,6 @@
 reset_dialogue_defaults();
 
-change_camera_mode(camera_mode.move_to_follow_object,id)
+change_camera_mode(camera_mode.move_to_follow_object,id,0.1)
 switch(choice_variable){
 	case -1:
 	#region First Dialogue
@@ -234,7 +234,7 @@ switch(choice_variable){
 		//Line 26
 		i++
 		myText[i]		= ["Я согласен на мазь","Я согласен на монетку","Я лучше оставлю слизь себе","Что за мазь?"]
-		myNextLine[i]	= [27,28,25,29]
+		myNextLine[i]	= [27,28,25,30]
 		myTypes[i]		= 1
 		mySpeaker[i]	= obj_player;
 		//Line 27

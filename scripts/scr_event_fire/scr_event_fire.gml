@@ -1,8 +1,6 @@
 ///@description event_fire
 ///@arg event
 function event_fire() {
-
-
 		var ev = string(argument[0])
 		if(ds_map_exists(global.eventMap,ev)){
 			var listenerList = global.eventMap[? ev]
@@ -41,10 +39,4 @@ function event_fire() {
 			}
 			show_debug_message("Event Fired: "+string(ev))
 		}
-
-
-
-
-
-
 }

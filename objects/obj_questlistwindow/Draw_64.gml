@@ -24,9 +24,8 @@ if selectedquest==noone{
 				}
 				if mouse_check_button_pressed(mb_right){
 					with(obj_questmanager){
-					tracking_quest=i
-					tq_name=string(quest_get_name(tracking_quest))
-					tq_desc=quest_get_short_description_for_task(tracking_quest,global.ds_current_quests[? string(tracking_quest)])
+						tracking_quest=i
+						tracking_update(tracking_quest)
 					}
 				}
 			}
