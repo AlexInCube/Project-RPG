@@ -4,7 +4,6 @@ function event_fire() {
 		var ev = string(argument[0])
 		if(ds_map_exists(global.eventMap,ev)){
 			var listenerList = global.eventMap[? ev]
-		
 			var len = ds_list_size(listenerList)
 		
 			var listenerInfo, listener, script, args

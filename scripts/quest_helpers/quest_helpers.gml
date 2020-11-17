@@ -18,14 +18,26 @@ function tracking_update(t_q){
 			var quest_t = quest_get_task_type(t_q)
 			switch(quest_t){
 				case questtype.kill:
-					var n_k = quest_get_current_task(t_q)
-					tq_desc=quest_get_short_description_for_task(t_q,global.ds_current_quests[? string(t_q)])+" "+string(quest_get_count(t_q))+"/"+string(n_k[2])
+					tq_desc=quest_get_short_description_for_task(t_q,global.ds_current_quests[? string(t_q)])+" "+quest_return_progress_string(t_q)
 				break;
 				
 				default: tq_desc=quest_get_short_description_for_task(t_q,global.ds_current_quests[? string(t_q)])
 			}
 		}
 	}
+}
+
+function quest_return_progress_string(questid){
+	var n_k = quest_get_current_task(questid)
+	var quest_t = quest_get_task_type(questid)
+			switch(quest_t){
+				case questtype.kill:
+					return string(quest_get_count(questid))+"/"+string(n_k[2])
+				break;
+				
+				default: 
+			}
+	return ""
 }
 ///@description quest_get_current_task(questid)
 ///@arg questid

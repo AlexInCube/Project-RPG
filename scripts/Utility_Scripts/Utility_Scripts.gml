@@ -1,11 +1,21 @@
+/// @function with_tagged(tag, lambda)
+/// @param tag The tag or array of tags to operate on
+/// @param lambda An inline function to be run
+/// Applies the lambda function provided to every instance with a given tag
+function with_tagged(tag, lambda) {
+	var tagged = tag_get_asset_ids(tag, asset_object);
+	for (var i = 0; i < array_length(tagged); i++) {
+		with (tagged[i]) {
+			var boundMethod = method(self, lambda);
+			boundMethod();
+		}
+	}
+}
 ///@description CallUserEvent(eventNum, args)
 ///@param eventNumber
 ///@param args
 // Assumes an object is calling implicitly, may prefer to add in an object argument for clarity
-function CallUserEvent(argument0,argument1){
-	var eventNum = argument0;
-	var args = argument1;
-
+function CallUserEvent(eventNum,args){
 	__eventArgs = args;
 	event_user(eventNum);
 	__eventArgs = 0; // Clear the argument variable after event call to ensure no unexpected issues

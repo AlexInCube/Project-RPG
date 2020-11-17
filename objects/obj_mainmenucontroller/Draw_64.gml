@@ -10,10 +10,8 @@ for(i=0;i<ds_menu_height;i++){
 			
 				if mouseover(button_x,button_y,button_x+button_width,button_y+button_height){
 					ds_grid[# 2,i]+=0.5
-					if !instance_exists(obj_optionswindow){
 					if mouse_check_button_pressed(mb_left){
 						script_execute(ds_grid[# 3,i])
-					}
 					}
 				}else{
 					ds_grid[# 2,i]-=0.5

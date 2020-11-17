@@ -1,6 +1,6 @@
 function load_settings() {
 	ini_open("game_settings.ini")
-	global.lastsave=			ini_read_string("Other","lastplayedsave","-1")
+	global.lastsave=			ini_read_string("Other","lastplayedsave","rpgsave")
 	//Audio
 	global.mastervolume=		ini_read_real("Sounds", "mastervolume", 0.5)
 	global.musicvolume=			ini_read_real("Sounds", "musicvolume", 0.5)

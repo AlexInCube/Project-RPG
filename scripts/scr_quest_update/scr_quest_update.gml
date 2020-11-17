@@ -28,7 +28,7 @@ function quest_update(questid) {
 		if global.ds_current_quests[? string(questid)]!= -1 and quest_get_task_amount(questid)>=global.ds_current_quests[? string(questid)]{
 			with instance_create_depth(0,0,0,obj_questlistener){
 				quest_id=questid
-				event_user(0)
+				alarm[0]=1
 			}
 		}
 		

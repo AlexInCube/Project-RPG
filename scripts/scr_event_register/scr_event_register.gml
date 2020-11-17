@@ -4,8 +4,7 @@
 ///@arg script
 ///@arg arg1...*
 function event_register() {
-
-		var	ev = string(argument[0])
+	var	ev = string(argument[0])
 		var objID = argument[1]
 	
 		if !ds_map_exists(global.eventMap,ev){
@@ -28,8 +27,5 @@ function event_register() {
 		}
 	
 		ds_list_add(listenerList,listenerInfo)
-	
-
-
-
+		show_debug_message("Event registered: "+ev)
 }

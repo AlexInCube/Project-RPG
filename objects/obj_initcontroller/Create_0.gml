@@ -3,7 +3,11 @@ randomize()
 
 load_settings()//Load volume, controlls and other settings
 global.window_list=ds_list_create()//For window system
+if file_exists("Saves\\"+global.lastsave+"/playerdata.txt"){
+global.directory_save=global.lastsave//Current saving for loading
+}else{
 global.directory_save="rpgsave"//Current saving for loading
+}
 
 if !directory_exists("Saves"){
 	directory_create("Saves")

@@ -33,30 +33,28 @@ function save_game() {
 	
 	
 	instance_activate_all()
-	show_debug_message(string(instance_exists(obj_trophy_weapon))+"saveable object exists")
+
 	//End of write playerdata.txt
 	//Save data about unique objects (trophy, doors and etc...)
 	var object_list = ds_list_create()
-	with(all){
-		//Get tags list
-		var asset_tags = asset_get_tags(object_get_name(object_index))
-		//Find needed tag "saveable"
-		for(var i=0;i<array_length_1d(asset_tags);i++){
-			if asset_tags[i] == "saveable"{
-				//Create map with variables that we want to save
-				var _map = ds_map_create()
-				ds_list_add(object_list,_map)
-				ds_list_mark_as_map(object_list,ds_list_size(object_list)-1)
+	
+	var tagged = tag_get_asset_ids("saveable", asset_object);
+	for (var i = 0; i < array_length(tagged); i++) {
+		with (tagged[i]) {
+			var _map = ds_map_create()
+			ds_list_add(object_list,_map)
+			ds_list_mark_as_map(object_list,ds_list_size(object_list)-1)
 				
-				//User 14 using only for saving, User 15 only for loading
-				CallUserEvent(14,_map)
-			}
+			//User 14 using only for saving, User 15 only for loading
+			CallUserEvent(14,_map)
 		}
 	}
 	
+	
+	
 	var wrapper = ds_map_create()
 	ds_map_add_list(wrapper,"object_list",object_list)
-	
+	show_debug_message("[Game Save]Saveable object exists: "+string(ds_list_size(object_list)))
 	save_string = json_encode(wrapper);
 	
 	var file_path = "Saves\\"+global.directory_save+"\\"+string(room_get_name(room))+".txt"
@@ -116,19 +114,19 @@ function load_game() {
 		recalculate_stats(global.equipment)
 	}
 	//Load quest list and cycle through all list to create quest listeners
-	with(obj_questmanager) {
-		//Read ds_map
-		ds_map_read(global.ds_current_quests,save_data[? "quest_list"])
-		//Find first quest_id
-		var key = ds_map_find_first(global.ds_current_quests);
-		//Create quest listeners
-		for(var i=0; i<ds_map_size(global.ds_current_quests); i++){
-		with instance_create_depth(0,0,0,obj_questlistener){
-			quest_id=real(key)
-			key = ds_map_find_next(global.ds_current_quests,key)
-			//Register quest requirement
-			event_user(0)
-			}
+	ds_map_clear(global.ds_current_quests)
+	//Read ds_map
+	ds_map_read(global.ds_current_quests,save_data[? "quest_list"])
+	//Find first quest_id
+	var key = ds_map_find_first(global.ds_current_quests);
+	//Create quest listeners
+	repeat(ds_map_size(global.ds_current_quests))
+	{
+		with instance_create_depth(0,0,0,obj_questlistener)
+		{
+		quest_id=real(key)
+		key = ds_map_find_next(global.ds_current_quests,key)
+		alarm[0]=1
 		}
 	}
 	
@@ -162,7 +160,8 @@ function load_game() {
 
 }
 
-#region Save/Load Window
+#region /* Save/Load Window */
+
 //Create save selecting window
 function select_slot(){
 	menustate = menu_state.window_load_save
@@ -208,10 +207,10 @@ function create_saves_map(){
 #endregion
 
 function write_last_played_save(){
-	ini_open("game_settings.ini")
-	ini_write_string("Other","lastplayedsave",global.directory_save)
-	ini_close()
 	global.lastsave = global.directory_save
+	ini_open("game_settings.ini")
+	ini_write_string("Other","lastplayedsave",global.lastsave)
+	ini_close()
 }
 
 function load_last_player_save(){
