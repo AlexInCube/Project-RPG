@@ -6,7 +6,7 @@ for(i=0;i<ds_menu_height;i++){
 		case menu_element_type.button:
 			var colordiff = 50*ceil(ds_grid[# 2,i])
 			var c = make_color_rgb(255-colordiff,255-colordiff,255-colordiff)
-			var button_y = 100+(43*i)
+			var button_y = button_yy+(43*i)
 			
 				if mouseover(button_x,button_y,button_x+button_width,button_y+button_height){
 					ds_grid[# 2,i]+=0.5

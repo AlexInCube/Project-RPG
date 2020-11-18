@@ -2,7 +2,7 @@ close combat almost repaired
 make task progress saveable (kills)
 
 
-saving now mark last_save
-fixed unique objects saving
-added kill progress to quest tracking and quest list
-quest event registering working after save loading
+time and date in save menu now showed formated
+fix random skipping in dialogue
+added debug console
+trade menu now work

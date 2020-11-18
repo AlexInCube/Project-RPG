@@ -6,7 +6,7 @@
 4 - Requirements/tasks
 */
 function deliver_items(item,amount){
-	if give_item(item,amount){
+	if grab_item(item,amount,global.inventory){
 	event_fire([event.deliver,item,amount])
 	}
 }

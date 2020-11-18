@@ -91,9 +91,9 @@ if !ds_exists(ds_saves,ds_type_map) exit
 			var time_array = array_get(save_time_and_version,0)
 			//Draw day, month and year
 			draw_set_halign(fa_right)
-			draw_text(slot_x+ss_w-10,slot_y+35,string(array_get(time_array,0))+"."+string(array_get(time_array,1))+"."+string(array_get(time_array,2)))
+			draw_text(slot_x+ss_w-10,slot_y+35,get_formatted_date(array_get(time_array,0))+"."+get_formatted_date(array_get(time_array,1))+"."+string(array_get(time_array,2)))
 			//Draw hours and minutes
-			draw_text(slot_x+ss_w-100,slot_y+35,string(array_get(time_array,3))+":"+string(array_get(time_array,4)))
+			draw_text(slot_x+ss_w-100,slot_y+35,get_formatted_date(array_get(time_array,3))+":"+get_formatted_date(array_get(time_array,4)))
 			
 			save_name = ds_map_find_next(ds_saves,save_name)
 			save_time_and_version = ds_saves[? save_name]

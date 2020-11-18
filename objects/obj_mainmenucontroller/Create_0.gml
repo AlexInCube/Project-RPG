@@ -32,4 +32,4 @@ button_sprite = spr_buttonmenu
 button_width = sprite_get_width(button_sprite)
 button_height = sprite_get_height(button_sprite)
 button_x = 50
-
+button_yy = 100

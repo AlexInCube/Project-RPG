@@ -86,11 +86,34 @@ function draw_offer_button(ii,yy){
 	for(var j=0;j<array_length(ir_a);j++){
 		draw_trade_slot(window_x+(slots2_x+(33*j)),offer_yy+slots_y,array_get(ir_a[j],0),array_get(ir_a[j],1))
 	}
+	//Check items to spend in player inventory
+	var items_check = true//If player does not have at least one item in trade, items check was fail.
+	for(var i=0;i<array_length(is_a);i++){
+		var item_array = array_get(is_a,i)
+		if !check_requirement_item(global.inventory,item_array[0],item_array[1]){
+			items_check = false
+			break
+		}
+	}
 	//Draw offer button
 	var mo = false
 	if placefree{
 		if mouseover(window_x+offer_x,offer_yy,window_x+offer_x+cell_x_size,offer_yy+cell_y_size){
-			mo = true
+			if items_check = true{
+				mo = true
+				if mouse_check_button_pressed(mb_left){
+					//item recieve
+					for(var i=0;i<array_length(ir_a);i++){
+						var item_array = array_get(ir_a,i)
+						gain_item(item_array[0],item_array[1],global.inventory)
+					}
+					//item spend
+					for(var i=0;i<array_length(is_a);i++){
+						var item_array = array_get(is_a,i)
+						grab_item(item_array[0],item_array[1],global.inventory)
+					}
+				}
+			}
 		}
 	}
 	draw_sprite(spr_offer_button,mo,window_x+offer_x,offer_yy)

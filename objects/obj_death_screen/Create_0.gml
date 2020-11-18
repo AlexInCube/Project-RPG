@@ -19,6 +19,8 @@ button_sprite = spr_death_screen_button
 button_width = sprite_get_width(button_sprite)
 button_height = sprite_get_height(button_sprite)
 button_x = (GUIWIDTH/2)-(button_width/2)
+button_yy = 100
+
 
 cursor_sprite=spr_cursor
 window_set_cursor(cr_none)

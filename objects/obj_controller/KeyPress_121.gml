@@ -1,4 +1,4 @@
-open_trade_window(	[
+open_trade_window([
 	[//t_a[0]
 		[//is_a[0]
 			[item.coin,1],
@@ -15,7 +15,7 @@ open_trade_window(	[
 	],
 	[//t_a[1]
 		[
-			[item.coin,3]
+			[item.coin,1]
 		],
 		[
 			[item.iron_ingot,1]
@@ -31,7 +31,7 @@ open_trade_window(	[
 	],
 	[//t_a[1]
 		[
-			[item.coin,3]
+			[item.coin,2]
 		],
 		[
 			[item.iron_ingot,1]

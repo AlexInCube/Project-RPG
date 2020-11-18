@@ -1,5 +1,4 @@
-function enum_item_names() {
-	enum item
+enum item
 	 {
 		none,
 		apple,
@@ -30,7 +29,5 @@ function enum_item_names() {
 		star_salve,
 		wooden_stick,
 		total
-		}
+	 }
 
-
-}

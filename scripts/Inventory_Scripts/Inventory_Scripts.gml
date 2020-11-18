@@ -1,11 +1,8 @@
-/// @description Modifies a slot in the inventory. Can add and remove items, and set the item.
+/// @description Gain items for the player
 /// @function gain_item(slot, amount);
 /// @param item_id
 /// @param amount
-function gain_item(argument0, argument1) {
-	var item_id    = argument0;
-	var max_amount = argument1;
-	var inv        = global.inventory; 
+function gain_item(item_id, max_amount, inv) {
 	var item_ind   = global.item_index;
 	var total      = item_stat.stackable;
 	var cur_amount = 0
@@ -76,30 +73,26 @@ function check_requirement_item(inventory, item, itemamount) {
 }
 	
 	
-/// @description Grab item from player inventory and send event for quest_listener
-/// @function deliver_items(item,amount)
+/// @description Grab items from player inventory
+/// @function grab_item(item,amount)
 /// @param item_id
 /// @param amount
-function give_item(argument0, argument1) {
-	var inventory = global.inventory
-	var itemneed = argument0
-	var itemamount = argument1
+function grab_item(itemneed,itemamount,inventory) {
 	var findedamount = 0
 
 	for(n=0;n<ds_grid_width(inventory);n++)//Check player inventory
 	{
 		if inventory[# n,0]==itemneed//If slot equal needed item
 		{
-			for (i=0;i<inventory[# n,1];i++)//Get slot item amount and grab item
+			for (i=0;i<=inventory[# n,1];i++)//Get slot item amount and grab item
 			{
 				findedamount+=1
 				inventory[# n,1]-=1
-				if inventory[# n,1] == 0 {inventory[# n,0]=item.none}
 				if findedamount==itemamount
 				{
-					return true
+					if inventory[# n,1] == 0 {inventory[# n,0]=item.none}
 					event_fire([event.deliver,itemneed,itemamount])
-					exit
+					return true
 				}
 			}
 		}
