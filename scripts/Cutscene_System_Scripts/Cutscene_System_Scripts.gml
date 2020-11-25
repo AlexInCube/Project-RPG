@@ -236,9 +236,9 @@ function cutscene_event_perform(argument0, argument1, argument2) {
 ///@description cutscene_start_speak
 ///@arg object_id
 ///@arg instant_end?
-function cutscene_start_speak(argument0,argument1) {
+function cutscene_start_speak(object_id,instant_end) {
 if !instance_exists(obj_textbox) and !instance_exists(obj_textevent){
-		with(argument0){
+		with(object_id){
 			event_user(0)
 			create_dialogue(myText, mySpeaker, myEffects, myTextSpeed, myTypes, myNextLine, myScripts, myTextCol, myEmotion);
 			obj_inventory.inventorylock=true
@@ -247,7 +247,7 @@ if !instance_exists(obj_textbox) and !instance_exists(obj_textevent){
 			event_fire([event.talk,object_index])
 		}
 	}
-	if argument1{
+	if instant_end{
 		cutscene_end_action()
 	}
 }

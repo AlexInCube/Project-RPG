@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 127,
+  "bbox_right": 319,
   "bbox_top": 0,
-  "bbox_bottom": 95,
+  "bbox_bottom": 319,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 128,
-  "height": 128,
+  "width": 320,
+  "height": 320,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,10 +24,9 @@
   "gridX": 32,
   "gridY": 32,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"4ba8be6d-b920-4566-9a5a-1eee40c1bbe9","path":"sprites/spr_home_tileset/spr_home_tileset.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4ba8be6d-b920-4566-9a5a-1eee40c1bbe9","path":"sprites/spr_home_tileset/spr_home_tileset.yy",},"LayerId":{"name":"f881782b-86a0-4d44-8b63-4e1f2d27e4de","path":"sprites/spr_home_tileset/spr_home_tileset.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"4ba8be6d-b920-4566-9a5a-1eee40c1bbe9","path":"sprites/spr_home_tileset/spr_home_tileset.yy",},"LayerId":{"name":"aae67c2a-12df-49e8-a43c-e7eafcbf0fd2","path":"sprites/spr_home_tileset/spr_home_tileset.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_home_tileset","path":"sprites/spr_home_tileset/spr_home_tileset.yy",},"resourceVersion":"1.0","name":"4ba8be6d-b920-4566-9a5a-1eee40c1bbe9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e6a0d832-6d35-43e9-9a3d-f7497fc10814","path":"sprites/spr_home_tileset/spr_home_tileset.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e6a0d832-6d35-43e9-9a3d-f7497fc10814","path":"sprites/spr_home_tileset/spr_home_tileset.yy",},"LayerId":{"name":"bc0d499f-3756-499f-a684-5905e565bed1","path":"sprites/spr_home_tileset/spr_home_tileset.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_home_tileset","path":"sprites/spr_home_tileset/spr_home_tileset.yy",},"resourceVersion":"1.0","name":"e6a0d832-6d35-43e9-9a3d-f7497fc10814","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_home_tileset","path":"sprites/spr_home_tileset/spr_home_tileset.yy",},
@@ -42,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"85e8ef45-ee30-48f5-84fd-bbbbf28b16c6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4ba8be6d-b920-4566-9a5a-1eee40c1bbe9","path":"sprites/spr_home_tileset/spr_home_tileset.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"68d6c6a8-5fb6-4a60-893f-ba4b8aae9245","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e6a0d832-6d35-43e9-9a3d-f7497fc10814","path":"sprites/spr_home_tileset/spr_home_tileset.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -66,8 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f881782b-86a0-4d44-8b63-4e1f2d27e4de","tags":[],"resourceType":"GMImageLayer",},
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"aae67c2a-12df-49e8-a43c-e7eafcbf0fd2","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"bc0d499f-3756-499f-a684-5905e565bed1","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Apatment",

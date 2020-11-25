@@ -208,9 +208,7 @@ function create_saves_map(){
 
 function write_last_played_save(){
 	global.settings.lastsave = global.directory_save
-	ini_open("game_settings.ini")
-	ini_write_string("Other","lastplayedsave",global.settings.lastsave)
-	ini_close()
+	save_settings()
 }
 
 function load_last_player_save(){

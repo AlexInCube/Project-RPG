@@ -7,6 +7,7 @@ function open_inventory() {
 	}else{
 		instance_destroy(inventorywindow)
 	}
+	return inventorywindow
 }
 
 function open_equipment() {

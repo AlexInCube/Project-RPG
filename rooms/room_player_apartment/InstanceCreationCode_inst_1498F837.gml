@@ -9,7 +9,7 @@ t_scene_info = [
 	[cutscene_stop_sound,snd_clock_alarm],
 	[cutscene_change_variable,obj_player,"sprite_index",spr_player_right],
 	[cutscene_create_monologue,"Как же я ненавижу этот будильник!!!"],
-	[cutscene_move_character,obj_player,600,295,false,0.5],
+	[cutscene_move_character,obj_player,600,330,false,0.5],
 	[cutscene_wait,0.1],
 	[cutscene_set_to_default]
 ]

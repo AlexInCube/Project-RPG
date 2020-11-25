@@ -1,8 +1,9 @@
+TODO:
 close combat almost repaired
 make task progress saveable (kills)
+put player stats in struct
 
-
-replaced new game and continue button in main menu
-mob_spawner now spawned mobs every step
-fixed lighting
-settings now stored in structs, which contained in json.
+Already maked:
+added angry pc mob
+added new tileset for player apartment
+fixed settings saving

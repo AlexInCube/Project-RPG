@@ -52,7 +52,7 @@ global.settings = {
 }
 
 
-function savesettings() {
+function apply_settings() {
 	var ds_grid = obj_optionswindow.ds_options
 	var ds_height = ds_grid_height(ds_grid)
 	for(i=0;i<ds_height-1;i++){
@@ -73,10 +73,14 @@ function savesettings() {
 	}
 	
 		
-	var _struct = json_stringify(global.settings)
-	save_string_in_json(_struct,"game_settings.json")
+	save_settings()
 
 	instance_destroy()
+}
+
+function save_settings(){
+	var _struct = json_stringify(global.settings)
+	save_string_in_json(_struct,"game_settings.json")
 }
 
 function load_settings(){

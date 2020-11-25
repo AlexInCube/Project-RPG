@@ -8,7 +8,7 @@ function get_input_key(){
 function get_input() {
 	up = keyboard_check(global.settings.controls.key_up)
 	left = keyboard_check(global.settings.controls.key_left)
-	right = keyboard_check(global.key_right)
+	right = keyboard_check(global.settings.controls.key_right)
 	down = keyboard_check(global.settings.controls.key_down)
 
 	dialogue_scroll_up=keyboard_check_pressed(ord("W"))
