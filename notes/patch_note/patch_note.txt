@@ -2,7 +2,7 @@ close combat almost repaired
 make task progress saveable (kills)
 
 
-time and date in save menu now showed formated
-fix random skipping in dialogue
-added debug console
-trade menu now work
+replaced new game and continue button in main menu
+mob_spawner now spawned mobs every step
+fixed lighting
+settings now stored in structs, which contained in json.

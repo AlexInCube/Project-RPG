@@ -1,4 +1,4 @@
-if keyboard_check_pressed(global.developer_key){
+if keyboard_check_pressed(global.settings.controls.developer_key){
 	DEBUGMODE = !DEBUGMODE
 	var visibility = DEBUGMODE
 	show_debug_overlay(DEBUGMODE)

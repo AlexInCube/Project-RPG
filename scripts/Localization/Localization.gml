@@ -5,7 +5,7 @@ function localization_load() {
 
 		// open the locale file for reading
 		var lang_name = "custom_lang"
-		switch(global.language){
+		switch(global.settings.interface.language){
 			case 0: lang_name = "russian" break
 			case 1: lang_name = "english" break
 		}

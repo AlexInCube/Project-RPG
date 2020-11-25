@@ -207,17 +207,17 @@ function create_saves_map(){
 #endregion
 
 function write_last_played_save(){
-	global.lastsave = global.directory_save
+	global.settings.lastsave = global.directory_save
 	ini_open("game_settings.ini")
-	ini_write_string("Other","lastplayedsave",global.lastsave)
+	ini_write_string("Other","lastplayedsave",global.settings.lastsave)
 	ini_close()
 }
 
 function load_last_player_save(){
-	if file_exists("Saves\\"+global.lastsave+"/playerdata.txt"){
-		global.directory_save = global.lastsave
+	if file_exists("Saves\\"+global.settings.lastsave+"/playerdata.txt"){
+		global.directory_save = global.settings.lastsave
 		start_load()
 	}else{
-		show_message("Save not exists: "+"Saves\\"+global.lastsave+"/playerdata.txt")
+		show_message("Save not exists: "+"Saves\\"+global.settings.lastsave+"/playerdata.txt")
 	}
 }

@@ -6,7 +6,7 @@
     "path": "folders/Objects/Controllers/Main Menu/Options/Options Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_applydeclinebutton",
+  "name": "Settings_Manipulate",
   "tags": [],
   "resourceType": "GMScript",
 }

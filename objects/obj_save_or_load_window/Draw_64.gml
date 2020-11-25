@@ -51,7 +51,7 @@ if !ds_exists(ds_saves,ds_type_map) exit
 				if mouseover(slot_x+ss_w-106,slot_y,slot_x+ss_w-74,slot_y+32){
 					if mouse_check_button_pressed(mb_left){
 						global.directory_save = save_name
-						global.lastsave = global.directory_save
+						global.settings.lastsave = global.directory_save
 						resume_game()//resume game for saving (activate all instances)
 						save_game()
 						exit
@@ -63,7 +63,7 @@ if !ds_exists(ds_saves,ds_type_map) exit
 			if mouseover(slot_x+ss_w-70,slot_y,slot_x+ss_w-34,slot_y+32){
 				if mouse_check_button_pressed(mb_left){
 					global.directory_save = save_name
-					global.lastsave = global.directory_save
+					global.settings.lastsave = global.directory_save
 					start_load()
 					exit
 				}

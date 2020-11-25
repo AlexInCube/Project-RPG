@@ -36,7 +36,7 @@ function applydamage() {
 
 
 	if showdmg = true/* and target.object_index != obj_bush*/{
-		if global.showdamage = true{
+		if global.settings.interface.showdamage = true{
 		var showdmg = instance_create_layer(target.x,target.y,"Text",obj_show_damage)
 			showdmg.damage = damage
 			showdmg.xx=argument[4]
