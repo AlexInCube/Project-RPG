@@ -17,7 +17,7 @@ if !ds_exists(ds_saves,ds_type_map) exit
 		slot_y = window_y+10+((5+ss_h)*yy)
 
 		//If game paused, we can save it, so create NEW SAVE button
-		if instance_exists(obj_pause) and yy == 0
+		if saving = true and yy == 0
 		{
 			var mouse_over_slot = mouseover(slot_x,slot_y,slot_x+ss_w,slot_y+ss_h)
 			draw_nine_slice_box(spr_save_slot,slot_x,slot_y,slot_x+ss_w,slot_y+ss_h,mouse_over_slot)
@@ -46,7 +46,7 @@ if !ds_exists(ds_saves,ds_type_map) exit
 			//Save slot background
 			draw_nine_slice_box(spr_save_slot,slot_x,slot_y,slot_x+ss_w,slot_y+ss_h,mouse_over_slot)
 			//Resave Button (appear only in Pause Menu)
-			if instance_exists(obj_pause){
+			if saving = true{
 				draw_sprite(spr_resave_button,0,slot_x+ss_w-106,slot_y)
 				if mouseover(slot_x+ss_w-106,slot_y,slot_x+ss_w-74,slot_y+32){
 					if mouse_check_button_pressed(mb_left){

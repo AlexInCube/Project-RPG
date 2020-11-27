@@ -1,6 +1,6 @@
 switch(state){
 	case "up": 
-		depth=-y
+		depth=-bbox_bottom
 		td += 1
 		image_angle += spin
 		if td_max <= td{
@@ -8,7 +8,7 @@ switch(state){
 		}
 	break
 	case "down": 
-		depth=-y
+		depth=-bbox_bottom
 		td -= 1
 		if td = 0{
 			state = "rest"

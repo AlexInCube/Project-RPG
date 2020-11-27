@@ -145,11 +145,11 @@ function load_game() {
 		for(var i=0; i<ds_list_size(list);i++){
 			var map = list[| i]
 			var obj = map[? "obj"]
-
-			with(obj){
+			
+			with(asset_get_index(obj))
+			{
 				CallUserEvent(15,map)
 			}
-		
 		}
 		show_debug_message("Room loaded: "+file_path)
 		ds_map_destroy(wrapper)
@@ -162,11 +162,19 @@ function load_game() {
 
 #region /* Save/Load Window */
 
-//Create save selecting window
-function select_slot(){
+///@description Create save selecting window
+///@function open_save_window([show_save_button?])
+///@param [show_save_button?]
+function open_save_window(){
+	var show_save_button = false
+	if argument_count >= 1{
+		show_save_button = argument0
+	}
 	menustate = menu_state.window_load_save
 	if !instance_exists(obj_save_or_load_window){
-		instance_create_depth(0,0,0,obj_save_or_load_window)
+		with instance_create_depth(0,0,0,obj_save_or_load_window){
+			saving = show_save_button
+		}
 	}
 }
 

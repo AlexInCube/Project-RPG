@@ -28,11 +28,6 @@ applyword=find_keyword("apply_settings")
 declineword=find_keyword("decline_settings")
 set_to_defaultword=find_keyword("set_to_default")
 
-///@description applydeclinebutton(x,y,txt,script)
-///@arg xx
-///@arg yy
-///@arg txt
-///@arg script
 function applydeclinebutton(xx,yy,txt,script) {
 	var mouseover = false
 	var sprite = spr_optionsapply

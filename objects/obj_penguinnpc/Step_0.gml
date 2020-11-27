@@ -1,2 +1,2 @@
 event_inherited()
-depth=-y
+depth=-bbox_bottom

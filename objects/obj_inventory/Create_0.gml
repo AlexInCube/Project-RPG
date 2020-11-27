@@ -1,5 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+
+
 global.inventory = ds_grid_create(15, 2); //Player inventory//Width - slot amount, height - unique parameters for itemstack (0 - item contained, 1 - itemstack amount)
 ds_grid_clear(global.inventory, 0);
 global.equipment = ds_grid_create(5, 2); //Player equipment

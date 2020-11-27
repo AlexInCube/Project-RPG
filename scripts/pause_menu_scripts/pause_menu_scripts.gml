@@ -4,6 +4,9 @@ function start_load(){
 	global.load_state = load_state.init_game
 	room_goto(room_game_init)
 }
+function pause_game(){
+	instance_create_layer(0,0,"Controllers",obj_pause)
+}
 
 //Destroy obj_pause and resume game
 function resume_game(){
@@ -11,6 +14,7 @@ function resume_game(){
 	with(obj_pause)instance_destroy()
 	instance_activate_all()
 	audio_resume_all()
+	io_clear()
 }
 
 function fast_save_game(){

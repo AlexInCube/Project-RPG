@@ -40,6 +40,7 @@
   "name": "obj_nikitanpc",
   "tags": [
     "saveable",
+    "interact",
   ],
   "resourceType": "GMObject",
 }

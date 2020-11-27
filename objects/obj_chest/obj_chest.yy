@@ -41,6 +41,8 @@
   },
   "resourceVersion": "1.0",
   "name": "obj_chest",
-  "tags": [],
+  "tags": [
+    "interact",
+  ],
   "resourceType": "GMObject",
 }

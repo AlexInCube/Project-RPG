@@ -1,0 +1,47 @@
+{
+  "spriteId": {
+    "name": "spr_campfire",
+    "path": "sprites/spr_campfire/spr_campfire.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "spriteMaskId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "obj_wall",
+    "path": "objects/obj_wall/obj_wall.yy",
+  },
+  "physicsObject": true,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsGroup": 1,
+  "physicsDensity": 0.0,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [
+    {"x":9.0,"y":25.0,},
+    {"x":23.0,"y":25.0,},
+    {"x":23.0,"y":31.0,},
+    {"x":9.0,"y":31.0,},
+  ],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_campfire","path":"objects/obj_campfire/obj_campfire.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_campfire","path":"objects/obj_campfire/obj_campfire.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [],
+  "overriddenProperties": [],
+  "parent": {
+    "name": "Game Objects",
+    "path": "folders/Objects/Game Objects.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "obj_campfire",
+  "tags": [
+    "interact",
+  ],
+  "resourceType": "GMObject",
+}

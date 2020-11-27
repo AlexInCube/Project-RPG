@@ -1,6 +1,4 @@
-depth=-y
-
-if obj_controller.interact_key{
+function NPCinteract(){
 	if instance_exists(obj_player){
 		var dr = detection_radius;
 		if(point_in_rectangle(playerobject.x, playerobject.y, x-dr, y-dr, x+dr, y+dr)){

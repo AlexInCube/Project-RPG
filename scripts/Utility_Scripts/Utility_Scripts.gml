@@ -11,6 +11,18 @@ function with_tagged(tag, lambda) {
 		}
 	}
 }
+/// @function is_tagged(tag, obj_id)
+/// @param tag
+/// @param obj_id
+function is_tagged(tag, obj_id) {
+	var tags = asset_get_tags(obj_id.object_index,asset_object)
+	for (var i = 0; i < array_length(tags); i++) {
+		if tags[i] == tag {
+			return true
+		}
+	}
+	return false
+}
 ///@description CallUserEvent(eventNum, args)
 ///@param eventNumber
 ///@param args

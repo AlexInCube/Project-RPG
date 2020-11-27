@@ -1,6 +1,7 @@
 depth =-100
 ds_saves = ds_map_create()//Contain saves name folder
 create_saves_map()
+saving = false//if false, show only load and delete buttons. if true, show also save button.
 
 drawelementstart = 0//Start drawing ds_list from position
 drawelementheight = round((GUIHEIGHT-20)/(sprite_get_height(spr_save_slot)+21))-1

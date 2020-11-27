@@ -2,8 +2,15 @@ TODO:
 close combat almost repaired
 make task progress saveable (kills)
 put player stats in struct
+replace script_execute_alt -> script_execute_ext
+improve item description drawing
+saving non-unique objects
+auto-saving
+distribute localization by folder
 
-Already maked:
-added angry pc mob
-added new tileset for player apartment
-fixed settings saving
+
+Already maked in this version:
+fixed "set to default" button in settings
+reworked interacting on "interact_key"
+added campfire for saving (removed manual saving from pause)
+fixed depth calculation
