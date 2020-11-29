@@ -179,15 +179,14 @@ function open_save_window(){
 }
 
 //Update saves list
-function create_saves_map(){
+function create_saves_list(){
 	//Reload Save List
-	if ds_exists(ds_saves,ds_type_map){
-		ds_map_destroy(ds_saves)
-		ds_saves = ds_map_create()
+	if ds_exists(ds_saves,ds_type_list){
+		ds_list_destroy(ds_saves)
+		ds_saves = ds_list_create()
 	}else{
-		ds_saves = ds_map_create()
+		ds_saves = ds_list_create()
 	}
-
     var file = file_find_first("Saves\\*",fa_directory)
 	while(file != ""){
 		if file_exists("Saves\\"+file+"/playerdata.txt"){
@@ -199,15 +198,15 @@ function create_saves_map(){
 			var saving_time_ds_list = save_data[? "saving_time"]
 			var c_array = [saving_time_ds_list[| 0],saving_time_ds_list[| 1],saving_time_ds_list[| 2],saving_time_ds_list[| 3],saving_time_ds_list[| 4]]
 			
-			ds_map_add(ds_saves,file,[c_array,save_data[? "game_version"]])	
-			ds_map_destroy(save_data)
+			ds_list_add(ds_saves,[file,c_array,save_data[? "game_version"]])	
+			ds_list_destroy(save_data)
 		}
 
 		file = file_find_next();
 	}
 	file_find_close()
 	
-	ds_size = ds_map_size(ds_saves)
+	ds_size = ds_list_size(ds_saves)
 }
 
 

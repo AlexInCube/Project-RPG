@@ -48,6 +48,7 @@ function clear_app(){
 	with(obj_inventory)instance_destroy()
 	with(obj_questmanager)instance_destroy()
 	with(obj_questlistener)instance_destroy()
+	destroy_all_windows()
 	ds_map_clear(global.eventMap)
 	audio_stop_all()
 }

@@ -3,6 +3,7 @@
     {"id":{"name":"spr_player_down","path":"sprites/spr_player_down/spr_player_down.yy",},"order":0,},
     {"id":{"name":"spr_player_up","path":"sprites/spr_player_up/spr_player_up.yy",},"order":1,},
     {"id":{"name":"spr_player_left","path":"sprites/spr_player_left/spr_player_left.yy",},"order":3,},
+    {"id":{"name":"spr_rename_save_button","path":"sprites/spr_rename_save_button/spr_rename_save_button.yy",},"order":6,},
     {"id":{"name":"sh_death_effect","path":"shaders/sh_death_effect/sh_death_effect.yy",},"order":0,},
     {"id":{"name":"spr_delete_save_button","path":"sprites/spr_delete_save_button/spr_delete_save_button.yy",},"order":5,},
     {"id":{"name":"spr_player_right","path":"sprites/spr_player_right/spr_player_right.yy",},"order":2,},
