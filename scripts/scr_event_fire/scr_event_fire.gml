@@ -24,7 +24,7 @@ function event_fire() {
 					if instance_exists(listener){
 						args = array_create(lenArgs,0)
 						array_copy(args,0,listenerInfo,2,lenArgs)
-						with(listener) unregister = script_execute_alt(script, args)
+						with(listener) unregister = script_execute_ext(script, args)
 					} else unregister = true
 				}
 			

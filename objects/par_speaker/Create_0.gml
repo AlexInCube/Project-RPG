@@ -1,7 +1,7 @@
 depth=-bbox_bottom
 //-----------Customise (FOR USER)
 playerobject = obj_player;
-detection_radius = 32;
+interact_radius = 32;
 
 myVoice			= snd_voice;
 myPortrait		= -1;
@@ -13,8 +13,7 @@ reset_dialogue_defaults();
 
 function interact(){
 	if instance_exists(obj_player){
-		var dr = detection_radius;
-		if(point_in_rectangle(playerobject.x, playerobject.y, x-dr, y-dr, x+dr, y+dr)){
+
 			if(myTextbox != noone){ 
 				if(!instance_exists(myTextbox)){ myTextbox = noone; exit; }
 			}
@@ -37,4 +36,3 @@ function interact(){
 			}
 		}
 	}
-}

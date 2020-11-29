@@ -2,15 +2,14 @@ TODO:
 close combat almost repaired
 make task progress saveable (kills)
 put player stats in struct
-replace script_execute_alt -> script_execute_ext
 improve item description drawing
 saving non-unique objects
-auto-saving
 distribute localization by folder
-
+item quick use
 
 Already maked in this version:
-fixed "set to default" button in settings
-reworked interacting on "interact_key"
-added campfire for saving (removed manual saving from pause)
-fixed depth calculation
+auto-saving when player moving between rooms
+removed fast save from pause
+replaced script_execute_alt -> script_execute_ext
+added interact_radius for better behavior interactable objects
+the chest now stores its contents

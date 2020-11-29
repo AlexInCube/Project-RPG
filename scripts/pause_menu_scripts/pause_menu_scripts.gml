@@ -17,11 +17,6 @@ function resume_game(){
 	io_clear()
 }
 
-function fast_save_game(){
-	instance_activate_all()
-	with(obj_pause)alarm[1]=1
-}
-
 //Exit to main menu from pause
 function exit_to_main_menu(){
 	//Exit to main menu

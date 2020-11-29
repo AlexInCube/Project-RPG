@@ -13,7 +13,7 @@ function draw_button_hud(xx,yy,x2,y2,sprite,script) {
 		subimage = 1
 		if mouse_check_button_pressed(mb_left)
 		{
-			script_execute_alt(script)
+			script_execute_ext(script)
 		}
 	}else subimage = 0
 
