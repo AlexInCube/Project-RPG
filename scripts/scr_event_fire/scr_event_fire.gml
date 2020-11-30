@@ -13,7 +13,7 @@ function event_fire() {
 				listener = listenerInfo[0]
 				script = listenerInfo[1]
 			
-				var lenArgs = array_length_1d(listenerInfo)-2
+				var lenArgs = array_length(listenerInfo)-2
 				var unregister = false
 			
 				if(lenArgs <= 0){

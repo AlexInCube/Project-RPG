@@ -10,9 +10,9 @@ charCount_f		= 0;
 effects_p		= effects[page];
 text_col_p		= text_col[page];
 
-text_speed_al	= array_length_1d(text_speed[page])/2;
-effects_al		= array_length_1d(effects[page])/2;
-text_col_al		= array_length_1d(text_col[page])/2;
+text_speed_al	= array_length(text_speed[page])/2;
+effects_al		= array_length(effects[page])/2;
+text_col_al		= array_length(text_col[page])/2;
 
 if(portrait[page] == -1){
 	pos_x			= (gb_diff/2);

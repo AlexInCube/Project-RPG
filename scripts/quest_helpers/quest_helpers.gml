@@ -71,7 +71,7 @@ function quest_get_count(questid) {
 */
 function quest_get_task_amount(questid) {
 	var stagearray = obj_questmanager.ds_quests[# 4,questid]//Link to array with tasks
-	var tasklength = array_length_1d(stagearray)-1
+	var tasklength = array_length(stagearray)-1
 	return tasklength
 }
 

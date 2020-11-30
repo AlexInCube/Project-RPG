@@ -10,7 +10,7 @@ function add_quest(argument0) {
 	with obj_questmanager
 	{
 		var grid_height = ds_grid_height(ds_quests),grid_width = ds_grid_width(ds_quests)
-		ds_grid_resize(ds_quests,grid_width+array_length_1d(quest)+1,grid_height+1)//TODO:rewrite to avoid memory leak
+		ds_grid_resize(ds_quests,grid_width+array_length(quest)+1,grid_height+1)//TODO:rewrite to avoid memory leak
 	
 		ds_quests[# 0,grid_height] = name
 		ds_quests[# 1,grid_height] = description
