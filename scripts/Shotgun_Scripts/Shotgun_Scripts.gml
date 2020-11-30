@@ -75,7 +75,7 @@ function shotgun_step() {
 						var yforce = lengthdir_y(18,mouse_dir)
 						with dmg
 						{
-							physics_apply_local_impulse(x,y,xforce+(-4+i),yforce+(-4+i))
+							physics_apply_impulse(x,y,xforce+(-4+i),yforce+(-4+i))
 							if obj_player_stats.phys_damage>0
 							{
 								damage = obj_player_stats.phys_damage

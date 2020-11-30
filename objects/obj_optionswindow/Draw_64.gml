@@ -173,7 +173,7 @@ var yy = 0; for(i=drawelementstart;i<drawelementstart+drawelementheight;i++){
 	yy++
 }
 
-applydeclinebutton(window_x+20,window_y+window_height-24,applyword,savesettings)//Apply Settings
+applydeclinebutton(window_x+20,window_y+window_height-24,applyword,apply_settings)//Apply Settings
 applydeclinebutton(window_x+150,window_y+window_height-24,declineword,declinesettings)//Decline Settings
 applydeclinebutton(window_x+280,window_y+window_height-24,set_to_defaultword,settodefault)//Reset settings
 

@@ -2,10 +2,11 @@ function wooden_stick_create() {
 	attacked=false
 	attack_speed=1.2
 	
+	weapon_step_script=wooden_stick_tick
 }
 
 function wooden_stick_tick() {
-	if obj_controller.attack_key and attacked=false and obj_player.state!=attack_state{
+	if obj_controller.attack_key and obj_player.state != attack_state{ 
 		obj_player.image_index=0
 		obj_player.state = attack_state;
 
@@ -27,12 +28,12 @@ function wooden_stick_tick() {
 				obj_player.sprite_index = spr_player_attack_right
 				break
 		}
-
-		if obj_player.image_index>=3
-		{
+		
+	}else if obj_player.image_index>=3{
 			var xx=0
 			var yy=0
-			switch(obj_player.sprite_index){
+			with(obj_player){
+			switch(sprite_index){
 			case spr_player_attack_down:
 				xx = x
 				yy = y+17
@@ -66,11 +67,7 @@ function wooden_stick_tick() {
 				damage.damage = obj_player_stats.magic_damage
 				damage.damagetype = MAGICDAMAGETYPE
 			}
-	
-	
-			attacked=true
+			}
 		}
 	}
 
-
-}

@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Options Sprites",
-    "path": "folders/Objects/Controllers/Main Menu/Options/Options Sprites.yy",
+    "path": "folders/Objects/Controllers/Options/Options Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_sliderbackground",

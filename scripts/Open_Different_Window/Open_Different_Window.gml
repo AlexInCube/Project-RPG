@@ -7,6 +7,7 @@ function open_inventory() {
 	}else{
 		instance_destroy(inventorywindow)
 	}
+	return inventorywindow
 }
 
 function open_equipment() {
@@ -25,5 +26,16 @@ function open_quest_list() {
 		questlistwindow=create_window(questlist_window_x,questlist_window_y,obj_questlistwindow)
 	}else{
 		instance_destroy(questlistwindow)
+	}
+}
+
+function open_trade_window(trade_arr){
+	if !instance_exists(obj_tradewindow){
+		with create_window((GUIWIDTH/2)-150,(GUIHEIGHT/2)-124,obj_tradewindow){
+			trade_array = trade_arr
+			event_user(0)
+		}
+	}else{
+		instance_destroy(obj_tradewindow)
 	}
 }

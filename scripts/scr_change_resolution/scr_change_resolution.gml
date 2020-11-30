@@ -16,11 +16,11 @@ function change_resolution(argument0) {
 			case 1: str_h = string_insert(char,str_h,string_width(str_h)-1) break
 		}
 	}
-	global.width=real(str_w)
-	global.height=real(str_h)
-	window_set_size(global.width,global.height)
-	change_gui_size(global.guisize)
-	surface_resize(application_surface,global.width,global.height);
+	global.settings.video.width=real(str_w)
+	global.settings.video.height=real(str_h)
+	window_set_size(global.settings.video.width,global.settings.video.height)
+	change_gui_size(global.settings.interface.guisize)
+	surface_resize(application_surface,global.settings.video.width,global.settings.video.height);
 	alarm[0]=1
 
 	GUIWIDTH=display_get_gui_width()

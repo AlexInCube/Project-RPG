@@ -27,7 +27,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Options",
-    "path": "folders/Objects/Controllers/Main Menu/Options.yy",
+    "path": "folders/Objects/Controllers/Options.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_optionswindow",

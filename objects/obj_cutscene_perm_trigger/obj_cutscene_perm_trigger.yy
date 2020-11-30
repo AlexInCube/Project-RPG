@@ -40,7 +40,6 @@
   "tags": [
     "triggers",
     "cutscene_trigger",
-    "saveable",
   ],
   "resourceType": "GMObject",
 }

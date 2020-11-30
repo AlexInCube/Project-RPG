@@ -17,3 +17,7 @@ function open_settings() {
 		instance_destroy(obj_optionswindow)
 	}
 }
+
+function open_creators(){
+	show_message("Этот прототип создал AlexInCube")
+}

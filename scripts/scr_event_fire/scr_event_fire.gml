@@ -1,12 +1,9 @@
 ///@description event_fire
 ///@arg event
 function event_fire() {
-
-
 		var ev = string(argument[0])
 		if(ds_map_exists(global.eventMap,ev)){
 			var listenerList = global.eventMap[? ev]
-		
 			var len = ds_list_size(listenerList)
 		
 			var listenerInfo, listener, script, args
@@ -27,7 +24,7 @@ function event_fire() {
 					if instance_exists(listener){
 						args = array_create(lenArgs,0)
 						array_copy(args,0,listenerInfo,2,lenArgs)
-						with(listener) unregister = script_execute_alt(script, args)
+						with(listener) unregister = script_execute_ext(script, args)
 					} else unregister = true
 				}
 			
@@ -41,10 +38,4 @@ function event_fire() {
 			}
 			show_debug_message("Event Fired: "+string(ev))
 		}
-
-
-
-
-
-
 }

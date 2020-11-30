@@ -1,6 +1,4 @@
-function enum_item_type() {
-
-	enum item_type
+enum item_type
 	 {
 	 none,
 	 weapon,
@@ -14,7 +12,4 @@ function enum_item_type() {
 	 potion,
 	 spell,
 	 other
-	 }
-
-
 }

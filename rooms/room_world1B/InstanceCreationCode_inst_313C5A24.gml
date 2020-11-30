@@ -1,0 +1,1 @@
+trigger_event = [event.trigger,"playernearnikita"]

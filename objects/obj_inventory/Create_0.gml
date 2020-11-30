@@ -1,5 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+
+
 global.inventory = ds_grid_create(15, 2); //Player inventory//Width - slot amount, height - unique parameters for itemstack (0 - item contained, 1 - itemstack amount)
 ds_grid_clear(global.inventory, 0);
 global.equipment = ds_grid_create(5, 2); //Player equipment
@@ -16,10 +16,11 @@ drawitemtooltip = surface_create(GUIWIDTH,GUIHEIGHT)
 
 event_register([event.inventory_slot_clicked,global.equipment],id,recalculate_stats,global.equipment)
 
-//gain_item(item.wooden_stick,1)
+gain_item(item.small_health_potion, 10, global.inventory)
+gain_item(item.wooden_stick,1, global.inventory)
 //gain_item(item.shotgun, 1)
 /*
-gain_item(item.small_health_potion, 10)
+
 gain_item(item.small_mana_potion, 8)
 gain_item(item.iron_helmet, 1)
 

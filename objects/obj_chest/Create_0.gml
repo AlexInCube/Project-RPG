@@ -1,7 +1,17 @@
-/// @description Insert description here
-// You can write your code in this editor
-guiid=0
+guiid=noone
 chestname="Chest"
-findradius=30
-chestinventory = ds_grid_create(15, 2); 
+slots_quantity = 15
+chestinventory = ds_grid_create(slots_quantity, 2); 
 ds_grid_clear(chestinventory,0)
+
+
+interact_radius = 16
+function interact(){
+	if instance_exists(guiid){instance_destroy(guiid)}
+	guiid=create_window(300,300,obj_inventorywindow)
+	with(guiid){
+		event_user(0)
+	}
+	guiid.window_name = chestname
+	guiid.inventory = chestinventory
+}

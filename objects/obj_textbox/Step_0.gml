@@ -2,7 +2,7 @@
 
 #region TYPE 0: NORMAL
 if(type[page] == 0){
-	if obj_controller.interact_key or mouse_check_button_pressed(mb_left){
+	if obj_controller.interact_key or mouse_check_button_released(mb_left){
 
 		//If we haven't "typed out" all the letters, immediately "type out" all letters (works as a "skip")
 		if(charCount < str_len){
@@ -28,7 +28,7 @@ if(type[page] == 0){
 else {
 	if(chosen) exit;
 
-	if obj_controller.interact_key or mouse_check_button_pressed(mb_left){ 
+	if obj_controller.interact_key or mouse_check_button_released(mb_left){ 
 		chosen = true; 
 		alarm[2] = 30; 
 		audio_play_sound(select_snd_effect, priority_snd_effect, false);

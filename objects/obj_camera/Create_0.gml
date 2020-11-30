@@ -5,10 +5,13 @@ enum camera_mode{
 	move_to_follow_object,
 }
 
+#macro DEFAULT_CAMERA_MODE change_camera_mode(camera_mode.follow_object,obj_player)
+#macro MOVE_TO_PLAYER_CAMERA_MODE change_camera_mode(camera_mode.move_to_follow_object,obj_player,0.1)
+
 #macro camera view_camera[0]
 
 //Camera mode
-mode = camera_mode.follow_mouse_peek
+mode = camera_mode.follow_object
 //Move to follow object
 default_camera_speed = 1
 camera_speed = default_camera_speed//Camera speed (speed range must be 0.00 to 1.00)

@@ -1,9 +1,15 @@
 /// @description One-time object, calling only if game start.
 randomize()
 
-load_settings()//Load volume, controlls and other settings
+setup_default_settings()//Load volume, controlls and other settings
+load_settings()
+
 global.window_list=ds_list_create()//For window system
+if file_exists("Saves\\"+global.settings.lastsave+"/playerdata.txt"){
+global.directory_save=global.settings.lastsave//Current saving for loading
+}else{
 global.directory_save="rpgsave"//Current saving for loading
+}
 
 if !directory_exists("Saves"){
 	directory_create("Saves")

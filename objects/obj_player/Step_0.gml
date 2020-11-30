@@ -6,6 +6,4 @@ if (obj_player_stats.hp <= 0) {
 		obj_player_corpse.killer=obj_player_stats.last_hit
 	}
 }
-
-
-depth = -y
+depth=-bbox_bottom

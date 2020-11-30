@@ -1,28 +1,20 @@
-/// @description heal(heal,target,healinpercentage?);
-/// @function heal
+/// @description Healing lifeform parent
+/// @function heal(heal,target,healinpercentage?);
 /// @param heal
 /// @param target
 /// @param healinpercentage?
-function heal(argument0, argument1, argument2) {
-
-	var heal = argument0
-	var target = argument1
-	var healperc = argument2
-
-
+function heal(heal_amount,target,healperc) {
 	if healperc = true
 	{
-		if heal>100{heal = 100}
-		target.hp+=(target.max_hp/100)*heal
+		if heal_amount>100{heal_amount = 100}
+		target.hp+=(target.max_hp/100)*heal_amount
 	}
 	else
 	{
-		target.hp+=heal
+		target.hp+=heal_amount
 	}
 	if target.hp>target.max_hp
 	{
 		target.hp=target.max_hp
 	}
-
-
 }

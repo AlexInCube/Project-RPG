@@ -1,6 +1,6 @@
 reset_dialogue_defaults();
 
-change_camera_mode(camera_mode.move_to_follow_object,id)
+change_camera_mode(camera_mode.move_to_follow_object,id,0.1)
 switch(choice_variable){
 	case -1:
 	#region First Dialogue
@@ -182,10 +182,17 @@ switch(choice_variable){
 		mySpeaker[i]	= id;
 		//Line 16
 		i++
-		myText[i]		= ["У меня нет слизи","У меня есть слизь, но я тебе её не дам.","Зачем она тебе?","Забирай"];
-		myNextLine[i]	= [17,18,20,29]
-		myTypes[i]		= 1
-		mySpeaker[i]	= obj_player;
+		if !check_requirement_item(global.inventory,item.slime,1){
+			myText[i]		= ["У меня нет слизи"];
+			myNextLine[i]	= [17,20]
+			myTypes[i]		= 1
+			mySpeaker[i]	= obj_player;
+		}else{
+			myText[i]		= ["У меня нет слизи","У меня есть слизь, но я тебе её не дам.","Зачем она тебе?","Забирай"];
+			myNextLine[i]	= [17,18,20,30]
+			myTypes[i]		= 1
+			mySpeaker[i]	= obj_player;
+		}
 		//Line 17
 		i++
 		myText[i]		= "Тогда иди поубивай ещё слизней"
@@ -208,7 +215,7 @@ switch(choice_variable){
 		mySpeaker[i]	= id;
 		//Line 21
 		i++
-		myText[i]		= "А вообщем не важно."
+		myText[i]		= "А вообщем не важно зачем."
 		mySpeaker[i]	= id;
 		//Line 22
 		i++
@@ -234,7 +241,7 @@ switch(choice_variable){
 		//Line 26
 		i++
 		myText[i]		= ["Я согласен на мазь","Я согласен на монетку","Я лучше оставлю слизь себе","Что за мазь?"]
-		myNextLine[i]	= [27,28,25,29]
+		myNextLine[i]	= [27,28,25,30]
 		myTypes[i]		= 1
 		mySpeaker[i]	= obj_player;
 		//Line 27
@@ -396,6 +403,9 @@ switch(choice_variable){
 		//Line 0
 		myText[i]		= "ОТДАЙ МНЕ СЛИЗЬ";
 		mySpeaker[i]	= id;
+		if !check_requirement_item(global.inventory,item.slime,1){
+			break
+		}
 		//Line 2
 		i++
 		myText[i]		= ["Отдать","Оставить себе"]

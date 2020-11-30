@@ -1,16 +1,16 @@
 ///@description change_gui_size
 ///@arg guisize
 function change_gui_size() {
-	var display_height=global.height,display_width=global.width
+	var display_height=global.settings.video.height,display_width=global.settings.video.width
 	var ideal_width=1280;
 	var ideal_height=720;
 
 
 	if argument_count == 1{
-		global.guisize=argument[0];
+		global.settings.interface.guisize=argument[0];
 	}else{
 		if argument_count == 2{
-		global.guisize=argument[1]; 
+		global.settings.interface.guisize=argument[1]; 
 		}
 	}
 
@@ -25,12 +25,12 @@ function change_gui_size() {
 	if(display_width mod ideal_width != 0)
 	{
 	  var d = round(display_width/ideal_width);
-	  ideal_width=(display_width/d)/global.guisize;
+	  ideal_width=(display_width/d)/global.settings.interface.guisize;
 	}
 	if(display_height mod ideal_height != 0)
 	{
 	  var d = round(display_height/ideal_height);
-	  ideal_height=(display_height/d)/global.guisize;
+	  ideal_height=(display_height/d)/global.settings.interface.guisize;
 	}
 	/*
 	//Check for odd numbers

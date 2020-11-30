@@ -1,6 +1,6 @@
 ///@description General in-game controller for getting keyboard input, checking window
 //crossing, draw HUD buttons and loading game.
-
+#macro INTERACT "interact"//Macro for asset tag
 
 get_input()//Set/get input from player 
 

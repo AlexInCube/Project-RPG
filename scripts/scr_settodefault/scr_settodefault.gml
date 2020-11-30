@@ -1,10 +1,7 @@
 function settodefault() {
-	if file_exists("game_settings.ini"){
-	file_delete("game_settings.ini")
-	}
-	load_settings()
+	setup_default_settings()//Setup default struct
 
-	with obj_optionswindow{
+	with obj_optionswindow{//Apply all settings
 		var ds_grid = ds_options
 		ds_grid_destroy(ds_options)
 		create_ds_grid_settings()
@@ -26,7 +23,7 @@ function settodefault() {
 		}
 	}
 	}
-
-
-
+	
+	open_settings()//Destroy settings window
+	open_settings()//Open Settings Window
 }

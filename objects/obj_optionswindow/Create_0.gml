@@ -27,3 +27,21 @@ input_button_half_width=sprite_get_width(spr_control_button)/2
 applyword=find_keyword("apply_settings")
 declineword=find_keyword("decline_settings")
 set_to_defaultword=find_keyword("set_to_default")
+
+function applydeclinebutton(xx,yy,txt,script) {
+	var mouseover = false
+	var sprite = spr_optionsapply
+	var sprwidth = sprite_get_width(sprite)
+	var sprheight = sprite_get_height(sprite)
+	if mouseover(xx,yy,xx+sprwidth,yy+sprheight){
+		mouseover = true
+		if mouse_check_button_pressed(mb_left){
+			script_execute(script)
+		}
+	}
+	draw_sprite(sprite,mouseover,xx,yy)
+	draw_set_halign(fa_center)
+	draw_set_valign(fa_middle)
+	var c = c_white
+	draw_text_color(xx+sprwidth/2,yy+sprheight/2,txt,c,c,c,c,1)
+}

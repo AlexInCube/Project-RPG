@@ -22,6 +22,4 @@ function create_menu_page() {
 	}
 
 	return ds_grid_id
-
-
 }

@@ -4,6 +4,9 @@ function start_load(){
 	global.load_state = load_state.init_game
 	room_goto(room_game_init)
 }
+function pause_game(){
+	instance_create_layer(0,0,"Controllers",obj_pause)
+}
 
 //Destroy obj_pause and resume game
 function resume_game(){
@@ -11,11 +14,7 @@ function resume_game(){
 	with(obj_pause)instance_destroy()
 	instance_activate_all()
 	audio_resume_all()
-}
-
-function fast_save_game(){
-	instance_activate_all()
-	with(obj_pause)alarm[1]=1
+	io_clear()
 }
 
 //Exit to main menu from pause
@@ -49,6 +48,7 @@ function clear_app(){
 	with(obj_inventory)instance_destroy()
 	with(obj_questmanager)instance_destroy()
 	with(obj_questlistener)instance_destroy()
-	
+	destroy_all_windows()
+	ds_map_clear(global.eventMap)
 	audio_stop_all()
 }

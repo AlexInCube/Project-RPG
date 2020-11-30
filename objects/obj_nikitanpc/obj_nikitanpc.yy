@@ -27,6 +27,8 @@
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_nikitanpc","path":"objects/obj_nikitanpc/obj_nikitanpc.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_nikitanpc","path":"objects/obj_nikitanpc/obj_nikitanpc.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"parent":{"name":"obj_nikitanpc","path":"objects/obj_nikitanpc/obj_nikitanpc.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":25,"eventType":7,"collisionObjectId":null,"parent":{"name":"obj_nikitanpc","path":"objects/obj_nikitanpc/obj_nikitanpc.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":24,"eventType":7,"collisionObjectId":null,"parent":{"name":"obj_nikitanpc","path":"objects/obj_nikitanpc/obj_nikitanpc.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -36,6 +38,9 @@
   },
   "resourceVersion": "1.0",
   "name": "obj_nikitanpc",
-  "tags": [],
+  "tags": [
+    "saveable",
+    "interact",
+  ],
   "resourceType": "GMObject",
 }

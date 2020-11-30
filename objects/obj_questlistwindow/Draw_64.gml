@@ -5,6 +5,7 @@ draw_sprite(window_sprite,0,window_x,window_y-22)
 
 var ds_height = ds_grid_height(obj_questmanager.ds_quests)
 
+//Draw quest list
 if selectedquest==noone{
 	draw_set_halign(fa_middle)
 	draw_set_valign(fa_top)
@@ -24,9 +25,8 @@ if selectedquest==noone{
 				}
 				if mouse_check_button_pressed(mb_right){
 					with(obj_questmanager){
-					tracking_quest=i
-					tq_name=string(quest_get_name(tracking_quest))
-					tq_desc=quest_get_short_description_for_task(tracking_quest,global.ds_current_quests[? string(tracking_quest)])
+						tracking_quest=i
+						tracking_update(tracking_quest)
 					}
 				}
 			}
@@ -38,7 +38,7 @@ if selectedquest==noone{
 		}
 		i++
 	}
-}else{
+}else{//Draw selected quest
 	draw_set_halign(fa_middle)
 	draw_set_valign(fa_top)
 	draw_set_color(c_black)
@@ -53,7 +53,7 @@ if selectedquest==noone{
 		var starty = window_y+56
 		var c = c_black
 		var taskarray = quest_get_tasks_array(selectedquest)
-		draw_text_color(startx+24,starty+(24*i),taskarray[i],c,c,c,c,1)
+		draw_text_color(startx+24,starty+(24*i),taskarray[i]+" "+quest_return_progress_string(selectedquest),c,c,c,c,1)
 		if i != quest_get_current_stage(selectedquest){
 		draw_sprite(spr_task_done,1,startx,starty+(24*i))
 		}
