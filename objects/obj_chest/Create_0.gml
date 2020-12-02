@@ -14,4 +14,5 @@ function interact(){
 	}
 	guiid.window_name = chestname
 	guiid.inventory = chestinventory
+	guiid.window_sprite = spr_chestmenu
 }

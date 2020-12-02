@@ -1,0 +1,68 @@
+enum item
+	 {
+		none,
+		apple,
+		iron_ore,
+		iron_ingot,
+		iron_sword,
+		iron_helmet,
+		iron_chestplate,
+		iron_leggings,
+		iron_boots,
+		leather,
+		leather_helmet,
+		leather_chestplate,
+		leather_leggings,
+		leather_boots,
+		greenleaf,
+		blueleaf,
+		small_empty_bottle,
+		small_health_potion,
+		small_mana_potion,
+		staff,
+		lightningstaff,
+		shotgun,
+		slime,
+		scroll_dash,
+		scroll_fireball,
+		coin,
+		star_salve,
+		wooden_stick,
+		total
+}
+
+enum item_type
+	 {
+	 none,
+	 weapon,
+	 helmet,
+	 chestplate,
+	 leggings,
+	 boots,
+	 ring,
+	 food,
+	 components,
+	 potion,
+	 spell,
+	 other
+}
+
+enum item_stat
+{
+	 name,
+	 sprite_index,
+	 description,
+	 stackable,
+	 type,
+	 action_script,
+	 physdamage,
+	 magicdamage,
+	 strength,
+	 physarmor,
+	 magicarmor,
+	 manacost,
+	 cooldown,
+	 weapon_create,
+	 arg_array,
+	 total
+}

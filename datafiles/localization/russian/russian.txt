@@ -45,8 +45,6 @@
 			"slimeball":"Слизь",
 			"slimeball_description":"Common drop from slimes",
 			"Completed":"Completed",
-
-			
 			"back":"Назад",
 			"next":"Далее",
 			"notificationqueststate_0":"ЗАДАНИЕ НАЧАТО",

@@ -8,25 +8,26 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 75,
+  "bbox_right": 163,
   "bbox_top": 0,
-  "bbox_bottom": 9,
+  "bbox_bottom": 11,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 76,
-  "height": 10,
+  "width": 164,
+  "height": 12,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 0,
-  "gridY": 0,
+  "gridX": 10,
+  "gridY": 10,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"fde32595-1abc-4fa0-8bec-5e43957ffca3","path":"sprites/spr_hpbar/spr_hpbar.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fde32595-1abc-4fa0-8bec-5e43957ffca3","path":"sprites/spr_hpbar/spr_hpbar.yy",},"LayerId":{"name":"317f3a59-8576-48b8-aa09-1c8e3a164a28","path":"sprites/spr_hpbar/spr_hpbar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_hpbar","path":"sprites/spr_hpbar/spr_hpbar.yy",},"resourceVersion":"1.0","name":"fde32595-1abc-4fa0-8bec-5e43957ffca3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"883496b2-1d1e-4832-b0b9-64ecd083750b","path":"sprites/spr_hpbar/spr_hpbar.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"883496b2-1d1e-4832-b0b9-64ecd083750b","path":"sprites/spr_hpbar/spr_hpbar.yy",},"LayerId":{"name":"ed19cb0d-cf7a-471d-9c45-203754cfdb21","path":"sprites/spr_hpbar/spr_hpbar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"883496b2-1d1e-4832-b0b9-64ecd083750b","path":"sprites/spr_hpbar/spr_hpbar.yy",},"LayerId":{"name":"23a82169-8a37-48cb-8193-8d95a6c64d38","path":"sprites/spr_hpbar/spr_hpbar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_hpbar","path":"sprites/spr_hpbar/spr_hpbar.yy",},"resourceVersion":"1.0","name":"883496b2-1d1e-4832-b0b9-64ecd083750b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_hpbar","path":"sprites/spr_hpbar/spr_hpbar.yy",},
@@ -41,7 +42,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"e587c841-1932-4c9b-97d9-189b3b36375e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fde32595-1abc-4fa0-8bec-5e43957ffca3","path":"sprites/spr_hpbar/spr_hpbar.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"78f21e76-1c51-41f2-a5c3-1da9f313e2e4","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"883496b2-1d1e-4832-b0b9-64ecd083750b","path":"sprites/spr_hpbar/spr_hpbar.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -60,12 +61,12 @@
     "eventStubScript": null,
     "parent": {"name":"spr_hpbar","path":"sprites/spr_hpbar/spr_hpbar.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "spr_hpbar",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"317f3a59-8576-48b8-aa09-1c8e3a164a28","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"ed19cb0d-cf7a-471d-9c45-203754cfdb21","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "HP and MP bars",

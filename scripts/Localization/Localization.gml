@@ -13,20 +13,19 @@ function localization_load() {
 		var locale_folder = "localization\\"
 		var language_folder = lang_name+"\\"
 		
-		var fname, i, file, files
-		files = 0
-		for (fname = file_find_first(locale_folder+language_folder + "/*.*", 0); fname != ""; fname = file_find_next()) {
+		var fname, file, files = 0
+		for (fname = file_find_first(locale_folder+language_folder + "\*", 0); fname != ""; fname = file_find_next()) {
 		    // don't include current/parent directory "matches":
 		    //if (fname == ".") continue
 		    //if (fname == "..") continue
 		    // push file into array
 		    file[files] = locale_folder+language_folder+fname
+			show_debug_message("Found locale file: "+file[files])
 		    files += 1
-			show_debug_message("Found locale file: "+locale_folder+language_folder+fname)
 		}
 		file_find_close()
 		// process found files:
-		i = 0
+		var i = 0
 		repeat (files) {
 			show_debug_message("Loading words from: "+file[i])
 		    fname = file_text_open_read(file[i])

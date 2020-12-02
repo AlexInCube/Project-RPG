@@ -45,20 +45,7 @@ switch(equipmode){
 		//Draw armor and weapon slots
 		for(i=0;i<inventory_size;i++)
 		{
-			//Draw sprite from item in slot
-				if inventory[# i, 0]!=item.none
-				{
-					draw_sprite(global.item_index[# inventory[# i, 0], item_stat.sprite_index],1,slotsxy[i,0]+16,slotsxy[i,1]+16)
-				}
-				//Draw item amount if item amount in slots more than 1
-				if inventory[# i, 1]>1
-				{
-					draw_text(slotsxy[i,0]+2,slotsxy[i,1]+12,inventory[# i, 1])
-				}
-	
-			if placefree{
-				slot(inventory,i,slotsxy[i,0],slotsxy[i,1])
-			}
+			slot(inventory,i,slotsxy[i,0],slotsxy[i,1],placefree)
 		}
 
 		if placefree{

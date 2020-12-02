@@ -1,24 +1,24 @@
 //Default Player State
 function move_state() {
 	if !instance_exists(obj_textbox){
-/*
+
 #region Inventory Key Input
 	if obj_controller.inventory_hotkey1
 	{
-		slot_script_execute(global.inventory,20)
+		slot_script_execute(global.inventory,0)
 	}if obj_controller.inventory_hotkey2
 	{
-		slot_script_execute(global.inventory,21)
+		slot_script_execute(global.inventory,1)
 	}if obj_controller.inventory_hotkey3
 	{
-		slot_script_execute(global.inventory,22)
+		slot_script_execute(global.inventory,2)
 	}if obj_controller.inventory_hotkey4
 	{
-		slot_script_execute(global.inventory,23)
+		slot_script_execute(global.inventory,3)
 	}if obj_controller.inventory_hotkey5
 	{
-		slot_script_execute(global.inventory,24)
-	}if obj_controller.inventory_hotkey6
+		slot_script_execute(global.inventory,4)
+	}/*if obj_controller.inventory_hotkey6
 	{
 		slot_script_execute(global.inventory,25)
 	}if obj_controller.inventory_hotkey7
@@ -34,9 +34,9 @@ function move_state() {
 	{
 		slot_script_execute(global.inventory,29)
 	}
-
-#endregion
 */
+#endregion
+
 if obj_controller.xaxis != 0 or obj_controller.yaxis != 0 {
 	image_speed=0.4
 	//get direction
