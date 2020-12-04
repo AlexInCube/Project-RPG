@@ -1,3 +1,38 @@
+/// @description Healing lifeform parent
+/// @function heal(heal,target,healinpercentage?);
+/// @param heal
+/// @param target
+/// @param healinpercentage?
+function heal(heal_amount,target,healperc) {
+	if healperc
+	{
+		target.hp+=(target.max_hp/100)*heal_amount
+	}
+	else
+	{
+		target.hp+=heal_amount
+	}
+	target.hp = clamp(target.hp,0,target.max_hp)
+}
+
+/// @description replenish_mana(manaamount,target,inpercentage?);
+/// @function replenish_mana
+/// @param mana
+/// @param target
+/// @param healinpercentage?
+function replenish_mana(manaamount, target, manaperc) {
+	if manaperc
+	{
+		target.mana+=(target.max_mana/100)*manaamount
+	}
+	else
+	{
+		target.mana+=manaamount
+	}
+	target.mana = clamp(target.mana,0,target.max_mana)
+
+}
+
 ///@function applydamage(damagecount,damagetype,damagetype,show_damage,show_dmg_x,show_dmg_y)
 ///@param damagecount
 ///@param damagetype

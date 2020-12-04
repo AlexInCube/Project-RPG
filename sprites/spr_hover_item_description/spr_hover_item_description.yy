@@ -21,8 +21,8 @@
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 5,
-  "gridY": 5,
+  "gridX": 10,
+  "gridY": 10,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"0c36da41-614a-4665-a3d7-4b0e75182f63","path":"sprites/spr_hover_item_description/spr_hover_item_description.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"0c36da41-614a-4665-a3d7-4b0e75182f63","path":"sprites/spr_hover_item_description/spr_hover_item_description.yy",},"LayerId":{"name":"bff854f8-9b1f-4d3b-9524-54a90397eaff","path":"sprites/spr_hover_item_description/spr_hover_item_description.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},

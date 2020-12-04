@@ -60,7 +60,6 @@ enum item_stat
 	 strength,
 	 physarmor,
 	 magicarmor,
-	 manacost,
 	 cooldown,
 	 weapon_create,
 	 arg_array,

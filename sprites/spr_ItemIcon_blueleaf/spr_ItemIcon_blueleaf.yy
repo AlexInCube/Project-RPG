@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Components",
-    "path": "folders/Objects/Controllers/Inventory/Items/Components.yy",
+    "path": "folders/Objects/Controllers/Inventory/ Inventory Sprites/Items/Components.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ItemIcon_blueleaf",

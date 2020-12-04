@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Register Items",
-    "path": "folders/Scripts/Inventory/Register Items.yy",
+    "path": "folders/Objects/Controllers/Inventory/Register Items.yy",
   },
   "resourceVersion": "1.0",
   "name": "Registering_Items",

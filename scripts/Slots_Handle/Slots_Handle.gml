@@ -12,6 +12,7 @@ function slot(inventory, slot_id, xx, yy, clickable) {
 		draw_set_halign(fa_right)
 		draw_set_valign(fa_top)
 		draw_set_font(fnt_small)
+		draw_set_color(c_white)
 		var item_amount = inventory[# slot_id, 1]
 		draw_text(xx+32,yy+12,item_amount)
 	}

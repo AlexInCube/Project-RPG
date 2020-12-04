@@ -87,10 +87,8 @@ function uncontrollable_state() {
 }
 //Dash state active after using dash scroll
 function dash_state() {
-	if (len==0){
-	dir = face*90
-	}
-	len = spd*4
+	var dir = mouse_dr*45
+	var len = spd*4
 
 	//get hspd and vspd
 	hspd = lengthdir_x(len,dir)

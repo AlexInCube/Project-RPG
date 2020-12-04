@@ -6,4 +6,7 @@ if instance_exists(obj_basicwindow){
 
 if surface_exists(overall_gui_surf){
 	draw_surface(overall_gui_surf,0,0)
+	surface_set_target(overall_gui_surf)
+	draw_clear_alpha(c_white,0)
+	surface_reset_target()
 }

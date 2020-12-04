@@ -23,4 +23,3 @@ localization_load()
 global.item_index = ds_grid_create(item.total, item_stat.total);
 ds_grid_clear(global.item_index, 0); //Set every position to 0
 registeritems()
-initrecipes()

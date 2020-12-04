@@ -5,15 +5,7 @@
 ///@param x2
 ///@param y2
 ///@param sub_image
-function draw_nine_slice_box(argument0, argument1, argument2, argument3, argument4, argument5) {
-	var sprite = argument0;
-	var x1 = argument1;
-	var y1 = argument2;
-	var x2 = argument3;
-	var y2 = argument4;
-	
-	var sub_image = argument5
-	
+function draw_nine_slice_box(sprite, x1, y1, x2, y2, sub_image) {
 	var slice_width = sprite_get_width(sprite)/3;
 	var slice_height = sprite_get_height(sprite)/3;
 
@@ -34,6 +26,4 @@ function draw_nine_slice_box(argument0, argument1, argument2, argument3, argumen
 	draw_sprite_part_ext(sprite, sub_image, 0, slice_height*2, slice_width, slice_height*2, x1, y2-slice_height, 1, 1, c_white, 1); // Left
 	draw_sprite_part_ext(sprite, sub_image, slice_width, slice_height*2, slice_width, slice_height, x1+slice_width, y2-slice_height, (width-slice_width*2)/slice_width, 1, c_white, 1); // Middle
 	draw_sprite_part_ext(sprite, sub_image, slice_width*2, slice_height*2, slice_width, slice_height, x2-slice_width, y2-slice_height, 1, 1, c_white, 1); // Right
-
-
 }

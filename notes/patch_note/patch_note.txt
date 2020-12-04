@@ -2,11 +2,10 @@ TODO:
 close combat almost repaired
 make task progress saveable (kills)
 put player stats in struct
-improve item description drawing
 saving non-unique objects
+save ammo in shotgun
 distribute localization by folder
 
 Already maked in this version:
-Item quick use
-HUD improvements
-Fix game crash because window doesnt exists
+Fixed spells
+Improved item description drawing

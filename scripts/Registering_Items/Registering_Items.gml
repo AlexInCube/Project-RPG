@@ -23,8 +23,8 @@ function registeritems() {
 	add_weapon(item.shotgun,"shotgun", spr_item_weapon_shotgun,2,0,shotgun_create)
 	#endregion
 	#region Spell
-	add_spell(item.scroll_dash,"spell_scroll_dash",spr_ItemIcon_SpellDash,1,spell_dash)
-	add_spell(item.scroll_fireball,"spell_scroll_fireball",spr_ItemIcon_SpellFireball,1,spell_fireball)
+	add_spell(item.scroll_dash,"spell_scroll_dash",spr_ItemIcon_SpellDash,spell_dash,[1])
+	add_spell(item.scroll_fireball,"spell_scroll_fireball",spr_ItemIcon_SpellFireball,spell_fireball,[1])
 	#endregion
 	#region Other
 	add_components(item.greenleaf,"green_leaf",spr_ItemIcon_Leaf,16)
