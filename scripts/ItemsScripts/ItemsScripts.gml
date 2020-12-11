@@ -1,25 +1,28 @@
-#macro QUICKUSE quick_use//Assign quick use script to this variable
-#macro RENDERITEM render_item
-#macro LOCALIZEDITEMNAME item_locale_name
 function default_item() constructor{
-	QUICKUSE = nothing
-	RENDERITEM = default_item_render
-	LOCALIZEDITEMNAME = "LOCALE_NAME"
+	item_unlocale_name = UNKNOWN_ITEM
+	item_locale_name = find_keyword(item_unlocale_name)
+	quick_use = nothing
+	arg_array = []
+	item_sprite = spr_unknown_item
+	item_description = find_keyword(item_unlocale_name+"_description")
+	item_stacking = 1 
+	render_item = default_item_render
+	item_type = ITEM_TYPE_COMPONENTS
 }
 
 #region Consumable
 	//Health potion
 	function health_potion() : default_item() constructor{ 
-		QUICKUSE = function(heal_amount,heal_perc,inv_arr){
+		quick_use = function(heal_amount,heal_perc,inv_arr){
 			if obj_player_stats.hp < obj_player_stats.max_hp{
-			heal(heal_amount,obj_player_stats,heal_perc)
-			item_consume(item_get_inventory(inv_arr),item_get_slot(inv_arr))
+				heal(heal_amount,obj_player_stats,heal_perc)
+				item_consume(item_get_inventory(inv_arr),item_get_slot(inv_arr))
 			}
 		}
 	}
 	//Mana potion
 	function mana_potion() : default_item() constructor{
-		QUICKUSE = function mana_potion(mana_amount,mana_perc,inv_arr) {
+		quick_use = function mana_potion(mana_amount,mana_perc,inv_arr) {
 			if obj_player_stats.mana < obj_player_stats.max_mana{
 				replenish_mana(mana_amount,obj_player_stats,mana_perc)
 				item_consume(item_get_inventory(inv_arr),item_get_slot(inv_arr))

@@ -1,52 +1,14 @@
-enum item
-	 {
-		none,
-		apple,
-		iron_ore,
-		iron_ingot,
-		iron_sword,
-		iron_helmet,
-		iron_chestplate,
-		iron_leggings,
-		iron_boots,
-		leather,
-		leather_helmet,
-		leather_chestplate,
-		leather_leggings,
-		leather_boots,
-		greenleaf,
-		blueleaf,
-		small_empty_bottle,
-		small_health_potion,
-		small_mana_potion,
-		staff,
-		lightningstaff,
-		shotgun,
-		slime,
-		scroll_dash,
-		scroll_fireball,
-		coin,
-		star_salve,
-		wooden_stick,
-		total
-}
-
-enum item_type
-	 {
-	 none,
-	 weapon,
-	 helmet,
-	 chestplate,
-	 leggings,
-	 boots,
-	 ring,
-	 food,
-	 components,
-	 potion,
-	 spell,
-	 other
-}
-
+#macro ITEM_TYPE_WEAPON "item_type_weapon"
+#macro ITEM_TYPE_HELMET "item_type_helmet"
+#macro ITEM_TYPE_CHESTPLATE "item_type_chestplate"
+#macro ITEM_TYPE_LEGGINGS "item_type_leggings"
+#macro ITEM_TYPE_BOOTS "item_type_boots"
+#macro ITEM_TYPE_RING "item_type_ring"
+#macro ITEM_TYPE_FOOD "item_type_food"
+#macro ITEM_TYPE_COMPONENTS "item_type_components"
+#macro ITEM_TYPE_POTION "item_type_potion"
+#macro ITEM_TYPE_SPELL "item_type_spell"
+/*
 enum item_stat
 {
 	 name,

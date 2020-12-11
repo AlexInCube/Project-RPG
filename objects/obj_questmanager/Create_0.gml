@@ -37,7 +37,7 @@ add_quest(
 		[questtype.kill,obj_enemy_slime,3],
 		[questtype.trigger,"playernearnikita"],
 		[questtype.talk,obj_nikitanpc],
-		[questtype.deliver,item.slime,1],
+		[questtype.deliver,"slime",1],
 	]
 ]
 )

@@ -1,6 +1,7 @@
+#macro UNKNOWN_ITEM "Unknown Item"
 function registeritems() {
 	#region Potions
-	add_potion(item.small_health_potion,"small_health_potion", spr_ItemIcon_SmallHealPotion,4,health_potion,[1,false])
+	add_potion("small_health_potion", spr_ItemIcon_SmallHealPotion,4,health_potion,[1,false])
 	//add_potion(item.small_mana_potion,"small_mana_potion", spr_ItemIcon_SmallManaPotion,4,mana_potion,[5,false])
 	#endregion
 	/*

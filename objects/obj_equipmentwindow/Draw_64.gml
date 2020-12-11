@@ -51,7 +51,7 @@ switch(equipmode){
 		if placefree{
 			for(i=0;i<inventory_size;i++)
 			{
-			if inventory[# i, 0]!=item.none
+			if inventory[# i, 0]!=NO_ITEM
 				{
 					if mouseover(slotsxy[i,0],slotsxy[i,1],slotsxy[i,0]+32,slotsxy[i,1]+32)
 					{

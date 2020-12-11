@@ -12,7 +12,7 @@ function item_consume(inventory,slot_id){
 	inventory[# slot_id,1]-=1//Decrease quantity
 	if inventory[# slot_id,1]<=0//If quantity = 0, then remove item
 	{
-		inventory[# slot_id,0]=item.none
+		inventory[# slot_id,0]=NO_ITEM
 	}
 	//show_debug_message("Item Consume: Inventory: "+string(inventory)+" Slot: "+string(slot_id))
 }
@@ -26,7 +26,9 @@ function mana_consume(mana_amount){
 }
 
 function default_item_render(xx,yy,inventory,slot_id){
-	draw_sprite(global.item_index[# inventory[# slot_id, 0], item_stat.sprite_index],1,xx+16,yy+16)
+	var _item = inventory[# slot_id,0]
+	var _item_struct = return_struct_from_item_index_by_item_id(_item)
+	draw_sprite(_item_struct[$ "item_sprite"],1,xx+16,yy+16)
 	//Draw item amount if item amount in slots more than 1
 	if inventory[# slot_id, 1]>1
 	{

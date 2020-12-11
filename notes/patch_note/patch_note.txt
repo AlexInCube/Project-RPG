@@ -8,6 +8,7 @@ distribute localization by folder
 
 rework item registering
 saving NBT data
+fix stat recalcute (remove // in obj_player_stats create event)
 
 Already maked in this version:
 Reworked item structure, now in item struct we can put anything.

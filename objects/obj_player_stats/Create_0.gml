@@ -22,7 +22,7 @@ regen_amount=0
 
 last_hit=""
 
-recalculate_stats(global.equipment)
+//recalculate_stats(global.equipment)
 
 /*
 ds_map_add(global.stats,"physdamagebuff",0)
