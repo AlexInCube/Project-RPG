@@ -1,37 +1,29 @@
-#region General scripts
-function item_get_inventory(array){
-	return array_get(array,0)
+#macro QUICKUSE quick_use//Assign quick use script to this variable
+#macro RENDERITEM render_item
+#macro LOCALIZEDITEMNAME item_locale_name
+function default_item() constructor{
+	QUICKUSE = nothing
+	RENDERITEM = default_item_render
+	LOCALIZEDITEMNAME = "LOCALE_NAME"
 }
-function item_get_slot(array){
-	return array_get(array,1)
-}
-function item_consume(inventory,slot_id){
-	inventory[# slot_id,1]-=1//Decrease quantity
-	if inventory[# slot_id,1]<=0//If quantity = 0, then remove item
-	{
-		inventory[# slot_id,0]=item.none
-	}
-	//show_debug_message("Item Consume: Inventory: "+string(inventory)+" Slot: "+string(slot_id))
-}
-function is_mana_enough(mana_amount){
-	if obj_player_stats.mana>=mana_amount return true
-}
-function mana_consume(mana_amount){
-	obj_player_stats.mana -=mana_amount
-}
-#endregion 
+
 #region Consumable
-	function health_potion(heal_amount,heal_perc){
-		if obj_player_stats.hp < obj_player_stats.max_hp{
+	//Health potion
+	function health_potion() : default_item() constructor{ 
+		QUICKUSE = function(heal_amount,heal_perc,inv_arr){
+			if obj_player_stats.hp < obj_player_stats.max_hp{
 			heal(heal_amount,obj_player_stats,heal_perc)
-			item_consume(item_get_inventory(argument[2]),item_get_slot(argument[2]))
+			item_consume(item_get_inventory(inv_arr),item_get_slot(inv_arr))
+			}
 		}
 	}
-	
-	function mana_potion(mana_amount,mana_perc) {
-		if obj_player_stats.mana < obj_player_stats.max_mana{
-			replenish_mana(mana_amount,obj_player_stats,mana_perc)
-			item_consume(item_get_inventory(argument[2]),item_get_slot(argument[2]))
+	//Mana potion
+	function mana_potion() : default_item() constructor{
+		QUICKUSE = function mana_potion(mana_amount,mana_perc,inv_arr) {
+			if obj_player_stats.mana < obj_player_stats.max_mana{
+				replenish_mana(mana_amount,obj_player_stats,mana_perc)
+				item_consume(item_get_inventory(inv_arr),item_get_slot(inv_arr))
+			}
 		}
 	}
 #endregion

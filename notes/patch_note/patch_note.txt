@@ -6,6 +6,8 @@ saving non-unique objects
 save ammo in shotgun
 distribute localization by folder
 
+rework item registering
+saving NBT data
+
 Already maked in this version:
-Fixed spells
-Improved item description drawing
+Reworked item structure, now in item struct we can put anything.

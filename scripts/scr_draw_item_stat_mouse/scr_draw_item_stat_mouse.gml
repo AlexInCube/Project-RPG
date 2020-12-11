@@ -8,7 +8,10 @@ function draw_item_stat_mouse(inventory, slot_id) {
 
 	var statstring
 	//Get item name
-	statstring[0]=string(global.item_index[# inventory[# slot_id, 0],item_stat.name])
+	var _item = inventory[# slot_id,0]
+	var _item_struct = global.item_index[# _item,item_stat.action_script]
+	var _item_name = _item_struct[$ "item_locale_name"]
+	statstring[0]=string(_item_name)
 	//Get item type
 	statstring[1]=find_keyword("item_type_"+string(global.item_index[# inventory[# slot_id, 0],item_stat.type]))
 	//Get item description

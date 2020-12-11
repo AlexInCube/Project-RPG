@@ -1,8 +1,9 @@
 function registeritems() {
 	#region Potions
 	add_potion(item.small_health_potion,"small_health_potion", spr_ItemIcon_SmallHealPotion,4,health_potion,[1,false])
-	add_potion(item.small_mana_potion,"small_mana_potion", spr_ItemIcon_SmallManaPotion,4,mana_potion,[5,false])
+	//add_potion(item.small_mana_potion,"small_mana_potion", spr_ItemIcon_SmallManaPotion,4,mana_potion,[5,false])
 	#endregion
+	/*
 	#region Armor
 	add_armor(item.iron_helmet,"iron_helmet", spr_ironhelmet,2,1,HELMET)
 	add_armor(item.iron_chestplate,"iron_chestplate", spr_ironchestplate,4,2,CHESTPLATE)
@@ -15,11 +16,11 @@ function registeritems() {
 	#endregion
 	#region Weapon
 	add_weapon(item.wooden_stick,"wooden_stick",spr_item_weapon_wooden_stick,2,0,wooden_stick_create)
-	/*
-	add_weapon(item.iron_sword,"iron_sword", spr_ItemIcon_ironsword,10,0,melee_attack)
 
-	add_weapon(item.lightningstaff,"light_staff", spr_MagicWeaponLightningStaff,0,10,range_attack)
-	*/
+	//add_weapon(item.iron_sword,"iron_sword", spr_ItemIcon_ironsword,10,0,melee_attack)
+
+	//add_weapon(item.lightningstaff,"light_staff", spr_MagicWeaponLightningStaff,0,10,range_attack)
+	
 	add_weapon(item.shotgun,"shotgun", spr_item_weapon_shotgun,2,0,shotgun_create)
 	#endregion
 	#region Spell
@@ -38,4 +39,5 @@ function registeritems() {
 	add_components(item.coin,"coin",spr_item_coin,50)
 	#endregion
 	show_debug_message("Registered "+string(ds_grid_height(global.item_index))+" items")
+	*/
 }

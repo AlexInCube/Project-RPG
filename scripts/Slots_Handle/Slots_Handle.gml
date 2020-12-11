@@ -2,19 +2,20 @@
 /// @function slot
 function slot(inventory, slot_id, xx, yy, clickable) {
 	//Draw item sprite
-	if inventory[# slot_id, 0]!=item.none
+	var _item = inventory[# slot_id,0]
+	if _item != item.none
 	{
-		draw_sprite(global.item_index[# inventory[# slot_id, 0], item_stat.sprite_index],1,xx+16,yy+16)
-	}
-	//Draw item amount if item amount in slots more than 1
-	if inventory[# slot_id, 1]>1
-	{
-		draw_set_halign(fa_right)
-		draw_set_valign(fa_top)
-		draw_set_font(fnt_small)
-		draw_set_color(c_white)
-		var item_amount = inventory[# slot_id, 1]
-		draw_text(xx+32,yy+12,item_amount)
+		var _item_struct = global.item_index[# _item,item_stat.action_script]
+		var _item_script = _item_struct[$ "render_item"]
+		if is_method(_item_script){
+			_item_script = method_get_index(_item_script)
+		}
+		//show_debug_message(_item_args)
+		if _item_script != -1//If item has script
+		{
+			var _item_args = [xx,yy,inventory,slot_id]
+			script_execute_ext(_item_script,_item_args)
+		}
 	}
 	if !clickable{exit} 
 	if mouseover(xx,yy,xx+32,yy+32){
@@ -110,5 +111,21 @@ function slot(inventory, slot_id, xx, yy, clickable) {
 				inventory[# slot_id, 1]=0
 			}
 		}
+	}
+}
+	
+//Hotbar item using
+function slot_script_execute(inventory, slot_id) {
+	var _item = inventory[# slot_id,0]
+	var _item_struct = global.item_index[# _item,item_stat.action_script]
+	var _item_script = method_get_index(_item_struct[$ "quick_use"])
+	if _item_script != -1//If item have script
+	{
+		//show_debug_message(_item_script)
+		var src = global.item_index[# _item,item_stat.arg_array]
+		var _item_args = []; array_copy(_item_args,0,src,0,array_length(src))
+		array_push(_item_args,[inventory,slot_id])//Push inv and slot_id to item script
+		//show_debug_message(_item_args)
+		script_execute_ext(_item_script,_item_args)
 	}
 }

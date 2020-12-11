@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Helpers",
-    "path": "folders/Objects/Game Objects/Player/Helpers.yy",
+    "name": "Register Items",
+    "path": "folders/Objects/Controllers/Inventory/Register Items.yy",
   },
   "resourceVersion": "1.0",
-  "name": "slot_script_execute",
+  "name": "General_Items_Scripts",
   "tags": [],
   "resourceType": "GMScript",
 }
