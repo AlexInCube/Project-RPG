@@ -51,7 +51,8 @@ slots2_x=157
 
 function draw_trade_slot(xx,yy,_item,_item_count){
 	draw_sprite(spr_slot,0,xx,yy)
-	draw_sprite(global.item_index[# _item, item_stat.sprite_index],1,xx+16,yy+16)
+	var _item_struct = return_struct_from_item_index_by_item_id(_item)
+	draw_sprite(_item_struct[$ "item_sprite"],1,xx+16,yy+16)
 	draw_text(xx+2,yy+12,_item_count)
 }
 

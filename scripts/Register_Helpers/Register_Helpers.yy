@@ -6,7 +6,7 @@
     "path": "folders/Objects/Controllers/Inventory/Register Items.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ItemsEnums",
+  "name": "Register_Helpers",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -3,9 +3,8 @@
 /// @param item_id
 /// @param amount
 function gain_item(item_id, max_amount, inv) {
-	var item_ind   = global.item_index;
 	//Max item stack
-	var total      = ds_list_find_index(item_ind,item_id)[$ "item_stacking"]
+	var total      = return_struct_from_item_index_by_item_id(item_id)[$ "item_stacking"]
 	var cur_amount = 0
 	var cur_slot   = 0;
 	var max_slot   = ds_grid_width(inv);
@@ -124,16 +123,4 @@ function slot_modify_amount(inventory, slot, amount, override) {
 	}
 }
 
-/// @description Create weapon object from item in hand
-/// @function weapon_equip();
-function weapon_equip() {
-	instance_destroy(obj_weapon_controller)
 
-	if !instance_exists(obj_weapon_controller) and global.equipment[# 4, 0] != NO_ITEM{
-		var inst = instance_create_layer(obj_player.x,obj_player.y,"Instances",obj_weapon_controller)
-		with(inst){
-			weapon_create_script = global.item_index[# global.equipment[# 4, 0], item_stat.weapon_create]
-			script_execute(weapon_create_script)
-		}
-	}
-}

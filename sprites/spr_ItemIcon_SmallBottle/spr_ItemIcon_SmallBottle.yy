@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a919dd6c-f48b-4680-bbcc-f5f3418403d8","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Components",
-    "path": "folders/Objects/Controllers/Inventory/ Inventory Sprites/Items/Components.yy",
+    "name": "Potions",
+    "path": "folders/Objects/Controllers/Inventory/ Inventory Sprites/Items/Potions.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ItemIcon_SmallBottle",

@@ -22,11 +22,11 @@ regen_amount=0
 
 last_hit=""
 
-//recalculate_stats(global.equipment)
+recalculate_stats(global.equipment)
 
 /*
-ds_map_add(global.stats,"physdamagebuff",0)
-ds_map_add(global.stats,"magicdamagebuff",0)
+ds_map_add(global.stats,"phys_damagebuff",0)
+ds_map_add(global.stats,"magic_damagebuff",0)
 ds_map_add(global.stats,"physresistance",0)
 ds_map_add(global.stats,"magicresistance",0)
 ds_map_add(global.stats,"physresistancebuff",0)

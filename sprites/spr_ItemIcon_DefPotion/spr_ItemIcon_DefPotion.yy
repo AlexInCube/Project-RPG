@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3d08e8a2-ebf7-4edd-b3bd-0c014b32c88a","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "itempack",
-    "path": "folders/Objects/Controllers/Inventory/ Inventory Sprites/Items/itempack.yy",
+    "name": "Potions",
+    "path": "folders/Objects/Controllers/Inventory/ Inventory Sprites/Items/Potions.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ItemIcon_DefPotion",

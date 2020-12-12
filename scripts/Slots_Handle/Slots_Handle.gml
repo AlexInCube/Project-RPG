@@ -1,5 +1,3 @@
-#macro NO_ITEM 0
-
 function return_struct_from_item_index_by_item_id(item_id){
 	for (var i=0;i<ds_list_size(global.item_index);i++){
 		if global.item_index[| i][$ "item_unlocale_name"] = item_id{
@@ -135,15 +133,19 @@ function slot(inventory, slot_id, xx, yy, clickable) {
 //Hotbar item using
 function slot_script_execute(inventory, slot_id) {
 	var _item = inventory[# slot_id,0]
-	var _item_struct = global.item_index[# _item,item_stat.action_script]
-	var _item_script = method_get_index(_item_struct[$ "quick_use"])
-	if _item_script != -1//If item have script
-	{
-		//show_debug_message(_item_script)
-		var src = global.item_index[# _item,item_stat.arg_array]
-		var _item_args = []; array_copy(_item_args,0,src,0,array_length(src))
-		array_push(_item_args,[inventory,slot_id])//Push inv and slot_id to item script
-		//show_debug_message(_item_args)
-		script_execute_ext(_item_script,_item_args)
+	var _item_struct = return_struct_from_item_index_by_item_id(_item)
+	if _item_struct != (-1 or undefined){
+		if _item_struct[$ "quick_use"] != undefined{
+			var _item_script = method_get_index(_item_struct[$ "quick_use"])
+			if _item_script != -1//If item have script
+			{
+				//show_debug_message(_item_script)
+				var src = _item_struct[$ "arg_array"]
+				var _item_args = []; array_copy(_item_args,0,src,0,array_length(src))
+				array_push(_item_args,[inventory,slot_id])//Push inv and slot_id to item script
+				//show_debug_message(_item_args)
+				script_execute_ext(_item_script,_item_args)
+			}
+		}
 	}
 }

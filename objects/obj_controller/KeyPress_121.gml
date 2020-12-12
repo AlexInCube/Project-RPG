@@ -1,49 +1,49 @@
 open_trade_window([
 	[//t_a[0]
 		[//is_a[0]
-			[item.coin,1],
-			[item.apple,2],
-			[item.blueleaf,3],
-			[item.blueleaf,3]
+			["coin",1],
+			["meat",2],
+			["blue_leaf",3],
+			["blue_leaf",3]
 		],
 		[//is_a[1]
-			[item.apple,1],
-			[item.coin,1],
-			[item.apple,2],
-			[item.blueleaf,3]
+			["meat",1],
+			["coin",1],
+			["meat",2],
+			["blue_leaf",3]
 		]
 	],
 	[//t_a[1]
 		[
-			[item.coin,1]
+			["coin",1]
 		],
 		[
-			[item.iron_ingot,1]
+			["iron_ingot",1]
 		]
 	],
 	[//t_a[1]
 		[
-			[item.coin,3]
+			["coin",3]
 		],
 		[
-			[item.iron_ingot,1]
+			["iron_ingot",1]
 		]
 	],
 	[//t_a[1]
 		[
-			[item.coin,2]
+			["coin",2]
 		],
 		[
-			[item.iron_ingot,1]
+			["iron_ingot",1]
 		]
 	],
 	[//t_a[0]
 		[//is_a[0]
-			[item.coin,1],
-			[item.apple,2],
+			["coin",1],
+			["meat",2],
 		],
 		[//is_a[1]
-			[item.apple,1],
+			["meat",1],
 		]
 	],
 ])

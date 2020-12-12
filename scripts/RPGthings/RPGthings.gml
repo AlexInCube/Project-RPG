@@ -108,30 +108,3 @@ function lvl_up(){
 		}
 	}
 }
-	
-function recalculate_stats(argument0) {
-	var inventory = argument0
-	var ds_width = ds_grid_width(inventory)
-	var h_p,m_p,armor=0,magicarmor=0,physdamage=0,magicdamage=0,str=0;
-	for(i=0;i<ds_width;i++){
-		armor +=			global.item_index[# inventory[# i, 0], item_stat.physarmor]
-		magicarmor +=		global.item_index[# inventory[# i, 0], item_stat.magicarmor]
-		physdamage +=		global.item_index[# inventory[# i, 0], item_stat.physdamage]
-		magicdamage +=		global.item_index[# inventory[# i, 0], item_stat.magicdamage]
-		//str +=				global.item_index[# inventory[# i, 0], item_stat.strength]
-	}
-	with(obj_player_stats){
-		phys_armor = armor + defense
-		magic_armor = magicarmor + defense
-		phys_damage = physdamage + strength
-		magic_damage = magicdamage + strength
-		evasion = agility
-		regen_amount = agility
-		max_hp = defense
-		max_mana = energy
-		//strength = str
-	}
-
-
-	weapon_equip()
-}

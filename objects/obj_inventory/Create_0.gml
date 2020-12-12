@@ -15,17 +15,16 @@ inventory_size = ds_grid_width(global.inventory)
 event_register([event.inventory_slot_clicked,global.equipment],id,recalculate_stats,global.equipment)
 
 gain_item("small_health_potion", 4, global.inventory)
+gain_item("spell_dash",2, global.inventory)
+gain_item("spell_fireball",1, global.inventory)
+gain_item("shotgun", 1, global.inventory)
+gain_item("small_mana_potion", 8, global.inventory)
+gain_item("coin",1, global.inventory)
+gain_item("iron_helmet", 1, global.inventory)
 
-//gain_item(item.scroll_dash,1, global.inventory)
-//gain_item(item.scroll_fireball,1, global.inventory)
-//gain_item(item.shotgun, 1)
+gain_item("iron_leggings", 1, global.inventory)
+gain_item("iron_boots", 1, global.inventory)
 /*
-
-gain_item(item.small_mana_potion, 8)
-gain_item(item.iron_helmet, 1)
-
-gain_item(item.iron_leggings, 1)
-gain_item(item.iron_boots, 1)
 gain_item(item.iron_sword, 1)
 gain_item(item.lightningstaff, 1)
 gain_item(item.greenleaf, 10)
