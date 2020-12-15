@@ -43,56 +43,68 @@ function slot(inventory, slot_id, xx, yy, clickable) {
 			draw_item_stat_mouse(inventory,slot_id)
 		}
 		if mouse_check_button_pressed(mb_left)
-			{
+		{
 			var iid = inventory[# slot_id, 0]
 			var amount = inventory[# slot_id, 1]
+			var nbt = inventory[# slot_id, 2]
 			var mouse_iid = global.mouse_slot[# 0, 0];
 			var mouse_amount = global.mouse_slot[# 0, 1];
+			var mouse_nbt = global.mouse_slot[# 0, 2];
 
-			if (iid == 0 || mouse_iid == 0 || iid != mouse_iid) //If either slot is empty, or the two slots don't match
-			 {
+			if (iid == NO_ITEM || mouse_iid == NO_ITEM || iid != mouse_iid) //If either slot is empty, or the two slots don't match
+			{
 				//Switch the slots
 				inventory[# slot_id, 0] = mouse_iid;
 				inventory[# slot_id, 1] = mouse_amount;
+				inventory[# slot_id, 2] = mouse_nbt;
 				global.mouse_slot[# 0, 0] = iid;
 				global.mouse_slot[# 0, 1] = amount;
-			
-			 }
+				global.mouse_slot[# 0, 2] = nbt;
+			}
 			else if (iid == mouse_iid) //If both slots are the same
-			 {
+			{
+				if nbt == mouse_nbt{
+					inventory[# slot_id, 2] = global.mouse_slot[# 0, 2]
 				//Take all mouse items and put them in inventory
-			
-				while inventory[# slot_id, 1] < _item_stack and global.mouse_slot[# 0, 1]>0
-				 {
-					inventory[# slot_id, 1] += 1;
-					global.mouse_slot[# 0, 1] -= 1;
-					if (global.mouse_slot[# 0, 1] <= 0)
+					while inventory[# slot_id, 1] < _item_stack and global.mouse_slot[# 0, 1]>0
+					{
+						inventory[# slot_id, 1] += 1;
+						global.mouse_slot[# 0, 1] -= 1;
+						if (global.mouse_slot[# 0, 1] <= 0)
 						{
-						global.mouse_slot[# 0, 0] = 0;
-						global.mouse_slot[# 0, 1] = 0;
+							global.mouse_slot[# 0, 0] = 0;
+							global.mouse_slot[# 0, 1] = 0;
+							global.mouse_slot[# 0, 2] = 0;
 						}
 					}
 				}
-				event_fire([event.inventory_slot_clicked,inventory])
 			}
+			event_fire([event.inventory_slot_clicked,inventory])
+		}
 	
 	
 		//If mouse right click over slot and them have any item, take only one item from stack
 		if mouse_check_button_pressed(mb_right)
 		{
-			if global.mouse_slot[# 0, 0]==NO_ITEM or global.mouse_slot[# 0, 0]==inventory[# slot_id, 0]//To grab more items in mouse slot, we check match in slots
+			var iid = inventory[# slot_id, 0]
+			var amount = inventory[# slot_id, 1]
+			var nbt = inventory[# slot_id, 2]
+			if global.mouse_slot[# 0, 0] == NO_ITEM or global.mouse_slot[# 0, 0] == iid//To grab more items in mouse slot, we check match in slots
 			{
 					if global.mouse_slot[# 0, 1] < _item_stack//If item max stack more them amount item in mouse, we grab one more item.
 					{
+						
 					inventory[# slot_id, 1] -= 1
 					var iid = inventory[# slot_id, 0]
 					global.mouse_slot[# 0, 0] = iid;
 					global.mouse_slot[# 0, 1] += 1
+					global.mouse_slot[# 0, 2] = nbt
 			
 					if inventory[# slot_id, 1] < 1//If amount of items where we grab them has become zero, remove info in slot about this item.
 					{
 						inventory[# slot_id, 0] = NO_ITEM
 						inventory[# slot_id, 1] = 0
+						inventory[# slot_id, 2] = 0
 					}
 				}
 			}
@@ -116,6 +128,7 @@ function slot(inventory, slot_id, xx, yy, clickable) {
 				{
 					inventory[# slot_id, 0]=NO_ITEM
 					inventory[# slot_id, 1]=0
+					inventory[# slot_id, 2]=0
 				}
 			}
 			else
@@ -125,6 +138,7 @@ function slot(inventory, slot_id, xx, yy, clickable) {
 				itemdropped.amount=inventory[# slot_id, 1]
 				inventory[# slot_id, 0]=NO_ITEM
 				inventory[# slot_id, 1]=0
+				inventory[# slot_id, 2]=0
 			}
 		}
 	}

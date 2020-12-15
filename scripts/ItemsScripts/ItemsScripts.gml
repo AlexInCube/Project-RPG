@@ -1,9 +1,11 @@
+#macro NBTdata nbtdata
 function default_item() constructor{
 	item_unlocale_name = UNKNOWN_ITEM
 	item_locale_name = find_keyword(item_unlocale_name)
 	item_sprite = spr_unknown_item
 	item_description = find_keyword(item_unlocale_name+"_description")
-	item_stacking = 1 
+	item_stacking = 1
+	item_create = {}
 	render_item = default_item_render
 	item_type = ITEM_TYPE_COMPONENTS
 }
@@ -28,6 +30,27 @@ function default_quick_useable() : default_item() constructor{
 				heal(heal_amount,obj_player_stats,heal_perc)
 				item_consume(item_get_inventory(inv_arr),item_get_slot(inv_arr))
 			}
+		}
+	}
+	//Big health potion
+	function big_health_potion() : default_quick_useable() constructor{
+		item_create = {
+			uses : 3,
+		}
+		maxuses = 3
+		render_item = consumable_potion_render
+		quick_use = function(heal_amount,heal_perc,inv_arr){
+			//if obj_player_stats.hp < obj_player_stats.max_hp{
+				heal(heal_amount,obj_player_stats,heal_perc)
+				var inv = item_get_inventory(inv_arr)
+				var _slot = item_get_slot(inv_arr)
+				var slot_struct = inv[# _slot,2]
+				slot_struct[$ "uses"] -=1
+				if slot_struct[$ "uses"] <= 0{
+					item_consume(inv,_slot)
+					item_gain("empty_big_bottle",1,inv,_slot)
+				}
+			//}
 		}
 	}
 	//Mana potion
@@ -74,6 +97,15 @@ function spell_fireball() : default_quick_useable() constructor {
 	
 			mana_consume(manacost)
 		}
+	}
+}
+#endregion
+
+#region Weapons
+function shotgun() : default_item() constructor{
+	ammo_max = 6
+	item_create = {
+		ammo : ammo_max
 	}
 }
 #endregion

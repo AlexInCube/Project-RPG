@@ -76,7 +76,7 @@ if obj_controller.xaxis != 0 or obj_controller.yaxis != 0 {
 		var inst = collision_rectangle(x-findradius,y-findradius,x+findradius,y+findradius,obj_item,false,false)
 		with inst
 			{
-				gain_item(whatitem,amount,global.inventory)
+				item_gain(whatitem,amount,global.inventory)
 				instance_destroy()
 			}
 		}

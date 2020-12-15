@@ -106,7 +106,7 @@ function draw_offer_button(ii,yy){
 					//item recieve
 					for(var i=0;i<array_length(ir_a);i++){
 						var item_array = array_get(ir_a,i)
-						gain_item(item_array[0],item_array[1],global.inventory)
+						item_gain(item_array[0],item_array[1],global.inventory)
 					}
 					//item spend
 					for(var i=0;i<array_length(is_a);i++){

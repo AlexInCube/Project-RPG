@@ -2,7 +2,7 @@
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
-  "origin": 0,
+  "origin": 4,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
@@ -27,6 +27,12 @@
     {"compositeImage":{"FrameId":{"name":"2c29243a-756c-4f85-8ffd-b6808825b2d7","path":"sprites/spr_ItemIcon_BigHealPotion/spr_ItemIcon_BigHealPotion.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"2c29243a-756c-4f85-8ffd-b6808825b2d7","path":"sprites/spr_ItemIcon_BigHealPotion/spr_ItemIcon_BigHealPotion.yy",},"LayerId":{"name":"003be6be-a473-4561-a10d-86ba577c8335","path":"sprites/spr_ItemIcon_BigHealPotion/spr_ItemIcon_BigHealPotion.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_ItemIcon_BigHealPotion","path":"sprites/spr_ItemIcon_BigHealPotion/spr_ItemIcon_BigHealPotion.yy",},"resourceVersion":"1.0","name":"2c29243a-756c-4f85-8ffd-b6808825b2d7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0dd48d4c-90d7-49f9-8a62-95d2ff66083d","path":"sprites/spr_ItemIcon_BigHealPotion/spr_ItemIcon_BigHealPotion.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0dd48d4c-90d7-49f9-8a62-95d2ff66083d","path":"sprites/spr_ItemIcon_BigHealPotion/spr_ItemIcon_BigHealPotion.yy",},"LayerId":{"name":"003be6be-a473-4561-a10d-86ba577c8335","path":"sprites/spr_ItemIcon_BigHealPotion/spr_ItemIcon_BigHealPotion.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_ItemIcon_BigHealPotion","path":"sprites/spr_ItemIcon_BigHealPotion/spr_ItemIcon_BigHealPotion.yy",},"resourceVersion":"1.0","name":"0dd48d4c-90d7-49f9-8a62-95d2ff66083d","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7e564f21-155b-4090-95ac-210050e34fd2","path":"sprites/spr_ItemIcon_BigHealPotion/spr_ItemIcon_BigHealPotion.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7e564f21-155b-4090-95ac-210050e34fd2","path":"sprites/spr_ItemIcon_BigHealPotion/spr_ItemIcon_BigHealPotion.yy",},"LayerId":{"name":"003be6be-a473-4561-a10d-86ba577c8335","path":"sprites/spr_ItemIcon_BigHealPotion/spr_ItemIcon_BigHealPotion.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_ItemIcon_BigHealPotion","path":"sprites/spr_ItemIcon_BigHealPotion/spr_ItemIcon_BigHealPotion.yy",},"resourceVersion":"1.0","name":"7e564f21-155b-4090-95ac-210050e34fd2","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_ItemIcon_BigHealPotion","path":"sprites/spr_ItemIcon_BigHealPotion/spr_ItemIcon_BigHealPotion.yy",},
@@ -36,12 +42,14 @@
     "playbackSpeedType": 1,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 3.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"1d9f7a46-b43c-43e8-bf2c-804d59d10d6d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2c29243a-756c-4f85-8ffd-b6808825b2d7","path":"sprites/spr_ItemIcon_BigHealPotion/spr_ItemIcon_BigHealPotion.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7a0da1d5-43d0-4fe3-b243-2f09c2859877","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0dd48d4c-90d7-49f9-8a62-95d2ff66083d","path":"sprites/spr_ItemIcon_BigHealPotion/spr_ItemIcon_BigHealPotion.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"84331f08-1b6c-4e82-9a87-2cfb7aa34686","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7e564f21-155b-4090-95ac-210050e34fd2","path":"sprites/spr_ItemIcon_BigHealPotion/spr_ItemIcon_BigHealPotion.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,8 +62,8 @@
     "backdropHeight": 1080,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 0,
-    "yorigin": 0,
+    "xorigin": 8,
+    "yorigin": 8,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ItemIcon_BigHealPotion","path":"sprites/spr_ItemIcon_BigHealPotion/spr_ItemIcon_BigHealPotion.yy",},

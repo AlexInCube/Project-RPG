@@ -42,7 +42,7 @@ function weapon_equip() {
 		var inst = instance_create_layer(obj_player.x,obj_player.y,"Instances",obj_weapon_controller)
 		with(inst){
 			weapon_create_script = _item_struct[$ "weapon_create_script"]
-			script_execute(weapon_create_script)
+			script_execute_ext(weapon_create_script,[global.equipment,4])
 		}
 	}
 }

@@ -13,8 +13,24 @@ function item_consume(inventory,slot_id){
 	if inventory[# slot_id,1]<=0//If quantity = 0, then remove item
 	{
 		inventory[# slot_id,0]=NO_ITEM
+		inventory[# slot_id,2]=0
 	}
 	//show_debug_message("Item Consume: Inventory: "+string(inventory)+" Slot: "+string(slot_id))
+}
+
+///@function read_NBT_data(inventory,slot_id,string variable)
+function read_NBT_data(inventory,slot_id,variable){
+	return inventory[# slot_id,2][$ variable]
+}
+
+///@function write_NBT_data(inventory,slot_id,string variable, value)
+function write_NBT_data(inventory,slot_id,variable,value){
+	inventory[# slot_id,2][$ variable] = value
+}
+
+///@function read_item_struct(inventory,slot_id,string variable)
+function read_item_struct(inventory,slot_id,variable){
+	return return_struct_from_item_index_by_item_inv(inventory,slot_id)[$ variable]
 }
 
 function is_mana_enough(mana_amount){
@@ -39,6 +55,20 @@ function default_item_render(xx,yy,inventory,slot_id){
 		var item_amount = inventory[# slot_id, 1]
 		draw_text(xx+32,yy+12,item_amount)
 	}
+}
+
+function consumable_potion_render(xx,yy,inventory,slot_id){
+	var _item = inventory[# slot_id,0]
+	var _item_struct = return_struct_from_item_index_by_item_id(_item)
+	var _uses = inventory[# slot_id,2][$ "uses"]
+	var _maxuses = _item_struct[$ "maxuses"]
+	//if _uses == undefined exit
+	draw_sprite(_item_struct[$ "item_sprite"],_maxuses-_uses,xx+16,yy+16)
+	draw_set_halign(fa_right)
+	draw_set_valign(fa_top)
+	draw_set_font(fnt_small)
+	draw_set_color(c_white)
+	draw_text(xx+32,yy+12,string(_uses))
 }
 
 #endregion 

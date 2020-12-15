@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Items",
-    "path": "folders/Objects/Controllers/Inventory/Items.yy",
+    "name": "Inventory",
+    "path": "folders/Objects/Controllers/Inventory.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Register_Helpers",
+  "name": "deep_copy",
   "tags": [],
   "resourceType": "GMScript",
 }

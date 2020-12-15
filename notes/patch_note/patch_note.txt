@@ -3,13 +3,11 @@ close combat almost repaired
 make task progress saveable (kills)
 put player stats in struct
 saving non-unique objects
-save ammo in shotgun
 distribute localization by folder
-
-saving NBT data
+make limit for autosaves
 
 Already maked in this version:
-Fixed stat recalcuting
-Fixed item quick use
-Fixed trade window
-Fixed all items to the new inventory system
+NBT data (not saveable in file)
+Big health potion (have charges of using)
+Shotgun now saving their ammo
+myGMlib dll for testing c++
