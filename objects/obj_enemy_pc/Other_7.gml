@@ -25,5 +25,6 @@ switch(state){
 		damage.image_xscale=2
 		damage.image_yscale=2
 		damage.knockback = self.knockback
+		create_explosion(x+8,y+8,45)
 	break
 }

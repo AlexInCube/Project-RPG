@@ -5,6 +5,9 @@ put player stats in struct
 saving non-unique objects
 distribute localization by folder
 make limit for autosaves
+add mouse support for control
 
-Already maked in this version:
-NBT data now saveable
+Maked in this version:
+Added explosions
+Fixed crashing when open saves window
+Started working on question window

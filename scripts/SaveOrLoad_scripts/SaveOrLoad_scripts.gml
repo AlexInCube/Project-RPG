@@ -218,7 +218,7 @@ function create_saves_list(){
 			var c_array = [saving_time_ds_list[| 0],saving_time_ds_list[| 1],saving_time_ds_list[| 2],saving_time_ds_list[| 3],saving_time_ds_list[| 4]]
 			
 			ds_list_add(ds_saves,[file,c_array,save_data[? "game_version"]])	
-			ds_list_destroy(save_data)
+			ds_map_destroy(save_data)
 		}
 
 		file = file_find_next();
