@@ -2,7 +2,8 @@
 //crossing, draw HUD buttons and loading game.
 #macro INTERACT "interact"//Macro for asset tag
 
-get_input()//Set/get input from player 
+get_input()//Set/get input from player
+overall_gui_surf = surface_create(GUIWIDTH,GUIHEIGHT)//For item description
 
 depth=-99999999
 

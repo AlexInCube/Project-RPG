@@ -37,7 +37,7 @@ draw_set_font(font[page]);
 #region TYPE 1: DIALOGUE CHOICE
 if(type[page] == 1){
 	//Variables we need
-	var col = default_col, tp = text[page], tpl = array_length_1d(tp), txtwidth = boxWidth-(2);
+	var col = default_col, tp = text[page], tpl = array_length(tp), txtwidth = boxWidth-(2);
 	var cc = 1, yy = pos_y-23, xx = pos_x+5, ii = 0, iy = 0;
 	
 	var selected = false
@@ -128,7 +128,7 @@ else {
 	var bp_array = breakpoints, txtwidth = boxWidth, char_max = txtwidth div charSize; 
 	
 	//Check if there are breakpoints in this string, if there are save their lengths
-	if(bp_array != -1){ bp_len = array_length_1d(bp_array); next_space = breakpoints[by]; by++; }
+	if(bp_array != -1){ bp_len = array_length(bp_array); next_space = breakpoints[by]; by++; }
 	
 	//For sin wave stuff
 	t += 1;

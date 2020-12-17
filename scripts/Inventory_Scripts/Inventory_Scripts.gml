@@ -1,36 +1,47 @@
 /// @description Gain items for the player
-/// @function gain_item(slot, amount);
+/// @function item_gain(slot, amount);
 /// @param item_id
-/// @param amount
-function gain_item(item_id, max_amount, inv) {
-	var item_ind   = global.item_index;
-	var total      = item_stat.stackable;
+/// @param max_amount
+/// @param inv
+/// @param [slot] optional
+function item_gain(item_id, max_amount, inv, _slot) {
+	//Max item stack
+	var total      = return_struct_from_item_index_by_item_id(item_id)[$ "item_stacking"]
 	var cur_amount = 0
 	var cur_slot   = 0;
+	if !is_undefined(_slot){
+		cur_slot = _slot
+	}
 	var max_slot   = ds_grid_width(inv);
 
-	while (cur_slot < max_slot)
+	while (cur_slot < max_slot)//If inventory have slots at least 1 slot
 	{
-	
-		if (inv[# cur_slot, 0] == item_id) || (inv[# cur_slot, 0] == item.none)
+		if (inv[# cur_slot, 0] == item_id) || (inv[# cur_slot, 0] == NO_ITEM)//And that slot is empty
 			{
-					while (cur_amount < max_amount)
+					while (cur_amount < max_amount)//Add items one at a time until the required number is added
 					{
-						if inv[# cur_slot, 1] != item_ind[# item_id, total]
+						if inv[# cur_slot, 1] != total//If itemstack != maximum item stack
 						{
 							inv[# cur_slot, 0] = item_id;
 							inv[# cur_slot, 1] += 1;
 							cur_amount += 1
-						
+							var _item_struct = return_struct_from_item_index_by_item_inv(inv,cur_slot)
+							if _item_struct != (-1 or undefined)
+							{
+								if _item_struct[$ "item_create"] != undefined
+								{
+									inv[# cur_slot, 2] = deep_copy(_item_struct[$ "item_create"])
+								}
+							}
 						}
-						else
+						else//If itemstack = max stack, then create NBTdata struct.
 						{
 							event_fire([event.itemPickuped,item_id,cur_amount])
 							break
 						}
 		            }
 			}
-		     cur_slot ++;
+		    cur_slot ++;
 	
 		if cur_amount==max_amount
 		{
@@ -88,9 +99,10 @@ function grab_item(itemneed,itemamount,inventory) {
 			{
 				findedamount+=1
 				inventory[# n,1]-=1
+				//If itemamount = findedamount, stop grab items
 				if findedamount==itemamount
 				{
-					if inventory[# n,1] == 0 {inventory[# n,0]=item.none}
+					if inventory[# n,1] == 0 {inventory[# n,0]=NO_ITEM}
 					event_fire([event.deliver,itemneed,itemamount])
 					return true
 				}
@@ -102,9 +114,6 @@ function grab_item(itemneed,itemamount,inventory) {
 
 /// @description Modifies a slot in the inventory. Can add and remove items, and set the item.
 /// @function slot_modify_amount(invetory, slot, amount, override);
-/// @param slot
-/// @param amount
-/// @param override
 function slot_modify_amount(inventory, slot, amount, override) {
 	if (override == false) //If it is not overriding current values
 	{
@@ -118,21 +127,9 @@ function slot_modify_amount(inventory, slot, amount, override) {
 	//Clear slot if the amount is less than or equal to 0
 	if (inventory[# slot, 1] <= 0)
 	 {
-		inventory[# slot, 0] = item.none;
+		inventory[# slot, 0] = NO_ITEM;
 		inventory[# slot, 1] = 0;
 	}
 }
 
-/// @description Create weapon object from item in hand
-/// @function weapon_equip();
-function weapon_equip() {
-	instance_destroy(obj_weapon_controller)
 
-	if !instance_exists(obj_weapon_controller) and global.equipment[# 4, 0] != item.none{
-		var inst = instance_create_layer(obj_player.x,obj_player.y,"Instances",obj_weapon_controller)
-		with(inst){
-			weapon_create_script = global.item_index[# global.equipment[# 4, 0], item_stat.weapon_create]
-			script_execute(weapon_create_script)
-		}
-	}
-}

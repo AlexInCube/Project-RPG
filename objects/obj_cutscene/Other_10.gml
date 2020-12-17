@@ -1,6 +1,6 @@
 current_scene = scene_info[scene]
 
-var len = array_length_1d(current_scene)-1
+var len = array_length(current_scene)-1
 
 current_scene_array = -1
 current_scene_array = array_create(len,0)

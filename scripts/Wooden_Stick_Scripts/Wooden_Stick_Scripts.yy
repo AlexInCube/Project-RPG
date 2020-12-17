@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Weapon",
-    "path": "folders/Scripts/Inventory/Items Action Scripts/Weapon.yy",
+    "name": "Weapons",
+    "path": "folders/Weapons.yy",
   },
   "resourceVersion": "1.0",
   "name": "Wooden_Stick_Scripts",

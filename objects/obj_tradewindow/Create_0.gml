@@ -51,7 +51,8 @@ slots2_x=157
 
 function draw_trade_slot(xx,yy,_item,_item_count){
 	draw_sprite(spr_slot,0,xx,yy)
-	draw_sprite(global.item_index[# _item, item_stat.sprite_index],1,xx+16,yy+16)
+	var _item_struct = return_struct_from_item_index_by_item_id(_item)
+	draw_sprite(_item_struct[$ "item_sprite"],1,xx+16,yy+16)
 	draw_text(xx+2,yy+12,_item_count)
 }
 
@@ -105,7 +106,7 @@ function draw_offer_button(ii,yy){
 					//item recieve
 					for(var i=0;i<array_length(ir_a);i++){
 						var item_array = array_get(ir_a,i)
-						gain_item(item_array[0],item_array[1],global.inventory)
+						item_gain(item_array[0],item_array[1],global.inventory)
 					}
 					//item spend
 					for(var i=0;i<array_length(is_a);i++){

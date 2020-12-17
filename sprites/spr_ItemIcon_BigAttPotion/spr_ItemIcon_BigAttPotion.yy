@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d741f65c-a752-4f0e-b796-09fe74b8a041","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "itempack",
-    "path": "folders/Objects/Controllers/Inventory/Items/itempack.yy",
+    "name": "Potions",
+    "path": "folders/Objects/Controllers/Inventory/ Inventory Sprites/Items/Potions.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ItemIcon_BigAttPotion",

@@ -24,7 +24,7 @@ function create_cutscene(argument0) {
 */
 function cutscene_end_action() {
 	scene++
-	if (scene > array_length_1d(scene_info)-1){
+	if (scene > array_length(scene_info)-1){
 		instance_destroy()
 		exit
 	}

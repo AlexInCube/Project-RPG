@@ -1,3 +1,38 @@
+/// @description Healing lifeform parent
+/// @function heal(heal,target,healinpercentage?);
+/// @param heal
+/// @param target
+/// @param healinpercentage?
+function heal(heal_amount,target,healperc) {
+	if healperc
+	{
+		target.hp+=(target.max_hp/100)*heal_amount
+	}
+	else
+	{
+		target.hp+=heal_amount
+	}
+	target.hp = clamp(target.hp,0,target.max_hp)
+}
+
+/// @description replenish_mana(manaamount,target,inpercentage?);
+/// @function replenish_mana
+/// @param mana
+/// @param target
+/// @param healinpercentage?
+function replenish_mana(manaamount, target, manaperc) {
+	if manaperc
+	{
+		target.mana+=(target.max_mana/100)*manaamount
+	}
+	else
+	{
+		target.mana+=manaamount
+	}
+	target.mana = clamp(target.mana,0,target.max_mana)
+
+}
+
 ///@function applydamage(damagecount,damagetype,damagetype,show_damage,show_dmg_x,show_dmg_y)
 ///@param damagecount
 ///@param damagetype
@@ -72,31 +107,4 @@ function lvl_up(){
 			attribute_points +=1
 		}
 	}
-}
-	
-function recalculate_stats(argument0) {
-	var inventory = argument0
-	var ds_width = ds_grid_width(inventory)
-	var h_p,m_p,armor=0,magicarmor=0,physdamage=0,magicdamage=0,str=0;
-	for(i=0;i<ds_width;i++){
-		armor +=			global.item_index[# inventory[# i, 0], item_stat.physarmor]
-		magicarmor +=		global.item_index[# inventory[# i, 0], item_stat.magicarmor]
-		physdamage +=		global.item_index[# inventory[# i, 0], item_stat.physdamage]
-		magicdamage +=		global.item_index[# inventory[# i, 0], item_stat.magicdamage]
-		//str +=				global.item_index[# inventory[# i, 0], item_stat.strength]
-	}
-	with(obj_player_stats){
-		phys_armor = armor + defense
-		magic_armor = magicarmor + defense
-		phys_damage = physdamage + strength
-		magic_damage = magicdamage + strength
-		evasion = agility
-		regen_amount = agility
-		max_hp = defense
-		max_mana = energy
-		//strength = str
-	}
-
-
-	weapon_equip()
 }

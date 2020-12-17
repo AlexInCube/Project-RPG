@@ -1,0 +1,16 @@
+{
+	"audio_settings":"Аудио",
+	"master_volume":"Общая громкость",
+	"music_volume":"Громкость музыки",
+	"sound_volume":"Громкость звука",
+	"graphics_settings":"Графика",
+	"fullscreen_mode":"Полноэкранный режим",
+	"resolution":"Разрешение экрана",
+	"controls_settings":"Управление",
+	"interface_settings":"Интерфейс",
+	"gui_size":"Размер интерфейса",
+	"gui_small":"Маленький",
+	"gui_standard":"Стандартный",
+	"gui_large":"Большой",
+	"language":"Язык"
+}

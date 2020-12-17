@@ -1,18 +1,19 @@
-function shotgun_create() {
+function shotgun_create(_inv,slot) {
 	//Setup scripts
 	weapon_step_script=shotgun_step
 	weapon_draw_script=shotgun_draw
 	weapon_alarm_script=shotgun_alarm
 	weapon_alarm_1_script=shotgun_load_ammo
-	
 	ammo_sprite = spr_shotgun_ammo//Sprite for projectile
 	shotgun_shell = obj_shotgun_shell//Shell drop effect
 	shellX = -4 //Offset for shells
 	shellY = -2
 	shoot_delay = room_speed//Shooting speed
 	can_shoot = true//Allow shooting?
-	ammo_max = 6//Ammo capacity
-	ammo = ammo_max//Current ammo amount in weapon
+	inv = _inv
+	_slot = slot
+	ammo_max = read_item_struct(inv,_slot,"ammo_max")//Ammo capacity
+	ammo = read_NBT_data(inv,_slot,"ammo")//Current ammo amount in weapon
 
 	reloading = false //Reload mode
 	reload_time = 15 //If reload mode, when load 1 ammo with delay, until we dont reached ammo_max
@@ -65,7 +66,7 @@ function shotgun_step() {
 		
 		if obj_controller.attack_key
 		{
-			if ammo > 0
+			if read_NBT_data(inv,_slot,"ammo") > 0
 			{
 				if can_shoot == true
 				{	
@@ -100,7 +101,7 @@ function shotgun_step() {
 				
 					alarm[0]=shoot_delay
 					can_shoot=false
-					ammo -= 1
+					write_NBT_data(inv,_slot,"ammo",read_NBT_data(inv,_slot,"ammo") - 1) 
 				}
 			}
 		}
@@ -139,7 +140,7 @@ function shotgun_draw() {
 	draw_set_valign(fa_bottom)
 	draw_set_halign(fa_center)
 	draw_set_font(fnt_large)
-	draw_text(obj_player.x,obj_player.y,string(ammo)+"/"+string(ammo_max))
+	draw_text(obj_player.x,obj_player.y,string(read_NBT_data(inv,_slot,"ammo"))+"/"+string(ammo_max))
 	
 	/*
 	draw_text(obj_player.x,obj_player.y+10,obj_player.mouse_dr)
@@ -154,12 +155,12 @@ function shotgun_alarm() {
 }
 
 function shotgun_load_ammo() {
-	ammo+=1
+	write_NBT_data(inv,_slot,"ammo",read_NBT_data(inv,_slot,"ammo") - 1)
 	audio_stop_sound(load_ammo_sound)
 	audio_play_sound(load_ammo_sound,1,0)
 	
-	if ammo >= ammo_max{
-		ammo = ammo_max
+	if read_NBT_data(inv,_slot,"ammo") >= ammo_max{
+		write_NBT_data(inv,_slot,"ammo",ammo_max)
 		audio_play_sound(prepare_sound,1,0)
 		reloading = false
 		can_shoot = true

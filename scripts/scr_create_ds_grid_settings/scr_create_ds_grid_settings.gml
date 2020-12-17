@@ -11,17 +11,17 @@ function create_ds_grid_settings() {
 	
 	var cr = string(global.settings.video.width)+"x"+string(global.settings.video.height)//Full string, for example "1280x720"
 	var sr = 0//Position in resolution array
-	for (var i=0;i<array_length_1d(resolution_array)-1;i++){
+	for (var i=0;i<array_length(resolution_array)-1;i++){
 		if resolution_array[i] == cr{
 			sr = i
 			break
 		}else{
-			array_set(resolution_array,array_length_1d(resolution_array),string(global.settings.video.width)+"x"+string(global.settings.video.height))
-			sr = array_length_1d(resolution_array)-1
+			array_set(resolution_array,array_length(resolution_array),string(global.settings.video.width)+"x"+string(global.settings.video.height))
+			sr = array_length(resolution_array)-1
 		}
 	}
 	ds_options = create_menu_page(
-		//0                                         //1                           //2               //3				   //4 //5 //6
+		//0  Locale word                        //1 Element Type            //2               //3				   //4 //5 //6
 		[find_keyword("audio_settings"),		settings_element_type.title],
 		[find_keyword("master_volume"),			settings_element_type.slider, change_volume,global.settings.audio.mastervolume,0.05,0,1],
 		[find_keyword("music_volume"),			settings_element_type.slider, change_volume,global.settings.audio.musicvolume,0.05,0,1],

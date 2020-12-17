@@ -3,7 +3,7 @@ hspd=0//Horizontal speed
 vspd=0//Vertical Speed
 dir=0//Move direction
 mouse_dr=0//Mouse dir for weapon draw
-
+len=0//for dash
 findradius=16//For item collecting
 
 

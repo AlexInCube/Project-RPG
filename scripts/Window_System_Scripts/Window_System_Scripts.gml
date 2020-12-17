@@ -63,12 +63,15 @@ function windowsetdepth() {
 }
 
 function destroy_all_windows(){
-	var ds_size = ds_list_size(global.window_list)
-	for(var i = 0; i<ds_size;i++)
-	{
-		if instance_exists(global.window_list[| i]){
-			instance_destroy(global.window_list[| i])
+	if instance_exists(obj_basicwindow){
+		var ds_size = ds_list_size(global.window_list)
+		for(var i = 0; i<ds_size;i++)
+		{
+			if is_undefined(global.window_list[| i])continue
+			if instance_exists(global.window_list[| i]){
+				instance_destroy(global.window_list[| i])
+			}
 		}
 	}
-	ds_map_clear(global.window_list)
+	ds_list_clear(global.window_list)
 }

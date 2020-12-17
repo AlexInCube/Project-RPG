@@ -53,7 +53,7 @@ var yy = 0; for(i=drawelementstart;i<drawelementstart+drawelementheight;i++){
 					frameleft=1
 					if mouse_check_button_pressed(mb_left){
 						ds_grid[# 3,i] -=1
-						ds_grid[# 3,i] = clamp(ds_grid[# 3,i],0,array_length_1d(current_array)-1)
+						ds_grid[# 3,i] = clamp(ds_grid[# 3,i],0,array_length(current_array)-1)
 					}
 				}else frameleft=0
 				
@@ -61,7 +61,7 @@ var yy = 0; for(i=drawelementstart;i<drawelementstart+drawelementheight;i++){
 					frameright=1
 					if mouse_check_button_pressed(mb_left){
 						ds_grid[# 3,i] +=1
-						ds_grid[# 3,i] = clamp(ds_grid[# 3,i],0,array_length_1d(current_array)-1)
+						ds_grid[# 3,i] = clamp(ds_grid[# 3,i],0,array_length(current_array)-1)
 					}
 				}else frameright=0
 				

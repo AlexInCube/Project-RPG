@@ -2,16 +2,9 @@ TODO:
 close combat almost repaired
 make task progress saveable (kills)
 put player stats in struct
-improve item description drawing
 saving non-unique objects
 distribute localization by folder
-item quick use
-
+make limit for autosaves
 
 Already maked in this version:
-If player again interact with chest while ChestGUI opened, then window was recreated.
-All windows are deleted when clear_app() is called.
-Add rename button in saving
-Fixed saves scrolling in save menu
-Fixed wrong button place in save menu
-Fixed crashes during game exiting
+NBT data now saveable

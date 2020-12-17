@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"60443fd8-57f3-45b0-8102-e736e703c4a0","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "itempack",
-    "path": "folders/Objects/Controllers/Inventory/Items/itempack.yy",
+    "name": "Potions",
+    "path": "folders/Objects/Controllers/Inventory/ Inventory Sprites/Items/Potions.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ItemIcon_ManaPotion",

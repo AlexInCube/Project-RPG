@@ -1,4 +1,9 @@
-
+//Draw items for fast use
+for(var i=0;i<5;i++){
+	var slot_x = 54+(32*i), slot_y = GUIHEIGHT-66
+	draw_sprite(spr_slot,0,slot_x+(1*i),slot_y)
+	slot(global.inventory,i,slot_x+(1*i),slot_y,false)
+}
 
 if instance_exists(obj_textbox){exit}
 draw_set_font(fnt_small)
@@ -20,9 +25,7 @@ if hp/max_hp >= 0.66{
 	var c=make_color_rgb(255,0,0)
 }
 
-draw_sprite(spr_borderbar,0,54,GUIHEIGHT-34)
-draw_sprite_ext(spr_hpbar,0,56,GUIHEIGHT-32,hp/max_hp,1,0,c,1)
-draw_text_color(90,GUIHEIGHT-40,string(hp)+"/"+string(max_hp),txtcolor,txtcolor,txtcolor,txtcolor,1)
+draw_bar(54,GUIHEIGHT-34,hp,max_hp,c)
 //MANA BAR
 if mana/max_mana >= 0.66{
 	var c=make_color_rgb(0,0,255)
@@ -32,9 +35,7 @@ if mana/max_mana >= 0.66{
 	var c=make_color_rgb(0,255,255)
 }
 
-draw_sprite(spr_borderbar,0,54,GUIHEIGHT-20)
-draw_sprite_ext(spr_hpbar,0,56,GUIHEIGHT-18,mana/max_mana,1,0,c,1)
-draw_text_color(90,GUIHEIGHT-26,string(mana)+"/"+string(max_mana),txtcolor,txtcolor,txtcolor,txtcolor,1)
+draw_bar(54,GUIHEIGHT-20,mana,max_mana,c)
 //EXP BAR
 draw_rectangle_color_fast(0,GUIHEIGHT-2,GUIWIDTH,GUIHEIGHT,c_yellow,false)
 draw_rectangle_color_fast(0,GUIHEIGHT-2,GUIWIDTH*(expr/max_expr),GUIHEIGHT,c_orange,false)

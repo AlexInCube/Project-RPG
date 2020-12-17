@@ -1,4 +1,23 @@
-//Saving working if game paused
+///@description Convert inventory into correct string
+function stringify_inventory(inv){
+	var inv_grid = ds_grid_create(ds_grid_width(inv),ds_grid_height(inv))//Create temp grid
+	ds_grid_copy(inv_grid,inv)//Copy content of the grid to temp grid
+	for(var i=0;i<ds_grid_width(inv);i++){//Copy structs to temp grid
+		inv_grid[# i, 2] = json_stringify(inv[# i, 2])
+	}
+	var grid_string = ds_grid_write(inv_grid)//Convert temp grid into string
+	ds_grid_destroy(inv_grid)//Destroy temp grid
+	return grid_string//Return stringifyed grid
+}
+///@description Parse inventory from string which create by stringify_inventory
+function parse_inventory(read_to_inv,inv_string){
+	ds_grid_read(read_to_inv,inv_string)//Copy content of saved inventory
+	for(var i=0;i<ds_grid_width(read_to_inv);i++){//Convert stringifyed structs to normal structs
+		read_to_inv[# i, 2] = json_parse(read_to_inv[# i, 2])
+	}
+}
+
+///@description Saving working if game paused
 function save_game() {
 	var save_data = ds_map_create()
 	save_data[? "player_x"] = obj_player.phy_position_x
@@ -9,8 +28,8 @@ function save_game() {
 	save_data[? "attribute_points"] = obj_player_stats.attribute_points
 	save_data[? "attributes"] = [obj_player_stats.strength,obj_player_stats.energy,obj_player_stats.defense,obj_player_stats.agility]
 	save_data[? "room"] = room
-	save_data[? "player_inventory"] = ds_grid_write(global.inventory)
-	save_data[? "player_equipment"] = ds_grid_write(global.equipment)
+	save_data[? "player_inventory"] = stringify_inventory(global.inventory)
+	save_data[? "player_equipment"] = stringify_inventory(global.equipment)
 	save_data[? "quest_list"] = ds_map_write(global.ds_current_quests)
 	save_data[? "saving_time"] = 
 	[
@@ -107,10 +126,10 @@ function load_game() {
 			
 		}
 	//Player Inventory
-	with(obj_inventory) ds_grid_read(global.inventory,save_data[? "player_inventory"])
+	with(obj_inventory) parse_inventory(global.inventory,save_data[? "player_inventory"])
 	//Player Equipment
 	with(obj_inventory){
-		ds_grid_read(global.equipment,save_data[? "player_equipment"])
+		parse_inventory(global.equipment,save_data[? "player_equipment"])
 		recalculate_stats(global.equipment)
 	}
 	//Load quest list and cycle through all list to create quest listeners

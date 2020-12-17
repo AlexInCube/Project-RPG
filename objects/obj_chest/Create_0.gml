@@ -1,7 +1,7 @@
 guiid=noone
 chestname="Chest"
 slots_quantity = 15
-chestinventory = ds_grid_create(slots_quantity, 2); 
+chestinventory = ds_grid_create(slots_quantity, INVENTORY_HEIGHT); 
 ds_grid_clear(chestinventory,0)
 
 
@@ -14,4 +14,5 @@ function interact(){
 	}
 	guiid.window_name = chestname
 	guiid.inventory = chestinventory
+	guiid.window_sprite = spr_chestmenu
 }
