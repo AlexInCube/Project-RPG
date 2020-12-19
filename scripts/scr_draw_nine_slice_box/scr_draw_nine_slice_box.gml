@@ -1,4 +1,4 @@
-///@description draw_nine_slice_box(sprite,x1,y1,x2,y2,sub_image)
+ ///@description draw_nine_slice_box(sprite,x1,y1,x2,y2,sub_image)
 ///@param sprite
 ///@param x1
 ///@param y1

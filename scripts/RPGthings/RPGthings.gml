@@ -33,7 +33,7 @@ function replenish_mana(manaamount, target, manaperc) {
 
 }
 
-///@function applydamage(damagecount,damagetype,damagetype,show_damage,show_dmg_x,show_dmg_y)
+///@function apply_damage(damagecount,damagetype,damagetype,show_damage,show_dmg_x,show_dmg_y)
 ///@param damagecount
 ///@param damagetype
 ///@param target
@@ -44,7 +44,7 @@ function replenish_mana(manaamount, target, manaperc) {
 #macro PHYSICALDAMAGETYPE 2
 #macro PUREDAMAGETYPE 3
 
-function applydamage() {
+function apply_damage() {
 	var damagecount = argument[0]
 	var damagetype = argument[1]
 	var target = argument[2]

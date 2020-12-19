@@ -3,7 +3,7 @@
 if other.id != creator
 {
 	
-	obj_player_stats.hp -= applydamage(damage,damagetype,other,false)
+	obj_player_stats.hp -= apply_damage(damage,damagetype,other,false)
 	obj_player_stats.last_hit = object_get_name(creator.object_index)
 	
 	if instance_exists(creator){

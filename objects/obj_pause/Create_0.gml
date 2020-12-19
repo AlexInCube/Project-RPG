@@ -10,7 +10,7 @@ ds_menu_main = create_menu_page(
 	[find_keyword("select_save"),		menu_element_type.button, 0, open_save_window],
 	[find_keyword("settings"),			menu_element_type.button, 0, open_settings],
 	[find_keyword("back_to_main_menu"),	menu_element_type.button, 0, exit_to_main_menu],
-	[find_keyword("exit_to_desktop"),	menu_element_type.button, 0, game_exit]
+	[find_keyword("exit_to_desktop"),	menu_element_type.button, 0, show_exit_question]
 )
 
 ds_menu_height = ds_grid_height(ds_menu_main)

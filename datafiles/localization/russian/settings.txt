@@ -1,16 +1,38 @@
 {
+	"apply_settings":"Принять",
+	"decline_settings":"Отменить",
+	"set_to_default":"По умолчанию",
+	
 	"audio_settings":"Аудио",
 	"master_volume":"Общая громкость",
 	"music_volume":"Громкость музыки",
 	"sound_volume":"Громкость звука",
+	
 	"graphics_settings":"Графика",
 	"fullscreen_mode":"Полноэкранный режим",
 	"resolution":"Разрешение экрана",
-	"controls_settings":"Управление",
+	
 	"interface_settings":"Интерфейс",
 	"gui_size":"Размер интерфейса",
 	"gui_small":"Маленький",
 	"gui_standard":"Стандартный",
 	"gui_large":"Большой",
-	"language":"Язык"
+	"language":"Язык",
+	"russian_language":"Русский",
+	"english_language":"Английский",
+	"show_damage":"Показывать цифры урона",
+	
+	"controls_settings":"Управление",
+	"up_key":"Передвижение вверх",
+	"down_key":"Передвижение вниз",
+	"left_key":"Передвижение влево",
+	"right_key":"Передвижение направо",
+	"drop_item_key":"Выбросить предмет",
+	"attack_key":"Атака",
+	"interact_key":"Взаимодействие",
+	"pickup_key":"Подбор предмета",
+	"equipment_key":"Открыть экипировку",
+	"inventory_key":"Открыть инвентарь",
+	"questlist_key":"Открыть список заданий",
+	"combination_key":"Выкинуть один предмет из слота"
 }

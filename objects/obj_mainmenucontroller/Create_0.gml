@@ -20,7 +20,7 @@ ds_menu_main = create_menu_page(
 	[find_keyword("select_save"),	menu_element_type.button, 0, open_save_window],
 	[find_keyword("settings"),		menu_element_type.button, 0, open_settings],
 	[find_keyword("creators"),		menu_element_type.button, 0, open_creators],
-	[find_keyword("exit"),			menu_element_type.button, 0, game_exit]
+	[find_keyword("exit"),			menu_element_type.button, 0, show_exit_question]
 )
 
 if !file_exists("Saves\\"+global.settings.lastsave+"/playerdata.txt"){

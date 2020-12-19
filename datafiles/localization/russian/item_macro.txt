@@ -1,5 +1,5 @@
 {
-	"Item Type":"Тип предмета",
+	"Item_type":"Тип предмета",
 	"item_type_weapon":"Оружие",
 	"item_type_helmet":"Шлем",
 	"item_type_chestplate":"Нагрудник",
@@ -17,5 +17,5 @@
 	"item_stat_10":"Удача",
 	"item_stat_11":"Физическая броня",
 	"item_stat_12":"Магическая броня",
-	"item_stat_13":"Стоимость маны",
+	"item_stat_13":"Стоимость маны"
 }

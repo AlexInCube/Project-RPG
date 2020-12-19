@@ -10,7 +10,7 @@ targety = 0
 
 phys_armor = 2
 magic_armor = 0
-damage = 5
+damage = 10
 knockback = 0
 
 state = enemy_pc_idle_state

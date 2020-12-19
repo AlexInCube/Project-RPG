@@ -1,1 +1,1 @@
-sprite=global.item_index[# whatitem, item_stat.sprite_index]
+sprite=return_struct_from_item_index_by_item_id(whatitem)[$ "item_sprite"]

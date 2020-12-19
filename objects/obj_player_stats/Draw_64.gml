@@ -1,3 +1,5 @@
+
+if instance_exists(obj_textbox){exit}
 //Draw items for fast use
 for(var i=0;i<5;i++){
 	var slot_x = 54+(32*i), slot_y = GUIHEIGHT-66
@@ -5,7 +7,6 @@ for(var i=0;i<5;i++){
 	slot(global.inventory,i,slot_x+(1*i),slot_y,false)
 }
 
-if instance_exists(obj_textbox){exit}
 draw_set_font(fnt_small)
 draw_set_color(c_black)
 

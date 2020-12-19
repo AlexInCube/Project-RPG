@@ -8,30 +8,25 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 55,
+  "bbox_right": 38,
   "bbox_top": 0,
-  "bbox_bottom": 31,
+  "bbox_bottom": 38,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 56,
-  "height": 32,
+  "width": 39,
+  "height": 39,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 8,
-  "gridY": 16,
+  "gridX": 0,
+  "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e2b19970-118b-4b4e-9219-4a27c10ba8f8","path":"sprites/spr_question_button/spr_question_button.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e2b19970-118b-4b4e-9219-4a27c10ba8f8","path":"sprites/spr_question_button/spr_question_button.yy",},"LayerId":{"name":"cfaadf4e-2fb4-4f6a-8ab5-59606757f3ae","path":"sprites/spr_question_button/spr_question_button.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"e2b19970-118b-4b4e-9219-4a27c10ba8f8","path":"sprites/spr_question_button/spr_question_button.yy",},"LayerId":{"name":"34b1abf5-92b2-4484-8a01-6d9f5c594411","path":"sprites/spr_question_button/spr_question_button.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_question_button","path":"sprites/spr_question_button/spr_question_button.yy",},"resourceVersion":"1.0","name":"e2b19970-118b-4b4e-9219-4a27c10ba8f8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d12fd07d-ad4c-4c3d-9c16-bc37f4eee32f","path":"sprites/spr_question_button/spr_question_button.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d12fd07d-ad4c-4c3d-9c16-bc37f4eee32f","path":"sprites/spr_question_button/spr_question_button.yy",},"LayerId":{"name":"cfaadf4e-2fb4-4f6a-8ab5-59606757f3ae","path":"sprites/spr_question_button/spr_question_button.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"d12fd07d-ad4c-4c3d-9c16-bc37f4eee32f","path":"sprites/spr_question_button/spr_question_button.yy",},"LayerId":{"name":"34b1abf5-92b2-4484-8a01-6d9f5c594411","path":"sprites/spr_question_button/spr_question_button.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_question_button","path":"sprites/spr_question_button/spr_question_button.yy",},"resourceVersion":"1.0","name":"d12fd07d-ad4c-4c3d-9c16-bc37f4eee32f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"97bcbaf3-4c1c-4ba5-8401-a051b57e1b0d","path":"sprites/spr_question_button/spr_question_button.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"97bcbaf3-4c1c-4ba5-8401-a051b57e1b0d","path":"sprites/spr_question_button/spr_question_button.yy",},"LayerId":{"name":"17a3520b-8567-49e7-bb1d-f53335c798e0","path":"sprites/spr_question_button/spr_question_button.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_question_button","path":"sprites/spr_question_button/spr_question_button.yy",},"resourceVersion":"1.0","name":"97bcbaf3-4c1c-4ba5-8401-a051b57e1b0d","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_question_button","path":"sprites/spr_question_button/spr_question_button.yy",},
@@ -41,13 +36,12 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 2.0,
+    "length": 1.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"0a01b153-eee2-4c46-ac32-b059024be01f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e2b19970-118b-4b4e-9219-4a27c10ba8f8","path":"sprites/spr_question_button/spr_question_button.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"b12af424-b276-49d9-b514-fe0da8a78b26","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d12fd07d-ad4c-4c3d-9c16-bc37f4eee32f","path":"sprites/spr_question_button/spr_question_button.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"412fe0f5-37b6-4583-a4dd-d845d47eb1a4","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"97bcbaf3-4c1c-4ba5-8401-a051b57e1b0d","path":"sprites/spr_question_button/spr_question_button.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -71,8 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"34b1abf5-92b2-4484-8a01-6d9f5c594411","tags":[],"resourceType":"GMImageLayer",},
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"cfaadf4e-2fb4-4f6a-8ab5-59606757f3ae","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"17a3520b-8567-49e7-bb1d-f53335c798e0","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Question Window",
