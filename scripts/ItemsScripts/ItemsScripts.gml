@@ -108,4 +108,12 @@ function shotgun() : default_item() constructor{
 		ammo : ammo_max
 	}
 }
+
+function light_staff() : default_item() constructor{
+	mana_cost = 0.5
+	light_radius = 50
+	jump_count = 4
+	item_create = {
+	}
+}
 #endregion

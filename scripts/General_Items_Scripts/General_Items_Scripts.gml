@@ -34,7 +34,7 @@ function read_item_struct(inventory,slot_id,variable){
 }
 
 function is_mana_enough(mana_amount){
-	if obj_player_stats.mana>=mana_amount return true
+	return obj_player_stats.mana>=mana_amount
 }
 
 function mana_consume(mana_amount){

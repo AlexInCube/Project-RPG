@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e20b7de5-7e77-485c-b94f-a3fe03697f4b","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "MagicWeapon",
-    "path": "folders/Objects/Controllers/Inventory/ Inventory Sprites/Items/Weapon/MagicWeapon.yy",
+    "name": "Light Staff",
+    "path": "folders/Weapons/Light Staff.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_MagicWeaponLightningStaff",

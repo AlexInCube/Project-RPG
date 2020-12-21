@@ -89,7 +89,7 @@ function mouseover(argument0, argument1, argument2, argument3) {
 ///@function draw_light
 ///@param light_radius
 function draw_light(size){
-	if instance_exists(obj_lighting){
+	if instance_exists(obj_light){
 		if surface_exists(global.light){
 			gpu_set_blendmode(bm_subtract)
 			surface_set_target(global.light)

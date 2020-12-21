@@ -16,4 +16,5 @@ if other.id != creator
 	with (other){
 		physics_apply_impulse(x,y,xforce,yforce)
 	}
+	script_execute(on_collision_script)
 }

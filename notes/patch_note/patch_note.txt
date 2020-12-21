@@ -6,10 +6,8 @@ saving non-unique objects
 distribute localization by folder
 make limit for autosaves
 add mouse support for control
-rage quit
 
 Maked in this version:
-Completed question window
-Improved explosion, he dealing damage and knockback everyone.
-Fixed bugs with dropped item
-Fixed drawing slots while dialogue started
+Added light staff
+Fixed bug with no appearing button "new save" in save menu
+
