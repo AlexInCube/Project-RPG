@@ -63,6 +63,7 @@
     {"id":{"name":"spr_leatherchestplate","path":"sprites/spr_leatherchestplate/spr_leatherchestplate.yy",},"order":5,},
     {"id":{"name":"spr_leatherleggings","path":"sprites/spr_leatherleggings/spr_leatherleggings.yy",},"order":6,},
     {"id":{"name":"spr_trade_change_page_button","path":"sprites/spr_trade_change_page_button/spr_trade_change_page_button.yy",},"order":4,},
+    {"id":{"name":"Buff_Classes","path":"scripts/Buff_Classes/Buff_Classes.yy",},"order":5,},
     {"id":{"name":"quest_helpers","path":"scripts/quest_helpers/quest_helpers.yy",},"order":6,},
     {"id":{"name":"spr_leatherboots","path":"sprites/spr_leatherboots/spr_leatherboots.yy",},"order":7,},
     {"id":{"name":"spr_ItemIcon_ironsword","path":"sprites/spr_ItemIcon_ironsword/spr_ItemIcon_ironsword.yy",},"order":0,},

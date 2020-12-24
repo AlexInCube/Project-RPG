@@ -9,5 +9,5 @@ add mouse support for control
 buff/debuff system
 
 Maked in this version:
-Added buff/debuff system prototype
+Buff now can execute scripts and lose their duration
 
