@@ -5,7 +5,7 @@ function light_staff_create(_inv,slot) {
 	weapon_alarm_script=light_staff_alarm
 	ammo_sprite = spr_light_staff_projectile//Sprite for projectile
 	weapon_sprite = spr_MagicWeaponLightningStaff
-	shoot_delay = room_speed//Shooting speed
+	shoot_delay = DELTATIME//Shooting speed
 	can_shoot = true//Allow shooting?
 	inv = _inv
 	_slot = slot
@@ -30,7 +30,7 @@ function light_staff_step() {
 					with dmg
 					{
 						on_collision_script = light_staff_projectile
-						alarm[0] = room_speed*4
+						alarm[0] = DELTATIME*4
 						physics_apply_impulse(x,y,xforce,yforce)
 						damage = obj_player_stats.magic_damage
 						damagetype = MAGICDAMAGETYPE

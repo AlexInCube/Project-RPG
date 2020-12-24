@@ -458,7 +458,7 @@ if (text_part[0] == commands[command_1.create]) {
 						temp_post_message = "Please provide a number for the speed"
 						event_user(1); // post message to the history 
 					} else {
-						game_set_speed(speed_to_try,room_speed)
+						game_set_speed(speed_to_try,DELTATIME)
 						command_done = true
 					}
 				}

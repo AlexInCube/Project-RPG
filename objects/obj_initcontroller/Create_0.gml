@@ -4,6 +4,9 @@ randomize()
 setup_default_settings()//Setup default settings
 load_settings()//Load volume, controlls and other settings
 
+game_set_speed(global.settings.video.game_speed, gamespeed_fps);
+
+
 global.window_list=ds_list_create()//For window system
 if file_exists("Saves\\"+global.settings.lastsave+"/playerdata.txt"){
 global.directory_save=global.settings.lastsave//Current saving for loading

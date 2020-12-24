@@ -11,6 +11,7 @@
 	"graphics_settings":"Графика",
 	"fullscreen_mode":"Полноэкранный режим",
 	"resolution":"Разрешение экрана",
+	"fps_limit":"Ограничение кадров в секунду",
 	
 	"interface_settings":"Интерфейс",
 	"gui_size":"Размер интерфейса",
@@ -21,6 +22,9 @@
 	"russian_language":"Русский",
 	"english_language":"Английский",
 	"show_damage":"Показывать цифры урона",
+	
+	"game_settings":"Игра",
+	
 	
 	"controls_settings":"Управление",
 	"up_key":"Передвижение вверх",

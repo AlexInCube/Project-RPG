@@ -82,3 +82,20 @@ else {
 		return string(str2);
 	}
 }
+	
+function change_volume(type, volume) {
+	switch(type){
+		case 1: audio_master_gain(volume);global.settings.audio.mastervolume=volume; break;
+		case 2: audio_group_set_gain(ag_music,volume,0);global.settings.audio.musicvolume=volume; break;
+		case 3: audio_group_set_gain(ag_sounds,volume,0);global.settings.audio.soundvolume=volume; break;
+	}
+}
+
+function change_game_speed(type, value) {
+	switch(type){
+		case 7: 	global.settings.video.game_speed=value
+	game_set_speed(global.settings.video.game_speed,gamespeed_fps) 
+	break
+	}
+
+}

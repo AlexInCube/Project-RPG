@@ -9,12 +9,15 @@ global.settings = {
 	video : {
 		fullscreen : false,
 		width : display_get_width(),
-		height : display_get_height()
+		height : display_get_height(),
+		game_speed: 60	
 	},
 	interface : {
 		guisize: 1,
 		language: 0,//0 - Russian, 1 - English
 		showdamage:	true
+	},
+	game : {
 	},
 	controls : {
 		key_up : ord("W"),		
@@ -122,7 +125,9 @@ function save_settings(){
 function load_settings(){
 	// Load JSON
 	var _json = load_string_from_json("game_settings.json");
-	global.settings = json_parse(_json);
+	if _json != undefined{
+		global.settings = json_parse(_json);
+	}
 }
 /// Saving a string as a buffer
 function save_string_in_json (_string, _filename) {
@@ -134,6 +139,7 @@ function save_string_in_json (_string, _filename) {
 
 /// Loading a string from a buffer
 function load_string_from_json (_filename) {
+	if !file_exists(_filename)exit
 	var _buffer = buffer_load(_filename);
 	var _string = buffer_read(_buffer, buffer_string);
 

@@ -2,7 +2,7 @@ event_inherited()
 spd = 1
 image_speed = 1
 
-alarm[0] = room_speed*irandom_range(2,3)
+alarm[0] = DELTATIME*irandom_range(120,180)
 sight = 90
 angry_sight = 20
 targetx = 0

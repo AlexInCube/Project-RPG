@@ -95,7 +95,7 @@ display_close_speed = 8
 predict_grow_speed = 74 // in px
 predict_shrink_speed = 53 // in px
 
-dt = delta_time / 100000
+dt = DELTATIME / 100000
 #endregion
 #region font
 font_for_main = fnt_small

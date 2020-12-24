@@ -8,7 +8,7 @@ function shotgun_create(_inv,slot) {
 	shotgun_shell = obj_shotgun_shell//Shell drop effect
 	shellX = -4 //Offset for shells
 	shellY = -2
-	shoot_delay = room_speed//Shooting speed
+	shoot_delay = DELTATIME//Shooting speed
 	can_shoot = true//Allow shooting?
 	inv = _inv
 	_slot = slot

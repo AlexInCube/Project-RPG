@@ -68,7 +68,7 @@ function effect_cycle_grid(buff_grid){
 		var _effect = buff_grid[# i,0]
 		//if _effect == undefined {continue}
 		effect_script_execute(_effect,EFFECT_SCRIPT_TICK)
-		if is_struct(buff_grid[# i,1]) buff_grid[# i,1][$ "duration"] -= 1/room_speed
+		if is_struct(buff_grid[# i,1]) buff_grid[# i,1][$ "duration"] -= 1/DELTATIME
 		if buff_grid[# i,1][$ "duration"] <= 0{effect_remove(buff_grid,i)} 
 	}
 }

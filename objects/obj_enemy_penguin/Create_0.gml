@@ -4,7 +4,7 @@ event_inherited()
 spd = 1.5
 image_speed = 0.2
 state = enemy_idle_state_chinlin
-alarm[0] = room_speed*irandom_range(2,3)
+alarm[0] = DELTATIME*irandom_range(2,3)
 sight = 300
 xaxis = 0
 yaxis = 0

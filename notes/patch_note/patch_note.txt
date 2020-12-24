@@ -7,7 +7,9 @@ distribute localization by folder
 make limit for autosaves
 add mouse support for control
 buff/debuff system
+fix settings load
+
 
 Maked in this version:
-Buff now can execute scripts and lose their duration
+Added delta time, now game speed dont depend from fps. (need testing)
 

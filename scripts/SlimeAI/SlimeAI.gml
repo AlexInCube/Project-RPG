@@ -7,8 +7,8 @@ function enemy_chase_state() {
 	if (sign(hspd) != 0) {
 	    image_xscale = sign(hspd);
 	}
-	phy_position_x += hspd
-	phy_position_y += vspd
+	phy_position_x += hspd*DELTATIME
+	phy_position_y += vspd*DELTATIME
 }
 
 function enemy_wander_state() {
@@ -20,8 +20,8 @@ function enemy_wander_state() {
 		if (sign(hspd) != 0) {
 		    image_xscale = sign(hspd);
 		}
-		phy_position_x += hspd
-		phy_position_y += vspd
+		phy_position_x += hspd*DELTATIME
+		phy_position_y += vspd*DELTATIME
 	}
 }
 
@@ -55,7 +55,7 @@ function check_for_player() {
 function enemy_choose_next_state() {
 	if (alarm[0] <= 0){
 		state = choose(enemy_idle_state,enemy_wander_state)
-		alarm[0] = room_speed*irandom_range(2,3)
+		alarm[0] = irandom_range(60,180)*DELTATIME
 		targetx = irandom(room_width)
 		targety = irandom(room_height)
 	}

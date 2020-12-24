@@ -1,5 +1,3 @@
-game_set_speed(60, gamespeed_fps);
-
 if !audio_group_is_loaded(ag_music)
    {
    audio_group_load(ag_music);
