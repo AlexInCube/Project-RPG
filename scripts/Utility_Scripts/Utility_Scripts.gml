@@ -123,4 +123,3 @@ function draw_rectangle_color_fast(x1,y1,x2,y2,color,outline){
 function draw_text_color_fast(xx,yy,string,color,alpha){
 	draw_text_color(xx,yy,string,color,color,color,color,alpha)
 }
-

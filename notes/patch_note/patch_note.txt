@@ -6,8 +6,8 @@ saving non-unique objects
 distribute localization by folder
 make limit for autosaves
 add mouse support for control
+buff/debuff system
 
 Maked in this version:
-Added light staff
-Fixed bug with no appearing button "new save" in save menu
+Added buff/debuff system prototype
 

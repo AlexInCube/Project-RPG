@@ -1,5 +1,10 @@
-
 if instance_exists(obj_textbox){exit}
+if instance_exists(obj_player){
+	for(var i=0;i<ds_grid_width(obj_player.buff_grid);i++)
+	{
+		draw_effect(5+(32*i),GUIHEIGHT-100,obj_player.buff_grid,i)
+	}
+}
 //Draw items for fast use
 for(var i=0;i<5;i++){
 	var slot_x = 54+(32*i), slot_y = GUIHEIGHT-66

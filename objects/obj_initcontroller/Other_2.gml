@@ -1,3 +1,5 @@
+game_set_speed(60, gamespeed_fps);
+
 if !audio_group_is_loaded(ag_music)
    {
    audio_group_load(ag_music);
@@ -14,4 +16,6 @@ localization_load()
 
 //Create a ds grid item.total wide, and item_stat.total tall
 global.item_index = ds_list_create()
+global.effect_index = ds_list_create()
 registeritems()
+registereffects()

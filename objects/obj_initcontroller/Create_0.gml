@@ -1,8 +1,8 @@
 /// @description One-time object, calling only if game start.
 randomize()
 
-setup_default_settings()//Load volume, controlls and other settings
-load_settings()
+setup_default_settings()//Setup default settings
+load_settings()//Load volume, controlls and other settings
 
 global.window_list=ds_list_create()//For window system
 if file_exists("Saves\\"+global.settings.lastsave+"/playerdata.txt"){
