@@ -1,3 +1,11 @@
+function convert_seconds_to_ticks(seconds){
+	return seconds*60
+}
+
+function convert_ticks_to_seconds(ticks){
+	return ticks/60
+}
+
 /// @function with_tagged(tag, lambda)
 /// @param tag The tag or array of tags to operate on
 /// @param lambda An inline function to be run

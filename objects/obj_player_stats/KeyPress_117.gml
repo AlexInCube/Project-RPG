@@ -1,1 +1,1 @@
-effect_apply("regeneration",obj_player)
+effect_apply(choose(BUFF_ATTACK,BUFF_REGENERATION),obj_player)

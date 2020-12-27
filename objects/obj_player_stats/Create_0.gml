@@ -61,11 +61,13 @@ function draw_effect(xx,yy,grid,effect_id){
 	var _effect_struct = return_struct_from_effect_index_by_effect_id(grid[# effect_id,0])
 		if _effect_struct != -1 and !is_undefined(_effect_struct){
 			var _effect_icon = _effect_struct[$ "effect_icon"]
+			var _effect_type = _effect_struct[$ EFFECT_IS_BUFF]
 			draw_sprite(_effect_icon,0,xx,yy)
-			var _duration = round(grid[# effect_id,1][$ "duration"])
-			if _duration < 1 exit
+			draw_sprite(spr_effect_frame,_effect_type,xx,yy)
+			var _duration = convert_ticks_to_seconds(grid[# effect_id,1][$ "duration"])
 			draw_set_halign(fa_left)
 			draw_set_valign(fa_top)
 			draw_text_shadow(xx,yy+10,_duration,fnt_small,1,c_black,c_white,1)
+			draw_text_shadow(xx,yy,(grid[# effect_id,1][$ "tick"]),fnt_small,1,c_black,c_white,1)
 		}
 }

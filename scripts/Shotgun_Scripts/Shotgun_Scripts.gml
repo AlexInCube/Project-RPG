@@ -8,7 +8,7 @@ function shotgun_create(_inv,slot) {
 	shotgun_shell = obj_shotgun_shell//Shell drop effect
 	shellX = -4 //Offset for shells
 	shellY = -2
-	shoot_delay = DELTATIME//Shooting speed
+	shoot_delay = 60//Shooting speed
 	can_shoot = true//Allow shooting?
 	inv = _inv
 	_slot = slot
@@ -48,6 +48,8 @@ function shotgun_create(_inv,slot) {
 }
 
 function shotgun_step() {
+	shoot_delay = 60/DELTATIME
+	reload_time = 15/DELTATIME
 	var mouse_dir = point_direction(x,y,mouse_x,mouse_y)
 	if obj_player.state == move_state
 	{
@@ -155,7 +157,7 @@ function shotgun_alarm() {
 }
 
 function shotgun_load_ammo() {
-	write_NBT_data(inv,_slot,"ammo",read_NBT_data(inv,_slot,"ammo") - 1)
+	write_NBT_data(inv,_slot,"ammo",read_NBT_data(inv,_slot,"ammo") + 1)
 	audio_stop_sound(load_ammo_sound)
 	audio_play_sound(load_ammo_sound,1,0)
 	

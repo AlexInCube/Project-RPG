@@ -5,7 +5,7 @@ function light_staff_create(_inv,slot) {
 	weapon_alarm_script=light_staff_alarm
 	ammo_sprite = spr_light_staff_projectile//Sprite for projectile
 	weapon_sprite = spr_MagicWeaponLightningStaff
-	shoot_delay = DELTATIME//Shooting speed
+	shoot_delay = 60//Shooting speed
 	can_shoot = true//Allow shooting?
 	inv = _inv
 	_slot = slot
@@ -15,6 +15,7 @@ function light_staff_create(_inv,slot) {
 }
 
 function light_staff_step() {
+	shoot_delay = 60/DELTATIME
 	var mouse_dir = point_direction(x,y,mouse_x,mouse_y)
 	if obj_player.state == move_state
 	{
@@ -30,12 +31,12 @@ function light_staff_step() {
 					with dmg
 					{
 						on_collision_script = light_staff_projectile
-						alarm[0] = DELTATIME*4
+						alarm[0] = DELTATIME*convert_seconds_to_ticks(4)
 						physics_apply_impulse(x,y,xforce,yforce)
 						damage = obj_player_stats.magic_damage
 						damagetype = MAGICDAMAGETYPE
-						phy_speed_x = phy_speed_x/8
-						phy_speed_y = phy_speed_y/8
+						phy_speed_x = (phy_speed_x/8)*DELTATIME
+						phy_speed_y = (phy_speed_y/8)*DELTATIME
 					}
 					variable_instance_set(dmg,"jump_count",jump_count)
 					alarm[0]=shoot_delay

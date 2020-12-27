@@ -1,8 +1,16 @@
 if instance_exists(obj_textbox){exit}
+//Draw buff bar
 if instance_exists(obj_player){
-	for(var i=0;i<ds_grid_width(obj_player.buff_grid);i++)
-	{
-		draw_effect(5+(32*i),GUIHEIGHT-100,obj_player.buff_grid,i)
+	//Cycle through the player buff_grid
+	var xx=0, i=0; repeat ds_grid_width(obj_player.buff_grid){
+		//Get struct from buff
+		i++
+		var effect_id = obj_player.buff_grid[# i-1,0]
+		if is_undefined(effect_id){continue}
+		var _effect_struct = return_struct_from_effect_index_by_effect_id(obj_player.buff_grid[# i-1,0])
+		if _effect_struct[$ EFFECT_HIDE_ICON] == true{ continue}//If hide_icon true, dont draw icon and dont increase X offset
+		draw_effect(5+(32*xx),GUIHEIGHT-100,obj_player.buff_grid,i-1)
+		xx++
 	}
 }
 //Draw items for fast use

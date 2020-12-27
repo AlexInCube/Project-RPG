@@ -32,9 +32,9 @@ switch(mode){
 	break
 }
 //Shake effect
-cx += random_range(-shake,shake)
-cy += random_range(-shake,shake)
-shake*=0.9*DELTATIME
+cx += (random_range(-shake,shake))
+cy += (random_range(-shake,shake))
+shake*=0.9
 //Do not allow the camera to leave the room
 if(!boundless){
 	cx = clamp(cx, 0, room_width-view_w)

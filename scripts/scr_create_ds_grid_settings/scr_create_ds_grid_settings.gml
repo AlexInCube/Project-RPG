@@ -29,7 +29,7 @@ function create_ds_grid_settings() {
 		[find_keyword("graphics_settings"),		settings_element_type.title],
 		[find_keyword("resolution"),			settings_element_type.shift, change_resolution,sr,resolution_array],
 		[find_keyword("fullscreen_mode"),		settings_element_type.toggle, change_window_mode,global.settings.video.fullscreen],
-		[find_keyword("fps_limit"),				settings_element_type.slider,change_game_speed,global.settings.video.game_speed,10,30,300],
+		[find_keyword("fps_limit"),				settings_element_type.slider,change_game_speed,global.settings.video.game_speed,10,10,300],
 		[find_keyword("interface_settings"),	settings_element_type.title],
 		[find_keyword("gui_size"),				settings_element_type.slider, change_gui_size,global.settings.interface.guisize,0.05,0.5,1.3],
 		[find_keyword("language"),				settings_element_type.shift, change_language,global.settings.interface.language,[find_keyword("russian_language"),find_keyword("english_language")]],
