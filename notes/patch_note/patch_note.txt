@@ -8,10 +8,8 @@ make limit for autosaves
 add mouse support for control
 fix settings load
 v-sync
-make buffs saveable
 
 Maked in this version:
-Buff can be removed from buff_grid if buffs quantity more than one.
-Buff executes script when it created and when removed
-Over buff icon drawn frame means GOOD or BAD buff type.
-Fixed delta in light staff, shotgun and camera.
+Buffs saveable for player only
+Fixed shotgun reloading bug
+Little optimizations in text drawing

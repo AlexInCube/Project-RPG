@@ -1,19 +1,42 @@
 ///@description Convert inventory into correct string
-function stringify_inventory(inv){
+function stringify_grid_with_structs(inv,row_structs){
 	var inv_grid = ds_grid_create(ds_grid_width(inv),ds_grid_height(inv))//Create temp grid
 	ds_grid_copy(inv_grid,inv)//Copy content of the grid to temp grid
 	for(var i=0;i<ds_grid_width(inv);i++){//Copy structs to temp grid
-		inv_grid[# i, 2] = json_stringify(inv[# i, 2])
+		inv_grid[# i, row_structs] = json_stringify(inv[# i, row_structs])
 	}
 	var grid_string = ds_grid_write(inv_grid)//Convert temp grid into string
 	ds_grid_destroy(inv_grid)//Destroy temp grid
 	return grid_string//Return stringifyed grid
 }
 ///@description Parse inventory from string which create by stringify_inventory
-function parse_inventory(read_to_inv,inv_string){
+function parse_grid_with_structs(read_to_inv,inv_string,row_structs){
 	ds_grid_read(read_to_inv,inv_string)//Copy content of saved inventory
 	for(var i=0;i<ds_grid_width(read_to_inv);i++){//Convert stringifyed structs to normal structs
-		read_to_inv[# i, 2] = json_parse(read_to_inv[# i, 2])
+		read_to_inv[# i, row_structs] = json_parse(read_to_inv[# i, row_structs])
+	}
+}
+
+function stringify_inventory(inv){
+	return stringify_grid_with_structs(inv,2)
+}
+
+function parse_inventory(inv,inv_string){
+	return parse_grid_with_structs(inv,inv_string,2)
+}
+
+function stringify_effects(buff_grid){
+	return stringify_grid_with_structs(buff_grid,1)
+}
+
+function parse_effects(lifeform,effects_string){
+	with lifeform{
+		if ds_exists(buff_grid,ds_type_grid){
+			ds_grid_resize(buff_grid,effects_string[| 1],2)
+		}else{
+			buff_grid = ds_grid_create(effects_string[| 1],2)
+		}
+		parse_grid_with_structs(buff_grid,effects_string[| 0],1)
 	}
 }
 
@@ -30,6 +53,7 @@ function save_game() {
 	save_data[? "room"] = room
 	save_data[? "player_inventory"] = stringify_inventory(global.inventory)
 	save_data[? "player_equipment"] = stringify_inventory(global.equipment)
+	save_data[? "player_effects"] = [stringify_effects(obj_player_stats.buff_grid),ds_grid_width(obj_player_stats.buff_grid)-1]
 	save_data[? "quest_list"] = ds_map_write(global.ds_current_quests)
 	save_data[? "saving_time"] = 
 	[
@@ -132,6 +156,8 @@ function load_game() {
 		parse_inventory(global.equipment,save_data[? "player_equipment"])
 		recalculate_stats(global.equipment)
 	}
+	parse_effects(obj_player_stats, save_data[? "player_effects"])
+	ds_list_destroy(save_data[? "player_effects"])
 	//Load quest list and cycle through all list to create quest listeners
 	ds_map_clear(global.ds_current_quests)
 	//Read ds_map

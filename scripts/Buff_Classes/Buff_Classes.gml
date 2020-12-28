@@ -9,6 +9,7 @@
 #macro EFFECT_HIDE_ICON "effect_hide_icon"
 
 
+
 function default_effect() constructor{
 	effect_unlocale_name = ""//Effect ID
 	effect_locale_name = find_keyword(effect_unlocale_name)//Effect localized name for player

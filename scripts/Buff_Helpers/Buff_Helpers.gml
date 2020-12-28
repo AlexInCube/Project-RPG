@@ -1,4 +1,7 @@
-
+function create_buff_grid(){
+	buff_grid = ds_grid_create(0,2)
+	ds_grid_clear(buff_grid,undefined)
+}
 
 function register_effect(name,icon,effect_struct,arg_array){
 	var ds_size = ds_list_size(global.effect_index)
@@ -65,7 +68,7 @@ function effect_cycle_grid(buff_grid){
 	if grid_width <= 0 exit
 	var i=0; repeat(grid_width){//Loop grid
 		var _effect = buff_grid[# i,0]//Get effect_id from grid
-		if is_undefined(_effect){i++;continue}//If effect unknown, then dont execute code
+		if is_undefined(_effect) or _effect == UNKNOWN_EFFECT{i++;continue}//If effect unknown, then dont execute code
 		//if _effect == undefined {continue}
 		buff_grid[# i,1][$ "tick"] -= 1*DELTATIME//Decrease tick every step
 		if buff_grid[# i,1][$ "tick"] <= 0//If ticks = 0, then execute effect script
@@ -86,11 +89,12 @@ function effect_cycle_grid(buff_grid){
 
 function effect_remove(buff_grid,effect){
 	effect_script_execute(buff_grid[# effect,0],EFFECT_SCRIPT_DESTROY)
-	buff_grid[# effect,0] = undefined
-	buff_grid[# effect,1] = undefined
-	for(var i=effect;i<=ds_grid_width(buff_grid)-1;i++){
+	buff_grid[# effect,0] = UNKNOWN_EFFECT
+	buff_grid[# effect,1] = UNKNOWN_EFFECT
+	for(var i=effect;i<ds_grid_width(buff_grid)-1;i++){
 		buff_grid[# i,0] = buff_grid[# i+1,0]
 		buff_grid[# i,1] = buff_grid[# i+1,1]
 	}
+	if ds_grid_width(buff_grid)-1 <= 0 exit
 	ds_grid_resize(buff_grid,ds_grid_width(buff_grid)-1,2)
 }

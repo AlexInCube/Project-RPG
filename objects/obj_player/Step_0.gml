@@ -7,5 +7,3 @@ if (obj_player_stats.hp <= 0) {
 	}
 }
 depth=-bbox_bottom
-
-effect_cycle_grid(buff_grid)

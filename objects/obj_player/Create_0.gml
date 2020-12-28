@@ -1,4 +1,3 @@
-event_inherited()
 spd=2//Default speed
 hspd=0//Horizontal speed
 vspd=0//Vertical Speed
