@@ -124,9 +124,27 @@ function save_settings(){
 
 function load_settings(){
 	// Load JSON
-	var _json = load_string_from_json("game_settings.json");
-	if _json != undefined{
-		global.settings = json_parse(_json);
+	var _json_settings = load_string_from_json("game_settings.json");//Get string which contain in file
+	if !is_undefined(_json_settings){
+		var temp_struct = json_parse(_json_settings)//Convert settings string into struct
+		var sections_names_array = variable_struct_get_names(temp_struct)//Get sections names
+		with(global.settings)
+		{
+			//Loop through sections, video, audio and etc.
+			for(var i=0;i<array_length(sections_names_array);i++)
+			{
+				var section_struct = temp_struct[$ sections_names_array[i]]
+				if !is_struct(section_struct){continue}
+				var options_array = variable_struct_get_names(section_struct)
+				//Loop through all options in section
+				for(var j=0;j<array_length(options_array);j++)
+				{
+					//Setup section -> option
+					//If variable exists in global.settings, setup him.
+					variable_struct_set(global.settings[$ sections_names_array[i]],options_array[j],section_struct[$ options_array[j]])
+				}
+			}
+		}
 	}
 }
 /// Saving a string as a buffer

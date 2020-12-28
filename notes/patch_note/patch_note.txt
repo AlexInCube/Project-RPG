@@ -6,10 +6,8 @@ saving non-unique objects
 distribute localization by folder
 make limit for autosaves
 add mouse support for control
-fix settings load
 v-sync
+back last save support
 
 Maked in this version:
-Buffs saveable for player only
-Fixed shotgun reloading bug
-Little optimizations in text drawing
+Reworked settings loading, if option in file not exist, they not be replaced.
