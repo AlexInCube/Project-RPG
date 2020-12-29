@@ -1,1 +1,1 @@
-///@function applydamage
+///@function apply_damage

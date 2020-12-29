@@ -1,10 +1,15 @@
 TODO:
-close combat almost repaired
+repair close combat
 make task progress saveable (kills)
-put player stats in struct
+improve the storage of player stats
 saving non-unique objects
 distribute localization by folder
 make limit for autosaves
+add mouse support for control
+rework settings
+v-sync
 
-Already maked in this version:
-NBT data now saveable
+
+Maked in this version:
+Return last save
+Fixed bug with unchangeable control settings

@@ -22,7 +22,7 @@ draw_sprite(spr_slider,0,rsx-30,start_y+((236/(ds_grid_height(ds_grid)-10))*draw
 
 draw_set_valign(fa_top)
 //Draw entries
-var yy = 0; for(i=drawelementstart;i<drawelementstart+drawelementheight;i++){
+var yy = 0; for(var i=drawelementstart;i<drawelementstart+drawelementheight;i++){
 	var rsy = start_y + (yy*y_buffer)
 		switch(ds_grid[# 1,i]){
 			#region Title

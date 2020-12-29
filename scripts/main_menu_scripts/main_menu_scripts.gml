@@ -4,6 +4,10 @@ function game_start() {
 	global.load_state = load_state.new_game
 }
 
+function show_exit_question(){
+	open_question_window(450,150,"are_you_sure","i_am_weak","i_am_not_surrender",game_exit,instance_destroy)
+}
+
 function game_exit() {
 	write_last_played_save()
 	game_end()

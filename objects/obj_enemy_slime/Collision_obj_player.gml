@@ -13,5 +13,5 @@ if (state != enemy_stall_state){
 		damage.knockback = self.knockback
 	
 	state = enemy_stall_state
-	alarm[1] = room_speed
+	alarm[1] = DELTATIME
 }

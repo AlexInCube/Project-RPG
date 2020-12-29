@@ -18,12 +18,6 @@ switch(state){
 	
 	case enemy_pc_angry_state:
 		instance_destroy(id,false)
-		var damage = instance_create_layer(x,y,"Instances",obj_damage)
-		damage.creator=id
-		damage.damage = self.damage
-		damage.damagetype = PHYSICALDAMAGETYPE
-		damage.image_xscale=2
-		damage.image_yscale=2
-		damage.knockback = self.knockback
+		create_explosion(x+8,y+8,45,damage,object_get_name(object_index))
 	break
 }

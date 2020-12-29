@@ -46,7 +46,7 @@ function cutscene_set_to_default() {
 function cutscene_wait(argument0) {
 	timer++
 
-	if(timer >= argument0 * room_speed){
+	if(timer >= argument0 * DELTATIME){
 		timer = 0
 		cutscene_end_action()
 	}
@@ -132,8 +132,8 @@ function cutscene_move_character(argument0, argument1, argument2, argument3, arg
 			var ldirx = lengthdir_x(spd,dir)
 			var ldiry = lengthdir_y(spd,dir)
 		
-			phy_position_x += ldirx
-			phy_position_y += ldiry
+			phy_position_x += ldirx*DELTATIME
+			phy_position_y += ldiry*DELTATIME
 		
 			
 			image_speed = sign(spd)*.4

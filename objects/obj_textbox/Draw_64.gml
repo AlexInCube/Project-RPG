@@ -88,9 +88,9 @@ else {
 		var txtspd = text_speed[page];
 		if(text_speed_c+1 < text_speed_al and charCount == txtspd[tsc2+2]) {
 			text_speed_c++;
-			tsc2 = text_speed_c*2;
+			tsc2 = (text_speed_c*2);
 		}
-		charCount += txtspd[tsc2+1];
+		charCount += txtspd[tsc2+1]*DELTATIME;
 		#endregion
 		
 		//Get Current Character
@@ -102,13 +102,13 @@ else {
 			case ",":
 			case ".":
 				pause = true;
-				alarm[1] = 10;	//how many frames we wait if we detect a fullstop or comma
+				alarm[1] = 10*DELTATIME;	//how many frames we wait if we detect a fullstop or comma
 				break;
 			
 			case "?":
 			case "!":
 				pause = true;
-				alarm[1] = 20;	//how many frames we wait if we detect a ! or ?
+				alarm[1] = 20*DELTATIME;	//how many frames we wait if we detect a ! or ?
 				break;
 			default:
 				
@@ -175,7 +175,7 @@ else {
 			
 			case 2:	//wave
 				var so = t;
-				var shift = sin(so*pi*freq/room_speed)*amplitude;
+				var shift = sin((t+cc)*pi*freq/60)*amplitude*amplitude;
 				draw_text_color(xx + (cx*charSize), yy+(cy*stringHeight)+shift, letter, col, col, col, col, 1);
 				break; 
 			
@@ -187,7 +187,7 @@ else {
 		
 			case 4: //wave AND colour shift
 				var so = t + cc;
-				var shift = sin(so*pi*freq/room_speed)*amplitude;
+				var shift = sin((t+cc)*pi*freq/60)*amplitude*amplitude;
 				var c1 = make_colour_hsv(t+cc, 255, 255);
 				var c2 = make_colour_hsv(t+cc+45, 255, 255);
 				draw_text_color(xx + (cx*charSize), yy+(cy*stringHeight)+shift, letter, c1, c1, c2, c2, 1);
@@ -195,7 +195,7 @@ else {
 		
 			case 5: //spin
 				var so = t + cc;
-				var shift = sin(so*pi*freq/room_speed);
+				var shift = sin((t+cc)*pi*freq/60)*amplitude;
 				var mv = charSize/2;
 				draw_set_valign(fa_middle); draw_set_halign(fa_middle);
 				draw_text_transformed_color(xx + (cx*charSize)+mv, yy+(cy*stringHeight)+(stringHeight/2), letter, 1, 1, shift*20, col, col, col, col, 1);
@@ -204,7 +204,7 @@ else {
 				
 			case 6: //pulse
 				var so = t + cc;
-				var shift = abs(sin(so*pi*freq/room_speed));
+				var shift = abs(sin((t+cc)*pi*freq/60)*amplitude);
 				var mv = charSize/2;
 				draw_set_valign(fa_middle); draw_set_halign(fa_middle);
 				draw_text_transformed_color(xx + (cx*charSize)+mv, yy+(cy*stringHeight)+(stringHeight/2), letter, shift, shift, 0, col, col, col, col, 1);
@@ -213,7 +213,7 @@ else {
 				
 			case 7:	//flicker
 				var so = t + cc;
-				var shift = sin(so*pi*freq/room_speed);
+				var shift = sin((t+cc)*pi*freq/60)*amplitude;
 				draw_text_color(xx + (cx*charSize), yy+(cy*stringHeight), letter, col, col, col, col, shift+random_range(-1,1));
 				break; 
 		}
@@ -226,10 +226,10 @@ else {
 	
 	#region Draw "Finished" effect
 	if(charCount >= str_len){
-		var shift = sin((t+cc)*pi*freq/room_speed)*amplitude;
+		var shift = sin((t+cc)*pi*freq/60)*amplitude;
 		finishede_count += finishede_spd;
 		if(finishede_count >= finishede_num){ finishede_count = 0; }
-		draw_sprite(finished_effect, finishede_count, finishede_x + shift, finishede_y);
+		draw_sprite(finished_effect, finishede_count, finishede_x + shift*DELTATIME, finishede_y);
 	}
 	#endregion
 }

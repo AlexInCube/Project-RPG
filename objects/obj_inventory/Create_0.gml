@@ -20,7 +20,7 @@ item_gain("empty_big_bottle",2, global.inventory)
 item_gain("big_health_potion",2, global.inventory,2)
 item_gain("shotgun", 1, global.inventory)
 item_gain("small_mana_potion", 8, global.inventory)
-item_gain("coin",1, global.inventory)
+item_gain("light_staff",1, global.inventory)
 item_gain("iron_helmet", 1, global.inventory)
 
 item_gain("iron_leggings", 1, global.inventory)

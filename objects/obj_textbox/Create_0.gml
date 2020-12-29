@@ -32,7 +32,7 @@ gui_height		= display_get_gui_height();
 gb_diff			= gui_width - boxWidth;
 portraitWidth	= sprite_get_width(portrait_frame)
 finishede_num	= sprite_get_number(finished_effect);
-finishede_spd	= (sprite_get_speed(spr_dialoguefinished)/room_speed);
+finishede_spd	= (sprite_get_speed(spr_dialoguefinished)/60);
 
 pos_x			= (gb_diff/2)+(portraitWidth/2);
 pos_y			= gui_height-boxHeight

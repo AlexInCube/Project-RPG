@@ -70,7 +70,7 @@ function spell_dash() : default_quick_useable() constructor{
 		if is_mana_enough(manacost) and obj_player.state == move_state
 		{
 			obj_player.state = dash_state;
-			obj_player.alarm[0] = room_speed/8
+			obj_player.alarm[0] = DELTATIME/8
 			mana_consume(manacost)
 		}
 	}
@@ -106,6 +106,14 @@ function shotgun() : default_item() constructor{
 	ammo_max = 6
 	item_create = {
 		ammo : ammo_max
+	}
+}
+
+function light_staff() : default_item() constructor{
+	mana_cost = 0.5
+	light_radius = 50
+	jump_count = 4
+	item_create = {
 	}
 }
 #endregion

@@ -1,14 +1,21 @@
 /// @description One-time object, calling only if game start.
 randomize()
 
-setup_default_settings()//Load volume, controlls and other settings
-load_settings()
+setup_default_settings()//Setup default settings
+load_settings()//Load volume, controlls and other settings
+
+game_set_speed(global.settings.video.game_speed, gamespeed_fps);
+
 
 global.window_list=ds_list_create()//For window system
-if file_exists("Saves\\"+global.settings.lastsave+"/playerdata.txt"){
-global.directory_save=global.settings.lastsave//Current saving for loading
+if file_exists("misc.ini"){
+ini_open("misc.ini")
+	global.lastsave = ini_read_string("saves","lastsave","")
+ini_close()
+global.directory_save=global.lastsave//Current saving for loading
 }else{
 global.directory_save="rpgsave"//Current saving for loading
+global.lastsave=""
 }
 
 if !directory_exists("Saves"){
@@ -30,4 +37,3 @@ enum load_state{
 }
 
 global.load_state = load_state.none
-

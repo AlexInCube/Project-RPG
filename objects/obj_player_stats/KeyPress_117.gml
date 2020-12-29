@@ -1,0 +1,1 @@
+effect_apply(choose(BUFF_ATTACK,BUFF_REGENERATION),id)

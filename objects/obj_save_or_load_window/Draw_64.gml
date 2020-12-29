@@ -10,12 +10,9 @@ if !ds_exists(ds_saves,ds_type_list) exit
 	
 	//Draw button list
 	var yy=0; for(var i = drawelementstart;i<=drawelementstart+drawelementheight;i++){
-		if is_undefined(ds_saves[| i])exit
+		if is_undefined(ds_saves[| i]) and !saving exit
 		slot_x = window_x+10
 		slot_y = window_y+10+((5+ss_h)*yy)
-		var save_name = array_get(ds_saves[| i],0)
-		var save_time = array_get(ds_saves[| i],1)
-		var save_version = array_get(ds_saves[| i],2)
 		//If game paused, we can save it, so create NEW SAVE button
 		if saving = true and yy == 0
 		{
@@ -39,7 +36,9 @@ if !ds_exists(ds_saves,ds_type_list) exit
 		} else if i!=ds_size{//Draw saves list
 			draw_set_halign(fa_left)
 			draw_set_valign(fa_top)
-
+			var save_name = array_get(ds_saves[| i],0)
+			var save_time = array_get(ds_saves[| i],1)
+			var save_version = array_get(ds_saves[| i],2)
 	
 			var mouse_over_slot = mouseover(slot_x,slot_y,slot_x+ss_w,slot_y+ss_h)
 			

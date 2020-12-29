@@ -1,4 +1,4 @@
-
+create_buff_grid()
 
 max_hp=5
 hp=max_hp
@@ -54,5 +54,21 @@ function draw_bar(xx,yy,_value,_max,_color){
 	draw_sprite_part_ext(bar_spr,0,0,0,bar_spr_width*(_value/_max),sprite_get_height(bar_spr),xx,yy,1,1,_color,1)
 	draw_set_halign(fa_center)
 	draw_set_valign(fa_middle)
-	draw_text_color(xx+(bar_spr_width/2),yy+4,string(_value)+"/"+string(_max),txtcolor,txtcolor,txtcolor,txtcolor,1)
+	draw_set_color(txtcolor)
+	draw_text(xx+(bar_spr_width/2),yy+4,string(_value)+"/"+string(_max))
+}
+
+function draw_effect(xx,yy,grid,effect_id){
+	var _effect_struct = return_struct_from_effect_index_by_effect_id(grid[# effect_id,0])
+		if _effect_struct != -1 and !is_undefined(_effect_struct){
+			var _effect_icon = _effect_struct[$ "effect_icon"]
+			var _effect_type = _effect_struct[$ EFFECT_IS_BUFF]
+			draw_sprite(_effect_icon,0,xx,yy)
+			draw_sprite(spr_effect_frame,_effect_type,xx,yy)
+			var _duration = convert_ticks_to_seconds(grid[# effect_id,1][$ "duration"])
+			draw_set_halign(fa_left)
+			draw_set_valign(fa_top)
+			draw_text_shadow(xx,yy+10,_duration,fnt_small,1,c_black,c_white,1)
+			draw_text_shadow(xx,yy,(grid[# effect_id,1][$ "tick"]),fnt_small,1,c_black,c_white,1)
+		}
 }

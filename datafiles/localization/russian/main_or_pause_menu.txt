@@ -2,5 +2,23 @@
 	"start_game":"Начать игру",
 	"continue_game":"Продолжить игру",
 	"settings":"Настройки",
-	"exit":"Выход"
+	"creators":"Создатели",
+	"exit":"Выход",
+	
+	"resume_game":"Возобновить игру",
+	"save_or_load_game":"Сохранить или загрузить игру",
+	"back_to_main_menu":"Вернуться в главное меню",
+	"exit_to_desktop":"Выйти на рабочий стол",
+	"create_new_save_slot":"Новое сохранение",
+	"fast_save_game":"Быстрое сохранение",
+	"write_your_save_name":"Напишите имя вашего сохранения:",
+	"select_save":"Выбрать сохранение",
+	"load_last_save":"Загрузить последнее сохранение",
+	
+	"you_has_been_killed_by":"Вы были убиты: ",
+	"rage_quit":"ВЫЙТИ В ЯРОСТИ!!!",
+	
+	"are_you_sure":"Вы уверены что хотите бросить этот мир?",
+	"i_am_weak":"Да, я слабый.",
+	"i_am_not_surrender":"Нет, я не сдамся.",
 }

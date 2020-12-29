@@ -1,7 +1,7 @@
 
 
 
-dt = delta_time / 100000
+dt = DELTATIME / 100000
 
 #region check to see if the person had opened or closed the panel 
 

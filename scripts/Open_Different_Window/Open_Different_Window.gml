@@ -39,3 +39,21 @@ function open_trade_window(trade_arr){
 		instance_destroy(obj_tradewindow)
 	}
 }
+
+function open_question_window(width,height,question,yes_word,no_word,yes_scr,no_scr){
+	if !instance_exists(obj_question_window){
+		with(instance_create_layer(0,0,"Instances",obj_question_window)){
+			window_x = GUIWIDTH/2 - width/2
+			window_y = GUIHEIGHT/2 - height/2
+			self.question = find_keyword(question)
+			window_width = width
+			window_height = height
+			answer_yes = find_keyword(yes_word)
+			answer_no = find_keyword(no_word)
+			yes_script = yes_scr
+			no_script = no_scr
+			str_width_yes = string_width(answer_yes)
+			str_height_no = string_width(answer_no)
+		}
+	}
+}

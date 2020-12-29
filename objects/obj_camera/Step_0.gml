@@ -18,8 +18,8 @@ switch(mode){
 	
 	case camera_mode.move_to_follow_object: 
 		if(!instance_exists(following)) break
-		cx = lerp(cx, following.x - (view_w/2), camera_speed)
-		cy = lerp(cy, following.y - (view_h/2), camera_speed)
+		cx = lerp(cx, following.x - (view_w/2), camera_speed*DELTATIME)
+		cy = lerp(cy, following.y - (view_h/2), camera_speed*DELTATIME)
 		
 		if point_distance(cx,cy,following.x - (view_w/2),following.y - (view_h/2)) < 1{
 			mode = camera_mode.move_to_follow_object
@@ -27,13 +27,13 @@ switch(mode){
 	break
 	
 	case camera_mode.move_to_target: 
-		cx = lerp(cx, target_x - (view_w/2), camera_speed)
-		cy = lerp(cy, target_y - (view_h/2), camera_speed)
+		cx = lerp(cx, target_x - (view_w/2), camera_speed*DELTATIME)
+		cy = lerp(cy, target_y - (view_h/2), camera_speed*DELTATIME)
 	break
 }
 //Shake effect
-cx += random_range(-shake,shake)
-cy += random_range(-shake,shake)
+cx += (random_range(-shake,shake))
+cy += (random_range(-shake,shake))
 shake*=0.9
 //Do not allow the camera to leave the room
 if(!boundless){

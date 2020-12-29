@@ -14,4 +14,6 @@ localization_load()
 
 //Create a ds grid item.total wide, and item_stat.total tall
 global.item_index = ds_list_create()
+global.effect_index = ds_list_create()
 registeritems()
+registereffects()

@@ -13,5 +13,5 @@ if (state != enemy_stall_state_chinlin){
 	damage.knockback=3
 	
 	state = enemy_stall_state_chinlin
-	alarm[1] = room_speed
+	alarm[1] = DELTATIME
 }

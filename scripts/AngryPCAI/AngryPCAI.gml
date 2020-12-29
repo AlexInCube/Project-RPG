@@ -26,8 +26,8 @@ function enemy_pc_chase_state() {
 		var dir = point_direction(x,y,targetx,targety)
 		var hspd = lengthdir_x(spd, dir)
 		var vspd = lengthdir_y(spd, dir)
-		phy_position_x += hspd
-		phy_position_y += vspd
+		phy_position_x += hspd*DELTATIME
+		phy_position_y += vspd*DELTATIME
 		var dis = point_distance(x,y,obj_player.x,obj_player.y)
 		if dis < angry_sight{
 			state = enemy_pc_angry_state

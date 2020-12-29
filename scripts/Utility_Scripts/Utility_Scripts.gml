@@ -1,3 +1,11 @@
+function convert_seconds_to_ticks(seconds){
+	return seconds*60
+}
+
+function convert_ticks_to_seconds(ticks){
+	return ticks/60
+}
+
 /// @function with_tagged(tag, lambda)
 /// @param tag The tag or array of tags to operate on
 /// @param lambda An inline function to be run
@@ -89,7 +97,7 @@ function mouseover(argument0, argument1, argument2, argument3) {
 ///@function draw_light
 ///@param light_radius
 function draw_light(size){
-	if instance_exists(obj_lighting){
+	if instance_exists(obj_light){
 		if surface_exists(global.light){
 			gpu_set_blendmode(bm_subtract)
 			surface_set_target(global.light)
@@ -110,7 +118,8 @@ function draw_light(size){
 ///@param color
 ///@param outline
 function draw_rectangle_color_fast(x1,y1,x2,y2,color,outline){
-	draw_rectangle_color(x1,y1,x2,y2,color,color,color,color,outline)
+	draw_set_color(color)
+	draw_rectangle(x1,y1,x2,y2,outline)
 }
 
 ///@description draw_text_color_fast(xx,yy,string,color,alpha)
@@ -121,6 +130,25 @@ function draw_rectangle_color_fast(x1,y1,x2,y2,color,outline){
 ///@param color
 ///@param alpha
 function draw_text_color_fast(xx,yy,string,color,alpha){
-	draw_text_color(xx,yy,string,color,color,color,color,alpha)
+	draw_set_color(color)
+	draw_set_alpha(alpha)
+	draw_text(xx,yy,string)
 }
 
+/// Saving a string as a buffer
+function save_string_in_json (_string, _filename) {
+	var _buffer = buffer_create(string_byte_length(_string) + 1, buffer_fixed, 1);
+	buffer_write(_buffer, buffer_string, _string);
+	buffer_save(_buffer, _filename);
+	buffer_delete(_buffer);
+}
+
+/// Loading a string from a buffer
+function load_string_from_json (_filename) {
+	if !file_exists(_filename)exit
+	var _buffer = buffer_load(_filename);
+	var _string = buffer_read(_buffer, buffer_string);
+
+	buffer_delete(_buffer);
+	return _string;
+}

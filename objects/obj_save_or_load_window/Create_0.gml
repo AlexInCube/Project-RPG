@@ -38,7 +38,7 @@ function rename(save_name){
 
 function load(save_name){
 	global.directory_save = save_name
-	global.settings.lastsave = global.directory_save
+	global.lastsave = global.directory_save
 	start_load()
 }
 

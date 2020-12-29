@@ -47,8 +47,8 @@ if obj_controller.xaxis != 0 or obj_controller.yaxis != 0 {
 	vspd = lengthdir_y(spd,dir)
 
 	//move
-	phy_position_x+=hspd
-	phy_position_y+=vspd
+	phy_position_x+=hspd*DELTATIME
+	phy_position_y+=vspd*DELTATIME
 }else{
 	image_speed = 0
 	image_index = 0
@@ -95,8 +95,8 @@ function dash_state() {
 	vspd = lengthdir_y(len,dir)
 
 	//move
-	phy_position_x+=hspd
-	phy_position_y+=vspd
+	phy_position_x+=hspd*DELTATIME
+	phy_position_y+=vspd*DELTATIME
 
 	//dash effect
 	var dash = instance_create_depth(x,y,1,obj_dash_effect)
