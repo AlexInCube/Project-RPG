@@ -6,7 +6,7 @@
     "path": "folders/Objects/Controllers/Options/Options Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_change_language",
+  "name": "create_ds_grid_settings",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -259,15 +259,21 @@ function create_saves_list(){
 #endregion
 
 function write_last_played_save(){
-	global.settings.lastsave = global.directory_save
+	global.lastsave = global.directory_save
+	ini_open("misc.ini")
+	ini_write_string("saves","lastsave",global.lastsave)
+	ini_close()
 	save_settings()
 }
 
 function load_last_player_save(){
-	if file_exists("Saves\\"+global.settings.lastsave+"/playerdata.txt"){
-		global.directory_save = global.settings.lastsave
+	if file_exists("misc.ini"){
+		ini_open("misc.ini")
+		global.lastsave = ini_read_string("saves","lastsave","")
+		ini_close()
+		global.directory_save = global.lastsave
 		start_load()
 	}else{
-		show_message("Save not exists: "+"Saves\\"+global.settings.lastsave+"/playerdata.txt")
+		show_message("Misc.ini not exists")
 	}
 }

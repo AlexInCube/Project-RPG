@@ -15,7 +15,7 @@ menustate = menu_state.main_buttons
 //Button second argument is array for button state and txt color
 ds_menu_main = create_menu_page(
 	//Localization word				//Menu element type		//Button animation	//Function
-	[find_keyword("continue_game")+"     "+global.settings.lastsave,	menu_element_type.button, 0, load_last_player_save],
+	[find_keyword("continue_game")+"     "+global.lastsave,	menu_element_type.button, 0, load_last_player_save],
 	[find_keyword("start_game"),	menu_element_type.button, 0, game_start],
 	[find_keyword("select_save"),	menu_element_type.button, 0, open_save_window],
 	[find_keyword("settings"),		menu_element_type.button, 0, open_settings],
@@ -23,7 +23,7 @@ ds_menu_main = create_menu_page(
 	[find_keyword("exit"),			menu_element_type.button, 0, show_exit_question]
 )
 
-if !file_exists("Saves\\"+global.settings.lastsave+"/playerdata.txt"){
+if !file_exists("Saves\\"+global.lastsave+"/playerdata.txt"){
 	ds_grid_set_region(ds_menu_main,0,0,3,0,-1)
 }
 

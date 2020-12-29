@@ -6,8 +6,10 @@ saving non-unique objects
 distribute localization by folder
 make limit for autosaves
 add mouse support for control
+rework settings
 v-sync
-back last save support
+
 
 Maked in this version:
-Reworked settings loading, if option in file not exist, they not be replaced.
+Return last save
+Fixed bug with unchangeable control settings
