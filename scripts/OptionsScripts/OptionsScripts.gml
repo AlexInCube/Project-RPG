@@ -83,26 +83,24 @@ else {
 	}
 }
 	
-function change_volume(type, volume) {
+function change_volume(option_array) {
+	var type = option_array[@ 1][@ 1]
+	var volume = option_array[@ 0]
 	switch(type){
-		case 1: audio_master_gain(volume);global.settings.audio.mastervolume=volume; break;
-		case 2: audio_group_set_gain(ag_music,volume,0);global.settings.audio.musicvolume=volume; break;
-		case 3: audio_group_set_gain(ag_sounds,volume,0);global.settings.audio.soundvolume=volume; break;
+		case "mastervolume": audio_master_gain(volume);global.settings.audio.mastervolume=volume; break;
+		case "musicvolume": audio_group_set_gain(ag_music,volume,0);global.settings.audio.musicvolume=volume; break;
+		case "soundvolume": audio_group_set_gain(ag_sounds,volume,0);global.settings.audio.soundvolume=volume; break;
 	}
 }
 
-function change_game_speed(type, value) {
-	switch(type){
-		case 7: 	global.settings.video.game_speed=value
+function change_game_speed(option_array) {
+	var value = option_array[@ 0]
+	global.settings.video.game_speed=value
 	game_set_speed(global.settings.video.game_speed,gamespeed_fps) 
-	break
-	}
-
 }
 
-function change_resolution(argument0) {
-	var resolution_array = ds_options[# 4,5]
-	var need_res = resolution_array[argument0]
+function change_resolution(current_val,shift_array) {
+	var need_res = shift_array[current_val]
 	var str_w = ""
 	var str_h = ""
 	var mode = 0
@@ -129,8 +127,8 @@ function change_resolution(argument0) {
 	GUIHEIGHT=display_get_gui_height()
 }
 
-function change_window_mode(argument0) {
-	global.settings.video.fullscreen=argument0
+function change_window_mode(boolean) {
+	global.settings.video.fullscreen=boolean
 	window_set_fullscreen(global.settings.video.fullscreen)
 	
 	window_set_size(global.settings.video.width,global.settings.video.height)
@@ -138,27 +136,26 @@ function change_window_mode(argument0) {
 	surface_resize(application_surface,global.settings.video.width,global.settings.video.height);
 }
 
-function change_show_damage(argument0) {
-		global.settings.interface.showdamage=argument0
+function change_show_damage(boolean) {
+	global.settings.interface.showdamage=boolean
+}
+
+function change_v_sync_mode(boolean) {
+	global.settings.video.v_sync=boolean
+	display_reset(0,global.settings.video.v_sync)
 }
 
 ///@description change_gui_size
 ///@arg guisize
-function change_gui_size() {
+function change_gui_size(option_array) {
+	if is_array(option_array){ 
+		var guisize = option_array[@ 0]
+	}else{var guisize = option_array}
 	var display_height=global.settings.video.height,display_width=global.settings.video.width
 	var ideal_width=1280;
 	var ideal_height=720;
 
-
-	if argument_count == 1{
-		global.settings.interface.guisize=argument[0];
-	}else{
-		if argument_count == 2{
-		global.settings.interface.guisize=argument[1]; 
-		}
-	}
-
-
+	global.settings.interface.guisize=guisize;
 
 	var aspect_ratio=display_width/display_height;
 
@@ -190,7 +187,7 @@ function change_gui_size() {
 	GUIHEIGHT=display_get_gui_height()
 }
 
-function change_language(argument0) {
-	global.settings.interface.language=argument0
+function change_language(current_val,shift_array) {
+	global.settings.interface.language=current_val
 }
 

@@ -19,7 +19,7 @@ ds_size = ds_grid_height(ds_options)
 
 drawelementstart = 0//Start drawing ds_grid from position (height)
 drawelementheight = min(round((GUIHEIGHT-20)/24)-2,ds_size)
-
+//Input
 inputting=false
 toinput=0
 input_button_half_width=sprite_get_width(spr_control_button)/2

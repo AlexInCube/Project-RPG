@@ -6,10 +6,7 @@ saving non-unique objects
 distribute localization by folder
 make limit for autosaves
 add mouse support for control
-rework settings
-v-sync
-
 
 Maked in this version:
-Return last save
-Fixed bug with unchangeable control settings
+Rework settings, now player dont can assign the same button on two or more actions in controls, options can easier sorted and added in settings.
+Added V-Sync.

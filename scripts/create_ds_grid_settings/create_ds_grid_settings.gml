@@ -23,15 +23,18 @@ function create_ds_grid_settings() {
 	ds_options = create_menu_page(
 		//0  Locale word                        //1 Element Type            //2               //3				   //4 //5 //6
 		[find_keyword("audio_settings"),		settings_element_type.title],
-		[find_keyword("master_volume"),			settings_element_type.slider, change_volume,global.settings.audio.mastervolume,0.05,0,1],
-		[find_keyword("music_volume"),			settings_element_type.slider, change_volume,global.settings.audio.musicvolume,0.05,0,1],
-		[find_keyword("sound_volume"),			settings_element_type.slider, change_volume,global.settings.audio.soundvolume,0.05,0,1],
+		[find_keyword("master_volume"),			settings_element_type.slider, change_volume,[global.settings.audio.mastervolume,["audio","mastervolume"]],0.05,0,1],
+		[find_keyword("music_volume"),			settings_element_type.slider, change_volume,[global.settings.audio.musicvolume,["audio","musicvolume"]],0.05,0,1],
+		[find_keyword("sound_volume"),			settings_element_type.slider, change_volume,[global.settings.audio.soundvolume,["audio","soundvolume"]],0.05,0,1],
+		
 		[find_keyword("graphics_settings"),		settings_element_type.title],
 		[find_keyword("resolution"),			settings_element_type.shift, change_resolution,sr,resolution_array],
 		[find_keyword("fullscreen_mode"),		settings_element_type.toggle, change_window_mode,global.settings.video.fullscreen],
-		[find_keyword("fps_limit"),				settings_element_type.slider,change_game_speed,global.settings.video.game_speed,10,10,300],
+		[find_keyword("v_sync_mode"),			settings_element_type.toggle, change_v_sync_mode,global.settings.video.v_sync],
+		[find_keyword("fps_limit"),				settings_element_type.slider,change_game_speed,[global.settings.video.game_speed,["video","game_speed"]],10,10,300],
+		
 		[find_keyword("interface_settings"),	settings_element_type.title],
-		[find_keyword("gui_size"),				settings_element_type.slider, change_gui_size,global.settings.interface.guisize,0.05,0.5,1.3],
+		[find_keyword("gui_size"),				settings_element_type.slider, change_gui_size,[global.settings.interface.guisize,["interface","guisize"]],0.05,0.5,1.3],
 		[find_keyword("language"),				settings_element_type.shift, change_language,global.settings.interface.language,[find_keyword("russian_language"),find_keyword("english_language")]],
 		[find_keyword("show_damage"),			settings_element_type.toggle, change_show_damage,global.settings.interface.showdamage],
 		//[find_keyword("game_settings"),			settings_element_type.title],
@@ -48,5 +51,6 @@ function create_ds_grid_settings() {
 		[find_keyword("combination_key"),		settings_element_type.input, "combination_key", global.settings.controls.combination_key],
 		[find_keyword("questlist_key"),			settings_element_type.input, "questlist_key",	  global.settings.controls.questlist_key],
 		[find_keyword("equipment_key"),			settings_element_type.input, "equipment_key",	  global.settings.controls.equipment_key],
+		
 	)
 }

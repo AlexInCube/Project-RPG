@@ -9,6 +9,7 @@ global.settings = {
 		fullscreen : false,
 		width : display_get_width(),
 		height : display_get_height(),
+		v_sync : false,
 		game_speed: 60	
 	},
 	interface : {
@@ -81,13 +82,10 @@ function options_execute_scripts(){
 					script_execute(ds_grid[# 2,i],ds_grid[# 3,i])
 				break;
 				case settings_element_type.shift:
-					script_execute(ds_grid[# 2,i],ds_grid[# 3,i])
+					script_execute_ext(ds_grid[# 2,i],[ds_grid[# 3,i],ds_grid[# 4,i]])
 				break;
 				case settings_element_type.slider:
-					script_execute(ds_grid[# 2,i],i,ds_grid[# 3,i])
-				break;
-				case settings_element_type.input:
-					global.settings[$ "controls"][$ ds_grid[# 2,i]] = ds_grid[# 3, i]
+					script_execute(ds_grid[# 2,i],ds_grid[# 3,i])
 				break;
 			}
 		}

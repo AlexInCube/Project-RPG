@@ -76,28 +76,28 @@ var yy = 0; for(var i=drawelementstart;i<drawelementstart+drawelementheight;i++)
 				c = c_white
 				draw_set_halign(fa_left)
 				draw_text_color(window_x+10,rsy,text,c,c,c,c,1)
-				
+				//Draw slider background
 				draw_sprite(spr_slidershiftbackground,0,rsx-entriesoffset-56,rsy+1)
-				draw_sprite_ext(spr_slidershiftforeground,0,rsx-entriesoffset-54,rsy+1,(calculate_bars_modifier(ds_grid[# 3,i],ds_grid[# 5,i],ds_grid[# 6,i],0,1)),1,0,c_white,1)
-	
+				draw_sprite_ext(spr_slidershiftforeground,0,rsx-entriesoffset-54,rsy+1,(calculate_bars_modifier(ds_grid[# 3,i][@ 0],ds_grid[# 5,i],ds_grid[# 6,i],0,1)),1,0,c_white,1)
+				//Draw value of slider
 				draw_set_halign(fa_center)
-				draw_text_color(rsx-entriesoffset,rsy,string(round(ds_grid[# 3,i]*100))+"%",c,c,c,c,1)
-				
+				draw_text_color(rsx-entriesoffset,rsy,string(round(ds_grid[# 3,i][@ 0]*100))+"%",c,c,c,c,1)
+				//Draw buttons
 				var frameleft=0
 				var frameright=0
 				if mouseover(rsx-entriesoffset-84,rsy,rsx-entriesoffset-60,rsy+24){
 					frameleft=1
 					if mouse_check_button_pressed(mb_left){
-						ds_grid[# 3,i] -=ds_grid[# 4,i]
-						ds_grid[# 3,i] = clamp(ds_grid[# 3,i],ds_grid[# 5,i],ds_grid[# 6,i])
+						ds_grid[# 3,i][@ 0] -=ds_grid[# 4,i]
+						ds_grid[# 3,i][@ 0] = clamp(ds_grid[# 3,i][@ 0],ds_grid[# 5,i],ds_grid[# 6,i])
 					}
 				}else frameleft=0
 				
 				if mouseover(rsx-entriesoffset+64,rsy,rsx-entriesoffset+84,rsy+24){
 					frameright=1
 					if mouse_check_button_pressed(mb_left){
-						ds_grid[# 3,i] +=ds_grid[# 4,i]
-						ds_grid[# 3,i] = clamp(ds_grid[# 3,i],ds_grid[# 5,i],ds_grid[# 6,i])
+						ds_grid[# 3,i][@ 0] +=ds_grid[# 4,i]
+						ds_grid[# 3,i][@ 0] = clamp(ds_grid[# 3,i][@ 0],ds_grid[# 5,i],ds_grid[# 6,i])
 					}
 				}else frameright=0
 				
@@ -154,8 +154,18 @@ var yy = 0; for(var i=drawelementstart;i<drawelementstart+drawelementheight;i++)
 					keymode = 2
 					if keyboard_check_pressed(vk_anykey){
 						if inputting==true{
+							var names_array = variable_struct_get_names(global.settings.controls)//Get sections names
 							var kk = keyboard_lastkey
+							for(var c = 0;c<array_length(names_array);c++){
+								if global.settings[$ "controls"][$ names_array[@ c]] == kk{
+									kk = ds_grid[# 3, i]
+									keyboard_lastkey =-1
+
+									break
+								}
+							}
 							ds_grid[# 3, i] = kk
+							global.settings[$ "controls"][$ ds_grid[# 2,i]] = kk
 							inputting=false
 							toinput = 0
 						}

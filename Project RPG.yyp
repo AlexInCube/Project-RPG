@@ -294,7 +294,6 @@
     {"id":{"name":"scr_quest_update","path":"scripts/scr_quest_update/scr_quest_update.yy",},"order":1,},
     {"id":{"name":"scr_quest_failed","path":"scripts/scr_quest_failed/scr_quest_failed.yy",},"order":2,},
     {"id":{"name":"spr_equip_buttons","path":"sprites/spr_equip_buttons/spr_equip_buttons.yy",},"order":2,},
-    {"id":{"name":"lore_note","path":"notes/lore_note/lore_note.yy",},"order":15,},
     {"id":{"name":"scr_task_kill","path":"scripts/scr_task_kill/scr_task_kill.yy",},"order":3,},
     {"id":{"name":"scr_task_trigger","path":"scripts/scr_task_trigger/scr_task_trigger.yy",},"order":4,},
     {"id":{"name":"ts_gravel","path":"tilesets/ts_gravel/ts_gravel.yy",},"order":5,},
