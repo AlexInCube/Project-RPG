@@ -1,3 +1,4 @@
+draw_black_screen()
 draw_set_halign(fa_left)
 draw_set_valign(fa_top)
 draw_set_color(c_white)
@@ -73,15 +74,17 @@ var yy = 0; for(var i=drawelementstart;i<drawelementstart+drawelementheight;i++)
 			#region Slider
 			case settings_element_type.slider:
 				var text = ds_grid[# 0,i]
-				c = c_white
+				draw_set_color(c_white)
 				draw_set_halign(fa_left)
-				draw_text_color(window_x+10,rsy,text,c,c,c,c,1)
+				//Draw option name
+				draw_text(window_x+10,rsy,text)
+				draw_set_color(c_lime)
 				//Draw slider background
 				draw_sprite(spr_slidershiftbackground,0,rsx-entriesoffset-56,rsy+1)
 				draw_sprite_ext(spr_slidershiftforeground,0,rsx-entriesoffset-54,rsy+1,(calculate_bars_modifier(ds_grid[# 3,i][@ 0],ds_grid[# 5,i],ds_grid[# 6,i],0,1)),1,0,c_white,1)
 				//Draw value of slider
 				draw_set_halign(fa_center)
-				draw_text_color(rsx-entriesoffset,rsy,string(round(ds_grid[# 3,i][@ 0]*100))+"%",c,c,c,c,1)
+				draw_text(rsx-entriesoffset,rsy,string(round(ds_grid[# 3,i][@ 0]*100))+"%")
 				//Draw buttons
 				var frameleft=0
 				var frameright=0
@@ -182,8 +185,11 @@ var yy = 0; for(var i=drawelementstart;i<drawelementstart+drawelementheight;i++)
 	}
 	yy++
 }
-
-applydeclinebutton(window_x+20,window_y+window_height-24,applyword,apply_settings)//Apply Settings
-applydeclinebutton(window_x+150,window_y+window_height-24,declineword,declinesettings)//Decline Settings
-applydeclinebutton(window_x+280,window_y+window_height-24,set_to_defaultword,settodefault)//Reset settings
+if !ds_exists(ds_options_ui_elements,ds_type_list){
+	ds_options_ui_elements = create_ui_elements_list(
+		create_button(window_x+20,window_y+window_height-60,spr_buttonmenu,depth-1,find_keyword("apply_settings"),apply_settings),
+		create_button(window_x+220,window_y+window_height-60,spr_buttonmenu,depth-1,find_keyword("decline_settings"),declinesettings),
+		create_button(window_x+420,window_y+window_height-60,spr_buttonmenu,depth-1,find_keyword("set_to_default"),settodefault)
+	)
+}
 

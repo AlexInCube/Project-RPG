@@ -14,7 +14,7 @@ function game_exit() {
 }
 
 function open_settings() {
-	menustate = menu_state.options
+	obj_mainmenucontroller.menustate = menu_state.options
 	if !instance_exists(obj_optionswindow){
 		instance_create_depth(0,0,0,obj_optionswindow)
 	}else{

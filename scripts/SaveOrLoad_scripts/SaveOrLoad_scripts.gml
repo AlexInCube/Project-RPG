@@ -32,7 +32,7 @@ function stringify_effects(buff_grid){
 function parse_effects(lifeform,effects_string){
 	with lifeform{
 		if ds_exists(buff_grid,ds_type_grid){
-			ds_grid_resize(buff_grid,effects_string[| 1],2)
+			ds_grid_resize(buff_grid,effects_string[| 1]+1,2)
 		}else{
 			buff_grid = ds_grid_create(effects_string[| 1],2)
 		}
@@ -156,6 +156,7 @@ function load_game() {
 		parse_inventory(global.equipment,save_data[? "player_equipment"])
 		recalculate_stats(global.equipment)
 	}
+	//Load buff list
 	parse_effects(obj_player_stats, save_data[? "player_effects"])
 	ds_list_destroy(save_data[? "player_effects"])
 	//Load quest list and cycle through all list to create quest listeners
@@ -215,7 +216,7 @@ function open_save_window(){
 	if argument_count >= 1{
 		show_save_button = argument0
 	}
-	menustate = menu_state.window_load_save
+	obj_mainmenucontroller.menustate = menu_state.window_load_save
 	if !instance_exists(obj_save_or_load_window){
 		with instance_create_depth(0,0,0,obj_save_or_load_window){
 			saving = show_save_button

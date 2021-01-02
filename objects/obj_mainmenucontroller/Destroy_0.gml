@@ -1,1 +1,1 @@
-ds_grid_destroy(ds_menu_main)
+destroy_ui_elements_list(ds_menu_main)

@@ -79,6 +79,7 @@
     {"id":{"name":"spr_chestmenu","path":"sprites/spr_chestmenu/spr_chestmenu.yy",},"order":5,},
     {"id":{"name":"spr_ItemIcon_SmallBottle","path":"sprites/spr_ItemIcon_SmallBottle/spr_ItemIcon_SmallBottle.yy",},"order":12,},
     {"id":{"name":"spr_ItemIcon_SmallHealPotion","path":"sprites/spr_ItemIcon_SmallHealPotion/spr_ItemIcon_SmallHealPotion.yy",},"order":4,},
+    {"id":{"name":"obj_ui_button","path":"objects/obj_ui_button/obj_ui_button.yy",},"order":1,},
     {"id":{"name":"spr_ItemIcon_SmallManaPotion","path":"sprites/spr_ItemIcon_SmallManaPotion/spr_ItemIcon_SmallManaPotion.yy",},"order":7,},
     {"id":{"name":"spr_ItemIcon_OreIron","path":"sprites/spr_ItemIcon_OreIron/spr_ItemIcon_OreIron.yy",},"order":5,},
     {"id":{"name":"spr_question_button","path":"sprites/spr_question_button/spr_question_button.yy",},"order":3,},
@@ -193,6 +194,7 @@
     {"id":{"name":"Open_Different_Window","path":"scripts/Open_Different_Window/Open_Different_Window.yy",},"order":2,},
     {"id":{"name":"spr_open_quest_list","path":"sprites/spr_open_quest_list/spr_open_quest_list.yy",},"order":6,},
     {"id":{"name":"spr_player_hud_portrait","path":"sprites/spr_player_hud_portrait/spr_player_hud_portrait.yy",},"order":7,},
+    {"id":{"name":"UI_Elements_Scripts","path":"scripts/UI_Elements_Scripts/UI_Elements_Scripts.yy",},"order":0,},
     {"id":{"name":"spr_hudbuttonsbackground","path":"sprites/spr_hudbuttonsbackground/spr_hudbuttonsbackground.yy",},"order":8,},
     {"id":{"name":"spr_nineslicebox","path":"sprites/spr_nineslicebox/spr_nineslicebox.yy",},"order":4,},
     {"id":{"name":"spr_basicwindow","path":"sprites/spr_basicwindow/spr_basicwindow.yy",},"order":1,},
@@ -497,6 +499,7 @@
     {"folderPath":"folders/Objects/Controllers/Main Menu/Main Menu Sprites/Parallax Background.yy","order":5,"resourceVersion":"1.0","name":"Parallax Background","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Controllers/Buff System.yy","order":17,"resourceVersion":"1.0","name":"Buff System","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Controllers/Buff System/Buffs Sprites.yy","order":1,"resourceVersion":"1.0","name":"Buffs Sprites","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/UI_Elements.yy","order":8,"resourceVersion":"1.0","name":"UI_Elements","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
@@ -509,7 +512,6 @@
   "IncludedFiles": [
     {"CopyToMask":-1,"filePath":"datafiles/localization/english","resourceVersion":"1.0","name":"english.txt","resourceType":"GMIncludedFile",},
     {"CopyToMask":153157610357391598,"filePath":"datafiles/localization/russian","resourceVersion":"1.0","name":"russian.txt","resourceType":"GMIncludedFile",},
-    {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"ExecuteShell.dll","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/localization/russian","resourceVersion":"1.0","name":"main_or_pause_menu.txt","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/localization/russian","resourceVersion":"1.0","name":"settings.txt","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/localization/russian","resourceVersion":"1.0","name":"item_types.txt","resourceType":"GMIncludedFile",},

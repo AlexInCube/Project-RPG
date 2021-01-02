@@ -8,5 +8,8 @@ make limit for autosaves
 add mouse support for control
 
 Maked in this version:
-Rework settings, now player dont can assign the same button on two or more actions in controls, options can easier sorted and added in settings.
-Added V-Sync.
+Start working on UI framework
+Remaded main, pause and death menu.
+Fixed question window button resizing
+Fixed memory allocation error when load buffs for player
+Added side mouse button support in myGMlibrary (not working properly)

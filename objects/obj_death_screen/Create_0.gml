@@ -5,22 +5,13 @@ audio_pause_all()
 
 menustate = menu_state.main_buttons
 
-ds_menu_main = create_menu_page(
-	[find_keyword("load_last_save"),	menu_element_type.button, 0, load_last_player_save],
-	[0,menu_element_type.empty_space,0],
-	[find_keyword("select_save"),	menu_element_type.button, 0, open_save_window],
-	[0,menu_element_type.empty_space,0],
-	[find_keyword("back_to_main_menu"),	menu_element_type.button, 0, exit_to_main_menu],
-	[find_keyword("rage_quit"),	menu_element_type.button, 0, show_exit_question]
+var button_x = (GUIWIDTH/2)-(sprite_get_width(spr_death_screen_button)/2)
+ds_menu_main = create_ui_elements_list(
+	create_button(button_x,100,spr_death_screen_button,depth-1,find_keyword("load_last_save"),resume_game),
+	create_button(button_x,143,spr_death_screen_button,depth-1,find_keyword("select_save"),open_save_window),
+	create_button(button_x,229,spr_death_screen_button,depth-1,find_keyword("back_to_main_menu"),exit_to_main_menu),
+	create_button(button_x,272,spr_death_screen_button,depth-1,find_keyword("rage_quit"),show_exit_question),
 )
-
-ds_menu_height = ds_grid_height(ds_menu_main)
-button_sprite = spr_death_screen_button
-button_width = sprite_get_width(button_sprite)
-button_height = sprite_get_height(button_sprite)
-button_x = (GUIWIDTH/2)-(button_width/2)
-button_yy = 100
-
 
 cursor_sprite=spr_cursor
 window_set_cursor(cr_none)
