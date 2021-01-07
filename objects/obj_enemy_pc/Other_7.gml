@@ -5,7 +5,7 @@ switch(state){
 	break;
 	
 	case enemy_pc_idle_state: 
-		if enemy_pc_check_for_player(){
+		if enemy_check_for_target(){
 			state = enemy_pc_awakening_state
 			sprite_index = spr_enemy_pc_awake
 		}
@@ -18,6 +18,6 @@ switch(state){
 	
 	case enemy_pc_angry_state:
 		instance_destroy(id,false)
-		create_explosion(x+8,y+8,45,damage,object_get_name(object_index))
+		create_explosion(x+8,y+8,45,damage,id)
 	break
 }

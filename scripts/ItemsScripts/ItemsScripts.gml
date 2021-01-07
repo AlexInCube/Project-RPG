@@ -70,7 +70,7 @@ function spell_dash() : default_quick_useable() constructor{
 		if is_mana_enough(manacost) and obj_player.state == move_state
 		{
 			obj_player.state = dash_state;
-			obj_player.alarm[0] = DELTATIME/8
+			obj_player.alarm[0] = (convert_seconds_to_ticks(1)/8)*DELTATIME
 			mana_consume(manacost)
 		}
 	}

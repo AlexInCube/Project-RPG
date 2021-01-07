@@ -2,8 +2,6 @@
 #macro UP 1
 #macro LEFT 2
 #macro DOWN 3
-#macro UPRIGHT 4
-#macro DOWNRIGHT 5
 #macro MOVE 0
 #macro ATTACK 1
 #macro IDLE 2

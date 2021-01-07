@@ -1,5 +1,4 @@
 TODO:
-repair close combat
 make task progress saveable (kills)
 improve the storage of player stats
 saving non-unique objects
@@ -8,8 +7,6 @@ make limit for autosaves
 add mouse support for control
 
 Maked in this version:
-Start working on UI framework
-Remaded main, pause and death menu.
-Fixed question window button resizing
-Fixed memory allocation error when load buffs for player
-Added side mouse button support in myGMlibrary (not working properly)
+Removed 8-directional sprites, because of that, animations with stick was fixed.
+Added Bat mob.
+Added items.txt and mobs_names.txt to localization

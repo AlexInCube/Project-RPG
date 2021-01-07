@@ -111,16 +111,14 @@ function cutscene_change_variable(argument0, argument1, argument2) {
 ///@arg y
 ///@arg relative?
 ///@arg spd
-function cutscene_move_character(argument0, argument1, argument2, argument3, argument4) {
-	var obj = argument0, relative = argument3, spd = argument4
-
+function cutscene_move_character(obj, x, y, relative, spd) {
 	if (x_dest == -1){
 		if(!relative){
-			x_dest = argument1
-			y_dest = argument2
+			x_dest = x
+			y_dest = y
 		}else{
-			x_dest = obj.phy_position_x+argument1
-			y_dest = obj.phy_position_y+argument2
+			x_dest = obj.phy_position_x+x
+			y_dest = obj.phy_position_y+y
 		}
 	}
 

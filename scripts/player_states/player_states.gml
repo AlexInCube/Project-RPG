@@ -57,17 +57,13 @@ if obj_controller.xaxis != 0 or obj_controller.yaxis != 0 {
 
 	//control the sprite	
 	image_xscale = 1
-	var mouse_dir = point_direction(phy_position_x,phy_position_y,mouse_x,mouse_y) div 45
+	var mouse_dir = point_direction(phy_position_x,phy_position_y,mouse_x,mouse_y) div 90
 	mouse_dr = mouse_dir
 	switch(mouse_dir) {
 		case 0:sprite_index=sprite[RIGHT,MOVE];break
-		case 1:sprite_index=sprite[UPRIGHT,MOVE];break
-		case 2:sprite_index=sprite[UP,MOVE];break
-		case 3:sprite_index=sprite[UPRIGHT,MOVE]; image_xscale =-1; break
-		case 4:sprite_index=sprite[RIGHT,MOVE]; image_xscale =-1; break
-		case 5:sprite_index=sprite[DOWNRIGHT,MOVE]; image_xscale =-1; break
-		case 6:sprite_index=sprite[DOWN,MOVE]; break
-		case 7:sprite_index=sprite[DOWNRIGHT,MOVE]; break
+		case 1:sprite_index=sprite[UP,MOVE];break
+		case 2:sprite_index=sprite[LEFT,MOVE];	break
+		case 3:sprite_index=sprite[DOWN,MOVE]; break
 	}
 	
 	//Pickup Items from ground
@@ -87,7 +83,7 @@ function uncontrollable_state() {
 }
 //Dash state active after using dash scroll
 function dash_state() {
-	var dir = mouse_dr*45
+	var dir = mouse_dr*90
 	var len = spd*4
 
 	//get hspd and vspd

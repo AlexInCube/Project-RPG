@@ -23,10 +23,10 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [
-    {"x":0.0,"y":0.0,},
-    {"x":24.0,"y":0.0,},
-    {"x":24.0,"y":24.0,},
-    {"x":0.0,"y":24.0,},
+    {"x":1.0,"y":1.0,},
+    {"x":14.0,"y":1.0,},
+    {"x":14.0,"y":14.0,},
+    {"x":1.0,"y":14.0,},
   ],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_chest","path":"objects/obj_chest/obj_chest.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},

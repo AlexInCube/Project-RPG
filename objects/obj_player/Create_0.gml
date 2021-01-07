@@ -10,12 +10,10 @@ findradius=16//For item collecting
 image_speed=0.4
 
 //Control sprite
+sprite[LEFT,MOVE] = spr_player_left
 sprite[RIGHT,MOVE] = spr_player_right
 sprite[UP,MOVE] = spr_player_up
 sprite[DOWN,MOVE] = spr_player_down
-sprite[UPRIGHT,MOVE] = spr_player_upright
-sprite[DOWNRIGHT,MOVE] = spr_player_downright
-
 //Player state for execution
 state=move_state;
 

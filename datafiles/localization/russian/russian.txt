@@ -1,30 +1,8 @@
 ﻿{
-			"small_health_potion":"Маленькое зелье лечения",
-			"small_health_potion_description":"Лечит 20% здоровья",
-			"small_mana_potion":"Маленькое зелье маны",
-			"small_mana_potion_description":"Восстанавливает 20% маны",
-			"iron_helmet":"Железный шлем",
-			"iron_helmet_description":"Просто шлем",
-			"iron_chestplate":"Железный нагрудник",
-			"iron_chestplate_description":"Заплати ведьмакууу, чеканой монетой, чеканой монетой, оу оуоу",
-			"iron_leggings":"Железные поножи",
-			"iron_leggings_description":"Simple leggings",
-			"iron_boots":"Железные ботинки",
-			"iron_boots_description":"Simple boots",
-			"iron_sword":"Железный меч",
-			"iron_sword_description":"Simple sword",
-			"light_staff":"Скипетр Света",
-			"light_staff_description":"Powerful scepter for eliminating enemies",
-			"spell_scroll_dash":"Свиток: \"Рывок\"",
-			"spell_scroll_dash_description":"Allow you make dash in the different sides",
-			"green_leaf":"Зелёный листок",
-			"green_leaf_description":"Necessary ingredient in making a potion of heal",
-			"blue_leaf":"Голубой листок",
-			"blue_leaf_description":"Necessary ingredient in making a potion of mana",
-			"empty_small_bottle":"Пустая маленькая бутылка",
-			"empty_small_bottle_description":"This bottle is pretty useless",
-			"slimeball":"Слизь",
-			"slimeball_description":"Common drop from slimes",
+			
+			
+			
+			
 			"notificationqueststate_0":"ЗАДАНИЕ НАЧАТО",
 			"notificationqueststate_1":"ЗАДАНИЕ ОБНОВЛЕНО",
 			"notificationqueststate_2":"ЗАДАНИЕ ЗАВЕРШЕНО",
@@ -37,7 +15,7 @@
 			"level":"Уровень",
 			"experience":"Опыт",
 			
-			"obj_enemy_slime":"Слизень",
+			
 			"basic":"Основное",
 			"advanced":"Дополнительно",
 			"strength":"Сила",
@@ -55,8 +33,7 @@
 			"magic_armor":"Магическая броня",
 			"evasion":"Уклонение",
 			"regen_amount":"Множитель регенерации",
-			"shotgun":"Дробовик",
-			"shotgun_description":"Вам серьёзно нужно описывать дробовик? Вы сами не понимаете насколько это мощная пушка? Мне вас жаль в таком случае.",
+			
 			"trade_window":"Окно обмена",
 			"trade_with_name":"Вы обмениваетесь с: "
 }
