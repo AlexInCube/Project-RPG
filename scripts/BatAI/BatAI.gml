@@ -24,6 +24,14 @@ function bat_set_idle_state() {
 }
 
 function bat_attack_prepare(){
+	var dir = point_direction(x,y,targetx,targety)
+	var hspd = lengthdir_x(spd, dir)
+	var vspd = lengthdir_y(spd, dir)
+	if (sign(hspd) != 0) {
+	    image_xscale = sign(hspd);
+	}
+	phy_position_x -= hspd*DELTATIME
+	phy_position_y -= vspd*DELTATIME
 }
 
 function bat_set_aggresive_state(){

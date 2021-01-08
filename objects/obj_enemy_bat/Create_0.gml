@@ -8,4 +8,4 @@ magic_armor = 0
 damage = 2
 knockback = 5
 travelled_distance = 0
-max_travel = 64
+max_travel = 96

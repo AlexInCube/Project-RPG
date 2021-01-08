@@ -7,6 +7,10 @@ function create_ui_elements_list(){
 	return ds_list_id
 }
 
+function add_ui_element(ds_list_id,element){
+	ds_list_add(ds_list_id,element)
+}
+
 function destroy_ui_element(ds_list_id,element){
 	instance_destroy(ds_list_id[| element])
 	ds_list_delete(ds_list_id,element)

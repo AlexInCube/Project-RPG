@@ -17,6 +17,12 @@ ds_menu_main = create_ui_elements_list(
 	create_button(button_x,315,spr_buttonmenu,depth-1,find_keyword("exit"),show_exit_question),
 )
 
+//var s = RUN_FROM_IDE
+//if RUN_FROM_IDE{
+	add_ui_element(ds_menu_main,create_button(button_x,358,spr_buttonmenu,depth-1,find_keyword("test_room"),test_room_start))	
+//}
+
+
 if !file_exists("Saves\\"+global.lastsave+"/playerdata.txt"){
 	destroy_ui_element(ds_menu_main,0)
 }

@@ -50,7 +50,7 @@ function save_game() {
 	save_data[? "lvl"] = obj_player_stats.level
 	save_data[? "attribute_points"] = obj_player_stats.attribute_points
 	save_data[? "attributes"] = [obj_player_stats.strength,obj_player_stats.energy,obj_player_stats.defense,obj_player_stats.agility]
-	save_data[? "room"] = room
+	save_data[? "room"] = room_get_name(room)
 	save_data[? "player_inventory"] = stringify_inventory(global.inventory)
 	save_data[? "player_equipment"] = stringify_inventory(global.equipment)
 	save_data[? "player_effects"] = [stringify_effects(obj_player_stats.buff_grid),ds_grid_width(obj_player_stats.buff_grid)-1]
@@ -181,9 +181,15 @@ function load_game() {
 	//End of read playerdata.txt
 	
 	//Read unique objects data
-	file_path = "Saves\\"+global.directory_save+"\\"+string(room_get_name(room))+".txt"
+	load_room_data()
+	//End of read room_name.txt
+
+}
+
+function load_room_data(){
+	var file_path = "Saves\\"+global.directory_save+"\\"+string(room_get_name(room))+".txt"
 	if file_exists(file_path){
-		file = file_text_open_read(file_path)
+		var file = file_text_open_read(file_path)
 		var wrapper = json_decode(file_text_read_string(file))
 		file_text_close(file)
 		var list = wrapper[? "object_list"]
@@ -202,8 +208,6 @@ function load_game() {
 	}else{
 		show_debug_message("Error while room loading: "+file_path)
 	}
-	//End of read room_name.txt
-
 }
 
 #region /* Save/Load Window */
@@ -277,4 +281,38 @@ function load_last_player_save(){
 	}else{
 		show_message("Misc.ini not exists")
 	}
+}
+
+///@function file_copy_dir(source, target, attributes)
+function file_copy_dir(){
+// Copies contents from source directory to target directory.
+// Add fa_directory to attributes for recursive copying.
+var fname, i, file, files, from, to;
+// create directory if it doesn't exist yet:
+if (!directory_exists(argument1)) directory_create(argument1)
+// push matching files into array:
+// (has to be done separately due to possible recursion)
+files = 0
+for (fname = file_find_first(argument0 + "/*.*", argument2); fname != ""; fname = file_find_next()) {
+    // don't include current/parent directory "matches":
+    if (fname == ".") continue
+    if (fname == "..") continue
+    // push file into array
+    file[files] = fname
+    files += 1
+}
+file_find_close()
+// process found files:
+i = 0
+repeat (files) {
+    fname = file[i]
+    i += 1
+    from = argument0 + "/" + fname
+    to = argument1 + "/" + fname
+    if directory_exists(from) { // note: in GM:S+, prefer directory_exists(from)
+        file_copy_dir(from, to, argument2) // recursively copy directories
+    } else {
+        file_copy(from, to) // copy files as normal
+    }
+}
 }

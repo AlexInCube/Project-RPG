@@ -33,7 +33,9 @@ enum load_state{
 	none,
 	new_game,//Init controllers (obj_controller, obj_inventory and etc...)
 	init_game,//Same as new_game, but prepare save to load.
-	manual_load//Load save after they prepared by init_game
+	manual_load,//Load save after they prepared by init_game
+	auto_save,//Copy current save file and save data in copy.
+	test_room
 }
 
 global.load_state = load_state.none
