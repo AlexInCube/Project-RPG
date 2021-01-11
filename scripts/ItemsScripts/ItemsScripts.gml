@@ -62,6 +62,27 @@ function default_quick_useable() : default_item() constructor{
 			}
 		}
 	}
+	//Regen potion
+	function regeneration_potion() : default_quick_useable() constructor{ 
+		quick_use = function(duration,inv_arr){
+			effect_apply(obj_player_stats,BUFF_REGENERATION,duration)
+			item_consume(item_get_inventory(inv_arr),item_get_slot(inv_arr))
+		}
+	}
+	//Attack potion
+	function attack_potion() : default_quick_useable() constructor{ 
+		quick_use = function(duration,inv_arr){
+			effect_apply(obj_player_stats,BUFF_ATTACK,duration)
+			item_consume(item_get_inventory(inv_arr),item_get_slot(inv_arr))
+		}
+	}
+	//Def potion
+	function defense_potion() : default_quick_useable() constructor{ 
+		quick_use = function(duration,inv_arr){
+			effect_apply(obj_player_stats,BUFF_DEFENSE,duration)
+			item_consume(item_get_inventory(inv_arr),item_get_slot(inv_arr))
+		}
+	}
 #endregion
 
 #region Spells

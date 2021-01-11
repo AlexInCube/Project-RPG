@@ -37,7 +37,6 @@ if hp/max_hp >= 0.66{
 }else if hp/max_hp >= 0{
 	var c=make_color_rgb(255,0,0)
 }
-
 draw_bar(54,GUIHEIGHT-34,hp,max_hp,c)
 //MANA BAR
 if mana/max_mana >= 0.66{

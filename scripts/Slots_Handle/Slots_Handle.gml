@@ -148,8 +148,8 @@ function slot(inventory, slot_id, xx, yy, clickable) {
 function slot_script_execute(inventory, slot_id) {
 	var _item = inventory[# slot_id,0]
 	var _item_struct = return_struct_from_item_index_by_item_id(_item)
-	if _item_struct != (-1 or undefined){
-		if _item_struct[$ "quick_use"] != undefined{
+	if !is_undefined(_item_struct) and _item_struct !=-1{
+		if !is_undefined(_item_struct[$ "quick_use"]){
 			var _item_script = method_get_index(_item_struct[$ "quick_use"])
 			if _item_script != -1//If item have script
 			{

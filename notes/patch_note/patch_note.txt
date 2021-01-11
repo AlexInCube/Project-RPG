@@ -7,10 +7,9 @@ make limit for autosaves
 add mouse support for control
 
 Maked in this version:
-Improved Bat AI
-Added test room
-If player going to obj_door, and in save directory exist "room_name".txt, then load this file.
-Save file contain room name instead of room index
-Fixed autosaving, now autosave copy save directory and then save room in copied save.
-Fixed crashing while trying to load not existing save
-
+Bat damage depend from travelled distance.
+Fixed crash when try quick use from empty slot.
+Added regeneration, attack, defense potions.
+Effect scripts now recieve object_id, instead of buff_grid index.
+effect_apply can accept custom buff duration.
+Buffs has flag EFFECT_MULTIPLE, if true buff can stack with same buff.

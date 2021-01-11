@@ -84,7 +84,7 @@ var yy = 0; for(var i=drawelementstart;i<drawelementstart+drawelementheight;i++)
 				draw_sprite_ext(spr_slidershiftforeground,0,rsx-entriesoffset-54,rsy+1,(calculate_bars_modifier(ds_grid[# 3,i][@ 0],ds_grid[# 5,i],ds_grid[# 6,i],0,1)),1,0,c_white,1)
 				//Draw value of slider
 				draw_set_halign(fa_center)
-				draw_text(rsx-entriesoffset,rsy,string(round(ds_grid[# 3,i][@ 0]*100))+"%")
+				draw_text(rsx-entriesoffset,rsy,string(round(ds_grid[# 3,i][@ 0])))
 				//Draw buttons
 				var frameleft=0
 				var frameright=0
