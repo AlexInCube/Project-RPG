@@ -7,9 +7,5 @@ make limit for autosaves
 add mouse support for control
 
 Maked in this version:
-Bat damage depend from travelled distance.
-Fixed crash when try quick use from empty slot.
-Added regeneration, attack, defense potions.
-Effect scripts now recieve object_id, instead of buff_grid index.
-effect_apply can accept custom buff duration.
-Buffs has flag EFFECT_MULTIPLE, if true buff can stack with same buff.
+Slimes and Bats dont go to far from their spawn point (if they dont try attack someone)
+Day/night cycle

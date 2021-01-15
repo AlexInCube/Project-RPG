@@ -1,5 +1,6 @@
 event_inherited()
 spd = 1
+distance_from_spawn = 100
 bat_set_idle_state()
 sight = 96
 

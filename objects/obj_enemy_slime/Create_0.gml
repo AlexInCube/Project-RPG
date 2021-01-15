@@ -6,6 +6,7 @@ alarm[0] = DELTATIME*irandom_range(120,180)
 sight = 128
 targetx = 0
 targety = 0
+distance_from_spawn = 75
 
 phys_armor = 1
 magic_armor = 0

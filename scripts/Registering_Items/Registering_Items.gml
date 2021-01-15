@@ -43,8 +43,8 @@ function registeritems() {
 	#endregion
 	
 	#region Spell
-	add_spell("spell_dash",spr_ItemIcon_SpellDash,spell_dash,[1])
-	add_spell("spell_fireball",spr_ItemIcon_SpellFireball,spell_fireball,[1])
+	add_spell("spell_dash",spr_ItemIcon_SpellDash,spell_dash,[1])//1 manacost
+	add_spell("spell_fireball",spr_ItemIcon_SpellFireball,spell_fireball,[1])//1 manacost
 	#endregion
 	
 	#region Other

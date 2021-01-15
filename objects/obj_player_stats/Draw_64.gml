@@ -1,4 +1,5 @@
 if instance_exists(obj_textbox){exit}
+draw_set_alpha(1)
 //Draw buff bar
 //Cycle through the player buff_grid
 var xx=0, i=0; repeat ds_grid_width(buff_grid){

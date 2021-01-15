@@ -19,8 +19,9 @@ function bat_set_idle_state() {
 	state = bat_idle_state
 	sprite_index = spr_bat_idle
 	alarm[0] = DELTATIME*irandom_range(convert_seconds_to_ticks(2),convert_seconds_to_ticks(3))
-	targetx = irandom(room_width)
-	targety = irandom(room_height)
+	var dir = irandom(360);
+	targetx = xstart + lengthdir_x(distance_from_spawn, dir)
+	targety = ystart + lengthdir_y(distance_from_spawn, dir)
 }
 
 function bat_attack_prepare(){

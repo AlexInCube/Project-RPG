@@ -77,6 +77,7 @@ if obj_controller.xaxis != 0 or obj_controller.yaxis != 0 {
 			}
 		}
 	}
+	draw_set_alpha(1)
 }
 //Using during cutscenes or stun effect
 function uncontrollable_state() {

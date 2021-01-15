@@ -56,8 +56,9 @@ function slime_choose_next_state() {
 	if (alarm[0] <= 0){
 		state = choose(slime_idle_state,slime_wander_state)
 		alarm[0] = irandom_range(60,180)*DELTATIME
-		targetx = irandom(room_width)
-		targety = irandom(room_height)
+		var dir = irandom(360);
+		targetx = xstart + lengthdir_x(distance_from_spawn, dir)
+		targety = ystart + lengthdir_y(distance_from_spawn, dir)
 	}
 }
 #endregion
