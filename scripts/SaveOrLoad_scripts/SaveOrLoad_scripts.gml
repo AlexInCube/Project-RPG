@@ -38,6 +38,10 @@ function parse_effects(lifeform,effects_string){
 		}
 		parse_grid_with_structs(buff_grid,effects_string[| 0],1)
 	}
+	var i = 0; repeat(ds_grid_width(lifeform.buff_grid)){
+		effect_script_execute(lifeform.buff_grid[# i,0],EFFECT_SCRIPT_CREATE,[lifeform])
+		i++
+	}
 }
 
 ///@description Saving working if game paused
@@ -55,6 +59,7 @@ function save_game() {
 	save_data[? "player_equipment"] = stringify_inventory(global.equipment)
 	save_data[? "player_effects"] = [stringify_effects(obj_player_stats.buff_grid),ds_grid_width(obj_player_stats.buff_grid)-1]
 	save_data[? "quest_list"] = ds_map_write(global.ds_current_quests)
+	save_data[? "world_time"] = json_stringify([obj_controller.hours,obj_controller.minutes,obj_controller.seconds])
 	save_data[? "saving_time"] = 
 	[
 	date_get_day(date_current_datetime()),
@@ -139,6 +144,10 @@ function load_game() {
 		hp = save_data[? "player_hp"]
 		//hp = clamp(hp,0,max_hp)
 	}
+	var w_t = json_parse(save_data[? "world_time"])
+	obj_controller.hours = w_t[0]
+	obj_controller.minutes = w_t[1]
+	obj_controller.seconds = w_t[2]
 	//Applying player coordinates
 	if !instance_exists(obj_player){
 		instance_create_layer(save_data[? "player_x"],save_data[? "player_y"],"Instances",obj_player)

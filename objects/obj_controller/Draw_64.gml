@@ -9,4 +9,4 @@ draw_button_hud(GUIWIDTH-187,GUIHEIGHT-36,GUIWIDTH-151,GUIHEIGHT,spr_equipment,o
 draw_button_hud(GUIWIDTH-150,GUIHEIGHT-36,GUIWIDTH-115,GUIHEIGHT,spr_open_quest_list,open_quest_list)//Open quest list
 draw_button_hud(GUIWIDTH-114,GUIHEIGHT-36,GUIWIDTH-78,GUIHEIGHT,spr_craft,open_settings)//Open settings (maybe pause menu later)
 //draw_button(GUIWIDTH-77,GUIHEIGHT-36,GUIWIDTH-41,GUIHEIGHT,spr_settings,nothing)//Open craft window
-draw_text_shadow(GUIWIDTH-30,20,string(hours)+":"+string(round(minutes)),fnt_small,1,c_black,c_white,1)
+draw_text_shadow(GUIWIDTH-30,5,string(get_formatted_date(hours))+":"+string(get_formatted_date(minutes)),fnt_small,1,c_black,c_white,1)

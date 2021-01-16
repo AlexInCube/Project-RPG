@@ -25,7 +25,6 @@ function effect_apply(target,effect_id,duration){
 		{
 			var i=0; repeat(_grid_width)//Loop grid
 			{
-				var ss = _grid[# i,0]
 				if _grid[# i,0] == effect_id
 				{
 					_grid[# i,1] = deep_copy(_effect_struct[$ "effect_nbt"])
@@ -34,8 +33,8 @@ function effect_apply(target,effect_id,duration){
 					{
 						_grid[# i,1][$ "duration"] = duration
 					}
+					exit
 				}
-				exit
 				i++
 			}
 		}

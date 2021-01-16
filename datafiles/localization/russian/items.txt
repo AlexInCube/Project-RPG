@@ -3,6 +3,12 @@
 	"small_health_potion_description":"Лечит 20% здоровья",
 	"small_mana_potion":"Маленькое зелье маны",
 	"small_mana_potion_description":"Восстанавливает 20% маны",
+	"defense_potion":"Зелье защиты",
+	"defense_potion_description":"Даёт прибавку к броне",
+	"regeneration_potion":"Зелье регенерации",
+	"regeneration_potion_description":"Выпиваешь и ты регенишься кароче, как вампир типа.",
+	"attack_potion":"Зелье атаки",
+	"attack_potion_description":"Даёт урон, но от него не будет смысла без оружия.",
 	
 	"iron_helmet":"Железный шлем",
 	"iron_helmet_description":"Зимой в таком шлеме будет холодно, так что надо шапку повверх шлема одеть.",
@@ -13,6 +19,8 @@
 	"iron_boots":"Железные ботинки",
 	"iron_boots_description":"Легко мыть, если в говно вступил.",
 	
+	"wooden_stick":"Деревянная палка",
+	"wooden_stick_description":"Ты серьёзно этим будешь как-то драться? Она годится только для того чтобы запихнуть её в зад.",
 	"iron_sword":"Железный меч",
 	"iron_sword_description":"Идеален для резки колбасы.",
 	"light_staff":"Скипетр Света",

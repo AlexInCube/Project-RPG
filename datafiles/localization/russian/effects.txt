@@ -1,0 +1,8 @@
+{
+	"buff_regeneration":"Регенерация",
+	"buff_regeneration_description":"Со временем восстанавливается здоровье",
+	"buff_defense":"Защита",
+	"buff_defense_description":"Даёт прибавку к броне",
+	"buff_attack":"Усиление урона",
+	"buff_attack_description":"Даёт прибавку к урону"
+}

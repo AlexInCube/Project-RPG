@@ -7,10 +7,24 @@ getwindowcross()
 //If press pause_key set pause
 if pause_key{pause_game()}
 
+if !time_is_go exit
 /* Day/night cycle */
-seconds += time_increment
-minutes = seconds / 60
-hours = minutes / 60
+seconds += time_increment*DELTATIME
+if seconds >= 60{
+	seconds = 0
+	minutes++
+}
+if minutes >= 60{
+	minutes = 0
+	hours++
+}
+if hours >= 24{
+	seconds = 0
+	minutes = 0
+	hours = 0
+	day += 1
+}
+
 
 darkness = hours / 24
 
@@ -18,7 +32,7 @@ var darks, colours, pstart, pend;
 	
 	if (hours > phase.sunrise and hours <= phase.daytime){			//Sunrise
 		darks	= [max_darkness, 0.2];
-		colours	= [merge_color(c_black,c_navy,0.3), c_orange];
+		colours	= [c_navy, c_orange];
 		pstart	= phase.sunrise;
 		pend	= phase.daytime;
 	} else if (hours > phase.daytime and hours <= phase.sunset) {	//Day
@@ -28,12 +42,12 @@ var darks, colours, pstart, pend;
 		pend	= phase.sunset;
 	} else if (hours > phase.sunset and hours <= phase.nighttime) {	//Sunset
 		darks	= [0.2, max_darkness];
-		colours	= [c_orange, c_navy, merge_color(c_black,c_navy,0.3)];
+		colours	= [c_orange, c_navy];
 		pstart	= phase.sunset;
 		pend	= phase.nighttime;
 	} else {														//Night
 		darks	= [max_darkness];
-		colours	= [merge_color(c_black,c_navy,0.3)];	
+		colours	= [c_navy];	
 		pstart	= phase.nighttime;
 		pend	= phase.sunrise;
 	}
@@ -57,9 +71,3 @@ var darks, colours, pstart, pend;
 	
 		darkness = lerp(d1, d2, dd-floor(dd));
 	}
-
-
-if hours >= 24{
-	seconds = 0 
-	day += 1
-}

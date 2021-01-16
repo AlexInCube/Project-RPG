@@ -72,5 +72,8 @@ function draw_effect(xx,yy,grid,effect_id){
 			if DEBUGMODE{
 				draw_text_shadow(xx,yy,(grid[# effect_id,1][$ "tick"]),fnt_small,1,c_black,c_white,1)
 			}
+			if mouseover(xx,yy,xx+32,yy+32){
+				draw_effect_stat_mouse(_effect_struct)
+			}
 		}
 }

@@ -5,7 +5,13 @@ saving non-unique objects
 distribute localization by folder
 make limit for autosaves
 add mouse support for control
+add XML support
 
 Maked in this version:
-Slimes and Bats dont go to far from their spawn point (if they dont try attack someone)
-Day/night cycle
+Removed player portrait
+World time fixes
+World time now saveable
+Fixed bug with EFFECT_MULTIPLE
+Effects after loading the save execute EFFECT_SCRIPT_CREATE
+Added effects mouse tooltip
+Added effects and potions localization

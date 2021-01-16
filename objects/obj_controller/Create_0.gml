@@ -11,12 +11,13 @@ seconds = 0
 minutes = 0 
 hours = 0
 
-time_increment = 100
+time_increment = 1
 day = 0
 
 max_darkness = 0.7
 darkness = 0
 light_colour = c_white
+time_is_go = true
 
 enum phase{
 	sunrise = 6,
@@ -24,10 +25,7 @@ enum phase{
 	sunset = 18,
 	nighttime = 22
 }
-/*
-global.time_of_day = 12
-global.day_type = DAY_TYPE_DAY
-*/
+
 overall_gui_surf = surface_create(GUIWIDTH,GUIHEIGHT)//Draw something over all
 get_input()//Set/get input from player
 depth=-99999999

@@ -6,6 +6,16 @@ function convert_ticks_to_seconds(ticks){
 	return ticks/60
 }
 
+
+function get_formatted_date(number){
+	number = string(number)
+	if string_length(number) == 1{
+		return string(0)+number
+	}else{
+		return number
+	}
+}
+
 /// @function with_tagged(tag, lambda)
 /// @param tag The tag or array of tags to operate on
 /// @param lambda An inline function to be run
