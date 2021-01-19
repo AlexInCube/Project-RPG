@@ -6,7 +6,12 @@
 #macro PHASE_TYPE_SUNRISE 1
 #macro PHASE_TYPE_DAY 2
 #macro PHASE_TYPE_SUNSET 3
-
+depth=-99999999
+//Getting input
+get_input()
+//Story tags
+story_tags = ds_list_create()
+//World time (day and night cycle)
 seconds = 0
 minutes = 0 
 hours = 0
@@ -27,10 +32,8 @@ enum phase{
 }
 
 global.day_phase = PHASE_TYPE_NIGHT
-
+//Overlay surface
 overall_gui_surf = surface_create(GUIWIDTH,GUIHEIGHT)//Draw something over all
-get_input()//Set/get input from player
-depth=-99999999
 
 //Windows ID
 inventorywindow=noone

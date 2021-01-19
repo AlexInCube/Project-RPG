@@ -60,6 +60,7 @@ function save_game() {
 	save_data[? "player_effects"] = [stringify_effects(obj_player_stats.buff_grid),ds_grid_width(obj_player_stats.buff_grid)-1]
 	save_data[? "quest_list"] = ds_map_write(global.ds_current_quests)
 	save_data[? "world_time"] = json_stringify([obj_controller.hours,obj_controller.minutes,obj_controller.seconds])
+	save_data[? "story_tags"] = ds_list_write(obj_controller.story_tags)
 	save_data[? "saving_time"] = 
 	[
 	date_get_day(date_current_datetime()),
@@ -144,20 +145,12 @@ function load_game() {
 		hp = save_data[? "player_hp"]
 		//hp = clamp(hp,0,max_hp)
 	}
+	//World time
 	var w_t = json_parse(save_data[? "world_time"])
 	obj_controller.hours = w_t[0]
 	obj_controller.minutes = w_t[1]
 	obj_controller.seconds = w_t[2]
-	//Applying player coordinates
-	if !instance_exists(obj_player){
-		instance_create_layer(save_data[? "player_x"],save_data[? "player_y"],"Instances",obj_player)
-		}else{
-			with(obj_player){
-				phy_position_x = save_data[? "player_x"]
-				phy_position_y = save_data[? "player_y"]
-			}
-			
-		}
+
 	//Player Inventory
 	with(obj_inventory) parse_inventory(global.inventory,save_data[? "player_inventory"])
 	//Player Equipment
@@ -170,7 +163,6 @@ function load_game() {
 	ds_list_destroy(save_data[? "player_effects"])
 	//Load quest list and cycle through all list to create quest listeners
 	ds_map_clear(global.ds_current_quests)
-	//Read ds_map
 	ds_map_read(global.ds_current_quests,save_data[? "quest_list"])
 	//Find first quest_id
 	var key = ds_map_find_first(global.ds_current_quests);
@@ -184,15 +176,23 @@ function load_game() {
 		alarm[0]=1
 		}
 	}
-	
-	ds_map_destroy(save_data)
-	show_debug_message("Playerdata.txt loaded")
-	//End of read playerdata.txt
+	//Story tags
+	ds_list_read(obj_controller.story_tags,save_data[? "story_tags"])
 	
 	//Read unique objects data
 	load_room_data()
 	//End of read room_name.txt
-
+	//Applying player coordinates
+	if !instance_exists(obj_player){
+		instance_create_layer(save_data[? "player_x"],save_data[? "player_y"],"Instances",obj_player)
+	}else{
+		with(obj_player){
+			phy_position_x = save_data[? "player_x"]
+			phy_position_y = save_data[? "player_y"]
+		}
+	}
+	ds_map_destroy(save_data)
+	show_debug_message("Playerdata.txt loaded")
 }
 
 function load_room_data(){

@@ -8,5 +8,7 @@ add mouse support for control
 add XML support
 
 Maked in this version:
-Changed lantern behavior and texture
-Added integration with sentry.io, if game crashed, crash report has been sended.
+Added story tags
+Cutscene objects can be destroyed if exist needed story tag
+GMSentry dont work in debug mode
+Test room work only in debug mode

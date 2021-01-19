@@ -1,3 +1,6 @@
+if exist_story_tag("talked_with_penguin"){
+	instance_destroy()
+}
 t_scene_info = [
 	[cutscene_change_variable,obj_player,"state",uncontrollable_state],
 	[cutscene_change_variable,obj_player,"image_index",0],
@@ -12,4 +15,4 @@ t_scene_info = [
 	[cutscene_change_variable,obj_apartment_door,"image_speed",0],
 	[cutscene_set_to_default]
 ]
-cutscene_id=1
+tag_after_destroy = "talked_with_penguin"
