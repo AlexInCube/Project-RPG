@@ -35,21 +35,25 @@ var darks, colours, pstart, pend;
 		colours	= [c_navy, c_orange];
 		pstart	= phase.sunrise;
 		pend	= phase.daytime;
+		global.day_phase = PHASE_TYPE_SUNRISE
 	} else if (hours > phase.daytime and hours <= phase.sunset) {	//Day
 		darks	= [0.2, 0, 0, 0, 0.2];
 		colours	= [c_orange, c_white, c_white, c_white, c_orange];
 		pstart	= phase.daytime;
 		pend	= phase.sunset;
+		global.day_phase = PHASE_TYPE_DAY
 	} else if (hours > phase.sunset and hours <= phase.nighttime) {	//Sunset
 		darks	= [0.2, max_darkness];
 		colours	= [c_orange, c_navy];
 		pstart	= phase.sunset;
 		pend	= phase.nighttime;
+		global.day_phase = PHASE_TYPE_SUNSET
 	} else {														//Night
 		darks	= [max_darkness];
 		colours	= [c_navy];	
 		pstart	= phase.nighttime;
 		pend	= phase.sunrise;
+		global.day_phase = PHASE_TYPE_NIGHT
 	}
 	//----------------------------
 	//Colours

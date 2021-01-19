@@ -1,6 +1,7 @@
 instance_deactivate_all(true)
 instance_activate_object(obj_debug)
 instance_activate_object(obj_eventmanager)
+instance_activate_object(sentry_handler)
 audio_pause_all()
 
 menustate = menu_state.main_buttons

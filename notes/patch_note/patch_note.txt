@@ -8,10 +8,5 @@ add mouse support for control
 add XML support
 
 Maked in this version:
-Removed player portrait
-World time fixes
-World time now saveable
-Fixed bug with EFFECT_MULTIPLE
-Effects after loading the save execute EFFECT_SCRIPT_CREATE
-Added effects mouse tooltip
-Added effects and potions localization
+Changed lantern behavior and texture
+Added integration with sentry.io, if game crashed, crash report has been sended.

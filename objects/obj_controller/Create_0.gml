@@ -2,16 +2,16 @@
 //crossing, draw HUD buttons, loading game, interacting with game objects.
 #macro INTERACT "interact"//Macro for asset tag
 /* Day/night cycle */
-#macro DAY_TYPE_NIGHT 0
-#macro DAY_TYPE_MORNING 1
-#macro DAY_TYPE_DAY 2
-#macro DAY_TYPE_EVENING 3
+#macro PHASE_TYPE_NIGHT 0
+#macro PHASE_TYPE_SUNRISE 1
+#macro PHASE_TYPE_DAY 2
+#macro PHASE_TYPE_SUNSET 3
 
 seconds = 0
 minutes = 0 
 hours = 0
 
-time_increment = 1
+time_increment = 100
 day = 0
 
 max_darkness = 0.7
@@ -25,6 +25,8 @@ enum phase{
 	sunset = 18,
 	nighttime = 22
 }
+
+global.day_phase = PHASE_TYPE_NIGHT
 
 overall_gui_surf = surface_create(GUIWIDTH,GUIHEIGHT)//Draw something over all
 get_input()//Set/get input from player

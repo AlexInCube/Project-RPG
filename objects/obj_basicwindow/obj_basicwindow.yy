@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Windows",
-    "path": "folders/Objects/Utility/Windows.yy",
+    "path": "folders/Objects/UI_Elements/Windows.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_basicwindow",
