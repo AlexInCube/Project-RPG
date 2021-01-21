@@ -45,3 +45,6 @@ equipment_window_y=140
 questlistwindow=noone
 questlist_window_x=(GUIWIDTH/2)-450/2
 questlist_window_y=(GUIHEIGHT/2)-300/2
+
+room_data = "" //for autosaving
+previous_room = room

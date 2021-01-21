@@ -26,6 +26,9 @@
 	
 	"game_settings":"Игра",
 	
+	"another_settings":"Остальное",
+	"autosave_limit":"Ограничение на количество автосохранений",
+	
 	
 	"controls_settings":"Управление",
 	"up_key":"Передвижение вверх",

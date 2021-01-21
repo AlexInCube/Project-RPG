@@ -37,6 +37,9 @@ function create_ds_grid_settings() {
 		[find_keyword("gui_size"),				settings_element_type.slider, change_gui_size,[global.settings.interface.guisize,["interface","guisize"]],0.05,0.5,1.3],
 		[find_keyword("language"),				settings_element_type.shift, change_language,global.settings.interface.language,[find_keyword("russian_language"),find_keyword("english_language")]],
 		[find_keyword("show_damage"),			settings_element_type.toggle, change_show_damage,global.settings.interface.showdamage],
+		
+		[find_keyword("another_settings"),		settings_element_type.title],
+		[find_keyword("autosave_limit"),		settings_element_type.slider, change_save_limit,[global.settings.another.autosaves_limit,["another","autosaves_limit"]],1,1,50],
 		//[find_keyword("game_settings"),			settings_element_type.title],
 		[find_keyword("controls_settings"),		settings_element_type.title],
 		[find_keyword("up_key"),				settings_element_type.input, "key_up",					 global.settings.controls.key_up],

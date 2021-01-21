@@ -93,6 +93,12 @@ function change_volume(option_array) {
 	}
 }
 
+function change_save_limit(option_array) {
+	var type = option_array[@ 1][@ 1]
+	var volume = option_array[@ 0]
+	global.settings.another.autosaves_limit=volume;
+}
+
 function change_game_speed(option_array) {
 	var value = option_array[@ 0]
 	global.settings.video.game_speed=value

@@ -7,6 +7,7 @@
 	
 	"resume_game":"Возобновить игру",
 	"save_or_load_game":"Сохранить или загрузить игру",
+	"autosave":"АВТОСОХРАНЕНИЕ",
 	"back_to_main_menu":"Вернуться в главное меню",
 	"exit_to_desktop":"Выйти на рабочий стол",
 	"create_new_save_slot":"Новое сохранение",

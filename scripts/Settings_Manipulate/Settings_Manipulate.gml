@@ -19,6 +19,9 @@ global.settings = {
 	},
 	game : {
 	},
+	another : {
+		autosaves_limit: 5
+	},
 	controls : {
 		key_up : ord("W"),		
 		key_left :	ord("A"),

@@ -3,12 +3,11 @@ make task progress saveable (kills)
 improve the storage of player stats
 saving non-unique objects
 distribute localization by folder
-make limit for autosaves
 add mouse support for control
 add XML support
 
 Maked in this version:
-Added story tags
-Cutscene objects can be destroyed if exist needed story tag
-GMSentry dont work in debug mode
-Test room work only in debug mode
+Last save button does not appear if save is not exists.
+Fixed bug with saving after loading game.
+Fixed bug where player go to door, created two saves.
+Added limit for autosaving
