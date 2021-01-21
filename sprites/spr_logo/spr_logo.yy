@@ -25,8 +25,8 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"863378e7-ffa7-4b8d-a825-96ee420f73a3","path":"sprites/spr_logo/spr_logo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"863378e7-ffa7-4b8d-a825-96ee420f73a3","path":"sprites/spr_logo/spr_logo.yy",},"LayerId":{"name":"0e80fdd1-61a4-4c82-a167-a176fcec1862","path":"sprites/spr_logo/spr_logo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"863378e7-ffa7-4b8d-a825-96ee420f73a3","path":"sprites/spr_logo/spr_logo.yy",},"LayerId":{"name":"f71a54b4-cfa6-46cf-82e3-111b232d6581","path":"sprites/spr_logo/spr_logo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"863378e7-ffa7-4b8d-a825-96ee420f73a3","path":"sprites/spr_logo/spr_logo.yy",},"LayerId":{"name":"0e80fdd1-61a4-4c82-a167-a176fcec1862","path":"sprites/spr_logo/spr_logo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_logo","path":"sprites/spr_logo/spr_logo.yy",},"resourceVersion":"1.0","name":"863378e7-ffa7-4b8d-a825-96ee420f73a3","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {

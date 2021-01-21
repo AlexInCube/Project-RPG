@@ -78,36 +78,10 @@ var yy = 0; for(var i=drawelementstart;i<drawelementstart+drawelementheight;i++)
 				draw_set_halign(fa_left)
 				//Draw option name
 				draw_text(window_x+10,rsy,text)
-				draw_set_color(c_lime)
-				//Draw slider background
-				draw_sprite(spr_slidershiftbackground,0,rsx-entriesoffset-56,rsy+1)
-				draw_sprite_ext(spr_slidershiftforeground,0,rsx-entriesoffset-54,rsy+1,(calculate_bars_modifier(ds_grid[# 3,i][@ 0],ds_grid[# 5,i],ds_grid[# 6,i],0,1)),1,0,c_white,1)
+				draw_set_color(c_white)
 				//Draw value of slider
 				draw_set_halign(fa_center)
-				draw_text(rsx-entriesoffset,rsy,string(round(ds_grid[# 3,i][@ 0])))
-				//Draw buttons
-				var frameleft=0
-				var frameright=0
-				if mouseover(rsx-entriesoffset-84,rsy,rsx-entriesoffset-60,rsy+24){
-					frameleft=1
-					if mouse_check_button_pressed(mb_left){
-						ds_grid[# 3,i][@ 0] -=ds_grid[# 4,i]
-						ds_grid[# 3,i][@ 0] = clamp(ds_grid[# 3,i][@ 0],ds_grid[# 5,i],ds_grid[# 6,i])
-					}
-				}else frameleft=0
-				
-				if mouseover(rsx-entriesoffset+64,rsy,rsx-entriesoffset+84,rsy+24){
-					frameright=1
-					if mouse_check_button_pressed(mb_left){
-						ds_grid[# 3,i][@ 0] +=ds_grid[# 4,i]
-						ds_grid[# 3,i][@ 0] = clamp(ds_grid[# 3,i][@ 0],ds_grid[# 5,i],ds_grid[# 6,i])
-					}
-				}else frameright=0
-				
-				draw_sprite(spr_shift,frameleft,rsx-entriesoffset-84,rsy)
-				draw_sprite_ext(spr_shift,frameright,rsx-entriesoffset+84,rsy,-1,1,0,c_white,1)
-				
-				
+				draw_text(rsx-200,rsy,string(ds_grid[# 3,i][@ 0]))
 			break;
 			#endregion
 			#region Toggle
@@ -116,19 +90,6 @@ var yy = 0; for(var i=drawelementstart;i<drawelementstart+drawelementheight;i++)
 				c = c_white
 				draw_set_halign(fa_left)
 				draw_text_color(window_x+10,rsy,text,c,c,c,c,1)
-			
-				var current_val = ds_grid[# 3,i]
-				var c = c_white
-				
-				draw_sprite(spr_checkbox,current_val,rsx-entriesoffset-12,rsy)
-				
-				if mouseover(rsx-entriesoffset-12,rsy,rsx-entriesoffset+12,rsy+24){
-					if mouse_check_button_pressed(mb_left){
-						ds_grid[# 3,i] = !ds_grid[# 3,i]
-					}
-				}
-				
-				
 			break;
 			#endregion
 			#region Input
@@ -184,12 +145,5 @@ var yy = 0; for(var i=drawelementstart;i<drawelementstart+drawelementheight;i++)
 			#endregion
 	}
 	yy++
-}
-if !ds_exists(ds_options_ui_elements,ds_type_list){
-	ds_options_ui_elements = create_ui_elements_list(
-		create_button(window_x+20,window_y+window_height-60,spr_buttonmenu,depth-1,find_keyword("apply_settings"),apply_settings),
-		create_button(window_x+220,window_y+window_height-60,spr_buttonmenu,depth-1,find_keyword("decline_settings"),declinesettings),
-		create_button(window_x+420,window_y+window_height-60,spr_buttonmenu,depth-1,find_keyword("set_to_default"),settodefault)
-	)
 }
 

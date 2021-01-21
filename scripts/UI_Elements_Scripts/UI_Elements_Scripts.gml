@@ -24,6 +24,14 @@ function destroy_ui_elements_list(ds_list_id){
 	ds_list_destroy(ds_list_id)
 }
 
+function clear_ui_elements_list(ds_list_id){
+	var i=0;repeat(ds_list_size(ds_list_id)){
+		instance_destroy(ds_list_id[| i])
+		i++
+	}
+	ds_list_clear(ds_list_id)
+}
+
 function ui_element_switch_lock(element_id,lock_state){
 	element_id.mouse_lock = lock_state
 }
@@ -35,8 +43,8 @@ function ui_element_switch_lock_all(ds_list_id,lock_state){
 	}
 }
 
-function create_button(xx,yy,_sprite,_depth,text,script){
-	var _button = instance_create_depth(0,0,_depth,obj_ui_button)
+function create_fancy_button(xx,yy,_sprite,_depth,text,script){
+	var _button = instance_create_depth(0,0,_depth,obj_ui_fancy_button)
 	with (_button){
 		button_x = xx
 		button_y = yy
@@ -44,6 +52,31 @@ function create_button(xx,yy,_sprite,_depth,text,script){
 		button_sprite = _sprite
 		button_script = script
 		event_user(0)
+	}
+	return _button
+}
+
+function create_toggle_button(xx,yy,_sprite,_depth,toggle_state,button_scr,_var){
+	var _button = instance_create_depth(0,0,_depth,obj_ui_toggle_button)
+	with (_button){
+		button_x = xx
+		button_y = yy
+		image_index = toggle_state
+		button_sprite = _sprite
+		button_var = _var
+		button_script = button_scr
+		event_user(0)
+	}
+	return _button
+}
+
+function create_slider_bar(xx,yy,_depth,slider_scr,_var){
+	var _button = instance_create_depth(0,0,_depth,obj_ui_slider_bar)
+	with (_button){
+		slider_x = xx
+		slider_y = yy
+		slider_script = slider_scr
+		slider_var = _var
 	}
 	return _button
 }

@@ -2,7 +2,6 @@ TODO:
 make task progress saveable (kills)
 improve the storage of player stats
 saving non-unique objects
-distribute localization by folder
 add mouse support for control
 add XML support
 
