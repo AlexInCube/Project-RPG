@@ -54,6 +54,7 @@ function open_question_window(width,height,question,yes_word,no_word,yes_scr,no_
 			no_script = no_scr
 			str_width_yes = string_width(answer_yes)
 			str_height_no = string_width(answer_no)
+			event_user(0)
 		}
 	}
 }

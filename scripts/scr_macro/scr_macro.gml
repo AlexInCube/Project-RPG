@@ -2,11 +2,10 @@
 #macro UP 1
 #macro LEFT 2
 #macro DOWN 3
-#macro UPRIGHT 4
-#macro DOWNRIGHT 5
 #macro MOVE 0
 #macro ATTACK 1
 #macro IDLE 2
 #macro GUIWIDTH global.guiwidth
 #macro GUIHEIGHT global.guiheight
 #macro WINDOW_LIST global.window_list
+#macro RUN_FROM_IDE parameter_count()==3&&string_count("GMS2TEMP",parameter_string(2))

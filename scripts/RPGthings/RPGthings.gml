@@ -49,6 +49,7 @@ function apply_damage() {
 	var damagetype = argument[1]
 	var target = argument[2]
 	var showdmg = argument[3]
+	if !instance_exists(target) exit
 	if object_get_name(target.object_index) == object_get_name(obj_player.object_index){
 		target = obj_player_stats.id
 	}
@@ -106,5 +107,14 @@ function lvl_up(){
 			max_expr = max_exp_calc(level)
 			attribute_points +=1
 		}
+	}
+}
+
+function drop_mob_loot(drop_chance,item_id,item_amount){
+	if irandom(100)>=drop_chance
+	{
+		var loot = instance_create_layer(x,y,"Instances",obj_item)
+		loot.whatitem = item_id
+		loot.amount = item_amount
 	}
 }

@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Potions",
-    "path": "folders/Objects/Controllers/Inventory/ Inventory Sprites/Items/Potions.yy",
+    "path": "folders/Objects/Controllers/Inventory/Items Sprites/Potions.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ItemIcon_SmallManaPotion",

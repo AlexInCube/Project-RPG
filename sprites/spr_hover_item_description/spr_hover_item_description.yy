@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"bff854f8-9b1f-4d3b-9524-54a90397eaff","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": " Inventory Sprites",
-    "path": "folders/Objects/Controllers/Inventory/ Inventory Sprites.yy",
+    "name": "Inventory Sprites",
+    "path": "folders/Objects/Controllers/Inventory/Inventory Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_hover_item_description",

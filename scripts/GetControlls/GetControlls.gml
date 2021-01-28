@@ -49,7 +49,6 @@ function get_input() {
 	//Debug menu
 	developer_key = keyboard_check_pressed(global.settings.controls.developer_key)
 
-
 	xaxis = (right - left)
 	yaxis = (down - up)
 }

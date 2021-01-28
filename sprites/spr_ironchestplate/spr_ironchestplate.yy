@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Armor",
-    "path": "folders/Objects/Controllers/Inventory/ Inventory Sprites/Items/Armor.yy",
+    "path": "folders/Objects/Controllers/Inventory/Items Sprites/Armor.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ironchestplate",

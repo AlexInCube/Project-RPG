@@ -9,6 +9,7 @@ global.settings = {
 		fullscreen : false,
 		width : display_get_width(),
 		height : display_get_height(),
+		v_sync : false,
 		game_speed: 60	
 	},
 	interface : {
@@ -17,6 +18,9 @@ global.settings = {
 		showdamage:	true
 	},
 	game : {
+	},
+	another : {
+		autosaves_limit: 5
 	},
 	controls : {
 		key_up : ord("W"),		
@@ -53,18 +57,22 @@ show_debug_message("Fullscreen: "+string(global.settings.video.fullscreen)+" Wid
 }
 
 function apply_settings() {
-	options_execute_scripts()
-	save_settings()
-	instance_destroy()
+	with(obj_optionswindow){
+		options_execute_scripts()
+		save_settings()
+		instance_destroy()
+	}
 }
 	
 function settodefault() {
-	setup_default_settings()//Setup default struct
+	with(obj_optionswindow){
+		setup_default_settings()//Setup default struct
 
-	options_execute_scripts()
+		options_execute_scripts()
 	
-	open_settings()//Destroy settings window
-	open_settings()//Open Settings Window
+		open_settings()//Destroy settings window
+		open_settings()//Open Settings Window
+	}
 }
 
 function options_execute_scripts(){
@@ -81,13 +89,10 @@ function options_execute_scripts(){
 					script_execute(ds_grid[# 2,i],ds_grid[# 3,i])
 				break;
 				case settings_element_type.shift:
-					script_execute(ds_grid[# 2,i],ds_grid[# 3,i])
+					script_execute_ext(ds_grid[# 2,i],[ds_grid[# 3,i],ds_grid[# 4,i]])
 				break;
 				case settings_element_type.slider:
-					script_execute(ds_grid[# 2,i],i,ds_grid[# 3,i])
-				break;
-				case settings_element_type.input:
-					global.settings[$ "controls"][$ ds_grid[# 2,i]] = ds_grid[# 3, i]
+					script_execute(ds_grid[# 2,i],ds_grid[# 3,i])
 				break;
 			}
 		}
@@ -95,7 +100,9 @@ function options_execute_scripts(){
 }
 
 function declinesettings() {
-	instance_destroy()
+	with(obj_optionswindow){
+		instance_destroy()
+	}
 }
 
 function save_settings(){

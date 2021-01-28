@@ -23,10 +23,10 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [
-    {"x":19.0,"y":29.0,},
-    {"x":31.0,"y":29.0,},
-    {"x":31.0,"y":55.0,},
-    {"x":19.0,"y":55.0,},
+    {"x":9.0,"y":28.0,},
+    {"x":22.0,"y":28.0,},
+    {"x":22.0,"y":39.0,},
+    {"x":9.0,"y":39.0,},
   ],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_tree","path":"objects/obj_tree/obj_tree.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},

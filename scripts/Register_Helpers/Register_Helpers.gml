@@ -38,7 +38,11 @@ function add_potion(name, sprite_index, stackable, item_struct, arg_array) {
 		item_sprite = sprite_index
 		item_description = find_keyword(item_unlocale_name+"_description")
 		item_stacking = stackable
+		if !is_undefined(arg_array){
 		self.arg_array = arg_array
+		}else{
+		self.arg_array = []
+		}
 		item_type = ITEM_TYPE_POTION
 	}
 }

@@ -1,3 +1,6 @@
+if exist_story_tag("talked_with_penguin"){
+	instance_destroy()
+}
 t_scene_info = [
 	[cutscene_change_variable,obj_player,"state",uncontrollable_state],
 	[cutscene_change_variable,obj_player,"sprite_index",spr_player_up],
@@ -13,4 +16,3 @@ t_scene_info = [
 	[cutscene_wait,0.1],
 	[cutscene_set_to_default]
 ]
-cutscene_id=0

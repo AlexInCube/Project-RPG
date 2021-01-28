@@ -36,20 +36,29 @@ function cutscene_end_action() {
 ///@description Put this in the end of actions array for return control to the player
 function cutscene_set_to_default() {
 	change_camera_mode(camera_mode.move_to_follow_object,obj_player,0.1)
+	cutscene_change_interface_state(false)
 	obj_player.state=move_state
 		
 	cutscene_end_action()
 }
 
 ///@function cutscene_wait
-///@arg seconds
-function cutscene_wait(argument0) {
-	timer++
+///@arg ticks
+function cutscene_wait(ticks) {
+	timer = timer + (1* DELTATIME)
 
-	if(timer >= argument0 * DELTATIME){
+	if(timer >= ticks){
 		timer = 0
 		cutscene_end_action()
 	}
+}
+
+///@function cutscene_script_execute
+///@arg scr
+///@arg [args]
+function cutscene_script_execute(scr,args) {
+	script_execute_ext(scr,args)
+	cutscene_end_action()
 }
 
 ///@description cutscene_play_sound
@@ -105,22 +114,28 @@ function cutscene_change_variable(argument0, argument1, argument2) {
 	cutscene_end_action()
 }
 
+///@description
+///@arg value
+function cutscene_change_interface_state(state) {
+	global.interface_lock_by_game = state
+
+	cutscene_end_action()
+}
+
 ///@description move_character
 ///@arg obj
 ///@arg x
 ///@arg y
 ///@arg relative?
 ///@arg spd
-function cutscene_move_character(argument0, argument1, argument2, argument3, argument4) {
-	var obj = argument0, relative = argument3, spd = argument4
-
+function cutscene_move_character(obj, x, y, relative, spd) {
 	if (x_dest == -1){
 		if(!relative){
-			x_dest = argument1
-			y_dest = argument2
+			x_dest = x
+			y_dest = y
 		}else{
-			x_dest = obj.phy_position_x+argument1
-			y_dest = obj.phy_position_y+argument2
+			x_dest = obj.phy_position_x+x
+			y_dest = obj.phy_position_y+y
 		}
 	}
 

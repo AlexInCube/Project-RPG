@@ -1,15 +1,14 @@
 TODO:
-repair close combat
 make task progress saveable (kills)
 improve the storage of player stats
 saving non-unique objects
-distribute localization by folder
-make limit for autosaves
 add mouse support for control
-rework settings
-v-sync
-
+add XML support
+loot-tables
+rework quest system
 
 Maked in this version:
-Return last save
-Fixed bug with unchangeable control settings
+Sliders now have slide step
+Added new beach level
+Fixes in cutscenes scripts
+Fixes in mob drops

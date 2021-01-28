@@ -6,6 +6,6 @@ enum event{
 	trigger,
 	talk,
 	deliver,
-	inventory_slot_clicked,
+	inventory_clicked,
 	none,
 }

@@ -1,6 +1,7 @@
 //Quest List
 enum quest{
-	slimetrouble
+	slimetrouble,
+	first_steps
 }
 
 //Quest Types
@@ -9,7 +10,9 @@ enum questtype {
 	trigger,
 	talk,
 	craft,
-	deliver
+	deliver,
+	pickup_item,
+	item_in_slot
 }
 ds_quests = ds_grid_create(0,0)//Width - quest details, Height - quest id
 global.ds_current_quests = ds_map_create()//List of active quests (store the ID and Progress)
@@ -42,8 +45,29 @@ add_quest(
 ]
 )
 #endregion
-
-//quest_update(quest.slimetrouble)
+#region
+add_quest(
+[
+	"Первые шаги",
+	"Ты кароче типа ничё не помнишь и тебе надо всё вспомнить.",
+	[
+		"Найти палку",
+		"Экипировать палку",
+		"Убить слизней",
+	],
+	[
+		"Иди к зелёной поляне справа и там возьми палку нажав: "+return_normal_control_word(global.settings.controls.pickup_key),
+		"Открой инвентарь и положи палку в слот для оружия",
+		"Чтобы бить нажимай: "+return_normal_control_word(global.settings.controls.attack_key)
+	],
+	[
+		[questtype.pickup_item,"wooden_stick",1],
+		[questtype.item_in_slot,global.equipment,4,"wooden_stick"],
+		[questtype.kill,obj_enemy_slime,3]
+	]
+]
+)
+#endregion
 
 //For notification about start/fail/complete quest
 notificationquestname=""

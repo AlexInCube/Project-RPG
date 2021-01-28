@@ -6,6 +6,16 @@ function convert_ticks_to_seconds(ticks){
 	return ticks/60
 }
 
+
+function get_formatted_date(number){
+	number = string(number)
+	if string_length(number) == 1{
+		return string(0)+number
+	}else{
+		return number
+	}
+}
+
 /// @function with_tagged(tag, lambda)
 /// @param tag The tag or array of tags to operate on
 /// @param lambda An inline function to be run
@@ -91,22 +101,6 @@ function mouseover(argument0, argument1, argument2, argument3) {
 	var yy2=argument3
 
 	return point_in_rectangle(device_mouse_x_to_gui(0),device_mouse_y_to_gui(0),xx,yy,xx2,yy2)
-}
-
-///@description draw_light(light_radius)
-///@function draw_light
-///@param light_radius
-function draw_light(size){
-	if instance_exists(obj_light){
-		if surface_exists(global.light){
-			gpu_set_blendmode(bm_subtract)
-			surface_set_target(global.light)
-			var camera_x = camera_get_view_x(camera), camera_y = camera_get_view_y(camera)
-			draw_ellipse_color(x - size / 2 - camera_x, y - size / 2 - camera_y, x + size / 2 - camera_x, y + size / 2 - camera_y,c_orange,c_black,false)
-			surface_reset_target()
-			gpu_set_blendmode(bm_normal)
-		}
-	}
 }
 
 ///@description draw_rectangle_color_fast(x1,y1,x2,y2,color,outline)

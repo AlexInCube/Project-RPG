@@ -23,8 +23,8 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [
-    {"x":12.0,"y":12.0,},
-    {"x":12.0,"y":12.0,},
+    {"x":16.0,"y":16.0,},
+    {"x":15.0,"y":16.0,},
   ],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_bush","path":"objects/obj_bush/obj_bush.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},

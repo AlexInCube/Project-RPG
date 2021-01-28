@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Other",
-    "path": "folders/Objects/Controllers/Inventory/ Inventory Sprites/Items/Other.yy",
+    "path": "folders/Objects/Controllers/Inventory/Items Sprites/Other.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_item_coin",

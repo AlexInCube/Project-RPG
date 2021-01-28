@@ -13,19 +13,19 @@ ds_grid_clear(global.mouse_slot, NO_ITEM);
 inventorylock=false
 inventory_size = ds_grid_width(global.inventory)
 
-event_register([event.inventory_slot_clicked,global.equipment],id,recalculate_stats,global.equipment)
+event_register([event.inventory_clicked,global.equipment],id,recalculate_stats,global.equipment)
 
-item_gain("small_health_potion", 4, global.inventory)
-item_gain("empty_big_bottle",2, global.inventory)
-item_gain("big_health_potion",2, global.inventory,2)
+/*
+item_gain("defense_potion", 4, global.inventory)
+item_gain("attack_potion",4, global.inventory)
+item_gain("regeneration_potion",4, global.inventory)
 item_gain("shotgun", 1, global.inventory)
 item_gain("small_mana_potion", 8, global.inventory)
 item_gain("light_staff",1, global.inventory)
 item_gain("iron_helmet", 1, global.inventory)
-
+item_gain("wooden_stick",1,global.inventory)
 item_gain("iron_leggings", 1, global.inventory)
 item_gain("iron_boots", 1, global.inventory)
-/*
 item_gain(item.iron_sword, 1)
 item_gain(item.lightningstaff, 1)
 item_gain(item.greenleaf, 10)

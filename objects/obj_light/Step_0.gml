@@ -3,6 +3,7 @@ if !surface_exists(global.light){
 }
 
 surface_set_target(global.light)
-draw_set_color(c_ltgray)
+draw_clear(c_black)
+draw_set_color(obj_controller.light_colour)
 draw_rectangle(0,0,camera_get_view_width(camera),camera_get_view_height(camera),false)
 surface_reset_target()

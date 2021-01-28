@@ -1,9 +1,9 @@
+draw_black_screen()
 draw_set_halign(fa_left)
 draw_set_valign(fa_top)
 draw_set_color(c_white)
 draw_set_font(fnt_small)
 
-var window_x = GUIWIDTH/2-GUIHEIGHT/2, window_y = 0 
 var start_y = window_y+26, start_x = window_x+10, y_buffer = 24, ds_grid = ds_options
 
 //Draw background
@@ -73,38 +73,14 @@ var yy = 0; for(var i=drawelementstart;i<drawelementstart+drawelementheight;i++)
 			#region Slider
 			case settings_element_type.slider:
 				var text = ds_grid[# 0,i]
-				c = c_white
+				draw_set_color(c_white)
 				draw_set_halign(fa_left)
-				draw_text_color(window_x+10,rsy,text,c,c,c,c,1)
-				
-				draw_sprite(spr_slidershiftbackground,0,rsx-entriesoffset-56,rsy+1)
-				draw_sprite_ext(spr_slidershiftforeground,0,rsx-entriesoffset-54,rsy+1,(calculate_bars_modifier(ds_grid[# 3,i],ds_grid[# 5,i],ds_grid[# 6,i],0,1)),1,0,c_white,1)
-	
+				//Draw option name
+				draw_text(window_x+10,rsy,text)
+				draw_set_color(c_white)
+				//Draw value of slider
 				draw_set_halign(fa_center)
-				draw_text_color(rsx-entriesoffset,rsy,string(round(ds_grid[# 3,i]*100))+"%",c,c,c,c,1)
-				
-				var frameleft=0
-				var frameright=0
-				if mouseover(rsx-entriesoffset-84,rsy,rsx-entriesoffset-60,rsy+24){
-					frameleft=1
-					if mouse_check_button_pressed(mb_left){
-						ds_grid[# 3,i] -=ds_grid[# 4,i]
-						ds_grid[# 3,i] = clamp(ds_grid[# 3,i],ds_grid[# 5,i],ds_grid[# 6,i])
-					}
-				}else frameleft=0
-				
-				if mouseover(rsx-entriesoffset+64,rsy,rsx-entriesoffset+84,rsy+24){
-					frameright=1
-					if mouse_check_button_pressed(mb_left){
-						ds_grid[# 3,i] +=ds_grid[# 4,i]
-						ds_grid[# 3,i] = clamp(ds_grid[# 3,i],ds_grid[# 5,i],ds_grid[# 6,i])
-					}
-				}else frameright=0
-				
-				draw_sprite(spr_shift,frameleft,rsx-entriesoffset-84,rsy)
-				draw_sprite_ext(spr_shift,frameright,rsx-entriesoffset+84,rsy,-1,1,0,c_white,1)
-				
-				
+				draw_text(rsx-200,rsy,string(ds_grid[# 3,i][@ 0]))
 			break;
 			#endregion
 			#region Toggle
@@ -113,19 +89,6 @@ var yy = 0; for(var i=drawelementstart;i<drawelementstart+drawelementheight;i++)
 				c = c_white
 				draw_set_halign(fa_left)
 				draw_text_color(window_x+10,rsy,text,c,c,c,c,1)
-			
-				var current_val = ds_grid[# 3,i]
-				var c = c_white
-				
-				draw_sprite(spr_checkbox,current_val,rsx-entriesoffset-12,rsy)
-				
-				if mouseover(rsx-entriesoffset-12,rsy,rsx-entriesoffset+12,rsy+24){
-					if mouse_check_button_pressed(mb_left){
-						ds_grid[# 3,i] = !ds_grid[# 3,i]
-					}
-				}
-				
-				
 			break;
 			#endregion
 			#region Input
@@ -154,8 +117,18 @@ var yy = 0; for(var i=drawelementstart;i<drawelementstart+drawelementheight;i++)
 					keymode = 2
 					if keyboard_check_pressed(vk_anykey){
 						if inputting==true{
+							var names_array = variable_struct_get_names(global.settings.controls)//Get sections names
 							var kk = keyboard_lastkey
+							for(var c = 0;c<array_length(names_array);c++){
+								if global.settings[$ "controls"][$ names_array[@ c]] == kk{
+									kk = ds_grid[# 3, i]
+									keyboard_lastkey =-1
+
+									break
+								}
+							}
 							ds_grid[# 3, i] = kk
+							global.settings[$ "controls"][$ ds_grid[# 2,i]] = kk
 							inputting=false
 							toinput = 0
 						}
@@ -172,8 +145,4 @@ var yy = 0; for(var i=drawelementstart;i<drawelementstart+drawelementheight;i++)
 	}
 	yy++
 }
-
-applydeclinebutton(window_x+20,window_y+window_height-24,applyword,apply_settings)//Apply Settings
-applydeclinebutton(window_x+150,window_y+window_height-24,declineword,declinesettings)//Decline Settings
-applydeclinebutton(window_x+280,window_y+window_height-24,set_to_defaultword,settodefault)//Reset settings
 

@@ -1,6 +1,4 @@
-
-
-if (state != enemy_stall_state){
+if (state != slime_stall_state){
 	var dir = point_direction(other.x,other.y,x,y)
 	var xdir = lengthdir_x(1,dir)
 	var ydir = lengthdir_y(1,dir)
@@ -12,6 +10,6 @@ if (state != enemy_stall_state){
 		damage.image_yscale=0.5
 		damage.knockback = self.knockback
 	
-	state = enemy_stall_state
+	state = slime_stall_state
 	alarm[1] = DELTATIME
 }

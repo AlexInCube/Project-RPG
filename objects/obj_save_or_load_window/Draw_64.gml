@@ -57,6 +57,7 @@ if !ds_exists(ds_saves,ds_type_list) exit
 
 			//Save name
 			draw_set_font(fnt_verylarge)
+			draw_set_color(c_white)
 			draw_text(slot_x+10,slot_y-5,string(i)+"  "+save_name)
 			draw_set_font(fnt_small)
 			draw_set_halign(fa_left)
@@ -69,7 +70,6 @@ if !ds_exists(ds_saves,ds_type_list) exit
 			draw_text(slot_x+ss_w-10,slot_y+35,get_formatted_date(array_get(save_time,0))+"."+get_formatted_date(array_get(save_time,1))+"."+string(array_get(save_time,2)))
 			//Draw hours and minutes
 			draw_text(slot_x+ss_w-100,slot_y+35,get_formatted_date(array_get(save_time,3))+":"+get_formatted_date(array_get(save_time,4)))
-
 		}else{exit}
 	yy++
 }

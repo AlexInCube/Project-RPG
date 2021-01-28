@@ -1,0 +1,5 @@
+{
+	"obj_enemy_slime":"Слизень",
+	"obj_enemy_bat":"Летучая мышь",
+	"obj_enemy_pc":"Злой комп"
+}

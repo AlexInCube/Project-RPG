@@ -4,6 +4,11 @@ function game_start() {
 	global.load_state = load_state.new_game
 }
 
+function test_room_start() {
+	room_goto(room_game_init)
+	global.load_state = load_state.test_room
+}
+
 function show_exit_question(){
 	open_question_window(450,150,"are_you_sure","i_am_weak","i_am_not_surrender",game_exit,instance_destroy)
 }
@@ -14,7 +19,7 @@ function game_exit() {
 }
 
 function open_settings() {
-	menustate = menu_state.options
+	obj_mainmenucontroller.menustate = menu_state.options
 	if !instance_exists(obj_optionswindow){
 		instance_create_depth(0,0,0,obj_optionswindow)
 	}else{

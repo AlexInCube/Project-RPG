@@ -16,9 +16,12 @@
 
 function registeritems() {
 	#region Potions
-	add_potion("small_health_potion", spr_ItemIcon_SmallHealPotion,4,health_potion,[1,false])
-	add_potion("big_health_potion", spr_ItemIcon_BigHealPotion,1,big_health_potion,[25,true])
-	add_potion("small_mana_potion", spr_ItemIcon_SmallManaPotion,4,mana_potion,[5,false])
+	add_potion("small_health_potion", spr_ItemIcon_SmallHealPotion,4,health_potion,[1,false])//1 health
+	add_potion("big_health_potion", spr_ItemIcon_BigHealPotion,1,big_health_potion,[25,true])//25% health
+	add_potion("small_mana_potion", spr_ItemIcon_SmallManaPotion,4,mana_potion,[5,false])//5 mana
+	add_potion("regeneration_potion", spr_ItemIcon_RegPotion,4,regeneration_potion,[convert_seconds_to_ticks(5)])//5 duration
+	add_potion("attack_potion", spr_ItemIcon_AttPotion,4,attack_potion,[convert_seconds_to_ticks(60)])
+	add_potion("defense_potion", spr_ItemIcon_DefPotion,4,defense_potion,[convert_seconds_to_ticks(30)])
 	#endregion
 	
 	#region Armor
@@ -40,8 +43,8 @@ function registeritems() {
 	#endregion
 	
 	#region Spell
-	add_spell("spell_dash",spr_ItemIcon_SpellDash,spell_dash,[1])
-	add_spell("spell_fireball",spr_ItemIcon_SpellFireball,spell_fireball,[1])
+	add_spell("spell_dash",spr_ItemIcon_SpellDash,spell_dash,[1])//1 manacost
+	add_spell("spell_fireball",spr_ItemIcon_SpellFireball,spell_fireball,[1])//1 manacost
 	#endregion
 	
 	#region Other

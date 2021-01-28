@@ -13,6 +13,7 @@ draw_text(5,40,"Surface size:"+string(surface_get_width(application_surface))+"x
 draw_text(5,50,"Window w/h:"+string(window_get_width())+"x"+string(window_get_height()))
 draw_text(5,60,"Fps:"+string(fps)+ " Game Speed:"+string(room_speed)+" Fps Limit:"+string(global.settings.video.game_speed))
 draw_text(5,80,"DeltaMultiplier:"+string(DELTATIME))
+draw_text(5,90,"DirSave:"+string(global.directory_save)+" LastSave:"+string(global.lastsave))
 if instance_exists(obj_camera){
 draw_text(5,70,"Camera Speed:"+string(obj_camera.camera_speed))
 

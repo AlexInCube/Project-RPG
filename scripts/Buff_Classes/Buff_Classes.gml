@@ -16,7 +16,6 @@ function default_effect() constructor{
 	effect_description = find_keyword(effect_unlocale_name+"_description")//Description for player
 	effect_icon = spr_effect_frame//Effect Sprite on buff bar
 	effect_is_buff = true//Effect type, for effect frame.
-	effect_arg_array = []
 	effect_create_script = nothing//Script execute when effect applied to lifeform
 	effect_tick_script = nothing//Script executing when tick done
 	effect_tick_timer = 60//Countdown for script executing, when timer == 0, then execute effect_tick_script
@@ -32,11 +31,13 @@ function default_effect() constructor{
 
 function regeneration_effect() : default_effect() constructor{
 	effect_is_buff = true
+	effect_tick_timer = 59
+	effect_multiple = true
 	effect_create_script = function(){
 		show_debug_message("effect created heal")
 	}
-	effect_tick_script = function(){
-		heal(1,obj_player_stats,false)
+	effect_tick_script = function(target){
+		heal(1,target,false)
 		show_debug_message("healed")
 	}
 	effect_nbt = {
@@ -45,14 +46,25 @@ function regeneration_effect() : default_effect() constructor{
 }
 
 function attack_effect() : default_effect() constructor{
-	effect_is_buff = false
-	effect_create_script = function(){
-		show_debug_message("effect created attack")
+	effect_is_buff = true
+	effect_create_script = function(target){
+		target.phys_damage += 8
 	}
-	effect_tick_script = function(){
+	effect_destroy_script = function(target){
+		target.phys_damage -= 8
 	}
-	effect_destroy_script = function(){
-		show_debug_message("effect destroyed attack")
+	effect_nbt = {
+		duration : convert_seconds_to_ticks(5)
+	}
+}
+
+function defense_effect() : default_effect() constructor{
+	effect_is_buff = true
+	effect_create_script = function(target){
+		target.phys_armor += 8
+	}
+	effect_destroy_script = function(target){
+		target.phys_armor -= 8
 	}
 	effect_nbt = {
 		duration : convert_seconds_to_ticks(5)

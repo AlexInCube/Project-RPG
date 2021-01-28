@@ -68,7 +68,12 @@ function draw_effect(xx,yy,grid,effect_id){
 			var _duration = convert_ticks_to_seconds(grid[# effect_id,1][$ "duration"])
 			draw_set_halign(fa_left)
 			draw_set_valign(fa_top)
-			draw_text_shadow(xx,yy+10,_duration,fnt_small,1,c_black,c_white,1)
-			draw_text_shadow(xx,yy,(grid[# effect_id,1][$ "tick"]),fnt_small,1,c_black,c_white,1)
+			draw_text_shadow(xx,yy+10,round(_duration),fnt_small,1,c_black,c_white,1)
+			if DEBUGMODE{
+				draw_text_shadow(xx,yy,(grid[# effect_id,1][$ "tick"]),fnt_small,1,c_black,c_white,1)
+			}
+			if mouseover(xx,yy,xx+32,yy+32){
+				draw_effect_stat_mouse(_effect_struct)
+			}
 		}
 }

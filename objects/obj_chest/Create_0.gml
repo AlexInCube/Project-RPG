@@ -2,7 +2,7 @@ guiid=noone
 chestname="Chest"
 slots_quantity = 15
 chestinventory = ds_grid_create(slots_quantity, INVENTORY_HEIGHT); 
-ds_grid_clear(chestinventory,0)
+ds_grid_clear(chestinventory,NO_ITEM)
 
 
 interact_radius = 16
