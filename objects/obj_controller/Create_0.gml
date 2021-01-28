@@ -32,6 +32,7 @@ enum phase{
 }
 
 global.day_phase = PHASE_TYPE_NIGHT
+global.interface_lock_by_game = false
 //Overlay surface
 overall_gui_surf = surface_create(GUIWIDTH,GUIHEIGHT)//Draw something over all
 

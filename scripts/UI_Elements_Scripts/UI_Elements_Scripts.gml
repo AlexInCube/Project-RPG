@@ -70,13 +70,17 @@ function create_toggle_button(xx,yy,_sprite,_depth,toggle_state,button_scr,_var)
 	return _button
 }
 
-function create_slider_bar(xx,yy,_depth,slider_scr,_var){
+function create_slider_bar(xx,yy,_depth,cur_value,min_val,max_val,_step_val,slider_scr,slider_arg){
 	var _button = instance_create_depth(0,0,_depth,obj_ui_slider_bar)
 	with (_button){
 		slider_x = xx
 		slider_y = yy
 		slider_script = slider_scr
-		slider_var = _var
+		value = cur_value
+		step_value = _step_val
+		min_value = min_val
+		max_value = max_val
+		slider_var = slider_arg
 	}
 	return _button
 }

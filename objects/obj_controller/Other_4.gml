@@ -33,7 +33,7 @@ switch(global.load_state){
 	break
 
 	case load_state.new_game:
-		room_goto(room_player_apartment)
+		room_goto(room_beach_1A)
 		global.load_state = load_state.none
 	break
 	

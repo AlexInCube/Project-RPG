@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"ceb26df3-07da-4c33-b869-c28948ad214f","path":"sprites/Tsvetnaya_melkaya_plitka/Tsvetnaya_melkaya_plitka.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ceb26df3-07da-4c33-b869-c28948ad214f","path":"sprites/Tsvetnaya_melkaya_plitka/Tsvetnaya_melkaya_plitka.yy",},"LayerId":{"name":"d48b5709-5788-4bea-b8df-aa05d531ddb7","path":"sprites/Tsvetnaya_melkaya_plitka/Tsvetnaya_melkaya_plitka.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Tsvetnaya_melkaya_plitka","path":"sprites/Tsvetnaya_melkaya_plitka/Tsvetnaya_melkaya_plitka.yy",},"resourceVersion":"1.0","name":"ceb26df3-07da-4c33-b869-c28948ad214f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6df0c037-4378-4968-9bc2-d2c37f1359a7","path":"sprites/Tsvetnaya_melkaya_plitka/Tsvetnaya_melkaya_plitka.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6df0c037-4378-4968-9bc2-d2c37f1359a7","path":"sprites/Tsvetnaya_melkaya_plitka/Tsvetnaya_melkaya_plitka.yy",},"LayerId":{"name":"1dd74a53-8372-44b2-9775-8730cb974297","path":"sprites/Tsvetnaya_melkaya_plitka/Tsvetnaya_melkaya_plitka.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Tsvetnaya_melkaya_plitka","path":"sprites/Tsvetnaya_melkaya_plitka/Tsvetnaya_melkaya_plitka.yy",},"resourceVersion":"1.0","name":"6df0c037-4378-4968-9bc2-d2c37f1359a7","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"Tsvetnaya_melkaya_plitka","path":"sprites/Tsvetnaya_melkaya_plitka/Tsvetnaya_melkaya_plitka.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"993ee169-5ec8-45d6-91dd-02454989645c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ceb26df3-07da-4c33-b869-c28948ad214f","path":"sprites/Tsvetnaya_melkaya_plitka/Tsvetnaya_melkaya_plitka.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"83e90ea8-3823-4c5c-9a8e-89b8373a83e6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6df0c037-4378-4968-9bc2-d2c37f1359a7","path":"sprites/Tsvetnaya_melkaya_plitka/Tsvetnaya_melkaya_plitka.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d48b5709-5788-4bea-b8df-aa05d531ddb7","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1dd74a53-8372-44b2-9775-8730cb974297","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Sprites",

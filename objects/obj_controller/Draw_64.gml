@@ -1,6 +1,7 @@
 /// @description Draw Buttons
 //Draw HUD buttons
 if instance_exists(obj_textbox) exit
+if global.interface_lock_by_game {exit}
 draw_set_alpha(1)
 draw_sprite(spr_hudbuttonsbackground,0,GUIWIDTH-224,GUIHEIGHT-40)
 if inventory_key{open_inventory()}else if equipment_key{open_equipment()}else if questlist_key{open_quest_list()}

@@ -1,5 +1,7 @@
 value = 0
+min_value = 0
 max_value = 1
+step_value = 0.01
 selected = false
 slider_x = 0
 slider_y = 0

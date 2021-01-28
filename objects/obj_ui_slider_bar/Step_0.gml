@@ -12,6 +12,6 @@ if mouse_check_button_released(mb_left){
 }
 
 if selected{
-	value = clamp((device_mouse_x_to_gui(0)-slider_x)/slider_bar_width,0,max_value)
+	value = clamp((device_mouse_x_to_gui(0)-slider_x) / slider_bar_width,0,1) 
 	script_execute(slider_script)
 }

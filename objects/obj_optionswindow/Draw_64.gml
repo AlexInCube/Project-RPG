@@ -4,7 +4,6 @@ draw_set_valign(fa_top)
 draw_set_color(c_white)
 draw_set_font(fnt_small)
 
-var window_x = GUIWIDTH/2-GUIHEIGHT/2, window_y = 0 
 var start_y = window_y+26, start_x = window_x+10, y_buffer = 24, ds_grid = ds_options
 
 //Draw background

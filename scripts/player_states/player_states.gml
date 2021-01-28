@@ -59,7 +59,8 @@ if obj_controller.xaxis != 0 or obj_controller.yaxis != 0 {
 	image_xscale = 1
 	var mouse_dir = point_direction(phy_position_x,phy_position_y,mouse_x,mouse_y) div 90
 	mouse_dr = mouse_dir
-	switch(mouse_dir) {
+	switch(mouse_dir) 
+	{
 		case 0:sprite_index=sprite[RIGHT,MOVE];break
 		case 1:sprite_index=sprite[UP,MOVE];break
 		case 2:sprite_index=sprite[LEFT,MOVE];	break
@@ -71,12 +72,13 @@ if obj_controller.xaxis != 0 or obj_controller.yaxis != 0 {
 	{
 		var inst = collision_rectangle(x-findradius,y-findradius,x+findradius,y+findradius,obj_item,false,false)
 		with inst
-			{
-				item_gain(whatitem,amount,global.inventory)
-				instance_destroy()
-			}
+		{
+			item_gain(whatitem,amount,global.inventory)
+			event_fire([event.itemPickuped,whatitem,amount])
+			instance_destroy()
 		}
 	}
+}
 	draw_set_alpha(1)
 }
 //Using during cutscenes or stun effect

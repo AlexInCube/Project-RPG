@@ -79,7 +79,7 @@ function slot(inventory, slot_id, xx, yy, clickable) {
 					}
 				}
 			}
-			event_fire([event.inventory_slot_clicked,inventory])
+			event_fire([event.inventory_clicked,inventory])
 		}
 	
 	

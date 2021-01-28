@@ -36,20 +36,29 @@ function cutscene_end_action() {
 ///@description Put this in the end of actions array for return control to the player
 function cutscene_set_to_default() {
 	change_camera_mode(camera_mode.move_to_follow_object,obj_player,0.1)
+	cutscene_change_interface_state(false)
 	obj_player.state=move_state
 		
 	cutscene_end_action()
 }
 
 ///@function cutscene_wait
-///@arg seconds
-function cutscene_wait(argument0) {
-	timer++
+///@arg ticks
+function cutscene_wait(ticks) {
+	timer = timer + (1* DELTATIME)
 
-	if(timer >= argument0 * DELTATIME){
+	if(timer >= ticks){
 		timer = 0
 		cutscene_end_action()
 	}
+}
+
+///@function cutscene_script_execute
+///@arg scr
+///@arg [args]
+function cutscene_script_execute(scr,args) {
+	script_execute_ext(scr,args)
+	cutscene_end_action()
 }
 
 ///@description cutscene_play_sound
@@ -101,6 +110,14 @@ function cutscene_change_variable(argument0, argument1, argument2) {
 	with(argument0){
 		variable_instance_set(id, argument1, argument2)
 	}
+
+	cutscene_end_action()
+}
+
+///@description
+///@arg value
+function cutscene_change_interface_state(state) {
+	global.interface_lock_by_game = state
 
 	cutscene_end_action()
 }

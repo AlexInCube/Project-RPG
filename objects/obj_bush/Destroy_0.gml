@@ -1,9 +1,1 @@
-
-
-if random(100)>=50
-{
-	var loot = instance_create_layer(x,y,"Instances",obj_item)
-	var itemloot = choose(item.blueleaf,item.greenleaf)
-	loot.whatitem = itemloot
-	loot.amount = 1
-}
+drop_mob_loot(50,choose("green_leaf","blue_leaf"),1)

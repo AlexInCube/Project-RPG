@@ -4,9 +4,11 @@ improve the storage of player stats
 saving non-unique objects
 add mouse support for control
 add XML support
+loot-tables
+rework quest system
 
 Maked in this version:
-Last save button does not appear if save is not exists.
-Fixed bug with saving after loading game.
-Fixed bug where player go to door, created two saves.
-Added limit for autosaving
+Sliders now have slide step
+Added new beach level
+Fixes in cutscenes scripts
+Fixes in mob drops

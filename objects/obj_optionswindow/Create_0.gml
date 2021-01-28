@@ -10,10 +10,11 @@ enum settings_element_type{
 
 
 window_name=find_keyword("settings")
-window_width=max(GUIHEIGHT,400)
+window_width=max(GUIWIDTH,400)
 window_height=max(GUIHEIGHT,300)
 window_sprite=spr_basicwindow_without_close
-
+window_x = 0
+window_y = 0
 create_ds_grid_settings()
 ds_size = ds_grid_height(ds_options)
 
@@ -27,7 +28,6 @@ input_button_half_width=sprite_get_width(spr_control_button)/2
 ds_options_ui_elements = create_ui_elements_list()
 
 function recreate_buttons(){
-	var window_x = GUIWIDTH/2-GUIHEIGHT/2, window_y = 0 
 	var start_y = window_y+26, start_x = window_x+10, y_buffer = 24, ds_grid = ds_options
 	var rsx = window_x + window_width//window right side x
 	//Center for info
@@ -39,10 +39,12 @@ function recreate_buttons(){
 			case settings_element_type.slider:
 				//Draw value of slider
 				draw_set_halign(fa_center)
-				draw_text(rsx-entriesoffset,rsy,string(ds_grid[# 3,i][@ 0]))
+				var current_val = ds_grid[# 3,i][@ 0]
+				draw_text(rsx-entriesoffset,rsy,string(current_val))
 				var min_val = ds_grid[# 4,i]
 				var max_val = ds_grid[# 5,i]
-				add_ui_element(ds_options_ui_elements, create_slider_bar(rsx-entriesoffset-48,rsy+12,depth-1,options_slider,[ds_grid,i,min_val,max_val]))
+				var step_val = ds_grid[# 6,i]
+				add_ui_element(ds_options_ui_elements, create_slider_bar(rsx-entriesoffset-48,rsy+12,depth-1,current_val/max_val,min_val,max_val,step_val,options_slider,[ds_grid,i]))
 			break;
 			#endregion
 			#region Toggle

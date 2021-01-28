@@ -27,4 +27,13 @@ switch(quest_type)
 	case questtype.deliver:
 	event_register([event.deliver,stage[1],stage[2]],id,task_deliver,quest_id)
 	break
+	
+	case questtype.pickup_item:
+	event_register([event.itemPickuped,stage[1],stage[2]],id,task_trigger,quest_id)
+	break
+	
+	case questtype.item_in_slot:
+																		   //Inv	//SlotID //Item
+	event_register([event.inventory_clicked,stage[1]],id,task_item_in_slot,stage[1],stage[2],stage[3],quest_id)
+	break
 }

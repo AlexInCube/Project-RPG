@@ -109,3 +109,12 @@ function lvl_up(){
 		}
 	}
 }
+
+function drop_mob_loot(drop_chance,item_id,item_amount){
+	if irandom(100)>=drop_chance
+	{
+		var loot = instance_create_layer(x,y,"Instances",obj_item)
+		loot.whatitem = item_id
+		loot.amount = item_amount
+	}
+}

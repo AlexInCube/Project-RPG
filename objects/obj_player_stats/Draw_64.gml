@@ -1,4 +1,5 @@
 if instance_exists(obj_textbox){exit}
+if global.interface_lock_by_game {exit}
 draw_set_alpha(1)
 //Draw buff bar
 //Cycle through the player buff_grid
