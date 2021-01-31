@@ -11,34 +11,6 @@ function deliver_items(item,amount){
 	}
 }
 
-function tracking_update(t_q){
-	with obj_questmanager{
-		if t_q!=noone{
-			tq_name=string(quest_get_name(t_q))
-			var quest_t = quest_get_task_type(t_q)
-			switch(quest_t){
-				case questtype.kill:
-					tq_desc=quest_get_short_description_for_task(t_q,global.ds_current_quests[? string(t_q)])+" "+quest_return_progress_string(t_q)
-				break;
-				
-				default: tq_desc=quest_get_short_description_for_task(t_q,global.ds_current_quests[? string(t_q)])
-			}
-		}
-	}
-}
-
-function quest_return_progress_string(questid){
-	var n_k = quest_get_current_task(questid)
-	var quest_t = quest_get_task_type(questid)
-			switch(quest_t){
-				case questtype.kill:
-					return string(quest_get_count(questid))+"/"+string(n_k[2])
-				break;
-				
-				default: 
-			}
-	return ""
-}
 ///@description quest_get_current_task(questid)
 ///@arg questid
 function quest_get_current_task(questid) {
@@ -54,7 +26,7 @@ function quest_get_task_type(questid){
 }
 
 function quest_get_count(questid) {
-	if quest_get_task_type(questid) = questtype.kill{
+	if quest_get_task_type(questid) = quest_type.kill{
 		with(obj_questlistener){
 			if quest_id == questid{
 				return count
@@ -64,14 +36,13 @@ function quest_get_count(questid) {
 		return -1
 	}
 }
-///@description quest_get_task_amount(questid)
+///@description quest_get_task_amount(quest_struct)
 ///@arg questid
 /*
 	Get total task amount
 */
-function quest_get_task_amount(questid) {
-	var stagearray = obj_questmanager.ds_quests[# 4,questid]//Link to array with tasks
-	var tasklength = array_length(stagearray)-1
+function quest_get_task_amount(quest_struct) {
+	var tasklength = array_length(quest_struct.quest_tasks)-1
 	return tasklength
 }
 
@@ -108,9 +79,8 @@ function quest_get_current_stage(questid) {
 
 ///@description quest_get_name(questid)
 ///@arg questid
-function quest_get_name(questid) {
-	var name = obj_questmanager.ds_quests[# 0,questid]//Quest name
-	return name
+function quest_get_name(quest_struct) {
+	return quest_struct.quest_locale_name//Quest name
 }
 
 ///@description quest_get_description(questid)

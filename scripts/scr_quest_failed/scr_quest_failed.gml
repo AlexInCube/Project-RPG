@@ -20,9 +20,4 @@ function quest_failed(argument0) {
 			}
 		}
 	}
-
-
-
-
-
 }

@@ -15,21 +15,5 @@ inventory_size = ds_grid_width(global.inventory)
 
 event_register([event.inventory_clicked,global.equipment],id,recalculate_stats,global.equipment)
 
-/*
-item_gain("defense_potion", 4, global.inventory)
-item_gain("attack_potion",4, global.inventory)
-item_gain("regeneration_potion",4, global.inventory)
-item_gain("shotgun", 1, global.inventory)
-item_gain("small_mana_potion", 8, global.inventory)
-item_gain("light_staff",1, global.inventory)
-item_gain("iron_helmet", 1, global.inventory)
-item_gain("wooden_stick",1,global.inventory)
-item_gain("iron_leggings", 1, global.inventory)
-item_gain("iron_boots", 1, global.inventory)
-item_gain(item.iron_sword, 1)
-item_gain(item.lightningstaff, 1)
-item_gain(item.greenleaf, 10)
-item_gain(item.blueleaf, 10)
-item_gain(item.small_empty_bottle,10)
 
-item_gain(item.slime,40)
+item_gain("wooden_stick",1)

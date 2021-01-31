@@ -8,7 +8,5 @@ loot-tables
 rework quest system
 
 Maked in this version:
-Sliders now have slide step
-Added new beach level
-Fixes in cutscenes scripts
-Fixes in mob drops
+Reworked quest system
+Fixed broken developer console

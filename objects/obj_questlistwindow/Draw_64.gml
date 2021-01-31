@@ -26,7 +26,7 @@ if selectedquest==noone{
 				if mouse_check_button_pressed(mb_right){
 					with(obj_questmanager){
 						tracking_quest=i
-						tracking_update(tracking_quest)
+						quest_tracking_update(tracking_quest)
 					}
 				}
 			}

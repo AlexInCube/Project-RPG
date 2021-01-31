@@ -22,6 +22,6 @@ t_scene_info = [
 	[cutscene_wait,convert_seconds_to_ticks(0.5)],
 	[cutscene_create_monologue,myText],
 	[cutscene_wait,0.1],
-	[cutscene_script_execute,quest_update,[quest.first_steps]],
+	[cutscene_script_execute,quest_start,["first_steps"]],
 	[cutscene_set_to_default]
 ]

@@ -1,6 +1,3 @@
-
-
-
 if (display_frame > 0) { // draw something 
 
 	#region backgrounds 

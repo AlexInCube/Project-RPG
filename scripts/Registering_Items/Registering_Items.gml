@@ -15,6 +15,8 @@
 #endregion
 
 function registeritems() {
+	global.item_index = ds_list_create()
+
 	#region Potions
 	add_potion("small_health_potion", spr_ItemIcon_SmallHealPotion,4,health_potion,[1,false])//1 health
 	add_potion("big_health_potion", spr_ItemIcon_BigHealPotion,1,big_health_potion,[25,true])//25% health
