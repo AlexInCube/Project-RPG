@@ -1,5 +1,4 @@
 TODO:
-make task progress saveable (kills)
 improve the storage of player stats
 saving non-unique objects
 add mouse support for control
@@ -8,5 +7,7 @@ loot-tables
 rework quest system
 
 Maked in this version:
-Reworked quest system
-Fixed broken developer console
+Fixed notification when quest complete
+Fixed save/load player quests
+Fixed quest progress tracking
+Fixed quest list window

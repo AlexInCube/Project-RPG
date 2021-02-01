@@ -1,5 +1,4 @@
 function task_kill(questid) {
-	var quest_struct = return_struct_from_quest_index_by_quest_id(quest_id)
 	var stage_array = get_current_quest_array(quest_id)//Get array in current quest list
 	stage_array[@ quest_data.task_progress]++//Quest Progress
 	

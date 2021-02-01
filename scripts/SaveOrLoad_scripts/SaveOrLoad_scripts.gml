@@ -58,7 +58,9 @@ function save_game() {
 	save_data[? "player_inventory"] = stringify_inventory(global.inventory)
 	save_data[? "player_equipment"] = stringify_inventory(global.equipment)
 	save_data[? "player_effects"] = [stringify_effects(obj_player_stats.buff_grid),ds_grid_width(obj_player_stats.buff_grid)-1]
-	save_data[? "quest_list"] = ds_map_write(global.ds_current_quests)
+	with(obj_questmanager){
+		save_data[? "quest_list"] = ds_list_write(ds_current_quests)
+	}
 	save_data[? "world_time"] = json_stringify([obj_controller.hours,obj_controller.minutes,obj_controller.seconds])
 	save_data[? "story_tags"] = ds_list_write(obj_controller.story_tags)
 	var date = date_current_datetime()
@@ -126,18 +128,19 @@ function load_game() {
 	parse_effects(obj_player_stats, save_data[? "player_effects"])
 	ds_list_destroy(save_data[? "player_effects"])
 	//Load quest list and cycle through all list to create quest listeners
-	ds_map_clear(global.ds_current_quests)
-	ds_map_read(global.ds_current_quests,save_data[? "quest_list"])
-	//Find first quest_id
-	var key = ds_map_find_first(global.ds_current_quests);
-	//Create quest listeners
-	repeat(ds_map_size(global.ds_current_quests))
-	{
-		with instance_create_depth(0,0,0,obj_questlistener)
+	with(obj_questmanager){
+		ds_list_clear(ds_current_quests)
+		ds_list_read(ds_current_quests,save_data[? "quest_list"])
+		//Create quest listeners
+		var i=0;repeat(ds_list_size(ds_current_quests))
 		{
-		quest_id=real(key)
-		key = ds_map_find_next(global.ds_current_quests,key)
-		alarm[0]=1
+			var quest_id = ds_current_quests[| i][@ quest_data.name]
+			with instance_create_depth(0,0,0,obj_questlistener)
+			{
+				self.quest_id = quest_id
+				alarm[0]=1
+			}
+			i++
 		}
 	}
 	//Story tags
