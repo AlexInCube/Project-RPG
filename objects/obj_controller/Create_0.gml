@@ -14,9 +14,9 @@ story_tags = ds_list_create()
 //World time (day and night cycle)
 seconds = 0
 minutes = 0 
-hours = 0
+hours = 8
 
-time_increment = 100
+time_increment = 1
 day = 0
 
 max_darkness = 0.7

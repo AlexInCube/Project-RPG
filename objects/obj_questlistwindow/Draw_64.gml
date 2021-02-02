@@ -44,13 +44,16 @@ if selectedquest==undefined{
 	draw_text(window_x+169,window_y+35,quest_struct.quest_locale_name)
 	draw_set_halign(fa_left)
 	//Quest description
-	draw_text_ext(window_x+15,window_y+56+(24*(quest_progress+1)),quest_struct.quest_description,23,313)
+	var desc_height = window_y+56+(24*(quest_progress+1))
+	draw_text_ext(window_x+15,desc_height,quest_struct.quest_description,23,313)
+	//Quest task description
+	draw_text_ext(window_x+15,desc_height+string_height_ext(quest_struct.quest_description,23,313),quest_struct.quest_long_tasks_description[quest_progress],23,313)
 	//Quest task list
 	for(i=0;i<quest_progress+1;i++){
 		var startx = window_x+15
 		var starty = window_y+56
 		var c = c_black
-		draw_text_color_fast(startx+24,starty+(24*i),quest_struct.quest_short_tasks_description[i]/*+" "+quest_get_task_amount(quest_struct)*/,c,1)
+		draw_text_color_fast(startx+24,starty+(24*i),quest_struct.quest_short_tasks_description[i],c,1)
 		
 		if i != quest_progress{
 			draw_sprite(spr_task_done,1,startx,starty+(24*i))

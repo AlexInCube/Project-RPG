@@ -27,7 +27,11 @@ switch(global.load_state){
 	
 		var save_room = asset_get_index(save_data[? "room"])
 		show_debug_message("[Game load]"+"Room loading:"+string(save_room))
+		//Story tags
+		ds_list_read(story_tags,save_data[? "story_tags"])
+		
 		ds_map_destroy(save_data)
+		
 		global.load_state = load_state.manual_load
 		room_goto(save_room)
 	break

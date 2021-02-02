@@ -335,6 +335,7 @@
     {"id":{"name":"scr_event_register","path":"scripts/scr_event_register/scr_event_register.yy",},"order":0,},
     {"id":{"name":"scr_event_fire","path":"scripts/scr_event_fire/scr_event_fire.yy",},"order":1,},
     {"id":{"name":"scr_event_unregister","path":"scripts/scr_event_unregister/scr_event_unregister.yy",},"order":2,},
+    {"id":{"name":"test","path":"scripts/test/test.yy",},"order":5,},
     {"id":{"name":"sentry_unix_timestamp","path":"scripts/sentry_unix_timestamp/sentry_unix_timestamp.yy",},"order":5,},
     {"id":{"name":"scr_quest_failed","path":"scripts/scr_quest_failed/scr_quest_failed.yy",},"order":2,},
     {"id":{"name":"spr_equip_buttons","path":"sprites/spr_equip_buttons/spr_equip_buttons.yy",},"order":2,},
@@ -573,6 +574,7 @@
     {"CopyToMask":-1,"filePath":"datafiles/localization/russian","resourceVersion":"1.0","name":"mobs_names.txt","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/localization/russian","resourceVersion":"1.0","name":"items.txt","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/localization/russian","resourceVersion":"1.0","name":"effects.txt","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/localization/russian","resourceVersion":"1.0","name":"quests.txt","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
     "IDEVersion": "2.3.1.542",

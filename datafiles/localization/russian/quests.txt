@@ -1,0 +1,10 @@
+{
+	"first_steps":"Первые шаги",
+	"first_steps_description":"Это задание что-то типа туториала.",
+	"first_steps_short_task_description_0":"Подбери палку",
+	"first_steps_long_task_description_0":"Иди на правый полуостров и забери там палку.",
+	"first_steps_short_task_description_1":"Экипируй палку",
+	"first_steps_long_task_description_0":"Открой меню экипировку и возьми палку в левый слот для оружия",
+	"first_steps_short_task_description_2":"Убей несколько слизней",
+	"first_steps_long_task_description_0":"Атакуй слизней как-нибудь",
+}

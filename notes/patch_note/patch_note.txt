@@ -4,10 +4,8 @@ saving non-unique objects
 add mouse support for control
 add XML support
 loot-tables
-rework quest system
 
 Maked in this version:
-Fixed notification when quest complete
-Fixed save/load player quests
-Fixed quest progress tracking
-Fixed quest list window
+Start making tutorial
+Fixing alpha in different places
+Fixed loading story tags

@@ -143,9 +143,6 @@ function load_game() {
 			i++
 		}
 	}
-	//Story tags
-	ds_list_read(obj_controller.story_tags,save_data[? "story_tags"])
-	
 	//Read unique objects data
 	load_room_data()
 	//End of read room_name.txt

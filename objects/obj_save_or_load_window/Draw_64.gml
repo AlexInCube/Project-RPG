@@ -1,4 +1,5 @@
 if !ds_exists(ds_saves,ds_type_list) exit
+	draw_black_screen()
 	var window_x = GUIWIDTH/2-GUIHEIGHT/2, window_y = 0
 	var slot_x,slot_y
 	
