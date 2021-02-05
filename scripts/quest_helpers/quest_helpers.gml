@@ -45,6 +45,9 @@ function quest_start(questid){
 		//Quest Name, Quest Progress, Progress in Task
 		ds_current_quests[| ds_list_size(ds_current_quests)] = [questid,0,0]
 		quest_update_notify(questid)
+		if tracking_quest == undefined{
+			quest_tracking_update(questid)
+		}
 		with instance_create_depth(0,0,0,obj_questlistener){
 			quest_id=questid
 			alarm[0]=1
@@ -61,7 +64,7 @@ function quest_update_notify(quest_id){
 
 		if cur_array[@ quest_data.progress]==0{
 			notificationqueststate=0//Quest start
-			txtcolor=c_blue
+			txtcolor=c_white
 		}else if task_amount>cur_array[@ quest_data.progress]{
 			notificationqueststate=1//Quest updated
 			txtcolor=c_orange
@@ -85,6 +88,7 @@ function quest_update(quest_id) {
 		
 		quest_update_notify(quest_id)
 		
+		//If quest competed
 		if task_amount+1==cur_array[@ quest_data.progress]{
 			ds_list_delete(ds_current_quests,ds_list_find_index(ds_current_quests,get_current_quest_array(quest_id)))
 			with(obj_questlistwindow){
@@ -92,8 +96,9 @@ function quest_update(quest_id) {
 			}
 			tq_name = ""
 			tq_desc = ""
+			tracking_quest = undefined
 			exit
-		}else if quest_id = tracking_quest{
+		}else if quest_id = tracking_quest{//If quest still continue
 			quest_tracking_update(quest_id)
 		}
 

@@ -6,6 +6,7 @@ add XML support
 loot-tables
 
 Maked in this version:
-Start making tutorial
-Fixing alpha in different places
-Fixed loading story tags
+Enhanced player sprite control
+Removed save renaming
+Fixed camera resolution
+Little rebuild the first location

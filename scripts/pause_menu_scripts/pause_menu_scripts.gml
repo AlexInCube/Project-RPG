@@ -13,6 +13,7 @@ function resume_game(){
 	show_debug_message("Game resumed!")
 	with(obj_pause)instance_destroy()
 	instance_activate_all()
+	with(obj_camera)event_user(0)
 	audio_resume_all()
 	io_clear()
 }

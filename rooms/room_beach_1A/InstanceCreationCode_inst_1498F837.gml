@@ -8,7 +8,7 @@ myText[i]		= "Я всё забыл!!!"
 i++;
 myText[i]		= "Шучу, я видел такое начало в одной другой игре, но забыл её название.";
 t_scene_info = [
-	[cutscene_change_variable,obj_player,"state",uncontrollable_state],
+	[cutscene_take_player_control],
 	[cutscene_change_interface_state,true],
 	[cutscene_change_variable,obj_player,"sprite_index",spr_player_down],
 	[cutscene_wait,convert_seconds_to_ticks(1)],

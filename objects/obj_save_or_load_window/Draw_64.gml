@@ -47,10 +47,10 @@ if !ds_exists(ds_saves,ds_type_list) exit
 			draw_nine_slice_box(spr_save_slot,slot_x,slot_y,slot_x+ss_w,slot_y+ss_h,mouse_over_slot)
 			//Resave Button (appear only in Pause Menu)
 			if saving = true{
-				if button(slot_x+ss_w-140,slot_y,spr_resave_button,resaving,save_name)exit
+				if button(slot_x+ss_w-106,slot_y,spr_resave_button,resaving,save_name)exit
 			}
 			//Rename Save
-			if button(slot_x+ss_w-106,slot_y,spr_rename_save_button,rename,save_name)exit
+			//if button(slot_x+ss_w-106,slot_y,spr_rename_save_button,rename,save_name)exit
 			//Load Save
 			if button(slot_x+ss_w-70,slot_y,spr_load_save_button,load,save_name)exit
 			//Delete Save
@@ -59,7 +59,7 @@ if !ds_exists(ds_saves,ds_type_list) exit
 			//Save name
 			draw_set_font(fnt_verylarge)
 			draw_set_color(c_white)
-			draw_text(slot_x+10,slot_y-5,string(i)+"  "+save_name)
+			draw_text(slot_x+10,slot_y-5,/*string(i)+"  "+*/save_name)
 			draw_set_font(fnt_small)
 			draw_set_halign(fa_left)
 			draw_set_valign(fa_top)

@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"17e6aa7d-ed6e-4c7d-b637-2e4b6993c874","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Developer Tiles",
+    "path": "folders/Tile Sets/Tiles Sprites/Developer Tiles.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_testroom",
