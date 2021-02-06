@@ -71,6 +71,7 @@ switch(global.load_state){
 		var autosave_name = "autosave_"+string(ds_list_size(ds_saves))
 		//Create copy of current save
 		file_copy_dir("Saves\\"+global.directory_save,"Saves\\"+autosave_name,fa_directory)
+		global.directory_save = autosave_name
 		save_room_data(previous_room,room_data)
 		save_game()
 		//If autosaves quantity is too big, then delete save 

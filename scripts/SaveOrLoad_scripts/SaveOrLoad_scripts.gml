@@ -117,13 +117,6 @@ function load_game() {
 	obj_controller.minutes = w_t[1]
 	obj_controller.seconds = w_t[2]
 
-	//Player Inventory
-	with(obj_inventory) parse_inventory(global.inventory,save_data[? "player_inventory"])
-	//Player Equipment
-	with(obj_inventory){
-		parse_inventory(global.equipment,save_data[? "player_equipment"])
-		recalculate_stats(global.equipment)
-	}
 	//Load buff list
 	parse_effects(obj_player_stats, save_data[? "player_effects"])
 	ds_list_destroy(save_data[? "player_effects"])
@@ -155,7 +148,15 @@ function load_game() {
 			phy_position_y = save_data[? "player_y"]
 		}
 	}
+	//Player Inventory
+	with(obj_inventory) parse_inventory(global.inventory,save_data[? "player_inventory"])
+	//Player Equipment
+	with(obj_inventory){
+		parse_inventory(global.equipment,save_data[? "player_equipment"])
+		recalculate_stats(global.equipment)
+	}
 	ds_map_destroy(save_data)
+	
 	show_debug_message("Playerdata.txt loaded")
 }
 

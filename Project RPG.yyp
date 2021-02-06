@@ -264,6 +264,7 @@
     {"id":{"name":"spr_effect_speed","path":"sprites/spr_effect_speed/spr_effect_speed.yy",},"order":2,},
     {"id":{"name":"spr_chinlin_stand_up","path":"sprites/spr_chinlin_stand_up/spr_chinlin_stand_up.yy",},"order":3,},
     {"id":{"name":"spr_chinlin_run_up","path":"sprites/spr_chinlin_run_up/spr_chinlin_run_up.yy",},"order":4,},
+    {"id":{"name":"room_beach_1B","path":"rooms/room_beach_1B/room_beach_1B.yy",},"order":5,},
     {"id":{"name":"spr_chinlin_stand_right","path":"sprites/spr_chinlin_stand_right/spr_chinlin_stand_right.yy",},"order":5,},
     {"id":{"name":"spr_chinlin_run_right","path":"sprites/spr_chinlin_run_right/spr_chinlin_run_right.yy",},"order":6,},
     {"id":{"name":"spr_chinlin_stand_down","path":"sprites/spr_chinlin_stand_down/spr_chinlin_stand_down.yy",},"order":7,},
@@ -400,6 +401,7 @@
     {"id":{"name":"spr_penguin_up","path":"sprites/spr_penguin_up/spr_penguin_up.yy",},"order":5,},
     {"id":{"name":"obj_lehanpc","path":"objects/obj_lehanpc/obj_lehanpc.yy",},"order":6,},
     {"id":{"name":"obj_tree","path":"objects/obj_tree/obj_tree.yy",},"order":0,},
+    {"id":{"name":"path_ewgen_run","path":"paths/path_ewgen_run/path_ewgen_run.yy",},"order":7,},
     {"id":{"name":"obj_tree2","path":"objects/obj_tree2/obj_tree2.yy",},"order":1,},
     {"id":{"name":"obj_rock","path":"objects/obj_rock/obj_rock.yy",},"order":2,},
     {"id":{"name":"obj_rock2","path":"objects/obj_rock2/obj_rock2.yy",},"order":3,},
@@ -463,6 +465,7 @@
     {"roomId":{"name":"room_world1B","path":"rooms/room_world1B/room_world1B.yy",},},
     {"roomId":{"name":"room_test","path":"rooms/room_test/room_test.yy",},},
     {"roomId":{"name":"room_player_apartment","path":"rooms/room_player_apartment/room_player_apartment.yy",},},
+    {"roomId":{"name":"room_beach_1B","path":"rooms/room_beach_1B/room_beach_1B.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Objects/Game Objects/Player/Player Sprites.yy","order":2,"resourceVersion":"1.0","name":"Player Sprites","tags":[],"resourceType":"GMFolder",},

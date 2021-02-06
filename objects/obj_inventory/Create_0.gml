@@ -14,6 +14,3 @@ inventorylock=false
 inventory_size = ds_grid_width(global.inventory)
 
 event_register([event.inventory_clicked,global.equipment],id,recalculate_stats,global.equipment)
-
-
-item_gain("wooden_stick",1)

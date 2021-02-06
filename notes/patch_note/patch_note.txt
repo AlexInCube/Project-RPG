@@ -6,7 +6,7 @@ add XML support
 loot-tables
 
 Maked in this version:
-Enhanced player sprite control
-Removed save renaming
-Fixed camera resolution
-Little rebuild the first location
+Added second beach level
+Fixed bug when autosaving corrupt manual save
+Fixed bug with creating weapon earlier than player appear
+Fixed bug when player go to starting room, obj_player are duplicates.

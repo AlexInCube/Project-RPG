@@ -38,12 +38,12 @@ function slime_stall_state() {
 #endregion
 #region Helpers
 function slime_check_for_player() {
-	if (instance_exists(obj_player)){
-		var dis = point_distance(x,y,obj_player.x,obj_player.y)
+	if (instance_exists(target)){
+		var dis = point_distance(x,y,target.x,target.y)
 		if (dis < sight){
 			state = slime_chase_state
-			targetx = obj_player.x
-			targety = obj_player.y
+			targetx = target.x
+			targety = target.y
 		} else {
 			slime_choose_next_state()
 		}
