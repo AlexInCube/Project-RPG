@@ -6,7 +6,6 @@ add XML support
 loot-tables
 
 Maked in this version:
-Added second beach level
-Fixed bug when autosaving corrupt manual save
-Fixed bug with creating weapon earlier than player appear
-Fixed bug when player go to starting room, obj_player are duplicates.
+Fixed not appearing continue last save button
+Rewrited save management
+Improved save window

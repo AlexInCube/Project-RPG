@@ -27,7 +27,7 @@ function event_register() {
 		}
 	
 		ds_list_add(listenerList,listenerInfo)
-		show_debug_message("Event registered: "+ev)
+		show_debug_message(LOGGER_EVENT_MANAGER+"Event registered: "+ev)
 }
 
 ///@description event_fire
@@ -68,7 +68,7 @@ function event_fire() {
 			
 				i++
 			}
-			show_debug_message("Event Fired: "+string(ev))
+			show_debug_message(LOGGER_EVENT_MANAGER+"Event Fired: "+string(ev))
 		}
 }
 
@@ -76,7 +76,7 @@ function event_fire() {
 ///@arg event
 ///@arg id
 function event_unregister() {
-		var ev = argument[0]
+		var ev = string(argument[0])
 		var objID = argument[1]
 	
 		if ds_map_exists(global.eventMap, ev){
@@ -91,6 +91,7 @@ function event_unregister() {
 						ds_map_delete(global.eventMap,ev)
 					}else ds_list_delete(listenerList,i)
 					break
+					show_debug_message(LOGGER_EVENT_MANAGER+"Event UNregisted: "+ev)
 				}
 				i++
 			}

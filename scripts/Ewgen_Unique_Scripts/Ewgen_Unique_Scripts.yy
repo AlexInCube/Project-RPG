@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Event Scripts",
-    "path": "folders/Objects/Controllers/Events Management/Event Scripts.yy",
+    "name": "Ewgen Resources",
+    "path": "folders/Objects/NPCs/Ewgen Resources.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_event_fire",
+  "name": "Ewgen_Unique_Scripts",
   "tags": [],
   "resourceType": "GMScript",
 }

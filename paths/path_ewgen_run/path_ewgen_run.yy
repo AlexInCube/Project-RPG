@@ -9,8 +9,8 @@
     {"speed":100.0,"x":-127.3232,"y":63.99823,},
   ],
   "parent": {
-    "name": "NPCs",
-    "path": "folders/Objects/NPCs.yy",
+    "name": "Ewgen Resources",
+    "path": "folders/Objects/NPCs/Ewgen Resources.yy",
   },
   "resourceVersion": "1.0",
   "name": "path_ewgen_run",

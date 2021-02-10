@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"eeb47ab1-6d0c-4428-b7df-73e64c6c600c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "NPC",
-    "path": "folders/Sprites/NPC.yy",
+    "name": "NPCs",
+    "path": "folders/Objects/NPCs.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_maksimnpc",

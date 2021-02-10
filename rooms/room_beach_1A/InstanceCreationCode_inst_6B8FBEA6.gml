@@ -3,11 +3,7 @@ if exist_story_tag("bush_destroyer"){
 }
 var myText
 var i = 0;
-myText[i]		= "Наведи курсор на костёр и нажми: "+return_normal_control_word(global.settings.controls.interact_key)
-i++;
-myText[i]		= "С помощью костра ты сможешь вручную сохраняться.";
-i++;
-myText[i]		= "А ещё авто-сохранения происходят при переходе между локациями.";
+myText[i]		= "Перед уходом на другую локацию, скажу одну вещь. Сохранение игры происходит автоматически при переходе."
 
 t_scene_info = [
 	[cutscene_take_player_control],

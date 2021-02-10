@@ -1,6 +1,5 @@
 depth =-100
 ds_saves = ds_list_create()//Contain saves name folder
-create_saves_list()
 saving = false//if false, show only load and delete buttons. if true, show also save button.
 
 drawelementstart = 0//Start drawing ds_list from position
@@ -9,23 +8,40 @@ drawelementheight = round((GUIHEIGHT-20)/(sprite_get_height(spr_save_slot)+21))-
 ss_w = GUIHEIGHT-20
 ss_h = sprite_get_height(spr_save_slot)+16
 
+window_name=find_keyword("save_window")
 createslot_word = find_keyword("create_new_save_slot")
-write_your_save_name_word = find_keyword("write_your_save_name")
 
-function resaving(save_name){
-	global.directory_save = save_name
-	resume_game()//resume game for saving (activate all instances)
-	save_game()
-}
 
-function rename(save_name){
-	var new_name = get_string(write_your_save_name_word,save_name)
-	if directory_exists("Saves\\"+save_name){
-		file_copy_dir("Saves\\"+save_name,"Saves\\"+new_name,fa_directory)
-		directory_destroy("Saves\\"+save_name)
-		create_saves_list()
+//Update saves list
+function create_saves_list(){
+	//Reload Save List
+	if ds_exists(ds_saves,ds_type_list){
+		ds_list_destroy(ds_saves)
+		ds_saves = ds_list_create()
+	}else{
+		ds_saves = ds_list_create()
 	}
+    var file = file_find_first("Saves\\*",fa_directory)
+	while(file != ""){
+		if file_exists("Saves\\"+file+"/playerdata.txt"){
+			var file_path = "Saves\\"+file+"\\"+"playerdata.txt"
+			var file_ = file_text_open_read(file_path)
+			var save_string = file_text_read_string(file_)
+			file_text_close(file_)
+			var save_data = json_parse(save_string)
+			var c_array = save_data.saving_time
+			
+			ds_list_add(ds_saves,[file,c_array,save_data.game_version])	
+		}
+
+		file = file_find_next();
+	}
+	file_find_close()
+	
+	ds_size = ds_list_size(ds_saves)
 }
+
+create_saves_list()
 
 function load(save_name){
 	global.directory_save = save_name

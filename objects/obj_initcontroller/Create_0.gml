@@ -22,7 +22,7 @@ if file_exists("misc.ini"){
 	ini_open("misc.ini")
 	global.lastsave = ini_read_string("saves","lastsave","")
 	ini_close()
-	if !file_exists(global.lastsave){
+	if !file_exists("Saves\\"+global.lastsave+"/playerdata.txt"){
 		global.lastsave=""
 	}else{
 		global.directory_save=global.lastsave//Current saving for loading

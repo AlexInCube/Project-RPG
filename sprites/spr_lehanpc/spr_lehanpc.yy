@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f196bde3-9e42-4e38-9ea1-b84fba0821cf","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "NPC",
-    "path": "folders/Sprites/NPC.yy",
+    "name": "NPCs",
+    "path": "folders/Objects/NPCs.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_lehanpc",

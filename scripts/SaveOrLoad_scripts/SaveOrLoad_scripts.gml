@@ -32,11 +32,11 @@ function stringify_effects(buff_grid){
 function parse_effects(lifeform,effects_string){
 	with lifeform{
 		if ds_exists(buff_grid,ds_type_grid){
-			ds_grid_resize(buff_grid,effects_string[| 1]+1,2)
+			ds_grid_resize(buff_grid,effects_string[1]+1,2)
 		}else{
-			buff_grid = ds_grid_create(effects_string[| 1],2)
+			buff_grid = ds_grid_create(effects_string[1],2)
 		}
-		parse_grid_with_structs(buff_grid,effects_string[| 0],1)
+		parse_grid_with_structs(buff_grid,effects_string[0],1)
 	}
 	var i = 0; repeat(ds_grid_width(lifeform.buff_grid)){
 		effect_script_execute(lifeform.buff_grid[# i,0],EFFECT_SCRIPT_CREATE,[lifeform])
@@ -46,36 +46,48 @@ function parse_effects(lifeform,effects_string){
 
 ///@description Saving working if game paused
 function save_game() {
-	var save_data = ds_map_create()
-	save_data[? "player_x"] = obj_player.phy_position_x
-	save_data[? "player_y"] = obj_player.phy_position_y
-	save_data[? "player_hp"] = obj_player_stats.hp
-	save_data[? "exp"] = obj_player_stats.expr
-	save_data[? "lvl"] = obj_player_stats.level
-	save_data[? "attribute_points"] = obj_player_stats.attribute_points
-	save_data[? "attributes"] = [obj_player_stats.strength,obj_player_stats.energy,obj_player_stats.defense,obj_player_stats.agility]
-	save_data[? "room"] = room_get_name(room)
-	save_data[? "player_inventory"] = stringify_inventory(global.inventory)
-	save_data[? "player_equipment"] = stringify_inventory(global.equipment)
-	save_data[? "player_effects"] = [stringify_effects(obj_player_stats.buff_grid),ds_grid_width(obj_player_stats.buff_grid)-1]
-	with(obj_questmanager){
-		save_data[? "quest_list"] = ds_list_write(ds_current_quests)
+	var save_data = {
+		player_x: obj_player.phy_position_x,
+		player_y: obj_player.phy_position_y,
+		player_current_room:  room_get_name(room),
+		player_hp: obj_player_stats.hp,
+		player_lvl: obj_player_stats.level,
+		player_exp: obj_player_stats.expr,
+		player_attribute_points: obj_player_stats.attribute_points,
+		player_attributes: {
+			strength : obj_player_stats.strength,
+			energy : obj_player_stats.energy,
+			defense: obj_player_stats.defense,
+			agility: obj_player_stats.agility
+		},
+		player_inventory: stringify_inventory(global.inventory),
+		player_equipment: stringify_inventory(global.equipment),
+		player_effects: [stringify_effects(obj_player_stats.buff_grid),ds_grid_width(obj_player_stats.buff_grid)-1],
+		player_quests: ds_list_write(obj_questmanager.ds_current_quests),
+		world_time: {
+			hours: obj_controller.hours,
+			minutes: obj_controller.minutes,
+			seconds: obj_controller.seconds
+		},
+		story_tags: ds_list_write(obj_controller.story_tags),
+		saving_time: {
+			day: current_day,
+			month: current_month,
+			year: current_year,
+			second: current_second,
+			minute: current_minute,
+			hour: current_hour
+		},
+		game_version: GM_version,
 	}
-	save_data[? "world_time"] = json_stringify([obj_controller.hours,obj_controller.minutes,obj_controller.seconds])
-	save_data[? "story_tags"] = ds_list_write(obj_controller.story_tags)
-	var date = date_current_datetime()
-	save_data[? "saving_time"] = [date_get_day(date),date_get_month(date),date_get_year(date),date_get_hour(date),date_get_minute(date),date_get_second(date)]
-	save_data[? "game_version"] = GM_version
-	
-	var save_string = json_encode(save_data)
-	ds_map_destroy(save_data)
-	
+	var save_string = json_stringify(save_data)
+
 	//Save Main Data
 	var file_path = "Saves\\"+global.directory_save+"\\"+"playerdata.txt"
 	var file = file_text_open_write(file_path)
 	file_text_write_string(file,save_string)
 	file_text_close(file)
-	show_debug_message("Main data saved: "+file_path)
+	show_debug_message(LOGGER_SAVE_MANAGER+"Main data saved: "+file_path)
 	
 	
 	instance_activate_all()
@@ -83,8 +95,8 @@ function save_game() {
 	//End of write playerdata.txt
 	save_room_data(room,return_room_data())
 	//End of write room_name.txt
-	show_debug_message("Room saved: "+file_path)
-	show_debug_message("Game saved!")
+	show_debug_message(LOGGER_SAVE_MANAGER+"Room saved: "+file_path)
+	show_debug_message(LOGGER_SAVE_MANAGER+"Game saved!")
 }
 //Game loading working from anywhere
 function load_game() {
@@ -94,36 +106,31 @@ function load_game() {
 	var file = file_text_open_read(file_path)
 	var save_string = file_text_read_string(file)
 	file_text_close(file)
-	var save_data = json_decode(save_string)
+	var save_data = json_parse(save_string)
 	//Applying player stats
 	with (obj_player_stats){
-		expr = save_data[? "exp"]
-		level = save_data[? "lvl"]
+		expr = save_data.player_exp
+		level = save_data.player_lvl
 		max_expr = max_exp_calc(level)
-		attribute_points = save_data[? "attribute_points"]
-		var _list = save_data[? "attributes"]
-		strength = _list[| 0]
-		energy = _list[| 1]
-		defense = _list[| 2]
-		agility = _list[| 3]
-		ds_list_destroy(_list)
+		attribute_points = save_data.player_attribute_points
+		strength = save_data.player_attributes.strength
+		energy = save_data.player_attributes.energy
+		defense = save_data.player_attributes.defense
+		agility = save_data.player_attributes.agility
 
-		hp = save_data[? "player_hp"]
+		hp = save_data.player_hp
 		//hp = clamp(hp,0,max_hp)
 	}
-	//World time
-	var w_t = json_parse(save_data[? "world_time"])
-	obj_controller.hours = w_t[0]
-	obj_controller.minutes = w_t[1]
-	obj_controller.seconds = w_t[2]
+	obj_controller.hours = save_data.world_time.hours
+	obj_controller.minutes = save_data.world_time.minutes
+	obj_controller.seconds = save_data.world_time.seconds
 
 	//Load buff list
-	parse_effects(obj_player_stats, save_data[? "player_effects"])
-	ds_list_destroy(save_data[? "player_effects"])
+	parse_effects(obj_player_stats, save_data.player_effects)
 	//Load quest list and cycle through all list to create quest listeners
 	with(obj_questmanager){
 		ds_list_clear(ds_current_quests)
-		ds_list_read(ds_current_quests,save_data[? "quest_list"])
+		ds_list_read(ds_current_quests,save_data.player_quests)
 		//Create quest listeners
 		var i=0;repeat(ds_list_size(ds_current_quests))
 		{
@@ -141,23 +148,22 @@ function load_game() {
 	//End of read room_name.txt
 	//Applying player coordinates
 	if !instance_exists(obj_player){
-		instance_create_layer(save_data[? "player_x"],save_data[? "player_y"],"Instances",obj_player)
+		instance_create_layer(save_data.player_x,save_data.player_y,"Instances",obj_player)
 	}else{
 		with(obj_player){
-			phy_position_x = save_data[? "player_x"]
-			phy_position_y = save_data[? "player_y"]
+			phy_position_x = save_data.player_x
+			phy_position_y = save_data.player_y
 		}
 	}
 	//Player Inventory
-	with(obj_inventory) parse_inventory(global.inventory,save_data[? "player_inventory"])
+	with(obj_inventory) parse_inventory(global.inventory,save_data.player_inventory)
 	//Player Equipment
 	with(obj_inventory){
-		parse_inventory(global.equipment,save_data[? "player_equipment"])
+		parse_inventory(global.equipment,save_data.player_equipment)
 		recalculate_stats(global.equipment)
 	}
-	ds_map_destroy(save_data)
 	
-	show_debug_message("Playerdata.txt loaded")
+	show_debug_message(LOGGER_SAVE_MANAGER+"Playerdata.txt loaded")
 }
 
 function return_room_data(){
@@ -180,7 +186,7 @@ function return_room_data(){
 	
 	var wrapper = ds_map_create()
 	ds_map_add_list(wrapper,"object_list",object_list)
-	show_debug_message("[Game Save]Saveable object exists: "+string(ds_list_size(object_list)))
+	show_debug_message(LOGGER_SAVE_MANAGER+"Saveable object exists: "+string(ds_list_size(object_list)))
 	var save_string = json_encode(wrapper);
 	ds_map_destroy(wrapper);
 	return save_string
@@ -216,10 +222,10 @@ function load_room_data(){
 				CallUserEvent(15,map)
 			}
 		}
-		show_debug_message("Room loaded: "+file_path)
+		show_debug_message(LOGGER_SAVE_MANAGER+"Room loaded: "+file_path)
 		ds_map_destroy(wrapper)
 	}else{
-		show_debug_message("Error while room loading: "+file_path)
+		show_debug_message(LOGGER_SAVE_MANAGER+"Error while room loading: "+file_path)
 	}
 }
 
@@ -241,47 +247,12 @@ function open_save_window(){
 	}
 }
 
-//Update saves list
-function create_saves_list(){
-	//Reload Save List
-	if ds_exists(ds_saves,ds_type_list){
-		ds_list_destroy(ds_saves)
-		ds_saves = ds_list_create()
-	}else{
-		ds_saves = ds_list_create()
-	}
-    var file = file_find_first("Saves\\*",fa_directory)
-	while(file != ""){
-		if file_exists("Saves\\"+file+"/playerdata.txt"){
-			var file_path = "Saves\\"+file+"\\"+"playerdata.txt"
-			var file_ = file_text_open_read(file_path)
-			var save_string = file_text_read_string(file_)
-			file_text_close(file_)
-			var save_data = json_decode(save_string)
-			var saving_time_ds_list = save_data[? "saving_time"]
-			var c_array = [saving_time_ds_list[| 0],saving_time_ds_list[| 1],saving_time_ds_list[| 2],saving_time_ds_list[| 3],saving_time_ds_list[| 4]]
-			
-			ds_list_add(ds_saves,[file,c_array,save_data[? "game_version"],save_data[? "autosave"]])	
-			ds_map_destroy(save_data)
-		}
-
-		file = file_find_next();
-	}
-	file_find_close()
-	
-	ds_size = ds_list_size(ds_saves)
-}
-
-
-
 #endregion
 
 function write_last_played_save(){
-	global.lastsave = global.directory_save
 	ini_open("misc.ini")
 	ini_write_string("saves","lastsave",global.lastsave)
 	ini_close()
-	save_settings()
 }
 
 function load_last_player_save(){
