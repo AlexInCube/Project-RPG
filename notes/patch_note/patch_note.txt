@@ -6,6 +6,4 @@ add XML support
 loot-tables
 
 Maked in this version:
-Fixed not appearing continue last save button
-Rewrited save management
-Improved save window
+Added quest about Ewgen and bucket of water.

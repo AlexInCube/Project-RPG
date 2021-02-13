@@ -9,7 +9,8 @@ ss_w = GUIHEIGHT-20
 ss_h = sprite_get_height(spr_save_slot)+16
 
 window_name=find_keyword("save_window")
-createslot_word = find_keyword("create_new_save_slot")
+gameversion_word = find_keyword("game_version")
+savetime_word = find_keyword("save_time")
 
 
 //Update saves list

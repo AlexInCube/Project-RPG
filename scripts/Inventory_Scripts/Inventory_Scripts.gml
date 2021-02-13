@@ -2,7 +2,7 @@
 /// @function item_gain(slot, amount);
 /// @param item_id
 /// @param max_amount
-/// @param inv
+/// @param [inv] global.inventory is default
 /// @param [slot] optional
 function item_gain(item_id, max_amount, inventory, _slot) {
 	//Max item stack
@@ -114,6 +114,7 @@ function grab_item(itemneed,itemamount,inventory) {
 			}
 		}
 	}
+	return false
 }
 
 

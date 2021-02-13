@@ -1,3 +1,4 @@
+if global.interface_lock_by_game exit
 var _inst = instance_position(mouse_x,mouse_y,all)
 if _inst != noone{
 	if is_tagged(INTERACT,_inst){

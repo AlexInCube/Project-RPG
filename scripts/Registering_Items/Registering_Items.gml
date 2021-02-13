@@ -12,6 +12,7 @@
 #macro ITEM_TYPE_COMPONENTS "item_type_components"
 #macro ITEM_TYPE_POTION "item_type_potion"
 #macro ITEM_TYPE_SPELL "item_type_spell"
+#macro ITEM_TYPE_UNDEFINED "item_type_undefined"
 #endregion
 
 function registeritems() {
@@ -61,6 +62,9 @@ function registeritems() {
 	add_components("star_salve",spr_item_star_salve,1)
 	add_components("coin",spr_item_coin,50)
 	add_components("meat",spr_ItemIcon_Meat,8)
+	
+	add_components("wooden_water_bucket",spr_ItemIcon_WaterBucket,1)
+	add_other_quick_usable("wooden_bucket",spr_ItemIcon_EmptyBucket,1,wooden_bucket,[])
 	#endregion
 	
 	show_debug_message("Registered "+string(ds_list_size(global.item_index))+" items")

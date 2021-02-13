@@ -138,3 +138,14 @@ function light_staff() : default_item() constructor{
 	}
 }
 #endregion
+
+#region Other
+function wooden_bucket() : default_quick_useable() constructor {
+	quick_use = function(inv_arr){
+		var inv = item_get_inventory(inv_arr)
+		var _slot = item_get_slot(inv_arr)
+		item_consume(inv,_slot)
+		item_gain("wooden_water_bucket",1,inv,_slot)
+	}
+}
+#endregion

@@ -7,5 +7,9 @@ function registerquests(){
 		[quest_type.kill,obj_enemy_slime,3]
 	])
 	
+	register_quest("help_for_ewgen",[
+		[quest_type.deliver,"wooden_water_bucket",1],
+	])
+	
 	show_debug_message("Registered "+string(ds_list_size(global.quest_index))+" quests")
 }

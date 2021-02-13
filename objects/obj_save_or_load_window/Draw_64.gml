@@ -50,18 +50,19 @@ if !ds_exists(ds_saves,ds_type_list) exit
 			//Save name
 			draw_set_font(fnt_verylarge)
 			draw_set_color(c_white)
-			draw_text(slot_x+10,slot_y-5,/*string(i)+"  "+*/save_name)
+			draw_text(slot_x+42,slot_y-5,/*string(i)+"  "+*/save_name)
 			draw_set_font(fnt_small)
 			draw_set_halign(fa_left)
 			draw_set_valign(fa_top)
+			//Draw player skin
+			draw_sprite_ext(spr_player_down,0,slot_x+22,slot_y+30,2,2,0,c_white,1)
 			//Save version
-			draw_text(slot_x+10,slot_y+35,save_version)
+			draw_text(slot_x+42,slot_y+35,gameversion_word+save_version)
 			//Save time
 			//Draw day, month and year
 			draw_set_halign(fa_right)
-			draw_text(slot_x+ss_w-10,slot_y+35,get_formatted_date(save_time.day)+"."+get_formatted_date(save_time.month)+"."+string(save_time.year))
-			//Draw hours and minutes
-			draw_text(slot_x+ss_w-100,slot_y+35,get_formatted_date(save_time.hour)+":"+get_formatted_date(save_time.minute)+":"+get_formatted_date(save_time.second))
+			draw_text(slot_x+ss_w-5,slot_y+35,savetime_word+get_formatted_date(save_time.day)+"."+get_formatted_date(save_time.month)+"."+string(save_time.year)
+			+"  "+get_formatted_date(save_time.hour)+":"+get_formatted_date(save_time.minute)+":"+get_formatted_date(save_time.second))
 		}else{exit}
 	yy++
 }

@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"spr_ewgennpc","path":"sprites/spr_ewgennpc/spr_ewgennpc.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_ewgennpc",
+    "name": "",
     "tags": [],
     "resourceType": "GMSequence",
   },

@@ -6,6 +6,7 @@ enum menu_state{
 }
 
 menustate = menu_state.main_buttons
+gameversion_word = find_keyword("game_version")
 
 var button_x = 50
 ds_menu_main = create_ui_elements_list(
