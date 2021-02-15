@@ -6,8 +6,10 @@ window_sprite=spr_question_window
 question = "question"
 answer_yes = "yes"
 yes_script = nothing
+yes_arg = undefined
 answer_no = "no"
 no_script = nothing
+no_arg = undefined
 str_width_yes = string_width(answer_yes)
 str_height_no = string_width(answer_no)
 

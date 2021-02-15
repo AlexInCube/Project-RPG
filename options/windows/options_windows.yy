@@ -1,10 +1,10 @@
 {
   "option_windows_display_name": "ProjectRPG",
   "option_windows_executable_name": "ProjectRPG",
-  "option_windows_version": "0.37.6.0",
+  "option_windows_version": "0.37.7.0",
   "option_windows_company_info": "Alexander Techologies",
   "option_windows_product_info": "ProjectRPG",
-  "option_windows_copyright_info": "(c) 2020 Alexander Techologies",
+  "option_windows_copyright_info": "(c) 2019 - 2021 Alexander Techologies",
   "option_windows_description_info": "",
   "option_windows_display_cursor": true,
   "option_windows_icon": "${base_options_dir}/windows/icons/icon.ico",

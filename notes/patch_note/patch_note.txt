@@ -6,4 +6,5 @@ add XML support
 loot-tables
 
 Maked in this version:
-Added quest about Ewgen and bucket of water.
+Added question window when player try to delete save file
+For every save slot now written player lvl and world time
