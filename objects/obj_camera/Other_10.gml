@@ -3,7 +3,7 @@ view_visible[0]=true;
 
 var display_height=global.settings.video.height,display_width=global.settings.video.width
 var aspect_ratio=display_width/display_height
-var ideal_height=270
+var ideal_height=400
 
 var ideal_width=round(ideal_height*aspect_ratio);
 //ideal_height=round(ideal_width / aspect_ratio);

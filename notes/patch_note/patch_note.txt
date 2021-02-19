@@ -4,7 +4,12 @@ saving non-unique objects
 add mouse support for control
 add XML support
 loot-tables
+using system cursor option
 
 Maked in this version:
-Added question window when player try to delete save file
-For every save slot now written player lvl and world time
+Remaded pause screen background
+Added city level
+Added item type restriction in equipslots
+Fixed load last save in death screen
+Increased player size
+Improved tooltip stat in equipmenu 

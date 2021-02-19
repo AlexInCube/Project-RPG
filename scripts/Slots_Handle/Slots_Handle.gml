@@ -18,7 +18,7 @@ function return_struct_from_item_index_by_item_inv(inventory,slot_id){
 }
 /// @description slot(inventory_id,slot_id,x,y);
 /// @function slot
-function slot(inventory, slot_id, xx, yy, clickable) {
+function slot(inventory, slot_id, xx, yy, clickable, itemtype) {
 	//Draw item render
 	var _item = inventory[# slot_id,0]
 	if _item != NO_ITEM{
@@ -35,7 +35,9 @@ function slot(inventory, slot_id, xx, yy, clickable) {
 			script_execute_ext(_item_render,_item_args)
 		}
 	}	
+	//If not allow click, dont continue code
 	if !clickable{exit} 
+	
 	if mouseover(xx,yy,xx+32,yy+32){
 		//If mouse left click over slot and them have any item, take all amount of items or we have item in mouse then we put or switch items in slots
 		draw_sprite(spr_slot_backlight,0,xx,yy)
@@ -44,6 +46,16 @@ function slot(inventory, slot_id, xx, yy, clickable) {
 		}
 		if mouse_check_button_pressed(mb_left)
 		{
+			//Filter item type
+			if !is_undefined(itemtype){
+				if global.mouse_slot[# 0,0] != NO_ITEM{
+					var _item_struct = return_struct_from_item_index_by_item_id(global.mouse_slot[# 0,0])
+					if _item_struct[$ "item_type"] != itemtype{
+						exit
+					}
+				}
+			}
+			
 			var iid = inventory[# slot_id, 0]
 			var amount = inventory[# slot_id, 1]
 			var nbt = inventory[# slot_id, 2]

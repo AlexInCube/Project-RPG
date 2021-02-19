@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4042d64e-adf9-4ea0-955d-b7f1468a0c1b","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Tiles Sprites",
-    "path": "folders/Tile Sets/Tiles Sprites.yy",
+    "name": "Environment",
+    "path": "folders/Tile Sets/Environment.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_sand_ts",

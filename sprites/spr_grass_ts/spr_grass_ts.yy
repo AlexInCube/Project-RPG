@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0d3ee3d1-f119-434d-ba40-0eb4672bab36","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Tiles Sprites",
-    "path": "folders/Tile Sets/Tiles Sprites.yy",
+    "name": "Environment",
+    "path": "folders/Tile Sets/Environment.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_grass_ts",

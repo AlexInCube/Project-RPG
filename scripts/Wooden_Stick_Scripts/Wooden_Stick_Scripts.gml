@@ -36,21 +36,21 @@ function wooden_stick_tick() {
 			switch(sprite_index){
 			case spr_player_attack_down:
 				xx = x
-				yy = y+17
+				yy = y+24
 				break
 	
 			case spr_player_attack_up:
 				xx = x
-				yy = y-15
+				yy = y-22
 				break
 		
 			case spr_player_attack_left:
-				xx = x-15
+				xx = x-27
 				yy = y+2
 				break
 		
 			case spr_player_attack_right:
-				xx = x+15
+				xx = x+27
 				yy = y+2
 				break
 			}

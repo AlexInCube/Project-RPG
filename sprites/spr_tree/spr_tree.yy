@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Trees",
-    "path": "folders/Tile Sets/Tiles Sprites/Trees.yy",
+    "path": "folders/Tile Sets/Environment/Trees.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_tree",

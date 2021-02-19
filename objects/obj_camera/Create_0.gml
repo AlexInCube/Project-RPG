@@ -23,3 +23,5 @@ target_y = 0
 shake = 0
 
 boundless = false
+
+event_user(0)

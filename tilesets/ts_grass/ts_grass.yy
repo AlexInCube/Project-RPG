@@ -69,8 +69,8 @@
     ],
   },
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Environment",
+    "path": "folders/Tile Sets/Environment.yy",
   },
   "resourceVersion": "1.0",
   "name": "ts_grass",

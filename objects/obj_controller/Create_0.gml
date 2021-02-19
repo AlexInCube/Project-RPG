@@ -17,6 +17,7 @@ minutes = 0
 hours = 8
 
 time_increment = 1
+
 day = 0
 
 max_darkness = 0.7

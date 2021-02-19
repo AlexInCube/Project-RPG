@@ -45,7 +45,7 @@ switch(equipmode){
 		//Draw armor and weapon slots
 		for(i=0;i<inventory_size;i++)
 		{
-			slot(inventory,i,slotsxy[i,0],slotsxy[i,1],placefree)
+			slot(inventory,i,slotsxy[i,0],slotsxy[i,1],placefree,slotsxy[i,2])
 		}
 
 		if placefree{

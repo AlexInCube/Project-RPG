@@ -60,7 +60,7 @@ if !ds_exists(ds_saves,ds_type_list) exit
 			//Player lvl
 			draw_text(slot_x+42,slot_y+ss_h-46,lvl_word+": "+save_lvl)
 			//Save world time
-			draw_text(slot_x+160,slot_y+ss_h-46,world_time_word+": "+string(save_world_time.hours)+":"+string(save_world_time.minutes))
+			draw_text(slot_x+160,slot_y+ss_h-46,world_time_word+": "+get_formatted_date(save_world_time.hours)+":"+get_formatted_date(save_world_time.minutes))
 			//Save version
 			draw_text(slot_x+42,slot_y+ss_h-30,gameversion_word+save_version)
 			//Save time

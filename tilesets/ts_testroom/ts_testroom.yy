@@ -35,7 +35,7 @@
   },
   "parent": {
     "name": "Developer Tiles",
-    "path": "folders/Tile Sets/Tiles Sprites/Developer Tiles.yy",
+    "path": "folders/Tile Sets/Developer Tiles.yy",
   },
   "resourceVersion": "1.0",
   "name": "ts_testroom",

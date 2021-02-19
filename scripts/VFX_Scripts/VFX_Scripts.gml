@@ -25,3 +25,16 @@ function draw_light(size){
 		}
 	}
 }
+
+function draw_light_roundrect(x1,y1,x2,y2){
+	if instance_exists(obj_light){
+		if surface_exists(global.light){
+			gpu_set_blendmode(bm_add)
+			surface_set_target(global.light)
+			var camera_x = camera_get_view_x(camera), camera_y = camera_get_view_y(camera)
+			draw_roundrect_color(x1 - camera_x, y1 - camera_y, x2 - camera_x, y2 - camera_y,c_white,c_white,false)
+			surface_reset_target()
+			gpu_set_blendmode(bm_normal)
+		}
+	}
+}
