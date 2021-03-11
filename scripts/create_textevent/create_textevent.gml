@@ -1,8 +1,6 @@
 ///@description create_textevent
 ///@arg Text
 ///@arg Speaker
-///@arg *Effects
-///@arg *Speed
 ///@arg *Type
 ///@arg *Next_Line
 ///@arg *Scripts
@@ -25,14 +23,12 @@ function create_textevent() {
 		reset_dialogue_defaults();
 	
 		switch(arg_count-1){
-			case 9: myEmote		= arg[9];
-			case 8: myEmotion	= arg[8];
-			case 7: myTextCol	= arg[7];
-			case 6: myScripts	= arg[6];
-			case 5: myNextLine	= arg[5];
-			case 4: myTypes		= arg[4];
-			case 3: myTextSpeed	= arg[3];
-			case 2: myEffects	= arg[2];
+			case 7: myEmote		= arg[7];
+			case 6: myEmotion	= arg[6];
+			case 5: myTextCol	= arg[5];
+			case 4: myScripts	= arg[4];
+			case 3: myNextLine	= arg[3];
+			case 2: myTypes		= arg[2];
 		}
 		mySpeaker	= arg[1];
 		myText		= arg[0];

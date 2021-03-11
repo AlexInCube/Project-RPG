@@ -6,7 +6,7 @@ var myText
 var i = 0;
 myText[i]		= "Я всё забыл!!!"
 i++;
-myText[i]		= "Шучу, я видел такое начало в одной другой игре, но забыл её название.";
+myText[i]		= "Шучу, я видел такое начало в одной другой игре, но [c_blue]забыл[/c] её название.";
 t_scene_info = [
 	[cutscene_take_player_control],
 	[cutscene_change_interface_state,true],

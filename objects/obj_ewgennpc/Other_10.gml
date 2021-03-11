@@ -8,7 +8,7 @@ switch(choice_variable){
 	case "saved_from_slimes":
 		var i = 0;
 		//Line 0
-		myText[i]		= "Уже не могу стоять на ногах...";
+		myText[i]		= "[shake]Уже не могу стоять на ногах[/shake]...";
 		mySpeaker[i]	= id;
 		myTextSpeed[i]	= [1,0.2]
 		//Line 1

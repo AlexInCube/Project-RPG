@@ -17,8 +17,8 @@ choice_col			= c_orange;
 select_col			= c_red;
 name_col			= c_black;
 
-name_font			= fnt_small;
-
+name_font			= "fnt_small";
+dialogue_font		= "fnt_small"
 priority_snd_effect = 5;
 
 //-----------Setup (LEAVE THIS STUFF)

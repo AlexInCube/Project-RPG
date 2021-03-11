@@ -1,12 +1,9 @@
 ///@description create_dialogue
 ///@arg Text
 ///@arg Speaker
-///@arg *Effects
-///@arg *Speed
 ///@arg *Type
 ///@arg *Next_Line
 ///@arg *Scripts
-///@arg *Text_Col
 ///@arg *Emotion
 function create_dialogue() {
 
@@ -33,8 +30,6 @@ function create_dialogue() {
 	else					{ _speaker = arg[1]; }
 
 	//Get rest of arguments, fill with default
-	var _effects	= array_create(text_len, [1,0]);
-	var _speed		= array_create(text_len, [1,0.5]);
 	var _textcol	= array_create(text_len, [1,c_black]);
 	var _type		= array_create(text_len, 0);
 	var _nextline	= array_create(text_len, 0);
@@ -47,20 +42,16 @@ function create_dialogue() {
 	var a;
 	//Fill variables depending on argument count
 	switch(arg_count-1){
-		case 8: a = arg[8]; if(array_length(a) != text_len){ a[text_len] = 0; } for(i = 0; i < text_len; i++){ if(a[i] != 0) _emotion[i] = a[i]; }
-		case 7: a = arg[7];	if(array_length(a) != text_len){ a[text_len] = 0; } for(i = 0; i < text_len; i++){ if(a[i] != 0) _textcol[i] = a[i]; }
-		case 6: a = arg[6];	if(array_length(a) != text_len){ a[text_len] =-1; } for(i = 0; i < text_len; i++){ if(a[i] !=-1) _script[i] = a[i]; }
-		case 5: a = arg[5];	if(array_length(a) != text_len){ a[text_len] = 0; } for(i = 0; i < text_len; i++){ if(a[i] != 0) _nextline[i] = a[i]; }
-		case 4: a = arg[4];	if(array_length(a) != text_len){ a[text_len] = 0; } for(i = 0; i < text_len; i++){ if(a[i] != 0) _type[i] = a[i]; }
-		case 3: a = arg[3];	if(array_length(a) != text_len){ a[text_len] = 0; } for(i = 0; i < text_len; i++){ if(a[i] != 0) _speed[i] = a[i]; }
-		case 2: a = arg[2];	if(array_length(a) != text_len){ a[text_len] = 0; } for(i = 0; i < text_len; i++){ if(a[i] != 0) _effects[i] = a[i]; }
+		case 6: a = arg[8]; if(array_length(a) != text_len){ a[text_len] = 0; } for(i = 0; i < text_len; i++){ if(a[i] != 0) _emotion[i] = a[i]; }
+		case 5: a = arg[7];	if(array_length(a) != text_len){ a[text_len] = 0; } for(i = 0; i < text_len; i++){ if(a[i] != 0) _textcol[i] = a[i]; }
+		case 4: a = arg[6];	if(array_length(a) != text_len){ a[text_len] =-1; } for(i = 0; i < text_len; i++){ if(a[i] !=-1) _script[i] = a[i]; }
+		case 3: a = arg[5];	if(array_length(a) != text_len){ a[text_len] = 0; } for(i = 0; i < text_len; i++){ if(a[i] != 0) _nextline[i] = a[i]; }
+		case 2: a = arg[4];	if(array_length(a) != text_len){ a[text_len] = 0; } for(i = 0; i < text_len; i++){ if(a[i] != 0) _type[i] = a[i]; }
 	}
 
 	//Change the Textbox Values
 	with(_textbox){
 		creator		= _creator;
-		effects		= _effects;
-		text_speed	= _speed;
 		type		= _type;
 		text		= _text;
 		nextline	= _nextline;

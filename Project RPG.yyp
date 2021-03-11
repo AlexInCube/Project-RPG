@@ -641,7 +641,7 @@
     {"CopyToMask":-1,"filePath":"datafiles/localization/russian","resourceVersion":"1.0","name":"item_macro.txt","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/localization/russian","resourceVersion":"1.0","name":"mobs_names.txt","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/localization/russian","resourceVersion":"1.0","name":"items.txt","resourceType":"GMIncludedFile",},
-    {"CopyToMask":-1,"filePath":"datafiles/localization/russian","resourceVersion":"1.0","name":"effects.txt","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/localization/russian","resourceVersion":"1.0","name":"buffs.txt","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/localization/russian","resourceVersion":"1.0","name":"quests.txt","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"fnt_verysmall.yy","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"fnt_verylarge.yy","resourceType":"GMIncludedFile",},

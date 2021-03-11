@@ -1,7 +1,7 @@
 {
   "option_windows_display_name": "ProjectRPG",
   "option_windows_executable_name": "ProjectRPG",
-  "option_windows_version": "0.37.9.0",
+  "option_windows_version": "0.38.0.0",
   "option_windows_company_info": "Alexander Techologies",
   "option_windows_product_info": "ProjectRPG",
   "option_windows_copyright_info": "(c) 2019 - 2021 Alexander Techologies",

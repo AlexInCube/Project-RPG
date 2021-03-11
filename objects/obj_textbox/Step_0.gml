@@ -4,9 +4,8 @@
 if(type[page] == 0){
 	if obj_controller.interact_key or mouse_check_button_released(mb_left){
 
-		//If we haven't "typed out" all the letters, immediately "type out" all letters (works as a "skip")
-		if(charCount < str_len){
-			charCount = string_length(text_NE);
+		if element.get_typewriter_state() < 1{
+			element.typewriter_skip()
 		}
 		
 		//Only increase page IF page + 1,is less than the total number of entries

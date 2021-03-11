@@ -2,11 +2,7 @@ TODO:
 improve the storage of player stats
 saving non-unique objects
 add mouse support for control
-add XML support
 loot-tables
 
 Maked in this version:
-Added using system cursor option
-Added shop level
-Fixed grab_item script
-Added Scribble library
+Dialogue System now draw text using Scribble

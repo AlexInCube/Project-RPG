@@ -26,4 +26,5 @@
 	"are_you_sure":"Вы уверены что хотите бросить этот мир?",
 	"i_am_weak":"Да, я слабый.",
 	"i_am_not_surrender":"Нет, я не сдамся.",
+	"scribble_test":"[wave][c_black]Here's is a string[/c][/wave] that'll wave slowly"
 }
