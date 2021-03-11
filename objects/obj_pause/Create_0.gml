@@ -14,3 +14,5 @@ ds_menu_main = create_ui_elements_list(
 	create_fancy_button(button_x,229,spr_buttonmenu,depth-1,find_keyword("back_to_main_menu"),exit_to_main_menu),
 	create_fancy_button(button_x,272,spr_buttonmenu,depth-1,find_keyword("exit_to_desktop"),show_exit_question),
 )
+
+background = -1

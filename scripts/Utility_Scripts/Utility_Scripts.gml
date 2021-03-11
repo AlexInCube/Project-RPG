@@ -94,12 +94,7 @@ function change_camera_mode(){
 /*
 	Used in many GUI function for buttons
 */
-function mouseover(argument0, argument1, argument2, argument3) {
-	var xx=argument0
-	var yy=argument1
-	var xx2=argument2
-	var yy2=argument3
-
+function mouseover(xx, yy, xx2, yy2) {
 	return point_in_rectangle(device_mouse_x_to_gui(0),device_mouse_y_to_gui(0),xx,yy,xx2,yy2)
 }
 
@@ -145,4 +140,10 @@ function load_string_from_json (_filename) {
 
 	buffer_delete(_buffer);
 	return _string;
+}
+	
+function time_set(hours){
+	with(obj_controller){
+		self.hours = real(hours)
+	}
 }

@@ -12,4 +12,4 @@ draw_button_hud(GUIWIDTH-114,GUIHEIGHT-36,GUIWIDTH-78,GUIHEIGHT,spr_craft,open_s
 //draw_button(GUIWIDTH-77,GUIHEIGHT-36,GUIWIDTH-41,GUIHEIGHT,spr_settings,nothing)//Open craft window
 draw_set_halign(fa_left)
 draw_set_valign(fa_top)
-draw_text_shadow(GUIWIDTH-40,5,string(get_formatted_date(hours))+":"+string(get_formatted_date(minutes)),fnt_small,1,c_black,c_white,1)
+draw_text_shadow(GUIWIDTH-50,5,string(get_formatted_date(hours))+":"+string(get_formatted_date(minutes)),fnt_small,1,c_black,c_white,1)

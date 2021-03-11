@@ -4,7 +4,7 @@ playerobject = obj_player;
 interact_radius = 32;
 
 myVoice			= snd_voice;
-myPortrait		= -1;
+myPortrait		= spr_portrait;
 myFont			= fnt_small;
 myName			= "None";
 

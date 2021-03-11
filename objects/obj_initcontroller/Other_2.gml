@@ -1,3 +1,7 @@
+window_set_cursor(cr_none)
+
+scribble_font_add_all()
+
 if !audio_group_is_loaded(ag_music)
    {
    audio_group_load(ag_music);
@@ -12,8 +16,6 @@ show_debug_message("myGMLib Loaded: "+string(gmlib_link_test()))
 
 localization_load()
 
-//Create a ds grid item.total wide, and item_stat.total tall
-global.item_index = ds_list_create()
-global.effect_index = ds_list_create()
 registeritems()
 registereffects()
+registerquests()

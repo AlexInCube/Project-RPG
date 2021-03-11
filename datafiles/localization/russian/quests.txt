@@ -1,0 +1,15 @@
+{
+	"first_steps":"Первые шаги",
+	"first_steps_description":"Это задание что-то типа туториала.",
+	"first_steps_short_task_description_0":"Подбери палку",
+	"first_steps_long_task_description_0":"Иди на правый полуостров и забери там палку.",
+	"first_steps_short_task_description_1":"Экипируй палку",
+	"first_steps_long_task_description_0":"Открой меню экипировку и возьми палку в левый слот для оружия",
+	"first_steps_short_task_description_2":"Убей несколько слизней",
+	"first_steps_long_task_description_0":"Атакуй слизней как-нибудь",
+	
+	"help_for_ewgen":"Помощь Евгену",
+	"help_for_ewgen_description":"Евген очень долго бегал от слизней и сильно устал.",
+	"help_for_ewgen_short_task_description_0":"Добыть воду.",
+	"help_for_ewgen_long_task_description_0":"Просто принеси ему чёртову воду, иначе он не перестанет лежать здесь.",
+}

@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Quest System Scripts",
-    "path": "folders/Objects/Controllers/Quest System/Quest System Scripts.yy",
+    "name": "Quest System",
+    "path": "folders/Objects/Controllers/Quest System.yy",
   },
   "resourceVersion": "1.0",
-  "name": "quest_helpers",
+  "name": "Quest_Helpers",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -9,5 +9,5 @@ surface_resize(application_surface,global.settings.video.width,global.settings.v
 
 alarm[0]=1
 
-cursor_sprite=spr_cursor
-window_set_cursor(cr_none)
+
+change_cursor_type(global.settings.another.use_sys_cursor)

@@ -1,12 +1,16 @@
 ///@description Calculate the slot coordinates, based on the parameters above
-var iy = 0
-var ix = 0
-var ii = 0
-for(i=0;i<inventory_size;i++)
-{
-	slotsxy[i,0] = window_x+slots_x+((cell_size+x_buffer)*ix)
-	slotsxy[i,1] = window_y+slots_y+((cell_size+y_buffer)*iy)
-	ii++
-	ix = ii mod 2
-	iy = ii div 2
-}
+slotsxy[0,0] = window_x+7
+slotsxy[0,1] = window_y+60
+slotsxy[0,2] = ITEM_TYPE_HELMET
+slotsxy[1,0] = window_x+40
+slotsxy[1,1] = window_y+60
+slotsxy[1,2] = ITEM_TYPE_CHESTPLATE
+slotsxy[2,0] = window_x+7
+slotsxy[2,1] = window_y+93
+slotsxy[2,2] = ITEM_TYPE_LEGGINGS
+slotsxy[3,0] = window_x+40
+slotsxy[3,1] = window_y+93
+slotsxy[3,2] = ITEM_TYPE_BOOTS
+slotsxy[4,0] = window_x+7
+slotsxy[4,1] = window_y+126
+slotsxy[4,2] = ITEM_TYPE_WEAPON

@@ -132,8 +132,8 @@
     "TileSerialiseData": [],
   },
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Apatment",
+    "path": "folders/Tile Sets/Tiles Sprites/Apatment.yy",
   },
   "resourceVersion": "1.0",
   "name": "ts_home",

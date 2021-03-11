@@ -2,7 +2,6 @@
 event_inherited();
 window_name=find_keyword("trade_window")
 trade_creator=""
-trade_creator=find_keyword(trade_creator)
 trade_with_word=find_keyword("trade_with_name")
 window_width=300
 window_height=248

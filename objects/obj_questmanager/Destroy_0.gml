@@ -1,2 +1,1 @@
-ds_grid_destroy(ds_quests)
-ds_map_destroy(global.ds_current_quests)
+ds_list_destroy(ds_current_quests)

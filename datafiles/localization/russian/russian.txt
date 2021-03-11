@@ -1,8 +1,4 @@
 ﻿{
-			
-			
-			
-			
 			"notificationqueststate_0":"ЗАДАНИЕ НАЧАТО",
 			"notificationqueststate_1":"ЗАДАНИЕ ОБНОВЛЕНО",
 			"notificationqueststate_2":"ЗАДАНИЕ ЗАВЕРШЕНО",
@@ -35,5 +31,7 @@
 			"regen_amount":"Множитель регенерации",
 			
 			"trade_window":"Окно обмена",
-			"trade_with_name":"Вы обмениваетесь с: "
+			"trade_with_name":"Вы обмениваетесь с: ",
+			
+			"world_time":"Время мира"
 }

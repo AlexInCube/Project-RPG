@@ -12,7 +12,6 @@ if keyboard_check_pressed(global.settings.controls.developer_key){
 	}
 
 	with(obj_trigger)visible = visibility
-	with(obj_cutscene_perm_trigger)visible = visibility
 	with(obj_cutscene_trigger)visible = visibility
 	with(obj_door)visible = visibility
 	with(obj_mob_spawner)visible = visibility

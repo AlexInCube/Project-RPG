@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Rocks",
-    "path": "folders/Tile Sets/Tiles Sprites/Rocks.yy",
+    "path": "folders/Tile Sets/Environment/Rocks.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_rock",

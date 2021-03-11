@@ -35,38 +35,41 @@ additioninfo[5,1] = "regen_amount"
 //Setup inventory
 inventory = global.equipment
 inventory_size = ds_grid_width(inventory)
-/* 
-Setup slots number and size 
-*/
-cell_size=32//Slot size
-//Starting XY
-slots_x=6
-slots_y=59
-//Free space between slots
-x_buffer=1
-y_buffer=1
 
 event_user(0)
 
 function assign_attribute_point_button(xx,yy,value){
 	var mouse_o = mouseover(xx,yy,xx+16,yy+16)
 	draw_sprite(spr_stat_plus,mouse_o,xx,yy)
-	if mouse_o{
-		//Draw attribute description
-		var txt_x = window_x+11, txt_y = window_y+157
-		switch(value){
-			case "strength":
-				draw_text_ext(txt_x,txt_y,strengthdescription,16,200)
-			break
-			case "agility":
-				draw_text_ext(txt_x,txt_y,agilitydescription,16,200)
-			break
-			case "defense":
-				draw_text_ext(txt_x,txt_y,defensedescription,16,200)
-			break
-			case "energy":
-				draw_text_ext(txt_x,txt_y,energydescription,16,200)
-			break
+	if mouse_o
+	{
+		if surface_exists(obj_controller.overall_gui_surf)
+		{
+			surface_set_target(obj_controller.overall_gui_surf)
+				//Draw textbox
+				draw_set_alpha(1)
+				draw_set_color(c_white)
+				draw_set_font(fnt_small)
+				draw_set_halign(fa_left)
+				draw_set_valign(fa_top)
+				var mouse_xx = device_mouse_x_to_gui(0)+25, mouse_yy = device_mouse_y_to_gui(0)
+				draw_nine_slice_box(spr_hover_item_description,mouse_xx,mouse_yy,mouse_xx+400,mouse_yy+32,0)
+				switch(value){
+					case "strength":
+						draw_text(mouse_xx+10,mouse_yy,strengthdescription)
+					break
+					case "agility":
+						draw_text(mouse_xx+10,mouse_yy,agilitydescription)
+					break
+					case "defense":
+						draw_text(mouse_xx+10,mouse_yy,defensedescription)
+					break
+					case "energy":
+						draw_text(mouse_xx+10,mouse_yy,energydescription)
+					break
+				}
+							
+			surface_reset_target()
 		}
 		//Assign attribute
 		if mouse_check_button_pressed(mb_left){

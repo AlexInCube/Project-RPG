@@ -89,6 +89,8 @@ function cutscene_instance_destroy(argument0) {
 	with(argument0){
 		instance_destroy()
 	}
+	
+	cutscene_end_action()
 }
 
 ///@description cutscene_change_state
@@ -115,7 +117,20 @@ function cutscene_change_variable(argument0, argument1, argument2) {
 }
 
 ///@description
+///@arg obj
+///@arg var_name_as_string
 ///@arg value
+function cutscene_take_player_control() {
+	with(obj_player){
+		state = uncontrollable_state
+		image_index = 0
+		image_speed = 0
+	}
+
+	cutscene_end_action()
+}
+///@description
+///@arg true = off, false = on
 function cutscene_change_interface_state(state) {
 	global.interface_lock_by_game = state
 
@@ -188,21 +203,22 @@ function cutscene_move_character(obj, x, y, relative, spd) {
 
 ///@description cutscene_change_camera_mode
 ///@arg	mode
+///@arg camera_speed
 ///@arg following/target_x
 ///@arg target_y
 function cutscene_camera_change_mode() {
 	with(obj_camera){
 		mode = argument[0]
-		
+		camera_speed = argument[1]
 		switch(mode){
 			case camera_mode.move_to_target:
-				target_x = argument[1]
-				target_y = argument[2]
+				target_x = argument[2]
+				target_y = argument[3]
 			break
 			
 			case camera_mode.follow_object:
 			case camera_mode.move_to_follow_object:
-				following = argument[1]
+				following = argument[2]
 			break
 		}
 	}

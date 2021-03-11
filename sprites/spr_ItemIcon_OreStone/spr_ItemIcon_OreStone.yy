@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"spr_ItemIcon_OreStone","path":"sprites/spr_ItemIcon_OreStone/spr_ItemIcon_OreStone.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "spr_ItemIcon_OreStone",
     "tags": [],
     "resourceType": "GMSequence",
   },

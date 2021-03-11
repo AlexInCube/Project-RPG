@@ -23,10 +23,10 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [
-    {"x":4.0,"y":49.0,},
-    {"x":20.0,"y":49.0,},
-    {"x":20.0,"y":80.0,},
-    {"x":4.0,"y":80.0,},
+    {"x":4.0,"y":57.0,},
+    {"x":20.0,"y":57.0,},
+    {"x":20.0,"y":82.0,},
+    {"x":4.0,"y":82.0,},
   ],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_lantern","path":"objects/obj_lantern/obj_lantern.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},

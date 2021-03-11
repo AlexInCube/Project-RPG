@@ -5,7 +5,60 @@ function start_load(){
 	room_goto(room_game_init)
 }
 function pause_game(){
-	instance_create_layer(0,0,"Controllers",obj_pause)
+	with instance_create_layer(0,0,"Controllers",obj_pause){
+		//Set background for pause
+		background = surface_create(GUIWIDTH,GUIHEIGHT)
+		surface_set_target(background)
+		//Set blur
+		/*
+		var uni_resolution_hoz = shader_get_uniform(shd_gaussian_horizontal,"resolution");
+		var uni_resolution_vert = shader_get_uniform(shd_gaussian_vertical,"resolution");
+		var var_resolution_x = camera_get_view_width(0);
+		var var_resolution_y = camera_get_view_height(0);
+		var uni_blur_amount_hoz = shader_get_uniform(shd_gaussian_vertical,"blur_amount");
+		var uni_blur_amount_vert = shader_get_uniform(shd_gaussian_horizontal,"blur_amount");
+		var var_blur_amount = 0.75;
+		
+		shader_set(shd_gaussian_horizontal)
+		shader_set_uniform_f(uni_resolution_hoz, var_resolution_x, var_resolution_y);
+		shader_set_uniform_f(uni_blur_amount_hoz, var_blur_amount);
+		draw_surface(application_surface,0,0)
+		shader_reset()
+		
+		shader_set(shd_gaussian_vertical)
+		shader_set_uniform_f(uni_resolution_vert, var_resolution_x, var_resolution_y);
+		shader_set_uniform_f(uni_blur_amount_vert, var_blur_amount);
+		draw_surface(application_surface,0,0)
+		shader_reset()
+		*/
+		//Set constrast shader
+		var uni_time = shader_get_uniform(shd_bright_contrast,"time");
+		var var_time_var = 0;
+
+		var uni_mouse_pos = shader_get_uniform(shd_bright_contrast,"mouse_pos");
+		var var_mouse_pos_x = mouse_x - camera_get_view_x(0);
+		var var_mouse_pos_y = mouse_y - camera_get_view_y(0);
+
+		var uni_resolution = shader_get_uniform(shd_bright_contrast,"resolution");
+		var var_resolution_x = camera_get_view_width(0);
+		var var_resolution_y = camera_get_view_height(0);
+
+		var uni_brightness_amount = shader_get_uniform(shd_bright_contrast,"brightness_amount");
+		var var_brightness_amount = 0;
+
+		var uni_contrast_amount = shader_get_uniform(shd_bright_contrast,"contrast_amount");
+		var var_contrast_amount = -0.50;
+		shader_set(shd_bright_contrast);
+	    shader_set_uniform_f(uni_time, var_time_var);
+	    shader_set_uniform_f(uni_mouse_pos, var_mouse_pos_x, var_mouse_pos_y);
+	    shader_set_uniform_f(uni_resolution, var_resolution_x, var_resolution_y);
+	    shader_set_uniform_f(uni_brightness_amount, var_brightness_amount);
+	    shader_set_uniform_f(uni_contrast_amount, var_contrast_amount );
+		
+		draw_surface(application_surface,0,0)
+		shader_reset()
+		surface_reset_target()
+	}
 }
 
 //Destroy obj_pause and resume game
@@ -13,6 +66,7 @@ function resume_game(){
 	show_debug_message("Game resumed!")
 	with(obj_pause)instance_destroy()
 	instance_activate_all()
+	with(obj_camera)event_user(0)
 	audio_resume_all()
 	io_clear()
 }

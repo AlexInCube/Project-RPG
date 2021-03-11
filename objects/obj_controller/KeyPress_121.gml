@@ -1,4 +1,4 @@
-open_trade_window([
+/*open_trade_window([
 	[//t_a[0]
 		[//is_a[0]
 			["coin",1],

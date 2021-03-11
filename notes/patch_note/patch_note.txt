@@ -1,14 +1,12 @@
 TODO:
-make task progress saveable (kills)
 improve the storage of player stats
 saving non-unique objects
 add mouse support for control
 add XML support
 loot-tables
-rework quest system
 
 Maked in this version:
-Sliders now have slide step
-Added new beach level
-Fixes in cutscenes scripts
-Fixes in mob drops
+Added using system cursor option
+Added shop level
+Fixed grab_item script
+Added Scribble library

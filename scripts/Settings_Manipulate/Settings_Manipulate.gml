@@ -20,7 +20,7 @@ global.settings = {
 	game : {
 	},
 	another : {
-		autosaves_limit: 5
+		use_sys_cursor : false
 	},
 	controls : {
 		key_up : ord("W"),		

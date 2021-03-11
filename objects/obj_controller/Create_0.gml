@@ -14,9 +14,10 @@ story_tags = ds_list_create()
 //World time (day and night cycle)
 seconds = 0
 minutes = 0 
-hours = 0
+hours = 8
 
-time_increment = 100
+time_increment = 1
+
 day = 0
 
 max_darkness = 0.7
@@ -46,6 +47,6 @@ equipment_window_y=140
 questlistwindow=noone
 questlist_window_x=(GUIWIDTH/2)-450/2
 questlist_window_y=(GUIHEIGHT/2)-300/2
-
-room_data = "" //for autosaving
+//for autosaving
+room_data = "" 
 previous_room = room

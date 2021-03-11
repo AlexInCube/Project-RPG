@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"475ce4dc-9815-43a3-91aa-b135149fd73a","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Tiles Sprites",
-    "path": "folders/Tile Sets/Tiles Sprites.yy",
+    "name": "Environment",
+    "path": "folders/Tile Sets/Environment.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_dirt_ts",

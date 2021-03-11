@@ -10,7 +10,7 @@
   "bbox_left": 0,
   "bbox_right": 127,
   "bbox_top": 0,
-  "bbox_bottom": 127,
+  "bbox_bottom": 159,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -21,8 +21,8 @@
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 0,
-  "gridY": 0,
+  "gridX": 32,
+  "gridY": 32,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"0e7bd33f-6d6c-4bdd-9739-ceaf83ad86b8","path":"sprites/spr_sand_ts/spr_sand_ts.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"0e7bd33f-6d6c-4bdd-9739-ceaf83ad86b8","path":"sprites/spr_sand_ts/spr_sand_ts.yy",},"LayerId":{"name":"4042d64e-adf9-4ea0-955d-b7f1468a0c1b","path":"sprites/spr_sand_ts/spr_sand_ts.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4042d64e-adf9-4ea0-955d-b7f1468a0c1b","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Tiles Sprites",
-    "path": "folders/Tile Sets/Tiles Sprites.yy",
+    "name": "Environment",
+    "path": "folders/Tile Sets/Environment.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_sand_ts",

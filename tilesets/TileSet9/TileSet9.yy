@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Taylset__1_",
-    "path": "sprites/Taylset__1_/Taylset__1_.yy",
+    "name": "spr_street_kerb",
+    "path": "sprites/spr_street_kerb/spr_street_kerb.yy",
   },
   "tileWidth": 16,
   "tileHeight": 16,

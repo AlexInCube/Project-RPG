@@ -20,14 +20,14 @@ function localization_load() {
 		    //if (fname == "..") continue
 		    // push file into array
 		    file[files] = locale_folder+language_folder+fname
-			show_debug_message("Found locale file: "+file[files])
+			show_debug_message(LOGGER_LOCALIZATION_MANAGER + "Found locale file: "+file[files])
 		    files += 1
 		}
 		file_find_close()
 		// process found files:
 		var i = 0
 		repeat (files) {
-			show_debug_message("Loading words from: "+file[i])
+			show_debug_message(LOGGER_LOCALIZATION_MANAGER + "Loading words from: "+file[i])
 		    fname = file_text_open_read(file[i])
 		    i += 1
 
@@ -43,10 +43,13 @@ function localization_load() {
 			file_text_close(fname);
 			// convert the JSON to a usable ds_map
 			var locale_map = json_decode(json_str);
+			if !ds_exists(locale_map,ds_type_map){
+				show_debug_message(LOGGER_LOCALIZATION_MANAGER + "////////////////////ERROR WHILE LOADING: "+file[i-1])
+				continue
+			}
 			var _map_size = ds_map_size(global.localization_map)
 			var map_position = ds_map_find_first(locale_map)
-			for(var o=0;o<ds_map_size(locale_map);o++){
-				//global.localization_map[? _map_size] = locale_map[? map_position]  
+			for(var o=0;o<ds_map_size(locale_map);o++){ 
 				ds_map_replace(global.localization_map,map_position,locale_map[? map_position])
 				map_position = ds_map_find_next(locale_map,map_position)
 				_map_size = ds_map_size(global.localization_map)
@@ -55,7 +58,7 @@ function localization_load() {
 		}
 
 
-		show_debug_message( "Loaded localization_map from " + string(ds_map_size(global.localization_map)) + " lines of text." );
+		show_debug_message(LOGGER_LOCALIZATION_MANAGER + "Loaded localization_map from " + string(ds_map_size(global.localization_map)) + " lines of text." );
 }
 
 ///@function find_keyword(key)
