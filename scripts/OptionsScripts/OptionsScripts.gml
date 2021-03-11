@@ -146,6 +146,17 @@ function change_show_damage(boolean) {
 	global.settings.interface.showdamage=boolean
 }
 
+function change_cursor_type(boolean) {
+	global.settings.another.use_sys_cursor=boolean
+	if global.settings.another.use_sys_cursor{
+		cursor_sprite = -1
+		window_set_cursor(cr_default)
+	}else{
+		cursor_sprite = spr_cursor
+		window_set_cursor(cr_none)
+	}
+}
+
 function change_v_sync_mode(boolean) {
 	global.settings.video.v_sync=boolean
 	display_reset(0,global.settings.video.v_sync)

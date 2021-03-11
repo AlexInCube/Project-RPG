@@ -28,6 +28,7 @@
 	
 	"another_settings":"Остальное",
 	"autosave_limit":"Ограничение на количество автосохранений",
+	"use_system_cursor":"Использовать системный курсор",
 	
 	
 	"controls_settings":"Управление",

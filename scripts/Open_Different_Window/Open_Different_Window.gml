@@ -29,17 +29,6 @@ function open_quest_list() {
 	}
 }
 
-function open_trade_window(trade_arr){
-	if !instance_exists(obj_tradewindow){
-		with create_window((GUIWIDTH/2)-150,(GUIHEIGHT/2)-124,obj_tradewindow){
-			trade_array = trade_arr
-			event_user(0)
-		}
-	}else{
-		instance_destroy(obj_tradewindow)
-	}
-}
-
 function open_question_window(width,height,question,yes_word,no_word,yes_scr,no_scr,yes_args,no_args){
 	if !instance_exists(obj_question_window){
 		with(instance_create_layer(0,0,"Instances",obj_question_window)){

@@ -4,12 +4,9 @@ saving non-unique objects
 add mouse support for control
 add XML support
 loot-tables
-using system cursor option
 
 Maked in this version:
-Remaded pause screen background
-Added city level
-Added item type restriction in equipslots
-Fixed load last save in death screen
-Increased player size
-Improved tooltip stat in equipmenu 
+Added using system cursor option
+Added shop level
+Fixed grab_item script
+Added Scribble library

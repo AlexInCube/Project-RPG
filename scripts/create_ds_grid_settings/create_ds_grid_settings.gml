@@ -38,7 +38,8 @@ function create_ds_grid_settings() {
 		[find_keyword("language"),				settings_element_type.shift, change_language,global.settings.interface.language,[find_keyword("russian_language"),find_keyword("english_language")]],
 		[find_keyword("show_damage"),			settings_element_type.toggle, change_show_damage,global.settings.interface.showdamage],
 		
-		//[find_keyword("another_settings"),		settings_element_type.title],
+		[find_keyword("another_settings"),		settings_element_type.title],
+		[find_keyword("use_system_cursor"),		settings_element_type.toggle, change_cursor_type,global.settings.another.use_sys_cursor],
 		//[find_keyword("autosave_limit"),		settings_element_type.slider, change_save_limit,[global.settings.another.autosaves_limit,["another","autosaves_limit"]],1,50,5],
 		//[find_keyword("game_settings"),			settings_element_type.title],
 		[find_keyword("controls_settings"),		settings_element_type.title],

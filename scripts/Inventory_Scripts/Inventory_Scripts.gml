@@ -93,22 +93,24 @@ function check_requirement_item(inventory, item, itemamount) {
 /// @function grab_item(item,amount)
 /// @param item_id
 /// @param amount
-function grab_item(itemneed,itemamount,inventory) {
+function grab_item(item_id,itemamount,inventory) {
+	if !check_requirement_item(inventory,item_id,itemamount) exit
 	var findedamount = 0
 
-	for(n=0;n<ds_grid_width(inventory);n++)//Check player inventory
+	for(var n=0;n<ds_grid_width(inventory);n++)//Check inventory
 	{
-		if inventory[# n,0]==itemneed//If slot equal needed item
+		if inventory[# n,0]==item_id//If slot equal needed item
 		{
-			for (i=0;i<=inventory[# n,1];i++)//Get slot item amount and grab item
+			var items_in_slot = inventory[# n,1]
+			for (var i=0;i<items_in_slot;i++)//Get slot item amount and grab item
 			{
-				findedamount+=1
-				inventory[# n,1]-=1
-				//If itemamount = findedamount, stop grab items
+				findedamount++
+				inventory[# n,1]--
+
+				if inventory[# n,1] == 0 {inventory[# n,0]=NO_ITEM}
 				if findedamount==itemamount
 				{
-					if inventory[# n,1] == 0 {inventory[# n,0]=NO_ITEM}
-					event_fire([event.deliver,itemneed,itemamount])
+					event_fire([event.deliver,item_id,itemamount])
 					return true
 				}
 			}

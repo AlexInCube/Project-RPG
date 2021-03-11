@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"spr_home_tileset","path":"sprites/spr_home_tileset/spr_home_tileset.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "spr_home_tileset",
     "tags": [],
     "resourceType": "GMSequence",
   },
