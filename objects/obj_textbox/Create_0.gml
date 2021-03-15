@@ -45,10 +45,8 @@ name_box_text_y = name_box_y
 finishede_x		= pos_x + boxWidth - 15
 finishede_y		= pos_y + boxHeight - 35
 
-letter			= 0;
 charCount		= 0;
 charCount_f		= 0;
-text_speed		= 0;
 text_speed_c	= 0;
 audio_c			= 0;
 page			= 0;

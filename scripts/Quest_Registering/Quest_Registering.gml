@@ -1,4 +1,4 @@
-function registerquests(){
+function register_quests(){
 	global.quest_index = ds_list_create()
 	
 	register_quest("first_steps",[

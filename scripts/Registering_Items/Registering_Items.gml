@@ -15,7 +15,7 @@
 #macro ITEM_TYPE_UNDEFINED "item_type_undefined"
 #endregion
 
-function registeritems() {
+function register_items() {
 	global.item_index = ds_list_create()
 
 	#region Potions

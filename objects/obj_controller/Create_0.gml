@@ -9,21 +9,23 @@
 depth=-99999999
 //Getting input
 get_input()
-//Story tags
-story_tags = ds_list_create()
 //World time (day and night cycle)
 seconds = 0
 minutes = 0 
 hours = 8
-
+day = 0
 time_increment = 1
 
-day = 0
+cur_story_tags = ds_list_create()
 
+
+
+//Light Color
 max_darkness = 0.7
-darkness = 0
+darkness = 0//Surface Alpha
 light_colour = c_white
-time_is_go = true
+
+time_is_go = true//If we need stop the time
 
 enum phase{
 	sunrise = 6,

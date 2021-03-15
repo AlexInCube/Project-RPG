@@ -16,13 +16,14 @@ if(portrait[page] == -1){
 	
 }
 
-draw_set_font(font[page]);
 charSize = 10
 #endregion
 
 #region GET THE BREAKPOINTS AND TEXT EFFECTS
 //Again only need to do this if our CURRENT page is "normal". Separated from above for readability.
+
 if(type[page] == 0){
+	var s = type[page]
 	text_NE = find_keyword(text[page]); 
 	str_len = string_length(text_NE);
 	

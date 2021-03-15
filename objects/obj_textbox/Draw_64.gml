@@ -8,10 +8,6 @@ draw_sprite(dialogue_box, 0, pos_x,pos_y-sprite_get_height(name_box));
 draw_sprite(portrait_frame, 0, pos_x-portraitWidth, pos_y);
 if(portrait[page] != -1){
 	draw_sprite(portrait[page], emotion[page], pos_x-portraitWidth, pos_y);
-
-
-
-	
 	draw_sprite(portrait_frame, 1, pos_x-portraitWidth, pos_y);
 }
 

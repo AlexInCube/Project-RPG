@@ -16,6 +16,7 @@ show_debug_message("myGMLib Loaded: "+string(gmlib_link_test()))
 
 localization_load()
 
-registeritems()
-registereffects()
-registerquests()
+register_items()
+register_effects()
+register_quests()
+register_story_tags()

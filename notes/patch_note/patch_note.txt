@@ -5,4 +5,5 @@ add mouse support for control
 loot-tables
 
 Maked in this version:
-Dialogue System now draw text using Scribble
+Fixed broken choice selecting
+Reworked story tags

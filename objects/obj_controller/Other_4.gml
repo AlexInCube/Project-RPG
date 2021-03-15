@@ -28,7 +28,11 @@ switch(global.load_state){
 		var save_room = asset_get_index(save_data.player_current_room)
 		show_debug_message(LOGGER_SAVE_MANAGER+"Room loading:"+string(room_get_name(save_room)))
 		//Story tags
-		ds_list_read(story_tags,save_data.story_tags)
+		ds_list_read(obj_controller.cur_story_tags,save_data.story_tags)
+		
+		for(var i = 0; i<ds_list_size(cur_story_tags);i++){
+			global.story_tags[? cur_story_tags[| i]] = true
+		}
 		
 		global.load_state = load_state.manual_load
 		room_goto(save_room)

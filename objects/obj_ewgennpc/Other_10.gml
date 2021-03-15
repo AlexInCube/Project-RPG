@@ -10,15 +10,13 @@ switch(choice_variable){
 		//Line 0
 		myText[i]		= "[shake]Уже не могу стоять на ногах[/shake]...";
 		mySpeaker[i]	= id;
-		myTextSpeed[i]	= [1,0.2]
 		//Line 1
 		i++;
-		myText[i]		= "Я бегал от них слишком долго, мне нужна вода.";
+		myText[i]		= "Я бегал от них слишком долго, мне нужна [c_blue]вода.";
 		mySpeaker[i]	= id;
-		myTextSpeed[i]	= [1,0.2]
 		//Line 2
 		i++;
-		myText[i]		= "Можешь принести мне воды?";
+		myText[i]		= "Можешь принести мне [c_blue]воды?";
 		mySpeaker[i]	= id;
 		//Line 3
 		i++;
@@ -34,18 +32,16 @@ switch(choice_variable){
 		myScripts[i]	= [method_get_index(wait_water)]
 		//Line 5
 		i++;
-		myText[i]		= "Почемуууууу нееет?";
+		myText[i]		= "Почемуууууу [c_red]нееет?";
 		mySpeaker[i]	= id;
 		myNextLine[i]	= -1
-		myTextSpeed[i]	= [1,0.2]
 	break
 	
 	case "wait_water":
 		var i = 0
 		//Line 0
-		myText[i]		= "Неужели ты уже раздобыл где-то воду?";
+		myText[i]		= "Неужели ты уже [c_yellow]раздобыл[/c] где-то [c_blue]воду?";
 		mySpeaker[i]	= id;
-		myTextSpeed[i]	= [1,0.2]
 		//Line 1
 		i++;
 		myText[i]		= ["Нет"];
@@ -63,7 +59,6 @@ switch(choice_variable){
 		myText[i]		= "ЧТО ТЫ ЗДЕСЬ забыл ТОГДААААААААааааааа.....";
 		mySpeaker[i]	= id;
 		myNextLine[i]	= -1
-		myTextSpeed[i]	= [1,0.2]
 		//Line 3
 		i++
 		myText[i]		= "Спасибо";

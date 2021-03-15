@@ -10,28 +10,6 @@ function pause_game(){
 		background = surface_create(GUIWIDTH,GUIHEIGHT)
 		surface_set_target(background)
 		//Set blur
-		/*
-		var uni_resolution_hoz = shader_get_uniform(shd_gaussian_horizontal,"resolution");
-		var uni_resolution_vert = shader_get_uniform(shd_gaussian_vertical,"resolution");
-		var var_resolution_x = camera_get_view_width(0);
-		var var_resolution_y = camera_get_view_height(0);
-		var uni_blur_amount_hoz = shader_get_uniform(shd_gaussian_vertical,"blur_amount");
-		var uni_blur_amount_vert = shader_get_uniform(shd_gaussian_horizontal,"blur_amount");
-		var var_blur_amount = 0.75;
-		
-		shader_set(shd_gaussian_horizontal)
-		shader_set_uniform_f(uni_resolution_hoz, var_resolution_x, var_resolution_y);
-		shader_set_uniform_f(uni_blur_amount_hoz, var_blur_amount);
-		draw_surface(application_surface,0,0)
-		shader_reset()
-		
-		shader_set(shd_gaussian_vertical)
-		shader_set_uniform_f(uni_resolution_vert, var_resolution_x, var_resolution_y);
-		shader_set_uniform_f(uni_blur_amount_vert, var_blur_amount);
-		draw_surface(application_surface,0,0)
-		shader_reset()
-		*/
-		//Set constrast shader
 		var uni_time = shader_get_uniform(shd_bright_contrast,"time");
 		var var_time_var = 0;
 
@@ -104,5 +82,11 @@ function clear_app(){
 	with(obj_questmanager)instance_destroy()
 	with(obj_questlistener)instance_destroy()
 	ds_map_clear(global.eventMap)
+	
+	var ds_pos = ds_map_find_first(global.story_tags)
+	for(var i = 0; i<ds_map_size(global.story_tags);i++){
+		global.story_tags[? ds_pos] = false
+		ds_pos = ds_map_find_next(global.story_tags,ds_pos)
+	}
 	audio_stop_all()
 }

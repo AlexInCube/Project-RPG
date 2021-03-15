@@ -2,7 +2,7 @@
 #macro BUFF_ATTACK "buff_attack"
 #macro BUFF_DEFENSE "buff_defense"
 #macro UNKNOWN_EFFECT "unknown_effect"
-function registereffects(){
+function register_effects(){
 	global.effect_index = ds_list_create()
 	
 	register_effect(BUFF_REGENERATION ,spr_effect_regeneration,regeneration_effect)

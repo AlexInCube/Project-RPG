@@ -24,6 +24,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_trigger","path":"objects/obj_trigger/obj_trigger.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":2.5,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":184.0,"y":256.0,"resourceVersion":"1.0","name":"inst_3F0B79AF","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_cutscene_trigger","path":"objects/obj_cutscene_trigger/obj_cutscene_trigger.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":5.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":608.0,"y":32.0,"resourceVersion":"1.0","name":"inst_6B8FBEA6","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":5.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":608.0,"y":0.0,"resourceVersion":"1.0","name":"inst_EB5A558","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_cutscene_trigger","path":"objects/obj_cutscene_trigger/obj_cutscene_trigger.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":192.0,"y":312.0,"resourceVersion":"1.0","name":"inst_415BA06A","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Triggers","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":222.0,"y":577.0,"resourceVersion":"1.0","name":"inst_55EED217","tags":[],"resourceType":"GMRInstance",},
@@ -271,6 +272,7 @@
     {"name":"inst_6B8FBEA6","path":"rooms/room_beach_1A/room_beach_1A.yy",},
     {"name":"inst_EA2B3A7","path":"rooms/room_beach_1A/room_beach_1A.yy",},
     {"name":"inst_EB5A558","path":"rooms/room_beach_1A/room_beach_1A.yy",},
+    {"name":"inst_415BA06A","path":"rooms/room_beach_1A/room_beach_1A.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
