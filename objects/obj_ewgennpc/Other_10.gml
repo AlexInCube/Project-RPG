@@ -12,11 +12,11 @@ switch(choice_variable){
 		mySpeaker[i]	= id;
 		//Line 1
 		i++;
-		myText[i]		= "Я бегал от них слишком долго, мне нужна [c_blue]вода.";
+		myText[i]		= "[shake]Я бегал от них слишком долго, мне нужна[/shake][delay,500]...[c_blue]вода.";
 		mySpeaker[i]	= id;
 		//Line 2
 		i++;
-		myText[i]		= "Можешь принести мне [c_blue]воды?";
+		myText[i]		= "[shake]Можешь принести мне [/shake][c_blue]воды?";
 		mySpeaker[i]	= id;
 		//Line 3
 		i++;
@@ -61,7 +61,7 @@ switch(choice_variable){
 		myNextLine[i]	= -1
 		//Line 3
 		i++
-		myText[i]		= "Спасибо";
+		myText[i]		= "[c_green]Спасибо";
 		mySpeaker[i]	= id;
 		myNextLine[i]	= -1
 	break;

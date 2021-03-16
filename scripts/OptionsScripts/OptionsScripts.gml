@@ -146,6 +146,11 @@ function change_show_damage(boolean) {
 	global.settings.interface.showdamage=boolean
 }
 
+function change_show_button_hint(boolean) {
+	global.settings.interface.show_button_hint=boolean
+}
+
+
 function change_cursor_type(boolean) {
 	global.settings.another.use_sys_cursor=boolean
 	if global.settings.another.use_sys_cursor{

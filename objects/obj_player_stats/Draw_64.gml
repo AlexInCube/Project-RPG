@@ -20,7 +20,13 @@ for(var i=0;i<5;i++){
 	draw_sprite(spr_slot,0,slot_x+(1*i),slot_y)
 	slot(global.inventory,i,slot_x+(1*i),slot_y,false)
 }
-
+if global.settings.interface.show_button_hint{
+draw_button_hint(10,GUIHEIGHT-90,global.settings.controls.inventory_hotkey1)
+draw_button_hint(42,GUIHEIGHT-90,global.settings.controls.inventory_hotkey2)
+draw_button_hint(76,GUIHEIGHT-90,global.settings.controls.inventory_hotkey3)
+draw_button_hint(108,GUIHEIGHT-90,global.settings.controls.inventory_hotkey4)
+draw_button_hint(142,GUIHEIGHT-90,global.settings.controls.inventory_hotkey5)
+}
 draw_set_font(fnt_small)
 draw_set_color(c_black)
 

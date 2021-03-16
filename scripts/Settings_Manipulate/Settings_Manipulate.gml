@@ -15,6 +15,7 @@ global.settings = {
 	interface : {
 		guisize: 1,
 		language: 0,//0 - Russian, 1 - English
+		show_button_hint: true,
 		showdamage:	true
 	},
 	game : {

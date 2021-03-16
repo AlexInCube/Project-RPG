@@ -5,5 +5,5 @@ add mouse support for control
 loot-tables
 
 Maked in this version:
-Fixed broken choice selecting
-Reworked story tags
+Added button hints
+Added configurable quick use keys
