@@ -11,7 +11,7 @@ function ewgen_if_no_more_slimes(){
 				var _seqInst = layer_sequence_get_instance(_seqElm)
 				sequence_instance_override_object(_seqInst,obj_ewgennpc,id)
 				choice_variable = "saved_from_slimes"
-				add_story_tag("ewgen_saved_from_slimes")
+				story_tag_status("ewgen_saved_from_slimes",true)
 				path_end()
 				//event_unregister([event.enemyKilled,obj_enemy_slime],id)
 			}

@@ -13,7 +13,7 @@ choice_variable		= -1;	//the variable we change depending on the player's choice
 
 function slimetrouble_to_give_slime(argument0) {
 	var choice = argument0//if 0 give coin, if 1 give salve, if 2 for nothing
-	grab_item(item.slime,1,global.inventory)
+	item_grab(item.slime,1,global.inventory)
 	if choice == 0
 	{
 		item_gain(item.coin,1,global.inventory)

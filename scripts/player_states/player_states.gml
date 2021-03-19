@@ -38,7 +38,7 @@ function move_state() {
 #endregion
 
 if obj_controller.xaxis != 0 or obj_controller.yaxis != 0 {
-	image_speed=0.4
+	image_speed=1*DELTATIME
 	//get direction
 	dir = point_direction(0,0,obj_controller.xaxis,obj_controller.yaxis)
 

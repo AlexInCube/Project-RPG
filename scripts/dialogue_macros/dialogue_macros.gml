@@ -1,0 +1,1 @@
+#macro DIALOGUE_MACRO_TRADE "{"+find_keyword("trading")+"[spr_dialogue_icon_trade]"+"} "

@@ -2,6 +2,8 @@
 #macro NO_ITEM 0 //if slots dont have any item
 
 #region Item Type Macro
+#macro ITEM_TYPE_UNDEFINED "item_type_undefined"
+
 #macro ITEM_TYPE_WEAPON "item_type_weapon"
 #macro ITEM_TYPE_HELMET "item_type_helmet"
 #macro ITEM_TYPE_CHESTPLATE "item_type_chestplate"
@@ -12,7 +14,8 @@
 #macro ITEM_TYPE_COMPONENTS "item_type_components"
 #macro ITEM_TYPE_POTION "item_type_potion"
 #macro ITEM_TYPE_SPELL "item_type_spell"
-#macro ITEM_TYPE_UNDEFINED "item_type_undefined"
+#macro ITEM_TYPE_OTHER "item_type_other"
+#macro ITEM_TYPE_QUEST_ITEM "item_type_quest_item"
 #endregion
 
 function register_items() {
@@ -50,7 +53,7 @@ function register_items() {
 	add_spell("spell_fireball",spr_ItemIcon_SpellFireball,spell_fireball,[1])//1 manacost
 	#endregion
 	
-	#region Other
+	#region Components
 	add_components("green_leaf",spr_ItemIcon_Leaf,16)
 	add_components("blue_leaf",spr_ItemIcon_blueleaf,16)
 	add_components("empty_small_bottle",spr_ItemIcon_SmallBottle,8)
@@ -66,6 +69,8 @@ function register_items() {
 	add_components("wooden_water_bucket",spr_ItemIcon_WaterBucket,1)
 	add_other_quick_usable("wooden_bucket",spr_ItemIcon_EmptyBucket,1,wooden_bucket,[])
 	#endregion
+	
+	add_other_item("money",spr_item_money,1000,ITEM_TYPE_OTHER,money)
 	
 	show_debug_message("Registered "+string(ds_list_size(global.item_index))+" items")
 }

@@ -1,3 +1,3 @@
 if tag_after_destroy != ""{ 
-	add_story_tag(tag_after_destroy)
+	story_tag_add(tag_after_destroy)
 }

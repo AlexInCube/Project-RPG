@@ -42,7 +42,7 @@ if(type[page] == 1){
 		if(choice == ii){ 
 			if(chosen) {col = select_col;}
 			else	   { col = choice_col; selected=true; }
-		} else { col = c_black; selected=false}
+		} else { col = default_col; selected=false}
 		
 		
 		
@@ -50,26 +50,28 @@ if(type[page] == 1){
 		var ctext = tp[ii];
 		var rectangleoffset = 1
 		if string_width(ctext)+2 > txtwidth {rectangleoffset++}
-		if selected{
-			scribble(ctext).align(fa_left,fa_top).starting_format(dialogue_font, "c_red").wrap(txtwidth).draw(xx,yy+((ii+iy)*stringHeight))
-			//Draw choice border
-			draw_set_color(c_red)
-			draw_rectangle(xx-3,yy+((ii+iy)*stringHeight)+3,xx+txtwidth-8,yy+((ii+iy)*stringHeight)+(24*rectangleoffset),true)
-		}else{
-			scribble(ctext).align(fa_left,fa_top).starting_format(dialogue_font, "c_black").wrap(txtwidth).draw(xx,yy+((ii+iy)*stringHeight))
+		element = scribble(ctext)
+		element.align(fa_left,fa_top)
+		element.starting_format(dialogue_font, col)
+		element.wrap(txtwidth)
+		element.draw(xx,yy+(iy*stringHeight))
+
+		
+		var box_struct = element.get_bbox()
+		if selected{	
+			draw_rectangle_color_fast(xx-3,yy+3+(iy*stringHeight)+box_struct.top,xx+txtwidth-8,yy+(iy*stringHeight)+box_struct.bottom,choice_col,true)
 		}
 		
+							
 		//Apply choice with mouse
-		if mouseover(xx-3,yy+((ii+iy)*stringHeight)+3,xx+txtwidth-8,yy+((ii+iy)*stringHeight)+(24*rectangleoffset))
+		if mouseover(xx-3,yy+3+(iy*stringHeight)+box_struct.top,xx+txtwidth-8,yy+(iy*stringHeight)+box_struct.bottom)
 		{
 			choice = ii
 		}
 		
-		//If string width more than txtbox, increased iy
-		if(string_width(ctext) > txtwidth) { iy++; }
+		iy += element.get_line_count(0)
 		//increase string numbers
 		ii++; 
-		rectangleoffset = 1
 	}
 } 
 #endregion
@@ -83,11 +85,11 @@ else {
 	element.align(fa_left,fa_top)
 	element.starting_format(dialogue_font, "c_black")
 	element.wrap(txtwidth)
-	element.typewriter_in(0.5, 1)
-	//element.typewriter_sound([voice[page]],1000,global.settings.audio.soundvolume,global.settings.audio.soundvolume)
+	element.typewriter_in(0.5, 0)
+	element.typewriter_sound(voice[page],0,1,1)
 	element.draw(xx,yy)
-	//audio_play_sound(voice[page], 1, false)
-	
+
+	//voice[page]
 	t += 1;
 	var shift = sin(t*pi*2/60)*3;
 	#region Draw "Finished" effect

@@ -8,6 +8,7 @@ function register_quests(){
 	])
 	
 	register_quest("help_for_ewgen",[
+		[quest_type.talk,obj_lesha_npc],
 		[quest_type.deliver,"wooden_water_bucket",1],
 	])
 	

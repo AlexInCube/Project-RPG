@@ -148,4 +148,8 @@ function wooden_bucket() : default_quick_useable() constructor {
 		item_gain("wooden_water_bucket",1,inv,_slot)
 	}
 }
+
+function money() : default_item() constructor{
+	render_item = money_render
+}
 #endregion

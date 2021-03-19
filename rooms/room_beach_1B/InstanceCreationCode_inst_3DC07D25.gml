@@ -1,5 +1,5 @@
-if exist_story_tag("ewgen_saved_from_slimes"){
-	if !exist_story_tag("help_ewgen_with_water"){
+if story_tag_exist("ewgen_saved_from_slimes"){
+	if !story_tag_exist("help_ewgen_with_water"){
 		sprite_index = spr_ewgen_downed
 	}
 	exit

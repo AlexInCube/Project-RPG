@@ -110,7 +110,7 @@ function draw_offer_button(ii,yy){
 					//item spend
 					for(var i=0;i<array_length(is_a);i++){
 						var item_array = array_get(is_a,i)
-						grab_item(item_array[0],item_array[1],global.inventory)
+						item_grab(item_array[0],item_array[1],global.inventory)
 					}
 				}
 			}

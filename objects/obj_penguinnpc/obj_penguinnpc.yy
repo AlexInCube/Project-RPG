@@ -41,6 +41,8 @@
   },
   "resourceVersion": "1.0",
   "name": "obj_penguinnpc",
-  "tags": [],
+  "tags": [
+    "interact",
+  ],
   "resourceType": "GMObject",
 }

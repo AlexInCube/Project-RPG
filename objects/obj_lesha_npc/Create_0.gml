@@ -11,10 +11,10 @@ choice_variable		= -1;
 trade_arr			= [//Trade list
 	[//First Trade
 		[//Items to spend
-			["coin",64]
+			["money",1]
 		],
 		[//Items to be received
-			["iron_chestplate",1]
+			["wooden_water_bucket",1]
 		]
 	],
 ]

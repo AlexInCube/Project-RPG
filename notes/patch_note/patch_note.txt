@@ -5,5 +5,6 @@ add mouse support for control
 loot-tables
 
 Maked in this version:
-Added button hints
-Added configurable quick use keys
+Fixed dialogue choice answer bbox
+Fixed typewriter sound
+Improved Ewgen quest
