@@ -10,7 +10,7 @@ gameversion_word = find_keyword("game_version")
 
 var button_x = 50
 ds_menu_main = create_ui_elements_list(
-	create_fancy_button(button_x,143,spr_buttonmenu,depth-1,find_keyword("start_game"),game_start),
+	create_fancy_button(button_x,143,spr_buttonmenu,depth-1,find_keyword("start_game"),	open_game_start_window),
 	create_fancy_button(button_x,186,spr_buttonmenu,depth-1,find_keyword("select_save"),open_save_window),
 	create_fancy_button(button_x,229,spr_buttonmenu,depth-1,find_keyword("settings"),open_settings),
 	create_fancy_button(button_x,272,spr_buttonmenu,depth-1,find_keyword("creators"),open_creators),

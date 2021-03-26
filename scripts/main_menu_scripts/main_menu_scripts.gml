@@ -1,9 +1,4 @@
 //
-function game_start() {
-	global.directory_save = get_string(find_keyword("write_your_save_name"),"YourSave")
-	room_goto(room_game_init)
-	global.load_state = load_state.new_game
-}
 
 function test_room_start() {
 	room_goto(room_game_init)
