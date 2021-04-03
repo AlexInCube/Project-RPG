@@ -154,6 +154,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f8986941-e34b-4d91-9307-ec38e8ce7460","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Options Sprites",
     "path": "folders/Objects/Controllers/Options/Options Sprites.yy",

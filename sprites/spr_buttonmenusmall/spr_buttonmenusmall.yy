@@ -25,8 +25,8 @@
   "gridY": 1,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"3f81d6bd-af38-4e7b-8f8c-0bd05b8f8fc3","path":"sprites/spr_buttonmenusmall/spr_buttonmenusmall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3f81d6bd-af38-4e7b-8f8c-0bd05b8f8fc3","path":"sprites/spr_buttonmenusmall/spr_buttonmenusmall.yy",},"LayerId":{"name":"02639540-3cee-4745-9c53-cb32dd70b3d6","path":"sprites/spr_buttonmenusmall/spr_buttonmenusmall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"3f81d6bd-af38-4e7b-8f8c-0bd05b8f8fc3","path":"sprites/spr_buttonmenusmall/spr_buttonmenusmall.yy",},"LayerId":{"name":"070f8b68-c3ad-4fab-b144-e8ba309d3037","path":"sprites/spr_buttonmenusmall/spr_buttonmenusmall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"3f81d6bd-af38-4e7b-8f8c-0bd05b8f8fc3","path":"sprites/spr_buttonmenusmall/spr_buttonmenusmall.yy",},"LayerId":{"name":"02639540-3cee-4745-9c53-cb32dd70b3d6","path":"sprites/spr_buttonmenusmall/spr_buttonmenusmall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_buttonmenusmall","path":"sprites/spr_buttonmenusmall/spr_buttonmenusmall.yy",},"resourceVersion":"1.0","name":"3f81d6bd-af38-4e7b-8f8c-0bd05b8f8fc3","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -69,6 +69,7 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"070f8b68-c3ad-4fab-b144-e8ba309d3037","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"02639540-3cee-4745-9c53-cb32dd70b3d6","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Main Menu Sprites",
     "path": "folders/Objects/Controllers/Main Menu/Main Menu Sprites.yy",

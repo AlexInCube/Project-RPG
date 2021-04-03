@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ac8d7267-2f67-4083-8642-ac5610523a3e","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Ewgen Resources",
     "path": "folders/Objects/NPCs/Ewgen Resources.yy",

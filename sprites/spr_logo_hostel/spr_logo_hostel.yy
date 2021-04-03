@@ -25,8 +25,8 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"1eb5789c-90e3-4d07-b8b1-8e01dd3753b2","path":"sprites/spr_logo_hostel/spr_logo_hostel.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1eb5789c-90e3-4d07-b8b1-8e01dd3753b2","path":"sprites/spr_logo_hostel/spr_logo_hostel.yy",},"LayerId":{"name":"7baf39d7-7464-4a3e-976c-e799f9e9e235","path":"sprites/spr_logo_hostel/spr_logo_hostel.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"1eb5789c-90e3-4d07-b8b1-8e01dd3753b2","path":"sprites/spr_logo_hostel/spr_logo_hostel.yy",},"LayerId":{"name":"dcb17c50-a4f8-4a82-a9a0-230db466dae3","path":"sprites/spr_logo_hostel/spr_logo_hostel.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"1eb5789c-90e3-4d07-b8b1-8e01dd3753b2","path":"sprites/spr_logo_hostel/spr_logo_hostel.yy",},"LayerId":{"name":"7baf39d7-7464-4a3e-976c-e799f9e9e235","path":"sprites/spr_logo_hostel/spr_logo_hostel.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_logo_hostel","path":"sprites/spr_logo_hostel/spr_logo_hostel.yy",},"resourceVersion":"1.0","name":"1eb5789c-90e3-4d07-b8b1-8e01dd3753b2","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -69,6 +69,7 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"dcb17c50-a4f8-4a82-a9a0-230db466dae3","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7baf39d7-7464-4a3e-976c-e799f9e9e235","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Logos",
     "path": "folders/Sprites/Logos.yy",

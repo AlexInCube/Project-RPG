@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a62a9bcf-bde5-4f94-9e8c-5af7e28d1dd9","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Trees",
     "path": "folders/Tile Sets/Environment/Trees.yy",

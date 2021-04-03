@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"335abd7f-2926-4660-9510-9994462381c0","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Buffs Sprites",
     "path": "folders/Objects/Controllers/Buff System/Buffs Sprites.yy",

@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"03ad5bbb-a0bf-4a0e-b4d8-3cfb7220c12b","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Penguin",
     "path": "folders/Objects/Game Objects/Enemies/Penguin.yy",

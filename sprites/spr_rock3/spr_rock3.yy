@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d6edd2f4-d041-4f97-bd0e-4bf2fbd67c4a","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Rocks",
     "path": "folders/Tile Sets/Environment/Rocks.yy",

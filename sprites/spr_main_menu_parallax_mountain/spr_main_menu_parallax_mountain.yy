@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"11364960-2ab4-47dd-aeee-69630d3cc290","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Parallax Background",
     "path": "folders/Objects/Controllers/Main Menu/Main Menu Sprites/Parallax Background.yy",

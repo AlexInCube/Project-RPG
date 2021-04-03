@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"cc487f7a-3ec2-4e8c-a56b-a9e07b276548","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Stat Icons",
     "path": "folders/Objects/Controllers/Equipment/Stat Icons.yy",

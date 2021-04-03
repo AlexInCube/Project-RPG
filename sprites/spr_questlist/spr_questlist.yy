@@ -26,8 +26,8 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"3855de10-d186-481d-b9a7-e95a81e69f50","path":"sprites/spr_questlist/spr_questlist.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"3855de10-d186-481d-b9a7-e95a81e69f50","path":"sprites/spr_questlist/spr_questlist.yy",},"LayerId":{"name":"46c3dacd-5c0f-4118-8eaf-e084cfb683c4","path":"sprites/spr_questlist/spr_questlist.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"3855de10-d186-481d-b9a7-e95a81e69f50","path":"sprites/spr_questlist/spr_questlist.yy",},"LayerId":{"name":"0b410382-4d32-42cf-9dda-8c920ca88ba3","path":"sprites/spr_questlist/spr_questlist.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"3855de10-d186-481d-b9a7-e95a81e69f50","path":"sprites/spr_questlist/spr_questlist.yy",},"LayerId":{"name":"7fe3f379-2c09-4471-b40e-73dac062a5f4","path":"sprites/spr_questlist/spr_questlist.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"3855de10-d186-481d-b9a7-e95a81e69f50","path":"sprites/spr_questlist/spr_questlist.yy",},"LayerId":{"name":"0b410382-4d32-42cf-9dda-8c920ca88ba3","path":"sprites/spr_questlist/spr_questlist.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_questlist","path":"sprites/spr_questlist/spr_questlist.yy",},"resourceVersion":"1.0","name":"3855de10-d186-481d-b9a7-e95a81e69f50","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -71,6 +71,7 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"7fe3f379-2c09-4471-b40e-73dac062a5f4","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0b410382-4d32-42cf-9dda-8c920ca88ba3","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Quest System",
     "path": "folders/Objects/Controllers/Quest System.yy",

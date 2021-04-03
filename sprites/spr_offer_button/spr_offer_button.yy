@@ -26,10 +26,8 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"a37b67c0-a592-4d0b-9a46-f58c8bd66e89","path":"sprites/spr_offer_button/spr_offer_button.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"a37b67c0-a592-4d0b-9a46-f58c8bd66e89","path":"sprites/spr_offer_button/spr_offer_button.yy",},"LayerId":{"name":"7e202e97-0133-4e04-9a58-9cad07bb6557","path":"sprites/spr_offer_button/spr_offer_button.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"a37b67c0-a592-4d0b-9a46-f58c8bd66e89","path":"sprites/spr_offer_button/spr_offer_button.yy",},"LayerId":{"name":"427610ca-9840-41ee-a40b-46831722873d","path":"sprites/spr_offer_button/spr_offer_button.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_offer_button","path":"sprites/spr_offer_button/spr_offer_button.yy",},"resourceVersion":"1.0","name":"a37b67c0-a592-4d0b-9a46-f58c8bd66e89","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"e143b0c6-d26b-4ebf-a4ec-0b6143e1bb9c","path":"sprites/spr_offer_button/spr_offer_button.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e143b0c6-d26b-4ebf-a4ec-0b6143e1bb9c","path":"sprites/spr_offer_button/spr_offer_button.yy",},"LayerId":{"name":"427610ca-9840-41ee-a40b-46831722873d","path":"sprites/spr_offer_button/spr_offer_button.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"e143b0c6-d26b-4ebf-a4ec-0b6143e1bb9c","path":"sprites/spr_offer_button/spr_offer_button.yy",},"LayerId":{"name":"7e202e97-0133-4e04-9a58-9cad07bb6557","path":"sprites/spr_offer_button/spr_offer_button.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_offer_button","path":"sprites/spr_offer_button/spr_offer_button.yy",},"resourceVersion":"1.0","name":"e143b0c6-d26b-4ebf-a4ec-0b6143e1bb9c","tags":[],"resourceType":"GMSpriteFrame",},
   ],
@@ -73,6 +71,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7e202e97-0133-4e04-9a58-9cad07bb6557","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Trade Menu",
     "path": "folders/Objects/Controllers/Trade Menu.yy",

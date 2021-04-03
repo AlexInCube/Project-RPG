@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a36e6e41-9a84-41ce-8493-bc532ef5a456","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Spells",
     "path": "folders/Objects/Controllers/Inventory/Items Sprites/Spells.yy",

@@ -75,6 +75,7 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"02ecc9a9-9d60-4b05-989c-fff3bcbeb485","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a0a3ef47-0f2a-435e-aba9-aaf001d1f07e","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "NPCs",
     "path": "folders/Objects/NPCs.yy",

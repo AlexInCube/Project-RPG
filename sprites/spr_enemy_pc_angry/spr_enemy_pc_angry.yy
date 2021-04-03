@@ -87,6 +87,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5cff2e48-f5ba-448b-a111-18013f63d8cb","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "AngryPC",
     "path": "folders/Objects/Game Objects/Enemies/AngryPC.yy",

@@ -5,4 +5,4 @@ add mouse support for control
 loot-tables
 
 Maked in this version:
-Added new game start window
+Start working on spell creating
