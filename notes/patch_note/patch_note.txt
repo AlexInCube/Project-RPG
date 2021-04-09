@@ -5,4 +5,4 @@ add mouse support for control
 loot-tables
 
 Maked in this version:
-Start working on spell creating
+Added configurable sides in spell pieces and a lot improvements in spell creating
