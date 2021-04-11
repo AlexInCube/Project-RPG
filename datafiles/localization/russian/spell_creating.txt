@@ -1,4 +1,11 @@
 {
 	"piece_configuration":"Конфигурация куска",
-	"spell_name":"Имя заклинания: "
+	"spell_name":"Имя: ",
+	"selected_piece":"Выбрано: ",
+	"cursor_piece":"Курсор: ",
+	"spell_creating_hint":"[c_lime]Справка о горячих клавишах[/c]
+	\nУдалить кусок [c_aqua]Delete[/c]
+	\nОчистить сетку [c_aqua]Ctrl + Shift + Delete[/c]
+	\nПодвинуть сетку [c_aqua]Ctrl + Стрелочки[/c]
+	",
 }

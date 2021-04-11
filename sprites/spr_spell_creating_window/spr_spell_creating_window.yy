@@ -10,12 +10,12 @@
   "bbox_left": 0,
   "bbox_right": 299,
   "bbox_top": 0,
-  "bbox_bottom": 299,
+  "bbox_bottom": 329,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "width": 300,
-  "height": 300,
+  "height": 330,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -26,6 +26,7 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"4d61167b-6b19-49fb-9cb2-b7935c29e9bc","path":"sprites/spr_spell_creating_window/spr_spell_creating_window.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"4d61167b-6b19-49fb-9cb2-b7935c29e9bc","path":"sprites/spr_spell_creating_window/spr_spell_creating_window.yy",},"LayerId":{"name":"d2af245c-75ff-4e58-9ab3-4ca247a86a91","path":"sprites/spr_spell_creating_window/spr_spell_creating_window.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"4d61167b-6b19-49fb-9cb2-b7935c29e9bc","path":"sprites/spr_spell_creating_window/spr_spell_creating_window.yy",},"LayerId":{"name":"ebf37cfe-8593-4e52-a3ed-50d0afbeb86a","path":"sprites/spr_spell_creating_window/spr_spell_creating_window.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_spell_creating_window","path":"sprites/spr_spell_creating_window/spr_spell_creating_window.yy",},"resourceVersion":"1.0","name":"4d61167b-6b19-49fb-9cb2-b7935c29e9bc","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -65,6 +66,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"ebf37cfe-8593-4e52-a3ed-50d0afbeb86a","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d2af245c-75ff-4e58-9ab3-4ca247a86a91","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
