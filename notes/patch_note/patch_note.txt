@@ -4,7 +4,7 @@ saving non-unique objects
 add mouse support for control
 loot-tables
 
-Maked in this version:
-Spell name editing
-Hint about selected piece
-Deleting and shifting in spell creating and keybinds hint
+Maked in this version
+Overlay surface working everywhere
+Spell piece description drawing
+Config sides now have description

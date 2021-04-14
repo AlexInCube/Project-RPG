@@ -1,3 +1,13 @@
+if surface_exists(global.overlay_surf){
+	draw_surface(global.overlay_surf,0,0)
+	surface_set_target(global.overlay_surf)
+	draw_clear_alpha(c_white,0)
+	surface_reset_target()
+}else{
+	global.overlay_surf = surface_create(GUIWIDTH,GUIHEIGHT)
+}
+
+
 if !DEBUGMODE{exit}
 //Draw FPS
 draw_set_halign(fa_left)

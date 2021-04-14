@@ -10,3 +10,6 @@ actual_delta = delta_time/1000000//Delta in seconds
 global.delta_multiplier = actual_delta/target_delta//delta_multiplier*speed
 
 global.debugmode=false
+
+//Overlay surface
+global.overlay_surf = surface_create(GUIWIDTH,GUIHEIGHT)//Draw something over all

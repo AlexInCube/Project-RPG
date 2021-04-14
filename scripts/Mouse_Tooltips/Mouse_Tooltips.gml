@@ -25,8 +25,8 @@ function draw_item_stat_mouse(inventory, slot_id) {
 		}
 	}
 	*/
-	if surface_exists(obj_controller.overall_gui_surf){
-		surface_set_target(obj_controller.overall_gui_surf)
+	if surface_exists(obj_controller.global.overlay_surf){
+		surface_set_target(obj_controller.global.overlay_surf)
 		//Draw textbox
 		draw_set_alpha(1)
 		draw_set_color(c_white)
@@ -69,8 +69,8 @@ function draw_effect_stat_mouse(effect_struct) {
 	//Get item description
 	statstring[1]=effect_struct[$ "effect_description"]
 
-	if surface_exists(obj_controller.overall_gui_surf){
-		surface_set_target(obj_controller.overall_gui_surf)
+	if surface_exists(obj_controller.global.overlay_surf){
+		surface_set_target(obj_controller.global.overlay_surf)
 		//Draw textbox
 		draw_set_alpha(1)
 		draw_set_color(c_white)

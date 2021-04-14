@@ -79,3 +79,17 @@ slots_y=14
 x_buffer=2
 y_buffer=2
 /*					RIGHT PANEL							*/
+
+/* OTHER */
+function draw_overlay(txt){
+	surface_set_target(global.overlay_surf)
+	var element_txt = scribble(txt)
+	element_txt.starting_format("fnt_small",txt_color)
+	var over_hint_width = element_txt.get_width()+11
+	var over_hint_height = element_txt.get_height()
+	var over_hint_x = device_mouse_x_to_gui(0)+20
+	var over_hint_y = device_mouse_y_to_gui(0)
+	draw_sprite_stretched(spr_spell_creating_nine_slice,0,over_hint_x,over_hint_y,over_hint_width,over_hint_height)
+	element_txt.draw(over_hint_x+6,over_hint_y)
+	surface_reset_target()
+}

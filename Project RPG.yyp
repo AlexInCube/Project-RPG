@@ -277,6 +277,7 @@
     {"id":{"name":"spr_nineslicebox","path":"sprites/spr_nineslicebox/spr_nineslicebox.yy",},"order":4,},
     {"id":{"name":"spr_basicwindow","path":"sprites/spr_basicwindow/spr_basicwindow.yy",},"order":1,},
     {"id":{"name":"spr_questlist","path":"sprites/spr_questlist/spr_questlist.yy",},"order":5,},
+    {"id":{"name":"spr_spell_creating_checkbox","path":"sprites/spr_spell_creating_checkbox/spr_spell_creating_checkbox.yy",},"order":18,},
     {"id":{"name":"sentry_capture_message","path":"scripts/sentry_capture_message/sentry_capture_message.yy",},"order":7,},
     {"id":{"name":"player_states","path":"scripts/player_states/player_states.yy",},"order":4,},
     {"id":{"name":"spr_task_done","path":"sprites/spr_task_done/spr_task_done.yy",},"order":6,},

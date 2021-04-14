@@ -43,9 +43,9 @@ function assign_attribute_point_button(xx,yy,value){
 	draw_sprite(spr_stat_plus,mouse_o,xx,yy)
 	if mouse_o
 	{
-		if surface_exists(obj_controller.overall_gui_surf)
+		if surface_exists(obj_controller.global.overlay_surf)
 		{
-			surface_set_target(obj_controller.overall_gui_surf)
+			surface_set_target(obj_controller.global.overlay_surf)
 				//Draw textbox
 				draw_set_alpha(1)
 				draw_set_color(c_white)

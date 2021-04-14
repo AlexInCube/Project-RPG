@@ -8,4 +8,20 @@
 	\nОчистить сетку [c_aqua]Ctrl + Shift + Delete[/c]
 	\nПодвинуть сетку [c_aqua]Ctrl + Стрелочки[/c]
 	",
+	"spell_piece_input":"Ввод",
+	"spell_piece_output":"Вывод",
+	
+	"spell_data_none":"Ничего",
+	"spell_data_any":"Что-угодно",
+	"spell_data_number":"Число",
+	"spell_data_coord":"Координаты",
+	"spell_data_entity":"Сущность",
+	
+	"spell_word_nothing":"Ничего",
+	"spell_word_coord":"Координаты",
+	
+	"spell_piece_unknown":"Неизвестно",
+	"spell_piece_unknown_description":"Что вы сделали такого из-за чего появилось это?",
+	"spell_piece_get_player_pos":"Позиция игрока",
+	"spell_piece_get_player_pos_description":"Получить позицию игрока"
 }

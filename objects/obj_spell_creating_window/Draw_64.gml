@@ -74,9 +74,12 @@ var piece_i = ds_map_find_first(selected_group)
 		var xx = window_x+window_width+(i*(cell_size+x_buffer))
 		var yy = window_y
 		
-		draw_sprite(selected_group[? piece_i][$ "piece_sprite"],0,xx,yy)
+		var piece_struct = selected_group[? piece_i]
+		draw_sprite(piece_struct[$ "piece_sprite"],0,xx,yy)
 		
 		if mouseover(xx,yy,xx+cell_size,yy+cell_size){
+			draw_overlay(piece_struct[$ "hint_txt"])
+			
 			if mouse_check_button_pressed(mb_left){
 				spell_data.spell_grid[# selected_slot[0],selected_slot[1]] = [selected_group[? piece_i],selected_group[? piece_i][$ "unique_data"]]
 			}
@@ -85,6 +88,7 @@ var piece_i = ds_map_find_first(selected_group)
 	}
 //}
 #endregion
+
 #region Left Panel
 //Draw config word
 draw_text_shadow(piece_configuration_txt_x,piece_configuration_txt_y,piece_configuration_word,txt_fnt,1,txt_color_shadow,txt_color,1)
@@ -93,14 +97,7 @@ draw_sprite(left_panel_sprite,0,left_panel_x,left_panel_y)
 
 draw_sprite(hint_spr,0,hint_x,hint_y)
 if mouseover(hint_x,hint_y,hint_x+hint_width,hint_y+hint_height){
-	var element_txt = scribble(hint_txt)
-	element_txt.starting_format("fnt_small",txt_color)
-	var over_hint_width = element_txt.get_width()+11
-	var over_hint_height = element_txt.get_height()
-	var over_hint_x = device_mouse_x_to_gui(0)+20
-	var over_hint_y = device_mouse_y_to_gui(0)
-	draw_sprite_stretched(spr_spell_creating_nine_slice,0,over_hint_x,over_hint_y,over_hint_width,over_hint_height)
-	element_txt.draw(over_hint_x+6,over_hint_y)
+	draw_overlay(hint_txt)
 }
 //Draw config sides
 if selected_slot[0] != -1{
@@ -113,7 +110,7 @@ if selected_slot[0] != -1{
 		var input_x = select_input_start_x
 		draw_sprite(spr_spell_creating_select_input,0,input_x,input_y)
 		draw_sprite(c_array[i],sides_array[i],input_x,input_y)
-
+		draw_text_shadow(left_panel_x+10,input_y,spell_piece[@ 0][$ "config_sides_names"][i],fnt_small,1,txt_color_shadow,txt_color,1)
 		if mouse_check_button_pressed(mb_left){
 			//Down arrow
 			if mouseover(input_x+10,input_y+1,input_x+21,input_y+8){
