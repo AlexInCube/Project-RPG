@@ -59,7 +59,7 @@ if(type[page] == 1){
 		
 		var box_struct = element.get_bbox()
 		if selected{	
-			draw_rectangle_color_fast(xx-3,yy+3+(iy*stringHeight)+box_struct.top,xx+txtwidth-8,yy+(iy*stringHeight)+box_struct.bottom,choice_col,true)
+			draw_rectangle_color_fast(xx-3,yy+3+(iy*stringHeight)+box_struct.top,xx+txtwidth-8,yy+(iy*stringHeight)+box_struct.bottom+10,choice_col,true)
 		}
 		
 							

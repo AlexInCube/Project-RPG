@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Spell Creating",
-    "path": "folders/Objects/Controllers/Spell Creating.yy",
+    "name": "GUI Sprites",
+    "path": "folders/Objects/Controllers/Spell Creating/GUI Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_spell_creating_highlight_piece",

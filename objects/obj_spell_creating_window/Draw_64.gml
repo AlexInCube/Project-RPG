@@ -64,29 +64,62 @@ draw_text_shadow(spell_name_txt_x,spell_name_txt_y,spell_name_word,txt_fnt,1,txt
 //Draw txt box context
 draw_text_shadow(txt_box_x,txt_box_y,spell_data.spell_name,txt_fnt,1,txt_color_shadow,txt_c,1)
 
+
+//Import Spell Button
+draw_sprite(import_spell_spr,0,import_spell_x,import_spell_y)
+if mouseover(import_spell_x,import_spell_y,import_spell_x+import_spell_spr_width,import_spell_y+import_spell_spr_height){
+	draw_overlay(import_spell_word)
+	if mouse_check_button_pressed(mb_left){
+		import_spell()
+	}
+}
+//Export Spell Button
+draw_sprite(export_spell_spr,0,export_spell_x,export_spell_y)
+if mouseover(export_spell_x,export_spell_y,export_spell_x+export_spell_spr_width,export_spell_y+export_spell_spr_height){
+	draw_overlay(export_spell_word)
+	if mouse_check_button_pressed(mb_left){
+		export_spell()
+	}
+}
 #endregion
 
-#region Right Panel
-//if selected_slot != -1{
+#region /////////////////////////////////////////Right Panel
+//Draw group list
+for(var i = 0; i < array_length(groups);i++){
+	var xx = group_button_start_x+(i*(group_button_width+x_buffer))
+	var yy = window_y
+	draw_sprite(group_button_spr,0,xx,yy)
+	draw_sprite(groups[i][$ "group_icon"],0,xx+group_icon_x,yy+group_icon_y)
+	if mouseover(xx,yy,xx+group_button_width,yy+group_button_height){
+		if mouse_check_button_pressed(mb_left){
+			selected_group = groups[i][$ "group_id"]
+		}
+		draw_overlay(groups[i][$ "group_name"]+"\n"+groups[i][$ "group_description"])
+	}
+}
+
+//Draw content of the group
 var piece_i = ds_map_find_first(selected_group)
 
-	for(var i=0;i<ds_map_size(selected_group);i++){
-		var xx = window_x+window_width+(i*(cell_size+x_buffer))
-		var yy = window_y
+for(var i=0;i<ds_map_size(selected_group);i++){
+	var xx = window_x+window_width+(i*(cell_size+x_buffer))
+	var yy = window_y+50
 		
-		var piece_struct = selected_group[? piece_i]
-		draw_sprite(piece_struct[$ "piece_sprite"],0,xx,yy)
+	var piece_struct = selected_group[? piece_i]
+	draw_sprite(piece_struct[$ "piece_sprite"],0,xx,yy)
 		
-		if mouseover(xx,yy,xx+cell_size,yy+cell_size){
-			draw_overlay(piece_struct[$ "hint_txt"])
+	if mouseover(xx,yy,xx+cell_size,yy+cell_size){
+		draw_overlay(piece_struct[$ "hint_txt"])
 			
-			if mouse_check_button_pressed(mb_left){
-				spell_data.spell_grid[# selected_slot[0],selected_slot[1]] = [selected_group[? piece_i],selected_group[? piece_i][$ "unique_data"]]
+		if mouse_check_button_pressed(mb_left){
+			if !array_equals(selected_slot,[-1,-1]){
+				spell_data.spell_grid[# selected_slot[0],selected_slot[1]] = [selected_group[? piece_i],deep_copy(selected_group[? piece_i][$ "unique_data"])]
 			}
 		}
-		piece_i = ds_map_find_next(selected_group,piece_i)
 	}
-//}
+	piece_i = ds_map_find_next(selected_group,piece_i)
+}
+
 #endregion
 
 #region Left Panel

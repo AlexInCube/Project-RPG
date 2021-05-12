@@ -3,13 +3,18 @@
 	"spell_name":"Имя: ",
 	"selected_piece":"Выбрано: ",
 	"cursor_piece":"Курсор: ",
-	"spell_creating_hint":"[c_lime]Справка о горячих клавишах[/c]
-	\nУдалить кусок [c_aqua]Delete[/c]
-	\nОчистить сетку [c_aqua]Ctrl + Shift + Delete[/c]
-	\nПодвинуть сетку [c_aqua]Ctrl + Стрелочки[/c]
-	",
+	"spell_creating_hint":"[c_lime]Справка о горячих клавишах\n[/c]Удалить кусок [c_aqua]Delete[/c]\nОчистить сетку [c_aqua]Ctrl + Shift + Delete[/c]\nПодвинуть сетку [c_aqua]Ctrl + Стрелочки[/c]",
+	"export_spell":"Экспортировать заклинание в буфер обмена",
+	"import_spell":"Импортировать заклинание из буфера обмена",
 	"spell_piece_input":"Ввод",
 	"spell_piece_output":"Вывод",
+	
+	"pieces_group_all":"ВСЁ",
+	"pieces_group_all_description":"Тут показываются все кусочки из всех групп",
+	"pieces_group_general":"ОБЩИЕ",
+	"pieces_group_general_description":"В этой группе находятся куски \nкоторые используются почти во всех заклинаниях",
+	"pieces_group_operator":"ОПЕРАТОРЫ",
+	"pieces_group_operator_description":"Всякая математика",
 	
 	"spell_data_none":"Ничего",
 	"spell_data_any":"Что-угодно",

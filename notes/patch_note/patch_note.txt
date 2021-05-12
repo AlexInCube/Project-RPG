@@ -4,7 +4,10 @@ saving non-unique objects
 add mouse support for control
 loot-tables
 
+remake groups
+
 Maked in this version
-Overlay surface working everywhere
-Spell piece description drawing
-Config sides now have description
+Fixed unique data for spell pieces
+Fixed textbox choice highlight border
+Added export/import spells button
+Added group for all pieces

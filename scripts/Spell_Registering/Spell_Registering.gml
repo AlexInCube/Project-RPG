@@ -1,6 +1,3 @@
-#macro PIECES_GROUP_GENERAL global.spell_pieces.general_pieces
-#macro PIECES_GROUP_OPERATOR global.spell_pieces.operator_pieces
-
 enum spell_pieces_side{
 	right,
 	down,
@@ -21,14 +18,20 @@ enum spell_pieces_side{
 #macro SPELL_WORD_NOTHING find_keyword("spell_word_nothing")
 #macro SPELL_WORD_COORD find_keyword("spell_word_coord")
 
+#macro PIECES_GROUP_ALL global.spell_pieces.all_pieces
+#macro PIECES_GROUP_GENERAL global.spell_pieces.general_pieces
+#macro PIECES_GROUP_OPERATOR global.spell_pieces.operator_pieces
+
+
 function register_spell_pieces(){
 	global.spell_pieces = {
-		general_pieces : ds_map_create(),
-		operator_pieces : ds_map_create()
 	}
 	
+	add_spell_group("all_pieces")
+	add_spell_group("general_pieces")
+	add_spell_group("operator_pieces")
 	//add_spell_piece("spell_piece_nothing",default_spell_piece,PIECES_GROUP_GENERAL)
-	add_spell_piece("spell_piece_unknown",spell_piece_unknown,PIECES_GROUP_GENERAL)
+	add_spell_piece("spell_piece_unknown",spell_piece_unknown,PIECES_GROUP_OPERATOR)
 	add_spell_piece("spell_piece_play_sound",spell_piece_play_sound,PIECES_GROUP_GENERAL)
 	add_spell_piece("spell_piece_get_player_pos",spell_piece_get_player_pos,PIECES_GROUP_GENERAL)
 	
@@ -36,11 +39,17 @@ function register_spell_pieces(){
 	show_debug_message(LOGGER_SPELL_MANAGER+"Registed "+string(
 	ds_map_size(global.spell_pieces.general_pieces)
 	+ds_map_size(global.spell_pieces.operator_pieces)
-	))
+	)+" spells")
+}
+
+function add_spell_group(name){
+	variable_struct_set(global.spell_pieces,name,ds_map_create())
 }
 
 function add_spell_piece(name,piece_struct,piece_group){
-	piece_group[? name] = new piece_struct()
+	var point_struct = new piece_struct()
+	piece_group[? name] = point_struct
+	PIECES_GROUP_ALL[? name] = point_struct
 	with(piece_group[? name]){
 		piece_unlocale_name = name
 		piece_locale_name = find_keyword(piece_unlocale_name)
