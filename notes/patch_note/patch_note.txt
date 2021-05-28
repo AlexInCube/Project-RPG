@@ -3,11 +3,13 @@ improve the storage of player stats
 saving non-unique objects
 add mouse support for control
 loot-tables
+spell creating
 
-remake groups
 
 Maked in this version
-Fixed unique data for spell pieces
-Fixed textbox choice highlight border
-Added export/import spells button
-Added group for all pieces
+Added invisible frames for player
+Added red slime
+Moved player buff grid draw
+Fixed player animation speed
+Fixed crash when drawing attribute point description
+delayed development of spell creating

@@ -12,4 +12,4 @@ distance_from_spawn = 75
 phys_armor = 1
 magic_armor = 0
 damage = 1
-knockback = 5
+knockback = 50

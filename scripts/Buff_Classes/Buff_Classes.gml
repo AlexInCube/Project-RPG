@@ -29,16 +29,33 @@ function default_effect() constructor{
 	}
 }
 
+function invisible_player_effect() : default_effect() constructor{
+	effect_tick_timer = 10
+	effect_multiple = false
+	effect_tick_script = function(){
+		with(obj_player){
+			switch (image_alpha){
+				case 0.5 : image_alpha = 1 break 
+				case 1 : image_alpha = 0.5 break
+			}
+			show_debug_message("alpha switched"+string(image_alpha))
+		}
+	}
+	effect_destroy_script = function(){
+		with(obj_player){
+			image_alpha = 1
+		}
+	}
+	effect_nbt = {
+		duration : convert_seconds_to_ticks(1)
+	}
+}
+
 function regeneration_effect() : default_effect() constructor{
-	effect_is_buff = true
 	effect_tick_timer = 59
 	effect_multiple = true
-	effect_create_script = function(){
-		show_debug_message("effect created heal")
-	}
 	effect_tick_script = function(target){
 		heal(1,target,false)
-		show_debug_message("healed")
 	}
 	effect_nbt = {
 		duration : convert_seconds_to_ticks(3)
@@ -70,4 +87,5 @@ function defense_effect() : default_effect() constructor{
 		duration : convert_seconds_to_ticks(5)
 	}
 }
+
 

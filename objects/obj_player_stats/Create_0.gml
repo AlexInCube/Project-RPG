@@ -19,6 +19,7 @@ agility=0//Gain evasion and hp/mp regen amount (for example potion heal 1*agilit
 evasion=0
 regen_amount=0
 
+invisibility_duration = 60//ticks
 
 last_hit=""
 

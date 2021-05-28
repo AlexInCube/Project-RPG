@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Effects _ VFX",
-    "path": "folders/Objects/Utility/Effects _ VFX.yy",
+    "name": "Light",
+    "path": "folders/Objects/Utility/Effects _ VFX/Light.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_light",

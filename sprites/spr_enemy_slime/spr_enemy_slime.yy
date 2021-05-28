@@ -64,7 +64,7 @@
     "eventStubScript": null,
     "parent": {"name":"spr_enemy_slime","path":"sprites/spr_enemy_slime/spr_enemy_slime.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "spr_enemy_slime",
     "tags": [],
     "resourceType": "GMSequence",
   },

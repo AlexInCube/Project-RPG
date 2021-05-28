@@ -1,0 +1,1 @@
+water_frame = (water_frame+0.5) % sprite_get_number(spr_water_perlin_noise);

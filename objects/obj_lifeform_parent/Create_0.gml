@@ -1,3 +1,4 @@
+event_inherited()
 phy_fixed_rotation=true
 max_hp=3
 hp=max_hp
