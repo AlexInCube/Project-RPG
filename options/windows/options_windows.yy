@@ -1,7 +1,7 @@
 {
   "option_windows_display_name": "ProjectRPG",
   "option_windows_executable_name": "ProjectRPG",
-  "option_windows_version": "0.38.10.0",
+  "option_windows_version": "0.38.11.0",
   "option_windows_company_info": "Alexander Techologies",
   "option_windows_product_info": "ProjectRPG",
   "option_windows_copyright_info": "(c) 2019 - 2021 Alexander Techologies",
@@ -12,7 +12,7 @@
   "option_windows_splash_screen": "${base_options_dir}/windows/splash/splash.png",
   "option_windows_use_splash": false,
   "option_windows_start_fullscreen": false,
-  "option_windows_allow_fullscreen_switching": true,
+  "option_windows_allow_fullscreen_switching": false,
   "option_windows_interpolate_pixels": false,
   "option_windows_vsync": true,
   "option_windows_resize_window": false,

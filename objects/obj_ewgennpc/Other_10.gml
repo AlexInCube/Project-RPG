@@ -65,4 +65,12 @@ switch(choice_variable){
 		mySpeaker[i]	= id;
 		myNextLine[i]	= -1
 	break;
+	
+	case "drink_water":
+		var i = 0
+		//Line 0
+		myText[i]		= "Иди гуляй";
+		mySpeaker[i]	= id;
+		myNextLine[i]	= -1
+	break;
 }

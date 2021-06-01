@@ -48,6 +48,8 @@ function create_ds_grid_settings() {
 		[find_keyword("down_key"),				settings_element_type.input, "key_down",			   global.settings.controls.key_down],
 		[find_keyword("left_key"),				settings_element_type.input, "key_left",		   	   global.settings.controls.key_left],
 		[find_keyword("right_key"),				settings_element_type.input, "key_right",			  global.settings.controls.key_right],
+		[find_keyword("addition_key"),			settings_element_type.input, "addition_key",	   global.settings.controls.addition_key],
+		[find_keyword("invert_addition_info"),	settings_element_type.toggle, change_show_addition_info,global.settings.controls.invert_addition_info],
 		[find_keyword("drop_item_key"),			settings_element_type.input, "drop_item_key",	  global.settings.controls.drop_item_key],
 		[find_keyword("pickup_key"),			settings_element_type.input, "pickup_key",			 global.settings.controls.pickup_key],
 		[find_keyword("attack_key"),			settings_element_type.input, "attack_key",			 global.settings.controls.attack_key],

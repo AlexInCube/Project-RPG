@@ -41,6 +41,8 @@ global.settings = {
 		inventory_hotkey10 : ord("0"),
 
 		pickup_key : vk_space,
+		addition_key : vk_alt,
+		invert_addition_info : true,
 		interact_key :	ord("E"),
 		attack_key : ord("V"),
 		equipment_key :	ord("U"),

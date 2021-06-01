@@ -14,19 +14,8 @@ seconds = 0
 minutes = 0 
 hours = 8
 day = 0
-time_increment = 1
-
-cur_story_tags = ds_list_create()
-
-
-
-//Light Color
-max_darkness = 0.7
-darkness = 0//Surface Alpha
-light_colour = c_white
-
+time_increment = 1//Increase this if we want speed up time
 time_is_go = true//If we need stop the time
-
 enum phase{
 	sunrise = 6,
 	daytime = 8.5,
@@ -35,7 +24,14 @@ enum phase{
 }
 
 global.day_phase = PHASE_TYPE_NIGHT
-global.interface_lock_by_game = false
+max_darkness = 0.7
+darkness = 0//Light Surface Alpha
+light_colour = c_white
+
+
+cur_story_tags = ds_list_create()//Tags about story
+
+global.interface_lock_by_game = false//Turning on/off interface if game want it
 
 
 //Windows ID

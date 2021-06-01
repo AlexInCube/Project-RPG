@@ -6,6 +6,7 @@ if other.id != creator
 		exit
 	}
 	obj_player_stats.hp -= apply_damage(damage,damagetype,other,false)
+	obj_player_stats.hp = clamp(obj_player_stats.hp,0,obj_player_stats.max_hp)
 	obj_player_stats.last_hit = object_get_name(creator.object_index)
 	
 	if instance_exists(creator){

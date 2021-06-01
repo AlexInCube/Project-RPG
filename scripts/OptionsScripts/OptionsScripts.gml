@@ -167,6 +167,10 @@ function change_v_sync_mode(boolean) {
 	display_reset(0,global.settings.video.v_sync)
 }
 
+function change_show_addition_info(boolean) {
+	global.settings.controls.invert_addition_info=boolean
+}
+
 ///@description change_gui_size
 ///@arg guisize
 function change_gui_size(option_array) {

@@ -7,9 +7,7 @@ spell creating
 
 
 Maked in this version
-Added invisible frames for player
-Added red slime
-Moved player buff grid draw
-Fixed player animation speed
-Fixed crash when drawing attribute point description
-delayed development of spell creating
+Added mobs health bars
+Added addition info keybind and invert toggle
+Fixed crash when player hp = null
+Fixed crash with buff tooltip

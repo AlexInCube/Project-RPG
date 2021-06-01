@@ -38,7 +38,7 @@ function invisible_player_effect() : default_effect() constructor{
 				case 0.5 : image_alpha = 1 break 
 				case 1 : image_alpha = 0.5 break
 			}
-			show_debug_message("alpha switched"+string(image_alpha))
+			//show_debug_message("alpha switched"+string(image_alpha))
 		}
 	}
 	effect_destroy_script = function(){
