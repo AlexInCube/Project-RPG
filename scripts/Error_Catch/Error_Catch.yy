@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "sentry",
-    "path": "folders/sentry.yy",
+    "name": "Project RPG",
+    "path": "Project RPG.yyp",
   },
   "resourceVersion": "1.0",
   "name": "Error_Catch",

@@ -25,8 +25,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "sentry",
-    "path": "folders/sentry.yy",
+    "name": "Sentry",
+    "path": "folders/Libraries/Sentry.yy",
   },
   "resourceVersion": "1.0",
   "name": "sentry_handler",

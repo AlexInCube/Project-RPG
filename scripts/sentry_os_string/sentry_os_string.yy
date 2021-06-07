@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "utility",
-    "path": "folders/sentry/utility.yy",
+    "path": "folders/Libraries/Sentry/utility.yy",
   },
   "resourceVersion": "1.0",
   "name": "sentry_os_string",

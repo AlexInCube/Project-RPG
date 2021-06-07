@@ -7,7 +7,4 @@ spell creating
 
 
 Maked in this version
-Added mobs health bars
-Added addition info keybind and invert toggle
-Fixed crash when player hp = null
-Fixed crash with buff tooltip
+GMSentry finally fixed
