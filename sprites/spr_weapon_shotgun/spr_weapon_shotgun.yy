@@ -29,9 +29,8 @@
         {"FrameId":{"name":"53b1d50c-7215-40c2-b6e4-a7f42bfcdb1d","path":"sprites/spr_weapon_shotgun/spr_weapon_shotgun.yy",},"LayerId":{"name":"a09e631f-ed00-4af5-850c-3048fafdb38c","path":"sprites/spr_weapon_shotgun/spr_weapon_shotgun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_weapon_shotgun","path":"sprites/spr_weapon_shotgun/spr_weapon_shotgun.yy",},"resourceVersion":"1.0","name":"53b1d50c-7215-40c2-b6e4-a7f42bfcdb1d","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"2d4a12de-c119-4aff-a439-8357db4d8752","path":"sprites/spr_weapon_shotgun/spr_weapon_shotgun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2d4a12de-c119-4aff-a439-8357db4d8752","path":"sprites/spr_weapon_shotgun/spr_weapon_shotgun.yy",},"LayerId":{"name":"a09e631f-ed00-4af5-850c-3048fafdb38c","path":"sprites/spr_weapon_shotgun/spr_weapon_shotgun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"2d4a12de-c119-4aff-a439-8357db4d8752","path":"sprites/spr_weapon_shotgun/spr_weapon_shotgun.yy",},"LayerId":{"name":"3e7b46cc-fa15-4e6f-9aba-64d8a371e16d","path":"sprites/spr_weapon_shotgun/spr_weapon_shotgun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"2d4a12de-c119-4aff-a439-8357db4d8752","path":"sprites/spr_weapon_shotgun/spr_weapon_shotgun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"2d4a12de-c119-4aff-a439-8357db4d8752","path":"sprites/spr_weapon_shotgun/spr_weapon_shotgun.yy",},"LayerId":{"name":"a09e631f-ed00-4af5-850c-3048fafdb38c","path":"sprites/spr_weapon_shotgun/spr_weapon_shotgun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_weapon_shotgun","path":"sprites/spr_weapon_shotgun/spr_weapon_shotgun.yy",},"resourceVersion":"1.0","name":"2d4a12de-c119-4aff-a439-8357db4d8752","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"520251f7-ce2b-4bbd-a34e-7593d9452c91","path":"sprites/spr_weapon_shotgun/spr_weapon_shotgun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"520251f7-ce2b-4bbd-a34e-7593d9452c91","path":"sprites/spr_weapon_shotgun/spr_weapon_shotgun.yy",},"LayerId":{"name":"3e7b46cc-fa15-4e6f-9aba-64d8a371e16d","path":"sprites/spr_weapon_shotgun/spr_weapon_shotgun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
@@ -105,6 +104,7 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"3e7b46cc-fa15-4e6f-9aba-64d8a371e16d","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a09e631f-ed00-4af5-850c-3048fafdb38c","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Shotgun Sprites",
     "path": "folders/Weapons/Shotgun/Shotgun Sprites.yy",

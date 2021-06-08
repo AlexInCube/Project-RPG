@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5a6bcc70-40bf-4386-b475-f7f10acaecc2","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Apatment",
     "path": "folders/Tile Sets/Tiles Sprites/Apatment.yy",

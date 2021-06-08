@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e5b1bff2-c429-4e57-8392-fddb3ba07809","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Items Sprites",
     "path": "folders/Objects/Controllers/Inventory/Items Sprites.yy",

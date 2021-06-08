@@ -83,6 +83,7 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d41729ea-5834-4474-9312-993524dde0f7","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 4","resourceVersion":"1.0","name":"ebb08f4b-466a-4ede-a6da-49690b108bc0","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Equipment",
     "path": "folders/Objects/Controllers/Equipment.yy",

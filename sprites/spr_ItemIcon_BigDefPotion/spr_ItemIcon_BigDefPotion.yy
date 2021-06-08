@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b698b901-563e-4dec-929f-6db45c7e6b2f","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Potions",
     "path": "folders/Objects/Controllers/Inventory/Items Sprites/Potions.yy",

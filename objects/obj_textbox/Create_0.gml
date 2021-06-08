@@ -3,7 +3,6 @@
 if(instance_number(obj_textevent)>1 or instance_number(obj_textbox)>1){ instance_destroy(); exit; }
 
 //-----------Customise (FOR USER)
-
 portrait_frame		= spr_portraitframe;
 dialogue_box		= spr_dialoguebox;
 name_box			= spr_namebox;
@@ -13,12 +12,12 @@ choice_snd_effect	= snd_moveselect;
 select_snd_effect	= snd_select;
 
 default_col			= c_black;
-choice_col			= c_orange;
+choice_col			= c_blue;
 select_col			= c_red;
 name_col			= c_black;
 
-name_font			= fnt_small;
-
+name_font			= "fnt_small";
+dialogue_font		= "fnt_small"
 priority_snd_effect = 5;
 
 //-----------Setup (LEAVE THIS STUFF)
@@ -45,10 +44,8 @@ name_box_text_y = name_box_y
 finishede_x		= pos_x + boxWidth - 15
 finishede_y		= pos_y + boxHeight - 35
 
-letter			= 0;
 charCount		= 0;
 charCount_f		= 0;
-text_speed		= 0;
 text_speed_c	= 0;
 audio_c			= 0;
 page			= 0;

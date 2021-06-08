@@ -47,7 +47,7 @@
     "spriteId": {"name":"spr_player_right","path":"sprites/spr_player_right/spr_player_right.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 15.0,
+    "playbackSpeed": 10.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -87,6 +87,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"952922d9-f43a-4baa-802c-6b26b4d8ced5","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Player Sprites",
     "path": "folders/Objects/Game Objects/Player/Player Sprites.yy",

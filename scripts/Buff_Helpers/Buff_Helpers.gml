@@ -102,12 +102,14 @@ function effect_cycle_grid(target){
 		if is_undefined(_effect) or _effect == UNKNOWN_EFFECT{i++;continue}//If effect unknown, then dont execute code
 		//if _effect == undefined {continue}
 		buff_grid[# i,1][$ "tick"] -= 1*DELTATIME//Decrease tick every step
+		effect_script_execute(_effect,EFFECT_SCRIPT_DRAWING,[target])
 		if buff_grid[# i,1][$ "tick"] <= 0//If ticks = 0, then execute effect script
 		{
 			effect_script_execute(_effect,EFFECT_SCRIPT_TICK,[target])
 			var _effect_struct = return_struct_from_effect_index_by_effect_id(_effect)
 			buff_grid[# i,1][$ "tick"] = _effect_struct[$ EFFECT_TICKTIMER]//Reset tick for effect
 		}
+		
 		buff_grid[# i,1][$ "duration"] -= 1*DELTATIME
 		//If buff coming to end, remove buff.
 		if buff_grid[# i,1][$ "duration"] <= 0
@@ -128,4 +130,15 @@ function effect_remove(target,buff_grid,effect){
 	}
 	if ds_grid_width(buff_grid)-1 <= 0 exit
 	ds_grid_resize(buff_grid,ds_grid_width(buff_grid)-1,2)
+}
+
+function effect_exists(target,effect){
+	var buff_grid = variable_instance_get(target,"buff_grid")
+	for(var i=0;i<ds_grid_width(buff_grid)-1;i++){
+		var buff_name = return_struct_from_effect_index_by_effect_id(BUFF_INVISIBLE)
+		if buff_name[$ "effect_unlocale_name"] == effect{
+			return true
+		}
+	}
+	return false
 }

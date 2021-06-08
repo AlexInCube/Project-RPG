@@ -1,20 +1,32 @@
-function add_story_tag(tag){
-	with(obj_controller){
-		ds_list_add(story_tags,tag)
-	}
+function story_tags_register(){
+	global.story_tags = ds_map_create()
+	
+	story_tag_add("bush_destroyer")
+	story_tag_add("ewgen_saved_from_slimes")
+	story_tag_add("help_ewgen_with_water")
+	
+	show_debug_message("Registered "+string(ds_map_size(global.story_tags))+" story tags")
 }
 
-function remove_story_tag(tag){
-	with(obj_controller){
-		ds_list_delete(story_tags,ds_list_find_index(story_tags,tag))
-	}
+function story_tags_save(){
+	ds_list_write(cur_story_tags)
 }
 
-function exist_story_tag(tag){
+function story_tag_add(tag){
+	ds_map_add(global.story_tags,tag,false)
+}
+
+function story_tag_status(tag,status){
+	global.story_tags[? tag] = status
 	with(obj_controller){
-		if ds_list_find_index(story_tags,tag) == -1{
-			return false
+		if status = true{
+			ds_list_add(cur_story_tags,tag)
+		}else{
+			ds_list_delete(cur_story_tags,ds_list_find_index(cur_story_tags,tag))
 		}
-		return true
 	}
+}
+
+function story_tag_exist(tag){
+	return global.story_tags[? tag]
 }

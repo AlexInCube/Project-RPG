@@ -91,6 +91,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f1766b48-c5da-468d-8f88-da0d89581ddb","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Player Sprites",
     "path": "folders/Objects/Game Objects/Player/Player Sprites.yy",

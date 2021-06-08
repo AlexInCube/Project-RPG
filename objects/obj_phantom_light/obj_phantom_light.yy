@@ -18,14 +18,14 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_phantom_light","path":"objects/obj_phantom_light/obj_phantom_light.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_phantom_light","path":"objects/obj_phantom_light/obj_phantom_light.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Effects _ VFX",
-    "path": "folders/Objects/Utility/Effects _ VFX.yy",
+    "name": "Light",
+    "path": "folders/Objects/Utility/Effects _ VFX/Light.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_phantom_light",

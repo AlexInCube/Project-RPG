@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9acd5c32-eb07-460f-a7ae-25d18ef91edf","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "PhysWeapon",
     "path": "folders/Objects/Controllers/Inventory/Items Sprites/Weapon/PhysWeapon.yy",

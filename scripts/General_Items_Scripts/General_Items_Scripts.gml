@@ -71,4 +71,15 @@ function consumable_potion_render(xx,yy,inventory,slot_id){
 	draw_text(xx+32,yy+12,string(_uses))
 }
 
+function money_render(xx,yy,inventory,slot_id){
+	var _item = inventory[# slot_id,0]
+	var _item_amount = inventory[# slot_id,1]
+	var _item_struct = return_struct_from_item_index_by_item_id(_item)
+	var _sub_img = 0
+	if _item_amount >= 500{
+		_sub_img = 1
+	}
+	draw_sprite(_item_struct[$ "item_sprite"],_sub_img,xx+16,yy+16)
+}
+
 #endregion 

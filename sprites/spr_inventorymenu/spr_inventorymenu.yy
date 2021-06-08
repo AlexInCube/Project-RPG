@@ -71,6 +71,7 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"6d4a1bd0-1c47-4473-ae65-f8a3ba564a95","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"36b7cd47-a934-4997-bbc4-cde592b6f297","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Inventory Sprites",
     "path": "folders/Objects/Controllers/Inventory/Inventory Sprites.yy",

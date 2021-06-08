@@ -10,7 +10,7 @@ endpoint = undefined;
 dsnPublicKey = undefined;
 dsnSecretKey = undefined;
 
-gmSentryVersion = "1.0.12";
+gmSentryVersion = "1.0.13 Custom";
 gmSentryLogFilePrefix = "gmsentry_";
 
 // map for storing async requests
@@ -46,7 +46,19 @@ ds_map_add(os, "os_is_network_connected", os_is_network_connected());
 ds_map_add(os, "os_get_language", os_get_language()); 
 ds_map_add(os, "os_get_region", os_get_region()); 
 // disabled for privacy :)
-//ds_map_add_map(app, "os_get_info", os_get_info());
+var os_map = os_get_info();
+if (os_map != -1)
+   {
+   var size = ds_map_size(os_map);
+   var key = ds_map_find_first(os_map);
+   for (var i = 0; i < size - 1; i++;)
+      {
+      ds_map_add(os, key, ds_map_find_value(os_map, key))
+      key = ds_map_find_next(os_map, key);
+      }
+   ds_map_destroy(os_map);
+   }
+ds_map_destroy(os_map)
 ds_map_add_map(precomputeContexts, "os", os);
 
 var runtime = ds_map_create();

@@ -8,10 +8,14 @@ switch(choice_variable){
 		mySpeaker[i]	= id;
 		//Line 1
 		i++;
-		myText[i]		= ["Да","Нет"];
+		myText[i]		= [DIALOGUE_MACRO_TRADE+"Что-нибудь можно взять","В другой раз"];
 		myTypes[i]		= 1;
 		mySpeaker[i]	= obj_player;
-		myScripts[i]	= [[open_trade_window,trade_arr,myName],[nothing]]
-		myNextLine[i]	= [-1,-1];
+		myNextLine[i]	= [2,-1];
+		//Line 2
+		i++
+		myText[i]		= "Выбирай что хочешь, только лучший товар!";
+		myScripts[i]	= [open_trade_window,trade_arr,myName]
+		mySpeaker[i]	= id;
 	break;
 }

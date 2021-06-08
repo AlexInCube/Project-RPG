@@ -1,11 +1,11 @@
-if exist_story_tag("ewgen_saved_from_slimes"){
+if story_tag_exist("ewgen_saved_from_slimes"){
 	instance_destroy()
 }
 var myText
 var i = 0;
 myText[i]		= "Похоже этот человек попал в беду!"
 i++;
-myText[i]		= "Надо ему помочь, (чтобы атаковать нажми: "+return_normal_control_word(global.settings.controls.attack_key)+")";
+myText[i]		= "Надо ему помочь"
 
 t_scene_info = [
 	[cutscene_take_player_control],

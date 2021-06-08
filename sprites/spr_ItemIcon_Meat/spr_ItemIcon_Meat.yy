@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d11b6cf7-a968-4492-b2a1-7b26e43dcd35","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "itempack",
     "path": "folders/Objects/Controllers/Inventory/Items Sprites/itempack.yy",

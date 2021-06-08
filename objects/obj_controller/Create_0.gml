@@ -9,22 +9,13 @@
 depth=-99999999
 //Getting input
 get_input()
-//Story tags
-story_tags = ds_list_create()
 //World time (day and night cycle)
 seconds = 0
 minutes = 0 
 hours = 8
-
-time_increment = 1
-
 day = 0
-
-max_darkness = 0.7
-darkness = 0
-light_colour = c_white
-time_is_go = true
-
+time_increment = 1//Increase this if we want speed up time
+time_is_go = true//If we need stop the time
 enum phase{
 	sunrise = 6,
 	daytime = 8.5,
@@ -33,9 +24,15 @@ enum phase{
 }
 
 global.day_phase = PHASE_TYPE_NIGHT
-global.interface_lock_by_game = false
-//Overlay surface
-overall_gui_surf = surface_create(GUIWIDTH,GUIHEIGHT)//Draw something over all
+max_darkness = 0.7
+darkness = 0//Light Surface Alpha
+light_colour = c_white
+
+
+cur_story_tags = ds_list_create()//Tags about story
+
+global.interface_lock_by_game = false//Turning on/off interface if game want it
+
 
 //Windows ID
 inventorywindow=noone

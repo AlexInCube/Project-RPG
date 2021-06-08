@@ -60,6 +60,19 @@ function add_components(name, sprite_index, stackable) {
 	}
 }
 
+function add_other_item(name, sprite_index, stackable, item_t, item_struct) {
+	var ds_size = ds_list_size(global.item_index)
+	global.item_index[| ds_size] = new item_struct()
+	with(global.item_index[| ds_size]){
+		item_unlocale_name = name
+		item_locale_name = find_keyword(item_unlocale_name)
+		item_sprite = sprite_index
+		item_description = find_keyword(item_unlocale_name+"_description")
+		item_stacking = stackable
+		item_type = item_t
+	}
+}
+
 function add_spell(name, sprite_index, item_struct, arg_array) {
 	var ds_size = ds_list_size(global.item_index)
 	global.item_index[| ds_size] = new item_struct()

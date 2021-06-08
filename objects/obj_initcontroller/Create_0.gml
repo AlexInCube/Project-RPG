@@ -2,10 +2,10 @@
 randomize()
 
 setup_default_settings()//Setup default settings
-load_settings()//Load volume, controlls and other settings
+load_settings()//Load volume, controls and other settings
 
 game_set_speed(global.settings.video.game_speed, gamespeed_fps);
-change_v_sync_mode(global.settings.video.v_sync)
+
 
 
 if !directory_exists("Saves"){

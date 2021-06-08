@@ -8,17 +8,15 @@ switch(choice_variable){
 	case "saved_from_slimes":
 		var i = 0;
 		//Line 0
-		myText[i]		= "Уже не могу стоять на ногах...";
+		myText[i]		= "[shake]Уже не могу стоять на ногах[/shake]...";
 		mySpeaker[i]	= id;
-		myTextSpeed[i]	= [1,0.2]
 		//Line 1
 		i++;
-		myText[i]		= "Я бегал от них слишком долго, мне нужна вода.";
+		myText[i]		= "[shake]Я бегал от них слишком долго, мне нужна[/shake][delay,100].[delay,100].[delay,100].[delay,100][c_blue]попить.";
 		mySpeaker[i]	= id;
-		myTextSpeed[i]	= [1,0.2]
 		//Line 2
 		i++;
-		myText[i]		= "Можешь принести мне воды?";
+		myText[i]		= "[shake]Можешь принести мне [/shake][c_blue]воды?";
 		mySpeaker[i]	= id;
 		//Line 3
 		i++;
@@ -28,24 +26,22 @@ switch(choice_variable){
 		myNextLine[i]	= [4,5];
 		//Line 4
 		i++;
-		myText[i]		= "Жду тебя.";
+		myText[i]		= "[shake]Я дам тебе немного [c_green]денег[/c], чтобы ты пришёл в [c_red]\"Шестёрочку\"[/c] и купил [c_blue]водички[c].";
 		mySpeaker[i]	= id;
 		myNextLine[i]	= -1
 		myScripts[i]	= [method_get_index(wait_water)]
 		//Line 5
 		i++;
-		myText[i]		= "Почемуууууу нееет?";
+		myText[i]		= "[shake]Почемуууууу [c_red]нееет?";
 		mySpeaker[i]	= id;
 		myNextLine[i]	= -1
-		myTextSpeed[i]	= [1,0.2]
 	break
 	
 	case "wait_water":
 		var i = 0
 		//Line 0
-		myText[i]		= "Неужели ты уже раздобыл где-то воду?";
+		myText[i]		= "[shake]Неужели ты принёс [c_blue]водичку?";
 		mySpeaker[i]	= id;
-		myTextSpeed[i]	= [1,0.2]
 		//Line 1
 		i++;
 		myText[i]		= ["Нет"];
@@ -60,13 +56,20 @@ switch(choice_variable){
 		}
 		//Line 2
 		i++
-		myText[i]		= "ЧТО ТЫ ЗДЕСЬ забыл ТОГДААААААААааааааа.....";
+		myText[i]		= "[shake][c_red]ЧТО ТЫ ЗДЕСЬ забыл ТОГДААААААААааааааа.....";
 		mySpeaker[i]	= id;
 		myNextLine[i]	= -1
-		myTextSpeed[i]	= [1,0.2]
 		//Line 3
 		i++
-		myText[i]		= "Спасибо";
+		myText[i]		= "[c_green]Спасибо";
+		mySpeaker[i]	= id;
+		myNextLine[i]	= -1
+	break;
+	
+	case "drink_water":
+		var i = 0
+		//Line 0
+		myText[i]		= "Иди гуляй";
 		mySpeaker[i]	= id;
 		myNextLine[i]	= -1
 	break;

@@ -1,8 +1,8 @@
-if exist_story_tag("bush_destroyer"){
+if story_tag_exist("bush_destroyer"){
 	instance_destroy()
 }
 function destroy_after(){
-	add_story_tag("bush_destroyer")
+	story_tag_status("bush_destroyer",true)
 	instance_destroy(id)
 }
 event_register([event.trigger,id],id,destroy_after)

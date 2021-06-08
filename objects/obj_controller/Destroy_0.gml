@@ -1,3 +1,3 @@
-if surface_exists(overall_gui_surf){
-	surface_free(overall_gui_surf)
+if surface_exists(global.overlay_surf){
+	surface_free(global.overlay_surf)
 }

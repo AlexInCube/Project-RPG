@@ -1,4 +1,4 @@
-if exist_story_tag("bush_destroyer"){
+if story_tag_exist("bush_destroyer"){
 	instance_destroy()
 }
 event_register([event.itemPickuped,"wooden_stick",1],id,instance_destroy_ext,id,true)

@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ec04f4ce-9829-4f9b-9479-6d2905a26fec","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Developer Tiles",
     "path": "folders/Tile Sets/Developer Tiles.yy",

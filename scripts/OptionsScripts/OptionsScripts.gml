@@ -146,6 +146,11 @@ function change_show_damage(boolean) {
 	global.settings.interface.showdamage=boolean
 }
 
+function change_show_button_hint(boolean) {
+	global.settings.interface.show_button_hint=boolean
+}
+
+
 function change_cursor_type(boolean) {
 	global.settings.another.use_sys_cursor=boolean
 	if global.settings.another.use_sys_cursor{
@@ -160,6 +165,10 @@ function change_cursor_type(boolean) {
 function change_v_sync_mode(boolean) {
 	global.settings.video.v_sync=boolean
 	display_reset(0,global.settings.video.v_sync)
+}
+
+function change_show_addition_info(boolean) {
+	global.settings.controls.invert_addition_info=boolean
 }
 
 ///@description change_gui_size

@@ -83,6 +83,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"747bbaa7-e476-4152-9466-31baf8902db6","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Main Menu Sprites",
     "path": "folders/Objects/Controllers/Main Menu/Main Menu Sprites.yy",

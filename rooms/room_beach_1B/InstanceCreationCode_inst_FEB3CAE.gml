@@ -1,3 +1,3 @@
-if exist_story_tag("bush_destroyer"){
+if story_tag_exist("bush_destroyer"){
 	instance_destroy()
 }

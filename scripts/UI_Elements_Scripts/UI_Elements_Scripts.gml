@@ -56,6 +56,19 @@ function create_fancy_button(xx,yy,_sprite,_depth,text,script){
 	return _button
 }
 
+function create_fancy_button_draw_end(xx,yy,_sprite,_depth,text,script){
+	var _button = instance_create_depth(0,0,_depth,obj_ui_fancy_button_draw_end)
+	with (_button){
+		button_x = xx
+		button_y = yy
+		button_txt = text
+		button_sprite = _sprite
+		button_script = script
+		event_user(0)
+	}
+	return _button
+}
+
 function create_toggle_button(xx,yy,_sprite,_depth,toggle_state,button_scr,_var){
 	var _button = instance_create_depth(0,0,_depth,obj_ui_toggle_button)
 	with (_button){
@@ -81,6 +94,20 @@ function create_slider_bar(xx,yy,_depth,cur_value,min_val,max_val,_step_val,slid
 		min_value = min_val
 		max_value = max_val
 		slider_var = slider_arg
+	}
+	return _button
+}
+
+function create_textbox(xx,yy,_depth,width,height,char_limit,draw_end){
+	var _button = instance_create_depth(0,0,_depth,obj_ui_textbox)
+
+	with (_button){
+		self.xx = xx
+		self.yy = yy
+		self.char_limit = char_limit
+		box_width = width
+		box_height = height
+		self.draw_end = draw_end
 	}
 	return _button
 }

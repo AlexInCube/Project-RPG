@@ -10,7 +10,7 @@ var xx=0, i=0; repeat ds_grid_width(buff_grid){
 	if is_undefined(effect_id) or effect_id = UNKNOWN_EFFECT{continue}
 	var _effect_struct = return_struct_from_effect_index_by_effect_id(buff_grid[# i-1,0])
 	if _effect_struct[$ EFFECT_HIDE_ICON] == true{ continue}//If hide_icon true, dont draw icon and dont increase X offset
-	draw_effect(4+(32*xx),GUIHEIGHT-100,buff_grid,i-1)
+	draw_effect(172+(32*xx),GUIHEIGHT-40,buff_grid,i-1)
 	xx++
 }
 
@@ -20,7 +20,14 @@ for(var i=0;i<5;i++){
 	draw_sprite(spr_slot,0,slot_x+(1*i),slot_y)
 	slot(global.inventory,i,slot_x+(1*i),slot_y,false)
 }
-
+//Draw button hints for fast use items
+if global.settings.interface.show_button_hint{
+draw_button_hint(10,GUIHEIGHT-90,global.settings.controls.inventory_hotkey1)
+draw_button_hint(42,GUIHEIGHT-90,global.settings.controls.inventory_hotkey2)
+draw_button_hint(76,GUIHEIGHT-90,global.settings.controls.inventory_hotkey3)
+draw_button_hint(108,GUIHEIGHT-90,global.settings.controls.inventory_hotkey4)
+draw_button_hint(142,GUIHEIGHT-90,global.settings.controls.inventory_hotkey5)
+}
 draw_set_font(fnt_small)
 draw_set_color(c_black)
 

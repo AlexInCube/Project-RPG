@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7f62e98b-4659-46b6-8514-e6ad31eff3df","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Shotgun Sprites",
     "path": "folders/Weapons/Shotgun/Shotgun Sprites.yy",

@@ -9,7 +9,7 @@ switch(choice_variable){
 		myText[i]		= "Не ждал что я прийду? А я пришёл.";
 		mySpeaker[i]	= id;
 		myNextLine[i]	= -1
-		myScripts[i]	= [penguin_not_wait]
+		//myScripts[i]	= [penguin_not_wait]
 	break;
 #endregion
 #region First Dialogue

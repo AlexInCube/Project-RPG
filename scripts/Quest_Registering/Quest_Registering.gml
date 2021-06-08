@@ -1,4 +1,4 @@
-function registerquests(){
+function register_quests(){
 	global.quest_index = ds_list_create()
 	
 	register_quest("first_steps",[
@@ -8,6 +8,7 @@ function registerquests(){
 	])
 	
 	register_quest("help_for_ewgen",[
+		[quest_type.talk,obj_lesha_npc],
 		[quest_type.deliver,"wooden_water_bucket",1],
 	])
 	

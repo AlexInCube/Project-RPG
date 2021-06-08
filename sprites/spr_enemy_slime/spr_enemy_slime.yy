@@ -64,13 +64,14 @@
     "eventStubScript": null,
     "parent": {"name":"spr_enemy_slime","path":"sprites/spr_enemy_slime/spr_enemy_slime.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "spr_enemy_slime",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9f3ee974-9ea7-446a-af09-387461d54af7","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Slimes",
     "path": "folders/Objects/Game Objects/Enemies/Slimes.yy",

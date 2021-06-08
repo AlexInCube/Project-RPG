@@ -69,7 +69,7 @@ function save_game() {
 			minutes: obj_controller.minutes,
 			seconds: obj_controller.seconds
 		},
-		story_tags: ds_list_write(obj_controller.story_tags),
+		story_tags: ds_list_write(obj_controller.cur_story_tags),
 		saving_time: {
 			day: current_day,
 			month: current_month,

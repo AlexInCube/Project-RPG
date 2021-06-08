@@ -11,8 +11,8 @@ function get_input() {
 	right = keyboard_check(global.settings.controls.key_right)
 	down = keyboard_check(global.settings.controls.key_down)
 
-	dialogue_scroll_up=keyboard_check_pressed(ord("W"))
-	dialogue_scroll_down=keyboard_check_pressed(ord("S"))
+	dialogue_scroll_up=keyboard_check_pressed(global.settings.controls.key_up)
+	dialogue_scroll_down=keyboard_check_pressed(global.settings.controls.key_down)
 
 	inventory_hotkey1 = keyboard_check_pressed(global.settings.controls.inventory_hotkey1)
 	inventory_hotkey2 = keyboard_check_pressed(global.settings.controls.inventory_hotkey2)
@@ -45,9 +45,18 @@ function get_input() {
 	combination_key = keyboard_check(global.settings.controls.combination_key)
 	//Pause menu
 	pause_key = keyboard_check_pressed(global.settings.controls.pause_key)
+	//Additional info
+	if global.settings.controls.invert_addition_info{
+		addition_key = !keyboard_check(global.settings.controls.addition_key)
+	}else{
+		addition_key = keyboard_check(global.settings.controls.addition_key)
+	}
+	
 
 	//Debug menu
 	developer_key = keyboard_check_pressed(global.settings.controls.developer_key)
+
+	
 
 	xaxis = (right - left)
 	yaxis = (down - up)

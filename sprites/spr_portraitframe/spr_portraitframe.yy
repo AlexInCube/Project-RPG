@@ -71,6 +71,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9d3af481-e3ff-4eef-9381-e87f791f5084","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Dialogue Sprites",
     "path": "folders/Objects/Controllers/Dialogue System/Dialogue Sprites.yy",

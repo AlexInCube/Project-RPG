@@ -90,10 +90,10 @@ function check_requirement_item(inventory, item, itemamount) {
 	
 	
 /// @description Grab items from player inventory
-/// @function grab_item(item,amount)
+/// @function item_grab(item,amount)
 /// @param item_id
 /// @param amount
-function grab_item(item_id,itemamount,inventory) {
+function item_grab(item_id,itemamount,inventory) {
 	if !check_requirement_item(inventory,item_id,itemamount) exit
 	var findedamount = 0
 

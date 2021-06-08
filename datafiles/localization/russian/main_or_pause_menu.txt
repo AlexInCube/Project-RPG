@@ -20,10 +20,14 @@
 	"save_time":"Время сохранения: ",
 	"game_version":"Версия игры: ",
 	
+	"save_exists":"Уже существует сохранение с таким названием, вы хотите его перезаписать?",
+	"save_name_must_be_longer":"Имя сохранения должно иметь что-нибудь",
+	
 	"you_has_been_killed_by":"Вы были убиты: ",
 	"rage_quit":"ВЫЙТИ В ЯРОСТИ!!!",
 	
 	"are_you_sure":"Вы уверены что хотите бросить этот мир?",
 	"i_am_weak":"Да, я слабый.",
 	"i_am_not_surrender":"Нет, я не сдамся.",
+	"scribble_test":"[wave][c_black]Here's is a string[/c][/wave] that'll wave slowly"
 }

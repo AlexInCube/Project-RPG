@@ -4,9 +4,9 @@
 if(type[page] == 0){
 	if obj_controller.interact_key or mouse_check_button_released(mb_left){
 
-		//If we haven't "typed out" all the letters, immediately "type out" all letters (works as a "skip")
-		if(charCount < str_len){
+		if element.get_typewriter_state() < 1{
 			charCount = string_length(text_NE);
+			element.typewriter_skip()
 		}
 		
 		//Only increase page IF page + 1,is less than the total number of entries
@@ -30,7 +30,7 @@ else {
 
 	if obj_controller.interact_key or mouse_check_button_released(mb_left){ 
 		chosen = true; 
-		alarm[2] = 30; 
+		alarm[2] = 30 * DELTATIME; 
 		audio_play_sound(select_snd_effect, priority_snd_effect, false);
 	} 
 	

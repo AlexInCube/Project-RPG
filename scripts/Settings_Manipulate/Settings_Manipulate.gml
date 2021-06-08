@@ -15,6 +15,7 @@ global.settings = {
 	interface : {
 		guisize: 1,
 		language: 0,//0 - Russian, 1 - English
+		show_button_hint: true,
 		showdamage:	true
 	},
 	game : {
@@ -40,6 +41,8 @@ global.settings = {
 		inventory_hotkey10 : ord("0"),
 
 		pickup_key : vk_space,
+		addition_key : vk_alt,
+		invert_addition_info : true,
 		interact_key :	ord("E"),
 		attack_key : ord("V"),
 		equipment_key :	ord("U"),

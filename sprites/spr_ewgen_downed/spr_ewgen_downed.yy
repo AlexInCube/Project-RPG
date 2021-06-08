@@ -25,7 +25,6 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"3618de1e-3c5a-4251-9019-aa207525bef8","path":"sprites/spr_ewgen_downed/spr_ewgen_downed.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3618de1e-3c5a-4251-9019-aa207525bef8","path":"sprites/spr_ewgen_downed/spr_ewgen_downed.yy",},"LayerId":{"name":"621ee700-6b34-4d0c-8bc2-e0c190a1c286","path":"sprites/spr_ewgen_downed/spr_ewgen_downed.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"3618de1e-3c5a-4251-9019-aa207525bef8","path":"sprites/spr_ewgen_downed/spr_ewgen_downed.yy",},"LayerId":{"name":"6683aa13-1de2-44c9-bed1-72a37e6d2c3b","path":"sprites/spr_ewgen_downed/spr_ewgen_downed.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_ewgen_downed","path":"sprites/spr_ewgen_downed/spr_ewgen_downed.yy",},"resourceVersion":"1.0","name":"3618de1e-3c5a-4251-9019-aa207525bef8","tags":[],"resourceType":"GMSpriteFrame",},
   ],
@@ -68,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"6683aa13-1de2-44c9-bed1-72a37e6d2c3b","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Ewgen Resources",
     "path": "folders/Objects/NPCs/Ewgen Resources.yy",

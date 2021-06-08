@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a4a4a1e8-59f6-4147-80a7-2c1e53995922","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Armor",
     "path": "folders/Objects/Controllers/Inventory/Items Sprites/Armor.yy",

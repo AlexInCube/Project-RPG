@@ -69,6 +69,7 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"3e7b46cc-fa15-4e6f-9aba-64d8a371e16d","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a09e631f-ed00-4af5-850c-3048fafdb38c","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Shotgun Sprites",
     "path": "folders/Weapons/Shotgun/Shotgun Sprites.yy",
