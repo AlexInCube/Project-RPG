@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Utility",
-    "path": "folders/Sprites/Game Objects/Utility.yy",
+    "path": "folders/Objects/Utility.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_damage",

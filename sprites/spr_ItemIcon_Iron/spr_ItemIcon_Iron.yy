@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 1,
-  "bbox_right": 14,
-  "bbox_top": 4,
-  "bbox_bottom": 14,
+  "bbox_left": 3,
+  "bbox_right": 28,
+  "bbox_top": 6,
+  "bbox_bottom": 25,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 16,
-  "height": 16,
+  "width": 32,
+  "height": 32,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"cb4db29a-ee06-4f73-a284-4be6596946ed","path":"sprites/spr_ItemIcon_Iron/spr_ItemIcon_Iron.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"cb4db29a-ee06-4f73-a284-4be6596946ed","path":"sprites/spr_ItemIcon_Iron/spr_ItemIcon_Iron.yy",},"LayerId":{"name":"48fc0935-677f-4bad-9a25-40d86b28aeed","path":"sprites/spr_ItemIcon_Iron/spr_ItemIcon_Iron.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_ItemIcon_Iron","path":"sprites/spr_ItemIcon_Iron/spr_ItemIcon_Iron.yy",},"resourceVersion":"1.0","name":"cb4db29a-ee06-4f73-a284-4be6596946ed","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"59920a8e-d730-4cf2-b088-84e94c32d019","path":"sprites/spr_ItemIcon_Iron/spr_ItemIcon_Iron.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"59920a8e-d730-4cf2-b088-84e94c32d019","path":"sprites/spr_ItemIcon_Iron/spr_ItemIcon_Iron.yy",},"LayerId":{"name":"36e68cd2-81fb-4a9a-bd7a-5dad4058efeb","path":"sprites/spr_ItemIcon_Iron/spr_ItemIcon_Iron.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_ItemIcon_Iron","path":"sprites/spr_ItemIcon_Iron/spr_ItemIcon_Iron.yy",},"resourceVersion":"1.0","name":"59920a8e-d730-4cf2-b088-84e94c32d019","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_ItemIcon_Iron","path":"sprites/spr_ItemIcon_Iron/spr_ItemIcon_Iron.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"5978d2b7-4601-4979-af08-53b1cc664a33","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cb4db29a-ee06-4f73-a284-4be6596946ed","path":"sprites/spr_ItemIcon_Iron/spr_ItemIcon_Iron.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b1b252d9-c904-4992-81ba-b72959819830","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"59920a8e-d730-4cf2-b088-84e94c32d019","path":"sprites/spr_ItemIcon_Iron/spr_ItemIcon_Iron.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 1080,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 8,
-    "yorigin": 8,
+    "xorigin": 16,
+    "yorigin": 16,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ItemIcon_Iron","path":"sprites/spr_ItemIcon_Iron/spr_ItemIcon_Iron.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"48fc0935-677f-4bad-9a25-40d86b28aeed","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"36e68cd2-81fb-4a9a-bd7a-5dad4058efeb","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

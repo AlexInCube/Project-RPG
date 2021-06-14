@@ -76,9 +76,11 @@ function money_render(xx,yy,inventory,slot_id){
 	var _item_amount = inventory[# slot_id,1]
 	var _item_struct = return_struct_from_item_index_by_item_id(_item)
 	var _sub_img = 0
-	if _item_amount >= 500{
-		_sub_img = 1
-	}
+	if _item_amount>800{_sub_img = 4
+	}else if _item_amount>600{_sub_img = 3
+	}else if _item_amount>400{_sub_img = 2
+	}else if _item_amount>200{_sub_img = 1}
+
 	draw_sprite(_item_struct[$ "item_sprite"],_sub_img,xx+16,yy+16)
 }
 

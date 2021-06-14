@@ -59,8 +59,8 @@
   "iosCocoaPodDependencies": "",
   "tvosCocoaPodDependencies": "",
   "parent": {
-    "name": "Project RPG",
-    "path": "Project RPG.yyp",
+    "name": "Libraries",
+    "path": "folders/Libraries.yy",
   },
   "resourceVersion": "1.2",
   "name": "myGMlibrary",

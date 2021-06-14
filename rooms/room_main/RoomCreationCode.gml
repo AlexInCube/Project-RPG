@@ -1,0 +1,1 @@
+create_transition(transition.fade_out)

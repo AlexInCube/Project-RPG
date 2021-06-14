@@ -1,0 +1,1 @@
+drop_mob_loot(50,"iron_ore",1)

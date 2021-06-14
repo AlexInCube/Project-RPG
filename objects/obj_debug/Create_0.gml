@@ -5,9 +5,9 @@
 #macro LOGGER_LOCALIZATION_MANAGER "[ Localization Manager ] "
 #macro LOGGER_SPELL_MANAGER "[ Spell Manager ] "
 
-target_delta = 1/60//Default game speed
+target_delta = 60//Default game speed
 actual_delta = delta_time/1000000//Delta in seconds
-global.delta_multiplier = actual_delta/target_delta//delta_multiplier*speed
+global.delta_multiplier = 1//actual_delta/target_delta
 
 global.debugmode=false
 

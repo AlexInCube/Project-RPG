@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 3,
-  "bbox_right": 29,
-  "bbox_top": 16,
-  "bbox_bottom": 29,
+  "bbox_left": 2,
+  "bbox_right": 31,
+  "bbox_top": 6,
+  "bbox_bottom": 27,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e306c1f2-5711-4c04-988f-098891a0ea77","path":"sprites/spr_leatherboots/spr_leatherboots.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e306c1f2-5711-4c04-988f-098891a0ea77","path":"sprites/spr_leatherboots/spr_leatherboots.yy",},"LayerId":{"name":"17b92815-2cff-48a0-a94e-5ddb485c6f3b","path":"sprites/spr_leatherboots/spr_leatherboots.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_leatherboots","path":"sprites/spr_leatherboots/spr_leatherboots.yy",},"resourceVersion":"1.0","name":"e306c1f2-5711-4c04-988f-098891a0ea77","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f31c9b95-e39e-4c66-98de-a76809179076","path":"sprites/spr_leatherboots/spr_leatherboots.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f31c9b95-e39e-4c66-98de-a76809179076","path":"sprites/spr_leatherboots/spr_leatherboots.yy",},"LayerId":{"name":"8cc33c8e-7714-4031-9f74-7c9a8c0754bd","path":"sprites/spr_leatherboots/spr_leatherboots.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_leatherboots","path":"sprites/spr_leatherboots/spr_leatherboots.yy",},"resourceVersion":"1.0","name":"f31c9b95-e39e-4c66-98de-a76809179076","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_leatherboots","path":"sprites/spr_leatherboots/spr_leatherboots.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"b8f21d67-94c6-44b9-8e2b-0625e81dd36a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e306c1f2-5711-4c04-988f-098891a0ea77","path":"sprites/spr_leatherboots/spr_leatherboots.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1ae82512-2064-4251-ab25-4dc932a55be8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f31c9b95-e39e-4c66-98de-a76809179076","path":"sprites/spr_leatherboots/spr_leatherboots.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"17b92815-2cff-48a0-a94e-5ddb485c6f3b","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8cc33c8e-7714-4031-9f74-7c9a8c0754bd","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

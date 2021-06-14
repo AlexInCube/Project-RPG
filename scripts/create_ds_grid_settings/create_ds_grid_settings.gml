@@ -31,7 +31,7 @@ function create_ds_grid_settings() {
 		[find_keyword("resolution"),			settings_element_type.shift, change_resolution,sr,resolution_array],
 		[find_keyword("fullscreen_mode"),		settings_element_type.toggle, change_window_mode,global.settings.video.fullscreen],
 		[find_keyword("v_sync_mode"),			settings_element_type.toggle, change_v_sync_mode,global.settings.video.v_sync],
-		[find_keyword("fps_limit"),				settings_element_type.slider,change_game_speed,[global.settings.video.game_speed,["video","game_speed"]],10,300,10],
+		[find_keyword("fps_limit"),				settings_element_type.slider,change_game_speed,[global.settings.video.game_speed,["video","game_speed"]],10,150,10],
 		
 		[find_keyword("interface_settings"),	settings_element_type.title],
 		[find_keyword("gui_size"),				settings_element_type.slider, change_gui_size,[global.settings.interface.guisize,["interface","guisize"]],0.5,1.3,0.1],

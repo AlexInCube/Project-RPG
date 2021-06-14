@@ -17,4 +17,13 @@ trade_arr			= [//Trade list
 			["wooden_water_bucket",1]
 		]
 	],
+	[
+		[//Items to spend
+			["money",1],
+			["iron_ore",2]
+		],
+		[//Items to be received
+			["iron_ingot",1]
+		]
+	],
 ]
