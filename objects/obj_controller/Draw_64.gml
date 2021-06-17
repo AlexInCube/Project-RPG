@@ -3,12 +3,14 @@
 if instance_exists(obj_textbox) exit
 if global.interface_lock_by_game {exit}
 draw_set_alpha(1)
-draw_sprite(spr_hudbuttonsbackground,0,GUIWIDTH-224,GUIHEIGHT-40)
 
-if inventory_key{open_inventory()}else if equipment_key{open_equipment()}else if questlist_key{open_quest_list()}
-draw_button_hud(GUIWIDTH-224,GUIHEIGHT-36,GUIWIDTH-188,GUIHEIGHT,spr_backpack,open_inventory)//Open inventory window
-draw_button_hud(GUIWIDTH-187,GUIHEIGHT-36,GUIWIDTH-151,GUIHEIGHT,spr_equipment,open_equipment)//Open equipment
-draw_button_hud(GUIWIDTH-150,GUIHEIGHT-36,GUIWIDTH-115,GUIHEIGHT,spr_open_quest_list,open_quest_list)//Open quest list
+//HUD buttons block
+var hud_block_x = GUIWIDTH-224
+var hud_block_y = GUIHEIGHT-36
+draw_button_hud(hud_block_x+inventory_button_x,hud_block_y,spr_backpack,inventory_button_name,open_inventory)//Open inventory window
+draw_button_hud(hud_block_x+equipment_button_x,hud_block_y,spr_equipment,equipment_button_name,open_equipment)//Open equipment
+draw_button_hud(hud_block_x+questlist_button_x,hud_block_y,spr_open_quest_list,questlist_button_name,open_quest_list)//Open quest list
+draw_button_hud(hud_block_x+craft_button_x,hud_block_y,spr_craft,craft_button_name,open_craft)//Open quest list
 
 if global.settings.interface.show_button_hint{
 	draw_button_hint(GUIWIDTH-218,GUIHEIGHT-66,global.settings.controls.inventory_key)

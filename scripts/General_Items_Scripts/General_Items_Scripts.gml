@@ -82,6 +82,13 @@ function money_render(xx,yy,inventory,slot_id){
 	}else if _item_amount>200{_sub_img = 1}
 
 	draw_sprite(_item_struct[$ "item_sprite"],_sub_img,xx+16,yy+16)
+	
+	var item_amount = inventory[# slot_id, 1]
+	draw_set_halign(fa_right)
+	draw_set_valign(fa_top)
+	draw_set_font(fnt_small)
+	draw_set_color(c_white)
+	draw_text(xx+32,yy+12,item_amount)
 }
 
 #endregion 

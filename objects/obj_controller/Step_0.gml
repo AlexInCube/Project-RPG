@@ -75,3 +75,7 @@ var darks, colours, pstart, pend;
 	
 		darkness = lerp(d1, d2, dd-floor(dd));
 	}
+
+
+
+if inventory_key{open_inventory()}else if equipment_key{open_equipment()}else if questlist_key{open_quest_list()}

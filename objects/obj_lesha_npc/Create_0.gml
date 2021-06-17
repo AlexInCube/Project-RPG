@@ -26,4 +26,40 @@ trade_arr			= [//Trade list
 			["iron_ingot",1]
 		]
 	],
+	[
+		[//Items to spend
+			["money",1],
+			["iron_ingot",1],
+		],
+		[//Items to be received
+			["iron_helmet",1]
+		]
+	],
+	[
+		[//Items to spend
+			["money",3],
+			["iron_ingot",4],
+		],
+		[//Items to be received
+			["iron_chestplate",1]
+		]
+	],
+	[
+		[//Items to spend
+			["money",2],
+			["iron_ingot",3],
+		],
+		[//Items to be received
+			["iron_leggings",1]
+		]
+	],
+	[
+		[//Items to spend
+			["money",1],
+			["iron_ingot",1],
+		],
+		[//Items to be received
+			["iron_boots",1]
+		]
+	],
 ]

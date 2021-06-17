@@ -91,7 +91,7 @@ function event_unregister() {
 						ds_map_delete(global.eventMap,ev)
 					}else ds_list_delete(listenerList,i)
 					break
-					show_debug_message(LOGGER_EVENT_MANAGER+"Event UNregisted: "+ev)
+					show_debug_message(LOGGER_EVENT_MANAGER+"Event Unregisted: "+ev)
 				}
 				i++
 			}

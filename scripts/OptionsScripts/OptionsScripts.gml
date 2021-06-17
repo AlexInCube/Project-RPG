@@ -76,11 +76,10 @@ else {
     }
 }
 
-	if DEBUGMODE{
-		return string(str2)+" + "+string(str1);
-	}else{
-		return string(str2);
-	}
+	//if DEBUGMODE{
+	//	return string(str2)+" + "+string(str1);
+	//}
+	return string(str2);
 }
 	
 function change_volume(option_array) {

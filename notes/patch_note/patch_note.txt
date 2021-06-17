@@ -7,7 +7,5 @@ spell creating
 
 
 Maked in this version
-Added transitions fade_in and fade_out
-Some fixes with deltatime
-money item have more stages
-added iron ore
+improved hud
+fixed broken pc explode

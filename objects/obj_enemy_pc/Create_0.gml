@@ -4,7 +4,7 @@ image_speed = 1
 
 alarm[0] = irandom_range(120,180)/DELTATIME
 sight = 90//If pc detect player
-angry_sight = 20//If player too close to pc, pc explode.
+angry_sight = 40//If player too close to pc, pc explode.
 targetx = 0
 targety = 0
 

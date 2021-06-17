@@ -23,7 +23,7 @@ switch(equipmode){
 		draw_text(an_x,window_y+105,defenseword)
 		draw_text(an_x,window_y+125,agilityword)
 		//Draw button which go to advanced attributes
-		draw_button_hud(window_x+122,window_y+27,window_x+233,window_y+49,spr_equip_buttons,equip_advanc_button_scr)
+		//draw_button_hud(window_x+122,window_y+27,window_x+233,window_y+49,spr_equip_buttons,equip_advanc_button_scr)
 		draw_set_halign(fa_center)
 		draw_text(window_x+177,window_y+27,advancedword)
 		//Draw attribute value

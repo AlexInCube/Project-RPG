@@ -70,7 +70,7 @@ function register_items() {
 	add_other_quick_usable("wooden_bucket",spr_ItemIcon_EmptyBucket,1,wooden_bucket,[])
 	#endregion
 	
-	add_other_item("money",spr_item_money,1000,ITEM_TYPE_OTHER,money)
+	add_other_item("money",spr_item_money,999,ITEM_TYPE_OTHER,money)
 	
 	show_debug_message("Registered "+string(ds_list_size(global.item_index))+" items")
 }
