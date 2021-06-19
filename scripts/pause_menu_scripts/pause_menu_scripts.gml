@@ -58,7 +58,7 @@ function exit_to_main_menu(){
 	room_goto(room_main)
 }
 
-//Destroy anything saveable things in game 
+//Destroy any saveable things in game 
 function clear_app(){
 	instance_activate_all()
 	room_persistent = false
@@ -81,6 +81,7 @@ function clear_app(){
 	with(obj_inventory)instance_destroy()
 	with(obj_questmanager)instance_destroy()
 	with(obj_questlistener)instance_destroy()
+	with(obj_gui_screen_controller)instance_destroy()
 	ds_map_clear(global.eventMap)
 	
 	var ds_pos = ds_map_find_first(global.story_tags)

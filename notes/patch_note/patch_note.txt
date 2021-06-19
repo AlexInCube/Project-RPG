@@ -7,5 +7,4 @@ spell creating
 
 
 Maked in this version
-improved hud
-fixed broken pc explode
+Start reworking in game ui

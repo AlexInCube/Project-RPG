@@ -79,8 +79,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "HUD",
-    "path": "folders/Sprites/GUI/HUD.yy",
+    "name": "GUIscreens",
+    "path": "folders/Objects/Controllers/GUIscreens.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_craft",

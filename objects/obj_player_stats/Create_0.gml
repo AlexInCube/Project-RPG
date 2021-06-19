@@ -25,17 +25,6 @@ last_hit=""
 
 recalculate_stats(global.equipment)
 
-/*
-ds_map_add(global.stats,"phys_damagebuff",0)
-ds_map_add(global.stats,"magic_damagebuff",0)
-ds_map_add(global.stats,"physresistance",0)
-ds_map_add(global.stats,"magicresistance",0)
-ds_map_add(global.stats,"physresistancebuff",0)
-ds_map_add(global.stats,"magicresistancebuff",0)
-ds_map_add(global.stats,"strength",0)//inscrease physical damage resistance and physical damage deal
-ds_map_add(global.stats,"intelligence",0)//inscrease magical damage resistance and magical damage deal
-*/
-
 
 
 expr=0//Player current xp
@@ -55,6 +44,7 @@ fast_slots[2] = 68
 fast_slots[3] = 102
 fast_slots[4] = 138
 
+//Effects system
 draw_effect_start_x = 180
 
 function draw_effect(xx,yy,grid,effect_id){

@@ -10,6 +10,7 @@
 	"item_type_components":"Компонент",
 	"item_type_potion":"Зелье",
 	"item_type_spell":"Заклинание",
+	"item_type_other":"Остальное",
 	"item_stat_6":"Физический урон",
 	"item_stat_7":"Магический урон",
 	"item_stat_8":"Сила",
