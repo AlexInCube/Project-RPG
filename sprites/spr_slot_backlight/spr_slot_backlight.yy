@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Inventory Sprites",
-    "path": "folders/Objects/Controllers/Inventory/Inventory Sprites.yy",
+    "name": "GUIscreens",
+    "path": "folders/Objects/Controllers/GUIscreens.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_slot_backlight",

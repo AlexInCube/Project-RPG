@@ -6,7 +6,7 @@ window_width=sprite_get_width(window_sprite)
 window_height=sprite_get_height(window_sprite)
 window_x = 450
 window_y = 200
-
+overlay_sprite = spr_spell_creating_nine_slice
 txt_color = c_white
 txt_color_shadow = c_black
 txt_fnt = fnt_small
@@ -170,17 +170,3 @@ for (var i = 0; i<variable_struct_names_count(global.spell_pieces); i++){
 */
 #endregion
 
-function draw_overlay(txt){
-	if surface_exists(global.overlay_surf){
-		surface_set_target(global.overlay_surf)
-		var element_txt = scribble(txt)
-		element_txt.starting_format("fnt_small",txt_color)
-		var over_hint_width = element_txt.get_width()+11
-		var over_hint_height = element_txt.get_height()+12
-		var over_hint_x = device_mouse_x_to_gui(0)+20
-		var over_hint_y = device_mouse_y_to_gui(0)
-		draw_sprite_stretched(spr_spell_creating_nine_slice,0,over_hint_x,over_hint_y,over_hint_width,over_hint_height)
-		element_txt.draw(over_hint_x+6,over_hint_y)
-		surface_reset_target()
-	}
-}

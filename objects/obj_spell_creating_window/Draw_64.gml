@@ -68,7 +68,7 @@ draw_text_shadow(txt_box_x,txt_box_y,spell_data.spell_name,txt_fnt,1,txt_color_s
 //Import Spell Button
 draw_sprite(import_spell_spr,0,import_spell_x,import_spell_y)
 if mouseover(import_spell_x,import_spell_y,import_spell_x+import_spell_spr_width,import_spell_y+import_spell_spr_height){
-	draw_overlay(import_spell_word)
+	draw_overlay(import_spell_word,overlay_sprite)
 	if mouse_check_button_pressed(mb_left){
 		import_spell()
 	}
@@ -76,7 +76,7 @@ if mouseover(import_spell_x,import_spell_y,import_spell_x+import_spell_spr_width
 //Export Spell Button
 draw_sprite(export_spell_spr,0,export_spell_x,export_spell_y)
 if mouseover(export_spell_x,export_spell_y,export_spell_x+export_spell_spr_width,export_spell_y+export_spell_spr_height){
-	draw_overlay(export_spell_word)
+	draw_overlay(export_spell_word,overlay_sprite)
 	if mouse_check_button_pressed(mb_left){
 		export_spell()
 	}
@@ -94,7 +94,7 @@ for(var i = 0; i < array_length(groups);i++){
 		if mouse_check_button_pressed(mb_left){
 			selected_group = groups[i][$ "group_id"]
 		}
-		draw_overlay(groups[i][$ "group_name"]+"\n"+groups[i][$ "group_description"])
+		draw_overlay(groups[i][$ "group_name"]+"\n"+groups[i][$ "group_description"],overlay_sprite)
 	}
 }
 
@@ -109,7 +109,7 @@ for(var i=0;i<ds_map_size(selected_group);i++){
 	draw_sprite(piece_struct[$ "piece_sprite"],0,xx,yy)
 		
 	if mouseover(xx,yy,xx+cell_size,yy+cell_size){
-		draw_overlay(piece_struct[$ "hint_txt"])
+		draw_overlay(piece_struct[$ "hint_txt"],overlay_sprite)
 			
 		if mouse_check_button_pressed(mb_left){
 			if !array_equals(selected_slot,[-1,-1]){
@@ -130,7 +130,7 @@ draw_sprite(left_panel_sprite,0,left_panel_x,left_panel_y)
 
 draw_sprite(hint_spr,0,hint_x,hint_y)
 if mouseover(hint_x,hint_y,hint_x+hint_width,hint_y+hint_height){
-	draw_overlay(hint_txt)
+	draw_overlay(hint_txt,overlay_sprite)
 }
 //Draw config sides
 if selected_slot[0] != -1{

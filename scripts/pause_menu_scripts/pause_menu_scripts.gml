@@ -5,6 +5,7 @@ function start_load(){
 	room_goto(room_game_init)
 }
 function pause_game(){
+	if obj_gui_screen_controller.active_screen{close_screen() exit}
 	with instance_create_layer(0,0,"Controllers",obj_pause){
 		//Set background for pause
 		background = surface_create(GUIWIDTH,GUIHEIGHT)

@@ -7,4 +7,6 @@ spell creating
 
 
 Maked in this version
-Start reworking in game ui
+Improved overlay scripts (mouse tooltips and etc...)
+Screens can be closed by pause key
+Inventory and equipment are merged (almost)

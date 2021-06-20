@@ -10,3 +10,19 @@ for(i=0;i<inventory_size;i++)
 	ix = ii mod 5
 	iy = ii div 5
 }
+
+equipslotsxy[0,0] = equipment_x+2
+equipslotsxy[0,1] = equipment_y+2
+equipslotsxy[0,2] = ITEM_TYPE_HELMET
+equipslotsxy[1,0] = equipment_x+2
+equipslotsxy[1,1] = equipment_y+33
+equipslotsxy[1,2] = ITEM_TYPE_CHESTPLATE
+equipslotsxy[2,0] = equipment_x+2
+equipslotsxy[2,1] = equipment_y+64
+equipslotsxy[2,2] = ITEM_TYPE_LEGGINGS
+equipslotsxy[3,0] = equipment_x+2
+equipslotsxy[3,1] = equipment_y+95
+equipslotsxy[3,2] = ITEM_TYPE_BOOTS
+equipslotsxy[4,0] = equipment_x+2
+equipslotsxy[4,1] = equipment_y+126
+equipslotsxy[4,2] = ITEM_TYPE_WEAPON

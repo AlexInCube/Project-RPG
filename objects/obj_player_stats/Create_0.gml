@@ -62,7 +62,8 @@ function draw_effect(xx,yy,grid,effect_id){
 				draw_text_shadow(xx,yy,(grid[# effect_id,1][$ "tick"]),fnt_small,1,c_black,c_white,1)
 			}
 			if mouseover(xx,yy,xx+32,yy+32){
-				draw_effect_stat_mouse(_effect_struct)
+				var txt = _effect_struct[$ "effect_locale_name"]+"\n"+_effect_struct[$ "effect_description"]
+				draw_text_hover(txt,spr_hover_item_description,c_white,fa_center)
 			}
 		}
 }

@@ -15,15 +15,21 @@ function open_screen(screen_id){
 	with(obj_gui_screen_controller){
 		active_screen = true
 		current_screen = screen_id
-		current_obj_screen = create_screen_obj(current_screen)
+		create_screen_obj(current_screen)
 	}
 }
 
 function close_screen(){
-	if obj_gui_screen_controller.active_screen{
-		global.interface_lock_by_game = false
-		obj_gui_screen_controller.active_screen = false
-		instance_destroy(par_screen)
-		current_obj_screen = noone
+	global.interface_lock_by_game = false
+	obj_gui_screen_controller.active_screen = false
+	instance_destroy(par_screen)
+}
+
+function open_inventory() {
+	if !obj_gui_screen_controller.active_screen{
+		open_screen("inventory")
+	}else{
+		close_screen()
 	}
 }
+
