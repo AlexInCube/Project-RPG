@@ -4,9 +4,8 @@ saving non-unique objects
 add mouse support for control
 loot-tables
 spell creating
+fix gui scaling
 
 
 Maked in this version
-Improved overlay scripts (mouse tooltips and etc...)
-Screens can be closed by pause key
-Inventory and equipment are merged (almost)
+Completed inventory screen

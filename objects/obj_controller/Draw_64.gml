@@ -5,6 +5,7 @@ if global.interface_lock_by_game {exit}
 draw_set_alpha(1)
 
 //HUD buttons block
+/*
 var hud_block_x = GUIWIDTH-224
 var hud_block_y = GUIHEIGHT-36
 draw_button_hud(hud_block_x+inventory_button_x,hud_block_y,spr_backpack,inventory_button_name,open_inventory)//Open inventory window
@@ -19,6 +20,8 @@ if global.settings.interface.show_button_hint{
 	draw_button_hint(GUIWIDTH-181,GUIHEIGHT-66,global.settings.controls.equipment_key)
 	draw_button_hint(GUIWIDTH-144,GUIHEIGHT-66,global.settings.controls.questlist_key)
 }
+*/
+
 draw_set_halign(fa_left)
 draw_set_valign(fa_top)
 draw_text_shadow(GUIWIDTH-50,5,string(get_formatted_date(hours))+":"+string(get_formatted_date(minutes)),fnt_small,1,c_black,c_white,1)

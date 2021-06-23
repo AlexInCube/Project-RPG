@@ -18,7 +18,7 @@ buttons_order = [SCREEN_INVENTORY,SCREEN_CRAFTING,SCREEN_MAP,SCREEN_QUEST_LIST]
 buttons_screen_width = 32
 buttons_screen_height = 32
 buttons_screen_offset_x = 4
-buttons_screen_start_x = (GUIWIDTH/2)-((ds_map_size(screen_map)*(buttons_screen_width+buttons_screen_offset_x))/2)
+buttons_screen_start_x = ((ds_map_size(screen_map)*(buttons_screen_width+buttons_screen_offset_x))/2)
 buttons_screen_start_y = 40
 
 line_y = buttons_screen_start_y+buttons_screen_height+5

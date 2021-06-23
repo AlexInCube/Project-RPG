@@ -47,19 +47,6 @@ switch(equipmode){
 		{
 			slot(inventory,i,slotsxy[i,0],slotsxy[i,1],placefree,slotsxy[i,2])
 		}
-
-		if placefree{
-			for(i=0;i<inventory_size;i++)
-			{
-			if inventory[# i, 0]!=NO_ITEM
-				{
-					if mouseover(slotsxy[i,0],slotsxy[i,1],slotsxy[i,0]+32,slotsxy[i,1]+32)
-					{
-						draw_item_stat_mouse(inventory,i)
-					}
-				}
-			}
-		}
 	break
 	case 1:
 		draw_button_hud(window_x+7,window_y+27,window_x+118,window_y+49,spr_equip_buttons,equip_basic_button_scr)

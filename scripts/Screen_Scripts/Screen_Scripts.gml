@@ -33,3 +33,12 @@ function open_inventory() {
 	}
 }
 
+function screen_draw_outline(xx,yy,w,h,txt){
+	draw_sprite_stretched(spr_gui_inventory_outline,0,xx-16,yy-16,w+32,h+32)
+	draw_set_alpha(1)
+	draw_set_font(fnt_large)
+	draw_set_halign(fa_left)
+	draw_set_valign(fa_middle)
+	draw_text(xx+16,yy-12,txt)
+}
+

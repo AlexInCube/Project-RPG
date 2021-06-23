@@ -10,7 +10,7 @@ draw_set_valign(fa_bottom)
 draw_text_shadow(GUIWIDTH/2,buttons_screen_start_y+5,screen_map[? current_screen][$ "screen_name"],fnt_large,2,c_black,c_white,1)
 //Draw screen selection buttons
 for(var i = 0;i<array_length(buttons_order);i++){
-	var xx = buttons_screen_start_x+(i*(buttons_screen_width+buttons_screen_offset_x))
+	var xx =(GUIWIDTH/2)-buttons_screen_start_x+(i*(buttons_screen_width+buttons_screen_offset_x))
 	var yy = buttons_screen_start_y
 	draw_sprite(screen_map[? buttons_order[i]][$ "screen_icon"],0,xx,yy)
 	
