@@ -25,14 +25,6 @@ function close_screen(){
 	instance_destroy(par_screen)
 }
 
-function open_inventory() {
-	if !obj_gui_screen_controller.active_screen{
-		open_screen("inventory")
-	}else{
-		close_screen()
-	}
-}
-
 function screen_draw_outline(xx,yy,w,h,txt){
 	draw_sprite_stretched(spr_gui_inventory_outline,0,xx-16,yy-16,w+32,h+32)
 	draw_set_alpha(1)
@@ -42,3 +34,20 @@ function screen_draw_outline(xx,yy,w,h,txt){
 	draw_text(xx+16,yy-12,txt)
 }
 
+#region GUI Open
+function open_inventory() {
+	if !obj_gui_screen_controller.active_screen{
+		open_screen(SCREEN_INVENTORY)
+	}else{
+		close_screen()
+	}
+}
+
+function open_quest_list() {
+	if !obj_gui_screen_controller.active_screen{
+		open_screen(SCREEN_QUEST_LIST)
+	}else{
+		close_screen()
+	}
+}
+#endregion

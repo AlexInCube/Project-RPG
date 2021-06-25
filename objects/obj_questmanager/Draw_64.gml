@@ -1,5 +1,5 @@
 //Draw quest notifications about starting quest, updating and completing
-
+if global.interface_lock_by_game {exit}
 if txtalpha>0{
 	draw_set_halign(fa_center)
 	draw_set_valign(fa_top)

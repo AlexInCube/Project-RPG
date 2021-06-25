@@ -155,8 +155,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "GUIscreens",
-    "path": "folders/Objects/Controllers/GUIscreens.yy",
+    "name": "Quest Screen",
+    "path": "folders/Objects/Controllers/GUIscreens/Quest Screen.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_open_quest_list",

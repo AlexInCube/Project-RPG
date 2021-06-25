@@ -3,12 +3,16 @@ current_screen = ds_map_find_first(screen_map)
 active_screen = false
 
 
+//quest_start("first_steps")
+//quest_start("help_for_ewgen")
+//quest_start("test")
+
 #macro SCREEN_CRAFTING "crafting"
 #macro SCREEN_QUEST_LIST "quest_list"
 #macro SCREEN_INVENTORY "inventory"
 #macro SCREEN_MAP "map"
 add_screen(SCREEN_CRAFTING,spr_craft,obj_crafting_screen)
-add_screen(SCREEN_QUEST_LIST,spr_open_quest_list,obj_questlist_screen)
+add_screen(SCREEN_QUEST_LIST,spr_open_quest_list,obj_quest_screen)
 add_screen(SCREEN_INVENTORY,spr_backpack,obj_inventory_screen)
 add_screen(SCREEN_MAP,spr_map,obj_map_screen)
 

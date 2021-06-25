@@ -8,4 +8,4 @@ fix gui scaling
 
 
 Maked in this version
-Completed inventory screen
+Added quest screen

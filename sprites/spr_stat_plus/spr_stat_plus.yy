@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "GUIscreens",
-    "path": "folders/Objects/Controllers/GUIscreens.yy",
+    "name": "Equipment",
+    "path": "folders/Objects/Controllers/GUIscreens/Inventory Screen/Equipment.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_stat_plus",

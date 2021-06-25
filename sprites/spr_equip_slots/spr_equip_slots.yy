@@ -25,8 +25,8 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"1fb635c1-020e-4943-b5fb-4a0c54aaaefd","path":"sprites/spr_equip_slots/spr_equip_slots.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1fb635c1-020e-4943-b5fb-4a0c54aaaefd","path":"sprites/spr_equip_slots/spr_equip_slots.yy",},"LayerId":{"name":"6e922a66-70fd-4fd5-81df-90248d6a0237","path":"sprites/spr_equip_slots/spr_equip_slots.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"1fb635c1-020e-4943-b5fb-4a0c54aaaefd","path":"sprites/spr_equip_slots/spr_equip_slots.yy",},"LayerId":{"name":"cbca5d17-7981-4e3d-ad03-4c9b4b283ade","path":"sprites/spr_equip_slots/spr_equip_slots.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"1fb635c1-020e-4943-b5fb-4a0c54aaaefd","path":"sprites/spr_equip_slots/spr_equip_slots.yy",},"LayerId":{"name":"6e922a66-70fd-4fd5-81df-90248d6a0237","path":"sprites/spr_equip_slots/spr_equip_slots.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_equip_slots","path":"sprites/spr_equip_slots/spr_equip_slots.yy",},"resourceVersion":"1.0","name":"1fb635c1-020e-4943-b5fb-4a0c54aaaefd","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -71,8 +71,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "GUIscreens",
-    "path": "folders/Objects/Controllers/GUIscreens.yy",
+    "name": "Equipment",
+    "path": "folders/Objects/Controllers/GUIscreens/Inventory Screen/Equipment.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_equip_slots",

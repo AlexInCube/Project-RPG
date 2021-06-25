@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 47,
-  "bbox_top": 0,
-  "bbox_bottom": 47,
+  "bbox_left": 1,
+  "bbox_right": 46,
+  "bbox_top": 1,
+  "bbox_bottom": 46,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f43846e4-e332-4420-a7c0-aefa82052a1a","path":"sprites/spr_gui_inventory_outline/spr_gui_inventory_outline.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f43846e4-e332-4420-a7c0-aefa82052a1a","path":"sprites/spr_gui_inventory_outline/spr_gui_inventory_outline.yy",},"LayerId":{"name":"e0fba89a-a80c-4cbc-b9ec-a3c9346b1bf7","path":"sprites/spr_gui_inventory_outline/spr_gui_inventory_outline.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gui_inventory_outline","path":"sprites/spr_gui_inventory_outline/spr_gui_inventory_outline.yy",},"resourceVersion":"1.0","name":"f43846e4-e332-4420-a7c0-aefa82052a1a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"22396936-2260-4e24-984a-4b10e4d0a916","path":"sprites/spr_quest_tasks_button/spr_quest_tasks_button.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"22396936-2260-4e24-984a-4b10e4d0a916","path":"sprites/spr_quest_tasks_button/spr_quest_tasks_button.yy",},"LayerId":{"name":"991e2d09-779e-4aab-aac0-3b66c6cacc05","path":"sprites/spr_quest_tasks_button/spr_quest_tasks_button.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_quest_tasks_button","path":"sprites/spr_quest_tasks_button/spr_quest_tasks_button.yy",},"resourceVersion":"1.0","name":"22396936-2260-4e24-984a-4b10e4d0a916","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_gui_inventory_outline","path":"sprites/spr_gui_inventory_outline/spr_gui_inventory_outline.yy",},
+    "spriteId": {"name":"spr_quest_tasks_button","path":"sprites/spr_quest_tasks_button/spr_quest_tasks_button.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"95822985-eb3c-4e53-abe7-079e6e163874","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f43846e4-e332-4420-a7c0-aefa82052a1a","path":"sprites/spr_gui_inventory_outline/spr_gui_inventory_outline.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"24391bfa-b1b9-4c4b-bb93-2eacda9438a9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"22396936-2260-4e24-984a-4b10e4d0a916","path":"sprites/spr_quest_tasks_button/spr_quest_tasks_button.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,20 +58,20 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_gui_inventory_outline","path":"sprites/spr_gui_inventory_outline/spr_gui_inventory_outline.yy",},
+    "parent": {"name":"spr_quest_tasks_button","path":"sprites/spr_quest_tasks_button/spr_quest_tasks_button.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_gui_inventory_outline",
+    "name": "spr_quest_tasks_button",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e0fba89a-a80c-4cbc-b9ec-a3c9346b1bf7","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"991e2d09-779e-4aab-aac0-3b66c6cacc05","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": {
-    "left": 17,
-    "top": 17,
-    "right": 17,
-    "bottom": 17,
+    "left": 4,
+    "top": 4,
+    "right": 4,
+    "bottom": 4,
     "guideColour": [
       4294902015,
       4294902015,
@@ -93,11 +93,11 @@
     "resourceType": "GMNineSliceData",
   },
   "parent": {
-    "name": "Inventory Screen",
-    "path": "folders/Objects/Controllers/GUIscreens/Inventory Screen.yy",
+    "name": "Quest Screen",
+    "path": "folders/Objects/Controllers/GUIscreens/Quest Screen.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_gui_inventory_outline",
+  "name": "spr_quest_tasks_button",
   "tags": [],
   "resourceType": "GMSprite",
 }

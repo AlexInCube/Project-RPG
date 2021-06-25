@@ -57,7 +57,7 @@ function create_ds_grid_settings() {
 		[find_keyword("inventory_key"),			settings_element_type.input, "inventory_key",	  global.settings.controls.inventory_key],
 		[find_keyword("combination_key"),		settings_element_type.input, "combination_key", global.settings.controls.combination_key],
 		[find_keyword("questlist_key"),			settings_element_type.input, "questlist_key",	  global.settings.controls.questlist_key],
-		[find_keyword("equipment_key"),			settings_element_type.input, "equipment_key",	  global.settings.controls.equipment_key],
+		//[find_keyword("equipment_key"),			settings_element_type.input, "equipment_key",	  global.settings.controls.equipment_key],
 		[find_keyword("quick_use_key")+" 1",	settings_element_type.input, "inventory_hotkey1",	  global.settings.controls.inventory_hotkey1],
 		[find_keyword("quick_use_key")+" 2",	settings_element_type.input, "inventory_hotkey2",	  global.settings.controls.inventory_hotkey2],
 		[find_keyword("quick_use_key")+" 3",	settings_element_type.input, "inventory_hotkey3",	  global.settings.controls.inventory_hotkey3],

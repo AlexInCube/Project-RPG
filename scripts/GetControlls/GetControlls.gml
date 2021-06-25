@@ -34,7 +34,7 @@ function get_input() {
 	//Reloading
 	reloading_key = keyboard_check_pressed(global.settings.controls.reloading_key)
 	//Open window with armor and stats
-	equipment_key = keyboard_check_pressed(global.settings.controls.equipment_key)
+	//equipment_key = keyboard_check_pressed(global.settings.controls.equipment_key)
 	//Open window with player stuff
 	inventory_key = keyboard_check_pressed(global.settings.controls.inventory_key)
 	//Open quest list

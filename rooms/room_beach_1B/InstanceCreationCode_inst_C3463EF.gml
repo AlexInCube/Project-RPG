@@ -8,9 +8,9 @@ i++;
 myText[i]		= "Надо ему помочь"
 
 t_scene_info = [
+	[cutscene_change_interface_state,true],
 	[cutscene_take_player_control],
 	[cutscene_wait,convert_seconds_to_ticks(1)],
-	[cutscene_change_interface_state,true],
 	[cutscene_create_monologue,myText],
 	[cutscene_set_to_default]
 ]

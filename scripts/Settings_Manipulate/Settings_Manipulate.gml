@@ -45,7 +45,7 @@ global.settings = {
 		invert_addition_info : true,
 		interact_key :	ord("E"),
 		attack_key : ord("V"),
-		equipment_key :	ord("U"),
+		//equipment_key :	ord("U"),
 		inventory_key :	ord("I"),
 		questlist_key :	ord("O"),
 		drop_item_key :	ord("Q"),

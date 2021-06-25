@@ -12,5 +12,9 @@ function register_quests(){
 		[quest_type.deliver,"wooden_water_bucket",1],
 	])
 	
+	register_quest("test",[
+		[quest_type.talk,obj_lesha_npc],
+	])
+	
 	show_debug_message("Registered "+string(ds_list_size(global.quest_index))+" quests")
 }
