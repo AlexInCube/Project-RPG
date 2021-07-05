@@ -11,11 +11,15 @@ function create_screen_obj(screen_id){
 }
 
 function open_screen(screen_id){
-	global.interface_lock_by_game = true
-	with(obj_gui_screen_controller){
-		active_screen = true
-		current_screen = screen_id
-		create_screen_obj(current_screen)
+	if !obj_gui_screen_controller.active_screen{
+		global.interface_lock_by_game = true
+		with(obj_gui_screen_controller){
+			active_screen = true
+			current_screen = screen_id
+			create_screen_obj(current_screen)
+		}
+	}else{
+		close_screen()
 	}
 }
 
@@ -33,21 +37,3 @@ function screen_draw_outline(xx,yy,w,h,txt){
 	draw_set_valign(fa_middle)
 	draw_text(xx+16,yy-12,txt)
 }
-
-#region GUI Open
-function open_inventory() {
-	if !obj_gui_screen_controller.active_screen{
-		open_screen(SCREEN_INVENTORY)
-	}else{
-		close_screen()
-	}
-}
-
-function open_quest_list() {
-	if !obj_gui_screen_controller.active_screen{
-		open_screen(SCREEN_QUEST_LIST)
-	}else{
-		close_screen()
-	}
-}
-#endregion

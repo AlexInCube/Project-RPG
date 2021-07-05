@@ -64,6 +64,7 @@ function save_game() {
 		player_equipment: stringify_inventory(global.equipment),
 		player_effects: [stringify_effects(obj_player_stats.buff_grid),ds_grid_width(obj_player_stats.buff_grid)-1],
 		player_quests: ds_list_write(obj_questmanager.ds_current_quests),
+		player_tracked_quest: obj_questmanager.tracking_quest,
 		world_time: {
 			hours: obj_controller.hours,
 			minutes: obj_controller.minutes,
@@ -142,6 +143,7 @@ function load_game() {
 			}
 			i++
 		}
+		quest_tracking_update(try_load_data(save_data,"player_tracked_quest",undefined))
 	}
 	//Read unique objects data
 	load_room_data()
@@ -164,6 +166,13 @@ function load_game() {
 	}
 	
 	show_debug_message(LOGGER_SAVE_MANAGER+"Playerdata.txt loaded")
+}
+
+function try_load_data(struct,var_name,_default){
+	if variable_struct_exists(struct,var_name){
+		return variable_struct_get(struct,var_name)
+	}
+	return _default
 }
 
 function return_room_data(){

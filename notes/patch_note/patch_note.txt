@@ -8,4 +8,8 @@ fix gui scaling
 
 
 Maked in this version
-Added quest screen
+Added quest list scrolling
+Tracked quest now saveable
+Optimize screen opening code
+Fixed quest duplicating
+Added quest_give_all_quest command (script)

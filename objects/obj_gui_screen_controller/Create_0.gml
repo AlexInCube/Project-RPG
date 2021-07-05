@@ -1,6 +1,6 @@
-screen_map = ds_map_create()
+screen_map = ds_map_create()//List of all screens
 current_screen = ds_map_find_first(screen_map)
-active_screen = false
+active_screen = false//Show screen or not
 
 
 //quest_start("first_steps")
@@ -28,3 +28,11 @@ buttons_screen_start_y = 40
 line_y = buttons_screen_start_y+buttons_screen_height+5
 
 screen_start_y = line_y + 5
+
+function restore_surf(){
+	buttons_surf = surface_create(GUIWIDTH,line_y+1)
+}
+
+buttons_surf = -1
+restore_surf()
+

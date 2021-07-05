@@ -3,7 +3,6 @@
 if instance_exists(obj_textbox) exit
 if global.interface_lock_by_game {exit}
 
-if inventory_key{open_inventory()}else if questlist_key{open_quest_list()}
 draw_set_alpha(1)
 
 //HUD buttons block
