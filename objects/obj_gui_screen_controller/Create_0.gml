@@ -27,7 +27,7 @@ buttons_screen_start_y = 40
 
 line_y = buttons_screen_start_y+buttons_screen_height+5
 
-screen_start_y = line_y + 5
+screen_start_y = line_y + 1
 
 function restore_surf(){
 	buttons_surf = surface_create(GUIWIDTH,line_y+1)

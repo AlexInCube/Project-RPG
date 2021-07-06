@@ -61,23 +61,26 @@ if surface_exists(quest_list_surf)
 	draw_surface(quest_list_surf,quest_list_mouse_zone_x1,quest_list_mouse_zone_y1)
 	//List Scrolling
 	if mouseover(quest_list_mouse_zone_x1,quest_list_mouse_zone_y1,quest_list_mouse_zone_x2,quest_list_mouse_zone_y2){
-		//var true_height = GUIHEIGHT - list_height //quest_list_mouse_zone_y2+mb_wheel_spd-list_height
+		var true_height = list_height + quest_list_mouse_zone_y1
 		if mouse_wheel_up(){
-			quest_list_scroll_y += mb_wheel_spd
+			var block_height = GUIHEIGHT - quest_list_mouse_zone_y1
+			if block_height < true_height{ 
+				quest_list_scroll_y += mb_wheel_spd
+			}
 		}else if mouse_wheel_down(){
-			quest_list_scroll_y -= mb_wheel_spd
-			
+			var block_height = GUIHEIGHT - (quest_list_mouse_zone_y1 + quest_list_scroll_y)
+			if block_height < true_height{ 
+				quest_list_scroll_y -= mb_wheel_spd
+			}
 		}
-		//quest_list_scroll_y = clamp(quest_list_scroll_y,true_height*-1,true_height)
-
-		//draw_text_shadow(150,20,string(true_height),fnt_small,1,c_gray,c_white,1)
+		if quest_list_scroll_y > 0{quest_list_scroll_y = 0}
+		if quest_list_scroll_y < true_height*-1{quest_list_scroll_y = true_height*-1}
 	}
 }else{
 	restore_surf_quest_list()
 }
 #endregion
-//draw_set_halign(fa_left)
-//draw_text_shadow(20,20,string(quest_list_scroll_y)+"   "+string(list_height),fnt_small,1,c_gray,c_white,1)
+
 draw_set_color(c_white)
 draw_line(line_1x,obj_gui_screen_controller.line_y,quest_list_button_width+2,GUIHEIGHT)
 

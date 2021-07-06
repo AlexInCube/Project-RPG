@@ -1,5 +1,5 @@
 quest_screen_x = 0
-quest_screen_y = obj_gui_screen_controller.screen_start_y
+quest_screen_y = obj_gui_screen_controller.screen_start_y+5
 selected_quest = obj_questmanager.tracking_quest
 
 mb_wheel_spd = 16

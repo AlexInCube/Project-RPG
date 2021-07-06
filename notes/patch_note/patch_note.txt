@@ -8,8 +8,5 @@ fix gui scaling
 
 
 Maked in this version
-Added quest list scrolling
-Tracked quest now saveable
-Optimize screen opening code
-Fixed quest duplicating
-Added quest_give_all_quest command (script)
+Fixed scrolling limits in quest screen
+Start working on map screen

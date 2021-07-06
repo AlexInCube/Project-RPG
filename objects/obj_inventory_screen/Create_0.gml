@@ -6,7 +6,7 @@ inventory_backpack_word = find_keyword("backpack")
 Setup slots number and size 
 */
 inventory_x = (GUIWIDTH/2)-200
-inventory_y = obj_gui_screen_controller.screen_start_y+25
+inventory_y = obj_gui_screen_controller.screen_start_y+30
 cell_size=32//Slot size
 //Starting XY
 slots_x=8
