@@ -8,8 +8,8 @@ function register_craft_recipes(){
 	}
 	craft_add_group(CRAFTING_GROUP_CONSUMABLES)
 	
-	craft_add("small_health_potion_craft",CRAFTING_GROUP_CONSUMABLES,[["green_leaf",1],["empty_small_bottle",1]],[CRAFTING_WORKBENCH_PLAYER],"small_health_potion")
-	craft_add("small_mana_potion_craft",CRAFTING_GROUP_CONSUMABLES,[["blue_leaf",1],["empty_small_bottle",1]],[CRAFTING_WORKBENCH_PLAYER],"small_mana_potion")
+	craft_add("small_health_potion_craft",CRAFTING_GROUP_CONSUMABLES,[["green_leaf",1],["empty_small_bottle",1]],[CRAFTING_WORKBENCH_PLAYER],["small_health_potion",1])
+	craft_add("small_mana_potion_craft",CRAFTING_GROUP_CONSUMABLES,[["blue_leaf",1],["empty_small_bottle",1]],[CRAFTING_WORKBENCH_PLAYER],["small_mana_potion",1])
 }
 
 //

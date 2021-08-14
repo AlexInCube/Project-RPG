@@ -19,7 +19,7 @@ for(var i=0;i<ds_map_size(global.craft_index.craft_recipes);i++){
 	draw_sprite(spr_craft_list_background,mo,button_xx,button_yy)
 	
 	var craft_struct = global.craft_index.craft_recipes[? recipe_id]
-	var item = return_struct_from_item_index_by_item_id(craft_struct[$ "item_crafted"])
+	var item = return_struct_from_item_index_by_item_id(craft_struct[$ "item_crafted"][@ 0])
 	draw_sprite_stretched(item.item_sprite,0,button_xx,button_yy,craft_list_button_width,craft_list_button_height)
 	
 	if mo{
