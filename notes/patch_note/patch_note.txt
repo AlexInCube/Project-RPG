@@ -8,5 +8,4 @@ fix gui scaling
 
 
 Maked in this version
-Fixed scrolling limits in quest screen
-Start working on map screen
+Start working on crafting system and crafting screen

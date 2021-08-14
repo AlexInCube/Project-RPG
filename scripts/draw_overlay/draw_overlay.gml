@@ -1,7 +1,9 @@
 function draw_overlay(draw_scr,scr_arg){
 	if surface_exists(global.overlay_surf){
 		surface_set_target(global.overlay_surf)
-			script_execute_ext(draw_scr,scr_arg)
+		
+		script_execute_ext(draw_scr,scr_arg)
+		
 		surface_reset_target()
 	}
 }

@@ -104,7 +104,6 @@
   "gridY": 32,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"80d013d3-fa5a-4957-b04b-a7bb40a4c79d","path":"sprites/spr_inventory_screen/spr_inventory_screen.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"80d013d3-fa5a-4957-b04b-a7bb40a4c79d","path":"sprites/spr_inventory_screen/spr_inventory_screen.yy",},"LayerId":{"name":"d6c9ede5-ac31-4e60-867c-2148560a51dc","path":"sprites/spr_inventory_screen/spr_inventory_screen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"80d013d3-fa5a-4957-b04b-a7bb40a4c79d","path":"sprites/spr_inventory_screen/spr_inventory_screen.yy",},"LayerId":{"name":"6d4a1bd0-1c47-4473-ae65-f8a3ba564a95","path":"sprites/spr_inventory_screen/spr_inventory_screen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"80d013d3-fa5a-4957-b04b-a7bb40a4c79d","path":"sprites/spr_inventory_screen/spr_inventory_screen.yy",},"LayerId":{"name":"36b7cd47-a934-4997-bbc4-cde592b6f297","path":"sprites/spr_inventory_screen/spr_inventory_screen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_inventory_screen","path":"sprites/spr_inventory_screen/spr_inventory_screen.yy",},"resourceVersion":"1.0","name":"80d013d3-fa5a-4957-b04b-a7bb40a4c79d","tags":[],"resourceType":"GMSpriteFrame",},

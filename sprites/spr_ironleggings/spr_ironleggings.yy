@@ -25,8 +25,8 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"0d916508-d923-4176-950a-8857e34e1cc0","path":"sprites/spr_ironleggings/spr_ironleggings.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0d916508-d923-4176-950a-8857e34e1cc0","path":"sprites/spr_ironleggings/spr_ironleggings.yy",},"LayerId":{"name":"a4a4a1e8-59f6-4147-80a7-2c1e53995922","path":"sprites/spr_ironleggings/spr_ironleggings.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"0d916508-d923-4176-950a-8857e34e1cc0","path":"sprites/spr_ironleggings/spr_ironleggings.yy",},"LayerId":{"name":"f860429d-e524-4b6c-b5ef-f2ea85c12ec8","path":"sprites/spr_ironleggings/spr_ironleggings.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"0d916508-d923-4176-950a-8857e34e1cc0","path":"sprites/spr_ironleggings/spr_ironleggings.yy",},"LayerId":{"name":"a4a4a1e8-59f6-4147-80a7-2c1e53995922","path":"sprites/spr_ironleggings/spr_ironleggings.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_ironleggings","path":"sprites/spr_ironleggings/spr_ironleggings.yy",},"resourceVersion":"1.0","name":"0d916508-d923-4176-950a-8857e34e1cc0","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {

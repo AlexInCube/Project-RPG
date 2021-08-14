@@ -15,6 +15,7 @@ quest_list_button_name_y = 0
 quest_list_button_decription_x = 5
 quest_list_button_decription_y = 20
 
+//If mouse over the zone, then check mouse wheel scrolling
 quest_list_mouse_zone_x1 = quest_list_start_x 
 quest_list_mouse_zone_y1 = quest_list_start_y
 quest_list_mouse_zone_x2 = quest_list_mouse_zone_x1 + quest_list_button_width + 3

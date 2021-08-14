@@ -18,15 +18,8 @@
   "files": [
     {"filename":"myGMlibrary.dll","origname":"","init":"","final":"","kind":1,"uncompress":false,"functions":[
         {"externalName":"test_linkage","kind":1,"help":"","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"gmlib_link_test","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"mouse_check_button_side","kind":1,"help":"","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"mouse_check_button_side","tags":[],"resourceType":"GMExtensionFunction",},
-      ],"constants":[
-        {"value":"1","hidden":false,"resourceVersion":"1.0","name":"mb_xbutton1","tags":[],"resourceType":"GMExtensionConstant",},
-        {"value":"2","hidden":false,"resourceVersion":"1.0","name":"mb_xbutton2","tags":[],"resourceType":"GMExtensionConstant",},
-      ],"ProxyFiles":[],"copyToTargets":64,"order":[
+      ],"constants":[],"ProxyFiles":[],"copyToTargets":64,"order":[
         {"name":"gmlib_link_test","path":"extensions/myGMlibrary/myGMlibrary.yy",},
-        {"name":"mouse_check_button_side","path":"extensions/myGMlibrary/myGMlibrary.yy",},
       ],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
   ],
   "classname": "",

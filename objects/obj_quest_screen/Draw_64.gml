@@ -81,6 +81,7 @@ if surface_exists(quest_list_surf)
 }
 #endregion
 
+//Draw Divide Line
 draw_set_color(c_white)
 draw_line(line_1x,obj_gui_screen_controller.line_y,quest_list_button_width+2,GUIHEIGHT)
 
