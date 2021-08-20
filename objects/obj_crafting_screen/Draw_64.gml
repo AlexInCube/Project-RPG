@@ -3,14 +3,30 @@
 draw_set_alpha(0.5)
 draw_rectangle_color_fast(craft_start_x,craft_start_y,craft_list_zone_x2,craft_list_zone_y2,c_white,false)
 draw_set_alpha(1)
+//Draw groups
+for(var i=0;i<array_length(craft_groups);i++){
+	var group_id = craft_groups[i]
+	var group_struct = global.craft_index.recipes_groups[? group_id]
+	var group_xx = craft_groups_start_x+((craft_groups_spr_width+craft_groups_x_offset)*i)
+	var group_yy = craft_groups_start_y
+	draw_sprite(group_struct.group_sprite,0,group_xx,group_yy)
+	if mouse_check_button_pressed(mb_left){
+		if mouseover(group_xx,group_yy,group_xx+craft_groups_spr_width,group_yy+craft_groups_spr_height){
+			craft_current_group = group_id
+		}
+	}
+}
+
 //Set offsets for grid
 var grid_x_offset = 0
 var grid_y_offset = 0
 //Draw recipes grid
-var recipe_id = ds_map_find_first(global.craft_index.craft_recipes)
-for(var i=0;i<ds_map_size(global.craft_index.craft_recipes);i++){
+for(var i=0;i<array_length(global.craft_index.recipes_groups[? craft_current_group][$ "recipes_list"]);i++){
+	//Draw item cell
 	var xx = ((craft_list_button_width+craft_list_button_offset_x)*grid_x_offset)
 	var yy = (craft_list_button_height+craft_list_button_offset_y)*grid_y_offset
+	
+	var recipe_id = global.craft_index.recipes_groups[? craft_current_group][$ "recipes_list"][@ i]
 	
 	var button_xx = craft_list_zone_x+xx
 	var button_yy = craft_list_zone_y+yy
@@ -33,6 +49,5 @@ for(var i=0;i<ds_map_size(global.craft_index.craft_recipes);i++){
 	}else{
 		grid_x_offset++
 	}
-	recipe_id = ds_map_find_next(global.craft_index.craft_recipes,recipe_id)
 }
 #endregion

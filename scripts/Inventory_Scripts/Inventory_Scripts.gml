@@ -66,10 +66,7 @@ function item_gain(item_id, max_amount, inventory, _slot) {
 	}
 }
 	
-///@description check_requirement_item(questid)
-///@arg inventory
-///@arg item
-///@arg itemamount
+///@description check_requirement_item()
 /*
 	Check inventory for needed item, this can use not only for quests. For example: this can use
 	in dialogue system, to add an option in the dialog box if there is an item.
@@ -86,6 +83,16 @@ function check_requirement_item(inventory, item, itemamount) {
 		}
 	}
 	return thereitems
+}
+
+function get_item_quantity(inventory, item) {
+	var findedamount = 0
+	for(i=0;i<ds_grid_width(inventory);i++){
+		if inventory[# i,0]==item{
+			findedamount+=inventory[# i,1]
+		}
+	}
+	return findedamount
 }
 	
 	

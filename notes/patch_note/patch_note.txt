@@ -8,4 +8,5 @@ fix gui scaling
 
 
 Maked in this version
-Start working on crafting system and crafting screen
+Added more details about components in crafting
+Added craft groups

@@ -8,5 +8,6 @@
 	"quest_list":"Список заданий",
 	
 	"craft":"Нажмите \"interact_key\" для создания",
-	"craft_not_enough":"Недостаточно компонентов"
+	"craft_not_enough":"Недостаточно компонентов",
+	"craft_more_details":"\"addition_key\" открывает подробности",
 }
