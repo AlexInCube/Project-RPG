@@ -24,10 +24,9 @@ draw_set_font(fnt_small)
 draw_text(stats_block_x,stats_block_y,attribute_pointsword+string(obj_player_stats.attribute_points))
 screen_draw_outline(stats_block_x,stats_block_y,200,216,stats_word)
 for(var i = 0;i<array_length(stats_array);i++){
-	var element = scribble(stats_array[i][@ 0]+": "+string(variable_instance_get(obj_player_stats.id,stats_array[i][@ 2])))
-	element.starting_format("fnt_large",c_white)
-	element.align(fa_left,fa_top)
-	element.draw(stats_x,stats_y+(24*i))
+	draw_text_shadow(stats_x,stats_y+(24*i),
+					stats_array[i][@ 0]+": "+string(variable_instance_get(obj_player_stats.id,stats_array[i][@ 2])),
+					fnt_large,1,c_black,c_white,1)
 	if obj_player_stats.attribute_points >= 1{
 		assign_attribute_point_button(stats_block_x,stats_y+4+(25*i),stats_array[i][@ 2])
 	}

@@ -19,28 +19,44 @@ craft_list_grid_width = (GUIWIDTH/2)/(craft_list_button_width+craft_list_button_
 
 #region Recipes Groups
 craft_current_group = CRAFTING_GROUP_ALL
-craft_groups = [CRAFTING_GROUP_ALL,CRAFTING_GROUP_CONSUMABLES]
+craft_groups = [CRAFTING_GROUP_ALL,CRAFTING_GROUP_CONSUMABLES,CRAFTING_GROUP_OTHER]
 craft_groups_start_x = craft_list_start_x
-craft_groups_x_offset = 5
+craft_groups_x_offset = 1
 craft_groups_start_y = craft_list_start_y + 5
 craft_groups_spr = spr_craft_group_placeholder
 craft_groups_spr_width = sprite_get_width(craft_groups_spr)
 craft_groups_spr_height = sprite_get_height(craft_groups_spr)
 
-
+function item_groups_overlay(group_id){
+	var group_struct = global.craft_index.recipes_groups[? group_id]
+	
+	var over_hint_x = 0, over_hint_y = 0
+	
+	draw_set_font(fnt_small)
+	var over_hint_width = string_width(group_struct.locale_group_name)+10
+	var over_hint_height = 32
+	over_hint_x = clamp(over_hint_x,device_mouse_x_to_gui(0)+20,GUIWIDTH-over_hint_width)
+	over_hint_y = clamp(over_hint_y,device_mouse_y_to_gui(0),GUIHEIGHT-over_hint_height)
+	
+	draw_sprite_stretched(craft_overlay_background,0,over_hint_x,over_hint_y,over_hint_width,over_hint_height)
+	scribble(group_struct.locale_group_name).starting_format("fnt_small",c_black).align(fa_left,fa_top).draw(over_hint_x+5,over_hint_y)
+}
 #endregion
 
 #region Crafting Overlay
 craft_word_additon = string_replace(find_keyword("craft_more_details"),"addition_key",return_normal_control_word(global.settings.controls.addition_key))
 craft_word_can_craft = string_replace(find_keyword("craft"),"interact_key",return_normal_control_word(global.settings.controls.interact_key))
+craft_overlay_default_height = 160
+craft_overlay_background = spr_craft_list_background
 craft_can_craft_color = c_lime
 craft_not_enough_color = c_orange
 craft_word_not_enough = find_keyword("craft_not_enough")
 craft_button_spr = spr_craft_item_button
 craft_button_spr_height = sprite_get_height(craft_button_spr)
-craft_button_x = 0
-craft_button_y = 120
-craft_overlay_background = spr_craft_list_background
+craft_button_offset = 4
+craft_button_height = 40
+
+
 
 
 function item_craft_overlay(craft_struct){
@@ -54,8 +70,8 @@ function item_craft_overlay(craft_struct){
 	var over_hint_x = 0, over_hint_y = 0
 	
 	var over_hint_width = max(item_name.get_width()+50,string_width(craft_word_can_craft),(items_arr_len-1)*obj_crafting_screen.craft_list_button_width)
-	var over_hint_height = 160
-	if alt_menu { over_hint_height = 130 + (items_arr_len*obj_crafting_screen.craft_list_button_height)}
+	var over_hint_height = craft_overlay_default_height
+	if alt_menu { over_hint_height = craft_overlay_default_height + ((items_arr_len-1)*obj_crafting_screen.craft_list_button_height+20)}
 	over_hint_x = clamp(over_hint_x,device_mouse_x_to_gui(0)+20,GUIWIDTH-over_hint_width)
 	over_hint_y = clamp(over_hint_y,device_mouse_y_to_gui(0),GUIHEIGHT-over_hint_height)
 	//Draw overlay background
@@ -71,7 +87,6 @@ function item_craft_overlay(craft_struct){
 	item_name.draw(over_hint_x+42,over_hint_y)
 	//Draw required components to craft
 	var items_check = true//If player does not have at least one item in trade, items check was fail.
-	
 	for(var i=0;i<items_arr_len;i++){
 		var component_arr = craft_struct.required_items[i]
 		var component_item_id = component_arr[@ 0]
@@ -107,6 +122,17 @@ function item_craft_overlay(craft_struct){
 	}
 	
 			
+	//Draw craft button
+	var button_xx = over_hint_x+craft_button_offset, button_yy = over_hint_y+over_hint_height-craft_button_height-craft_button_offset
+	draw_sprite_stretched(craft_button_spr,items_check,button_xx,button_yy,over_hint_width-(craft_button_offset*2),craft_button_height)
+	draw_set_halign(fa_center)
+	draw_set_valign(fa_middle)
+	var word_hint = craft_word_can_craft
+	if items_check = false{
+		word_hint = craft_word_not_enough
+	}
+	draw_text_shadow(button_xx+over_hint_width/2,button_yy+20,word_hint,fnt_small,1,c_gray,c_white,1)
+	
 	if obj_controller.interact_key{
 		if items_check{
 			for(var i=0;i<items_arr_len;i++){
@@ -118,16 +144,6 @@ function item_craft_overlay(craft_struct){
 			item_gain(craft_struct.item_crafted[@ 0],craft_struct.item_crafted[@ 1],global.inventory)
 		}
 	}
-	//Draw craft button
-	var button_xx = over_hint_x+craft_button_x, button_yy = over_hint_y+over_hint_height-craft_button_spr_height
-	draw_sprite_stretched(craft_button_spr,items_check,button_xx,button_yy,over_hint_width,40)
-	draw_set_halign(fa_center)
-	draw_set_valign(fa_middle)
-	var word_hint = craft_word_can_craft
-	if items_check = false{
-		word_hint = craft_word_not_enough
-	}
-	draw_text_shadow(button_xx+over_hint_width/2,button_yy+20,word_hint,fnt_small,1,c_gray,c_black,1)
 }
 	
 #endregion

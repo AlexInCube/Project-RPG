@@ -10,8 +10,10 @@ for(var i=0;i<array_length(craft_groups);i++){
 	var group_xx = craft_groups_start_x+((craft_groups_spr_width+craft_groups_x_offset)*i)
 	var group_yy = craft_groups_start_y
 	draw_sprite(group_struct.group_sprite,0,group_xx,group_yy)
-	if mouse_check_button_pressed(mb_left){
-		if mouseover(group_xx,group_yy,group_xx+craft_groups_spr_width,group_yy+craft_groups_spr_height){
+	
+	if mouseover(group_xx,group_yy,group_xx+craft_groups_spr_width,group_yy+craft_groups_spr_height){
+		draw_overlay(method_get_index(item_groups_overlay),[group_id])
+		if mouse_check_button_pressed(mb_left){
 			craft_current_group = group_id
 		}
 	}

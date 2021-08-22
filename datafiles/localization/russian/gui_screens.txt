@@ -10,4 +10,7 @@
 	"craft":"Нажмите \"interact_key\" для создания",
 	"craft_not_enough":"Недостаточно компонентов",
 	"craft_more_details":"\"addition_key\" открывает подробности",
+	"craft_group_all_recipes":"Все рецепты",
+	"craft_group_consumable_recipes":"Расходники (зелья, еда и т.д.)",
+	"craft_group_other_recipes":"Рецепты без группы",
 }

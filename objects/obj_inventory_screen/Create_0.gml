@@ -34,10 +34,10 @@ stats_word = find_keyword("stats")
 
 stats_array = [
 	//Stat name, stat description
-	["[spr_stat_icon_strength]"+find_keyword("strength"),find_keyword("strengthdescription"),"strength"],
-	["[spr_stat_icon_attack]"+find_keyword("agility"),find_keyword("agilitydescription"),"agility"],
-	["[spr_stat_icon_magic_armor]"+find_keyword("defense"),find_keyword("defensedescription"),"defense"],
-	["[spr_stat_icon_endurance]"+find_keyword("energy"),find_keyword("energydescription"),"energy"]
+	[find_keyword("strength"),find_keyword("strengthdescription"),"strength"],
+	[find_keyword("agility"),find_keyword("agilitydescription"),"agility"],
+	[find_keyword("defense"),find_keyword("defensedescription"),"defense"],
+	[find_keyword("energy"),find_keyword("energydescription"),"energy"]
 ]
 
 function assign_attribute_point_button(xx,yy,value){

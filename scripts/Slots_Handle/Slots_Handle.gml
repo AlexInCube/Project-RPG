@@ -1,20 +1,10 @@
 function return_struct_from_item_index_by_item_id(item_id){
-	for (var i=0;i<ds_list_size(global.item_index);i++){
-		if global.item_index[| i][$ "item_unlocale_name"] = item_id{
-			return global.item_index[| i]
-		}
-	}
-	return undefined
+	return global.item_index[? item_id]
 }
 
 function return_struct_from_item_index_by_item_inv(inventory,slot_id){
-	var _item = inventory[# slot_id,0]
-	for (var i=0;i<ds_list_size(global.item_index);i++){
-		if global.item_index[| i][$ "item_unlocale_name"] = _item{
-			return global.item_index[| i]
-		}
-	}
-	return undefined
+	var item_id = inventory[# slot_id,0]
+	return global.item_index[? item_id]
 }
 /// @description slot(inventory_id,slot_id,x,y);
 /// @function slot
