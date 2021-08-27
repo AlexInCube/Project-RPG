@@ -112,7 +112,7 @@ function load_game() {
 	with (obj_player_stats){
 		expr = save_data.player_exp
 		level = save_data.player_lvl
-		max_expr = max_exp_calc(level)
+		max_expr = experience_calculate_next_lvl(level)
 		attribute_points = save_data.player_attribute_points
 		strength = save_data.player_attributes.strength
 		energy = save_data.player_attributes.energy

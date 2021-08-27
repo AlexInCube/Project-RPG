@@ -1,4 +1,4 @@
 event_inherited()
-get_exp(irandom_range(4,5))
+experience_give_exp(irandom_range(4,5))
 
 

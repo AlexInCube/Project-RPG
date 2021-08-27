@@ -1,3 +1,0 @@
-function equipmentscreen(argument0) {
-
-}

@@ -1,7 +1,7 @@
 draw_black_screen()
 draw_set_color(c_white)
 draw_set_font(fnt_small)
-draw_nine_slice_box(window_sprite,window_x,window_y,window_x+window_width,window_y+window_height,0)
+draw_sprite_stretched(window_sprite,0,window_x,window_y,window_width,window_height)
 draw_set_halign(fa_center)
 draw_set_valign(fa_top)
 draw_text_ext(window_x+window_width/2,window_y+12,question,-1,window_width)

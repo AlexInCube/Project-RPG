@@ -83,7 +83,7 @@ function shotgun_step() {
 							if obj_player_stats.phys_damage>0
 							{
 								damage = obj_player_stats.phys_damage
-								damagetype = PHYSICALDAMAGETYPE
+								damagetype = DAMAGE_TYPE_PHYSICAL
 							}
 						}
 					}

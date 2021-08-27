@@ -9,7 +9,7 @@ yy = 0
 char_limit = 20
 
 function draw_gui(){
-	draw_nine_slice_box(box_sprite,xx,yy,xx+box_width,yy+box_height,0)
+	draw_sprite_stretched(box_sprite,0,xx,yy,box_width,box_height)
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top)
 	draw_set_color(c_black)

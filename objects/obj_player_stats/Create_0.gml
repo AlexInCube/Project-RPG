@@ -1,27 +1,27 @@
 create_buff_grid()
 
+Entity_Stats()
+
 max_hp=5
 hp=max_hp
+defense = 5
 
 energy=5//Increase max_mana
-max_mana=5
+max_mana=energy
 mana=max_mana
-
-defense=5//Gain phys and magic armor, also increase max_hp
-phys_armor=0
-magic_armor=0
-
-strength=0//Gain phys and mag damage
-phys_damage=0
-magic_damage=0
-
-agility=0//Gain evasion and hp/mp regen amount (for example potion heal 1*agility hp)
-evasion=0
-regen_amount=0
 
 invisibility_duration = 60//ticks
 
 last_hit=""
+
+
+function Die(){
+	if !instance_exists(obj_player_corpse){
+		instance_create_layer(obj_player.x,obj_player.y,"Instances",obj_player_corpse)
+		obj_player_corpse.killer=obj_player_stats.last_hit
+	}
+	instance_destroy(obj_player)
+}
 
 recalculate_stats(global.equipment)
 

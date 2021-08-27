@@ -10,12 +10,7 @@ if target_list > 0{
 	
 		var dmg = relative*damage
 	
-		if target.object_index == obj_player{
-			obj_player_stats.hp -=apply_damage(dmg,PHYSICALDAMAGETYPE,obj_player_stats,1,obj_player.x,obj_player.y)
-			obj_player_stats.last_hit = creator
-		}else{
-			target.hp -= dmg
-		}
+		apply_damage(target,dmg,DAMAGE_TYPE_PHYSICAL)
 		
 		var dir = point_direction(x,y,target.x,target.y)
 		var xforce = lengthdir_x(explosion_radius/2,dir)

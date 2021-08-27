@@ -141,9 +141,3 @@ function load_string_from_json (_filename) {
 	buffer_delete(_buffer);
 	return _string;
 }
-	
-function time_set(hours){
-	with(obj_controller){
-		self.hours = real(hours)
-	}
-}

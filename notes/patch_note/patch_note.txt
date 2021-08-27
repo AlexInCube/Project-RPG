@@ -8,5 +8,4 @@ fix gui scaling
 
 
 Maked in this version
-Reworked storage of items IDs, greatly improved performance at accesing to items.
-Slightly improved craft UI
+Code refactoring in different places, such as dmg dealing, experience system and etc...

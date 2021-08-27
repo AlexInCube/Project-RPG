@@ -35,20 +35,14 @@ global.interface_lock_by_game = false//Turning on/off interface if game want it
 
 
 //Windows ID
-inventory_button_x = 0
-inventory_button_name = "Inventory"
 inventorywindow=noone
 inventory_window_x=0
 inventory_window_y=0
 
-equipment_button_x = 37
-equipment_button_name = "equip"
 equipmentwindow=noone
 equipment_window_x=0
 equipment_window_y=140
 
-questlist_button_x = 75
-questlist_button_name = "quest_list"
 questlistwindow=noone
 questlist_window_x=(GUIWIDTH/2)-450/2
 questlist_window_y=(GUIHEIGHT/2)-300/2
