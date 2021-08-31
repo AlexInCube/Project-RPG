@@ -1,4 +1,4 @@
-function story_tags_register(){
+function register_story_tags(){
 	global.story_tags = ds_map_create()
 	
 	story_tag_add("bush_destroyer")

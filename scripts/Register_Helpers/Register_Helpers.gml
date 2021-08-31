@@ -1,11 +1,9 @@
-function add_armor(name, sprite_index, phys_armor, magic_armor, armor_type, item_struct) {
-	var ds_size = ds_list_size(global.item_index)
-	global.item_index[| ds_size] = new item_struct()
-	with(global.item_index[| ds_size]){
-		item_unlocale_name = name
-		item_locale_name = find_keyword(item_unlocale_name)
+function add_armor(item_id, sprite_index, phys_armor, magic_armor, armor_type, item_struct) {
+	global.item_index[? item_id] = new item_struct()
+	with(global.item_index[? item_id]){
+		item_locale_name = find_keyword(item_id)
 		item_sprite = sprite_index
-		item_description = find_keyword(item_unlocale_name+"_description")
+		item_description = find_keyword(item_id+"_description")
 		item_stacking = 1
 		self.phys_armor = phys_armor
 		self.magic_armor = magic_armor
@@ -13,14 +11,12 @@ function add_armor(name, sprite_index, phys_armor, magic_armor, armor_type, item
 	}
 }
 
-function add_weapon(name, sprite_index, phys_damage, magic_damage, weapon_create_script,item_struct) {
-	var ds_size = ds_list_size(global.item_index)
-	global.item_index[| ds_size] = new item_struct()
-	with(global.item_index[| ds_size]){
-		item_unlocale_name = name
-		item_locale_name = find_keyword(item_unlocale_name)
+function add_weapon(item_id, sprite_index, phys_damage, magic_damage, weapon_create_script,item_struct) {
+	global.item_index[? item_id] = new item_struct()
+	with(global.item_index[? item_id]){
+		item_locale_name = find_keyword(item_id)
 		item_sprite = sprite_index
-		item_description = find_keyword(item_unlocale_name+"_description")
+		item_description = find_keyword(item_id+"_description")
 		item_stacking = 1
 		self.phys_damage = phys_damage
 		self.magic_damage = magic_damage
@@ -29,14 +25,12 @@ function add_weapon(name, sprite_index, phys_damage, magic_damage, weapon_create
 	}
 }
 
-function add_potion(name, sprite_index, stackable, item_struct, arg_array) {
-	var ds_size = ds_list_size(global.item_index)
-	global.item_index[| ds_size] = new item_struct()
-	with(global.item_index[| ds_size]){
-		item_unlocale_name = name
-		item_locale_name = find_keyword(item_unlocale_name)
+function add_potion(item_id, sprite_index, stackable, item_struct, arg_array) {
+	global.item_index[? item_id] = new item_struct()
+	with(global.item_index[? item_id]){
+		item_locale_name = find_keyword(item_id)
 		item_sprite = sprite_index
-		item_description = find_keyword(item_unlocale_name+"_description")
+		item_description = find_keyword(item_id+"_description")
 		item_stacking = stackable
 		if !is_undefined(arg_array){
 		self.arg_array = arg_array
@@ -47,54 +41,46 @@ function add_potion(name, sprite_index, stackable, item_struct, arg_array) {
 	}
 }
 
-function add_components(name, sprite_index, stackable) {
-	var ds_size = ds_list_size(global.item_index)
-	global.item_index[| ds_size] = new default_item()
-	with(global.item_index[| ds_size]){
-		item_unlocale_name = name
-		item_locale_name = find_keyword(item_unlocale_name)
+function add_components(item_id, sprite_index, stackable) {
+	global.item_index[? item_id] = new default_item()
+	with(global.item_index[? item_id]){
+		item_locale_name = find_keyword(item_id)
 		item_sprite = sprite_index
-		item_description = find_keyword(item_unlocale_name+"_description")
+		item_description = find_keyword(item_id+"_description")
 		item_stacking = stackable
 		item_type = ITEM_TYPE_COMPONENTS
 	}
 }
 
-function add_other_item(name, sprite_index, stackable, item_t, item_struct) {
-	var ds_size = ds_list_size(global.item_index)
-	global.item_index[| ds_size] = new item_struct()
-	with(global.item_index[| ds_size]){
-		item_unlocale_name = name
-		item_locale_name = find_keyword(item_unlocale_name)
+function add_other_item(item_id, sprite_index, stackable, item_t, item_struct) {
+	global.item_index[? item_id] = new item_struct()
+	with(global.item_index[? item_id]){
+		item_locale_name = find_keyword(item_id)
 		item_sprite = sprite_index
-		item_description = find_keyword(item_unlocale_name+"_description")
+		item_description = find_keyword(item_id+"_description")
 		item_stacking = stackable
 		item_type = item_t
 	}
 }
 
-function add_spell(name, sprite_index, item_struct, arg_array) {
-	var ds_size = ds_list_size(global.item_index)
-	global.item_index[| ds_size] = new item_struct()
-	with(global.item_index[| ds_size]){
-		item_unlocale_name = name
-		item_locale_name = find_keyword(item_unlocale_name)
+function add_spell(item_id, sprite_index, item_struct, arg_array) {
+	global.item_index[? item_id] = new item_struct()
+	with(global.item_index[? item_id]){
+		item_locale_name = find_keyword(item_id)
 		item_sprite = sprite_index
-		item_description = find_keyword(item_unlocale_name+"_description")
+		item_description = find_keyword(item_id+"_description")
 		item_stacking = 1
 		self.arg_array = arg_array
 		item_type = ITEM_TYPE_SPELL
 	}
 }
 
-function add_other_quick_usable(name, sprite_index, stackable, item_struct, arg_array) {
-	var ds_size = ds_list_size(global.item_index)
-	global.item_index[| ds_size] = new item_struct()
-	with(global.item_index[| ds_size]){
-		item_unlocale_name = name
-		item_locale_name = find_keyword(item_unlocale_name)
+function add_other_quick_usable(item_id, sprite_index, stackable, item_struct, arg_array) {
+	global.item_index[? item_id] = new item_struct()
+	with(global.item_index[? item_id]){
+		item_locale_name = find_keyword(item_id)
 		item_sprite = sprite_index
-		item_description = find_keyword(item_unlocale_name+"_description")
+		item_description = find_keyword(item_id+"_description")
 		item_stacking = stackable
 		if !is_undefined(arg_array){
 		self.arg_array = arg_array

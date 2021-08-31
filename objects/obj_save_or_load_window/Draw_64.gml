@@ -6,8 +6,8 @@ if !ds_exists(ds_saves,ds_type_list) exit
 	var window_width = window_x+GUIHEIGHT
 	var window_height = window_y+GUIHEIGHT
 	//Save window background
-	draw_nine_slice_box(spr_basicwindow,window_x,window_y,window_width,window_height,0)
-
+	draw_sprite_stretched(spr_basicwindow,0,window_x,window_y,window_width,window_height)
+	
 	draw_set_font(fnt_small)
 	draw_set_halign(fa_left)
 	draw_set_valign(fa_top)
@@ -42,7 +42,7 @@ if !ds_exists(ds_saves,ds_type_list) exit
 			var mouse_over_slot = mouseover(slot_x,slot_y,slot_x+ss_w,slot_y+ss_h)
 			
 			//Save slot background
-			draw_nine_slice_box(spr_save_slot,slot_x,slot_y,slot_x+ss_w,slot_y+ss_h,mouse_over_slot)
+			draw_sprite_stretched(spr_save_slot,mouse_over_slot,slot_x,slot_y,ss_w,ss_h)
 			//Load Save
 			if button(slot_x+ss_w-70,slot_y,spr_load_save_button,load,save_name)exit
 			//Delete Save

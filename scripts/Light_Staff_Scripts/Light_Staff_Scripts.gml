@@ -34,7 +34,7 @@ function light_staff_step() {
 						alarm[0] = DELTATIME*convert_seconds_to_ticks(4)
 						physics_apply_impulse(x,y,xforce,yforce)
 						damage = obj_player_stats.magic_damage
-						damagetype = MAGICDAMAGETYPE
+						damagetype = DAMAGE_TYPE_MAGIC
 						phy_speed_x = (phy_speed_x/8)*DELTATIME
 						phy_speed_y = (phy_speed_y/8)*DELTATIME
 					}

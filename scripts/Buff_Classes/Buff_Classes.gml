@@ -32,6 +32,7 @@ function default_effect() constructor{
 function invisible_player_effect() : default_effect() constructor{
 	effect_tick_timer = 10
 	effect_multiple = false
+	effect_hide_icon = true
 	effect_tick_script = function(){
 		with(obj_player){
 			switch (image_alpha){

@@ -38,12 +38,39 @@ global.interface_lock_by_game = false//Turning on/off interface if game want it
 inventorywindow=noone
 inventory_window_x=0
 inventory_window_y=0
+
 equipmentwindow=noone
 equipment_window_x=0
 equipment_window_y=140
+
 questlistwindow=noone
 questlist_window_x=(GUIWIDTH/2)-450/2
 questlist_window_y=(GUIHEIGHT/2)-300/2
+
+craft_button_x = 110
+craft_button_name = "crafting"
 //for autosaving
 room_data = "" 
 previous_room = room
+
+
+///@description draw_button_hud(x,y,x2,y2,sprite,script)
+///@arg x
+///@arg y
+///@arg sprite
+///@arg button_name
+///@arg script
+function draw_button_hud(xx,yy,sprite,name,script) {
+	var subimage = 0
+	
+	if mouseover(xx,yy,xx+36,yy+36)
+	{
+		subimage = 1
+		if mouse_check_button_pressed(mb_left)
+		{
+			script_execute(script)
+		}
+	}else subimage = 0
+
+	draw_sprite(sprite,subimage,xx,yy)
+}

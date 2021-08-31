@@ -19,7 +19,7 @@
 #endregion
 
 function register_items() {
-	global.item_index = ds_list_create()
+	global.item_index = ds_map_create()
 
 	#region Potions
 	add_potion("small_health_potion", spr_ItemIcon_SmallHealPotion,4,health_potion,[1,false])//1 health
@@ -70,7 +70,7 @@ function register_items() {
 	add_other_quick_usable("wooden_bucket",spr_ItemIcon_EmptyBucket,1,wooden_bucket,[])
 	#endregion
 	
-	add_other_item("money",spr_item_money,1000,ITEM_TYPE_OTHER,money)
+	add_other_item("money",spr_item_money,999,ITEM_TYPE_OTHER,money)
 	
-	show_debug_message("Registered "+string(ds_list_size(global.item_index))+" items")
+	show_debug_message("Registered "+string(ds_map_size(global.item_index))+" items")
 }

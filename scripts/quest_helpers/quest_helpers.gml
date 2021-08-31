@@ -40,9 +40,23 @@ function register_quest(quest_name, task_array){
 	}
 }
 
+function quest_give_all_quest(){
+	for(var i=0;i<ds_list_size(global.quest_index);i++){
+		quest_start(global.quest_index[| i].quest_unlocale_name)
+	}
+	with(obj_quest_screen){
+		quest_list_ds_height = ds_list_size(quest_list)	
+	}
+}
+
 function quest_start(questid){
 	with(obj_questmanager){
 		//Quest Name, Quest Progress, Progress in Task
+		for(var i = 0; i<ds_list_size(ds_current_quests);i++){
+			if ds_current_quests[| i][@ 0] = questid{
+				exit
+			}
+		}
 		ds_current_quests[| ds_list_size(ds_current_quests)] = [questid,0,0]
 		quest_update_notify(questid)
 		if tracking_quest == undefined{
@@ -116,22 +130,22 @@ function quest_update(quest_id) {
 function quest_tracking_update(quest_id){
 	if is_undefined(quest_id)exit
 	with obj_questmanager{
+		var quest_struct = return_struct_from_quest_index_by_quest_id(quest_id)
+		if is_undefined(quest_struct)exit
 		tracking_quest = quest_id
-		if quest_id!=undefined{
-			var quest_struct = return_struct_from_quest_index_by_quest_id(quest_id)
-			var stage_array = get_current_quest_array(quest_id)//Get array in current quest list
-			var quest_progress = stage_array[@ quest_data.progress]//Quest Progress
-			tq_name = quest_struct.quest_locale_name//Get quest name
-			var quest_t = quest_struct.quest_tasks[@ quest_progress][@ 0]
-			switch(quest_t){
-				case quest_type.kill:
-					var cur_progress = string(stage_array[@ quest_data.task_progress])
-					var need_progress = string(quest_struct.quest_tasks[@ quest_progress][@ 2])
-					tq_desc=quest_struct.quest_short_tasks_description[@ quest_progress]+" "+cur_progress+"/"+need_progress
-				break;
+
+		var stage_array = get_current_quest_array(quest_id)//Get array in current quest list
+		var quest_progress = stage_array[@ quest_data.progress]//Quest Progress
+		tq_name = quest_struct.quest_locale_name//Get quest name
+		var quest_t = quest_struct.quest_tasks[@ quest_progress][@ 0]
+		switch(quest_t){
+			case quest_type.kill:
+				var cur_progress = string(stage_array[@ quest_data.task_progress])
+				var need_progress = string(quest_struct.quest_tasks[@ quest_progress][@ 2])
+				tq_desc=quest_struct.quest_short_tasks_description[@ quest_progress]+" "+cur_progress+"/"+need_progress
+			break;
 				
-				default: tq_desc=quest_struct.quest_short_tasks_description[@ quest_progress]
-			}
+			default: tq_desc=quest_struct.quest_short_tasks_description[@ quest_progress]
 		}
 	}
 }

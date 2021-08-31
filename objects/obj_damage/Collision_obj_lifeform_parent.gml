@@ -2,7 +2,14 @@
 
 if other.id != creator
 {
-	other.hp -= apply_damage(damage,damagetype,other,true,x,y)
+	var dmg = apply_damage(other,damage,damagetype)
+	
+	if global.settings.interface.showdamage = true{
+		var showdmg = instance_create_layer(target.x,target.y,"Text",obj_show_damage)
+			showdmg.damage = dmg
+			showdmg.xx=other.x
+			showdmg.yy=other.y
+	}
 	
 	if instance_exists(creator){
 	var dir=point_direction(creator.x,creator.y,other.x,other.y)

@@ -1,20 +1,25 @@
-function return_struct_from_item_index_by_item_id(item_id){
-	for (var i=0;i<ds_list_size(global.item_index);i++){
-		if global.item_index[| i][$ "item_unlocale_name"] = item_id{
-			return global.item_index[| i]
+function drawmousepickupeditem() {
+	var iid = global.mouse_slot[# 0, 0];
+	var amount = global.mouse_slot[# 0, 1];
+
+	if (iid != NO_ITEM)
+	{
+		var spr = return_struct_from_item_index_by_item_id(iid)[$ "item_sprite"]
+		draw_sprite(spr, 0, device_mouse_x_to_gui(0), device_mouse_y_to_gui(0)); //Draw item sprite
+		if amount>1
+		{
+		draw_text(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0)-15, string(amount)); //Draw item quantity
 		}
 	}
-	return undefined
+}
+
+function return_struct_from_item_index_by_item_id(item_id){
+	return global.item_index[? item_id]
 }
 
 function return_struct_from_item_index_by_item_inv(inventory,slot_id){
-	var _item = inventory[# slot_id,0]
-	for (var i=0;i<ds_list_size(global.item_index);i++){
-		if global.item_index[| i][$ "item_unlocale_name"] = _item{
-			return global.item_index[| i]
-		}
-	}
-	return undefined
+	var item_id = inventory[# slot_id,0]
+	return global.item_index[? item_id]
 }
 /// @description slot(inventory_id,slot_id,x,y);
 /// @function slot
@@ -42,7 +47,10 @@ function slot(inventory, slot_id, xx, yy, clickable, itemtype) {
 		//If mouse left click over slot and them have any item, take all amount of items or we have item in mouse then we put or switch items in slots
 		draw_sprite(spr_slot_backlight,0,xx,yy)
 		if _item != NO_ITEM{
-			draw_item_stat_mouse(inventory,slot_id)
+			var _item = inventory[# slot_id,0]
+			var _item_struct = return_struct_from_item_index_by_item_id(_item)
+			var txt = _item_struct[$ "item_locale_name"]+"\n"+find_keyword(_item_struct[$ "item_type"])+"\n"+_item_struct[$ "item_description"]
+			draw_overlay(draw_text_hover,[txt,spr_hover_item_description,c_white,fa_center])
 		}
 		if mouse_check_button_pressed(mb_left)
 		{

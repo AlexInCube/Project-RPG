@@ -61,11 +61,11 @@ function wooden_stick_tick() {
 			if obj_player_stats.phys_damage>0
 			{
 				damage.damage = obj_player_stats.phys_damage
-				damage.damagetype = PHYSICALDAMAGETYPE
+				damage.damagetype = DAMAGE_TYPE_PHYSICAL
 			}else if obj_player_stats.magic_damage>0
 			{
 				damage.damage = obj_player_stats.magic_damage
-				damage.damagetype = MAGICDAMAGETYPE
+				damage.damagetype = DAMAGE_TYPE_MAGIC
 			}
 			}
 		}

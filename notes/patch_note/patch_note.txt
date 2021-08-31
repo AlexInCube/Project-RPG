@@ -4,7 +4,8 @@ saving non-unique objects
 add mouse support for control
 loot-tables
 spell creating
+fix gui scaling
 
 
 Maked in this version
-GMSentry finally fixed
+Code refactoring in different places, such as dmg dealing, experience system and etc...

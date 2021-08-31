@@ -79,8 +79,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "HUD",
-    "path": "folders/Sprites/GUI/HUD.yy",
+    "name": "Crafting Screen",
+    "path": "folders/Objects/Controllers/GUIscreens/Crafting Screen.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_craft",

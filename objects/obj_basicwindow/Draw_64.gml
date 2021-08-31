@@ -1,10 +1,5 @@
 //Draw window background
-
-if window_sprite == spr_basicwindow{
-draw_nine_slice_box(window_sprite,window_x,window_y,window_x+window_width,window_y+window_height,0)
-}else{
-draw_sprite(window_sprite,0,window_x,window_y)
-}
+draw_sprite_stretched(window_sprite,0,window_x,window_y,window_width,window_height)
 //Draw window name
 draw_set_halign(fa_left)
 draw_set_valign(fa_top)

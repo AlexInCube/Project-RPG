@@ -75,3 +75,4 @@ var darks, colours, pstart, pend;
 	
 		darkness = lerp(d1, d2, dd-floor(dd));
 	}
+

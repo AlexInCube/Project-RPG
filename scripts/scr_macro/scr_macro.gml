@@ -8,4 +8,3 @@
 #macro GUIWIDTH global.width
 #macro GUIHEIGHT global.height
 #macro WINDOW_LIST global.window_list
-#macro RUN_FROM_IDE parameter_count()==3&&string_count("GMS2TEMP",parameter_string(2))

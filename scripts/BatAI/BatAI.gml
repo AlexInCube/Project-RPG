@@ -18,7 +18,7 @@ function bat_idle_state() {
 function bat_set_idle_state() {
 	state = bat_idle_state
 	sprite_index = spr_bat_idle
-	alarm[0] = DELTATIME*irandom_range(convert_seconds_to_ticks(2),convert_seconds_to_ticks(3))
+	alarm[0] = irandom_range(convert_seconds_to_ticks(2),convert_seconds_to_ticks(3))/DELTATIME
 	var dir = irandom(360);
 	targetx = xstart + lengthdir_x(distance_from_spawn, dir)
 	targety = ystart + lengthdir_y(distance_from_spawn, dir)
@@ -39,7 +39,7 @@ function bat_set_aggresive_state(){
 	state = bat_attack_prepare
 	travelled_distance = 0
 	sprite_index = spr_bat_attack
-	alarm[2] = DELTATIME*convert_seconds_to_ticks(1)
+	alarm[2] = convert_seconds_to_ticks(1)/DELTATIME
 }
 
 function bat_attack_state(){

@@ -158,8 +158,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "HUD",
-    "path": "folders/Sprites/GUI/HUD.yy",
+    "name": "Map Screen",
+    "path": "folders/Objects/Controllers/GUIscreens/Map Screen.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_map",

@@ -7,7 +7,7 @@ draw_set_font(fnt_small)
 var start_y = window_y+26, start_x = window_x+10, y_buffer = 24, ds_grid = ds_options
 
 //Draw background
-draw_nine_slice_box(window_sprite,window_x,window_y,window_x+window_width,window_y+window_height,0)
+draw_sprite_stretched(window_sprite,0,window_x,window_y,window_width,window_height)
 //Draw window_name
 draw_text(window_x+7,window_y,window_name)
 

@@ -40,6 +40,7 @@ switch(global.load_state){
 
 	case load_state.new_game:
 		room_goto(room_beach_1A)
+		create_transition(transition.fade_out)
 		global.load_state = load_state.none
 	break
 	

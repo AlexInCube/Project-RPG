@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Stat Icons",
-    "path": "folders/Objects/Controllers/Equipment/Stat Icons.yy",
+    "path": "folders/Objects/Controllers/GUIscreens/Inventory Screen/Equipment/Stat Icons.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_staticonluck",

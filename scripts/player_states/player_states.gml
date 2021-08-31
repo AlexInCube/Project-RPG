@@ -1,6 +1,6 @@
 //Default Player State
 function move_state() {
-	if !instance_exists(obj_textbox){
+	if !instance_exists(obj_textbox) and !instance_exists(par_screen){
 
 #region Inventory Key Input
 	if obj_controller.inventory_hotkey1

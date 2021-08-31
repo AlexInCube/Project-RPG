@@ -155,8 +155,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "HUD",
-    "path": "folders/Sprites/GUI/HUD.yy",
+    "name": "Quest Screen",
+    "path": "folders/Objects/Controllers/GUIscreens/Quest Screen.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_open_quest_list",

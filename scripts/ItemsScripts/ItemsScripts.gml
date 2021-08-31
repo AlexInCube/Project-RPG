@@ -1,9 +1,8 @@
 #macro NBTdata nbtdata
 function default_item() constructor{
-	item_unlocale_name = UNKNOWN_ITEM
-	item_locale_name = find_keyword(item_unlocale_name)
+	item_locale_name = find_keyword(UNKNOWN_ITEM)
 	item_sprite = spr_unknown_item
-	item_description = find_keyword(item_unlocale_name+"_description")
+	item_description = find_keyword(UNKNOWN_ITEM+"_description")
 	item_stacking = 1
 	item_create = {}
 	render_item = default_item_render
@@ -111,7 +110,7 @@ function spell_fireball() : default_quick_useable() constructor {
 				if obj_player_stats.magic_damage>0
 				{
 				damage = obj_player_stats.magic_damage
-				damagetype = MAGICDAMAGETYPE
+				damagetype = DAMAGE_TYPE_MAGIC
 				knockback = 0
 				}
 			}

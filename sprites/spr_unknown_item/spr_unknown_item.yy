@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Utility",
-    "path": "folders/Sprites/Game Objects/Utility.yy",
+    "name": "Inventory",
+    "path": "folders/Objects/Controllers/Inventory.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_unknown_item",

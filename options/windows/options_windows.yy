@@ -1,7 +1,7 @@
 {
   "option_windows_display_name": "ProjectRPG",
   "option_windows_executable_name": "ProjectRPG",
-  "option_windows_version": "0.38.12.0",
+  "option_windows_version": "0.39.12.0",
   "option_windows_company_info": "Alexander Techologies",
   "option_windows_product_info": "ProjectRPG",
   "option_windows_copyright_info": "(c) 2019 - 2021 Alexander Techologies",
@@ -28,7 +28,7 @@
   "option_windows_enable_steam": false,
   "option_windows_disable_sandbox": true,
   "option_windows_steam_use_alternative_launcher": true,
-  "option_windows_use_x64": false,
+  "option_windows_use_x64": true,
   "resourceVersion": "1.1",
   "name": "Windows",
   "tags": [],

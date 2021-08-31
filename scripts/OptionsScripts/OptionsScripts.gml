@@ -76,11 +76,10 @@ else {
     }
 }
 
-	if DEBUGMODE{
-		return string(str2)+" + "+string(str1);
-	}else{
-		return string(str2);
-	}
+	//if DEBUGMODE{
+	//	return string(str2)+" + "+string(str1);
+	//}
+	return string(str2);
 }
 	
 function change_volume(option_array) {
@@ -177,11 +176,12 @@ function change_gui_size(option_array) {
 	if is_array(option_array){ 
 		var guisize = option_array[@ 0]
 	}else{var guisize = option_array}
-	var display_height=global.settings.video.height,display_width=global.settings.video.width
-	var ideal_width=1280;
-	var ideal_height=720;
-
+	
 	global.settings.interface.guisize=guisize;
+	var display_height=global.settings.video.height,display_width=global.settings.video.width
+	var ideal_width=1280
+	var ideal_height=720*global.settings.interface.guisize;
+
 
 	var aspect_ratio=display_width/display_height;
 
@@ -192,12 +192,12 @@ function change_gui_size(option_array) {
 	if(display_width mod ideal_width != 0)
 	{
 	  var d = round(display_width/ideal_width);
-	  ideal_width=(display_width/d)/global.settings.interface.guisize;
+	  ideal_width=(display_width/d);
 	}
 	if(display_height mod ideal_height != 0)
 	{
 	  var d = round(display_height/ideal_height);
-	  ideal_height=(display_height/d)/global.settings.interface.guisize;
+	  ideal_height=(display_height/d);
 	}
 	/*
 	//Check for odd numbers
@@ -208,6 +208,7 @@ function change_gui_size(option_array) {
 	*/
 
 	display_set_gui_size(ideal_width,ideal_height);
+	
 
 	GUIWIDTH=display_get_gui_width()
 	GUIHEIGHT=display_get_gui_height()

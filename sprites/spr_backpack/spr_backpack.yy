@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "HUD",
-    "path": "folders/Sprites/GUI/HUD.yy",
+    "name": "Inventory Screen",
+    "path": "folders/Objects/Controllers/GUIscreens/Inventory Screen.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_backpack",

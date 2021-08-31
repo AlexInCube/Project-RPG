@@ -1,11 +1,3 @@
-function equip_basic_button_scr(){
-	equipmode = 0
-}
-
-function equip_advanc_button_scr(){
-	equipmode = 1
-}
-
 function recalculate_stats(inventory) {
 	var ds_width = ds_grid_width(inventory)
 	var pa=0,ma=0,pd=0,md=0

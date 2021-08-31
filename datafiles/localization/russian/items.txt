@@ -4,9 +4,9 @@
 	"small_mana_potion":"Маленькое зелье маны",
 	"small_mana_potion_description":"Восстанавливает 20% маны",
 	"defense_potion":"Зелье защиты",
-	"defense_potion_description":"Даёт прибавку к броне",
+	"defense_potion_description":"НЕТ ПРОБИТИЯ",
 	"regeneration_potion":"Зелье регенерации",
-	"regeneration_potion_description":"Выпиваешь и ты регенишься кароче, как вампир типа.",
+	"regeneration_potion_description":"Выпиваешь и ты восстанавливаешь своё тельце.",
 	"attack_potion":"Зелье атаки",
 	"attack_potion_description":"Даёт урон, но от него не будет смысла без оружия.",
 	
@@ -17,16 +17,16 @@
 	"iron_leggings":"Железные поножи",
 	"iron_leggings_description":"Железные трусы идут в подарок!",
 	"iron_boots":"Железные ботинки",
-	"iron_boots_description":"Легко мыть, если в говно вступил.",
+	"iron_boots_description":"Легко мыть, если куда-то вступил.",
 	
 	"wooden_stick":"Деревянная палка",
-	"wooden_stick_description":"Ты серьёзно этим будешь как-то драться? Она годится только для того чтобы запихнуть её в зад.",
+	"wooden_stick_description":"Ты серьёзно этим будешь как-то драться? Она годится только для того чтобы запихнуть её кому-то в зад.",
 	"iron_sword":"Железный меч",
 	"iron_sword_description":"Идеален для резки колбасы.",
 	"light_staff":"Скипетр Света",
 	"light_staff_description":"Такой делаешь ПИУ и все ОЙ-ОЙ-ОЙ.",
 	"shotgun":"Дробовик",
-	"shotgun_description":"Вам серьёзно нужно описывать дробовик? Вы сами не понимаете насколько это мощная пушка? Мне вас жаль в таком случае.",
+	"shotgun_description":"Вам серьёзно нужно описывать дробовик? Если вы раньше убивали демонов, то вы знаете насколько мощная эта пушка.",
 	
 	"spell_scroll_dash":"Свиток: \"Рывок\"",
 	"spell_scroll_dash_description":"Делай рывок в направлении персонажа.",
@@ -39,4 +39,7 @@
 	"empty_small_bottle_description":"Без содержимого, довольно бесполезная штука.",
 	"slimeball":"Слизь",
 	"slimeball_description":"А вы не думаете что эта субстанция может обратно перерасти в Слизня?",
+	
+	"money":"Деньги",
+	"money_description":"Кто в нынешнее время будет работать бесплатно или за еду?",
 }

@@ -4,8 +4,8 @@ window_width = 450
 window_height = 200
 window_sprite=spr_question_window
 question = "question"
-answer_yes = "yes"
-answer_no = "no"
+answer_yes = find_keyword("start_game")
+answer_no = find_keyword("cancel")
 write_save_name = find_keyword("write_your_save_name")
 save_name_must_be_longer = find_keyword("save_name_must_be_longer")
 
@@ -36,14 +36,6 @@ function check_save_files() {
 }
 
 function game_start(){
-	if file_exists("Saves\\"+obj_ui_textbox.txt){
-		file_delete("Saves\\"+obj_ui_textbox.txt)
-	}
-	global.directory_save = obj_ui_textbox.txt
-
-	with(obj_game_start_window){
-		instance_destroy()
-	}	
-	room_goto(room_game_init)
-	global.load_state = load_state.new_game
+	alarm[0]=100/DELTATIME
+	create_transition(transition.fade_in)
 }

@@ -34,7 +34,7 @@ jump_count--
 				self.target = target
 				with create_damage(spr_damage,obj_player.id,0,0,false){
 					damage = obj_player_stats.magic_damage
-					damagetype = MAGICDAMAGETYPE
+					damagetype = DAMAGE_TYPE_MAGIC
 					visible = false
 				}
 				
