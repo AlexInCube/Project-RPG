@@ -1,7 +1,7 @@
 event_inherited()
 phy_fixed_rotation=true
 
-Entity_Stats()
+entity_stats = new Entity_Stats()
 
 max_hp=3
 hp=max_hp

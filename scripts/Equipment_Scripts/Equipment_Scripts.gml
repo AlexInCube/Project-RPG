@@ -10,15 +10,15 @@ function recalculate_stats(inventory) {
 			if _item_struct[$ "magic_damage"]!= undefined md = md + _item_struct[$ "magic_damage"]
 		}
 	}
-	with(obj_player_stats){
-			phys_armor = pa + defense
-			magic_armor = ma + defense
-			phys_damage = pd + strength
-			magic_damage = md + strength
-			evasion = agility
-			regen_amount = agility
-			max_hp = defense
-			max_mana = energy
+	with(obj_player_stats.player_stats){
+			phys_armor.addModifier([modifier_type.constant,pa + defense.getValue()])
+			magic_armor.addModifier([modifier_type.constant,ma + defense.getValue()])
+			phys_damage.addModifier([modifier_type.constant,pd + strength.getValue()])
+			magic_damage.addModifier([modifier_type.constant,md + strength.getValue()])
+			evasion.addModifier([modifier_type.constant,agility.getValue()])
+			regen_multiplier.addModifier([modifier_type.constant,agility.getValue()])
+			max_hp.addModifier([modifier_type.constant,max_hp.getValue()+defense.getValue()])
+			max_mana.addModifier([modifier_type.constant,max_mana.getValue()+energy.getValue()])
 			//strength = str
 		}
 	weapon_equip()
