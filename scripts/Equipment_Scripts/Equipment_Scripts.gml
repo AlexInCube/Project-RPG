@@ -1,26 +1,14 @@
 function recalculate_stats(inventory) {
 	var ds_width = ds_grid_width(inventory)
-	var pa=0,ma=0,pd=0,md=0
 	for(var i=0;i<ds_width;i++){
 		var _item_struct = return_struct_from_item_index_by_item_inv(inventory,i)
 		if _item_struct != undefined{
-			if _item_struct[$ "phys_armor"]!= undefined pa = pa + _item_struct[$ "phys_armor"]
-			if _item_struct[$ "magic_armor"]!= undefined ma = ma + _item_struct[$ "magic_armor"]
-			if _item_struct[$ "phys_damage"]!= undefined pd = pd + _item_struct[$ "phys_damage"]
-			if _item_struct[$ "magic_damage"]!= undefined md = md + _item_struct[$ "magic_damage"]
+			for(var s=0;s<array_length(_item_struct.stats);s++){
+				var stat_struct = variable_struct_get(obj_player_stats.player_stats,_item_struct.stats[@ s][@ 0])
+				stat_struct.addModifier([_item_struct.stats[@ s][@ 1],_item_struct.stats[@ s][@ 2]])
+			}
 		}
 	}
-	with(obj_player_stats.player_stats){
-			phys_armor.addModifier([modifier_type.constant,pa + defense.getValue()])
-			magic_armor.addModifier([modifier_type.constant,ma + defense.getValue()])
-			phys_damage.addModifier([modifier_type.constant,pd + strength.getValue()])
-			magic_damage.addModifier([modifier_type.constant,md + strength.getValue()])
-			evasion.addModifier([modifier_type.constant,agility.getValue()])
-			regen_multiplier.addModifier([modifier_type.constant,agility.getValue()])
-			max_hp.addModifier([modifier_type.constant,max_hp.getValue()+defense.getValue()])
-			max_mana.addModifier([modifier_type.constant,max_mana.getValue()+energy.getValue()])
-			//strength = str
-		}
 	weapon_equip()
 }
 

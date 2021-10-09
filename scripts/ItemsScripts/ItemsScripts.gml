@@ -10,8 +10,10 @@ function default_item() constructor{
 }
 
 function default_armor() : default_item() constructor{
-	phys_armor = 0
-	magic_armor = 0
+	stats = [
+		["phys_armor",modifier_type.constant,1],
+		["magic_armor",modifier_type.constant,1]
+	]
 	item_type = ITEM_TYPE_HELMET
 }
 

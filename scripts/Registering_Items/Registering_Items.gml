@@ -31,7 +31,12 @@ function register_items() {
 	#endregion
 	
 	#region Armor
-	add_armor("iron_helmet", spr_ironhelmet,2,1,ITEM_TYPE_HELMET,default_armor)
+	add_armor("iron_helmet", spr_ironhelmet,[
+			["phys_armor",modifier_type.constant,2],
+			["magic_armor",modifier_type.constant,2],
+			["max_hp",modifier_type.constant,10]
+	],ITEM_TYPE_HELMET,default_armor)
+	/*
 	add_armor("iron_chestplate", spr_ironchestplate,4,2,ITEM_TYPE_CHESTPLATE,default_armor)
 	add_armor("iron_leggings", spr_ironleggings,3,1,ITEM_TYPE_LEGGINGS,default_armor)
 	add_armor("iron_boots", spr_ironboots,2,1,ITEM_TYPE_BOOTS,default_armor)
@@ -39,6 +44,7 @@ function register_items() {
 	add_armor("leather_chestplate", spr_leatherchestplate,3,2,ITEM_TYPE_CHESTPLATE,default_armor)
 	add_armor("leather_leggings", spr_leatherleggings,2,1,ITEM_TYPE_LEGGINGS,default_armor)
 	add_armor("leather_boots", spr_leatherboots,1,1,ITEM_TYPE_BOOTS,default_armor)
+	*/
 	#endregion
 	
 	#region Weapon
