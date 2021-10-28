@@ -13,4 +13,16 @@ ds_grid_clear(global.mouse_slot, NO_ITEM);
 inventorylock=false
 inventory_size = ds_grid_width(global.inventory)
 
-event_register([event.inventory_clicked,global.equipment],id,recalculate_stats,global.equipment)
+//THIS IS TOO DIRTY WAY TO REMOVE MODIFIERS AND RECALCULATING STATS
+//TODO: REWORK THIS SHIT IN THE FUTURE
+function reset_stats(){
+	var stat_names_arr = variable_struct_get_names(obj_player_stats.stats)
+	for(var i = 0;i < array_length(stat_names_arr);i++){
+		if typeof(obj_player_stats.stats[$ stat_names_arr[i]]) == "struct"{
+			obj_player_stats.stats[$ stat_names_arr[i]].removeAllModifiers()
+		}
+	}
+	recalculate_stats()
+}
+
+event_register([event.inventory_clicked,global.equipment],id,reset_stats,global.equipment)

@@ -32,13 +32,7 @@ stats_x = stats_block_x+30
 stats_y = stats_block_y+34
 stats_word = find_keyword("stats")
 
-stats_array = [
-	//Stat name, stat description
-	[find_keyword("strength"),find_keyword("strengthdescription"),"strength"],
-	[find_keyword("agility"),find_keyword("agilitydescription"),"agility"],
-	[find_keyword("defense"),find_keyword("defensedescription"),"defense"],
-	[find_keyword("energy"),find_keyword("energydescription"),"energy"]
-]
+stats_array = ["energy","defense","strength","agility","phys_armor","magic_armor","phys_damage","magic_damage"]
 
 function assign_attribute_point_button(xx,yy,value){
 	var mouse_o = mouseover(xx,yy,xx+24,yy+24)

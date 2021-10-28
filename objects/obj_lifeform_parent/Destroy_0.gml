@@ -1,3 +1,3 @@
 event_fire([event.enemyKilled,object_index])
 ds_grid_destroy(buff_grid)
-delete stats
+Stat_List_Delete(stats)

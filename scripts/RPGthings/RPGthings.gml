@@ -2,26 +2,26 @@
 function heal(heal_amount,target,healperc) {
 	if healperc
 	{
-		target.hp+=(target.max_hp.getValue()/100)*heal_amount
+		target.stats.hp+=(target.stats.max_hp.getValue()/100)*heal_amount
 	}
 	else
 	{
-		target.hp+=heal_amount
+		target.stats.hp+=heal_amount
 	}
-	target.hp = clamp(target.hp,0,target.max_hp.getValue())
+	target.stats.hp = clamp(target.stats.hp,0,target.stats.max_hp.getValue())
 }
 
 /// @description replenish_mana(manaamount,target,inpercentage?);
 function replenish_mana(manaamount, target, manaperc) {
 	if manaperc
 	{
-		target.mana+=(target.max_mana.getValue()/100)*manaamount
+		target.stats.mana+=(target.stats.max_mana.getValue()/100)*manaamount
 	}
 	else
 	{
-		target.mana+=manaamount
+		target.stats.mana+=manaamount
 	}
-	target.mana = clamp(target.mana,0,target.max_mana.getValue())
+	target.stats.mana = clamp(target.stats.mana,0,target.stats.max_mana.getValue())
 
 }
 

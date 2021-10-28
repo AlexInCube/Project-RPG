@@ -1,4 +1,5 @@
 TODO:
+fix save/load system
 rework inventory slot handling
 improve the storage of player stats
 saving non-unique objects
@@ -9,4 +10,6 @@ fix gui scaling
 
 
 Maked in this version
-A lot improvements in character stats
+Stats now removing their modifiers before recalculating, but in very dirty way.
+Stats are deleted if entity die
+Added more shell commands

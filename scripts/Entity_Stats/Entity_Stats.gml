@@ -43,6 +43,7 @@ function Stat(baseVal) constructor{
 ///@description Use this only for player stats
 function StatExt(baseVal,statName,statIcon) : Stat(baseVal) constructor{
 	stat_name = find_keyword(statName)
+	stat_description = find_keyword(statName + "_description")
 	stat_icon = find_keyword(statIcon)
 }
 
@@ -109,4 +110,17 @@ function Entity_Stats() constructor{
 	agility = new Stat(0)//Gain evasion and hp/mp regen amount (for example potion heal 1*agility hp)
 	evasion = new Stat(0)
 	regen_multiplier = new Stat(0)
+}
+
+function Stat_List_Delete(list){
+	var stat_names_arr = variable_struct_get_names(list)
+	for(var i = 0;i < array_length(stat_names_arr);i++){
+		if typeof(list[$ stat_names_arr[i]]) == "struct"{
+			with list[$ stat_names_arr[i]]{
+				ds_map_destroy(modifiers)
+			}
+			delete list[$ stat_names_arr[i]]
+		}
+	}
+	delete list
 }
