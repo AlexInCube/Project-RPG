@@ -8,4 +8,4 @@ fix gui scaling
 
 
 Maked in this version
-Code refactoring in different places, such as dmg dealing, experience system and etc...
+Added RT-Shell instead of DaveTech Console

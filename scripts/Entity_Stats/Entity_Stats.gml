@@ -8,6 +8,12 @@ function Stat(baseVal) constructor{
 	finalValue = baseVal
 	modifiers = [
 		//[modifier_type.constant,10]
+		/*
+		ds_map_create()
+		item_id is also modifier_id
+		item provide args
+		modifier_id = [modifiers_args] 
+		*/
 	]
 	
 	static getValue = function(){

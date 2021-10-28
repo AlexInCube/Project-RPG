@@ -4,18 +4,13 @@
 /// @param max_amount
 /// @param [inv] global.inventory is default
 /// @param [slot] optional
-function item_gain(item_id, max_amount, inventory, _slot) {
+function item_gain(item_id, max_amount, inv = global.inventory, _slot) {
 	//Max item stack
 	var total      = return_struct_from_item_index_by_item_id(item_id)[$ "item_stacking"]
 	var cur_amount = 0
 	var cur_slot   = 0;
 	if !is_undefined(_slot){
 		cur_slot = _slot
-	}
-	if is_undefined(inventory){
-		var inv = global.inventory
-	}else{
-		var inv = inventory
 	}
 	var max_slot   = ds_grid_width(inv);
 

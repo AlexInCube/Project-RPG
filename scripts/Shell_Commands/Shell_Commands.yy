@@ -6,7 +6,7 @@
     "path": "folders/Objects/Debugging.yy",
   },
   "resourceVersion": "1.0",
-  "name": "show_custom_debug_message",
+  "name": "Shell_Commands",
   "tags": [],
   "resourceType": "GMScript",
 }

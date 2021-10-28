@@ -59,7 +59,7 @@ var darks, colours, pstart, pend;
 	//Colours
 	if (pstart == phase.nighttime){ light_colour = colours[0]; }
 	else {
-		var cc = ((hours - pstart) / (pend - pstart))*(array_length_1d(colours)-1);
+		var cc = ((hours - pstart) / (pend - pstart))*(array_length(colours)-1);
 		var c1 = colours[floor(cc)];
 		var c2 = colours[ceil(cc)];
 	
@@ -69,7 +69,7 @@ var darks, colours, pstart, pend;
 	//Darkness
 	if (pstart == phase.nighttime){ darkness = darks[0]; }
 	else {
-		var dd = ((hours - pstart) / (pend - pstart))*(array_length_1d(darks)-1);
+		var dd = ((hours - pstart) / (pend - pstart))*(array_length(darks)-1);
 		var d1 = darks[floor(dd)];
 		var d2 = darks[ceil(dd)];
 	
