@@ -10,15 +10,14 @@ function add_armor(item_id, sprite_index, stats, armor_type, item_struct) {
 	}
 }
 
-function add_weapon(item_id, sprite_index, phys_damage, magic_damage, weapon_create_script,item_struct) {
+function add_weapon(item_id, sprite_index, stats, weapon_create_script,item_struct) {
 	global.item_index[? item_id] = new item_struct()
 	with(global.item_index[? item_id]){
 		item_locale_name = find_keyword(item_id)
 		item_sprite = sprite_index
 		item_description = find_keyword(item_id+"_description")
 		item_stacking = 1
-		self.phys_damage = phys_damage
-		self.magic_damage = magic_damage
+		self.stats = stats
 		item_type = ITEM_TYPE_WEAPON
 		self.weapon_create_script = weapon_create_script
 	}

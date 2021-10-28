@@ -48,11 +48,11 @@ draw_set_color(c_white)
 draw_set_valign(fa_top)
 draw_set_halign(fa_left)
 //HEALTHBAR								//134 sprite width, 12 sprite height
-draw_sprite_part(spr_player_hp_bar,0,0,0,134*(player_stats.hp/player_stats.max_hp.getValue()),12,player_bar_x+39,player_bar_y+10)
-draw_text(player_bar_x+45,player_bar_y+10,string(player_stats.hp)+"/"+string(player_stats.max_hp.getValue()))
+draw_sprite_part(spr_player_hp_bar,0,0,0,134*(stats.hp/stats.max_hp.getValue()),12,player_bar_x+39,player_bar_y+10)
+draw_text(player_bar_x+45,player_bar_y+10,string(stats.hp)+"/"+string(stats.max_hp.getValue()))
 //MANABAR								//150 sprite width, 12 sprite height
-draw_sprite_part(spr_player_mana_bar,0,0,0,150*(player_stats.mana/player_stats.max_mana.getValue()),12,player_bar_x+39,player_bar_y+26)
-draw_text(player_bar_x+45,player_bar_y+26,string(player_stats.mana)+"/"+string(player_stats.max_mana.getValue()))
+draw_sprite_part(spr_player_mana_bar,0,0,0,150*(stats.mana/stats.max_mana.getValue()),12,player_bar_x+39,player_bar_y+26)
+draw_text(player_bar_x+45,player_bar_y+26,string(stats.mana)+"/"+string(stats.max_mana.getValue()))
 
 
 //EXP BAR

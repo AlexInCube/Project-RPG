@@ -14,7 +14,7 @@
   "duration": 1.273005,
   "parent": {
     "name": "Shotgun Sounds",
-    "path": "folders/Weapons/Shotgun/Shotgun Sounds.yy",
+    "path": "folders/Objects/Game Objects/Weapons/Shotgun/Shotgun Sounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_shotgun_load",

@@ -80,11 +80,8 @@ function shotgun_step() {
 						with dmg
 						{
 							physics_apply_impulse(x,y,xforce+(-4+i),yforce+(-4+i))
-							if obj_player_stats.phys_damage>0
-							{
-								damage = obj_player_stats.phys_damage
-								damagetype = DAMAGE_TYPE_PHYSICAL
-							}
+							damage = obj_player_stats.stats.phys_damage.getValue()
+							damagetype = DAMAGE_TYPE_PHYSICAL
 						}
 					}
 					

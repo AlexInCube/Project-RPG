@@ -6,7 +6,7 @@ enum modifier_type{
 function Stat(baseVal) constructor{
 	baseValue = baseVal
 	finalValue = baseVal
-	modifiers = [
+	modifiers = ds_map_create()
 		//[modifier_type.constant,10]
 		/*
 		ds_map_create()
@@ -14,7 +14,7 @@ function Stat(baseVal) constructor{
 		item provide args
 		modifier_id = [modifiers_args] 
 		*/
-	]
+	
 	
 	static getValue = function(){
 		return finalValue
@@ -25,13 +25,18 @@ function Stat(baseVal) constructor{
 		stat_recalculate()
 	}
 	
-	static addModifier = function(modifier){
-		array_push(modifiers,modifier)
+	static addModifier = function(modifier_id,stats){
+		modifiers[? modifier_id] = stats
 		stat_recalculate()
 	}
 	
-	static removeModifier = function(modifier){
-		modifiers = array_delete(modifiers,modifier,1)
+	static removeModifier = function(modifier_id){
+		ds_map_delete(modifiers,modifier_id)
+		stat_recalculate()
+	}
+	
+	static removeAllModifiers = function(){
+		ds_map_clear(modifiers)
 		stat_recalculate()
 	}
 }
@@ -44,8 +49,10 @@ function StatExt(baseVal,statName,statIcon) : Stat(baseVal) constructor{
 function stat_recalculate(){
 	var constant_val = 0
 	var percent_val = 1
-	for(var i = 0;i<array_length(modifiers);i++){
-		var modifier = modifiers[@ i]
+	var key = ds_map_find_first(modifiers)
+	
+	for(var i = 0;i<ds_map_size(modifiers);i++){
+		var modifier = modifiers[? key]
 		switch(modifier[@ 0]){
 			case modifier_type.constant:
 				constant_val += modifier[@ 1]
@@ -55,6 +62,7 @@ function stat_recalculate(){
 				percent_val += modifier[@ 1]
 			break
 		}
+		key = ds_map_find_next(modifiers,key)
 	}
 	finalValue = (baseValue + constant_val)*percent_val
 }

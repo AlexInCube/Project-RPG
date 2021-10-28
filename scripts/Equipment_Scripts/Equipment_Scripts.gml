@@ -1,11 +1,12 @@
 function recalculate_stats(inventory) {
 	var ds_width = ds_grid_width(inventory)
-	for(var i=0;i<ds_width;i++){
+	for(var i=0;i<ds_width;i++){//Loop through all equipment
 		var _item_struct = return_struct_from_item_index_by_item_inv(inventory,i)
 		if _item_struct != undefined{
-			for(var s=0;s<array_length(_item_struct.stats);s++){
-				var stat_struct = variable_struct_get(obj_player_stats.player_stats,_item_struct.stats[@ s][@ 0])
-				stat_struct.addModifier([_item_struct.stats[@ s][@ 1],_item_struct.stats[@ s][@ 2]])
+			for(var s=0;s<array_length(_item_struct.stats);s++){//Loop through all stats of invidual equipment
+				var stat_struct = variable_struct_get(obj_player_stats.stats,_item_struct.stats[@ s][@ 0])//0 - stat name
+				stat_struct.removeAllModifiers()
+				stat_struct.addModifier(inventory[# i,0],[_item_struct.stats[@ s][@ 1],_item_struct.stats[@ s][@ 2]])//1 - modifier type, 2 - value
 			}
 		}
 	}

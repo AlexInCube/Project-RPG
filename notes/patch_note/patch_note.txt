@@ -1,4 +1,5 @@
 TODO:
+rework inventory slot handling
 improve the storage of player stats
 saving non-unique objects
 add mouse support for control
@@ -8,4 +9,4 @@ fix gui scaling
 
 
 Maked in this version
-Added RT-Shell instead of DaveTech Console
+A lot improvements in character stats

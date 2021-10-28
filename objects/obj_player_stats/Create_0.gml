@@ -1,6 +1,6 @@
 create_buff_grid()
 
-player_stats = new Player_Stats()
+stats = new Player_Stats()
 
 invisibility_duration = 60//ticks
 

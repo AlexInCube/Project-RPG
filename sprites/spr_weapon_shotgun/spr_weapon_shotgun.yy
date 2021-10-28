@@ -78,7 +78,7 @@
             {"id":"10ac30b7-8d52-45bb-ae44-0ac3265b6104","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2fe22b94-6291-410f-86e5-c502c9b495cc","path":"sprites/spr_weapon_shotgun/spr_weapon_shotgun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"fffed0ed-abe1-440d-9307-df83738087db","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4ae45a4f-00fb-4347-a618-7ddc38ba9e30","path":"sprites/spr_weapon_shotgun/spr_weapon_shotgun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"9814e92d-bae0-4a55-b3ae-73749d71bd55","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d394886a-eebc-4178-9a9e-b43b3dc2f1bc","path":"sprites/spr_weapon_shotgun/spr_weapon_shotgun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -107,7 +107,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Shotgun Sprites",
-    "path": "folders/Weapons/Shotgun/Shotgun Sprites.yy",
+    "path": "folders/Objects/Game Objects/Weapons/Shotgun/Shotgun Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_weapon_shotgun",

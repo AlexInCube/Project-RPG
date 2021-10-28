@@ -48,10 +48,14 @@ function register_items() {
 	#endregion
 	
 	#region Weapon
-	add_weapon("wooden_stick",spr_item_weapon_wooden_stick,2,0,wooden_stick_create,default_item)
+	add_weapon("wooden_stick",spr_item_weapon_wooden_stick,[
+		["phys_damage",modifier_type.constant,1]
+	],wooden_stick_create,default_item)
 	//add_weapon("iron_sword", spr_ItemIcon_ironsword,10,0,melee_attack)
-	add_weapon("light_staff", spr_MagicWeaponLightningStaff,0,10,light_staff_create,light_staff)
-	add_weapon("shotgun", spr_item_weapon_shotgun,2,0,shotgun_create,shotgun)
+	//add_weapon("light_staff", spr_MagicWeaponLightningStaff,0,10,light_staff_create,light_staff)
+	add_weapon("shotgun", spr_item_weapon_shotgun,[
+		["phys_damage",modifier_type.constant,3]
+	],shotgun_create,shotgun)
 	#endregion
 	
 	#region Spell
