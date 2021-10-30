@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "PhysWeapon",
-    "path": "folders/Objects/Controllers/Inventory/Items Sprites/Weapon/PhysWeapon.yy",
+    "path": "folders/Objects/Controllers/Game Mechanics/Inventory/Items Sprites/Weapon/PhysWeapon.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ItemIcon_ironsword",

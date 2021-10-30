@@ -57,14 +57,14 @@ function load(save_name){
 function _delete(save_name){
 	with(obj_save_or_load_window){
 		directory_destroy("Saves\\"+save_name)
-		show_debug_message(LOGGER_SAVE_MANAGER+"Save deleted: "+save_name)
+		console_log(LOGGER_SAVE_MANAGER+"Save deleted: "+save_name)
 		create_saves_list()
 		drawelementstart = clamp(drawelementstart,0,max(0,ds_size-drawelementheight))
 	}
 }
 
 function delete_question(save_name){
-	open_question_window(400,200,find_keyword("are_you_sure_delete_save")+save_name+" ?","yes","no",method_get_index(_delete),nothing,[save_name])
+	open_question_window(400,200,find_keyword("are_you_sure_delete_save")+save_name+" ?","yes","no",method_get_index(_delete),placeholder,[save_name])
 }
 	
 function button(xx,yy,_sprite,_method,save_name){

@@ -15,7 +15,7 @@ enum spell_pieces_side{
 #macro SPELL_WORD_INPUT find_keyword("spell_piece_input")
 #macro SPELL_WORD_OUTPUT find_keyword("spell_piece_output")
 
-#macro SPELL_WORD_NOTHING find_keyword("spell_word_nothing")
+#macro SPELL_WORD_placeholder find_keyword("spell_word_placeholder")
 #macro SPELL_WORD_COORD find_keyword("spell_word_coord")
 
 #macro PIECES_GROUP_ALL global.spell_pieces.all_pieces
@@ -30,13 +30,13 @@ function register_spell_pieces(){
 	add_spell_group("all_pieces")
 	add_spell_group("general_pieces")
 	add_spell_group("operator_pieces")
-	//add_spell_piece("spell_piece_nothing",default_spell_piece,PIECES_GROUP_GENERAL)
+	//add_spell_piece("spell_piece_placeholder",default_spell_piece,PIECES_GROUP_GENERAL)
 	add_spell_piece("spell_piece_unknown",spell_piece_unknown,PIECES_GROUP_OPERATOR)
 	add_spell_piece("spell_piece_play_sound",spell_piece_play_sound,PIECES_GROUP_GENERAL)
 	add_spell_piece("spell_piece_get_player_pos",spell_piece_get_player_pos,PIECES_GROUP_GENERAL)
 	
 
-	show_debug_message(LOGGER_SPELL_MANAGER+"Registed "+string(
+	console_log(LOGGER_SPELL_MANAGER+"Registed "+string(
 	ds_map_size(global.spell_pieces.general_pieces)
 	+ds_map_size(global.spell_pieces.operator_pieces)
 	)+" spells")
@@ -80,7 +80,7 @@ function default_spell_piece() constructor{
 	input = [SPELL_DATA_ANY]
 	config_sides_names = [find_keyword("Test"),find_keyword("Test"),find_keyword("Test"),find_keyword("Test")]
 	output = SPELL_DATA_NONE
-	output_txt_help = SPELL_WORD_NOTHING
+	output_txt_help = SPELL_WORD_placeholder
 	execute_script = function(){
 		
 	}
@@ -93,7 +93,7 @@ function spell_piece_play_sound() : default_spell_piece() constructor{
 	piece_sprite = spr_spell_creating_piece_play_sound
 	input = [SPELL_DATA_NUMBER,SPELL_DATA_COORD]
 	output = SPELL_DATA_NONE
-	output_txt_help = SPELL_WORD_NOTHING
+	output_txt_help = SPELL_WORD_placeholder
 }
 
 function spell_piece_get_player_pos() : default_spell_piece() constructor{

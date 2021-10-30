@@ -25,7 +25,7 @@ function interact(){
 				obj_inventory.inventorylock=true
 				obj_player.image_speed=0
 				obj_player.image_index=0
-				event_fire([event.talk,object_index])
+				event_fire([EVENT_NPC_TALK,object_index])
 			}	else {	//if player moves outside of detection radius
 			if(myTextbox != noone){
 				with(myTextbox) instance_destroy();

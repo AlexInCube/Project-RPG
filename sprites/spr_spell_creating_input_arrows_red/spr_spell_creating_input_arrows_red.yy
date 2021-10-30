@@ -54,7 +54,7 @@
             {"id":"67446232-b660-4a1e-8df3-b0f500fab069","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a8821e9d-a234-4d7e-9cc6-e971f457d882","path":"sprites/spr_spell_creating_input_arrows_red/spr_spell_creating_input_arrows_red.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"c1756ad4-be26-4b08-a921-c9c7a8108afe","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6bd8ba60-1a24-4d9c-a4be-231bb0f1064d","path":"sprites/spr_spell_creating_input_arrows_red/spr_spell_creating_input_arrows_red.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4db18d60-b8b6-4805-97ab-070abd1b1238","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"69061143-4b66-4a8a-acd1-771bf1a10366","path":"sprites/spr_spell_creating_input_arrows_red/spr_spell_creating_input_arrows_red.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -82,7 +82,7 @@
   "nineSlice": null,
   "parent": {
     "name": "GUI Sprites",
-    "path": "folders/Objects/Controllers/Spell Creating/GUI Sprites.yy",
+    "path": "folders/Objects/Controllers/Game Mechanics/Spell Creating/GUI Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_spell_creating_input_arrows_red",

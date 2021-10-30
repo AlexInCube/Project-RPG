@@ -89,7 +89,7 @@ function import_spell(){
 		try{
 			var save_data = json_parse(clipboard_get_text())
 		} catch(e){
-			show_debug_message("JSON STRING NOT SPELL")
+			console_log("JSON STRING NOT SPELL")
 			exit
 		}
 		var spell_grid_temp = spell_data.spell_grid
@@ -108,7 +108,7 @@ function import_spell(){
 		}
 		spell_data.spell_name = save_data.spell_name
 	}
-	show_debug_message("Imported")
+	console_log("Imported")
 }
 export_spell_spr = spr_spell_creating_export_spell
 export_spell_spr_width = sprite_get_width(export_spell_spr)
@@ -132,7 +132,7 @@ function export_spell(){
 	save_data.spell_grid = ds_grid_write(spell_grid_temp)
 	ds_grid_destroy(spell_grid_temp)
 	clipboard_set_text(json_stringify(save_data))
-	show_debug_message("Exported")
+	console_log("Exported")
 }
 #endregion
 #region Right Panel

@@ -139,7 +139,7 @@ var yy = 0; for(var i=drawelementstart;i<drawelementstart+drawelementheight;i++)
 				
 				draw_sprite(spr_control_button,keymode,rsx-entriesoffset-input_button_half_width,rsy)
 				draw_set_valign(fa_top)
-				draw_text_color(rsx-entriesoffset,rsy-2,return_normal_control_word(current_val),c,c,c,c,1)
+				draw_text_color(rsx-entriesoffset,rsy-2,options_get_control_word(current_val),c,c,c,c,1)
 			break;
 			#endregion
 	}

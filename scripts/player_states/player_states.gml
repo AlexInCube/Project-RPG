@@ -82,7 +82,7 @@ if obj_controller.xaxis != 0 or obj_controller.yaxis != 0 {
 		with inst
 		{
 			item_gain(whatitem,amount,global.inventory)
-			event_fire([event.itemPickuped,whatitem,amount])
+			event_fire([EVENT_ITEM_PICKUPED,whatitem,amount])
 			instance_destroy()
 		}
 	}

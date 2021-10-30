@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Buff System",
-    "path": "folders/Objects/Controllers/Game Mechanics/Buff System.yy",
+    "name": "Debugging",
+    "path": "folders/Objects/Debugging.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Buff_Classes",
+  "name": "get_timestamp",
   "tags": [],
   "resourceType": "GMScript",
 }

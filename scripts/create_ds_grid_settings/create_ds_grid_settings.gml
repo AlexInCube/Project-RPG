@@ -23,9 +23,9 @@ function create_ds_grid_settings() {
 	ds_options = create_menu_page(
 		//0  Locale word                        //1 Element Type            //2               //3				   //4 //5 //6
 		[find_keyword("audio_settings"),		settings_element_type.title],
-		[find_keyword("master_volume"),			settings_element_type.slider, change_volume,[global.settings.audio.mastervolume,["audio","mastervolume"]],0,1,0.01],
-		[find_keyword("music_volume"),			settings_element_type.slider, change_volume,[global.settings.audio.musicvolume,["audio","musicvolume"]],0,1,0.01],
-		[find_keyword("sound_volume"),			settings_element_type.slider, change_volume,[global.settings.audio.soundvolume,["audio","soundvolume"]],0,1,0.01],
+		[find_keyword("master_volume"),			settings_element_type.slider, options_change_volume,[global.settings.audio.mastervolume,["audio","mastervolume"]],0,1,0.01],
+		[find_keyword("music_volume"),			settings_element_type.slider, options_change_volume,[global.settings.audio.musicvolume,["audio","musicvolume"]],0,1,0.01],
+		[find_keyword("sound_volume"),			settings_element_type.slider, options_change_volume,[global.settings.audio.soundvolume,["audio","soundvolume"]],0,1,0.01],
 		
 		[find_keyword("graphics_settings"),		settings_element_type.title],
 		[find_keyword("resolution"),			settings_element_type.shift, change_resolution,sr,resolution_array],

@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Game Start Window",
-    "path": "folders/Objects/Controllers/Game Start Window.yy",
+    "path": "folders/Objects/Controllers/GUI`s/Game Start Window.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_game_start_window",

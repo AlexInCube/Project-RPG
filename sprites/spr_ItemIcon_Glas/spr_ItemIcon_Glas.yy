@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "itempack",
-    "path": "folders/Objects/Controllers/Inventory/Items Sprites/itempack.yy",
+    "path": "folders/Objects/Controllers/Game Mechanics/Inventory/Items Sprites/itempack.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ItemIcon_Glas",

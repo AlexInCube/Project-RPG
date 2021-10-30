@@ -129,7 +129,7 @@
             {"id":"4c681230-fe9c-472d-8f5d-2c36276bed8f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dd2dbdc6-00d3-4572-b9d8-c6ede07cbaa0","path":"sprites/spr_control_button/spr_control_button.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"63710f24-8388-4183-9358-442e305554ab","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"db73d76f-86dc-40da-91c1-9bb3a118a0d0","path":"sprites/spr_control_button/spr_control_button.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"6dc581f1-ed2b-4b92-8c76-06e4b73b86fb","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"75c3f7d7-dea4-4f10-9673-9577e643e8ea","path":"sprites/spr_control_button/spr_control_button.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -157,7 +157,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Options Sprites",
-    "path": "folders/Objects/Controllers/Options/Options Sprites.yy",
+    "path": "folders/Objects/Controllers/GUI`s/Options/Options Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_control_button",

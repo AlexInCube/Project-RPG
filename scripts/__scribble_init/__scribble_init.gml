@@ -187,7 +187,7 @@ function __scribble_trace()
         ++_i;
     }
     
-    show_debug_message(_string);
+    console_log(_string);
 }
 
 function __scribble_error()
@@ -201,7 +201,7 @@ function __scribble_error()
         ++_i;
     }
     
-    show_debug_message("Scribble: " + string_replace_all(_string, "\n", "\n          "));
+    console_log("Scribble: " + string_replace_all(_string, "\n", "\n          "));
     show_error("Scribble:\n" + _string + "\n ", true);
 }
 

@@ -3,7 +3,7 @@ function spell_in_debug(){
 }
 
 function spell_throw_exception(){
-	show_debug_message("spell error")
+	console_log("spell error")
 }
 
 

@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "GUIscreens",
-    "path": "folders/Objects/Controllers/GUIscreens.yy",
+    "path": "folders/Objects/Controllers/GUI`s/GUIscreens.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_gui_screen_controller",

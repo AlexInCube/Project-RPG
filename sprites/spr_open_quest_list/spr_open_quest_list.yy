@@ -127,7 +127,7 @@
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"f977ceb2-85d9-410e-9efa-7fa35f4a2cf6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b84f0f82-bd6f-4671-b6fe-0669a97d9cfe","path":"sprites/spr_open_quest_list/spr_open_quest_list.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"573b21d5-72bc-4e63-8329-de3d31ee3a73","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e9948ec2-880e-46df-b101-0088ecbc82d8","path":"sprites/spr_open_quest_list/spr_open_quest_list.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -156,7 +156,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Quest Screen",
-    "path": "folders/Objects/Controllers/GUIscreens/Quest Screen.yy",
+    "path": "folders/Objects/Controllers/GUI`s/GUIscreens/Quest Screen.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_open_quest_list",

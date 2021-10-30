@@ -14,8 +14,8 @@ jump_count--
 					ds_list_delete(_list,_list[| i])
 					continue
 				}
-				//show_debug_message(_list[| i])
-				//show_debug_message(ds_list_find_index(target_list,_list[| i]))
+				//console_log(_list[| i])
+				//console_log(ds_list_find_index(target_list,_list[| i]))
 				if _list[| i] == target_list[| ds_list_find_index(target_list,_list[| i])]{
 					continue
 				}else{

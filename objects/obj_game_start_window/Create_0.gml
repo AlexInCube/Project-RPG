@@ -23,7 +23,7 @@ function check_save_files() {
 		while(file != ""){
 			if file == obj_ui_textbox.txt{
 				ui_element_switch_lock_all(ds_elements,true)
-				open_question_window(300,200,find_keyword("save_exists"),find_keyword("yes"),find_keyword("no"),method_get_index(game_start),nothing)
+				open_question_window(300,200,find_keyword("save_exists"),find_keyword("yes"),find_keyword("no"),method_get_index(game_start),placeholder)
 				file_find_close()
 				exit
 			}

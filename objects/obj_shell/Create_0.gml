@@ -2,11 +2,17 @@ if instance_number(obj_shell) > 1{
 	instance_destroy()
 }
 
+function resize_shell(){
+	width = GUIWIDTH-20
+	height = GUIHEIGHT/3
+}
+
+resize_shell()
+
+event_register(id,EVENT_GUI_RESIZE,resize_shell)
+
 isOpen = false;
 isAutocompleteOpen = false;
-
-width = GUIWIDTH-20
-height = GUIHEIGHT/3
 
 shellSurface = noone;
 scrollSurface = noone;
@@ -110,7 +116,7 @@ function updateFilteredSuggestions() {
 	var inputString = string_lower(consoleString);
 	inputArray = self.string_split(inputString, " ");
 	
-	// Return if we have nothing to parse
+	// Return if we have placeholder to parse
 	if (string_length(inputString) == 0 || array_length(inputArray) == 0) { return; }
 	
 	// Set font for string_width calculation

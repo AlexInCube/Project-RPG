@@ -37,7 +37,7 @@ function scribble_font_add_msdf(_font, _sprite, _json_name)
     
     var _font_data = new __scribble_class_font(_font, "msdf");
     
-    if (SCRIBBLE_VERBOSE) show_debug_message( "Scribble: Defined \"" + _font + "\" as an MSDF font" );
+    if (SCRIBBLE_VERBOSE) console_log( "Scribble: Defined \"" + _font + "\" as an MSDF font" );
     
     var _sprite_width  = sprite_get_width(_sprite);
     var _sprite_height = sprite_get_height(_sprite);
@@ -76,7 +76,7 @@ function scribble_font_add_msdf(_font, _sprite, _json_name)
         var _index = _json_glyph_map[? "unicode"];
         var _char  = chr(_index);
         
-        if (__SCRIBBLE_DEBUG) show_debug_message("Scribble:     Adding data for character \"" + string(_char) + "\" (" + string(_index) + ")");
+        if (__SCRIBBLE_DEBUG) console_log("Scribble:     Adding data for character \"" + string(_char) + "\" (" + string(_index) + ")");
         
         if (_atlas_map != undefined)
         {

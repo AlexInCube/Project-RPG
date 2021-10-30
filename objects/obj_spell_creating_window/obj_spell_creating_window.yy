@@ -27,7 +27,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Spell Creating",
-    "path": "folders/Objects/Controllers/Spell Creating.yy",
+    "path": "folders/Objects/Controllers/Game Mechanics/Spell Creating.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_spell_creating_window",

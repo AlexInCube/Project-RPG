@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Dialogue System",
-    "path": "folders/Objects/Controllers/Dialogue System.yy",
+    "path": "folders/Objects/Controllers/Game Mechanics/Dialogue System.yy",
   },
   "resourceVersion": "1.0",
   "name": "dialogue_macros",

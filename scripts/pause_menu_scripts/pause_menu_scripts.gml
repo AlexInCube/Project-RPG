@@ -42,7 +42,7 @@ function pause_game(){
 
 //Destroy obj_pause and resume game
 function resume_game(){
-	show_debug_message("Game resumed!")
+	console_log("Game resumed!")
 	with(obj_pause)instance_destroy()
 	instance_activate_all()
 	with(obj_camera)event_user(0)

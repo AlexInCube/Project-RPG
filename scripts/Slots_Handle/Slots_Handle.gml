@@ -33,7 +33,7 @@ function slot(inventory, slot_id, xx, yy, clickable, itemtype) {
 		if is_method(_item_render){
 			_item_render = method_get_index(_item_render)
 		}
-		//show_debug_message(_item_args)
+		//console_log(_item_args)
 		if _item_render != -1//If item has script
 		{
 			var _item_args = [xx,yy,inventory,slot_id]
@@ -99,7 +99,7 @@ function slot(inventory, slot_id, xx, yy, clickable, itemtype) {
 					}
 				}
 			}
-			event_fire([event.inventory_clicked,inventory])
+			event_fire(EVENT_INVENTORY_CLICKED,{_inv : inventory, _slot : slot_id})
 		}
 	
 	
@@ -173,11 +173,11 @@ function slot_script_execute(inventory, slot_id) {
 			var _item_script = method_get_index(_item_struct[$ "quick_use"])
 			if _item_script != -1//If item have script
 			{
-				//show_debug_message(_item_script)
+				//console_log(_item_script)
 				var src = _item_struct[$ "arg_array"]
 				var _item_args = []; array_copy(_item_args,0,src,0,array_length(src))
 				array_push(_item_args,[inventory,slot_id])//Push inv and slot_id to item script
-				//show_debug_message(_item_args)
+				//console_log(_item_args)
 				script_execute_ext(_item_script,_item_args)
 			}
 		}

@@ -10,7 +10,7 @@ function register_screens(){
 	add_screen(SCREEN_INVENTORY,spr_backpack,obj_inventory_screen)
 	add_screen(SCREEN_LOCATION_MAP,spr_map,obj_map_screen)
 	
-	show_debug_message("Registered "+string(ds_map_size(global.screen_map))+" GUI screens")
+	console_log("Registered "+string(ds_map_size(global.screen_map))+" GUI screens")
 }
 
 function add_screen(screen_id,screen_ico,screen_obj){

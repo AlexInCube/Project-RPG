@@ -14,7 +14,7 @@ function ewgen_if_no_more_slimes(){
 				choice_variable = "saved_from_slimes"
 				story_tag_status("ewgen_saved_from_slimes",true)
 				path_end()
-				event_unregister([event.enemyKilled,obj_enemy_slime],id)
+				event_unregister([EVENT_ENEMY_KILLED,obj_enemy_slime],id)
 			}
 		}
 	}

@@ -18,7 +18,7 @@ function default_armor() : default_item() constructor{
 }
 
 function default_quick_useable() : default_item() constructor{
-	quick_use = nothing
+	quick_use = placeholder
 	arg_array = []
 	item_type = ITEM_TYPE_SPELL
 }

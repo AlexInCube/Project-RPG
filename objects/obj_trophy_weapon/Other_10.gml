@@ -10,7 +10,7 @@ switch(weapon_taked){
 		myTypes[i]		= 1;
 		mySpeaker[i]	= obj_player;
 		myNextLine[i]	= -1
-		myScripts[i]	= [[trophy_gun_furniture],[nothing]]
+		myScripts[i]	= [[trophy_gun_furniture],[placeholder]]
 	break;
 	#endregion
 }

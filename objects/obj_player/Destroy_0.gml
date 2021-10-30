@@ -1,1 +1,1 @@
-event_fire([event.enemyKilled,object_index])
+event_fire([EVENT_ENEMY_KILLED,object_index])

@@ -86,7 +86,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Other",
-    "path": "folders/Objects/Controllers/Inventory/Items Sprites/Other.yy",
+    "path": "folders/Objects/Controllers/Game Mechanics/Inventory/Items Sprites/Other.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_item_money",

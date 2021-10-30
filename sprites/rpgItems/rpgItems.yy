@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Items Sprites",
-    "path": "folders/Objects/Controllers/Inventory/Items Sprites.yy",
+    "path": "folders/Objects/Controllers/Game Mechanics/Inventory/Items Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "rpgItems",

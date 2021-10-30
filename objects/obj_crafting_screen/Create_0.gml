@@ -44,8 +44,8 @@ function item_groups_overlay(group_id){
 #endregion
 
 #region Crafting Overlay
-craft_word_additon = string_replace(find_keyword("craft_more_details"),"addition_key",return_normal_control_word(global.settings.controls.addition_key))
-craft_word_can_craft = string_replace(find_keyword("craft"),"interact_key",return_normal_control_word(global.settings.controls.interact_key))
+craft_word_additon = string_replace(find_keyword("craft_more_details"),"addition_key",options_get_control_word(global.settings.controls.addition_key))
+craft_word_can_craft = string_replace(find_keyword("craft"),"interact_key",options_get_control_word(global.settings.controls.interact_key))
 craft_overlay_default_height = 160
 craft_overlay_background = spr_craft_list_background
 craft_can_craft_color = c_lime

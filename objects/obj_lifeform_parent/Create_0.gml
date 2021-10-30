@@ -10,4 +10,4 @@ target = obj_player
 
 create_buff_grid()
 
-function Die(){show_debug_message("die");instance_destroy()}
+function Die(){console_log("die");instance_destroy()}

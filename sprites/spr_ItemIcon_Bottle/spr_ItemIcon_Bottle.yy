@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Potions",
-    "path": "folders/Objects/Controllers/Inventory/Items Sprites/Potions.yy",
+    "path": "folders/Objects/Controllers/Game Mechanics/Inventory/Items Sprites/Potions.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ItemIcon_Bottle",

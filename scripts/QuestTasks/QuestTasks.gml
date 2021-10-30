@@ -25,7 +25,7 @@ function task_item_in_slot(inventory_name,slot_id,item_id,questid) {
 	if variable_global_exists(inventory_name){
 		var inventory = variable_global_get(inventory_name)
 	}else{
-		show_debug_message("INVENTORY NOT EXISTS, WHAT ARE PUT IN QUEST TASK?")
+		console_log("INVENTORY NOT EXISTS, WHAT ARE PUT IN QUEST TASK?")
 		exit
 	}
 	

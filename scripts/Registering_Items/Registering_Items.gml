@@ -82,5 +82,5 @@ function register_items() {
 	
 	add_other_item("money",spr_item_money,999,ITEM_TYPE_OTHER,money)
 	
-	show_debug_message("Registered "+string(ds_map_size(global.item_index))+" items")
+	console_log("Registered "+string(ds_map_size(global.item_index))+" items")
 }

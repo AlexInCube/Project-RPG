@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Question Window",
-    "path": "folders/Objects/Controllers/Question Window.yy",
+    "path": "folders/Objects/Controllers/GUI`s/Question Window.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_question_window",

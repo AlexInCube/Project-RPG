@@ -56,7 +56,6 @@ global.settings = {
 		developer_key :	vk_f5
 		},
 	}
-show_debug_message("Fullscreen: "+string(global.settings.video.fullscreen)+" Width: "+string(global.settings.video.width)+" Height: "+string(global.settings.video.height))
 }
 
 function apply_settings() {

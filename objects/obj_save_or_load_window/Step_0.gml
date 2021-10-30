@@ -7,8 +7,8 @@ if mouse_wheel_up(){
 	drawelementstart = clamp(drawelementstart,0,max(0,ds_size-drawelementheight))
 }
 
-//show_debug_message("DES:"+string(drawelementstart)+" DEH:"+string(drawelementheight))
-//show_debug_message(ds_size)
+//console_log("DES:"+string(drawelementstart)+" DEH:"+string(drawelementheight))
+//console_log(ds_size)
 
 if keyboard_check_pressed(global.settings.controls.pause_key){
 	instance_destroy()

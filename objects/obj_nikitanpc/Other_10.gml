@@ -33,7 +33,7 @@ switch(choice_variable){
 		myTypes[i]		= 1
 		mySpeaker[i]	= obj_player
 		myNextLine[i]	= [5,10]
-		myScripts[i]	= [[nothing],[quest_update,quest.slimetrouble]]
+		myScripts[i]	= [[placeholder],[quest_update,quest.slimetrouble]]
 		
 
 		//Line 5
@@ -67,7 +67,7 @@ switch(choice_variable){
 		myText[i]		= ["Помогу","Нет"];
 		myTypes[i]		= 1;
 		myNextLine[i]   = [10,7]
-		myScripts[i]	= [[quest_update,quest.slimetrouble],[nothing]]
+		myScripts[i]	= [[quest_update,quest.slimetrouble],[placeholder]]
 		mySpeaker[i]	= id;
 		
 		//Line 10
@@ -151,7 +151,7 @@ switch(choice_variable){
 		myNextLine[i]	= [7,-1]
 		myTypes[i]		= 1
 		mySpeaker[i]	= id;
-		myScripts[i]	= [[nothing],[slimetrouble_nikita_take_displasure]]
+		myScripts[i]	= [[placeholder],[slimetrouble_nikita_take_displasure]]
 		//Line 10
 		i++
 		myText[i]		= "Пойди потом к кузнецу Евгену, он тебе что-нибудь сделает.";

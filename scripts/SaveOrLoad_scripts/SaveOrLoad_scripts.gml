@@ -88,7 +88,7 @@ function save_game() {
 	var file = file_text_open_write(file_path)
 	file_text_write_string(file,save_string)
 	file_text_close(file)
-	show_debug_message(LOGGER_SAVE_MANAGER+"Main data saved: "+file_path)
+	console_log(LOGGER_SAVE_MANAGER+"Main data saved: "+file_path)
 	
 	
 	instance_activate_all()
@@ -96,8 +96,8 @@ function save_game() {
 	//End of write playerdata.txt
 	save_room_data(room,return_room_data())
 	//End of write room_name.txt
-	show_debug_message(LOGGER_SAVE_MANAGER+"Room saved: "+file_path)
-	show_debug_message(LOGGER_SAVE_MANAGER+"Game saved!")
+	console_log(LOGGER_SAVE_MANAGER+"Room saved: "+file_path)
+	console_log(LOGGER_SAVE_MANAGER+"Game saved!")
 }
 //Game loading working from anywhere
 function load_game() {
@@ -165,7 +165,7 @@ function load_game() {
 		recalculate_stats(global.equipment)
 	}
 	
-	show_debug_message(LOGGER_SAVE_MANAGER+"Playerdata.txt loaded")
+	console_log(LOGGER_SAVE_MANAGER+"Playerdata.txt loaded")
 }
 
 function try_load_data(struct,var_name,_default){
@@ -195,7 +195,7 @@ function return_room_data(){
 	
 	var wrapper = ds_map_create()
 	ds_map_add_list(wrapper,"object_list",object_list)
-	show_debug_message(LOGGER_SAVE_MANAGER+"Saveable object exists: "+string(ds_list_size(object_list)))
+	console_log(LOGGER_SAVE_MANAGER+"Saveable object exists: "+string(ds_list_size(object_list)))
 	var save_string = json_encode(wrapper);
 	ds_map_destroy(wrapper);
 	return save_string
@@ -231,10 +231,10 @@ function load_room_data(){
 				CallUserEvent(15,map)
 			}
 		}
-		show_debug_message(LOGGER_SAVE_MANAGER+"Room loaded: "+file_path)
+		console_log(LOGGER_SAVE_MANAGER+"Room loaded: "+file_path)
 		ds_map_destroy(wrapper)
 	}else{
-		show_debug_message(LOGGER_SAVE_MANAGER+"Error while room loading: "+file_path)
+		console_log(LOGGER_SAVE_MANAGER+"Error while room loading: "+file_path)
 	}
 }
 

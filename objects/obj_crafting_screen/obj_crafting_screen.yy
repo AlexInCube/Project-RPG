@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Crafting Screen",
-    "path": "folders/Objects/Controllers/GUIscreens/Crafting Screen.yy",
+    "path": "folders/Objects/Controllers/GUI`s/GUIscreens/Crafting Screen.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_crafting_screen",

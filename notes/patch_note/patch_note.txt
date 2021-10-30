@@ -1,7 +1,7 @@
 TODO:
-fix save/load system
+fix broken things in save/load system
 rework inventory slot handling
-improve the storage of player stats
+rework quest handling
 saving non-unique objects
 add mouse support for control
 loot-tables
@@ -10,6 +10,4 @@ fix gui scaling
 
 
 Maked in this version
-Stats now removing their modifiers before recalculating, but in very dirty way.
-Stats are deleted if entity die
-Added more shell commands
+Reworked event manager

@@ -16,6 +16,9 @@ inventory_size = ds_grid_width(global.inventory)
 //THIS IS TOO DIRTY WAY TO REMOVE MODIFIERS AND RECALCULATING STATS
 //TODO: REWORK THIS SHIT IN THE FUTURE
 function reset_stats(){
+	console_log("Inv: "+string(argument1._inv))
+	console_log("Slot: "+string(argument1._slot))
+	
 	var stat_names_arr = variable_struct_get_names(obj_player_stats.stats)
 	for(var i = 0;i < array_length(stat_names_arr);i++){
 		if typeof(obj_player_stats.stats[$ stat_names_arr[i]]) == "struct"{
@@ -25,4 +28,4 @@ function reset_stats(){
 	recalculate_stats()
 }
 
-event_register([event.inventory_clicked,global.equipment],id,reset_stats,global.equipment)
+event_register(id,EVENT_INVENTORY_CLICKED,reset_stats,[global.equipment])

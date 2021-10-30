@@ -6,7 +6,7 @@ function test_room_start() {
 }
 
 function show_exit_question(){
-	open_question_window(450,150,"are_you_sure","i_am_weak","i_am_not_surrender",game_exit,nothing)
+	open_question_window(450,150,"are_you_sure","i_am_weak","i_am_not_surrender",game_exit,placeholder)
 }
 
 function game_exit() {

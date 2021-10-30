@@ -1,5 +1,5 @@
-weapon_step_script=nothing
-weapon_draw_script=nothing
-weapon_create_script=nothing
-weapon_alarm_script=nothing
-weapon_alarm_1_script=nothing
+weapon_step_script=placeholder
+weapon_draw_script=placeholder
+weapon_create_script=placeholder
+weapon_alarm_script=placeholder
+weapon_alarm_1_script=placeholder

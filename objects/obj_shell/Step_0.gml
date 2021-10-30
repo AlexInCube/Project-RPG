@@ -145,12 +145,12 @@ if (!isOpen) {
 						response = script_execute(asset_get_index(script_get_name(script)), args);
 					} catch (_exception) {
 						response = "-- ERROR: see debug output for details --";
-						show_debug_message("---- ERROR executing rt-shell command [" + args[0] + "] ----");
-						show_debug_message(_exception.message);
-						show_debug_message(_exception.longMessage);
-						show_debug_message(_exception.script);
-						show_debug_message(_exception.stacktrace);
-						show_debug_message("----------------------------");
+						console_log("---- ERROR executing rt-shell command [" + args[0] + "] ----");
+						console_log(_exception.message);
+						console_log(_exception.longMessage);
+						console_log(_exception.script);
+						console_log(_exception.stacktrace);
+						console_log("----------------------------");
 					}
 					array_push(history, consoleString);
 					if (response != "") { array_push(output, ">" + consoleString); }

@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Spells",
-    "path": "folders/Objects/Controllers/Inventory/Items Sprites/Spells.yy",
+    "path": "folders/Objects/Controllers/Game Mechanics/Inventory/Items Sprites/Spells.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ItemIcon_SpellFireball",

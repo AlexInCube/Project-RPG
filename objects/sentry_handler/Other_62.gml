@@ -33,8 +33,8 @@ if (not is_undefined(requestUuid)) {
 		ds_map_delete(requestMap, string(asyncId));
 	}
 	else { // falure
-		show_debug_message("Async event returned failure:")
-		show_debug_message(json_encode(async_load))
+		console_log("Async event returned failure:")
+		console_log(json_encode(async_load))
 	}
 
 }

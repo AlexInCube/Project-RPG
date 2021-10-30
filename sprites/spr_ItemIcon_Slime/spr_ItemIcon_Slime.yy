@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Components",
-    "path": "folders/Objects/Controllers/Inventory/Items Sprites/Components.yy",
+    "path": "folders/Objects/Controllers/Game Mechanics/Inventory/Items Sprites/Components.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ItemIcon_Slime",

@@ -5,5 +5,5 @@ function destroy_after(){
 	story_tag_status("bush_destroyer",true)
 	instance_destroy(id)
 }
-event_register([event.trigger,id],id,destroy_after)
-trigger_event = [event.trigger,id]
+event_register([EVENT_TRIGGER,id],id,destroy_after)
+trigger_event = [EVENT_TRIGGER,id]

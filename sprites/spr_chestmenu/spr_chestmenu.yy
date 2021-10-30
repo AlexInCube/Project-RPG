@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Inventory Sprites",
-    "path": "folders/Objects/Controllers/Inventory/Inventory Sprites.yy",
+    "path": "folders/Objects/Controllers/Game Mechanics/Inventory/Inventory Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_chestmenu",

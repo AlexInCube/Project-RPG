@@ -112,6 +112,7 @@ function Entity_Stats() constructor{
 	regen_multiplier = new Stat(0)
 }
 
+//StatListDelete need for clear memory, after enemy dies.
 function Stat_List_Delete(list){
 	var stat_names_arr = variable_struct_get_names(list)
 	for(var i = 0;i < array_length(stat_names_arr);i++){

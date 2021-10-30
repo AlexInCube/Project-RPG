@@ -122,7 +122,7 @@
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"52e002b5-5f10-4b20-a4b7-9558b293deb3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"80d013d3-fa5a-4957-b04b-a7bb40a4c79d","path":"sprites/spr_inventory_screen/spr_inventory_screen.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -151,7 +151,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Inventory Screen",
-    "path": "folders/Objects/Controllers/GUIscreens/Inventory Screen.yy",
+    "path": "folders/Objects/Controllers/GUI`s/GUIscreens/Inventory Screen.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_inventory_screen",

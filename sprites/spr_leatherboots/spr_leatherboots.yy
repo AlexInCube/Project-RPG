@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Armor",
-    "path": "folders/Objects/Controllers/Inventory/Items Sprites/Armor.yy",
+    "path": "folders/Objects/Controllers/Game Mechanics/Inventory/Items Sprites/Armor.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_leatherboots",

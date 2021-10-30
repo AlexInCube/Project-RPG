@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Quest System",
-    "path": "folders/Objects/Controllers/Quest System.yy",
+    "path": "folders/Objects/Controllers/Game Mechanics/Quest System.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_questmanager",

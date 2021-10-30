@@ -17,7 +17,7 @@ switch(global.load_state){
 	case load_state.init_game:
 		if !file_exists("Saves\\"+global.directory_save+"/playerdata.txt"){
 			exit_to_main_menu()
-			show_debug_message(LOGGER_SAVE_MANAGER+"ERROR WHILE LOADING SAVE FROM SAVES LIST")
+			console_log(LOGGER_SAVE_MANAGER+"ERROR WHILE LOADING SAVE FROM SAVES LIST")
 			break
 		}
 		var file = file_text_open_read("Saves\\"+global.directory_save+"/playerdata.txt")
@@ -26,7 +26,7 @@ switch(global.load_state){
 		var save_data = json_parse(save_string)
 	
 		var save_room = asset_get_index(save_data.player_current_room)
-		show_debug_message(LOGGER_SAVE_MANAGER+"Room loading:"+string(room_get_name(save_room)))
+		console_log(LOGGER_SAVE_MANAGER+"Room loading:"+string(room_get_name(save_room)))
 		//Story tags
 		ds_list_read(obj_controller.cur_story_tags,save_data.story_tags)
 		
