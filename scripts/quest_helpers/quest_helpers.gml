@@ -176,8 +176,8 @@ function quest_get_task_amount(quest_struct) {
 	return tasklength
 }
 
-function deliver_items(item,amount){
-	if item_grab(item,amount,global.inventory){
-		event_fire([EVENT_NPC_DELIVER,item,amount])
+function deliver_items(_item,amount){
+	if item_grab(_item,amount,global.inventory){
+		event_fire(EVENT_NPC_DELIVER,{item : _item, quantity : amount})
 	}
 }

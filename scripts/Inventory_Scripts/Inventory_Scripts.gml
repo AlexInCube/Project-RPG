@@ -36,7 +36,7 @@ function item_gain(item_id, max_amount, inv = global.inventory, _slot) {
 						}
 						else//If itemstack = max stack, then create NBTdata struct.
 						{
-							event_fire([EVENT_ITEM_PICKUPED,item_id,cur_amount])
+							event_fire(EVENT_ITEM_PICKUPED,{item : item_id, quantity : cur_amount})
 							break
 						}
 		            }
@@ -112,7 +112,7 @@ function item_grab(item_id,itemamount,inventory) {
 				if inventory[# n,1] == 0 {inventory[# n,0]=NO_ITEM}
 				if findedamount==itemamount
 				{
-					event_fire([EVENT_NPC_DELIVER,item_id,itemamount])
+					event_fire(EVENT_NPC_DELIVER,{item : _item, quantity : amount})
 					return true
 				}
 			}

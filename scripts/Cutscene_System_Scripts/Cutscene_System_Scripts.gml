@@ -275,7 +275,7 @@ if !instance_exists(obj_textbox) and !instance_exists(obj_textevent){
 			obj_inventory.inventorylock=true
 			obj_player.image_speed=0
 			obj_player.image_index=0
-			event_fire([EVENT_NPC_TALK,object_index])
+			event_fire(EVENT_NPC_TALK,{npc_obj : object_index})
 		}
 	}
 	if instant_end{

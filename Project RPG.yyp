@@ -732,7 +732,6 @@
     {"CopyToMask":-1,"filePath":"datafiles/localization/russian","resourceVersion":"1.0","name":"other.txt","resourceType":"GMIncludedFile",},
     {"CopyToMask":153157610357391598,"filePath":"datafiles/localization/russian","resourceVersion":"1.0","name":"spell_creating.txt","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/localization/russian","resourceVersion":"1.0","name":"gui_screens.txt","resourceType":"GMIncludedFile",},
-    {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"window_frame.html","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
     "IDEVersion": "2.3.5.589",

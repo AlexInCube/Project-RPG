@@ -1,4 +1,7 @@
-function task_kill(questid) {
+/*
+function task_kill(questid,entity) {
+	if argument2.entity_name != entity exit
+	
 	var stage_array = get_current_quest_array(quest_id)//Get array in current quest list
 	stage_array[@ quest_data.task_progress]++//Quest Progress
 	
@@ -14,6 +17,13 @@ function task_kill(questid) {
 function task_trigger(questid) {
 	quest_update(questid)
 	instance_destroy()
+}
+
+function task_pickup_item(questid,item,quantity) {
+	if argument3.item = item and argument3.quantity = quantity{ 
+		quest_update(questid)
+		instance_destroy()
+	}
 }
 
 function task_deliver(questid) {

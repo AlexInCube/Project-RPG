@@ -65,6 +65,7 @@ function slot(inventory, slot_id, xx, yy, clickable, itemtype) {
 			}
 			
 			var iid = inventory[# slot_id, 0]
+			var iid_before_click = iid
 			var amount = inventory[# slot_id, 1]
 			var nbt = inventory[# slot_id, 2]
 			var mouse_iid = global.mouse_slot[# 0, 0];
@@ -99,7 +100,7 @@ function slot(inventory, slot_id, xx, yy, clickable, itemtype) {
 					}
 				}
 			}
-			event_fire(EVENT_INVENTORY_CLICKED,{_inv : inventory, _slot : slot_id})
+			event_fire(EVENT_INVENTORY_CLICKED,{_inv : inventory, _slot : slot_id, item_before_click : iid_before_click})
 		}
 	
 	

@@ -11,7 +11,7 @@ switch(questtype)
 	case quest_type.kill: 
 		need_kill = stage[1]
 		number_of_kills = stage[2]
-		event_register([EVENT_ENEMY_KILLED,need_kill],id,task_kill,quest_id) 
+		event_register(id,EVENT_ENEMY_KILLED,task_kill,[quest_id,need_kill]) 
 	break
 	
 	case quest_type.trigger:
@@ -29,7 +29,7 @@ switch(questtype)
 	break
 	
 	case quest_type.pickup_item:
-		event_register([EVENT_ITEM_PICKUPED,stage[1],stage[2]],id,task_trigger,quest_id)
+		event_register(id,EVENT_ITEM_PICKUPED,task_pickup_item,[quest_id,stage[1],stage[2]])
 	break
 	
 	case quest_type.item_in_slot:

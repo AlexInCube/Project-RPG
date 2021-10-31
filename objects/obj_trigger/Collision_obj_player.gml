@@ -1,1 +1,1 @@
-event_fire(trigger_event)
+event_fire(EVENT_TRIGGER,{trigger_id : trigger_id})

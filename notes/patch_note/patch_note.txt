@@ -3,7 +3,7 @@ fix broken things in save/load system
 rework inventory slot handling
 rework quest handling
 saving non-unique objects
-add mouse support for control
+add mouse support for input
 loot-tables
 spell creating
 fix gui scaling
@@ -11,3 +11,4 @@ fix gui scaling
 
 Maked in this version
 Reworked event manager
+Removing modifiers from stats, working correctly.

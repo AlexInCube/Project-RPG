@@ -23,9 +23,14 @@ function event_fire(ev,ev_data) {
 			var listenerInfo, listener, args
 		
 			var i = 0; repeat(len){
+				//ListenerInfo: 0 - object_id (who registered event), 1 - script_id, 2 - scr_args
 				listenerInfo = listenerList[| i]
 				listener = listenerInfo[0]
-				args[0] = listenerInfo[2]
+				args = []
+				
+				if !array_equals(listenerInfo[2],[]){
+					array_push(args,listenerInfo[2])
+				}
 				if !is_undefined(ev_data){
 					array_push(args,ev_data)
 				}

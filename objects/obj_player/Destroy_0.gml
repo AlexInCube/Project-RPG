@@ -1,1 +1,1 @@
-event_fire([EVENT_ENEMY_KILLED,object_index])
+///@decription Override
