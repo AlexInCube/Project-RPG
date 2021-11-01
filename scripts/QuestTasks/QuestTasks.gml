@@ -1,6 +1,6 @@
-/*
-function task_kill(questid,entity) {
-	if argument2.entity_name != entity exit
+
+function task_kill(questid,entity,ev) {
+	if ev.entity_name != entity exit
 	
 	var stage_array = get_current_quest_array(quest_id)//Get array in current quest list
 	stage_array[@ quest_data.task_progress]++//Quest Progress
@@ -14,26 +14,38 @@ function task_kill(questid,entity) {
 	}
 }
 
-function task_trigger(questid) {
-	quest_update(questid)
-	instance_destroy()
-}
-
-function task_pickup_item(questid,item,quantity) {
-	if argument3.item = item and argument3.quantity = quantity{ 
+function task_npc_talk(questid,npc,ev) {
+	if ev.npc_obj == npc{
 		quest_update(questid)
 		instance_destroy()
 	}
 }
 
-function task_deliver(questid) {
-	quest_update(questid)
-	instance_destroy()
+function task_trigger(questid,trigger,ev) {
+	if ev.trigger_id == trigger{
+		quest_update(questid)
+		instance_destroy()
+	}
 }
 
-function task_item_in_slot(inventory_name,slot_id,item_id,questid) {
+function task_pickup_item(questid,item,quantity,ev) {
+	if ev.item = item and ev.quantity = quantity{ 
+		quest_update(questid)
+		instance_destroy()
+	}
+}
+
+function task_deliver(questid,item,quantity,ev) {
+	if ev.item == item and ev.quantity == quantity{
+		quest_update(questid)
+		instance_destroy()
+	}
+}
+
+function task_item_in_slot(questid,inventory_name,slot_id,item_id,ev) {
 	if variable_global_exists(inventory_name){
 		var inventory = variable_global_get(inventory_name)
+		if ev.inv != inventory exit
 	}else{
 		console_log("INVENTORY NOT EXISTS, WHAT ARE PUT IN QUEST TASK?")
 		exit

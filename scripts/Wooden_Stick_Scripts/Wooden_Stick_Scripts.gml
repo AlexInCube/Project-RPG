@@ -58,13 +58,13 @@ function wooden_stick_tick() {
 			var damage = instance_create_layer(xx,yy,"Instances",obj_damage)
 			damage.creator = id
 			damage.knockback = 5
-			if obj_player_stats.phys_damage>0
+			if obj_player_stats.stats.phys_damage.getValue()>0
 			{
-				damage.damage = obj_player_stats.phys_damage
+				damage.damage = obj_player_stats.stats.phys_damage.getValue()
 				damage.damagetype = DAMAGE_TYPE_PHYSICAL
-			}else if obj_player_stats.magic_damage>0
+			}else if obj_player_stats.stats.magic_damage.getValue()>0
 			{
-				damage.damage = obj_player_stats.magic_damage
+				damage.damage = obj_player_stats.stats.magic_damage.getValue()
 				damage.damagetype = DAMAGE_TYPE_MAGIC
 			}
 			}

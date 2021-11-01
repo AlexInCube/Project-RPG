@@ -1,0 +1,6 @@
+event_unregister(EVENT_ENEMY_KILLED,id)
+event_unregister(EVENT_TRIGGER,id)
+event_unregister(EVENT_NPC_TALK,id)
+event_unregister(EVENT_NPC_DELIVER,id)
+event_unregister(EVENT_ITEM_PICKUPED,id)
+event_unregister(EVENT_INVENTORY_CLICKED,id)

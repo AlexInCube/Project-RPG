@@ -29,7 +29,7 @@ function event_fire(ev,ev_data) {
 				args = []
 				
 				if !array_equals(listenerInfo[2],[]){
-					array_push(args,listenerInfo[2])
+					array_copy(args,0,listenerInfo[2],0,array_length(listenerInfo[2]))
 				}
 				if !is_undefined(ev_data){
 					array_push(args,ev_data)
@@ -68,7 +68,7 @@ function event_unregister(ev,objID) {
 						ds_map_delete(global.eventMap,ev)
 					}else ds_list_delete(listenerList,i)
 					break
-					console_log(LOGGER_EVENT_HANDLER+"Event Unregisted: "+ev)
+					console_log(LOGGER_EVENT_HANDLER+"Event Unregisted: "+string(ev))
 				}
 				i++
 			}

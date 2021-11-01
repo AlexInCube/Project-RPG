@@ -15,17 +15,17 @@ switch(questtype)
 	break
 	
 	case quest_type.trigger:
-		event_register([EVENT_TRIGGER,stage[1]],id,task_trigger,quest_id)
+		event_register(id,EVENT_TRIGGER,task_trigger,[quest_id,stage[1]])
 	break
 	
 	case quest_type.craft: break
 	
 	case quest_type.talk:
-		event_register([EVENT_NPC_TALK,stage[1]],id,task_trigger,quest_id)
+		event_register(id,EVENT_NPC_TALK,task_npc_talk,[quest_id,stage[1]])
 	break
 	
 	case quest_type.deliver:
-		event_register([EVENT_NPC_DELIVER,stage[1],stage[2]],id,task_deliver,quest_id)
+		event_register(id,EVENT_NPC_DELIVER,task_deliver,[quest_id,stage[1],stage[2]])
 	break
 	
 	case quest_type.pickup_item:
@@ -33,7 +33,7 @@ switch(questtype)
 	break
 	
 	case quest_type.item_in_slot:
-																			  //Inv	//SlotID //Item
-		event_register([EVENT_INVENTORY_CLICKED,variable_global_get(stage[1])],id,task_item_in_slot,stage[1],stage[2],stage[3],quest_id)
+																	//Inv	//SlotID //Item
+		event_register(id,EVENT_INVENTORY_CLICKED,task_item_in_slot,[quest_id,stage[1],stage[2],stage[3]])
 	break
 }

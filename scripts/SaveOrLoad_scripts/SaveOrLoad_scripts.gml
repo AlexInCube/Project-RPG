@@ -50,16 +50,10 @@ function save_game() {
 		player_x: obj_player.phy_position_x,
 		player_y: obj_player.phy_position_y,
 		player_current_room:  room_get_name(room),
-		player_hp: obj_player_stats.hp,
+		player_hp: obj_player_stats.stats.hp,
 		player_lvl: obj_player_stats.level,
 		player_exp: obj_player_stats.expr,
 		player_attribute_points: obj_player_stats.attribute_points,
-		player_attributes: {
-			strength : obj_player_stats.strength,
-			energy : obj_player_stats.energy,
-			defense: obj_player_stats.defense,
-			agility: obj_player_stats.agility
-		},
 		player_inventory: stringify_inventory(global.inventory),
 		player_equipment: stringify_inventory(global.equipment),
 		player_effects: [stringify_effects(obj_player_stats.buff_grid),ds_grid_width(obj_player_stats.buff_grid)-1],
@@ -114,12 +108,9 @@ function load_game() {
 		level = save_data.player_lvl
 		max_expr = experience_calculate_next_lvl(level)
 		attribute_points = save_data.player_attribute_points
-		strength = save_data.player_attributes.strength
-		energy = save_data.player_attributes.energy
-		defense = save_data.player_attributes.defense
-		agility = save_data.player_attributes.agility
 
-		hp = save_data.player_hp
+
+		stats.hp = save_data.player_hp
 		//hp = clamp(hp,0,max_hp)
 	}
 	obj_controller.hours = save_data.world_time.hours

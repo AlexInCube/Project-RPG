@@ -3,8 +3,8 @@ if !ds_exists(ds_saves,ds_type_list) exit
 	draw_set_color(c_white)
 	var window_x = GUIWIDTH/2-GUIHEIGHT/2, window_y = 0
 	var slot_x,slot_y
-	var window_width = window_x+GUIHEIGHT
-	var window_height = window_y+GUIHEIGHT
+	var window_width = GUIHEIGHT
+	var window_height = GUIHEIGHT
 	//Save window background
 	draw_sprite_stretched(spr_basicwindow,0,window_x,window_y,window_width,window_height)
 	

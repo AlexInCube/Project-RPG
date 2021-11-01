@@ -10,5 +10,7 @@ fix gui scaling
 
 
 Maked in this version
-Reworked event manager
-Removing modifiers from stats, working correctly.
+Fixed select save window
+Fixed cutscenes on beach
+Fixed event args
+Fixed broken quest tasks

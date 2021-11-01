@@ -5,4 +5,4 @@ if story_tag_exist("ewgen_saved_from_slimes"){
 	exit
 }
 path_start(path_ewgen_run,1,path_action_continue,false)
-event_register([EVENT_ENEMY_KILLED,obj_enemy_slime],id,ewgen_if_no_more_slimes)
+event_register(id,EVENT_ENEMY_KILLED,ewgen_if_no_more_slimes,[obj_enemy_slime])

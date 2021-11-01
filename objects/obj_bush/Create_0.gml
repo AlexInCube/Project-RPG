@@ -1,7 +1,9 @@
 phy_fixed_rotation=true
-max_hp=1
-hp=1
-phys_armor=0
-magic_armor=0
+stats = new Entity_Stats()
+stats.max_hp.setBaseValue(1)
+stats.hp = 1
 
-if irandom(100)<80 instance_destroy(id,false) 
+//if irandom(100)<80 instance_destroy(id,false) 
+
+
+function Die(){instance_destroy()}

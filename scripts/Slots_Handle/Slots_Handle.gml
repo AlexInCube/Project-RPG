@@ -100,7 +100,7 @@ function slot(inventory, slot_id, xx, yy, clickable, itemtype) {
 					}
 				}
 			}
-			event_fire(EVENT_INVENTORY_CLICKED,{_inv : inventory, _slot : slot_id, item_before_click : iid_before_click})
+			event_fire(EVENT_INVENTORY_CLICKED,{inv : inventory, slot : slot_id, item_before_click : iid_before_click})
 		}
 	
 	

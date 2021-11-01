@@ -20,7 +20,7 @@ function Stat(baseVal) constructor{
 		return finalValue
 	}
 	
-	static setValue = function(value){
+	static setBaseValue = function(value){
 		baseValue = value
 		stat_recalculate()
 	}
@@ -91,7 +91,7 @@ function Player_Stats() constructor{
 }
 
 function Entity_Stats() constructor{
-	max_hp = new Stat(3)
+	max_hp = new Stat(1)
 	hp = max_hp.getValue()
 
 	
