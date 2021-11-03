@@ -24,3 +24,6 @@ function draw_text_hover(txt,background,txt_c,halign){
 	draw_sprite_stretched(background,0,over_hint_x,over_hint_y,over_hint_width,over_hint_height)
 	element_txt.draw(over_hint_x+(round(over_hint_width/2)),over_hint_y)
 }
+
+function draw_item_details_hover(_item){
+}

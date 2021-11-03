@@ -221,7 +221,6 @@
     {"id":{"name":"spr_ItemIcon_SoulDust","path":"sprites/spr_ItemIcon_SoulDust/spr_ItemIcon_SoulDust.yy",},"order":41,},
     {"id":{"name":"spr_ItemIcon_Sticky","path":"sprites/spr_ItemIcon_Sticky/spr_ItemIcon_Sticky.yy",},"order":42,},
     {"id":{"name":"spr_main_menu_mountain","path":"sprites/spr_main_menu_mountain/spr_main_menu_mountain.yy",},"order":1,},
-    {"id":{"name":"spr_stat_plus","path":"sprites/spr_stat_plus/spr_stat_plus.yy",},"order":2,},
     {"id":{"name":"spr_ItemIcon_WaterBucket","path":"sprites/spr_ItemIcon_WaterBucket/spr_ItemIcon_WaterBucket.yy",},"order":43,},
     {"id":{"name":"spr_ItemIcon_XPTrank","path":"sprites/spr_ItemIcon_XPTrank/spr_ItemIcon_XPTrank.yy",},"order":44,},
     {"id":{"name":"spr_staticonhp","path":"sprites/spr_staticonhp/spr_staticonhp.yy",},"order":0,},
@@ -734,7 +733,7 @@
     {"CopyToMask":-1,"filePath":"datafiles/localization/russian","resourceVersion":"1.0","name":"gui_screens.txt","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "2.3.5.589",
+    "IDEVersion": "2.3.6.595",
   },
   "resourceVersion": "1.4",
   "name": "Project RPG",

@@ -1,5 +1,4 @@
 TODO:
-fix broken things in save/load system
 rework inventory slot handling
 rework quest handling
 saving non-unique objects
@@ -10,7 +9,8 @@ fix gui scaling
 
 
 Maked in this version
-Fixed select save window
-Fixed cutscenes on beach
-Fixed event args
-Fixed broken quest tasks
+Removed attribute points
+Improved stats screen
+Added hover on item, which show item stats
+Fixed gui screen clearing, when player back to main menu
+Changed damage formula

@@ -11,12 +11,17 @@
 	"item_type_potion":"Зелье",
 	"item_type_spell":"Заклинание",
 	"item_type_other":"Остальное",
-	"item_stat_6":"Физический урон",
-	"item_stat_7":"Магический урон",
-	"item_stat_8":"Сила",
-	"item_stat_9":"Интеллект",
-	"item_stat_10":"Удача",
-	"item_stat_11":"Физическая броня",
-	"item_stat_12":"Магическая броня",
-	"item_stat_13":"Стоимость маны"
+
+	"attribute_points":"Очки аттрибутов: ",
+	
+	"max_health":"Макс. здоровья",
+	"health_regen":"Реген. здоровья",
+	"max_mana":"Макс. маны",
+	"mana_regen":"Реген. маны",
+	"phys_damage":"Физический урон",
+	"magic_damage":"Магический урон",
+	"phys_armor":"Физическая броня",
+	"magic_armor":"Магическая броня",
+	"evasion":"Уклонение",
+	"regen_multiplier":"Множитель регенерации",
 }

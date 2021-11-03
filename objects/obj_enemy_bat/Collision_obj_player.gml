@@ -4,7 +4,8 @@ if state == bat_attack_state{
 	var ydir = lengthdir_y(1,dir)
 	var damage = instance_create_layer(other.x+xdir,other.y+ydir,"Instances",obj_damage)
 		damage.creator=id
-		damage.damage = self.damage*(travelled_distance/max_travel)
+		var dmg_multi = clamp(travelled_distance/max_travel,1,1)//0.5,2)
+		damage.damage = stats.phys_damage.getValue()*dmg_multi
 		damage.damagetype = DAMAGE_TYPE_PHYSICAL
 		damage.image_xscale=0.5
 		damage.image_yscale=0.5

@@ -50,8 +50,32 @@ function slot(inventory, slot_id, xx, yy, clickable, itemtype) {
 			var _item = inventory[# slot_id,0]
 			var _item_struct = return_struct_from_item_index_by_item_id(_item)
 			var txt = _item_struct[$ "item_locale_name"]+"\n"+find_keyword(_item_struct[$ "item_type"])+"\n"+_item_struct[$ "item_description"]
+			
+			if !is_undefined(_item_struct[$ "stats"]){
+				for (var i = 0; i < array_length(_item_struct[$ "stats"]); i++){
+					var stat_struct = _item_struct[$ "stats"][@ i]
+					var stat_name = variable_struct_get(obj_player_stats.stats,stat_struct[0]).stat_name
+					var stat_type = stat_struct[@ 1]
+					var stat_value = stat_struct[@ 2]
+					
+					if sign(stat_value) == 1{
+						var stat_sign = "+"
+					}else if sign(stat_value) == -1{
+						var stat_sign = ""
+					}
+					
+					if stat_type == modifier_type.multiplier{
+						txt += "\n"+stat_sign+string(stat_value*100)+"%"
+					}else{
+						txt += "\n"+stat_sign+string(stat_value)
+					}
+					
+					txt += " "+stat_name
+				}
+			}
 			draw_overlay(draw_text_hover,[txt,spr_hover_item_description,c_white,fa_center])
 		}
+		
 		if mouse_check_button_pressed(mb_left)
 		{
 			//Filter item type

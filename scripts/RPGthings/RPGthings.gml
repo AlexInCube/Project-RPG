@@ -35,18 +35,22 @@ function apply_damage(target,dmg,dmg_type){
 	var magic_armor=target.stats.magic_armor.getValue()
 	var phys_armor=target.stats.phys_armor.getValue()
 	
-	var finalDamage = dmg//If damage is PURE
+	var finalDamage
 	
 	switch(dmg_type){
 		case DAMAGE_TYPE_MAGIC:
-			finalDamage=dmg*(dmg/(dmg+magic_armor))
+			finalDamage = dmg - dmg*magic_armor/10
 		break
 		case DAMAGE_TYPE_PHYSICAL:
-			finalDamage=dmg*(dmg/(dmg+phys_armor))
+			finalDamage = dmg - dmg*phys_armor/10//dmg*(dmg/(dmg+abs(phys_armor)))
+		break
+		case DAMAGE_TYPE_PURE:
+			finalDamage = dmg
 		break
 	}
+
+	target.stats.hp = clamp(target.stats.hp - finalDamage,0,target.stats.max_hp.getValue())
 	
-	target.stats.hp = clamp(target.stats.hp-finalDamage,0,target.stats.max_hp.getValue())
 	if target.stats.hp = 0{target.Die()}
 	return finalDamage
 }
