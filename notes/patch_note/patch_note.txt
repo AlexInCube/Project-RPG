@@ -1,16 +1,13 @@
 TODO:
+fix ui where control keys must be human readable
 rework inventory slot handling
 rework quest handling
 saving non-unique objects
-add mouse support for input
 loot-tables
 spell creating
 fix gui scaling
 
 
 Maked in this version
-Removed attribute points
-Improved stats screen
-Added hover on item, which show item stats
-Fixed gui screen clearing, when player back to main menu
-Changed damage formula
+Added Input library
+Input keys now stored primary and alternative key, also supported mouse input.

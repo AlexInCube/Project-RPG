@@ -157,12 +157,12 @@ function slot(inventory, slot_id, xx, yy, clickable, itemtype) {
 	
 	
 		//Drop Item From Inventory
-		if obj_controller.drop_item_key and inventory[# slot_id, 0] != 0
+		if obj_inputManager.drop_item_key and inventory[# slot_id, 0] != 0
 		{
 			var _xx=obj_player.x
 			var _yy=obj_player.y
 		
-			if obj_controller.combination_key
+			if obj_inputManager.combination_key
 			{
 				var itemdropped=instance_create_layer(_xx,_yy,"Instances",obj_item)
 				itemdropped.whatitem=inventory[# slot_id, 0]

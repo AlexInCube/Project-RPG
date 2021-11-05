@@ -7,8 +7,6 @@
 #macro PHASE_TYPE_DAY 2
 #macro PHASE_TYPE_SUNSET 3
 depth=-99999999
-//Getting input
-get_input()
 //World time (day and night cycle)
 seconds = 0
 minutes = 0 

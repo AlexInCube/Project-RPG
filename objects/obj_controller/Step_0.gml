@@ -1,11 +1,8 @@
-//Updating GW and GH
-get_input()//Update keyboard/mouse input
-
 //Update window crossing
 getwindowcross()
 
 //If press pause_key set pause
-if pause_key{pause_game()}
+if obj_inputManager.pause_key{pause_game()}
 
 if !time_is_go exit
 /* Day/night cycle */

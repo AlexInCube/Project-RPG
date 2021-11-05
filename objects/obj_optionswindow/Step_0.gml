@@ -12,6 +12,6 @@ if mouseover{
 	}
 }
 
-if keyboard_check_pressed(global.settings.controls.pause_key){
+if obj_inputManager.pause_key{
 	instance_destroy()
 }

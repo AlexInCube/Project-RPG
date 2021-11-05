@@ -19,7 +19,7 @@ function light_staff_step() {
 	var mouse_dir = point_direction(x,y,mouse_x,mouse_y)
 	if obj_player.state == move_state
 	{
-		if obj_controller.attack_key
+		if obj_inputManager.attack_key
 		{
 			if is_mana_enough(mana_cost)
 			{

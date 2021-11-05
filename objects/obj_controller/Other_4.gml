@@ -6,7 +6,7 @@ if instance_exists(obj_player){
 obj_player.persistent=true
 }
 
-//Create camera
+//Create player_camera
 instance_create_layer(0,0,"Instances",obj_camera)
 //global.load_state commented in obj_initcontroller
 switch(global.load_state){

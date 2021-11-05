@@ -1,6 +1,6 @@
-//Get camera x and y
-cx = camera_get_view_x(camera)
-cy = camera_get_view_y(camera)
+//Get player_camera x and y
+cx = camera_get_view_x(player_camera)
+cy = camera_get_view_y(player_camera)
 
 
 switch(mode){
@@ -35,10 +35,10 @@ switch(mode){
 cx += (random_range(-shake,shake))
 cy += (random_range(-shake,shake))
 shake*=0.9
-//Do not allow the camera to leave the room
+//Do not allow the player_camera to leave the room
 if(!boundless){
 	cx = clamp(cx, 0, room_width-view_w)
 	cy = clamp(cy, 0, room_height-view_h)
 }
 
-camera_set_view_pos(camera,cx,cy)
+camera_set_view_pos(player_camera,cx,cy)
