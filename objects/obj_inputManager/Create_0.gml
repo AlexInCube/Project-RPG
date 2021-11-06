@@ -42,7 +42,7 @@ function setup_input_for_action(keys,action){
 }
 
 
-
+function setup_input(){
 setup_input_for_action(global.settings.controls.key_up,actions.move_up)
 setup_input_for_action(global.settings.controls.key_down,actions.move_down)
 setup_input_for_action(global.settings.controls.key_left,actions.move_left)
@@ -69,3 +69,6 @@ setup_input_for_action(global.settings.controls.inventory_hotkey4,actions.quick_
 setup_input_for_action(global.settings.controls.inventory_hotkey5,actions.quick_slot_5)
 
 input_player_source_set(INPUT_SOURCE.KEYBOARD_AND_MOUSE);
+}
+
+setup_input()

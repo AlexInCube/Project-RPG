@@ -1,9 +1,10 @@
 ///@function options_get_control_word(input_value);
-function options_get_control_word(input_value){
-var str1 = input_value;
+function options_get_control_word(str1){
 var str2 = "";
-if (str1 >= 48 && str1 <= 90) {
-    str2 = string_lettersdigits(chr(str1));
+if is_real(str1){
+	if (str1 >= 48 && str1 <= 90) {
+	    str2 = string_lettersdigits(chr(str1));
+	}
 }
 else {
     switch (str1) {

@@ -1,5 +1,4 @@
 TODO:
-fix ui where control keys must be human readable
 rework inventory slot handling
 rework quest handling
 saving non-unique objects
@@ -9,5 +8,5 @@ fix gui scaling
 
 
 Maked in this version
-Added Input library
-Input keys now stored primary and alternative key, also supported mouse input.
+Changed input configuring in Options
+Controls keys now display correctly

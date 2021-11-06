@@ -76,6 +76,7 @@ function settodefault() {
 }
 
 function options_execute_scripts(){
+	with(obj_inputManager){setup_input()}
 	with obj_optionswindow
 	{//Apply all settings
 		var ds_grid = ds_options

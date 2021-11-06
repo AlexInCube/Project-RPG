@@ -11,7 +11,3 @@ if mouseover{
 		recreate_buttons()
 	}
 }
-
-if obj_inputManager.pause_key{
-	instance_destroy()
-}
