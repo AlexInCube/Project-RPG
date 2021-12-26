@@ -10,6 +10,6 @@ if mouse_wheel_up(){
 //console_log("DES:"+string(drawelementstart)+" DEH:"+string(drawelementheight))
 //console_log(ds_size)
 
-if keyboard_check_pressed(global.settings.controls.pause_key){
+if obj_inputManager.pause_key{
 	instance_destroy()
 }

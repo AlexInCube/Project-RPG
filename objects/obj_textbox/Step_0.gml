@@ -27,10 +27,14 @@ if(type[page] == 0){
 #region TYPE 1: DIALOGUE CHOICE
 else {
 	if(chosen) exit;
+	
+	if timer > 0{
+		timer -= 1*DELTATIME
+	}
 
-	if obj_inputManager.interact_key or mouse_check_button_released(mb_left){ 
+	if obj_inputManager.interact_key or mouse_check_button_released(mb_left) or timer == 0{ 
 		chosen = true; 
-		alarm[2] = 30 * DELTATIME; 
+		alarm[2] = 60 * DELTATIME; 
 		audio_play_sound(select_snd_effect, priority_snd_effect, false);
 	} 
 	

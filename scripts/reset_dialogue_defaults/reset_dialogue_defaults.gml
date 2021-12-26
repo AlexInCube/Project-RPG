@@ -12,6 +12,6 @@ function reset_dialogue_defaults() {
 	myTextCol			= 0;
 	myEmotion			= 0;
 	myEmote				= -1;
-
+	myTime				= -1;
 
 }

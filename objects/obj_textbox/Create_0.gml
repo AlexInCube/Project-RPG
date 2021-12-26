@@ -7,6 +7,8 @@ portrait_frame		= spr_portraitframe;
 dialogue_box		= spr_dialoguebox;
 name_box			= spr_namebox;
 finished_effect		= spr_dialoguefinished;
+timer_box			= spr_dialogue_timer_bg;
+timer_bar			= spr_dialogue_timer_bar
 
 choice_snd_effect	= snd_moveselect;
 select_snd_effect	= snd_select;
@@ -41,6 +43,9 @@ name_box_y		= pos_y - sprite_get_height(name_box)
 name_box_text_x = name_box_x + ((sprite_get_width(name_box))/2);
 name_box_text_y = name_box_y
 
+timer_box_x		= pos_x - portraitWidth
+timer_box_y		= pos_y - 48
+
 finishede_x		= pos_x + boxWidth - 15
 finishede_y		= pos_y + boxHeight - 35
 
@@ -53,6 +58,8 @@ str_len			= -1;
 pause			= false;
 chosen			= false;
 choice			= 0;
+timer			= 0;
+timer_max		= -1;
 
 creator			= noone;
 type			= 0;
@@ -62,6 +69,10 @@ breakpoints		= -1;
 nextline		= 0;
 text_col		= c_black;
 emotion			= 0;
+time			= -1;
+
+
+
 
 portrait		= 1;
 voice			= 1;

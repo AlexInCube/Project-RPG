@@ -1,13 +1,12 @@
 ///@description create_dialogue
-///@arg Text
-///@arg Speaker
-///@arg *Type
-///@arg *Next_Line
-///@arg *Scripts
-///@arg *Emotion
+///@arg myText
+///@arg mySpeaker
+///@arg myTypes
+///@arg myNextLine
+///@arg myScripts
+///@arg myEmotion
+///@arg myTime
 function create_dialogue() {
-
-
 	if(instance_exists(obj_textbox)){ exit; }
 	//Get Arguments
 	var arg = 0, i = 0, arg_count = argument_count;
@@ -35,12 +34,14 @@ function create_dialogue() {
 	var _script		= array_create(text_len, 0);
 	var _emotion	= array_create(text_len, 0);
 	var _creator	= array_create(text_len, id);
+	var _time		= array_create(text_len, -1);
 
 
 
 	var a;
 	//Fill variables depending on argument count
 	switch(arg_count-1){
+		case 6: a = arg[6]; if(array_length(a) != text_len){ a[text_len] = 0; } for(i = 0; i < text_len; i++){ if(a[i] != 0) _time[i] = a[i]; }
 		case 5: a = arg[5]; if(array_length(a) != text_len){ a[text_len] = 0; } for(i = 0; i < text_len; i++){ if(a[i] != 0) _emotion[i] = a[i]; }
 		case 4: a = arg[4];	if(array_length(a) != text_len){ a[text_len] =-1; } for(i = 0; i < text_len; i++){ if(a[i] !=-1) _script[i] = a[i]; }
 		case 3: a = arg[3];	if(array_length(a) != text_len){ a[text_len] = 0; } for(i = 0; i < text_len; i++){ if(a[i] != 0) _nextline[i] = a[i]; }
@@ -55,6 +56,7 @@ function create_dialogue() {
 		nextline	= _nextline;
 		executeScript = _script;
 		emotion		= _emotion;	
+		time		= _time
 	
 		//Speaker's Variables
 		i = 0; repeat(text_len){

@@ -11,6 +11,14 @@ if(portrait[page] != -1){
 	draw_sprite(portrait_frame, 1, pos_x-portraitWidth, pos_y);
 }
 
+//Draw timer
+if timer > -1{
+	draw_sprite(timer_box,0,timer_box_x,timer_box_y)
+	if timer > 0{
+		draw_sprite_ext(timer_bar,0,timer_box_x,timer_box_y,timer/timer_max,1,0,c_white,1)
+	}
+}
+
 #region Draw name and namebox
 var cname = name[page]
 
@@ -44,8 +52,6 @@ if(type[page] == 1){
 			else	   { col = choice_col; selected=true; }
 		} else { col = default_col; selected=false}
 		
-		
-		
 		//Draw our choices
 		var ctext = tp[ii];
 		var rectangleoffset = 1
@@ -55,7 +61,6 @@ if(type[page] == 1){
 		element.starting_format(dialogue_font, col)
 		element.wrap(txtwidth)
 		element.draw(xx,yy+(iy*stringHeight))
-
 		
 		var box_struct = element.get_bbox()
 		if selected{	

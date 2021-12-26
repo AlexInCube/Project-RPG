@@ -8,5 +8,7 @@ fix gui scaling
 
 
 Maked in this version
-Changed input configuring in Options
-Controls keys now display correctly
+
+Added dialogue timer for choice section
+Fixed event_fire crash, when listener registered, but not exists.
+Fixed load save window crash at press pause_key (vk_escape).

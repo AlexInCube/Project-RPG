@@ -11,5 +11,5 @@ function get_timestamp(){
 }
 
 function console_log(_message){
-	show_debug_message(get_timestamp()+_message)
+	show_debug_message(get_timestamp()+string(_message))
 }

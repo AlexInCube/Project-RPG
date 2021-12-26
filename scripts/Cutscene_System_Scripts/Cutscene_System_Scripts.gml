@@ -271,7 +271,7 @@ function cutscene_start_speak(object_id,instant_end) {
 if !instance_exists(obj_textbox) and !instance_exists(obj_textevent){
 		with(object_id){
 			event_user(0)
-			create_dialogue(myText, mySpeaker, myEffects, myTextSpeed, myTypes, myNextLine, myScripts, myTextCol, myEmotion);
+			create_dialogue(myText, mySpeaker, myEffects, myTextSpeed, myTypes, myNextLine, myScripts, myTextCol, myEmotion, myTime);
 			obj_inventory.inventorylock=true
 			obj_player.image_speed=0
 			obj_player.image_index=0

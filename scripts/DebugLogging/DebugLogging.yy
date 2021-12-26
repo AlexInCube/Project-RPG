@@ -6,7 +6,7 @@
     "path": "folders/Objects/Debugging.yy",
   },
   "resourceVersion": "1.0",
-  "name": "get_timestamp",
+  "name": "DebugLogging",
   "tags": [],
   "resourceType": "GMScript",
 }

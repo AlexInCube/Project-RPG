@@ -7,6 +7,7 @@ finishede_count = 0;
 text_speed_c	= 0;
 audio_c			= 0;
 charCount_f		= 0;
+timer			= 0;
 
 if(portrait[page] == -1){
 	pos_x			= (gb_diff/2);
@@ -21,11 +22,14 @@ charSize = 10
 
 #region GET THE BREAKPOINTS AND TEXT EFFECTS
 //Again only need to do this if our CURRENT page is "normal". Separated from above for readability.
+timer_max = time[page]
+timer = timer_max
 
 if(type[page] == 0){
 	var s = type[page]
 	text_NE = find_keyword(text[page]); 
 	str_len = string_length(text_NE);
+
 	
 	//Get variables ready
 	var by = 0,cc = 1, breakpoint = 0;

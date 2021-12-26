@@ -21,7 +21,7 @@ function interact(){
 				event_user(0);								//if you need variables to update for text
 			
 				//Hand over variables
-				create_dialogue(myText, mySpeaker, myTypes, myNextLine, myScripts, myEmotion);
+				create_dialogue(myText, mySpeaker, myTypes, myNextLine, myScripts, myEmotion, myTime);
 				obj_inventory.inventorylock=true
 				obj_player.image_speed=0
 				obj_player.image_index=0
