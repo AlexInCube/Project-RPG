@@ -48,7 +48,7 @@ switch(choice_variable){
 		myTypes[i]		= 1;
 		mySpeaker[i]	= obj_player;
 		myNextLine[i]	= [2];
-		myScripts[i]	= [[nothing]]
+		myScripts[i]	= [[placeholder]]
 		if check_requirement_item(global.inventory,"wooden_water_bucket",1){
 			array_push(myText[i],"Да")
 			array_push(myNextLine[i],3)

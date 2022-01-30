@@ -14,21 +14,7 @@
 			
 			"basic":"Основное",
 			"advanced":"Дополнительно",
-			"strength":"Сила",
-			"agility":"Ловкость",
-			"defense":"Защита",
-			"energy":"Энергия",
-			"strengthdescription":"+физ/маг урон",
-			"agilitydescription":"+уклонение +оз/ом кол-во регенерации",
-			"defensedescription":"+физ/маг броня +максимум здоровья",
-			"energydescription":"+мана",
-			"attribute_points":"Очки аттрибутов: ",
-			"phys_damage":"Физический урон",
-			"magic_damage":"Магический урон",
-			"phys_armor":"Физическая броня",
-			"magic_armor":"Магическая броня",
-			"evasion":"Уклонение",
-			"regen_amount":"Множитель регенерации",
+			
 			
 			"trade_window":"Окно обмена",
 			"trade_with_name":"Вы обмениваетесь с: ",

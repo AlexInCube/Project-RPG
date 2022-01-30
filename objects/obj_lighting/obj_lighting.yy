@@ -31,7 +31,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Light Staff",
-    "path": "folders/Weapons/Light Staff.yy",
+    "path": "folders/Objects/Game Objects/Weapons/Light Staff.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_lighting",

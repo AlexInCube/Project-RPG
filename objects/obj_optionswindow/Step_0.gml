@@ -11,7 +11,3 @@ if mouseover{
 		recreate_buttons()
 	}
 }
-
-if keyboard_check_pressed(global.settings.controls.pause_key){
-	instance_destroy()
-}

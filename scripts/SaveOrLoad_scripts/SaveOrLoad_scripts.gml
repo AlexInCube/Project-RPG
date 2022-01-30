@@ -50,16 +50,10 @@ function save_game() {
 		player_x: obj_player.phy_position_x,
 		player_y: obj_player.phy_position_y,
 		player_current_room:  room_get_name(room),
-		player_hp: obj_player_stats.hp,
+		player_hp: obj_player_stats.stats.hp,
 		player_lvl: obj_player_stats.level,
 		player_exp: obj_player_stats.expr,
 		player_attribute_points: obj_player_stats.attribute_points,
-		player_attributes: {
-			strength : obj_player_stats.strength,
-			energy : obj_player_stats.energy,
-			defense: obj_player_stats.defense,
-			agility: obj_player_stats.agility
-		},
 		player_inventory: stringify_inventory(global.inventory),
 		player_equipment: stringify_inventory(global.equipment),
 		player_effects: [stringify_effects(obj_player_stats.buff_grid),ds_grid_width(obj_player_stats.buff_grid)-1],
@@ -88,7 +82,7 @@ function save_game() {
 	var file = file_text_open_write(file_path)
 	file_text_write_string(file,save_string)
 	file_text_close(file)
-	show_debug_message(LOGGER_SAVE_MANAGER+"Main data saved: "+file_path)
+	console_log(LOGGER_SAVE_MANAGER+"Main data saved: "+file_path)
 	
 	
 	instance_activate_all()
@@ -96,8 +90,8 @@ function save_game() {
 	//End of write playerdata.txt
 	save_room_data(room,return_room_data())
 	//End of write room_name.txt
-	show_debug_message(LOGGER_SAVE_MANAGER+"Room saved: "+file_path)
-	show_debug_message(LOGGER_SAVE_MANAGER+"Game saved!")
+	console_log(LOGGER_SAVE_MANAGER+"Room saved: "+file_path)
+	console_log(LOGGER_SAVE_MANAGER+"Game saved!")
 }
 //Game loading working from anywhere
 function load_game() {
@@ -114,12 +108,9 @@ function load_game() {
 		level = save_data.player_lvl
 		max_expr = experience_calculate_next_lvl(level)
 		attribute_points = save_data.player_attribute_points
-		strength = save_data.player_attributes.strength
-		energy = save_data.player_attributes.energy
-		defense = save_data.player_attributes.defense
-		agility = save_data.player_attributes.agility
 
-		hp = save_data.player_hp
+
+		stats.hp = save_data.player_hp
 		//hp = clamp(hp,0,max_hp)
 	}
 	obj_controller.hours = save_data.world_time.hours
@@ -165,7 +156,7 @@ function load_game() {
 		recalculate_stats(global.equipment)
 	}
 	
-	show_debug_message(LOGGER_SAVE_MANAGER+"Playerdata.txt loaded")
+	console_log(LOGGER_SAVE_MANAGER+"Playerdata.txt loaded")
 }
 
 function try_load_data(struct,var_name,_default){
@@ -195,7 +186,7 @@ function return_room_data(){
 	
 	var wrapper = ds_map_create()
 	ds_map_add_list(wrapper,"object_list",object_list)
-	show_debug_message(LOGGER_SAVE_MANAGER+"Saveable object exists: "+string(ds_list_size(object_list)))
+	console_log(LOGGER_SAVE_MANAGER+"Saveable object exists: "+string(ds_list_size(object_list)))
 	var save_string = json_encode(wrapper);
 	ds_map_destroy(wrapper);
 	return save_string
@@ -231,10 +222,10 @@ function load_room_data(){
 				CallUserEvent(15,map)
 			}
 		}
-		show_debug_message(LOGGER_SAVE_MANAGER+"Room loaded: "+file_path)
+		console_log(LOGGER_SAVE_MANAGER+"Room loaded: "+file_path)
 		ds_map_destroy(wrapper)
 	}else{
-		show_debug_message(LOGGER_SAVE_MANAGER+"Error while room loading: "+file_path)
+		console_log(LOGGER_SAVE_MANAGER+"Error while room loading: "+file_path)
 	}
 }
 

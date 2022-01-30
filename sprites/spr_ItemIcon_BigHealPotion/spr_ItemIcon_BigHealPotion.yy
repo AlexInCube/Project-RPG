@@ -50,7 +50,7 @@
             {"id":"1d9f7a46-b43c-43e8-bf2c-804d59d10d6d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2c29243a-756c-4f85-8ffd-b6808825b2d7","path":"sprites/spr_ItemIcon_BigHealPotion/spr_ItemIcon_BigHealPotion.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"7a0da1d5-43d0-4fe3-b243-2f09c2859877","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0dd48d4c-90d7-49f9-8a62-95d2ff66083d","path":"sprites/spr_ItemIcon_BigHealPotion/spr_ItemIcon_BigHealPotion.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"84331f08-1b6c-4e82-9a87-2cfb7aa34686","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7e564f21-155b-4090-95ac-210050e34fd2","path":"sprites/spr_ItemIcon_BigHealPotion/spr_ItemIcon_BigHealPotion.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -78,7 +78,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Potions",
-    "path": "folders/Objects/Controllers/Inventory/Items Sprites/Potions.yy",
+    "path": "folders/Objects/Controllers/Game Mechanics/Inventory/Items Sprites/Potions.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ItemIcon_BigHealPotion",

@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -10,8 +11,8 @@
     "name": "ag_sounds",
     "path": "audiogroups/ag_sounds",
   },
-  "soundFile": "snd_door_knocking",
-  "duration": 2.337875,
+  "soundFile": "snd_door_knocking.mp3",
+  "duration": 1.044898,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

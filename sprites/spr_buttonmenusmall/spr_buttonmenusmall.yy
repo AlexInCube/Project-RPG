@@ -43,7 +43,7 @@
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"e9f54b9f-06ab-440f-9f01-837a6ba48a99","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3f81d6bd-af38-4e7b-8f8c-0bd05b8f8fc3","path":"sprites/spr_buttonmenusmall/spr_buttonmenusmall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -72,7 +72,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Main Menu Sprites",
-    "path": "folders/Objects/Controllers/Main Menu/Main Menu Sprites.yy",
+    "path": "folders/Objects/Controllers/GUI`s/Main Menu/Main Menu Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_buttonmenusmall",

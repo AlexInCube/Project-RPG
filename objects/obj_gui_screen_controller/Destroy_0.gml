@@ -1,2 +1,1 @@
-ds_map_destroy(global.screen_map)
 instance_destroy(par_screen)

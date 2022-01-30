@@ -2,26 +2,26 @@
 function heal(heal_amount,target,healperc) {
 	if healperc
 	{
-		target.hp+=(target.max_hp/100)*heal_amount
+		target.stats.hp+=(target.stats.max_hp.getValue()/100)*heal_amount
 	}
 	else
 	{
-		target.hp+=heal_amount
+		target.stats.hp+=heal_amount
 	}
-	target.hp = clamp(target.hp,0,target.max_hp)
+	target.stats.hp = clamp(target.stats.hp,0,target.stats.max_hp.getValue())
 }
 
 /// @description replenish_mana(manaamount,target,inpercentage?);
 function replenish_mana(manaamount, target, manaperc) {
 	if manaperc
 	{
-		target.mana+=(target.max_mana/100)*manaamount
+		target.stats.mana+=(target.stats.max_mana.getValue()/100)*manaamount
 	}
 	else
 	{
-		target.mana+=manaamount
+		target.stats.mana+=manaamount
 	}
-	target.mana = clamp(target.mana,0,target.max_mana)
+	target.stats.mana = clamp(target.stats.mana,0,target.stats.max_mana.getValue())
 
 }
 
@@ -30,23 +30,29 @@ function replenish_mana(manaamount, target, manaperc) {
 #macro DAMAGE_TYPE_PURE 3
 
 function apply_damage(target,dmg,dmg_type){
-	if !instance_exists(target) exit
+	if is_undefined(target) exit
+	//if target == obj_player {target = obj_player_stats}
 
-	var magic_armor=target.magic_armor
-	var phys_armor=target.phys_armor	
+	var magic_armor=target.stats.magic_armor.getValue()
+	var phys_armor=target.stats.phys_armor.getValue()
 	
-	var finalDamage = dmg
+	var finalDamage
+	
 	switch(dmg_type){
 		case DAMAGE_TYPE_MAGIC:
-			var finalDamage=dmg*(dmg/(dmg+magic_armor))
+			finalDamage = dmg - dmg*magic_armor/10
 		break
 		case DAMAGE_TYPE_PHYSICAL:
-			var finalDamage=dmg*(dmg/(dmg+phys_armor))
+			finalDamage = dmg - dmg*phys_armor/10//dmg*(dmg/(dmg+abs(phys_armor)))
+		break
+		case DAMAGE_TYPE_PURE:
+			finalDamage = dmg
 		break
 	}
+
+	target.stats.hp = clamp(target.stats.hp - finalDamage,0,target.stats.max_hp.getValue())
 	
-	target.hp = clamp(target.hp-finalDamage,0,target.max_hp)
-	if target.hp = 0{target.Die()}
+	if target.stats.hp = 0{target.Die()}
 	return finalDamage
 }
 

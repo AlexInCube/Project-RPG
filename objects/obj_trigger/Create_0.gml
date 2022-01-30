@@ -1,2 +1,2 @@
-trigger_event = event.none
+trigger_id = 0
 phy_fixed_rotation = true

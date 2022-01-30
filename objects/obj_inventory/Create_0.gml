@@ -13,4 +13,23 @@ ds_grid_clear(global.mouse_slot, NO_ITEM);
 inventorylock=false
 inventory_size = ds_grid_width(global.inventory)
 
-event_register([event.inventory_clicked,global.equipment],id,recalculate_stats,global.equipment)
+function reset_stats(ev){
+	/*
+	console_log("Inv: "+string(argument1._inv))
+	console_log("Slot: "+string(argument1._slot))
+	console_log("Item before click: "+string(argument1.item_before_click))
+	console_log("Item: "+string(return_struct_from_item_index_by_item_inv(argument1._inv,argument1._slot)))
+	*/
+	if ev.inv != global.equipment exit
+	
+	var stat_names_arr = variable_struct_get_names(obj_player_stats.stats)
+	for(var i = 0;i < array_length(stat_names_arr);i++){
+		if typeof(obj_player_stats.stats[$ stat_names_arr[i]]) == "struct"{
+			obj_player_stats.stats[$ stat_names_arr[i]].removeModifier(ev.item_before_click)
+		}
+	}
+	
+	recalculate_stats()
+}
+
+event_register(id,EVENT_INVENTORY_CLICKED,reset_stats)

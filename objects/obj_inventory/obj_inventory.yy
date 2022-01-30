@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Inventory",
-    "path": "folders/Objects/Controllers/Inventory.yy",
+    "path": "folders/Objects/Controllers/Game Mechanics/Inventory.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_inventory",

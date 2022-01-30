@@ -3,44 +3,28 @@ function move_state() {
 	if !instance_exists(obj_textbox) and !instance_exists(par_screen){
 
 #region Inventory Key Input
-	if obj_controller.inventory_hotkey1
+	if obj_inputManager.inventory_hotkey1
 	{
 		slot_script_execute(global.inventory,0)
-	}if obj_controller.inventory_hotkey2
+	}if obj_inputManager.inventory_hotkey2
 	{
 		slot_script_execute(global.inventory,1)
-	}if obj_controller.inventory_hotkey3
+	}if obj_inputManager.inventory_hotkey3
 	{
 		slot_script_execute(global.inventory,2)
-	}if obj_controller.inventory_hotkey4
+	}if obj_inputManager.inventory_hotkey4
 	{
 		slot_script_execute(global.inventory,3)
-	}if obj_controller.inventory_hotkey5
+	}if obj_inputManager.inventory_hotkey5
 	{
 		slot_script_execute(global.inventory,4)
-	}/*if obj_controller.inventory_hotkey6
-	{
-		slot_script_execute(global.inventory,25)
-	}if obj_controller.inventory_hotkey7
-	{
-		slot_script_execute(global.inventory,26)
-	}if obj_controller.inventory_hotkey8
-	{
-		slot_script_execute(global.inventory,27)
-	}if obj_controller.inventory_hotkey9
-	{
-		slot_script_execute(global.inventory,28)
-	}if obj_controller.inventory_hotkey10
-	{
-		slot_script_execute(global.inventory,29)
 	}
-*/
 #endregion
 
-if obj_controller.xaxis != 0 or obj_controller.yaxis != 0 {
+if obj_inputManager.xaxis != 0 or obj_inputManager.yaxis != 0 {
 	image_speed=1//*DELTATIME
 	//get direction
-	dir = point_direction(0,0,obj_controller.xaxis,obj_controller.yaxis)
+	dir = point_direction(0,0,obj_inputManager.xaxis,obj_inputManager.yaxis)
 
 	//get hspd and vspd
 	hspd = lengthdir_x(spd,dir)
@@ -76,13 +60,13 @@ if obj_controller.xaxis != 0 or obj_controller.yaxis != 0 {
 	}
 	
 	//Pickup Items from ground
-	if obj_controller.pickup_key
+	if obj_inputManager.pickup_key
 	{
 		var inst = collision_rectangle(x-findradius,y-findradius,x+findradius,y+findradius,obj_item,false,false)
 		with inst
 		{
 			item_gain(whatitem,amount,global.inventory)
-			event_fire([event.itemPickuped,whatitem,amount])
+			event_fire(EVENT_ITEM_PICKUPED,{item : whatitem, quantity : amount})
 			instance_destroy()
 		}
 	}

@@ -11,29 +11,29 @@ switch(questtype)
 	case quest_type.kill: 
 		need_kill = stage[1]
 		number_of_kills = stage[2]
-		event_register([event.enemyKilled,need_kill],id,task_kill,quest_id) 
+		event_register(id,EVENT_ENEMY_KILLED,task_kill,[quest_id,need_kill]) 
 	break
 	
 	case quest_type.trigger:
-		event_register([event.trigger,stage[1]],id,task_trigger,quest_id)
+		event_register(id,EVENT_TRIGGER,task_trigger,[quest_id,stage[1]])
 	break
 	
 	case quest_type.craft: break
 	
 	case quest_type.talk:
-		event_register([event.talk,stage[1]],id,task_trigger,quest_id)
+		event_register(id,EVENT_NPC_TALK,task_npc_talk,[quest_id,stage[1]])
 	break
 	
 	case quest_type.deliver:
-		event_register([event.deliver,stage[1],stage[2]],id,task_deliver,quest_id)
+		event_register(id,EVENT_NPC_DELIVER,task_deliver,[quest_id,stage[1],stage[2]])
 	break
 	
 	case quest_type.pickup_item:
-		event_register([event.itemPickuped,stage[1],stage[2]],id,task_trigger,quest_id)
+		event_register(id,EVENT_ITEM_PICKUPED,task_pickup_item,[quest_id,stage[1],stage[2]])
 	break
 	
 	case quest_type.item_in_slot:
-																			  //Inv	//SlotID //Item
-		event_register([event.inventory_clicked,variable_global_get(stage[1])],id,task_item_in_slot,stage[1],stage[2],stage[3],quest_id)
+																	//Inv	//SlotID //Item
+		event_register(id,EVENT_INVENTORY_CLICKED,task_item_in_slot,[quest_id,stage[1],stage[2],stage[3]])
 	break
 }

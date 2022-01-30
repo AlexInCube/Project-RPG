@@ -1,6 +1,7 @@
 {
+  "conversionMode": 0,
   "compression": 1,
-  "volume": 0.09,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,11 +11,11 @@
     "name": "ag_sounds",
     "path": "audiogroups/ag_sounds",
   },
-  "soundFile": "snd_shotgun_prepare",
-  "duration": 1.63566709,
+  "soundFile": "snd_shotgun_prepare.mp3",
+  "duration": 1.044898,
   "parent": {
     "name": "Shotgun Sounds",
-    "path": "folders/Weapons/Shotgun/Shotgun Sounds.yy",
+    "path": "folders/Objects/Game Objects/Weapons/Shotgun/Shotgun Sounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_shotgun_prepare",

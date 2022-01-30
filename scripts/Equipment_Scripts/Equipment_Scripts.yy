@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Equipment",
-    "path": "folders/Objects/Controllers/GUIscreens/Inventory Screen/Equipment.yy",
+    "name": "Inventory",
+    "path": "folders/Objects/Controllers/Game Mechanics/Inventory.yy",
   },
   "resourceVersion": "1.0",
   "name": "Equipment_Scripts",

@@ -33,7 +33,7 @@ function slot(inventory, slot_id, xx, yy, clickable, itemtype) {
 		if is_method(_item_render){
 			_item_render = method_get_index(_item_render)
 		}
-		//show_debug_message(_item_args)
+		//console_log(_item_args)
 		if _item_render != -1//If item has script
 		{
 			var _item_args = [xx,yy,inventory,slot_id]
@@ -50,8 +50,32 @@ function slot(inventory, slot_id, xx, yy, clickable, itemtype) {
 			var _item = inventory[# slot_id,0]
 			var _item_struct = return_struct_from_item_index_by_item_id(_item)
 			var txt = _item_struct[$ "item_locale_name"]+"\n"+find_keyword(_item_struct[$ "item_type"])+"\n"+_item_struct[$ "item_description"]
+			
+			if !is_undefined(_item_struct[$ "stats"]){
+				for (var i = 0; i < array_length(_item_struct[$ "stats"]); i++){
+					var stat_struct = _item_struct[$ "stats"][@ i]
+					var stat_name = variable_struct_get(obj_player_stats.stats,stat_struct[0]).stat_name
+					var stat_type = stat_struct[@ 1]
+					var stat_value = stat_struct[@ 2]
+					
+					if sign(stat_value) == 1{
+						var stat_sign = "+"
+					}else if sign(stat_value) == -1{
+						var stat_sign = ""
+					}
+					
+					if stat_type == modifier_type.multiplier{
+						txt += "\n"+stat_sign+string(stat_value*100)+"%"
+					}else{
+						txt += "\n"+stat_sign+string(stat_value)
+					}
+					
+					txt += " "+stat_name
+				}
+			}
 			draw_overlay(draw_text_hover,[txt,spr_hover_item_description,c_white,fa_center])
 		}
+		
 		if mouse_check_button_pressed(mb_left)
 		{
 			//Filter item type
@@ -65,6 +89,7 @@ function slot(inventory, slot_id, xx, yy, clickable, itemtype) {
 			}
 			
 			var iid = inventory[# slot_id, 0]
+			var iid_before_click = iid
 			var amount = inventory[# slot_id, 1]
 			var nbt = inventory[# slot_id, 2]
 			var mouse_iid = global.mouse_slot[# 0, 0];
@@ -99,7 +124,7 @@ function slot(inventory, slot_id, xx, yy, clickable, itemtype) {
 					}
 				}
 			}
-			event_fire([event.inventory_clicked,inventory])
+			event_fire(EVENT_INVENTORY_CLICKED,{inv : inventory, slot : slot_id, item_before_click : iid_before_click})
 		}
 	
 	
@@ -132,12 +157,12 @@ function slot(inventory, slot_id, xx, yy, clickable, itemtype) {
 	
 	
 		//Drop Item From Inventory
-		if obj_controller.drop_item_key and inventory[# slot_id, 0] != 0
+		if obj_inputManager.drop_item_key and inventory[# slot_id, 0] != 0
 		{
 			var _xx=obj_player.x
 			var _yy=obj_player.y
 		
-			if obj_controller.combination_key
+			if obj_inputManager.combination_key
 			{
 				var itemdropped=instance_create_layer(_xx,_yy,"Instances",obj_item)
 				itemdropped.whatitem=inventory[# slot_id, 0]
@@ -173,11 +198,11 @@ function slot_script_execute(inventory, slot_id) {
 			var _item_script = method_get_index(_item_struct[$ "quick_use"])
 			if _item_script != -1//If item have script
 			{
-				//show_debug_message(_item_script)
+				//console_log(_item_script)
 				var src = _item_struct[$ "arg_array"]
 				var _item_args = []; array_copy(_item_args,0,src,0,array_length(src))
 				array_push(_item_args,[inventory,slot_id])//Push inv and slot_id to item script
-				//show_debug_message(_item_args)
+				//console_log(_item_args)
 				script_execute_ext(_item_script,_item_args)
 			}
 		}

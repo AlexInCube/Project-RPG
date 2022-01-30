@@ -18,7 +18,7 @@ function draw_light(size){
 		if surface_exists(global.light){
 			gpu_set_blendmode(bm_add)
 			surface_set_target(global.light)
-			var camera_x = camera_get_view_x(camera), camera_y = camera_get_view_y(camera)
+			var camera_x = camera_get_view_x(player_camera), camera_y = camera_get_view_y(player_camera)
 			draw_ellipse_color(x - size - camera_x, y - size - camera_y, x + size - camera_x, y + size - camera_y,c_orange,c_black,false)
 			surface_reset_target()
 			gpu_set_blendmode(bm_normal)
@@ -31,7 +31,7 @@ function draw_light_roundrect(x1,y1,x2,y2){
 		if surface_exists(global.light){
 			gpu_set_blendmode(bm_add)
 			surface_set_target(global.light)
-			var camera_x = camera_get_view_x(camera), camera_y = camera_get_view_y(camera)
+			var camera_x = camera_get_view_x(player_camera), camera_y = camera_get_view_y(player_camera)
 			draw_roundrect_color(x1 - camera_x, y1 - camera_y, x2 - camera_x, y2 - camera_y,c_white,c_white,false)
 			surface_reset_target()
 			gpu_set_blendmode(bm_normal)

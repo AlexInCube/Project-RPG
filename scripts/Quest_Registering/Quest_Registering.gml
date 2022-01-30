@@ -16,5 +16,5 @@ function register_quests(){
 		[quest_type.talk,obj_lesha_npc],
 	])
 	
-	show_debug_message("Registered "+string(ds_list_size(global.quest_index))+" quests")
+	console_log("Registered "+string(ds_list_size(global.quest_index))+" quests")
 }

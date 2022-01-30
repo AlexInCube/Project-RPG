@@ -31,21 +31,36 @@ function register_items() {
 	#endregion
 	
 	#region Armor
-	add_armor("iron_helmet", spr_ironhelmet,2,1,ITEM_TYPE_HELMET,default_armor)
-	add_armor("iron_chestplate", spr_ironchestplate,4,2,ITEM_TYPE_CHESTPLATE,default_armor)
+	add_armor("iron_helmet", spr_ironhelmet,[
+			["phys_armor",modifier_type.constant,-2],
+			["magic_armor",modifier_type.constant,2],
+			["max_hp",modifier_type.multiplier,0.5]
+	],ITEM_TYPE_HELMET,default_armor)
+	
+	add_armor("iron_chestplate", spr_ironchestplate,[
+			["phys_armor",modifier_type.constant,2],
+			["magic_armor",modifier_type.constant,2],
+			["max_hp",modifier_type.constant,3]
+	],ITEM_TYPE_CHESTPLATE,default_armor)
+	/*
 	add_armor("iron_leggings", spr_ironleggings,3,1,ITEM_TYPE_LEGGINGS,default_armor)
 	add_armor("iron_boots", spr_ironboots,2,1,ITEM_TYPE_BOOTS,default_armor)
 	add_armor("leather_helmet", spr_leatherhelmet,1,1,ITEM_TYPE_HELMET,default_armor)
 	add_armor("leather_chestplate", spr_leatherchestplate,3,2,ITEM_TYPE_CHESTPLATE,default_armor)
 	add_armor("leather_leggings", spr_leatherleggings,2,1,ITEM_TYPE_LEGGINGS,default_armor)
 	add_armor("leather_boots", spr_leatherboots,1,1,ITEM_TYPE_BOOTS,default_armor)
+	*/
 	#endregion
 	
 	#region Weapon
-	add_weapon("wooden_stick",spr_item_weapon_wooden_stick,2,0,wooden_stick_create,default_item)
+	add_weapon("wooden_stick",spr_item_weapon_wooden_stick,[
+		["phys_damage",modifier_type.constant,1]
+	],wooden_stick_create,default_item)
 	//add_weapon("iron_sword", spr_ItemIcon_ironsword,10,0,melee_attack)
-	add_weapon("light_staff", spr_MagicWeaponLightningStaff,0,10,light_staff_create,light_staff)
-	add_weapon("shotgun", spr_item_weapon_shotgun,2,0,shotgun_create,shotgun)
+	//add_weapon("light_staff", spr_MagicWeaponLightningStaff,0,10,light_staff_create,light_staff)
+	add_weapon("shotgun", spr_item_weapon_shotgun,[
+		["phys_damage",modifier_type.constant,3]
+	],shotgun_create,shotgun)
 	#endregion
 	
 	#region Spell
@@ -72,5 +87,5 @@ function register_items() {
 	
 	add_other_item("money",spr_item_money,999,ITEM_TYPE_OTHER,money)
 	
-	show_debug_message("Registered "+string(ds_map_size(global.item_index))+" items")
+	console_log("Registered "+string(ds_map_size(global.item_index))+" items")
 }

@@ -1,11 +1,14 @@
 TODO:
-improve the storage of player stats
+rework inventory slot handling
+rework quest handling
 saving non-unique objects
-add mouse support for control
 loot-tables
-spell creating
 fix gui scaling
 
 
 Maked in this version
-Code refactoring in different places, such as dmg dealing, experience system and etc...
+
+Fixed bug when game not started if save exists
+Fixed broken item_grab event
+Fixed wrong button position in save window
+Fixed crash when trying to trade

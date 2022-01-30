@@ -45,5 +45,3 @@ tasks_button_description_y = 25
 
 tasks_spr = spr_quest_tasks_button
 #endregion
-
-quest_give_all_quest()

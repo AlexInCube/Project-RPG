@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Map Screen",
-    "path": "folders/Objects/Controllers/GUIscreens/Map Screen.yy",
+    "path": "folders/Objects/Controllers/GUI`s/GUIscreens/Map Screen.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_map_screen",

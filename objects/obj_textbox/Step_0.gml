@@ -2,7 +2,7 @@
 
 #region TYPE 0: NORMAL
 if(type[page] == 0){
-	if obj_controller.interact_key or mouse_check_button_released(mb_left){
+	if obj_inputManager.interact_key or mouse_check_button_released(mb_left){
 
 		if element.get_typewriter_state() < 1{
 			charCount = string_length(text_NE);
@@ -27,15 +27,19 @@ if(type[page] == 0){
 #region TYPE 1: DIALOGUE CHOICE
 else {
 	if(chosen) exit;
+	
+	if timer > 0{
+		timer -= 1*DELTATIME
+	}
 
-	if obj_controller.interact_key or mouse_check_button_released(mb_left){ 
+	if obj_inputManager.interact_key or mouse_check_button_released(mb_left) or timer == 0{ 
 		chosen = true; 
-		alarm[2] = 30 * DELTATIME; 
+		alarm[2] = 60 * DELTATIME; 
 		audio_play_sound(select_snd_effect, priority_snd_effect, false);
 	} 
 	
 	//Change Choice 
-	var change_choice = obj_controller.dialogue_scroll_down - obj_controller.dialogue_scroll_up;
+	var change_choice = obj_inputManager.dialogue_scroll_down - obj_inputManager.dialogue_scroll_up;
 	if(change_choice != 0){ 
 		choice += change_choice; 
 		audio_play_sound(choice_snd_effect, priority_snd_effect, false); 

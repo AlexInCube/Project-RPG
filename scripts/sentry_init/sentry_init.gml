@@ -13,13 +13,13 @@ function sentry_init(argument0) {
 	
 		var protPos = string_pos("://", dsn);
 		if (protPos == 0) {
-			show_debug_message("Sentry Error: Malformed DSN, no protocol found");
+			console_log("Sentry Error: Malformed DSN, no protocol found");
 			return false;
 		}
 	
 		var atPos = string_pos("@", dsn)
 		if (atPos == 0) {
-			show_debug_message("Sentry Error: Malformed DSN, no @ found");
+			console_log("Sentry Error: Malformed DSN, no @ found");
 			return false;
 		}
 	
@@ -37,7 +37,7 @@ function sentry_init(argument0) {
 		}
 	
 		if (string_length(dsnPublicKey) == 0) {
-			show_debug_message("Sentry Error: Malformed DSN, no public key found");
+			console_log("Sentry Error: Malformed DSN, no public key found");
 			return false;
 		}
 	
@@ -49,14 +49,14 @@ function sentry_init(argument0) {
 		var dsnHostPath = string_copy(atPost, 1, slashPos-2);
 	
 		if (string_length(dsnHostPath) == 0) {
-			show_debug_message("Sentry Error: Malformed DSN, no host/path found");
+			console_log("Sentry Error: Malformed DSN, no host/path found");
 			return false;
 		}
 	
 		var dsnProject = string_copy(atPost, slashPos, string_length(atPost)-slashPos+1);
 	
 		if (string_length(dsnProject) == 0) {
-			show_debug_message("Sentry Error: Malformed DSN, no project found");
+			console_log("Sentry Error: Malformed DSN, no project found");
 			return false;
 		}
 	

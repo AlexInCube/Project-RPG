@@ -139,26 +139,26 @@ if selected_slot[0] != -1{
 	var sides_array = spell_piece[@ 1][$ "input_sides"]
 	var c_array = [spr_spell_creating_input_arrows_blue,spr_spell_creating_input_arrows_red,spr_spell_creating_input_arrows_green,spr_spell_creating_input_arrows_yellow]
 	for(var i = 0; i<spell_piece[@ 0][$ "config_max_sides"];i++){
-		var input_y = select_input_start_y+((select_input_offset+select_input_height)*i)
-		var input_x = select_input_start_x
-		draw_sprite(spr_spell_creating_select_input,0,input_x,input_y)
-		draw_sprite(c_array[i],sides_array[i],input_x,input_y)
-		draw_text_shadow(left_panel_x+10,input_y,spell_piece[@ 0][$ "config_sides_names"][i],fnt_small,1,txt_color_shadow,txt_color,1)
+		var input_yy = select_input_start_y+((select_input_offset+select_input_height)*i)
+		var input_xx = select_input_start_x
+		draw_sprite(spr_spell_creating_select_input,0,input_xx,input_yy)
+		draw_sprite(c_array[i],sides_array[i],input_xx,input_yy)
+		draw_text_shadow(left_panel_x+10,input_yy,spell_piece[@ 0][$ "config_sides_names"][i],fnt_small,1,txt_color_shadow,txt_color,1)
 		if mouse_check_button_pressed(mb_left){
 			//Down arrow
-			if mouseover(input_x+10,input_y+1,input_x+21,input_y+8){
+			if mouseover(input_xx+10,input_yy+1,input_xx+21,input_yy+8){
 				spell_piece[@ 1][$ "input_sides"][i] = spell_pieces_side.down
 			}
 			//Up arrow
-			if mouseover(input_x+10,input_y+23,input_x+21,input_y+30){
+			if mouseover(input_xx+10,input_yy+23,input_xx+21,input_yy+30){
 				spell_piece[@ 1][$ "input_sides"][i] = spell_pieces_side.up
 			}
 			//Left arrow
-			if mouseover(input_x+1,input_y+10,input_x+8,input_y+21){
+			if mouseover(input_xx+1,input_yy+10,input_xx+8,input_yy+21){
 				spell_piece[@ 1][$ "input_sides"][i] = spell_pieces_side.left
 			}
 			//Right arrow
-			if mouseover(input_x+23,input_y+10,input_x+30,input_y+21){
+			if mouseover(input_xx+23,input_yy+10,input_xx+30,input_yy+21){
 				spell_piece[@ 1][$ "input_sides"][i] = spell_pieces_side.right
 			}
 		}

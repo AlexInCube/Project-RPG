@@ -44,8 +44,8 @@ function item_groups_overlay(group_id){
 #endregion
 
 #region Crafting Overlay
-craft_word_additon = string_replace(find_keyword("craft_more_details"),"addition_key",return_normal_control_word(global.settings.controls.addition_key))
-craft_word_can_craft = string_replace(find_keyword("craft"),"interact_key",return_normal_control_word(global.settings.controls.interact_key))
+craft_word_additon = string_replace(find_keyword("craft_more_details"),"addition_key",options_get_control_word(global.settings.controls.addition_key))
+craft_word_can_craft = string_replace(find_keyword("craft"),"interact_key",options_get_control_word(global.settings.controls.interact_key))
 craft_overlay_default_height = 160
 craft_overlay_background = spr_craft_list_background
 craft_can_craft_color = c_lime
@@ -65,7 +65,7 @@ function item_craft_overlay(craft_struct){
 	//Setup item data
 	var item_name = scribble(item_craft.item_locale_name).starting_format("fnt_small",c_black).align(fa_left,fa_top).wrap(300)
 	//Setup background panel
-	var alt_menu = obj_controller.addition_key
+	var alt_menu = obj_inputManager.addition_key
 	var items_arr_len = array_length(craft_struct.required_items)
 	var over_hint_x = 0, over_hint_y = 0
 	
@@ -133,7 +133,7 @@ function item_craft_overlay(craft_struct){
 	}
 	draw_text_shadow(button_xx+over_hint_width/2,button_yy+20,word_hint,fnt_small,1,c_gray,c_white,1)
 	
-	if obj_controller.interact_key{
+	if obj_inputManager.interact_key{
 		if items_check{
 			for(var i=0;i<items_arr_len;i++){
 				var component_arr = craft_struct.required_items[i]

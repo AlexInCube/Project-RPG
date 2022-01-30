@@ -1,11 +1,12 @@
-event_inherited()
 phy_fixed_rotation=true
 
-Entity_Stats()
-
-max_hp=3
-hp=max_hp
+stats = new Entity_Stats()
 
 target = obj_player
 
 create_buff_grid()
+
+function Die(){
+	//console_log("die");
+	instance_destroy()
+}

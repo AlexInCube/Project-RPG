@@ -149,7 +149,7 @@ function sentry_capture_message() {
 			var stacktrace = ds_map_create();
 			var frames = ds_list_create();
 			var stack = debug_get_callstack();
-			for (var i=1; i<array_length_1d(stack); i++) { // ignore first item to avoid reporting this _function
+			for (var i=1; i<array_length(stack); i++) { // ignore first item to avoid reporting this _function
 				var script = stack[i];
 				var linePos = string_pos(":", script);
 				if (linePos) {
@@ -210,7 +210,7 @@ function sentry_capture_message() {
 		var variables = ds_map_create();
 		if (not is_undefined(fetchVars)) {
 			var names = variable_instance_get_names(fetchVars);
-			for (var i=0; i<array_length_1d(names); i++) {
+			for (var i=0; i<array_length(names); i++) {
 				var key = names[i];
 				var value = variable_instance_get(fetchVars, key);
 				ds_map_add(variables, key, value);

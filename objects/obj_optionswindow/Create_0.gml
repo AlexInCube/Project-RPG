@@ -22,7 +22,7 @@ drawelementstart = 0//Start drawing ds_grid from position (height)
 drawelementheight = min(round((GUIHEIGHT-40)/24)-2,ds_size)
 //Input
 inputting=false
-toinput=0
+toinput=[0,0]
 input_button_half_width=sprite_get_width(spr_control_button)/2
 
 ds_options_ui_elements = create_ui_elements_list()

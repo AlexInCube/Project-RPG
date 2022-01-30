@@ -5,7 +5,7 @@ if other.id != creator
 	var dmg = apply_damage(other,damage,damagetype)
 	
 	if global.settings.interface.showdamage = true{
-		var showdmg = instance_create_layer(target.x,target.y,"Text",obj_show_damage)
+		var showdmg = instance_create_layer(other.x,other.y,"Text",obj_show_damage)
 			showdmg.damage = dmg
 			showdmg.xx=other.x
 			showdmg.yy=other.y

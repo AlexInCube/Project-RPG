@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Inventory Screen",
-    "path": "folders/Objects/Controllers/GUIscreens/Inventory Screen.yy",
+    "path": "folders/Objects/Controllers/GUI`s/GUIscreens/Inventory Screen.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_inventory_screen",

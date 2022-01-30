@@ -16,13 +16,13 @@ function default_effect() constructor{
 	effect_description = find_keyword(effect_unlocale_name+"_description")//Description for player
 	effect_icon = spr_effect_frame//Effect Sprite on buff bar
 	effect_is_buff = true//Effect type, for effect frame.
-	effect_create_script = nothing//Script execute when effect applied to lifeform
-	effect_tick_script = nothing//Script executing when tick done
+	effect_create_script = placeholder//Script execute when effect applied to lifeform
+	effect_tick_script = placeholder//Script executing when tick done
 	effect_tick_timer = 60//Countdown for script executing, when timer == 0, then execute effect_tick_script
 	effect_multiple = false//Can buff multiplied with the same buffs?
 	effect_hide_icon = false//Hide icon from buff bar?
-	effect_draw_script = nothing//Effect drawing
-	effect_destroy_script = nothing//Executing when effect duration = 0
+	effect_draw_script = placeholder//Effect drawing
+	effect_destroy_script = placeholder//Executing when effect duration = 0
 	effect_priority = 0//Priority of effect drawing
 	effect_nbt = {//Special struct for every effect
 		duration : convert_seconds_to_ticks(1)
@@ -39,7 +39,7 @@ function invisible_player_effect() : default_effect() constructor{
 				case 0.5 : image_alpha = 1 break 
 				case 1 : image_alpha = 0.5 break
 			}
-			//show_debug_message("alpha switched"+string(image_alpha))
+			//console_log("alpha switched"+string(image_alpha))
 		}
 	}
 	effect_destroy_script = function(){

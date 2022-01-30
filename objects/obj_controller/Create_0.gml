@@ -7,12 +7,10 @@
 #macro PHASE_TYPE_DAY 2
 #macro PHASE_TYPE_SUNSET 3
 depth=-99999999
-//Getting input
-get_input()
 //World time (day and night cycle)
 seconds = 0
 minutes = 0 
-hours = 8
+hours = 20
 day = 0
 time_increment = 1//Increase this if we want speed up time
 time_is_go = true//If we need stop the time

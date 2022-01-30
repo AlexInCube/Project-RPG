@@ -52,7 +52,7 @@ function CallUserEvent(eventNum,args){
 }
 
 ///@function screenshake(shake_offset)
-///@description Shake camera
+///@description Shake player_camera
 ///@param shake_offset
 function screenshake(shake_offset){
 	with(obj_camera){

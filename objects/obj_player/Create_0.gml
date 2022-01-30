@@ -5,7 +5,8 @@ dir=0//Move direction
 mouse_dr=0//Mouse dir for weapon draw
 len=0//for dash
 findradius=16//For item collecting
-
+stats = obj_player_stats.stats
+Die = method_get_index(obj_player_stats.Die)
 
 image_speed=0.4
 

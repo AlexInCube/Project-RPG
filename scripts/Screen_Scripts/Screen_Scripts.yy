@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "GUIscreens",
-    "path": "folders/Objects/Controllers/GUIscreens.yy",
+    "path": "folders/Objects/Controllers/GUI`s/GUIscreens.yy",
   },
   "resourceVersion": "1.0",
   "name": "Screen_Scripts",

@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Weapons",
-    "path": "folders/Weapons.yy",
+    "path": "folders/Objects/Game Objects/Weapons.yy",
   },
   "resourceVersion": "1.0",
   "name": "weapons_scripts",

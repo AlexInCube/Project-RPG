@@ -4,18 +4,13 @@
 /// @param max_amount
 /// @param [inv] global.inventory is default
 /// @param [slot] optional
-function item_gain(item_id, max_amount, inventory, _slot) {
+function item_gain(item_id, max_amount, inv = global.inventory, _slot) {
 	//Max item stack
 	var total      = return_struct_from_item_index_by_item_id(item_id)[$ "item_stacking"]
 	var cur_amount = 0
 	var cur_slot   = 0;
 	if !is_undefined(_slot){
 		cur_slot = _slot
-	}
-	if is_undefined(inventory){
-		var inv = global.inventory
-	}else{
-		var inv = inventory
 	}
 	var max_slot   = ds_grid_width(inv);
 
@@ -41,7 +36,7 @@ function item_gain(item_id, max_amount, inventory, _slot) {
 						}
 						else//If itemstack = max stack, then create NBTdata struct.
 						{
-							event_fire([event.itemPickuped,item_id,cur_amount])
+							event_fire(EVENT_ITEM_PICKUPED,{item : item_id, quantity : cur_amount})
 							break
 						}
 		            }
@@ -117,7 +112,7 @@ function item_grab(item_id,itemamount,inventory) {
 				if inventory[# n,1] == 0 {inventory[# n,0]=NO_ITEM}
 				if findedamount==itemamount
 				{
-					event_fire([event.deliver,item_id,itemamount])
+					event_fire(EVENT_NPC_DELIVER,{item : inventory[# n,1], quantity : findedamount})
 					return true
 				}
 			}

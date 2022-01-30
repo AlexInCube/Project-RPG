@@ -12,5 +12,5 @@ function register_effects(){
 	register_effect(BUFF_DEFENSE,spr_effect_defense,defense_effect)
 
 	
-	show_debug_message("Registered "+string(ds_list_size(global.effect_index))+" effects")
+	console_log("Registered "+string(ds_list_size(global.effect_index))+" effects")
 }

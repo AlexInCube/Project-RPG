@@ -15,7 +15,7 @@ function item_consume(inventory,slot_id){
 		inventory[# slot_id,0]=NO_ITEM
 		inventory[# slot_id,2]=0
 	}
-	//show_debug_message("Item Consume: Inventory: "+string(inventory)+" Slot: "+string(slot_id))
+	//console_log("Item Consume: Inventory: "+string(inventory)+" Slot: "+string(slot_id))
 }
 
 ///@function read_NBT_data(inventory,slot_id,string variable)

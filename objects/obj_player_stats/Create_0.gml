@@ -1,14 +1,6 @@
 create_buff_grid()
 
-Entity_Stats()
-
-max_hp=5
-hp=max_hp
-defense = 5
-
-energy=5//Increase max_mana
-max_mana=energy
-mana=max_mana
+stats = new Player_Stats()
 
 invisibility_duration = 60//ticks
 

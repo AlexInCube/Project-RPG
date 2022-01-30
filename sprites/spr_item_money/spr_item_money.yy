@@ -58,7 +58,7 @@
             {"id":"84277007-26f5-417d-b62e-932c722df0fc","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dece6e50-3d60-4284-8567-1977e60b838f","path":"sprites/spr_item_money/spr_item_money.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"be950a50-6ca2-43a9-937b-144c706d4395","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c645f04c-1c2f-44f1-abec-3127ebdb044f","path":"sprites/spr_item_money/spr_item_money.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"05ca25ec-d546-4616-a78f-1a353dbd8051","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"22dbfdcb-5162-4953-80b4-ff200e6d5b41","path":"sprites/spr_item_money/spr_item_money.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -86,7 +86,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Other",
-    "path": "folders/Objects/Controllers/Inventory/Items Sprites/Other.yy",
+    "path": "folders/Objects/Controllers/Game Mechanics/Inventory/Items Sprites/Other.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_item_money",

@@ -54,7 +54,7 @@ function shotgun_step() {
 	var mouse_dir = point_direction(x,y,mouse_x,mouse_y)
 	if obj_player.state == move_state
 	{
-		if obj_controller.reloading_key and ammo_max > ammo{
+		if obj_inputManager.reloading_key and ammo_max > ammo{
 			reloading = true
 			can_shoot = false
 		}
@@ -67,7 +67,7 @@ function shotgun_step() {
 		}
 		
 		
-		if obj_controller.attack_key
+		if obj_inputManager.attack_key
 		{
 			if read_NBT_data(inv,_slot,"ammo") > 0
 			{
@@ -80,11 +80,8 @@ function shotgun_step() {
 						with dmg
 						{
 							physics_apply_impulse(x,y,xforce+(-4+i),yforce+(-4+i))
-							if obj_player_stats.phys_damage>0
-							{
-								damage = obj_player_stats.phys_damage
-								damagetype = DAMAGE_TYPE_PHYSICAL
-							}
+							damage = obj_player_stats.stats.phys_damage.getValue()
+							damagetype = DAMAGE_TYPE_PHYSICAL
 						}
 					}
 					

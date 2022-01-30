@@ -5,7 +5,7 @@ function register_story_tags(){
 	story_tag_add("ewgen_saved_from_slimes")
 	story_tag_add("help_ewgen_with_water")
 	
-	show_debug_message("Registered "+string(ds_map_size(global.story_tags))+" story tags")
+	console_log("Registered "+string(ds_map_size(global.story_tags))+" story tags")
 }
 
 function story_tags_save(){

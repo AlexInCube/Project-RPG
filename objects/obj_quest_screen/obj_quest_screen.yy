@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Quest Screen",
-    "path": "folders/Objects/Controllers/GUIscreens/Quest Screen.yy",
+    "path": "folders/Objects/Controllers/GUI`s/GUIscreens/Quest Screen.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_quest_screen",

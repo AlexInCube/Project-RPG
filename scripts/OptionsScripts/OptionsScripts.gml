@@ -1,9 +1,10 @@
-///@function return_normal_control_word(input_value);
-function return_normal_control_word(input_value){
-var str1 = input_value;
+///@function options_get_control_word(input_value);
+function options_get_control_word(str1){
 var str2 = "";
-if (str1 >= 48 && str1 <= 90) {
-    str2 = string_lettersdigits(chr(str1));
+if is_real(str1){
+	if (str1 >= 48 && str1 <= 90) {
+	    str2 = string_lettersdigits(chr(str1));
+	}
 }
 else {
     switch (str1) {
@@ -82,7 +83,7 @@ else {
 	return string(str2);
 }
 	
-function change_volume(option_array) {
+function options_change_volume(option_array) {
 	var type = option_array[@ 1][@ 1]
 	var volume = option_array[@ 0]
 	switch(type){
@@ -130,6 +131,7 @@ function change_resolution(current_val,shift_array) {
 
 	GUIWIDTH=display_get_gui_width()
 	GUIHEIGHT=display_get_gui_height()
+	event_fire(EVENT_GUI_RESIZE)
 }
 
 function change_window_mode(boolean) {

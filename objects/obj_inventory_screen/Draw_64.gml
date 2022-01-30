@@ -21,14 +21,17 @@ draw_set_halign(fa_left)
 draw_set_valign(fa_top)
 draw_set_color(c_white)
 draw_set_font(fnt_small)
-draw_text(stats_block_x,stats_block_y,attribute_pointsword+string(obj_player_stats.attribute_points))
+
 screen_draw_outline(stats_block_x,stats_block_y,200,216,stats_word)
 for(var i = 0;i<array_length(stats_array);i++){
-	draw_text_shadow(stats_x,stats_y+(24*i),
-					stats_array[i][@ 0]+": "+string(variable_instance_get(obj_player_stats.id,stats_array[i][@ 2])),
+	var stat_struct = variable_struct_get(obj_player_stats.stats,stats_array[i])
+	
+	var xx = stats_x
+	var yy = stats_y+(24*i)
+	draw_text_shadow(xx,yy,
+					stat_struct.stat_name+": "+string(variable_struct_get(obj_player_stats.stats,stats_array[i]).getValue()),
 					fnt_large,1,c_black,c_white,1)
-	if obj_player_stats.attribute_points >= 1{
-		assign_attribute_point_button(stats_block_x,stats_y+4+(25*i),stats_array[i][@ 2])
-	}
+					
+	draw_sprite(stat_struct.stat_icon,0,xx-20,yy-10)
 }
 #endregion

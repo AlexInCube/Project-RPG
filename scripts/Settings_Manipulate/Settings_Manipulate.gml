@@ -24,39 +24,36 @@ global.settings = {
 		use_sys_cursor : false
 	},
 	controls : {
-		key_up : ord("W"),		
-		key_left :	ord("A"),
-		key_right :	ord("D"),
-		key_down :	ord("S"),
+		key_up :	[ord("W"),""],		
+		key_left :	[ord("A"),""],	
+		key_right :	[ord("D"),""],	
+		key_down :	[ord("S"),""],	
 
-		inventory_hotkey1 :	ord("1"),
-		inventory_hotkey2 :	ord("2"),
-		inventory_hotkey3 :	ord("3"),
-		inventory_hotkey4 :	ord("4"),
-		inventory_hotkey5 :	ord("5"),
-		inventory_hotkey6 :	ord("6"),
-		inventory_hotkey7 :	ord("7"),
-		inventory_hotkey8 :	ord("8"),
-		inventory_hotkey9 :	ord("9"),
-		inventory_hotkey10 : ord("0"),
+		inventory_hotkey1 :	[ord("1"),""],	
+		inventory_hotkey2 :	[ord("2"),""],	
+		inventory_hotkey3 :	[ord("3"),""],	
+		inventory_hotkey4 :	[ord("4"),""],	
+		inventory_hotkey5 :	[ord("5"),""],	
+		inventory_hotkey6 :	[ord("6"),""],	
+		inventory_hotkey7 :	[ord("7"),""],	
+		inventory_hotkey8 :	[ord("8"),""],	
+		inventory_hotkey9 :	[ord("9"),""],	
+		inventory_hotkey10 : [ord("0"),""],	
 
-		pickup_key : vk_space,
-		addition_key : vk_alt,
-		invert_addition_info : true,
-		interact_key :	ord("E"),
-		attack_key : ord("V"),
-		//equipment_key :	ord("U"),
-		inventory_key :	ord("I"),
-		questlist_key :	ord("O"),
-		drop_item_key :	ord("Q"),
-		combination_key : vk_control,
-		pause_key :	vk_escape,
-		reloading_key :	ord("R"),
-
-		developer_key :	vk_f5
+		pickup_key :			[vk_space,""],	
+		addition_key :			[vk_alt,""],	
+		invert_addition_info :	true,
+		interact_key :			[ord("E"),""],	
+		attack_key :			[ord("V"),""],	
+		inventory_key :			[ord("I"),""],	
+		questlist_key :			[ord("O"),""],	
+		drop_item_key :			[ord("Q"),""],	
+		combination_key :		[vk_control,""],	
+		pause_key :				[vk_escape,""],	
+		reloading_key :			[ord("R"),""],	
+		developer_key :			[vk_f5,""],	
 		},
 	}
-show_debug_message("Fullscreen: "+string(global.settings.video.fullscreen)+" Width: "+string(global.settings.video.width)+" Height: "+string(global.settings.video.height))
 }
 
 function apply_settings() {
@@ -79,6 +76,7 @@ function settodefault() {
 }
 
 function options_execute_scripts(){
+	with(obj_inputManager){setup_input()}
 	with obj_optionswindow
 	{//Apply all settings
 		var ds_grid = ds_options

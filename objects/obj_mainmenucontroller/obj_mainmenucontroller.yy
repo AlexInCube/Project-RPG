@@ -30,7 +30,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Main Menu",
-    "path": "folders/Objects/Controllers/Main Menu.yy",
+    "path": "folders/Objects/Controllers/GUI`s/Main Menu.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_mainmenucontroller",

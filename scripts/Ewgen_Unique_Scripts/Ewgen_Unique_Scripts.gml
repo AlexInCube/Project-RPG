@@ -1,5 +1,6 @@
-function ewgen_if_no_more_slimes(){
+function ewgen_if_no_more_slimes(enemy,ev){
 	if story_tag_exist("ewgen_saved_from_slimes") exit
+	if ev.entity_name != enemy exit
 	var _list = ds_list_create()
 	var radius = 50
 	var _num = collision_rectangle_list(obj_ewgennpc.x-radius,obj_ewgennpc.y-radius,obj_ewgennpc.x+radius,obj_ewgennpc.y+radius,obj_enemy_slime,false,true,_list,false)
@@ -14,7 +15,7 @@ function ewgen_if_no_more_slimes(){
 				choice_variable = "saved_from_slimes"
 				story_tag_status("ewgen_saved_from_slimes",true)
 				path_end()
-				event_unregister([event.enemyKilled,obj_enemy_slime],id)
+				//event_unregister(EVENT_ENEMY_KILLED,id)
 			}
 		}
 	}
