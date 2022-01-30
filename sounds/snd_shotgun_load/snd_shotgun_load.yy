@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -10,8 +11,8 @@
     "name": "ag_sounds",
     "path": "audiogroups/ag_sounds",
   },
-  "soundFile": "snd_shotgun_load.wav",
-  "duration": 1.273005,
+  "soundFile": "snd_shotgun_load.mp3",
+  "duration": 1.044898,
   "parent": {
     "name": "Shotgun Sounds",
     "path": "folders/Objects/Game Objects/Weapons/Shotgun/Shotgun Sounds.yy",

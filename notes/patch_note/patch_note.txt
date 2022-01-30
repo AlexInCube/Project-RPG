@@ -3,12 +3,12 @@ rework inventory slot handling
 rework quest handling
 saving non-unique objects
 loot-tables
-spell creating
 fix gui scaling
 
 
 Maked in this version
 
-Added dialogue timer for choice section
-Fixed event_fire crash, when listener registered, but not exists.
-Fixed load save window crash at press pause_key (vk_escape).
+Fixed bug when game not started if save exists
+Fixed broken item_grab event
+Fixed wrong button position in save window
+Fixed crash when trying to trade

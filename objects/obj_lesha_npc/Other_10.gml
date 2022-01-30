@@ -12,7 +12,7 @@ switch(choice_variable){
 		myTypes[i]		= 1;
 		mySpeaker[i]	= obj_player;
 		myNextLine[i]	= [2,3,-1];
-		myTime[i]		= convert_seconds_to_ticks(5);
+		//myTime[i]		= convert_seconds_to_ticks(5);
 		//Line 2
 		i++
 		myText[i]		= "Выбирай что хочешь, только лучший товар!";

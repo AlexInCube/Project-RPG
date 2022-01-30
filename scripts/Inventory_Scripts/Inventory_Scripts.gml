@@ -112,7 +112,7 @@ function item_grab(item_id,itemamount,inventory) {
 				if inventory[# n,1] == 0 {inventory[# n,0]=NO_ITEM}
 				if findedamount==itemamount
 				{
-					event_fire(EVENT_NPC_DELIVER,{item : _item, quantity : amount})
+					event_fire(EVENT_NPC_DELIVER,{item : inventory[# n,1], quantity : findedamount})
 					return true
 				}
 			}

@@ -66,7 +66,7 @@ if obj_inputManager.xaxis != 0 or obj_inputManager.yaxis != 0 {
 		with inst
 		{
 			item_gain(whatitem,amount,global.inventory)
-			event_fire(EVENT_ITEM_PICKUPED,{item : whatitem,quantity : amount})
+			event_fire(EVENT_ITEM_PICKUPED,{item : whatitem, quantity : amount})
 			instance_destroy()
 		}
 	}

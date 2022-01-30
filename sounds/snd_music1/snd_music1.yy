@@ -1,6 +1,7 @@
 {
+  "conversionMode": 0,
   "compression": 1,
-  "volume": 0.09,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 112,
   "sampleRate": 44100,
@@ -10,7 +11,7 @@
     "name": "ag_music",
     "path": "audiogroups/ag_music",
   },
-  "soundFile": "snd_music1",
+  "soundFile": "snd_music1.mp3",
   "duration": 173.35022,
   "parent": {
     "name": "Sounds",

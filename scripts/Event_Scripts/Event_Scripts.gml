@@ -43,7 +43,9 @@ function event_fire(ev,ev_data) {
 			
 				if unregister{
 					event_unregister(ev,listener)
-					len = ds_list_size(listenerList)
+					if ds_exists(listenerList,ds_type_list){
+						len = ds_list_size(listenerList)
+					}
 					i--
 				}
 			

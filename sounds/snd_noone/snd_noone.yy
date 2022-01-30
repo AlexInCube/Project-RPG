@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -10,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_noone",
-  "duration": 0.0,
+  "soundFile": "snd_noone.mp3",
+  "duration": 1.044898,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

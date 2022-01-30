@@ -31,6 +31,7 @@ function replenish_mana(manaamount, target, manaperc) {
 
 function apply_damage(target,dmg,dmg_type){
 	if is_undefined(target) exit
+	//if target == obj_player {target = obj_player_stats}
 
 	var magic_armor=target.stats.magic_armor.getValue()
 	var phys_armor=target.stats.phys_armor.getValue()
